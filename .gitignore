@@ -21,3 +21,21 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+
+
+
+*.iml
+/MobileUET/.gradle
+/MobileUET/local.properties
+/MobileUET/.idea/caches
+/MobileUET/.idea/libraries
+/MobileUET/.idea/modules.xml
+/MobileUET/.idea/workspace.xml
+/MobileUET/.idea/navEditor.xml
+/MobileUET/.idea/assetWizardSettings.xml
+/MobileUET.DS_Store
+/MobileUET/build
+/MobileUET/captures
+/MobileUET.externalNativeBuild
+/MobileUET.cxx
