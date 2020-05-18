@@ -1,5 +1,6 @@
 package com.example.mobileuet.ui.dashboard;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,6 +18,7 @@ import com.example.mobileuet.R;
 import com.example.mobileuet.Retrofit.APIUtils;
 import com.example.mobileuet.Retrofit.DataClient;
 import com.example.mobileuet.Retrofit.User;
+import com.example.mobileuet.needsFunc.Image;
 
 import java.util.List;
 
@@ -63,6 +65,11 @@ public class DashboardFragment extends Fragment {
                 Log.d("EEROR",throwable.getMessage());
             }
         });
+
+        //them 1 anh vao test
+            //tao ra 1 anh tu url
+        Drawable img = Image.LoadImageFromWebOperations("https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/cb5c4a95922591.5ea28ad657e9b.jpg");
+            //add anh vao listDashboard
 
         //3. return
         return root;

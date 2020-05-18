@@ -15,6 +15,12 @@ import com.google.gson.annotations.SerializedName;
 //        "phone":"473654765",
 //        "address":"hà nội"
 public class User implements Parcelable {
+    public User(String name, String password,String email){
+        this.name=name;
+        this.password=password;
+        this.email=email;
+    }
+
     @SerializedName("user")
     @Expose
     private String user;
