@@ -1,35 +1,15 @@
-from ecommerce_server import repositories
-from ecommerce_server.extensions.custom_exception import UserNotFoundException, PasswordDiffException, \
-    WrongCurrentPasswordException
-from ecommerce_server.helpers import verify_password
-from ecommerce_server.repositories.password import find_all_password_by_userid
+from ecommerce_server.extensions.custom_exception import PasswordDiffException
+from ecommerce_server.repositories import password as repo
 
 
-def is_this_password_valid(user_id, new_password):
-    passwords = find_all_password_by_userid(user_id)
+def validate_new_hash_password(user_id: int, hashed_password: str) -> bool:
+    passwords = repo.find_all_password_by_user_id(user_id)
     for store_password in passwords:
-        if (verify_password(store_password.password, new_password)):
-            return False
+        if store_password == hashed_password: return False
     return True
 
 
-# you need to change password of user and add new password to historic password
-def set_new_password(user, new_password):
-    user_id = user.id
-    repositories.user.change_password(user, new_password)
-    repositories.password.add_new_password_to_database(user_id, new_password)
-    return user
-
-
-def change_password(email, current_password, new_password, **kwargs):
-    user = repositories.user.find_one_by_email(email)
-    if not user:
-        raise UserNotFoundException()
-    if not verify_password(user.password, current_password):
-        raise WrongCurrentPasswordException()
-    user_id = user.id
-    if (is_this_password_valid(user_id, new_password)):
-        set_new_password(user, new_password)
-        return user
-    else:
-        raise PasswordDiffException()
+def add_new_hashed_password(user_id: int, hashed_password: str):
+    if not validate_new_hash_password(user_id, hashed_password): PasswordDiffException()
+    repo.add_new_hash_password(user_id, hashed_password)
+    repo.delete_old_password(user_id)

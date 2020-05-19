@@ -1,41 +1,43 @@
 # coding=utf-8
 import logging
+from typing import List
 
-from ecommerce_server import models
-from ecommerce_server.helpers import hash_password
+from ecommerce_server import models as m
 
 __author__ = 'LongHB'
+
+from ecommerce_server.models import Password
+
 _logger = logging.getLogger(__name__)
 
 
-def save_historic_password_to_database(**kwargs):
-    historic_password = models.Password(**kwargs)
-    models.db.session.add(historic_password)
-    return historic_password
+def save(password: Password):
+    m.db.session.add(password)
+    # m.db.session.commit()
+    return password
 
 
-def find_all_password_by_userid(user_id):
-    passwords = models.Password.query.filter(
-        models.Password.user_id == user_id
-    ).order_by(models.Password.created_at).all()
-    return passwords
+def save_historic_password_to_database(**kwargs) -> Password:
+    password = m.Password(**kwargs)
+    return save(password)
 
 
-def delete_old_password(user_id):
-    passwords = find_all_password_by_userid(user_id)
-    if (len(passwords) > 5):
-        models.db.session.delete(passwords[0])
+def delete_old_password(user_id: int) -> List[Password]:
+    passwords = find_all_password_by_user_id(user_id)
+    if len(passwords) > 5:
+        m.db.session.delete(passwords[0])
         del passwords[0]
-        models.db.session.commit()
+        # m.db.session.commit()
     return passwords
 
 
-def add_new_password_to_database(user_id, new_password):
-    password_hash = hash_password(new_password)
+def add_new_hash_password(user_id: int, password_hash: str):
     save_historic_password_to_database(user_id=user_id, password=password_hash)
-    delete_old_password(user_id)
 
 
-def add_new_hash_password_to_database(user_id, password_hash):
-    save_historic_password_to_database(user_id=user_id, password=password_hash)
-    delete_old_password(user_id)
+# ======================================================================================================================
+def find_all_password_by_user_id(user_id: int) -> List[m.Password]:
+    passwords = m.Password.query.filter(
+        m.Password.user_id == user_id
+    ).order_by(m.Password.created_at).all()
+    return passwords

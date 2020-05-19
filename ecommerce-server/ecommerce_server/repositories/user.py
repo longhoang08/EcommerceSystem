@@ -1,33 +1,37 @@
 # coding=utf-8
-import datetime
 import logging
 
 from sqlalchemy import or_
 
 from ecommerce_server import models as m
-from ecommerce_server.helpers import hash_password, get_environ
+from ecommerce_server.helpers import hash_password
 
 __author__ = 'LongHB'
+
+from ecommerce_server.models import User
+
 _logger = logging.getLogger(__name__)
 
 
-def save_user_to_database(**kwargs):
-    user = m.User(**kwargs)
+def save(user: User) -> User:
     m.db.session.add(user)
-
+    # m.db.session.commit()
     return user
 
 
-def change_password(user, new_password):
+def create_new_user(**kwargs) -> User:
+    user = m.User(**kwargs)
+    return save(user)
+
+
+def change_password(user, new_password) -> User:
     password_hash = hash_password(new_password)
     user.password = password_hash
-    m.db.session.commit()
-    return user
+    return save(user)
 
 
-def find_one_by_email_or_phone_number_ignore_case(email: str, phone_number: str) -> m.User:
+def find_one_by_email_or_phone_number(email: str, phone_number: str) -> m.User:
     # Todo: normalize phone number and email
-
     user = m.User.query.filter(
         or_(
             m.User.phone_number == phone_number,
@@ -38,15 +42,7 @@ def find_one_by_email_or_phone_number_ignore_case(email: str, phone_number: str)
     return user or None
 
 
-def find_one_by_username(username):
-    user = m.User.query.filter(
-        m.User.username == username
-    ).first()
-
-    return user or None
-
-
-def find_one_by_user_id(user_id):
+def find_one_by_user_id(user_id: int) -> User:
     user = m.User.query.filter(
         m.User.id == user_id
     ).first()
@@ -54,7 +50,7 @@ def find_one_by_user_id(user_id):
     return user or None
 
 
-def find_one_by_email(email):
+def find_one_by_email(email: str) -> User:
     user = m.User.query.filter(
         m.User.email == email
     ).first()
@@ -62,16 +58,9 @@ def find_one_by_email(email):
     return user or None
 
 
-def block_user(user):
-    user.is_active = False
-    now = datetime.datetime.now()
-    now_after_block_time = now + datetime.timedelta(minutes=int(get_environ('BLOCK_TIME')))
-    user.un_block_at = now_after_block_time
-    m.db.session.commit()
-    return user
+def find_one_by_phone_number(phone_number: str) -> User:
+    user = m.User.query.filter(
+        m.User.phone_number == phone_number
+    ).first()
 
-
-def un_block_user(user):
-    user.is_active = True
-    m.db.session.commit()
-    return user
+    return user or None

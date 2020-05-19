@@ -68,6 +68,13 @@ CELERYBEAT_SCHEDULE = {
     }
 }
 
+# Business confiig for app
+SERVER_BASE_URL = os.getenv('SERVER_BASE_URL')
+
+TOKEN_UPTIME = int(os.getenv('TOKEN_UPTIME'))
+
+SECRET_KEY = os.getenv('SECRET_KEY')
+
 
 def _env(name, default):
     """ Get configuration from environment in priorities:
