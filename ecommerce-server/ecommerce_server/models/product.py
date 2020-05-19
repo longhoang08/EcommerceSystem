@@ -85,6 +85,19 @@ promotions = {
         },
         "discount_money": {
             "type": "integer"
+        },
+        "time_ranges": {
+            "type": "nested",
+            "properties": {
+                "end": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                },
+                "start": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                }
+            }
         }
     }
 }
@@ -203,7 +216,7 @@ rating_details = {
 }
 
 products_details = {
-    **categories,
+    "categories": categories,
     **basic_details,
     **rating_details
 }
