@@ -3,13 +3,13 @@ from flask_restplus import fields
 
 register_user_req = {
     'email': fields.String(required=True, description='user email address'),
-    'username': fields.String(required=True, description='user username'),
-    'fullname': fields.String(required=True, description='fullname of user'),
-    'password': fields.String(required=True, description='user password'),
+    'phone_number': fields.String(required=False, fields="phone_number", description='phone number of user'),
+    'fullname': fields.String(required=False, description='fullname of user'),
+    'password': fields.String(required=True, description='raw password of user'),
 }
 
 login_req = {
-    'username': fields.String(required=True, description='username'),
+    'username': fields.String(required=True, description='email or phone number'),
     'password': fields.String(required=True, description='password'),
 }
 
@@ -22,4 +22,3 @@ change_password_req = {
     'current_password': fields.String(required=True, description='current password'),
     'new_password': fields.String(required=True, description='new password')
 }
-
