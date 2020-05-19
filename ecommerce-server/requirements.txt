@@ -18,13 +18,13 @@ flask-cors==3.0.8
 email-validator==1.1.1
 flask-redis==0.4.0
 flask-jwt-extended==3.24.1
-PyJWT==1.6.4
+PyJWT==1.7.1
 Flask-Mail==0.9.1
 mockredispy==2.9.3
 celery==4.4.2
 attrs==19.3.0
-elasticsearch==7.0.2
-elasticsearch-dsl==7.0.0
+elasticsearch==7.7.0
+elasticsearch-dsl==7.2.0
 sentry-sdk==0.14.4
 Werkzeug==0.16.1
 jsons==1.1.2
