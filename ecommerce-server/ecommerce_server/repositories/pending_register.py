@@ -9,11 +9,11 @@ __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
 
 
-def save_pending_register_to_database(**kwargs):
-    pending_register = models.Register(**kwargs)
-    models.db.session.add(pending_register)
-
-    return pending_register
+def save_pending_register_to_database(**kwargs) -> models.Register:
+    register = models.Register(**kwargs)
+    models.db.session.add(register)
+    models.db.session.commit()
+    return register
 
 
 def find_one_by_email_or_phone_number(email: str, phone_number: str) -> models.Register:
@@ -27,20 +27,20 @@ def find_one_by_email_or_phone_number(email: str, phone_number: str) -> models.R
     return register or None
 
 
-def find_one_by_email(email):
-    pending_register = models.Register.query.filter(
+def find_one_by_email(email) -> models.Register:
+    register = models.Register.query.filter(
         models.Register.email == email
     ).first()
 
-    return pending_register or None
+    return register or None
 
 
-def find_one_by_username(username):
-    pending_register = models.Register.query.filter(
+def find_one_by_username(username) -> models.Register:
+    register = models.Register.query.filter(
         models.Register.username == username
     ).first()
 
-    return pending_register or None
+    return register or None
 
 
 def delete_one_by_email(email):
