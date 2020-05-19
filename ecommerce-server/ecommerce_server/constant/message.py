@@ -23,6 +23,10 @@ PASSWORD_DIFF = "The new password must be different from the last 5 passwords"
 
 REGISTED = "We can't find your register"
 
+REGISTED_BEFORE = "This account has registered before. Please check your email to confirm you account first"
+
+USER_EXIST = "Users existed"
+
 MUST_CONFIRM_EMAIL = "You must confirm your email first"
 
 INVALID_USERNAME_OR_PASSWORD = "Invalid username or password format!!!"
