@@ -16,8 +16,8 @@ _logger = logging.getLogger(__name__)
 
 ns = Namespace('register', description='Register operations')
 
-_register_req = ns.model('register_req', requests.register_user_req)
-_register_res = ns.model('register_res', responses.pending_register_res)
+_register_req = ns.model('register_req', requests.register_user_req, )
+_register_res = ns.model('register_res', responses.register_res)
 
 
 @ns.route('/', methods=['GET', 'POST'])
@@ -25,10 +25,9 @@ class Registers(flask_restplus.Resource):
     @ns.expect(_register_req, validate=True)
     @ns.marshal_with(_register_res)
     def post(self):
-        "validate register data, add data to pending register table and send confirm email"
         data = request.args or request.json
         pending_register = services.pending_register.create_pending_register(**data)
-        send_confirm_email(**data)
+        send_confirm_email(**data)  # Todo: Move send email to job queue to handle mail server error
         return pending_register
 
 
