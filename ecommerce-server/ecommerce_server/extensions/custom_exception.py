@@ -28,7 +28,7 @@ class BlockingException(HTTPException):
         super().__init__(code=403, message=message, errors=errors, custom_code='blocking')
 
 
-class BlockedException(HTTPException):
+class UserBlockedException(HTTPException):
     def __init__(self, message=exception_message.BLOCKED, errors=None):
         super().__init__(code=403, message=message, errors=errors, custom_code='blocked')
 
