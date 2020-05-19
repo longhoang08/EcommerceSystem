@@ -18,14 +18,12 @@ _change_req = ns.model('change_password_req', requests.change_password_req)
 _change_res = ns.model('change_password_res', responses.user_res)
 
 
-@ns.route('/change_password', methods=['GET', 'POST'])
+@ns.route('/change_password', methods=['POST'])
 class Change_password(flask_restplus.Resource):
     @ns.expect(_change_req, validate=True)
     @ns.marshal_with(_change_res)
     def post(self):
         "validate user by current password and jwt token and set new password"
         data = request.args or request.json
-        email = data.get('email')
-        check_permission(email)
-        new_user = services.password.change_password(**data)
-        return new_user
+        check_permission(data.get('email'))
+        return services.user.change_password(**data)
