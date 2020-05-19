@@ -25,13 +25,15 @@ def change_password(user, new_password):
     return user
 
 
-def find_one_by_email_or_username_ignore_case(email, username):
+def find_one_by_email_or_phone_number_ignore_case(email: str, phone_number: str) -> m.User:
+    # Todo: normalize phone number and email
+
     user = m.User.query.filter(
         or_(
-            m.User.username == username,
+            m.User.phone_number == phone_number,
             m.User.email == email
         )
-    ).first()  # type: m.User
+    ).first()
 
     return user or None
 
@@ -67,6 +69,7 @@ def block_user(user):
     user.un_block_at = now_after_block_time
     m.db.session.commit()
     return user
+
 
 def un_block_user(user):
     user.is_active = True

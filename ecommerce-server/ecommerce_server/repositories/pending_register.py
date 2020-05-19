@@ -16,15 +16,15 @@ def save_pending_register_to_database(**kwargs):
     return pending_register
 
 
-def find_one_by_email_or_username(email, username):
-    pending_register = models.Register.query.filter(
+def find_one_by_email_or_phone_number(email: str, phone_number: str) -> models.Register:
+    register = models.Register.query.filter(
         or_(
-            models.Register.username == username,
+            models.Register.phone_number == phone_number,
             models.Register.email == email
         )
     ).first()
 
-    return pending_register or None
+    return register or None
 
 
 def find_one_by_email(email):
