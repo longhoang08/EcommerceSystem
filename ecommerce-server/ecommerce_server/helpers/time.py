@@ -18,3 +18,6 @@ def minutes_to_ms(minutes):
 
 def get_time_range_to_block():
     return int(os.environ['TIME_RANGE_TO_BLOCK']) * 60
+
+def get_current_timestamp() -> float:
+    return datetime.datetime.now().timestamp()

@@ -2,12 +2,10 @@ import datetime
 
 import jwt
 
-from ecommerce_server.helpers import get_environ
-
-SECRET_KEY = get_environ('SECRET_KEY')
+from config import SECRET_KEY
 
 
-def encode_token(email, minute) -> str:
+def encode_token(email: str, minute: int) -> str:
     from ecommerce_server.extensions.custom_exception import EncodeErrorException
 
     try:

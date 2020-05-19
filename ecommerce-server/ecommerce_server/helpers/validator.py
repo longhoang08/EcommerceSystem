@@ -1,7 +1,12 @@
+from typing import Tuple
+
 import email_validator
 
+from ecommerce_server.constant.exception_message import PHONE_NUMBER_RULE, PASSWORD_RULE, FULLNAME_RULE, EMAIL_RULE
+from ecommerce_server.helpers import string_utils
 
-def validate_email(email):
+
+def validate_email(email: str) -> bool:
     try:
         email_validator.validate_email(email)  # validate and get info
     except email_validator.EmailNotValidError:
@@ -9,17 +14,39 @@ def validate_email(email):
     return True
 
 
-def validate_password(password):
-    return len(password) >= 8 and len(password) <= 100 and password.replace(' ', '').isalnum()
+def validate_phone_number(phone_number) -> bool:
+    if not phone_number: return True  # Allow phone number to be null or empty
+    return len(phone_number) == 10 and phone_number[0] == '0'
 
 
-def validate_fullname(fullname):
+def validate_password(password: str) -> bool:
+    return len(password) >= 8 and len(password) <= 100
+
+
+def validate_fullname(fullname: str) -> bool:
     return len(fullname) >= 4 and len(fullname) <= 100 and fullname.replace(' ', '').isalpha()
 
 
-def validate_register(email: str, fullname: str, password: str) -> bool:
-    return (
-            validate_email(email) and
-            validate_fullname(fullname) and
-            validate_password(password)
-    )
+def validate_register(email: str, phone_number: str, fullname: str, password: str):
+    from ecommerce_server import BadRequestException
+
+    if not validate_email(email): raise BadRequestException(EMAIL_RULE)
+    if not validate_fullname(fullname): raise BadRequestException(FULLNAME_RULE)
+    if not validate_password(password): raise BadRequestException(PASSWORD_RULE)
+    if not validate_phone_number(phone_number): raise BadRequestException(PHONE_NUMBER_RULE)
+
+
+def validate_login_request(email_or_phone_number: str, password: str) -> Tuple[str, str]:
+    from ecommerce_server import BadRequestException
+
+    phone_number = None
+    email = None
+    if not validate_email(email_or_phone_number):
+        phone_number = string_utils.normalize_phone_number(email_or_phone_number)
+        if not validate_phone_number(phone_number):
+            raise BadRequestException("Not a valid email or phone number")
+    else:
+        email = email_or_phone_number
+    if not validate_password(password):
+        raise BadRequestException("Invalid password format")
+    return email, phone_number
