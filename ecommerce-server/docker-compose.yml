@@ -1,17 +1,16 @@
 version: '3.7'
 services:
-#  app:
-#    build:
-#      context: .
-#      dockerfile: Dockerfile
-#    restart: on-failure
-#    env_file:
-#      - .env
-#    volumes:
-#      - ./:/code
-#    ports:
-#      - "${APP_PORT}:5001"
-
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: on-failure
+    env_file:
+      - .env
+    volumes:
+      - ./:/code
+    ports:
+      - "${APP_PORT}:5001"
 
   mysql_01:
     image: mysql:8
@@ -65,4 +64,3 @@ services:
       ELASTICSEARCH_HOSTS: http://elasticsearch_01:9200/
     ports:
       - '${KIBANA_FORWARD_PORT}:5601'
-
