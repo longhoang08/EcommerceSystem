@@ -74,12 +74,12 @@ class UsernameNotMatchEmailException(HTTPException):
 
 
 class RegisterBeforeException(HTTPException):
-    def __init__(self, message='registed before', errors=None):
+    def __init__(self, message=message.REGISTED_BEFORE, errors=None):
         super().__init__(code=409, message=message, errors=errors, custom_code='registed_before')
 
 
 class UserExistsException(HTTPException):
-    def __init__(self, message='user exists', errors=None):
+    def __init__(self, message=message.USER_EXIST, errors=None):
         super().__init__(code=409, message=message, errors=errors, custom_code='user_exists')
 
 
