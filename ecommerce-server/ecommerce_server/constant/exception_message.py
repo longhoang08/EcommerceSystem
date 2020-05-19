@@ -1,3 +1,11 @@
+EMAIL_RULE = "Email must be valid"
+
+FULLNAME_RULE = "Full name must contain only alphabet character and space with length from 4 to 100"
+
+PASSWORD_RULE = "Password must contain from 8 to 100 characters"
+
+PHONE_NUMBER_RULE = 'Must be valid vietnam phone number. Example: "+84941670xxx", "84941670xxx" or "0941670xxx"'
+
 WRONG_PASSWORD = "Please check carefully and sign in again!"
 
 PLEASE_LOGIN = 'Please login to use this feature'

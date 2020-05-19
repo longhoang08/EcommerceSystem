@@ -1,2 +1,2 @@
 from . import link
-from . import message
+from . import exception_message
