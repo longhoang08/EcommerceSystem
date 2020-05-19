@@ -31,7 +31,7 @@ class TimestampMixin(object):
 class UserBase():
     @declared_attr
     def email(self):
-        return _sa.Column(_sa.String(256))
+        return _sa.Column(_sa.String(256), unique=True, nullable=False)
 
     @declared_attr
     def fullname(self):
@@ -39,7 +39,7 @@ class UserBase():
 
     @declared_attr
     def phone_number(self):
-        return _sa.Column(_sa.String(256))
+        return _sa.Column(_sa.String(256), index=True, unique=True, nullable=True)
 
     @declared_attr
     def password(self):
