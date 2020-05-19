@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/azur"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/gradient_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:scaleType="fitCenter"
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30sp"
+                app:srcCompat="@drawable/ic_person_black_24dp" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittextstyle"
+                android:hint="Phone Number"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:background="@drawable/edittextstyle"
+                android:id="@+id/editText6"
+                android:layout_marginTop="30dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_gravity="center_horizontal"
+                android:hint="Password" />
+
+            <Button
+                android:background="@drawable/buttonstyle"
+                android:layout_marginTop="30dp"
+                android:id="@+id/button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <Button
+                android:background="@drawable/googlebuttonstyle"
+                android:layout_marginTop="30dp"
+                android:id="@+id/button1"
+                android:layout_width="200dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="Login with Google"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/google"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?Sign Up"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
