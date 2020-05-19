@@ -61,12 +61,9 @@ def create_app():
 
     # setup jwt extended
     app.config['JWT_SECRET_KEY'] = os.environ['SECRET_KEY']
-    app.config['JWT_TOKEN_LOCATION'] = ['cookies']
+    app.config['JWT_TOKEN_LOCATION'] = ['headers']
     # How long an access token should live before it expires. Set by minutes (int)
     app.config['JWT_ACCESS_TOKEN_EXPIRES'] = int(os.environ['TOKEN_UPTIME']) * 60
-    # app.config['JWT_REFRESH_COOKIE_PATH'] = '/token/refresh'
-    # app.config['JWT_ACCESS_COOKIE_PATH'] = '/api/'
-    # should not, but i will use it in this app.
     app.config['JWT_COOKIE_CSRF_PROTECT'] = False
 
     jwt = JWTManager(app)
