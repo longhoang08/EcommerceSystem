@@ -30,18 +30,14 @@ VALID_USERS = [
 
 def insert_some_user_to_db_for_testing():
     for register in VALID_USERS:
-        repositories.user.save_user_to_database(
+        repositories.user.create_new_user(
             username=register['username'],
             email=register['email'],
             fullname=register['fullname'],
             password=hash_password(register['password']),
         )
-    for register in VALID_USERS:
-        assert (repositories.user.find_one_by_username(register['username']) != None)
 
 
 def insert_some_register_to_db_for_testing():
     for register in VALID_USERS:
-        repositories.pending_register.save_pending_register_to_database(**register)
-    for register in VALID_USERS:
-        assert (repositories.pending_register.find_one_by_username(register['username']) != None)
+        repositories.register.create_new_register(**register)
