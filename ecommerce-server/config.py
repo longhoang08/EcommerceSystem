@@ -28,6 +28,7 @@ MYSQL_DATABASE = os.getenv('MYSQL_DATABASE')
 MYSQL_HOST = os.getenv('MYSQL_HOST')
 MYSQL_USER = os.getenv('MYSQL_USER')
 MYSQL_PASSWORD = os.getenv('MYSQL_PASSWORD')
+MYSQL_PORT = os.getenv('MYSQL_PORT')
 
 MAIL_SERVER = 'smtp.gmail.com'
 MAIL_PORT = 465
@@ -37,17 +38,18 @@ MAIL_USERNAME = os.environ['EMAIL_USER']
 MAIL_PASSWORD = os.environ['EMAIL_PASSWORD']
 
 REDIS_HOST = os.environ['REDIS_HOST']
+REDIS_PORT = os.environ['REDIS_PORT']
 REDIS_PASSWORD = os.environ['REDIS_PASSWORD']
 
 ELASTIC_HOST = os.environ['ELASTICSEARCH_HOST']
 FILES_INDEX = os.environ['ELASTIC_FILE_INDEX']
 
-REDIS_URL = 'redis://:{0}@{1}:6379/0'.format(
-    REDIS_PASSWORD, REDIS_HOST
+REDIS_URL = 'redis://:{0}@{1}:{2}/0'.format(
+    REDIS_PASSWORD, REDIS_HOST, REDIS_PORT
 )
 
 SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://{0}:{1}@{2}:{3}/{4}'.format(
-    MYSQL_USER, MYSQL_PASSWORD, MYSQL_HOST, 3306, MYSQL_DATABASE
+    MYSQL_USER, MYSQL_PASSWORD, MYSQL_HOST, MYSQL_PORT, MYSQL_DATABASE
 )
 SQLALCHEMY_TRACK_MODIFICATIONS = True
 SQLALCHEMY_COMMIT_ON_TEARDOWN = True
@@ -65,6 +67,7 @@ CELERYBEAT_SCHEDULE = {
         'schedule': crontab(0, 0, day_of_month='1'),
     }
 }
+
 
 def _env(name, default):
     """ Get configuration from environment in priorities:
@@ -115,4 +118,3 @@ for name in _vars:
     if not name.startswith('_') and name.isupper():
         env_var, val = _env(name, locals()[name])
         locals()[name] = val
-
