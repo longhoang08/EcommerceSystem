@@ -9,12 +9,23 @@ from ecommerce_server.extensions.exceptions import global_error_handler
 __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
 
+authorizations = {
+    'access token': {
+        'type': 'apiKey',
+        'in': 'header',
+        'name': 'Authorization',
+        'description': "Type in the *'Value'* input box below: **'Bearer &lt;JWT&gt;'**, where JWT is the token"
+    }
+}
+
 api_bp = Blueprint('api', __name__, url_prefix='/api')
 
 api = Api(
     app=api_bp,
     version='1.0',
-    title='File Management API',
+    title="UShop's API",
+    security='Basic Auth',
+    authorizations=authorizations,
     validate=False,
 )
 
