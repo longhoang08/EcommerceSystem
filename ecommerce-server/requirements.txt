@@ -1,5 +1,5 @@
 flask==1.0.2
-python-dotenv~=0.10.1
+python-dotenv==0.13.0
 flask-restplus==0.12.1
 pytest-flask==0.10.0
 sqlalchemy>=1.2.0b3
@@ -28,3 +28,5 @@ elasticsearch==7.0.2
 elasticsearch-dsl==7.0.0
 sentry-sdk==0.13.5
 Werkzeug==0.16.1
+jsons==1.1.2
+
