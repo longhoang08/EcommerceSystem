@@ -14,15 +14,12 @@ def validate_password(password):
 
 
 def validate_fullname(fullname):
-    return len(fullname) >= 8 and len(fullname) <= 100 and fullname.replace(' ', '').isalpha()
+    return len(fullname) >= 4 and len(fullname) <= 100 and fullname.replace(' ', '').isalpha()
 
 
-def validate_username(username):
-    return len(username) >= 6 and len(username) <= 20 and username.replace(' ', '').isalnum()
-
-
-def validate_register(username, email, fullname, password):
-    return (validate_username(username) and
+def validate_register(email: str, fullname: str, password: str) -> bool:
+    return (
             validate_email(email) and
             validate_fullname(fullname) and
-            validate_password(password))
+            validate_password(password)
+    )
