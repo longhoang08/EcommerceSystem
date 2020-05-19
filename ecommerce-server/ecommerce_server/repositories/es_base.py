@@ -1,7 +1,6 @@
 # coding=utf-8
 import logging
 
-import elasticsearch.helpers
 from elasticsearch import Elasticsearch
 
 from config import ELASTIC_HOST
