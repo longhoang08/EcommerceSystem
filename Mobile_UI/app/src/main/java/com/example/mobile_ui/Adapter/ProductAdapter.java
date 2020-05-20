@@ -47,7 +47,7 @@ public class ProductAdapter extends BaseAdapter {
             // gan gia tri
             imageViewProduct.setImageResource(listProduct.get(position).getImageRepresent());
             textViewNameProduct.setText(listProduct.get(position).getName());
-            textViewPriceProduct.setText(listProduct.get(position).getPrice()+"");
+            textViewPriceProduct.setText(listProduct.get(position).getPrice()+" VND");
             textViewStarProduct.setText(listProduct.get(position).getStar()+"");
         } else {
             view = convertView;

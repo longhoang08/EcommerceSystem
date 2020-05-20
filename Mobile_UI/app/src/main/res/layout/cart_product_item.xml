@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="97dp">
+
+    <ImageView
+        android:id="@+id/imageViewRepresentProduct"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxProduct"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_pineapple" />
+
+    <TextView
+        android:id="@+id/textViewNameProduct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Hamer Candy 1pcs"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewRepresentProduct"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPriceProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="25000 VND"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageViewRepresentProduct"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameProduct" />
+
+    <CheckBox
+        android:id="@+id/checkBoxProduct"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewRepresentProduct"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewRepresentProduct"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:imeOptions="actionDone"
+        android:id="@+id/editTextQuantityProduct"
+        android:layout_width="70dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/box_edittext"
+        android:ems="10"
+        android:hint="so luong"
+        android:inputType="numberSigned"
+        android:padding="5dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewRepresentProduct"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPriceProduct" />
+
+    <TextView
+        android:id="@+id/textViewQuantityInStockProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Con 7 san pham"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintStart_toEndOf="@+id/editTextQuantityProduct"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPriceProduct" />
+</androidx.constraintlayout.widget.ConstraintLayout>

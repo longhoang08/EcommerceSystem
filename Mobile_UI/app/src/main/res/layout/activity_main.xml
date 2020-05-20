@@ -19,6 +19,7 @@
             android:background="#ddd"
             android:layout_marginRight="50dp"/>
         <ImageButton
+            android:id="@+id/imageButtonCart"
             android:layout_alignParentRight="true"
             android:background="#fff"
             android:layout_width="60dp"

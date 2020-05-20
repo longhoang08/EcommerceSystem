@@ -7,9 +7,11 @@ import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TableLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.mobile_ui.Adapter.DetailProductDescriptionAdapter;
@@ -38,6 +40,8 @@ public class DetailProductActivity extends AppCompatActivity {
 
     private ExpandHeightGridView expandHeightGridViewReviewProduct;
     private Button buttonViewAllReviewProduct;
+    // mua hang
+    private TextView textViewAddToCart, textViewBuyNow, textViewNoticeAddProduct;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -101,6 +105,33 @@ public class DetailProductActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(DetailProductActivity.this, ListReviewProductActivity.class);
                 startActivity(intent);
+            }
+        });
+        // su kien mua hang
+        textViewAddToCart = findViewById(R.id.textViewAddToCart);
+        textViewBuyNow = findViewById(R.id.textViewBuyNow);
+        textViewNoticeAddProduct = findViewById(R.id.textViewNoticeAddProduct);
+        textViewAddToCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textViewNoticeAddProduct.setVisibility(View.VISIBLE);
+                new CountDownTimer(500, 500) {
+
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+
+                    }
+
+                    @Override
+                    public void onFinish() {
+                        textViewNoticeAddProduct.setVisibility(View.INVISIBLE);
+                    }
+                }.start();
+            }
+        });
+        textViewBuyNow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
             }
         });
     }
