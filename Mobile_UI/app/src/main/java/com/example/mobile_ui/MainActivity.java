@@ -61,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
             //thay the fragment container bang fragment tuong ung
-
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
             return true;
         }
