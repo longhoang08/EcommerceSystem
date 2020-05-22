@@ -1,13 +1,17 @@
 package com.example.mobile_ui;
 
+import android.Manifest;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
+import android.widget.ImageButton;
 
 import com.example.mobile_ui.Fragment.AccountFragment;
 import com.example.mobile_ui.Fragment.HomeFragment;
 import com.example.mobile_ui.Fragment.NotificationsFragment;
-import com.example.mobile_ui.Fragment.ProductDetailDescriptionFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
@@ -16,6 +20,8 @@ import androidx.fragment.app.Fragment;
 
 public class MainActivity extends AppCompatActivity {
 
+    // gio hang
+    private ImageButton imageButtonCart;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
         bottomnav.setOnNavigationItemSelectedListener(navListener);
         // khi mới vào, mặc định chọn nav.item_home
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
+        // su kien an vao gio hang
+        imageButtonCart = findViewById(R.id.imageButtonCart);
+        imageButtonCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CartProductActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     //ham set su kien cho navigation====================================================================================
@@ -46,9 +61,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
             //thay the fragment container bang fragment tuong ung
-
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
             return true;
         }
     };
+
 }

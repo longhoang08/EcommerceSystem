@@ -37,9 +37,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="5 sao(1)"
-                    android:textAllCaps="true" />
+                    android:textAllCaps="false" />
                 <Button
-                    android:textAllCaps="true"
+                    android:textAllCaps="false"
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -90,6 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
                 android:textStyle="bold"
                 android:textSize="14sp"
                 android:text="Không còn nhận xét nào" />

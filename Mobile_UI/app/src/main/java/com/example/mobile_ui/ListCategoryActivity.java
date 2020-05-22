@@ -31,7 +31,7 @@ public class ListCategoryActivity extends AppCompatActivity {
         listCategoryProduct.add(new Category(R.drawable.icon_kiwi_fruit, "Rồng hoa quả"));
         listCategoryProduct.add(new Category(R.drawable.icon_pineapple, "Rồng hoa quả"));
         listCategoryProduct.add(new Category(R.drawable.icon_dragon_fruit, "Rồng hoa quả"));
-        listCategoryProduct.add(new Category(R.drawable.icon_kiwi_fruit, "Rồng hoa quả"));
+        listCategoryProduct.add(new Category(R.drawable.icon_pineapple, "Cham soc va giat giu n..."));
         listCategoryProduct.add(new Category(R.drawable.icon_pineapple, "Rồng hoa quả"));
         listCategoryProduct.add(new Category(R.drawable.icon_dragon_fruit, "Rồng hoa quả"));
         listCategoryProduct.add(new Category(R.drawable.icon_kiwi_fruit, "Rồng hoa quả"));
