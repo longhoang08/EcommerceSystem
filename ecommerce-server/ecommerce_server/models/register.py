@@ -2,7 +2,7 @@ from ecommerce_server.models import db, TimestampMixin, UserBase
 
 
 class Register(db.Model, TimestampMixin, UserBase):
-    __tablename__ = 'registers'
+    __tablename__ = 'register'
 
     def __init__(self, **kwargs):
         for k, v in kwargs.items():
