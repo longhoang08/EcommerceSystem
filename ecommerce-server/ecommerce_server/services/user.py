@@ -2,16 +2,16 @@
 import logging
 
 from flask import jsonify
-from flask_jwt_extended import create_access_token, set_access_cookies, unset_jwt_cookies
+from flask_jwt_extended import create_access_token, unset_jwt_cookies
 
-from ecommerce_server.helpers import validator, get_max_age, get_current_timestamp, verify_password
-from ecommerce_server.models import User
-from ecommerce_server.repositories import user as repo
-from ecommerce_server.services import register as register_service, password as password_service
-
+from ecommerce_server.commons.decorators import login_required
 from ecommerce_server.extensions.custom_exception import MustConfirmEmailException, UserNotFoundException, \
     UserExistsException, NotInPendingException, NeedLoggedInException, PermissionException, UserBlockedException, \
     WrongCurrentPasswordException
+from ecommerce_server.helpers import validator, get_current_timestamp, verify_password
+from ecommerce_server.models import User
+from ecommerce_server.repositories import user as repo
+from ecommerce_server.services import register as register_service, password as password_service
 
 __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
@@ -47,10 +47,11 @@ def confirm_user_by_email(email: str) -> User:
     return new_user
 
 
-def fetch_user_status_by_email(email):
-    from ecommerce_server.constant.user import Constant_user
+@login_required
+def fetch_user_status(**kwargs):
+    email = kwargs.get('email')
     user = repo.find_one_by_email(email)
-    return Constant_user.none_user if not user else user
+    return user
 
 
 def login(username, password):
@@ -60,12 +61,15 @@ def login(username, password):
 
 
 def logout():
+    # Todo: remove token from redis
     resp = jsonify({'logout': True})
     unset_jwt_cookies(resp)
     return resp
 
 
-def change_password(email: str, current_password: str, new_password: str, **kwargs) -> User:
+@login_required
+def change_password(current_password: str, new_password: str, **kwargs) -> User:
+    email = kwargs.get('email')
     user = repo.find_one_by_email(email)
     if not user: raise UserNotFoundException()
     if not verify_password(user.password, current_password): raise WrongCurrentPasswordException()
@@ -104,15 +108,6 @@ def check_username_and_password(email_or_phone_number: str, password: str):
     if not user.is_active:
         handle_in_active(user)
     return user
-
-
-def check_permission(user_email):
-    from .token import check_jwt_token
-    jwt_email = check_jwt_token()
-    if (jwt_email == None):
-        raise NeedLoggedInException()
-    if (user_email != jwt_email):
-        raise PermissionException()
 
 
 def find_one_by_email_or_phone_number_ignore_case(email: str, phone_number: str) -> User:

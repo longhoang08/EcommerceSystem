@@ -6,7 +6,6 @@ from flask import request
 
 from ecommerce_server import services
 from ecommerce_server.extensions import Namespace
-from ecommerce_server.services.user import check_permission
 from . import requests, responses
 
 __author__ = 'LongHB'
@@ -25,5 +24,4 @@ class Change_password(flask_restplus.Resource):
     def post(self):
         "validate user by current password and jwt token and set new password"
         data = request.args or request.json
-        check_permission(data.get('email'))
         return services.user.change_password(**data)

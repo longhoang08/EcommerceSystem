@@ -18,7 +18,6 @@ login_google_req = {
 }
 
 change_password_req = {
-    'email': fields.String(required=True, description='email'),
     'current_password': fields.String(required=True, description='current password'),
     'new_password': fields.String(required=True, description='new password')
 }
