@@ -9,7 +9,7 @@ from ecommerce_server.extensions.custom_exception import MustConfirmEmailExcepti
     UserExistsException, NotInPendingException, UserBlockedException, \
     WrongCurrentPasswordException, WrongPasswordException
 from ecommerce_server.helpers import validator, get_current_timestamp, verify_password
-from ecommerce_server.models import User
+from ecommerce_server.models import User, UserRole
 from ecommerce_server.repositories import user as repo
 from ecommerce_server.services import register as register_service, password as password_service
 
@@ -91,6 +91,12 @@ def find_one_by_user_id(user_id: int) -> User:
 
 def find_one_by_email(email: str) -> User:
     return repo.find_one_by_email(email)
+
+
+def find_one_by_email_else_throw(email: str) -> User:
+    user = repo.find_one_by_email(email)
+    if not user: raise UserNotFoundException()
+    return user
 
 
 def create_or_update_password(user: User, password: str) -> User:

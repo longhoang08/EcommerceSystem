@@ -6,7 +6,7 @@ from ecommerce_server.commons.uet_constant import DEFAULT_AVATAR
 from ecommerce_server.models import db, TimestampMixin, UserBase
 
 
-class UserRole(enum.Enum):
+class UserRole():
     Admin = 0
     Customer = 1
     Seller = 2
