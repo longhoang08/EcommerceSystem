@@ -13,15 +13,26 @@ _logger = logging.getLogger(__name__)
 
 ns = Namespace('profile', description='Profile operations')
 
-_change_req = ns.model('change_password_req', requests.change_password_req)
-_change_res = ns.model('change_password_res', responses.user_res)
+_change_password_req = ns.model('change_password_req', requests.change_password_req)
+_user_res = ns.model('user_res', responses.user_res)
 
 
 @ns.route('/change_password', methods=['POST'])
-class Change_password(flask_restplus.Resource):
-    @ns.expect(_change_req, validate=True)
-    @ns.marshal_with(_change_res)
+class ChangePassword(flask_restplus.Resource):
+    @ns.expect(_change_password_req, validate=True)
+    @ns.marshal_with(_user_res)
     def post(self):
         "validate user by current password and jwt token and set new password"
         data = request.args or request.json
         return services.user.change_password(**data)
+
+_change_profile_req = ns.model('change_profile_req', requests.change_profile_req)
+
+@ns.route('/update_profile', methods=['POST'])
+class UpdateProfile(flask_restplus.Resource):
+    @ns.expect(_change_password_req, validate=True)
+    @ns.marshal_with(_user_res)
+    def post(self):
+        "validate user by current password and jwt token and set new password"
+        data = request.args or request.json
+        return services.user.change_profile(**data)

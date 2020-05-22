@@ -10,6 +10,7 @@ from . import user
 from . import register
 from . import mail_service
 from . import password
+from . import product
 from . import file
 
 my_mail = Mail()

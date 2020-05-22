@@ -76,6 +76,14 @@ def change_password(current_password: str, new_password: str, **kwargs) -> User:
     return create_or_update_password(user, new_password)
 
 
+@login_required
+def change_profile(**kwargs) -> User:
+    email = kwargs.get('email')
+    user = repo.find_one_by_email(email)
+    if not user: raise UserNotFoundException()
+    return update_profile(user)
+
+
 # ======================================================================================================================
 def find_one_by_user_id(user_id: int) -> User:
     return repo.find_one_by_user_id(user_id)
@@ -86,6 +94,13 @@ def create_or_update_password(user: User, hashed_password: str) -> User:
     user.password = password_service
     repo.save(user)
     return user
+
+
+def update_profile(user: User, **kwargs) -> User:
+    avatar_url = kwargs.get('avatar_url')
+    if avatar_url:
+        user.avatar_url = avatar_url
+    return repo.save(user)
 
 
 def handle_in_active(user) -> User:
