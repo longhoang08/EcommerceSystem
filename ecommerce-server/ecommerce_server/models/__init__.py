@@ -32,6 +32,6 @@ def init_app(app, **kwargs):
 
 
 from .base import TimestampMixin, UserBase
-from .user import User
+from .user import User, UserRole
 from .register import Register
 from .password import Password
