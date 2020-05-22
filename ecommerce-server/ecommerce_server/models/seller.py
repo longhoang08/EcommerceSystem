@@ -4,7 +4,7 @@ import enum
 from ecommerce_server.models import db, TimestampMixin
 
 
-class SellerStatus(enum.Enum):
+class SellerStatus():
     Pending = 0
     Approved = 1
 
@@ -25,18 +25,7 @@ class Seller(db.Model, TimestampMixin):
 
     def to_dict(self):
         return {
-            'id': self.id,
-            'email': self.email,
-            'fullname': self.fullname,
-            'avatarUrl': self.avatar_url,
-            'isAdmin': self.is_admin,
-            'isActive': self.is_active,
-            'password': self.password,
-        }
-
-    def to_display_dict(self):
-        return {
-            'email': self.email,
-            'fullname': self.fullname,
-            'avatar_url': self.avatar_url,
+            'id': self.user_id,
+            'description': self.email,
+            'status': 'reviewing' if (self.status == SellerStatus.Pending) else 'approved',
         }
