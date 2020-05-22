@@ -75,6 +75,9 @@ TOKEN_UPTIME = int(os.getenv('TOKEN_UPTIME'))
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
+IMG_CLIENT_ID = os.getenv('IMG_CLIENT_ID')
+
+IMG_CLIENT_SECRET = os.getenv('IMG_CLIENT_SECRET')
 
 def _env(name, default):
     """ Get configuration from environment in priorities:
