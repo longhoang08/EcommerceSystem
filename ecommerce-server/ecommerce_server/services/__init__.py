@@ -9,7 +9,6 @@ _logger = logging.getLogger(__name__)
 from . import user
 from . import register
 from . import mail_service
-from . import token
 from . import password
 from . import file
 
