@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,14 +11,10 @@
         android:background="#CE009969"
         android:textColor="@android:color/white"
         android:id="@+id/buttonLogin"
-        android:textAllCaps="false"
         android:layout_width="100dp"
         android:layout_height="40dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
         android:text="Đăng nhập"
-        app:layout_constraintEnd_toStartOf="@+id/buttonSignUp"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:visibility="invisible"/>
 
     <Button
         android:textColor="@android:color/white"
@@ -26,10 +22,64 @@
         android:id="@+id/buttonSignUp"
         android:layout_width="100dp"
         android:layout_height="40dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
         android:text="Đăng ký"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_toRightOf="@id/buttonLogin"
+        android:visibility="invisible"/>
+
+<!--    &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+    <!--    ảnh +name-->
+    <RelativeLayout
+        android:id="@+id/user_infor"
+        android:layout_width="match_parent"
+        android:background="#C9E6CA"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/user_infor_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="90dp">
+            <ImageView
+                android:id="@+id/user_infor_img_main"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/google"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/user_infor_img"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/abc"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:text="Nguyễn Thành An"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:id="@+id/soSp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:text="số sản phẩm : 7"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/listDetailAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_infor"
+        />
+</RelativeLayout>
