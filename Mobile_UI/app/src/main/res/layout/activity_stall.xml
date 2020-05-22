@@ -1,9 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StallActivity">
+    tools:context=".StallActivity"
+    android:paddingTop="0dp"
+    android:paddingBottom="?attr/actionBarSize">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/stall_infor"
+        android:layout_width="match_parent"
+        android:background="#C9E6CA"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/stall_infor_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="90dp">
+            <ImageView
+                android:id="@+id/stall_infor_img_main"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/google"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/stall_infor_img"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/abc"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:text="Nguyễn Thành An"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:id="@+id/soSp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:text="số sản phẩm : 7"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stall_infor"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="231dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/parent_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="60dp">
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_launcher_background"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_centerHorizontal="true"
+                android:text="Start Selling Your Products" />
+
+            <Button
+                android:id="@+id/btn_add_product"
+                android:layout_width="140dp"
+                android:layout_height="62dp"
+                android:layout_centerHorizontal="true"
+                android:text="Thêm sản phẩm" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

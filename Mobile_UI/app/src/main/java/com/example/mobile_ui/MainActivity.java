@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.SearchView;
 
 import com.example.mobile_ui.Fragment.AccountFragment;
 import com.example.mobile_ui.Fragment.HomeFragment;
+import com.example.mobile_ui.Fragment.ListviewSearchFragment;
 import com.example.mobile_ui.Fragment.NotificationsFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -19,11 +21,15 @@ public class MainActivity extends AppCompatActivity {
 
     // gio hang
     private ImageButton imageButtonCart;
+    //search
+    public static SearchView searchView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //thêm sự kiện cho searchView
+        searchSetEvent();
         //thêm sự kiện cho bottom nav
         BottomNavigationView bottomnav = findViewById(R.id.bottom_navigation);
         bottomnav.setOnNavigationItemSelectedListener(navListener);
@@ -62,5 +68,35 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
     };
+
+    void searchSetEvent(){
+        //search=========================================================================================================
+        searchView = (SearchView) findViewById(R.id.searchView);
+
+        searchView.setOnSearchClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                searchView.setIconifiedByDefault(true);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ListviewSearchFragment()).commit();
+            }
+
+        });
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                ListviewSearchFragment.adapter.getFilter().filter(newText);
+                return false;
+            }
+        });
+
+    }
+
+
 
 }
