@@ -49,6 +49,7 @@ public class CategoryProductListAdapter extends BaseAdapter {
             view = convertView;
         }
         return view;
+
     }
 }
 
