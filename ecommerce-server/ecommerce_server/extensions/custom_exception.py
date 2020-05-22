@@ -5,7 +5,7 @@ __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
 
 from ecommerce_server.extensions.exceptions import HTTPException
-from ecommerce_server.constant import exception_message
+from ecommerce_server.commons import exception_message
 
 
 class WrongPasswordException(HTTPException):

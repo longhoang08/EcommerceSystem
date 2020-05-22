@@ -2,7 +2,7 @@ from typing import Tuple
 
 import email_validator
 
-from ecommerce_server.constant.exception_message import PHONE_NUMBER_RULE, PASSWORD_RULE, FULLNAME_RULE, EMAIL_RULE
+from ecommerce_server.commons.exception_message import PHONE_NUMBER_RULE, PASSWORD_RULE, FULLNAME_RULE, EMAIL_RULE
 from ecommerce_server.helpers import string_utils
 
 
