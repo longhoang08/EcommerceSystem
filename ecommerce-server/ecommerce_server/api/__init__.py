@@ -7,14 +7,17 @@ from flask_restplus import Api
 from ecommerce_server.extensions.exceptions import global_error_handler
 
 __author__ = 'LongHB'
+
+from ..constant.uet_constant import ACCESS_TOKEN_KEY
+
 _logger = logging.getLogger(__name__)
 
 authorizations = {
-    'access token': {
+    'apikey': {
         'type': 'apiKey',
         'in': 'header',
-        'name': 'Authorization',
-        'description': "Type in the *'Value'* input box below: **'Bearer &lt;JWT&gt;'**, where JWT is the token"
+        'name': ACCESS_TOKEN_KEY,
+        'description': "Type in the *'Value'* input box below: {}: JWT, where JWT is the token".format(ACCESS_TOKEN_KEY)
     }
 }
 
@@ -24,8 +27,8 @@ api = Api(
     app=api_bp,
     version='1.0',
     title="UShop's API",
-    security='Basic Auth',
     authorizations=authorizations,
+    security='apikey',
     validate=False,
 )
 
