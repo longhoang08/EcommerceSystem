@@ -89,6 +89,10 @@ def find_one_by_user_id(user_id: int) -> User:
     return repo.find_one_by_user_id(user_id)
 
 
+def find_one_by_email(email: str) -> User:
+    return repo.find_one_by_email(email)
+
+
 def create_or_update_password(user: User, password: str) -> User:
     hashed_password = password_service.add_new_hashed_password(user.id, password)
     user.password = hashed_password
