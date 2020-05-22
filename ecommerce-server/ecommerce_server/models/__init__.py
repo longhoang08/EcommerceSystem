@@ -6,9 +6,6 @@ import flask_migrate as _fm
 import flask_sqlalchemy as _fs
 from dotenv import load_dotenv
 from flask_redis import FlaskRedis
-from mockredis import MockRedis
-
-from ecommerce_server.helpers.env import get_environ
 
 __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)

@@ -6,9 +6,9 @@ from flask_jwt_extended import create_access_token, unset_jwt_cookies
 
 from ecommerce_server.commons.decorators import login_required
 from ecommerce_server.extensions.custom_exception import MustConfirmEmailException, UserNotFoundException, \
-    UserExistsException, NotInPendingException, NeedLoggedInException, PermissionException, UserBlockedException, \
+    UserExistsException, NotInPendingException, UserBlockedException, \
     WrongCurrentPasswordException, WrongPasswordException
-from ecommerce_server.helpers import validator, get_current_timestamp, verify_password, hash_password
+from ecommerce_server.helpers import validator, get_current_timestamp, verify_password
 from ecommerce_server.models import User
 from ecommerce_server.repositories import user as repo
 from ecommerce_server.services import register as register_service, password as password_service

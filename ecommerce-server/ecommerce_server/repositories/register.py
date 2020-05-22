@@ -2,6 +2,7 @@
 import logging
 
 from sqlalchemy import or_
+
 from ecommerce_server import models as m
 from ecommerce_server.models import Register
 

@@ -6,7 +6,6 @@ from flask import request
 
 from ecommerce_server import services
 from ecommerce_server.extensions import Namespace
-from ecommerce_server.extensions.custom_exception import InvalidLoginTokenException
 from . import responses, requests
 
 __author__ = 'longhb'
