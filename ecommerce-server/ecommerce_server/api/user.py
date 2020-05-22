@@ -20,7 +20,6 @@ _user_res = ns.model('user_res', responses.user_res)
 @ns.route('/get_status', methods=['GET'])
 class UserStatus(flask_restplus.Resource):
     @ns.marshal_with(_user_res)
-
     def get(self):
         "fetch user status by checking jwt token"
         return services.user.fetch_user_status()
@@ -30,7 +29,7 @@ _login_req = ns.model('login_req', requests.login_req)
 
 
 @ns.marshal_with(_user_res)
-@ns.route('/login', methods=['GET', 'POST'])
+@ns.route('/login', methods=['POST'])
 class Login(flask_restplus.Resource):
     @ns.expect(_login_req, validate=True)
     def post(self):
@@ -40,7 +39,7 @@ class Login(flask_restplus.Resource):
         return resp
 
 
-@ns.route('/logout', methods=['GET', 'POST'])
+@ns.route('/logout', methods=['POST'])
 class Logout(flask_restplus.Resource):
     def post(self):
         "remove jwt token from httponly cookies"
