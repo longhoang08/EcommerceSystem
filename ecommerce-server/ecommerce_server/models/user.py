@@ -1,7 +1,7 @@
 # coding=utf-8
 import datetime
 
-from ecommerce_server.constant import link
+from ecommerce_server.commons.uet_constant import DEFAULT_AVATAR
 from ecommerce_server.models import db, TimestampMixin, UserBase
 
 
@@ -16,7 +16,7 @@ class User(db.Model, TimestampMixin, UserBase):
             setattr(self, k, v)
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    avatar_url = db.Column(db.String(256), default=link.DEFAULT_AVATAR)
+    avatar_url = db.Column(db.String(256), default=DEFAULT_AVATAR)
     role = db.Column(db.Integer, default=0)
     is_active = db.Column(db.Boolean, nullable=False, default=True)
     last_login = db.Column(db.TIMESTAMP, nullable=False, default=datetime.datetime.now)
