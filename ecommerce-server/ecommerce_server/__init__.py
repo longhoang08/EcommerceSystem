@@ -65,7 +65,7 @@ def create_app():
     # How long an access token should live before it expires. Set by minutes (int)
     app.config['JWT_ACCESS_TOKEN_EXPIRES'] = int(os.environ['TOKEN_UPTIME']) * 60
     app.config['JWT_COOKIE_CSRF_PROTECT'] = False
-    from ecommerce_server.constant.uet_constant import ACCESS_TOKEN_KEY, EMPTY_STRING
+    from ecommerce_server.commons.uet_constant import ACCESS_TOKEN_KEY, EMPTY_STRING
     app.config['JWT_HEADER_NAME'] = ACCESS_TOKEN_KEY
     app.config['JWT_HEADER_TYPE'] = EMPTY_STRING
 
