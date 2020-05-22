@@ -20,17 +20,10 @@ _user_res = ns.model('user_res', responses.user_res)
 @ns.route('/get_status', methods=['GET'])
 class UserStatus(flask_restplus.Resource):
     @ns.marshal_with(_user_res)
+
     def get(self):
         "fetch user status by checking jwt token"
-        from ecommerce_server.constant.user import Constant_user
-        try:
-            email = services.token.check_jwt_token()
-        except:
-            raise InvalidLoginTokenException()
-        if (email == None):
-            return Constant_user.none_user
-        user = services.user.fetch_user_status_by_email(email)
-        return user
+        return services.user.fetch_user_status()
 
 
 _login_req = ns.model('login_req', requests.login_req)

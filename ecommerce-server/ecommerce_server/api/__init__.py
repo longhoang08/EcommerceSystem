@@ -8,7 +8,7 @@ from ecommerce_server.extensions.exceptions import global_error_handler
 
 __author__ = 'LongHB'
 
-from ..constant.uet_constant import ACCESS_TOKEN_KEY
+from ecommerce_server.commons.uet_constant import ACCESS_TOKEN_KEY
 
 _logger = logging.getLogger(__name__)
 
