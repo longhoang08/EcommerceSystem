@@ -30,7 +30,7 @@ _change_profile_req = ns.model('change_profile_req', requests.change_profile_req
 
 @ns.route('/update_profile', methods=['POST'])
 class UpdateProfile(flask_restplus.Resource):
-    @ns.expect(_change_password_req, validate=True)
+    @ns.expect(_change_profile_req, validate=True)
     @ns.marshal_with(_user_res)
     def post(self):
         "validate user by current password and jwt token and set new password"

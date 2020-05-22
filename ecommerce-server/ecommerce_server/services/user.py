@@ -7,8 +7,8 @@ from flask_jwt_extended import create_access_token, unset_jwt_cookies
 from ecommerce_server.commons.decorators import login_required
 from ecommerce_server.extensions.custom_exception import MustConfirmEmailException, UserNotFoundException, \
     UserExistsException, NotInPendingException, NeedLoggedInException, PermissionException, UserBlockedException, \
-    WrongCurrentPasswordException
-from ecommerce_server.helpers import validator, get_current_timestamp, verify_password
+    WrongCurrentPasswordException, WrongPasswordException
+from ecommerce_server.helpers import validator, get_current_timestamp, verify_password, hash_password
 from ecommerce_server.models import User
 from ecommerce_server.repositories import user as repo
 from ecommerce_server.services import register as register_service, password as password_service
@@ -89,9 +89,9 @@ def find_one_by_user_id(user_id: int) -> User:
     return repo.find_one_by_user_id(user_id)
 
 
-def create_or_update_password(user: User, hashed_password: str) -> User:
-    password_service.add_new_hashed_password(user.id, hashed_password)
-    user.password = password_service
+def create_or_update_password(user: User, password: str) -> User:
+    hashed_password = password_service.add_new_hashed_password(user.id, password)
+    user.password = hashed_password
     repo.save(user)
     return user
 
@@ -116,12 +116,16 @@ def check_username_and_password(email_or_phone_number: str, password: str):
     pending_register = register_service.find_one_by_email(email) if email else \
         register_service.find_one_by_phone_number(phone_number)
 
-    if (pending_register): raise MustConfirmEmailException()
+    if pending_register: raise MustConfirmEmailException()
 
     user = repo.find_one_by_email(email) if email else repo.find_one_by_phone_number(phone_number)
+
     if not user: raise UserNotFoundException()
-    if not user.is_active:
-        handle_in_active(user)
+
+    if not user.is_active: handle_in_active(user)
+
+    if not verify_password(user.password, password): raise WrongPasswordException()
+
     return user
 
 
