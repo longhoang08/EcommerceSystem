@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -24,6 +25,8 @@ import com.example.mobile_ui.View.ExpandHeightGridView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import retrofit2.Call;
 
 public class HomeFragment extends Fragment {
 
@@ -100,4 +103,56 @@ public class HomeFragment extends Fragment {
         listCategoryProduct.add(new Category(R.drawable.icon_pineapple, "Rồng hoa quả"));
     }
 }
+
+    //2. fill du lieu trc khi hien fragment
+//    final TextView tv1 = root.findViewById(R.id.textViewEmail);
+//    DataClient dataClient = APIUtils.getData();
+//    Call<List<User>> callback = dataClient.getUser();
+//        callback.enqueue(new Callback<List<User>>() {
+//@Override
+//public void onResponse(Call<List<User>> call, Response<List<User>> response) {
+//        if(response!=null){
+//        List<User> users = response.body();
+//        String kq = "";
+//        for (User s : users) {
+//        Log.d(s.getEmail(),s.getEmail());
+//        kq+=" " + s.getEmail();
+//        }
+//        tv1.setText(kq);
+//        }
+//        }
+//@Override
+//public void onFailure(Call<List<User>> call, Throwable throwable) {
+//        Log.d("EEROR",throwable.getMessage());
+//        }
+//        });
+
+
+
+
+
+
+
+
+
+
+    //call post api
+//    DataClient dataClient = APIUtils.getData();
+//    Call<User> callback = dataClient.signUp(user);
+//        callback.enqueue(new Callback<User>() {
+//@Override
+//public void onResponse(Call<User> call, Response<User> response) {
+//        if(response!=null){
+//        User x = response.body();
+//        String kq = x.getName()+ " "+x.getEmail();
+//        tv2.setText(kq);
+//        }
+//        }
+//
+//@Override
+//public void onFailure(Call<User> call, Throwable t) {
+//        Log.d("EEROR",t.getMessage());
+//        }
+//        });
+
 
