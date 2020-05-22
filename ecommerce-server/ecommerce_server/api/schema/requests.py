@@ -21,3 +21,7 @@ change_password_req = {
     'current_password': fields.String(required=True, description='current password'),
     'new_password': fields.String(required=True, description='new password')
 }
+
+change_profile_req = {
+    'avatar_url': fields.String(required=False, description='new url of user data')
+}
