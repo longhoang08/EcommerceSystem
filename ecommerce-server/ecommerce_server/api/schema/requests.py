@@ -25,3 +25,7 @@ change_password_req = {
 change_profile_req = {
     'avatar_url': fields.String(required=False, description='new url of user data')
 }
+
+seller_register_req = {
+    'description': fields.String(required=True, description='description of seller')
+}
