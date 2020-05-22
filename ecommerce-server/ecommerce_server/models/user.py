@@ -16,7 +16,7 @@ class User(db.Model, TimestampMixin, UserBase):
     """
     Contains information of users table
     """
-    __tablename__ = 'users'
+    __tablename__ = 'user'
 
     def __init__(self, **kwargs):
         for k, v in kwargs.items():

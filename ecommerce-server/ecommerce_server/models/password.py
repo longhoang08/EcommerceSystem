@@ -7,7 +7,7 @@ _logger = logging.getLogger(__name__)
 
 
 class Password(db.Model, TimestampMixin):
-    __tablename__ = 'passwords'
+    __tablename__ = 'password'
 
     def __init__(self, **kwargs):
         for k, v in kwargs.items():
