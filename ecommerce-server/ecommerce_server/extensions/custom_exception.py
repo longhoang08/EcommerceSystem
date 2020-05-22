@@ -103,6 +103,6 @@ class InvalidGoogleTokenException(HTTPException):
         super().__init__(code=401, message=message, errors=errors, custom_code='invalid_google_token')
 
 
-class CannotUploadFileException(HTTPException):
+class CannotUploadPictureException(HTTPException):
     def __init__(self, message=exception_message.CANT_UPLOAD_FILE, errors=None):
         super().__init__(code=400, message=message, errors=errors, custom_code='can_not_upload')

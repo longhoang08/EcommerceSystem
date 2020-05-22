@@ -49,4 +49,4 @@ INVALID_GOOGLE_TOKEN = "We can't login with your google token. Please try again.
 
 WELLCOME_GOOGLE_USER = "Wellcome to login app!"
 
-CANT_UPLOAD_FILE = "Can't upload your avatar. Please try again later."
+CANT_UPLOAD_FILE = "Can't upload your picture. Please try again later."
