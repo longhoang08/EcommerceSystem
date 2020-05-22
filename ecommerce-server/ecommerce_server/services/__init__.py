@@ -12,7 +12,7 @@ from . import mail_service
 from . import password
 from . import product
 from . import file
-
+from . import seller
 my_mail = Mail()
 
 
