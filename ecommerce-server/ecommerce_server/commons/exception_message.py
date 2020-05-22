@@ -48,3 +48,5 @@ BLOCKING = "Your account has been blocked for 15 minutes"
 INVALID_GOOGLE_TOKEN = "We can't login with your google token. Please try again."
 
 WELLCOME_GOOGLE_USER = "Wellcome to login app!"
+
+CANT_UPLOAD_FILE = "Can't upload your avatar. Please try again later."
