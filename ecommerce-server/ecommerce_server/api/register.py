@@ -32,7 +32,7 @@ class Registers(flask_restplus.Resource):
 
 
 @ns.route('/confirm_email/<token>', methods=['GET'])
-class Confirm_email(flask_restplus.Resource):
+class ConfirmEmail(flask_restplus.Resource):
     def get(self, token: str):
         "checking jwt token in param and add new user to user table"
         email = decode_token(token)
