@@ -41,7 +41,7 @@ _login_req = ns.model('login_req', requests.login_req)
 class Login(flask_restplus.Resource):
     @ns.expect(_login_req, validate=True)
     def post(self):
-        "check username and password and set jwt token to httponly cookies"
+        "check username and password and give jwt token to user"
         data = request.args or request.json
         resp = services.user.login(**data)
         return resp

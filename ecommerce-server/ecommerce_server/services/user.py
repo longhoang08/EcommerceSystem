@@ -53,12 +53,10 @@ def fetch_user_status_by_email(email):
     return Constant_user.none_user if not user else user
 
 
-def login(username, password, **data):
+def login(username, password):
     user = check_username_and_password(username, password)
-    resp = jsonify(user.to_display_dict())
     access_token = create_access_token(identity=user.email)
-    set_access_cookies(resp, access_token, max_age=get_max_age())
-    return resp
+    return {"access_token": access_token}
 
 
 def logout():
