@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -16,6 +18,7 @@ import com.example.mobile_ui.LoginActivity;
 import com.example.mobile_ui.Model.CartShop;
 import com.example.mobile_ui.R;
 import com.example.mobile_ui.SignUpActivity;
+import com.example.mobile_ui.StallActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,12 +48,23 @@ public class AccountFragment extends Fragment {
             }
         });
 
-//        listViewDetailAcc = root.findViewById(R.id.listDetailAccount);
-//        final List<String> abc = new ArrayList<>();
-//        abc.add("Xem Gian Hàng");
-//        abc.add("Xem Thông tin Cá Nhân");
-//        abc.add("Đăng xuất");
-//        CartProductShopAdapter listV = new CartProductShopAdapter(listCartShop);
+        listViewDetailAcc = root.findViewById(R.id.listDetailAccount);
+        final List<String> abc = new ArrayList<>();
+        abc.add("Xem Gian Hàng");
+        abc.add("Xem Thông tin Cá Nhân");
+        abc.add("Đăng xuất");
+        ArrayAdapter adapter = new ArrayAdapter(getActivity().getApplicationContext(),android.R.layout.simple_list_item_1,abc);
+        listViewDetailAcc.setAdapter(adapter);
+        listViewDetailAcc.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (abc.get(position)){
+                    case "Xem Gian Hàng":
+                        Intent intent = new Intent(getContext(), StallActivity.class);
+                        startActivity(intent);
+                }
+            }
+        });
         return root;
     }
 }
