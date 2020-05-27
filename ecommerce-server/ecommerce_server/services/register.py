@@ -14,8 +14,8 @@ __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
 
 
-def create_new_register(email, fullname, phone_number, password, **kwargs) -> Register:
-    phone_number = string_utils.normalize_phone_number(phone_number)
+def create_new_register(email, fullname, password, **kwargs) -> Register:
+    phone_number = string_utils.normalize_phone_number(kwargs.get('phone_number'))
     validate_register(email, phone_number, fullname, password)
 
     existed_user = user_service.find_one_by_email_or_phone_number_ignore_case(email, phone_number)

@@ -4,7 +4,7 @@ from flask_restplus import fields
 register_user_req = {
     'email': fields.String(required=True, description='user email address'),
     'phone_number': fields.String(required=False, fields="phone_number", description='phone number of user'),
-    'fullname': fields.String(required=False, description='fullname of user'),
+    'fullname': fields.String(required=True, description='fullname of user'),
     'password': fields.String(required=True, description='raw password of user'),
 }
 
