@@ -11,3 +11,9 @@ register_res = {
     'email': fields.String(description="Email"),
     'fullname': fields.String(description="User full name"),
 }
+
+seller_res = {
+    'id': fields.String(description='Id of seller'),
+    'description': fields.String(description="Seller description, can be html or string"),
+    'status': fields.String(description="Status of seller"),
+}
