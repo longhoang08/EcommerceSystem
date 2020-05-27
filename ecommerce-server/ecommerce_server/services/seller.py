@@ -17,6 +17,7 @@ _logger = logging.getLogger(__name__)
 def register_to_be_seller(description, **kwargs) -> Seller:
     email = kwargs.get('email')
     user = user_service.find_one_by_email_else_throw(email)
-    if user.role != UserRole.Customer: raise ForbiddenException("You must be customer to request to be new seller")
+    if user.role != UserRole.Customer:
+        raise ForbiddenException("You must be customer to request to be new seller")
     seller = repo.create_new_seller(user_id=user.id, description=description)
     return repo.save(seller)

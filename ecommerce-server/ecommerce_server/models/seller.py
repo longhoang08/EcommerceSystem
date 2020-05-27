@@ -7,6 +7,7 @@ from ecommerce_server.models import db, TimestampMixin
 class SellerStatus():
     Pending = 0
     Approved = 1
+    Banned = -1
 
 
 class Seller(db.Model, TimestampMixin):
@@ -27,5 +28,6 @@ class Seller(db.Model, TimestampMixin):
         return {
             'id': self.user_id,
             'description': self.email,
-            'status': 'reviewing' if (self.status == SellerStatus.Pending) else 'approved',
+            'status': 'reviewing' if (self.status == SellerStatus.Pending) else 'active' if (
+                    self.status == SellerStatus.Approved) else 'banned',
         }
