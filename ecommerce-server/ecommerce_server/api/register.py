@@ -16,7 +16,7 @@ _logger = logging.getLogger(__name__)
 
 ns = Namespace('register', description='Register operations')
 
-_register_req = ns.model('register_req', requests.register_user_req, )
+_register_req = ns.model('register_req', requests.register_user_req)
 _register_res = ns.model('register_res', responses.register_res)
 
 
