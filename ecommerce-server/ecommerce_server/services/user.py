@@ -81,7 +81,7 @@ def change_profile(**kwargs) -> User:
     email = kwargs.get('email')
     user = repo.find_one_by_email(email)
     if not user: raise UserNotFoundException()
-    return update_profile(user)
+    return update_profile(user, **kwargs)
 
 
 # ======================================================================================================================
