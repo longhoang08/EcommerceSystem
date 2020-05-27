@@ -29,3 +29,11 @@ change_profile_req = {
 seller_register_req = {
     'description': fields.String(required=True, description='description of seller')
 }
+
+search_req = {
+    'q': fields.String(required=False, description='Text query to search'),
+    'skus': fields.String(required=False, description='List of skus to get details'),
+    'only_promotion': fields.Boolean(required=False, description='Only get product which have promotion'),
+    'only_flash_sale': fields.Boolean(required=False, description='Only get product which have flask sale'),
+    'sort': fields.List(required=False, description='Sort product with business logic. Suported "price", "sell_price"')
+}

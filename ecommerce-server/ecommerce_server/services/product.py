@@ -7,11 +7,15 @@ __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
 
 
+def search(args):
+    return None
+
+
 def get_all_products(args):
-    file_es = ProductElasticRepo()
-    responses = file_es.search(args)
-    files = extract_product_data_from_response(responses)
-    return files
+    product_es = ProductElasticRepo()
+    responses = product_es.search(args)
+    products = extract_product_data_from_response(responses)
+    return products
 
 
 def extract_product_data_from_response(responses):
@@ -19,5 +23,5 @@ def extract_product_data_from_response(responses):
         return {'result': {'files': []}}
     responses = responses.to_dict()
     hits = responses['hits']['hits']
-    files = [item['_source'] for item in hits]
-    return {'result': {'files': files}}
+    products = [item['_source'] for item in hits]
+    return {'result': {'products': products}}
