@@ -141,3 +141,8 @@ def check_username_and_password(email_or_phone_number: str, password: str):
 
 def find_one_by_email_or_phone_number_ignore_case(email: str, phone_number: str) -> User:
     return repo.find_one_by_email_or_phone_number(email, phone_number)
+
+
+def change_role_to_seller(user: User) -> User:
+    user.role = UserRole.Seller
+    return repo.save(user)

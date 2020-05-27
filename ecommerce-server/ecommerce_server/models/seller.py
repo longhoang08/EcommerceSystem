@@ -25,9 +25,14 @@ class Seller(db.Model, TimestampMixin):
     status = db.Column(db.Integer, default=SellerStatus.Pending)
 
     def to_dict(self):
+        print(self.status)
         return {
             'id': self.user_id,
-            'description': self.email,
-            'status': 'reviewing' if (self.status == SellerStatus.Pending) else 'active' if (
-                    self.status == SellerStatus.Approved) else 'banned',
+            'description': self.description,
+            'status': self._get_user_status()
         }
+
+    def _get_user_status(self):
+        if self.status == SellerStatus.Banned: return 'banned'
+        if self.status == SellerStatus.Approved: return 'active'
+        return 'reviewing'
