@@ -7,25 +7,7 @@
     tools:context=".Fragment.AccountFragment">
 
 
-    <Button
-        android:background="#CE009969"
-        android:textColor="@android:color/white"
-        android:id="@+id/buttonLogin"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:text="Đăng nhập"
-        android:visibility="invisible"/>
 
-    <Button
-        android:textColor="@android:color/white"
-        android:background="#FF8400"
-        android:id="@+id/buttonSignUp"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:text="Đăng ký"
-        android:textAllCaps="false"
-        android:layout_toRightOf="@id/buttonLogin"
-        android:visibility="invisible"/>
 
 <!--    &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
     <!--    ảnh +name-->
@@ -81,5 +63,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/user_infor"
+        />
+    <Button
+        android:layout_alignParentBottom="true"
+        android:background="#CE009969"
+        android:textColor="@android:color/white"
+        android:id="@+id/buttonLogin"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Đăng nhập"
+        />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:background="#FF8400"
+        android:id="@+id/buttonSignUp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Đăng ký"
+        android:textAllCaps="false"
+        android:layout_toRightOf="@id/buttonLogin"
         />
 </RelativeLayout>
