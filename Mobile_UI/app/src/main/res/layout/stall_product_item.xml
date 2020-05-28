@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp">
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/google"
+        android:id="@+id/stallProImg"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/stallProImg"
+        android:layout_centerVertical="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên sản phẩm : "
+            android:padding="7dp"
+            android:textSize="20dp"
+            android:id="@+id/stallProName"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giá : "
+            android:padding="7dp"
+            android:textSize="20dp"
+            android:id="@+id/stallProPrice"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kho : "
+            android:padding="7dp"
+            android:textSize="20dp"
+            android:id="@+id/stallProNumber"/>
+    </LinearLayout>
+</RelativeLayout>

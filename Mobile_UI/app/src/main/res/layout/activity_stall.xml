@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".StallActivity"
-    android:paddingTop="0dp"
-    android:paddingBottom="?attr/actionBarSize">
-
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".StallActivity">
+    <!--            card User-->
     <RelativeLayout
         android:id="@+id/stall_infor"
         android:layout_width="match_parent"
@@ -15,7 +13,6 @@
         android:layout_height="110dp"
         android:layout_alignParentTop="true"
         android:padding="10dp">
-
         <androidx.cardview.widget.CardView
             android:id="@+id/stall_infor_img"
             android:layout_width="wrap_content"
@@ -38,7 +35,7 @@
             android:layout_alignParentEnd="true"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/abc"
+                android:id="@+id/userName"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_alignParentTop="true"
@@ -46,7 +43,7 @@
                 android:paddingLeft="10dp"
                 android:paddingTop="10dp"/>
             <TextView
-                android:id="@+id/soSp"
+                android:id="@+id/numOfPro"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_alignParentTop="true"
@@ -55,52 +52,41 @@
                 android:paddingTop="10dp"/>
         </LinearLayout>
     </RelativeLayout>
-
+    <!--            list Products-->
+            <ListView
+                android:id="@+id/stallProListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/stall_infor"
+                android:paddingBottom="40dp"/>
+<!--    add sp va show buyRecord-->
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/stall_infor"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        android:gravity="center">
-
-        <LinearLayout
+        android:layout_alignBottom="@+id/stallProListView">
+        <TextView
+            android:id="@+id/btn_add_product"
             android:layout_width="match_parent"
-            android:layout_height="231dp"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FF8400"
+            android:padding="10dp"
+            android:text="Thêm sản phẩm"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
 
-            <androidx.cardview.widget.CardView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/parent_layout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                app:cardCornerRadius="60dp">
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:src="@drawable/ic_launcher_background"
-                    android:scaleType="centerCrop"/>
-            </androidx.cardview.widget.CardView>
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="37dp"
-                android:layout_centerHorizontal="true"
-                android:text="Start Selling Your Products" />
-
-            <Button
-                android:id="@+id/btn_add_product"
-                android:layout_width="140dp"
-                android:layout_height="62dp"
-                android:layout_centerHorizontal="true"
-                android:text="Thêm sản phẩm" />
-        </LinearLayout>
+        <TextView
+            android:id="@+id/stallBuyRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#CE009969"
+            android:padding="10dp"
+            android:text="Đơn hàng"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
     </LinearLayout>
-
 </RelativeLayout>
