@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -47,10 +46,20 @@ public class StallActivity extends AppCompatActivity {
         );
         stallProListView.setAdapter(adapter);
 
+        //sang màn hình thêm 1 sp vào stall
         btnAddProduct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(StallActivity.this, AddProductActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //sang màn xem những đơn hàng
+        showBuyRecord.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StallActivity.this, BuyRecordActivity.class);
                 startActivity(intent);
             }
         });
