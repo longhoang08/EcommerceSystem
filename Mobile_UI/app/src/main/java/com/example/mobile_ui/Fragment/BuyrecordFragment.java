@@ -45,9 +45,7 @@ public class BuyrecordFragment extends Fragment {
         //anh xa
         listView = root.findViewById(R.id.listOfBuyrecord);
 
-        ListOfBuyrecordAdapter adapter = new ListOfBuyrecordAdapter(
-                getActivity().getApplicationContext(),R.layout.buyrecord_item,data
-        );
+        ListOfBuyrecordAdapter adapter = new ListOfBuyrecordAdapter(data);
         listView.setAdapter(adapter);
 
         return root;

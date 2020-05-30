@@ -66,12 +66,12 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <com.example.mobile_ui.View.ExpandHeightViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPagerBuyrecord"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="8dp"
         android:layout_alignParentBottom="true"
         android:layout_below="@+id/HorizontalScrollViewTab">
-    </com.example.mobile_ui.View.ExpandHeightViewPager>
+    </androidx.viewpager.widget.ViewPager>
 </RelativeLayout>

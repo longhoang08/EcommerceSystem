@@ -17,11 +17,7 @@ import java.util.ArrayList;
 public class ListOfBuyrecordAdapter extends BaseAdapter {
 
     ArrayList<BuyRecord> data;
-    Context myContext;
-    int myLayout;
-    public ListOfBuyrecordAdapter(Context context, int layout, ArrayList<BuyRecord> dataList){
-        myContext = context;
-        myLayout = layout;
+    public ListOfBuyrecordAdapter(ArrayList<BuyRecord> dataList){
         data = dataList;
     }
     @Override
@@ -42,24 +38,29 @@ public class ListOfBuyrecordAdapter extends BaseAdapter {
     // moi 1 item se hien theo setting o day
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        LayoutInflater inflater = (LayoutInflater) myContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        convertView = inflater.inflate(myLayout,null);
+        View view;
+        if(convertView==null){
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.buyrecord_item, null);
 
-        //anh xa
-        TextView state = (TextView) convertView.findViewById(R.id.state);
-        ImageView proImg = convertView.findViewById(R.id.proImg);
-        TextView proName = convertView.findViewById(R.id.proName);
-        TextView buyNum = convertView.findViewById(R.id.buyNum);
-        TextView price = convertView.findViewById(R.id.price);
-        TextView money = convertView.findViewById(R.id.money);
+            //anh xa
+            TextView state = view.findViewById(R.id.state);
+            ImageView proImg = view.findViewById(R.id.proImg);
+            TextView proName = view.findViewById(R.id.proName);
+            TextView buyNum = view.findViewById(R.id.buyNum);
+            TextView price = view.findViewById(R.id.price);
+            TextView money = view.findViewById(R.id.money);
 
-        state.setText(convertState(data.get(position).getState()));
-        proImg.setImageResource(data.get(position).getBuyProduct().getImageRepresent());
-        proName.setText(data.get(position).getBuyProduct().getName());
-        buyNum.setText("x" + data.get(position).getBuyNum());
-        price.setText("đ"+data.get(position).getBuyProduct().getPrice());
-        money.setText("Thành tiền : đ"+data.get(position).getMoney());
-        return convertView;
+            state.setText(convertState(data.get(position).getState()));
+            proImg.setImageResource(data.get(position).getBuyProduct().getImageRepresent());
+            proName.setText(data.get(position).getBuyProduct().getName());
+            buyNum.setText("x" + data.get(position).getBuyNum());
+            price.setText("đ"+data.get(position).getBuyProduct().getPrice());
+            money.setText("Thành tiền : đ"+data.get(position).getMoney());
+        }else{
+            view=convertView;
+        }
+
+        return view;
     }
 
     private String convertState(String state){

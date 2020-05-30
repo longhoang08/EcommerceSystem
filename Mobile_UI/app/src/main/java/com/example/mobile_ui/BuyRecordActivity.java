@@ -1,6 +1,7 @@
 package com.example.mobile_ui;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
@@ -16,7 +17,7 @@ import java.util.ArrayList;
 public class BuyRecordActivity extends AppCompatActivity {
     ArrayList<BuyRecord> arrayBuyrecords=new ArrayList<BuyRecord>();
     TabLayout tabLayoutBuyrecord;
-    ExpandHeightViewPager viewPagerBuyrecord;
+    ViewPager viewPagerBuyrecord;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
