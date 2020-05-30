@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BuyRecordActivity"></activity>
+        <activity android:name=".SearchActivity"></activity>
+        <activity android:name=".BuyRecordActivity" />
         <activity android:name=".AddProductActivity" />
         <activity android:name=".StallActivity" />
         <activity android:name=".SignUpActivity" />

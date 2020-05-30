@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.SearchView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -16,11 +18,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mobile_ui.Adapter.CategoryProductScrollAdapter;
 import com.example.mobile_ui.Adapter.ProductAdapter;
+import com.example.mobile_ui.CartProductActivity;
 import com.example.mobile_ui.DetailProductActivity;
 import com.example.mobile_ui.ListCategoryActivity;
+import com.example.mobile_ui.MainActivity;
 import com.example.mobile_ui.Model.Category;
 import com.example.mobile_ui.Model.Product;
 import com.example.mobile_ui.R;
+import com.example.mobile_ui.SearchActivity;
 import com.example.mobile_ui.View.ExpandHeightGridView;
 
 import java.util.ArrayList;
@@ -30,6 +35,12 @@ import retrofit2.Call;
 
 public class HomeFragment extends Fragment {
 
+    // gio hang
+    private ImageButton imageButtonCart;
+    //search
+    TextView searchView;
+
+
     // danh sach the loai
     private RecyclerView recyclerViewCategoryProduct;
     private Button buttonViewAllCategoryProduct;
@@ -38,6 +49,26 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
+
+        // su kien an vao gio hang
+        imageButtonCart = root.findViewById(R.id.imageButtonCart);
+        imageButtonCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), CartProductActivity.class);
+                startActivity(intent);
+            }
+        });
+        //su kien search
+        searchView = (TextView) root.findViewById(R.id.searchView);
+        searchView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), SearchActivity.class);
+                startActivity(intent);
+            }
+
+        });
 
         // load danh muc san pham
         recyclerViewCategoryProduct = root.findViewById(R.id.recyclerviewCategoryProduct);
