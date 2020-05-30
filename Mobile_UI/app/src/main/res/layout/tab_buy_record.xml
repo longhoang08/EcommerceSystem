@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,7 +9,9 @@
     android:layout_height="match_parent">
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/HorizontalScrollViewTab">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -67,19 +69,9 @@
     <com.example.mobile_ui.View.ExpandHeightViewPager
         android:id="@+id/viewPagerBuyrecord"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayoutBuyrecord" >
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/HorizontalScrollViewTab">
     </com.example.mobile_ui.View.ExpandHeightViewPager>
-
-<!--    không liên quan-->
-    <View
-        android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="5dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintTop_toBottomOf="@+id/viewPagerProductDescription"
-        tools:layout_editor_absoluteX="0dp" />
-</LinearLayout>
+</RelativeLayout>

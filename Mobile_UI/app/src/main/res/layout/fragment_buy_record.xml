@@ -6,17 +6,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:text="list các đơn hàng được đặt"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="80dp" />
-
-    <TextView
-        android:id="@+id/typeBuyrecord"
-        android:layout_width="match_parent"
-        android:layout_height="53dp" />
+   <ListView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/listOfBuyrecord"/>
 
 </LinearLayout>

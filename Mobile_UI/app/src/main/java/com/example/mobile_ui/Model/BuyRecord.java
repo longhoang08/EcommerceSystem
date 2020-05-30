@@ -6,8 +6,11 @@ public class BuyRecord {
     private int buyNum;
     private int money;
 
-    public BuyRecord(String state) {
+    public BuyRecord(String state,Product product,int buyNum,int money) {
         this.state = state;
+        this.buyProduct=product;
+        this.buyNum=buyNum;
+        this.money=money;
     }
 
     public String getState() {
