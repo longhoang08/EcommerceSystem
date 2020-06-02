@@ -16,7 +16,6 @@ import java.util.List;
 
 public class CartProductAdapter extends BaseAdapter {
     private List<OrderProduct> listOrderProduct;
-    private int numProductOfShopInCart = 0;
 
     public CartProductAdapter(List<OrderProduct> listOrderProduct) {
         this.listOrderProduct = listOrderProduct;
@@ -79,8 +78,8 @@ public class CartProductAdapter extends BaseAdapter {
             checkBoxProduct.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    // parent là ExpandHeightGridView, getParent lần lượt: ->ConstraintLayout->ListView->LinearLayout->ScrollView->ConstraintLayout
-                    TextView textViewTotalPrice = ((ViewGroup) parent.getParent().getParent().getParent().getParent().getParent()).findViewById(R.id.textViewTotalPrice);
+                    // parent là ExpandHeightGridView, getParent lần lượt: ->LinearLayout->ScrollView->ConstraintLayout
+                    TextView textViewTotalPrice = ((ViewGroup) parent.getParent().getParent().getParent()).findViewById(R.id.textViewTotalPrice);
                     // tổng giá
                     int totalPrice = Integer.parseInt(textViewTotalPrice.getText().toString().split(" ")[0]);
                     String textQuantity = editTextQuantityProduct.getText().toString();
@@ -108,21 +107,11 @@ public class CartProductAdapter extends BaseAdapter {
                         editTextQuantityProduct.setEnabled(false);
                         totalPrice += priceProduct*quantity;
                         // sản phẩm này thuộc 1 shop, shop này có bao nhiêu sản phẩm đang chọn trong giỏ của khách
-                        numProductOfShopInCart ++;
                     } else {
                         int quantity = Integer.parseInt(textQuantity);
                         totalPrice -= priceProduct*quantity;
                         // cho phép nhập số lượng
                         editTextQuantityProduct.setEnabled(true);
-                        numProductOfShopInCart --;
-                    }
-                    if (numProductOfShopInCart == listOrderProduct.size()) {
-                        // parent là ExpandHeightGridView, getParent là ConstraintLayout
-                        CheckBox checkBoxShopProduct = ((ViewGroup) parent.getParent()).findViewById(R.id.checkBoxShopProduct);
-                        checkBoxShopProduct.setChecked(true);
-                    } else if (numProductOfShopInCart == 0) {
-                        CheckBox checkBoxShopProduct = ((ViewGroup) parent.getParent()).findViewById(R.id.checkBoxShopProduct);
-                        checkBoxShopProduct.setChecked(false);
                     }
                     textViewTotalPrice.setText(totalPrice+" VND");
                 }

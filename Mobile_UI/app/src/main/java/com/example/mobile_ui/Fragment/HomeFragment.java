@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.SearchView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -15,17 +18,27 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mobile_ui.Adapter.CategoryProductScrollAdapter;
 import com.example.mobile_ui.Adapter.ProductAdapter;
+import com.example.mobile_ui.CartProductActivity;
 import com.example.mobile_ui.DetailProductActivity;
 import com.example.mobile_ui.ListCategoryActivity;
 import com.example.mobile_ui.Model.Category;
 import com.example.mobile_ui.Model.Product;
 import com.example.mobile_ui.R;
+import com.example.mobile_ui.SearchActivity;
 import com.example.mobile_ui.View.ExpandHeightGridView;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import retrofit2.Call;
+
 public class HomeFragment extends Fragment {
+
+    // gio hang
+    private ImageButton imageButtonCart;
+    //search
+    TextView searchView;
+
 
     // danh sach the loai
     private RecyclerView recyclerViewCategoryProduct;
@@ -35,6 +48,26 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
+
+        // su kien an vao gio hang
+        imageButtonCart = root.findViewById(R.id.imageButtonCart);
+        imageButtonCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), CartProductActivity.class);
+                startActivity(intent);
+            }
+        });
+        //su kien search
+        searchView = (TextView) root.findViewById(R.id.searchView);
+        searchView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), SearchActivity.class);
+                startActivity(intent);
+            }
+
+        });
 
         // load danh muc san pham
         recyclerViewCategoryProduct = root.findViewById(R.id.recyclerviewCategoryProduct);
@@ -100,4 +133,56 @@ public class HomeFragment extends Fragment {
         listCategoryProduct.add(new Category(R.drawable.icon_pineapple, "Rồng hoa quả"));
     }
 }
+
+    //2. fill du lieu trc khi hien fragment
+//    final TextView tv1 = root.findViewById(R.id.textViewEmail);
+//    DataClient dataClient = APIUtils.getData();
+//    Call<List<User>> callback = dataClient.getUser();
+//        callback.enqueue(new Callback<List<User>>() {
+//@Override
+//public void onResponse(Call<List<User>> call, Response<List<User>> response) {
+//        if(response!=null){
+//        List<User> users = response.body();
+//        String kq = "";
+//        for (User s : users) {
+//        Log.d(s.getEmail(),s.getEmail());
+//        kq+=" " + s.getEmail();
+//        }
+//        tv1.setText(kq);
+//        }
+//        }
+//@Override
+//public void onFailure(Call<List<User>> call, Throwable throwable) {
+//        Log.d("EEROR",throwable.getMessage());
+//        }
+//        });
+
+
+
+
+
+
+
+
+
+
+    //call post api
+//    DataClient dataClient = APIUtils.getData();
+//    Call<User> callback = dataClient.signUp(user);
+//        callback.enqueue(new Callback<User>() {
+//@Override
+//public void onResponse(Call<User> call, Response<User> response) {
+//        if(response!=null){
+//        User x = response.body();
+//        String kq = x.getName()+ " "+x.getEmail();
+//        tv2.setText(kq);
+//        }
+//        }
+//
+//@Override
+//public void onFailure(Call<User> call, Throwable t) {
+//        Log.d("EEROR",t.getMessage());
+//        }
+//        });
+
 

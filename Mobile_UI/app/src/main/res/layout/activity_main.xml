@@ -6,30 +6,31 @@
     android:layout_height="match_parent">
     <!--    android:paddingTop="?attr/actionBarSize">-->
 
-    <!--    thanh tim kiem + gio san pham-->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize">
-        <SearchView
-            android:id="@+id/searchView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:queryHint="Search Here"
-            android:isScrollContainer="false"
-            android:background="#ddd"
-            android:layout_marginRight="50dp"/>
-        <ImageButton
-            android:id="@+id/imageButtonCart"
-            android:layout_alignParentRight="true"
-            android:background="#fff"
-            android:layout_width="60dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_shopping_cart_black_24dp"/>
-    </RelativeLayout>
+<!--    &lt;!&ndash;    thanh tim kiem + gio san pham&ndash;&gt;-->
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize">-->
+<!--        <SearchView-->
+<!--            android:id="@+id/searchView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:queryHint="Search Here"-->
+<!--            android:isScrollContainer="false"-->
+<!--            android:background="#ddd"-->
+<!--            android:layout_marginRight="50dp"/>-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageButtonCart"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:background="#fff"-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:src="@drawable/ic_shopping_cart_black_24dp"/>-->
+<!--    </RelativeLayout>-->
 
     <!--    fragment container-->
+<!--    android:paddingTop="?attr/actionBarSize"-->
     <FrameLayout
-        android:paddingTop="?attr/actionBarSize"
+
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

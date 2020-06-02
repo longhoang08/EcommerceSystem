@@ -71,8 +71,8 @@ public class DetailProductActivity extends AppCompatActivity {
             }
         });
         // mieu ta ro san pham = 2 phan mo ta, chi tiet
-        viewPagerProductDescription = findViewById(R.id.viewPagerProductDescription);
-        tabLayoutProductDescription = findViewById(R.id.tabLayoutProductDescription);
+        viewPagerProductDescription = findViewById(R.id.viewPagerProductDescription);//View hiện mỗi tab
+        tabLayoutProductDescription = findViewById(R.id.tabLayoutProductDescription);// gồm thanh chọn
         viewPagerProductDescription.setAdapter(new DetailProductDescriptionAdapter(getSupportFragmentManager(), tabLayoutProductDescription.getTabCount()));
         viewPagerProductDescription.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayoutProductDescription));
         tabLayoutProductDescription.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
