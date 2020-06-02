@@ -46,7 +46,7 @@
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toStartOf="@+id/imageViewRepresentProduct"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -87,4 +87,14 @@
         android:textColor="@android:color/holo_red_dark"
         app:layout_constraintStart_toEndOf="@+id/editTextQuantityProduct"
         app:layout_constraintTop_toBottomOf="@+id/textViewPriceProduct" />
+
+    <ImageView
+        android:id="@+id/imageViewDeleteCart"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_delete" />
 </androidx.constraintlayout.widget.ConstraintLayout>

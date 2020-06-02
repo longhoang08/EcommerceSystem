@@ -1,5 +1,7 @@
 package com.example.mobile_ui.Adapter;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,9 +10,11 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mobile_ui.Model.OrderProduct;
 import com.example.mobile_ui.R;
+import com.example.mobile_ui.View.ExpandHeightGridView;
 
 import java.util.List;
 
@@ -48,6 +52,7 @@ public class CartProductAdapter extends BaseAdapter {
             final TextView textViewPriceProduct = view.findViewById(R.id.textViewPriceProduct);
             final EditText editTextQuantityProduct = view.findViewById(R.id.editTextQuantityProduct);
             final TextView textViewQuantityInStockProduct = view.findViewById(R.id.textViewQuantityInStockProduct);
+            ImageView imageViewDeleteCart = view.findViewById(R.id.imageViewDeleteCart);
             // gan gia tri
             imageViewRepresentProduct.setImageResource(listOrderProduct.get(position).getImageRepresent());
             textViewNameProduct.setText(listOrderProduct.get(position).getNameProduct());
@@ -55,6 +60,33 @@ public class CartProductAdapter extends BaseAdapter {
             editTextQuantityProduct.setText(listOrderProduct.get(position).getQuantity()+"");
             textViewQuantityInStockProduct.setText("Còn "+listOrderProduct.get(position).getQuantityInStock()+" sản phẩm");
             // set sự kiện
+            // xóa sản phẩm khỏi giỏ hàng
+            imageViewDeleteCart.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // open dialog xác nhận xóa
+                    final AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
+                    builder.setTitle("Xác nhận");
+                    builder.setMessage("Bạn có muốn gỡ sản phẩm khỏi giỏ hàng");
+                    builder.setCancelable(false);
+                    builder.setPositiveButton("Có", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            listOrderProduct.remove(position);
+                            ExpandHeightGridView expandHeightGridView = (ExpandHeightGridView) parent;
+                            expandHeightGridView.setAdapter(CartProductAdapter.this);
+                        }
+                    });
+                    builder.setNegativeButton("Không", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
+                    AlertDialog alertDialog = builder.create();
+                    alertDialog.show();
+                }
+            });
             editTextQuantityProduct.setOnFocusChangeListener(new View.OnFocusChangeListener() {
                 @Override
                 public void onFocusChange(View v, boolean hasFocus) {
