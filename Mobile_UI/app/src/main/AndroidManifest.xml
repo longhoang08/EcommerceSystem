@@ -3,6 +3,7 @@
     package="com.example.mobile_ui">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SearchActivity"></activity>
+        <activity
+            android:name=".SettingAccountActivity"
+            android:label="@string/title_activity_setting_account"></activity>
+        <activity android:name=".StallDetailProductActivity" />
+        <activity android:name=".SearchActivity" />
         <activity android:name=".BuyRecordActivity" />
         <activity android:name=".AddProductActivity" />
         <activity android:name=".StallActivity" />

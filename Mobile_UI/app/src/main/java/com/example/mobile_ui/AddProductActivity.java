@@ -59,7 +59,7 @@ public class AddProductActivity extends AppCompatActivity {
         imgProductsView.setLayoutManager(mLayoutManager);
 
         imgProductAdpter = new ImgProductAdpter(
-                imgProductsList
+                imgProductsList,AddProductActivity.this,true
         );
         imgProductsView.setAdapter(imgProductAdpter);
 
