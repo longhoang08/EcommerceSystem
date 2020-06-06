@@ -161,7 +161,7 @@ public class StallDetailProductActivity extends AppCompatActivity {
         price.setEnabled(true);
         number.setEnabled(true);
 
-        setEventDelImg();
+        //setEventDelImg();
     }
 
     // trạng thái chỉ xem
@@ -206,22 +206,22 @@ public class StallDetailProductActivity extends AppCompatActivity {
     }
 
     //xóa ảnh
-    private void setEventDelImg(){
-        ItemTouchHelper helper = new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0,ItemTouchHelper.LEFT){
-
-            @Override
-            public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
-                return false;
-            }
-
-            @Override
-            public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
-                int pos= viewHolder.getAdapterPosition();
-                imgProductsList.remove(pos);
-                imgProductAdpter.notifyDataSetChanged();
-            }
-        });
-        helper.attachToRecyclerView(imgProductsView);
-    }
+//    private void setEventDelImg(){
+//        ItemTouchHelper helper = new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0,ItemTouchHelper.LEFT){
+//
+//            @Override
+//            public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
+//                return false;
+//            }
+//
+//            @Override
+//            public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
+//                int pos= viewHolder.getAdapterPosition();
+//                imgProductsList.remove(pos);
+//                imgProductAdpter.notifyDataSetChanged();
+//            }
+//        });
+//        helper.attachToRecyclerView(imgProductsView);
+//    }
 
 }

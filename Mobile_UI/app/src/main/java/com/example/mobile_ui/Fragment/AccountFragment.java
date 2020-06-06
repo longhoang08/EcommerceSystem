@@ -63,10 +63,10 @@ public class AccountFragment extends Fragment {
                 switch (abc.get(position)){
                     case "Xem Gian Hàng":
                         intent = new Intent(getContext(), StallActivity.class);
-                        startActivity(intent);
+                        startActivity(intent);break;
                     case "Thiết lập tài khoản":
                         intent = new Intent(getContext(), SettingAccountActivity.class);
-                        startActivity(intent);
+                        startActivity(intent);break;
                 }
             }
         });
