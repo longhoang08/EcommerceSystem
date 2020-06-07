@@ -2,6 +2,8 @@ package com.example.mobile_ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.View;
@@ -10,6 +12,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.Toast;
+
+import com.example.mobile_ui.Model.Product;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,6 +44,8 @@ public class SearchActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //trả về vị trí khi click trên listView ->0
                 Toast.makeText(SearchActivity.this, "" + dataSearch.get(position), Toast.LENGTH_SHORT).show();
+                // chuyển sang màn hình các sản phẩm phù hợp với search
+                startActivity(new Intent(SearchActivity.this, ProductSearchActivity.class));
             }
         });
 

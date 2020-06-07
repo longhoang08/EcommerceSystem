@@ -10,12 +10,14 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.mobile_ui.Adapter.CartProductShopAdapter;
+//import com.example.mobile_ui.Adapter.CartProductShopAdapter;
 import com.example.mobile_ui.LoginActivity;
-import com.example.mobile_ui.Model.CartShop;
+//import com.example.mobile_ui.Model.CartShop;
 import com.example.mobile_ui.R;
 import com.example.mobile_ui.SettingAccountActivity;
 import com.example.mobile_ui.SignUpActivity;
@@ -28,6 +30,8 @@ public class AccountFragment extends Fragment {
 
     Button buttonSignUp, buttonLogin;
     ListView listViewDetailAcc;
+    int REQUEST_CODE_LOGIN = 13;
+
     public View onCreateView(@NonNull final LayoutInflater inflater,
                              final ViewGroup container, Bundle savedInstanceState) {
 //        return inflater.inflate(R.layout.fragment_account, container, false);
@@ -37,8 +41,7 @@ public class AccountFragment extends Fragment {
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getContext(), LoginActivity.class);
-                startActivity(intent);
+                getActivity().startActivityForResult(new Intent(getContext(), LoginActivity.class), REQUEST_CODE_LOGIN);
             }
         });
         buttonSignUp.setOnClickListener(new View.OnClickListener() {
@@ -70,7 +73,14 @@ public class AccountFragment extends Fragment {
                 }
             }
         });
+
+        // tên username, password
+        TextView textViewNameUser, textViewSoSp;
+        textViewNameUser = root.findViewById(R.id.textViewNameUser);
+        textViewSoSp = root.findViewById(R.id.textViewSoSp);
+        // ẩn nếu chưa đăng nhập
+        textViewNameUser.setVisibility(View.INVISIBLE);
+        textViewSoSp.setVisibility(View.INVISIBLE);
         return root;
     }
 }
-

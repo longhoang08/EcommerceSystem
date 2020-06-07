@@ -3,12 +3,16 @@ package com.example.mobile_ui.Adapter;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+
+import android.content.Context;
+
 import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -70,6 +74,7 @@ public class ImgProductAdpter extends RecyclerView.Adapter<ImgProductAdpter.MyVi
     public void onBindViewHolder(MyViewHolder holder, int position) {
         Bitmap img = imgList.get(position);
         holder.img.setImageBitmap(img);
+
         holder.setItemImgClickListener(new ItemImgClickListener() {
             @Override
             public void onClick(View view, int position) {

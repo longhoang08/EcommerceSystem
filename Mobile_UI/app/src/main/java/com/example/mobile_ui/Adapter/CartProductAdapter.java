@@ -1,5 +1,7 @@
 package com.example.mobile_ui.Adapter;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,15 +10,16 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mobile_ui.Model.OrderProduct;
 import com.example.mobile_ui.R;
+import com.example.mobile_ui.View.ExpandHeightGridView;
 
 import java.util.List;
 
 public class CartProductAdapter extends BaseAdapter {
     private List<OrderProduct> listOrderProduct;
-    private int numProductOfShopInCart = 0;
 
     public CartProductAdapter(List<OrderProduct> listOrderProduct) {
         this.listOrderProduct = listOrderProduct;
@@ -49,6 +52,7 @@ public class CartProductAdapter extends BaseAdapter {
             final TextView textViewPriceProduct = view.findViewById(R.id.textViewPriceProduct);
             final EditText editTextQuantityProduct = view.findViewById(R.id.editTextQuantityProduct);
             final TextView textViewQuantityInStockProduct = view.findViewById(R.id.textViewQuantityInStockProduct);
+            ImageView imageViewDeleteCart = view.findViewById(R.id.imageViewDeleteCart);
             // gan gia tri
             imageViewRepresentProduct.setImageResource(listOrderProduct.get(position).getImageRepresent());
             textViewNameProduct.setText(listOrderProduct.get(position).getNameProduct());
@@ -56,6 +60,33 @@ public class CartProductAdapter extends BaseAdapter {
             editTextQuantityProduct.setText(listOrderProduct.get(position).getQuantity()+"");
             textViewQuantityInStockProduct.setText("Còn "+listOrderProduct.get(position).getQuantityInStock()+" sản phẩm");
             // set sự kiện
+            // xóa sản phẩm khỏi giỏ hàng
+            imageViewDeleteCart.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // open dialog xác nhận xóa
+                    final AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext());
+                    builder.setTitle("Xác nhận");
+                    builder.setMessage("Bạn có muốn gỡ sản phẩm khỏi giỏ hàng");
+                    builder.setCancelable(false);
+                    builder.setPositiveButton("Có", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            listOrderProduct.remove(position);
+                            ExpandHeightGridView expandHeightGridView = (ExpandHeightGridView) parent;
+                            expandHeightGridView.setAdapter(CartProductAdapter.this);
+                        }
+                    });
+                    builder.setNegativeButton("Không", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
+                    AlertDialog alertDialog = builder.create();
+                    alertDialog.show();
+                }
+            });
             editTextQuantityProduct.setOnFocusChangeListener(new View.OnFocusChangeListener() {
                 @Override
                 public void onFocusChange(View v, boolean hasFocus) {
@@ -79,8 +110,8 @@ public class CartProductAdapter extends BaseAdapter {
             checkBoxProduct.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    // parent là ExpandHeightGridView, getParent lần lượt: ->ConstraintLayout->ListView->LinearLayout->ScrollView->ConstraintLayout
-                    TextView textViewTotalPrice = ((ViewGroup) parent.getParent().getParent().getParent().getParent().getParent()).findViewById(R.id.textViewTotalPrice);
+                    // parent là ExpandHeightGridView, getParent lần lượt: ->LinearLayout->ScrollView->ConstraintLayout
+                    TextView textViewTotalPrice = ((ViewGroup) parent.getParent().getParent().getParent()).findViewById(R.id.textViewTotalPrice);
                     // tổng giá
                     int totalPrice = Integer.parseInt(textViewTotalPrice.getText().toString().split(" ")[0]);
                     String textQuantity = editTextQuantityProduct.getText().toString();
@@ -108,21 +139,11 @@ public class CartProductAdapter extends BaseAdapter {
                         editTextQuantityProduct.setEnabled(false);
                         totalPrice += priceProduct*quantity;
                         // sản phẩm này thuộc 1 shop, shop này có bao nhiêu sản phẩm đang chọn trong giỏ của khách
-                        numProductOfShopInCart ++;
                     } else {
                         int quantity = Integer.parseInt(textQuantity);
                         totalPrice -= priceProduct*quantity;
                         // cho phép nhập số lượng
                         editTextQuantityProduct.setEnabled(true);
-                        numProductOfShopInCart --;
-                    }
-                    if (numProductOfShopInCart == listOrderProduct.size()) {
-                        // parent là ExpandHeightGridView, getParent là ConstraintLayout
-                        CheckBox checkBoxShopProduct = ((ViewGroup) parent.getParent()).findViewById(R.id.checkBoxShopProduct);
-                        checkBoxShopProduct.setChecked(true);
-                    } else if (numProductOfShopInCart == 0) {
-                        CheckBox checkBoxShopProduct = ((ViewGroup) parent.getParent()).findViewById(R.id.checkBoxShopProduct);
-                        checkBoxShopProduct.setChecked(false);
                     }
                     textViewTotalPrice.setText(totalPrice+" VND");
                 }
