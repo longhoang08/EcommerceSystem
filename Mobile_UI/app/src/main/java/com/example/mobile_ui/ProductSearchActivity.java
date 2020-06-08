@@ -2,7 +2,12 @@ package com.example.mobile_ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.example.mobile_ui.Adapter.ProductAdapter;
 import com.example.mobile_ui.Model.Product;
@@ -14,6 +19,8 @@ import java.util.List;
 public class ProductSearchActivity extends AppCompatActivity {
 
     ExpandHeightGridView expandHeightGridViewProduct;
+    TextView textViewSearch;
+    ImageButton imageButtonFilter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +31,26 @@ public class ProductSearchActivity extends AppCompatActivity {
         loadDataProduct(listProduct);
         ProductAdapter productAdapter = new ProductAdapter(listProduct);
         expandHeightGridViewProduct.setAdapter(productAdapter);
+
+        //search sản phẩm
+        textViewSearch = findViewById(R.id.textViewSearch);
+        textViewSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        // lọc sản phẩm
+        imageButtonFilter = findViewById(R.id.imageButtonFilter);
+        imageButtonFilter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Dialog dialog = new Dialog(ProductSearchActivity.this);
+                dialog.setContentView(R.layout.dialog_filter);
+                dialog.setCanceledOnTouchOutside(false);
+                dialog.show();
+            }
+        });
     }
 
     private void loadDataProduct(List<Product> listProduct) {
