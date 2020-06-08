@@ -21,6 +21,7 @@ import com.example.mobile_ui.Adapter.ProductAdapter;
 import com.example.mobile_ui.CartProductActivity;
 import com.example.mobile_ui.DetailProductActivity;
 import com.example.mobile_ui.ListCategoryActivity;
+import com.example.mobile_ui.MainActivity;
 import com.example.mobile_ui.Model.Category;
 import com.example.mobile_ui.Model.Product;
 import com.example.mobile_ui.R;

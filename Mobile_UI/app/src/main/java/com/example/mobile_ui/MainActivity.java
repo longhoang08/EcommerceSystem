@@ -2,10 +2,18 @@ package com.example.mobile_ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import android.os.StrictMode;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.SearchView;
+
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
 
 import com.example.mobile_ui.Fragment.AccountFragment;
 import com.example.mobile_ui.Fragment.HomeFragment;
@@ -19,12 +27,17 @@ import androidx.fragment.app.Fragment;
 
 public class MainActivity extends AppCompatActivity {
 
-
     int REQUEST_CODE_LOGIN = 13;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if (android.os.Build.VERSION.SDK_INT > 9) {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+        }
 
         //thêm sự kiện cho bottom nav
         BottomNavigationView bottomnav = findViewById(R.id.bottom_navigation);

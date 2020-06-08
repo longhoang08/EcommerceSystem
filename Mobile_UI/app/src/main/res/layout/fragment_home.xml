@@ -15,9 +15,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Search Here"
+
             android:paddingTop="16dp"
             android:paddingLeft="11dp"
             android:textSize="16sp"
+
             android:background="#ddd"
             android:layout_marginRight="50dp"/>
         <ImageButton
