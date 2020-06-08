@@ -3,6 +3,7 @@ package com.example.mobile_ui;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +22,7 @@ public class ProductSearchActivity extends AppCompatActivity {
     ExpandHeightGridView expandHeightGridViewProduct;
     TextView textViewSearch;
     ImageButton imageButtonFilter;
+    int REQUEST_CODE_FILTER = 124;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,10 +47,7 @@ public class ProductSearchActivity extends AppCompatActivity {
         imageButtonFilter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Dialog dialog = new Dialog(ProductSearchActivity.this);
-                dialog.setContentView(R.layout.dialog_filter);
-                dialog.setCanceledOnTouchOutside(false);
-                dialog.show();
+                startActivityForResult(new Intent(ProductSearchActivity.this, DialogFilterActivity.class), REQUEST_CODE_FILTER);
             }
         });
     }
