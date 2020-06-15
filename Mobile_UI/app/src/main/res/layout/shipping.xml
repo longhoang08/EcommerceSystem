@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/title_shipping"
+        android:background="#94E1D9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vận chuyển"
+        android:textSize="30sp"
+        android:paddingLeft="30dp"
+        ></TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@id/title"
+            android:layout_width="219dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="21dp"
+            android:text="Vận chuyển nhanh"
+            android:textSize="25sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/title"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="40dp"
+            android:text="Giao hàng nhanh"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/delivery_date"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="40dp"
+            android:text="Nhận hàng vào 12Th06-15Th06"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/shipMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="256dp"
+            android:layout_marginTop="61dp"
+            android:text="đ151.786"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
