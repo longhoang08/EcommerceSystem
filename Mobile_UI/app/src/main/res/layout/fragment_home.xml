@@ -30,6 +30,8 @@
             android:layout_height="match_parent"
             android:src="@drawable/ic_shopping_cart_black_24dp"/>
     </RelativeLayout>
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
