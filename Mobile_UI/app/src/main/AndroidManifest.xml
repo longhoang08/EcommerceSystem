@@ -12,21 +12,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".DetailMybuyrecordActivity"></activity>
+        <activity android:name=".MyBuyrecordActivity" />
         <activity
             android:name=".SettingAccountActivity"
-            android:label="@string/title_activity_setting_account"></activity>
+            android:label="@string/title_activity_setting_account" />
         <activity android:name=".StallDetailProductActivity" />
-
-        <activity android:name=".ProductSearchActivity"></activity>
-
+        <activity android:name=".ProductSearchActivity" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".BuyRecordActivity" />
         <activity android:name=".AddProductActivity" />
         <activity android:name=".StallActivity" />
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".LoginActivity" />
-<!--        <activity android:name=".View.LoginActivity" />-->
+        <activity android:name=".LoginActivity" /> <!-- <activity android:name=".View.LoginActivity" /> -->
         <activity android:name=".CartProductActivity" />
         <activity android:name=".ListReviewProductActivity" />
         <activity android:name=".DetailProductActivity" />

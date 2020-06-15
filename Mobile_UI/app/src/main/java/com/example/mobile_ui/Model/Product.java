@@ -1,8 +1,10 @@
 package com.example.mobile_ui.Model;
 
 import android.graphics.Bitmap;
+import android.os.Parcel;
+import android.os.Parcelable;
 
-public class Product {
+public class Product implements Parcelable {
     private int imageRepresent;
     private String name;
     private int price;
@@ -30,6 +32,27 @@ public class Product {
         this.price = price;
         this.number = number;
     }
+
+    protected Product(Parcel in) {
+        imageRepresent = in.readInt();
+        name = in.readString();
+        price = in.readInt();
+        star = in.readDouble();
+        imgFromUrl = in.readParcelable(Bitmap.class.getClassLoader());
+        number = in.readInt();
+    }
+
+    public static final Creator<Product> CREATOR = new Creator<Product>() {
+        @Override
+        public Product createFromParcel(Parcel in) {
+            return new Product(in);
+        }
+
+        @Override
+        public Product[] newArray(int size) {
+            return new Product[size];
+        }
+    };
 
     public int getNumber() { return number;}
 
@@ -69,5 +92,20 @@ public class Product {
 
     public void setStar(double star) {
         this.star = star;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(imageRepresent);
+        dest.writeString(name);
+        dest.writeInt(price);
+        dest.writeDouble(star);
+        dest.writeParcelable(imgFromUrl, flags);
+        dest.writeInt(number);
     }
 }

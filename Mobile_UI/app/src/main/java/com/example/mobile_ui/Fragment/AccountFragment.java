@@ -18,6 +18,7 @@ import androidx.fragment.app.Fragment;
 //import com.example.mobile_ui.Adapter.CartProductShopAdapter;
 import com.example.mobile_ui.LoginActivity;
 //import com.example.mobile_ui.Model.CartShop;
+import com.example.mobile_ui.MyBuyrecordActivity;
 import com.example.mobile_ui.R;
 import com.example.mobile_ui.SettingAccountActivity;
 import com.example.mobile_ui.SignUpActivity;
@@ -55,6 +56,7 @@ public class AccountFragment extends Fragment {
         listViewDetailAcc = root.findViewById(R.id.listDetailAccount);
         final List<String> abc = new ArrayList<>();
         abc.add("Xem Gian Hàng");
+        abc.add("Đơn hàng");
         abc.add("Thiết lập tài khoản");
         abc.add("Đăng xuất");
         ArrayAdapter adapter = new ArrayAdapter(getActivity().getApplicationContext(),android.R.layout.simple_list_item_1,abc);
@@ -69,6 +71,9 @@ public class AccountFragment extends Fragment {
                         startActivity(intent);break;
                     case "Thiết lập tài khoản":
                         intent = new Intent(getContext(), SettingAccountActivity.class);
+                        startActivity(intent);break;
+                    case "Đơn hàng":
+                        intent = new Intent(getContext(), MyBuyrecordActivity.class);
                         startActivity(intent);break;
                 }
             }

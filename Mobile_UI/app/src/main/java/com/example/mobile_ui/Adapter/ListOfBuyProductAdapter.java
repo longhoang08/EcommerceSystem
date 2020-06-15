@@ -1,24 +1,25 @@
 package com.example.mobile_ui.Adapter;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.mobile_ui.Model.BuyRecord;
+import com.example.mobile_ui.Model.MyBuyRecord;
 import com.example.mobile_ui.Model.Product;
 import com.example.mobile_ui.R;
 
 import java.util.ArrayList;
 
-public class ListOfBuyrecordAdapter extends BaseAdapter {
-
-    ArrayList<BuyRecord> data;
-    public ListOfBuyrecordAdapter(ArrayList<BuyRecord> dataList){
-        data = dataList;
+public class ListOfBuyProductAdapter extends BaseAdapter {
+    ArrayList<Product> data;
+    ArrayList<Integer> dataBuyNum;
+    public ListOfBuyProductAdapter(ArrayList<Product> listPro,ArrayList<Integer> buyNum){
+        data = listPro;
+        dataBuyNum = buyNum;
     }
     @Override
     public int getCount() {
@@ -27,7 +28,7 @@ public class ListOfBuyrecordAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int position) {
-        return null;
+        return data.get(position);
     }
 
     @Override
@@ -40,26 +41,23 @@ public class ListOfBuyrecordAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         View view;
         if(convertView==null){
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.buyrecord_item, null);
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.buyproduct_item, null);
 
             //anh xa
-            TextView nameOfCustom = view.findViewById(R.id.nameOfCustom);
             ImageView proImg = view.findViewById(R.id.proImg);
             TextView proName = view.findViewById(R.id.proName);
             TextView buyNum = view.findViewById(R.id.buyNum);
             TextView price = view.findViewById(R.id.price);
-            TextView money = view.findViewById(R.id.money);
 
-            nameOfCustom.setText(data.get(position).getCustomer().getUsername());
-            proImg.setImageResource(data.get(position).getBuyProduct().getImageRepresent());
-            proName.setText(data.get(position).getBuyProduct().getName());
-            buyNum.setText("x" + data.get(position).getBuyNum());
-            price.setText("đ"+data.get(position).getBuyProduct().getPrice());
-            money.setText("Thành tiền : đ"+data.get(position).getMoney());
+            proImg.setImageResource(data.get(position).getImageRepresent());
+            proName.setText(data.get(position).getName());
+            buyNum.setText("x" + dataBuyNum.get(position));
+            price.setText("đ"+data.get(position).getPrice());
         }else{
             view=convertView;
         }
-
         return view;
     }
+
+
 }

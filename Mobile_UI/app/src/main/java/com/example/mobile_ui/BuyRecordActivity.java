@@ -8,6 +8,7 @@ import android.os.Bundle;
 import com.example.mobile_ui.Adapter.BuyrecordAdapter;
 import com.example.mobile_ui.Adapter.DetailProductDescriptionAdapter;
 import com.example.mobile_ui.Model.BuyRecord;
+import com.example.mobile_ui.Model.Customer;
 import com.example.mobile_ui.Model.Product;
 import com.example.mobile_ui.View.ExpandHeightViewPager;
 import com.google.android.material.tabs.TabLayout;
@@ -54,63 +55,48 @@ public class BuyRecordActivity extends AppCompatActivity {
 
     private void getArrayBuyrecords(){
         //fake data
-        arrayBuyrecords.add(new BuyRecord("choxacnhan",
+        Customer an = new Customer(R.drawable.icon_kiwi_fruit,"Thành An","Nam",
+                "11/8/1999","Hà Nam","0966947994","12345");
+
+        arrayBuyrecords.add(new BuyRecord("choxacnhan",an,
                 new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
                 2,25000));
-        arrayBuyrecords.add(new BuyRecord("choxacnhan",
-                new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
-                2,25000));
-        arrayBuyrecords.add(new BuyRecord("choxacnhan",
+        arrayBuyrecords.add(new BuyRecord("choxacnhan",an,
                 new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
                 2,25000));
 
-        arrayBuyrecords.add(new BuyRecord("cholayhang",
+        arrayBuyrecords.add(new BuyRecord("cholayhang",an,
                 new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
                 2,25000));
-        arrayBuyrecords.add(new BuyRecord("cholayhang",
-                new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
-                2,25000));
-        arrayBuyrecords.add(new BuyRecord("cholayhang",
+        arrayBuyrecords.add(new BuyRecord("cholayhang",an,
                 new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
                 2,25000));
 
-        arrayBuyrecords.add(new BuyRecord("danggiao",
+        arrayBuyrecords.add(new BuyRecord("danggiao",an,
                 new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
                 2,25000));
-        arrayBuyrecords.add(new BuyRecord("danggiao",
-                new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
-                2,25000));
-        arrayBuyrecords.add(new BuyRecord("danggiao",
+        arrayBuyrecords.add(new BuyRecord("danggiao",an,
                 new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
                 2,25000));
 
-        arrayBuyrecords.add(new BuyRecord("dagiao",
+        arrayBuyrecords.add(new BuyRecord("dagiao",an,
                 new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
                 2,25000));
-        arrayBuyrecords.add(new BuyRecord("dagiao",
-                new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
-                2,25000));
-        arrayBuyrecords.add(new BuyRecord("dagiao",
+        arrayBuyrecords.add(new BuyRecord("dagiao",an,
                 new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
                 2,25000));
 
-        arrayBuyrecords.add(new BuyRecord("dahuy",
+        arrayBuyrecords.add(new BuyRecord("dahuy",an,
                 new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
                 2,25000));
-        arrayBuyrecords.add(new BuyRecord("dahuy",
-                new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
-                2,25000));
-        arrayBuyrecords.add(new BuyRecord("dahuy",
+        arrayBuyrecords.add(new BuyRecord("dahuy",an,
                 new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
                 2,25000));
 
-        arrayBuyrecords.add(new BuyRecord("trahang",
+        arrayBuyrecords.add(new BuyRecord("trahang",an,
                 new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
                 2,25000));
-        arrayBuyrecords.add(new BuyRecord("trahang",
-                new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
-                2,25000));
-        arrayBuyrecords.add(new BuyRecord("trahang",
+        arrayBuyrecords.add(new BuyRecord("trahang",an,
                 new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
                 2,25000));
     }

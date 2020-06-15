@@ -2,12 +2,23 @@ package com.example.mobile_ui.Model;
 
 public class BuyRecord {
     private String state;
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    private Customer customer;
     private Product buyProduct;
     private int buyNum;
     private int money;
 
-    public BuyRecord(String state,Product product,int buyNum,int money) {
+    public BuyRecord(String state,Customer customer,Product product,int buyNum,int money) {
         this.state = state;
+        this.customer=customer;
         this.buyProduct=product;
         this.buyNum=buyNum;
         this.money=money;
