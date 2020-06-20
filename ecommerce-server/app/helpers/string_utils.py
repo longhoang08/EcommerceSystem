@@ -2,6 +2,9 @@
 import logging
 
 __author__ = 'LongHB'
+
+import re
+
 _logger = logging.getLogger(__name__)
 
 
