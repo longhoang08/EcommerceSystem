@@ -1,14 +1,22 @@
 # coding=utf-8
+import json
 import logging
+from typing import Tuple, List
 
 from elasticsearch_dsl import query, Search
 
+from app.helpers.string_utils import normalize_text
 from config import FILES_INDEX
 from app.models.product import mappings, settings
 from app.repositories.es_base import EsRepositoryInterface
 
 __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
+
+KEYWORD_NAME_FIELD = 'search_text.raw'
+KEYWORD_NAME_NO_TONE_FIELD = 'search_text_no_tone.raw'
+SEARCH_TEXT_FIELD = 'search_text'
+SEARCH_TEXT_NO_TONE_FIELD = 'search_text_no_tone'
 
 
 class ProductElasticRepo(EsRepositoryInterface):
@@ -21,26 +29,21 @@ class ProductElasticRepo(EsRepositoryInterface):
 
     def search(self, args):
         """
-        exec query and return response
-        :param args:
-        :return:
+        Build queries for searching products
+        :param dict args: arguments
+        :return: result searching
+        :rtype: List
         """
-        product_es = self.build_query(args)
-        # print(json.dumps(product_es.to_dict()))
-        responses = product_es.using(self.es).index(self._index).execute()
+        have_text_query = args['q'] is not None
+        if have_text_query:
+            queries = [self.build_first_query(args), self.build_second_query(args)]
+            responses, query_index = self.multiple_query(self._index, queries)
+        else:
+            product_es = self.build_first_query(args)
+            responses = product_es.using(self.es).index(self._index).execute()
+            responses = responses.to_dict()
+        # _logger.info(self.build_log_with_responses(responses))
         return responses
-
-    def build_query(self, args):
-        """
-        Build query for es
-        :param args:
-        :return:
-        """
-        conditions = query.Bool(
-            must=query.MatchAll()
-        )
-        product_es = self.build_file_es(args, conditions)
-        return product_es
 
     def build_file_es(self, args, search_condition):
         product_es = Search() \
@@ -63,3 +66,179 @@ class ProductElasticRepo(EsRepositoryInterface):
                 'order': 'desc'
             }
         }
+
+    def get_filter_condition(self, args):
+        return query.MatchAll()
+
+    @staticmethod
+    def add_page_limit_to_product_es(args, product_es):
+        _page = args['_page']
+        _limit = args['_limit']
+        # Pagination
+        product_es = product_es[(_page - 1) * _limit: _page * _limit]
+        return product_es
+
+    def build_product_es(self, args, product_search_condition, sources):
+        product_es = Search() \
+            .query(product_search_condition) \
+            .source(['sku'] if args.get('only_sku') else sources) \
+            .extra(track_total_hits=True)
+        product_es = product_es.sort(*self.sort_condition(args))
+        return product_es
+
+    @staticmethod
+    def build_sources(args):
+        return ["name", "categories", "attributes", "seller"]
+
+    def build_product_es_from_text_query_condition(self, args, text_query_condition):
+        product_search_condition = text_query_condition
+        sources = self.build_sources(args)
+        product_es = self.build_product_es(args, product_search_condition, sources)
+        product_es = self.add_page_limit_to_product_es(args, product_es)
+        return product_es
+
+    # Text query only =================================================================================================
+
+    def build_first_query(self, args) -> query.Query:
+        """
+        Nếu khớp với 1 sku hoặc 1 phần của 1 sku nào đó, query sẽ trả về sản phẩm có sku đó
+        Query khớp hoàn toàn với tên sản phẩm, không cho phép khoảng trống cũng như đổi thứ tự
+        Query sẽ trả về match all nếu text truyền vào rỗng
+        :param args:
+        :return: product_es
+        """
+        text_source = args.get('q_source')
+        search_text = args.get('search_text')
+        search_text_no_tone = args.get('q')
+        text_query_condition = query.Bool(
+            must=[
+                query.Bool(
+                    should=[query.MatchAll()] if search_text is None else
+                    [
+                        *self.build_sku_match_conditions(text_source),
+                        *self.build_extract_match_text_conditions(search_text, search_text_no_tone, args)
+                    ]
+                ),
+                query.Exists(field="name"),
+                query.Exists(field="seller")
+            ],
+            filter=self.get_filter_condition(args)
+        )
+        products_es = self.build_product_es_from_text_query_condition(args, text_query_condition)
+        # print(json.dumps(products_es.to_dict()))
+        return products_es
+
+    def build_second_query(self, args):
+        """
+        Hàm chỉ được gọi khi có search text
+        :param args:
+        :param fuzziness:
+        :return:
+        """
+        fuzzinees = "AUTO"  # Use auto fuzzinees for second query
+
+        search_text = args.get('search_text')
+
+        text_query_condition = query.Bool(
+            must=[
+                query.Exists(field="name"),
+                query.Exists(field="seller")
+            ],
+            should=[
+                self.build_match_query(SEARCH_TEXT_FIELD, search_text, fuzzinees, 2),
+                self.build_match_query(SEARCH_TEXT_NO_TONE_FIELD, search_text, fuzzinees)
+
+            ],
+            minimum_should_match=1,
+            filter=self.get_filter_condition(args)
+        )
+
+        products_es = self.build_product_es_from_text_query_condition(args, text_query_condition)
+        # print(json.dumps(products_es.to_dict()))
+        return products_es
+
+    @staticmethod
+    def build_sku_match_conditions(text_source: str) -> List[query.Query]:
+        return [
+            query.Term(sku__raw={
+                "value": text_source,
+                "boost": pow(10, 7)
+            }),
+            query.Prefix(sku__raw={
+                "value": text_source,
+                "boost": pow(10, 6)
+            })
+        ]
+
+    @staticmethod
+    def build_extract_match_text_conditions(search_text: str, search_text_no_tone: str, args: dict) \
+            -> List[query.Query]:
+
+        fuzzinees = "0"  # Don't use fuzzy in first query
+
+        return [
+            ProductElasticRepo.build_prefix_query(KEYWORD_NAME_FIELD, search_text, pow(10, 5) * 2),
+            ProductElasticRepo.build_prefix_query(KEYWORD_NAME_NO_TONE_FIELD, search_text_no_tone, pow(10, 5)),
+
+            ProductElasticRepo.build_phrase_prefix_query(SEARCH_TEXT_FIELD, search_text, pow(10, 3) * 2),
+            ProductElasticRepo.build_phrase_prefix_query(
+                SEARCH_TEXT_NO_TONE_FIELD, search_text_no_tone, pow(10, 3)),
+
+            ProductElasticRepo.build_match_query(SEARCH_TEXT_FIELD, search_text, fuzzinees, 2),
+            ProductElasticRepo.build_match_query(SEARCH_TEXT_NO_TONE_FIELD, search_text, fuzzinees)
+        ]
+
+    @staticmethod
+    def build_prefix_query(key: str, term: str, boost_factor: int) -> query.Query:
+        return query.Prefix(**{
+            key: {
+                "value": term,
+                "boost": boost_factor
+            }
+        })
+
+    @staticmethod
+    def build_phrase_prefix_query(key: str, term: str, boost_factor: int):
+        return query.MatchPhrasePrefix(**{
+            key: {
+                "query": term,
+                "boost": boost_factor
+            }
+        })
+
+    @staticmethod
+    def build_match_query(key: str, term: str, fuzziness: str, boost_factor: int = 1) -> query.Query:
+        return query.Match(**{
+            key: {
+                'query': term,
+                'operator': 'or',
+                "fuzziness": fuzziness,
+                "minimum_should_match": "3<75%",
+                'boost': boost_factor
+            }
+        })
+
+    def multiple_query(self, index, queries):
+        search_queries = []
+
+        for query in queries:
+            search_queries.append({
+                'index': index
+            })
+            search_queries.append(query.to_dict())
+        query_request = ''
+        for search_query in search_queries:
+            query_request += '%s \n' % json.dumps(search_query)
+        es = self.es
+        resp = es.msearch(body=query_request, index=self._index)
+        msearch_responses = resp["responses"]
+        for query_index, msearch_response in enumerate(msearch_responses):
+            if not self.is_empty_responses(msearch_response):
+                responses = msearch_response
+                return responses, query_index
+        return msearch_responses[0], 0
+
+    @staticmethod
+    def is_empty_responses(responses):
+        number_of_products = responses['hits']['total']['value']
+        return number_of_products == 0

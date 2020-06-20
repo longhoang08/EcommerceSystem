@@ -1,14 +1,18 @@
 # coding=utf-8
 import logging
 
+from app.helpers.product_utils import Utilities, Converter
 from app.repositories.product import ProductElasticRepo
 
 __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
 
 
-def search(args):
-    return None
+def get_result_search(args):
+    args = Utilities.reformat_params(args)
+    product_es = ProductElasticRepo()
+    response = product_es.search(args)
+    return extract_product_data_from_response(response)
 
 
 def get_all_products(args):

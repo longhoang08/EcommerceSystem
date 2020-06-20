@@ -65,9 +65,6 @@ prices = {
         },
         "sale_price": {
             "type": "double"
-        },
-        "import_price": {
-            "type": "double"
         }
     }
 }
@@ -124,11 +121,52 @@ categories = {
         "name": {
             "type": "text",
         },
-        "name_no_tone": {
-            "type": "text",
-        },
         "parent_id": {
             "type": "integer",
+        }
+    }
+}
+
+attributes = {
+    "type": "nested",
+    "dynamic": "strict",
+    "properties": {
+        "code": {
+            "type": "keyword"
+        },
+        "id": {
+            "type": "integer",
+            "index": False
+        },
+        "is_comparable": {
+            "type": "boolean"
+        },
+        "is_filterable": {
+            "type": "boolean"
+        },
+        "is_searchable": {
+            "type": "boolean"
+        },
+        "name": {
+            "type": "keyword",
+            "index": False
+        },
+        "priority": {
+            "type": "integer",
+            "index": False
+        },
+        "values": {
+            "type": "nested",
+            "dynamic": "strict",
+            "properties": {
+                "option_id": {
+                    "type": "integer"
+                },
+                "value": {
+                    "type": "keyword",
+                    "index": False
+                }
+            }
         }
     }
 }
@@ -140,11 +178,61 @@ basic_details = {
     "name": {
         "type": "text",
     },
-    "name_no_tone": {
-        "type": "keyword",
-    },
     "keyword_generated": {
         "type": "boolean"
+    },
+    "brand": {
+        "dynamic": "strict",
+        "properties": {
+            "code": {
+                "type": "keyword"
+            },
+            "description": {
+                "type": "keyword",
+                "index": False
+            },
+            "id": {
+                "type": "integer"
+            },
+            "name": {
+                "type": "keyword",
+                "index": False
+            }
+        }
+    },
+    "images": {
+        "type": "nested",
+        "dynamic": "strict",
+        "properties": {
+            "label": {
+                "type": "keyword",
+                "index": False
+            },
+            "path": {
+                "type": "keyword",
+                "index": False
+            },
+            "priority": {
+                "type": "integer",
+                "index": False
+            },
+            "url": {
+                "type": "keyword",
+                "index": False
+            }
+        }
+    },
+    "seller": {
+        "dynamic": "strict",
+        "properties": {
+            "id": {
+                "type": "integer"
+            },
+            "name": {
+                "type": "keyword",
+                "index": False
+            }
+        }
     },
     "search_text": {
         "type": "text",
@@ -214,15 +302,14 @@ rating_details = {
         }
     }
 }
-
 products_details = {
     "categories": categories,
+    "attributes": attributes,
     **basic_details,
     **rating_details
 }
 
 mappings = {
-    "dynamic": "strict",
     "properties": {
         **products_details,
         **products_ppm,

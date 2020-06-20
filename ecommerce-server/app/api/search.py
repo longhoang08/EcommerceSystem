@@ -9,6 +9,9 @@ from app.services import product
 from . import requests
 
 __author__ = 'LongHB'
+
+from ..helpers.product_validator import validate_search_param
+
 _logger = logging.getLogger(__name__)
 
 ns = Namespace('search', description='Search operations')
@@ -22,6 +25,5 @@ class SearchProduct(flask_restplus.Resource):
     # @ns.marshal_with(_search_res)
     def post(self):
         data = request.args or request.json
-        return product.search(**data)
-
-
+        validate_search_param(data)
+        return product.get_result_search(data)
