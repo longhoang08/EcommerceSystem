@@ -4,8 +4,9 @@ import logging
 import flask_restplus
 from flask import request
 
+import app.api.schema.request.seller
+import app.api.schema.response.seller
 from app import services
-from app.api.schema import requests, responses
 from app.extensions import Namespace
 
 __author__ = 'LongHB'
@@ -13,8 +14,8 @@ _logger = logging.getLogger(__name__)
 
 ns = Namespace('seller', description='Seller operations')
 
-_seller_register_req = ns.model('seller_register_req', requests.seller_register_req)
-_seller_register_res = ns.model('seller_register_res', responses.seller_res)
+_seller_register_req = ns.model('seller_register_req', app.api.request.seller.seller_register_req)
+_seller_register_res = ns.model('seller_register_res', app.api.response.seller.seller_res)
 
 
 @ns.route('/register', methods=['POST'])

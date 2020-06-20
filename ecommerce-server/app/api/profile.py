@@ -4,17 +4,18 @@ import logging
 import flask_restplus
 from flask import request
 
+import app.api.schema.request.user
+import app.api.schema.response.user
 from app import services
 from app.extensions import Namespace
-from . import requests, responses
 
 __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
 
 ns = Namespace('profile', description='Profile operations')
 
-_change_password_req = ns.model('change_password_req', requests.change_password_req)
-_user_res = ns.model('user_res', responses.user_res)
+_change_password_req = ns.model('change_password_req', app.api.request.user.change_password_req)
+_user_res = ns.model('user_res', app.api.response.user.user_res)
 
 
 @ns.route('/change_password', methods=['POST'])
@@ -26,7 +27,9 @@ class ChangePassword(flask_restplus.Resource):
         data = request.args or request.json
         return services.user.change_password(**data)
 
-_change_profile_req = ns.model('change_profile_req', requests.change_profile_req)
+
+_change_profile_req = ns.model('change_profile_req', app.api.schema.request.user.change_profile_req)
+
 
 @ns.route('/update_profile', methods=['POST'])
 class UpdateProfile(flask_restplus.Resource):

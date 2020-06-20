@@ -4,20 +4,20 @@ import logging
 import flask_restplus
 from flask import request
 
+import app.api.schema.request.user
+import app.api.schema.response.user
 from app import services
 from app.extensions import Namespace
 from app.helpers import decode_token
 from app.services.register import send_confirm_email
-# from file_management.api import requests, responses
-from . import requests, responses
 
 __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
 
 ns = Namespace('register', description='Register operations')
 
-_register_req = ns.model('register_req', requests.register_user_req)
-_register_res = ns.model('register_res', responses.register_res)
+_register_req = ns.model('register_req', app.api.request.user.register_user_req)
+_register_res = ns.model('register_res', app.api.response.user.register_res)
 
 
 @ns.route('/', methods=['POST'])

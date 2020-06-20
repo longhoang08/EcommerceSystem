@@ -44,17 +44,18 @@ def init_app(app, **kwargs):
     from .profile import ns as profile_ns
     from .file import ns as file_ns
     from .seller import ns as seller_ns
-    from .search import ns as search_ns
+    from .product import ns as product_ns
 
     api.add_namespace(register_ns)
     api.add_namespace(user_ns)
     api.add_namespace(profile_ns)
     api.add_namespace(file_ns)
     api.add_namespace(seller_ns)
-    api.add_namespace(search_ns)
+    api.add_namespace(product_ns)
 
     app.register_blueprint(api_bp)
     api.error_handlers[Exception] = global_error_handler
 
 
-from .schema import requests, responses
+from .schema import request
+from .schema import response
