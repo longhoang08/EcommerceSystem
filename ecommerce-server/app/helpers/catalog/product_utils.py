@@ -31,12 +31,32 @@ class Utilities:
         return total_pages, next_page, previous_page
 
     @staticmethod
-    def reformat_params(args):
-        if args.get('_limit') is not None and args.get('_limit') > 1000:
+    def reformat_product_searchparams(args):
+        args['_limit'] = args.get('_limit') or 10
+        if args.get('_limit') > 1000 or args.get('_limit') < 1:
             args['_limit'] = 10
+        args['_page'] = args.get('_page') or 1
+        args['_page'] = max(args['_page'], 1)
 
         search_text = args.get('q')
         args['q_source'] = search_text
+        search_text = normalize_text(search_text)
+        args['search_text'] = search_text
+
+        args['q'] = remove_vi_accent(search_text) if \
+            args.get('q') is not None else None
+
+        return args
+
+    @staticmethod
+    def reformat_keyword_search_params(args):
+        args['_limit'] = args.get('_limit') or 10
+        if args.get('_limit') > 1000 or args.get('_limit') < 1:
+            args['_limit'] = 10
+        args['_page'] = args.get('_page') or 1
+        args['_page'] = max(args['_page'], 1)
+
+        search_text = args.get('q')
         search_text = normalize_text(search_text)
         args['search_text'] = search_text
 

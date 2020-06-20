@@ -30,7 +30,6 @@ with open(os.path.join(os.path.dirname(__file__), 'categories.json')) as json_fi
         is_leaf_category[category_id] = True
         cat_id_to_code[category_id] = category_code
 
-    #  Change all cat which have parrent to not leaf
     for category_code in categories_data.keys():
         category = categories_data[category_code]
         is_leaf_category[category["parent_id"]] = False
