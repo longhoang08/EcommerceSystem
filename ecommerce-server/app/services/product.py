@@ -12,7 +12,7 @@ def get_result_search(args):
     args = Utilities.reformat_params(args)
     product_es = ProductElasticRepo()
     response = product_es.search(args)
-    print(response)
+    # print(response)
     return extract_product_data_from_response(response)
 
 
@@ -25,7 +25,7 @@ def get_all_products(args):
 
 def extract_product_data_from_response(responses):
     if not responses:
-        return {'result': {'files': []}}
+        return {'result': {'products': []}}
     hits = responses['hits']['hits']
     products = [item['_source'] for item in hits]
     return {'result': {'products': products}}

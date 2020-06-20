@@ -88,7 +88,8 @@ class ProductElasticRepo(EsRepositoryInterface):
 
     @staticmethod
     def build_sources(args):
-        return ["name", "categories", "attributes", "seller"]
+        return ["name", "categories", "attributes", "seller", "brand", "description", "images", "price", "quantity",
+                "sku", "stock"]
 
     def build_product_es_from_text_query_condition(self, args, text_query_condition):
         product_search_condition = text_query_condition
