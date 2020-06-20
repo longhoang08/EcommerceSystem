@@ -7,7 +7,7 @@ register_user_req = {
     'fullname': fields.String(required=True, description='fullname of user'),
     'password': fields.String(required=True, description='raw password of user'),
     'address': fields.String(required=True, description='Adress of user'),
-    'gender': fields.String(required=True, description='Gender of user. 1 -> male')
+    'gender': fields.Integer(required=True, description='Gender of user. 1 -> male')
 }
 
 login_req = {
