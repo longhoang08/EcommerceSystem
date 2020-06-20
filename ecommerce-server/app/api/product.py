@@ -17,7 +17,8 @@ _logger = logging.getLogger(__name__)
 ns = Namespace('product', description='Product operations')
 
 _product_search_req = ns.model('product_search_req', app.api.request.product.product_search_req)
-_keyword_req = ns.model('product_searchreq', app.api.request.product.keyword_recommder_req)
+_category_finding_req = ns.model('_category_finding_req', app.api.request.product.category_finding_req)
+_keyword_req = ns.model('keyword_recommend_req', app.api.request.product.keyword_recommder_req)
 
 
 @ns.route('/keywords', methods=['POST'])
@@ -35,7 +36,17 @@ class SearchProduct(flask_restplus.Resource):
     def post(self):
         data = request.args or request.json
         validate_product_search_param(data)
-        return product.get_result_search(data)
+        return {
+            "categories": product.get_result_search(data)
+        }
+
+
+@ns.route('/categories/choosable', methods=['POST'])
+class CategoriesChooseable(flask_restplus.Resource):
+    @ns.expect(_category_finding_req, validate=True)
+    def post(self):
+        from app.helpers.catalog import all_leaf_categories
+        return all_leaf_categories
 
 # _product_details_req = ns.model('product_details_req', app.api.schema.request.product.product_search_req)
 # @ns.route('/details', methods=['POST'])

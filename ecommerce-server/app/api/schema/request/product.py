@@ -20,3 +20,13 @@ keyword_recommder_req = {
     '_page': fields.Integer(required=False, description='Paging, default to 1'),
     '_limit': fields.Integer(required=False, description='Number of product in response. Default to 10'),
 }
+
+category_finding_req = {
+    'q': fields.String(required=False, description='Text query to recommence'),
+    '_page': fields.Integer(required=False, description='Paging, default to 1'),
+    '_limit': fields.Integer(required=False, description='Number of product in response. Default to 10'),
+}
+
+category_details_req = {
+    'code': fields.String(required=True, description='Code of categories'),
+}
