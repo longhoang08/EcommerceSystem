@@ -114,6 +114,15 @@ def update_profile(user: User, **kwargs) -> User:
     avatar_url = kwargs.get('avatar_url')
     if avatar_url:
         user.avatar_url = avatar_url
+
+    address = kwargs.get('address')
+    if address:
+        user.address = address
+
+    gender = kwargs.get('gender')
+    if gender:
+        user.gender = gender
+
     return repo.save(user)
 
 
