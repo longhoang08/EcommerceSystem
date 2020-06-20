@@ -1,0 +1,7205 @@
+{
+  "VMA-01-010": {
+    "code": "VMA-01-010",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Th\u1ef1c ph\u1ea9m kh\u00f4",
+    "id": 1530
+  },
+  "VMA-01-008": {
+    "code": "VMA-01-008",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Th\u1ecbt ngu\u1ed9i, x\u00fac x\u00edch, h\u00e0ng chua",
+    "id": 1528
+  },
+  "VMA-01-003": {
+    "code": "VMA-01-003",
+    "level": 1,
+    "parent_id": 0,
+    "name": "B\u01a1, s\u1eefa, tr\u1ee9ng",
+    "id": 1523
+  },
+  "VMA-01-001": {
+    "code": "VMA-01-001",
+    "level": 1,
+    "parent_id": 0,
+    "name": "B\u00e1nh k\u1eb9o",
+    "id": 1521
+  },
+  "VMA-01-005": {
+    "code": "VMA-01-005",
+    "level": 1,
+    "parent_id": 0,
+    "name": "\u0110\u00f4ng l\u1ea1nh",
+    "id": 1525
+  },
+  "VMA-01-011": {
+    "code": "VMA-01-011",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Th\u1ee7y h\u1ea3i s\u1ea3n",
+    "id": 1531
+  },
+  "VMA-01-009": {
+    "code": "VMA-01-009",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Th\u1ee9c \u0103n n\u1ea5u s\u1eb5n",
+    "id": 1529
+  },
+  "VMA-01-004": {
+    "code": "VMA-01-004",
+    "level": 1,
+    "parent_id": 0,
+    "name": "\u0110\u1ed3 u\u1ed1ng, thu\u1ed1c l\u00e1",
+    "id": 1524
+  },
+  "VMA-01-015": {
+    "code": "VMA-01-015",
+    "level": 1,
+    "parent_id": 0,
+    "name": "M\u1ef9 ph\u1ea9m, ch\u0103m s\u00f3c c\u00e1 nh\u00e2n",
+    "id": 1535
+  },
+  "VMA-01-014": {
+    "code": "VMA-01-014",
+    "level": 1,
+    "parent_id": 0,
+    "name": "H\u00f3a ph\u1ea9m",
+    "id": 1534
+  },
+  "VMA-01-013": {
+    "code": "VMA-01-013",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Gi\u1ea5y v\u00e0 b\u00f4ng",
+    "id": 1533
+  },
+  "VMA-01-017": {
+    "code": "VMA-01-017",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Gia d\u1ee5ng",
+    "id": 1537
+  },
+  "VMA-01-007": {
+    "code": "VMA-01-007",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Th\u1ecbt",
+    "id": 1527
+  },
+  "VMA-01-006": {
+    "code": "VMA-01-006",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Rau c\u1ee7",
+    "id": 1526
+  },
+  "VMA-01-016": {
+    "code": "VMA-01-016",
+    "level": 1,
+    "parent_id": 0,
+    "name": "B\u00f4ng v\u1ea3i s\u1ee3i, gi\u00e0y d\u00e9p",
+    "id": 1536
+  },
+  "VMA-01-002": {
+    "code": "VMA-01-002",
+    "level": 1,
+    "parent_id": 0,
+    "name": "B\u00e1nh m\u1ef3",
+    "id": 1522
+  },
+  "VMA-01-012": {
+    "code": "VMA-01-012",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Tr\u00e1i c\u00e2y",
+    "id": 1532
+  },
+  "03-N006": {
+    "code": "03-N006",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Router/ repeater/Thi\u1ebft b\u1ecb m\u1ea1ng",
+    "id": 419
+  },
+  "03-N006-01": {
+    "code": "03-N006-01",
+    "level": 2,
+    "parent_id": 419,
+    "name": "Moderm",
+    "id": 420
+  },
+  "03-N006-01-02": {
+    "code": "03-N006-01-02",
+    "level": 3,
+    "parent_id": 420,
+    "name": "Modem Adsl",
+    "id": 422
+  },
+  "01-N002": {
+    "code": "01-N002",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Laptop accessories/Ph\u1ee5 Ki\u1ec7n Laptop",
+    "id": 83
+  },
+  "01-N002-05": {
+    "code": "01-N002-05",
+    "level": 2,
+    "parent_id": 83,
+    "name": "Adapter Laptop",
+    "id": 95
+  },
+  "01-N002-05-99": {
+    "code": "01-N002-05-99",
+    "level": 3,
+    "parent_id": 95,
+    "name": "Other Adapter Laptop/Adapter Laptop Kh\u00e1c",
+    "id": 98
+  },
+  "04-N027": {
+    "code": "04-N027",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Security equipment/Thi\u1ebft b\u1ecb an ninh",
+    "id": 626
+  },
+  "04-N027-03": {
+    "code": "04-N027-03",
+    "level": 2,
+    "parent_id": 626,
+    "name": "Camera Accessories/Ph\u1ee5 Ki\u1ec7n Camera",
+    "id": 667
+  },
+  "98-N001": {
+    "code": "98-N001",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Gift/H\u00e0ng khuy\u1ebfn m\u00e3i",
+    "id": 1038
+  },
+  "04-N019": {
+    "code": "04-N019",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Barcode scanner/M\u00e1y Qu\u00e9t M\u00e3 V\u1ea1ch",
+    "id": 603
+  },
+  "04-N019-99": {
+    "code": "04-N019-99",
+    "level": 2,
+    "parent_id": 603,
+    "name": "Other Barcode scanner/M\u00e1y Qu\u00e9t M\u00e3 V\u1ea1ch Kh\u00e1c",
+    "id": 606
+  },
+  "06-N099": {
+    "code": "06-N099",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Other/S\u1ea3n Ph\u1ea9m Kh\u00e1c",
+    "id": 967
+  },
+  "06-N099-05": {
+    "code": "06-N099-05",
+    "level": 2,
+    "parent_id": 967,
+    "name": "Machine Repair Tools/\u0110\u1ed3 Ngh\u1ec1 S\u1eeda M\u00e1y",
+    "id": 972
+  },
+  "06-N005": {
+    "code": "06-N005",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Cable",
+    "id": 900
+  },
+  "06-N005-05": {
+    "code": "06-N005-05",
+    "level": 2,
+    "parent_id": 900,
+    "name": "Other Cable/Cable Kh\u00e1c",
+    "id": 905
+  },
+  "03-N006-05": {
+    "code": "03-N006-05",
+    "level": 2,
+    "parent_id": 419,
+    "name": "Network accessories/Ph\u1ee5 Ki\u1ec7n M\u1ea1ng",
+    "id": 449
+  },
+  "03-N006-05-01": {
+    "code": "03-N006-05-01",
+    "level": 3,
+    "parent_id": 449,
+    "name": "Network Cable/Cable M\u1ea1ng (Th\u00f9ng)",
+    "id": 450
+  },
+  "06-N013": {
+    "code": "06-N013",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Hub/B\u1ed9 Chia/Chuy\u1ec3n \u0110\u1ed5i",
+    "id": 938
+  },
+  "06-N013-99": {
+    "code": "06-N013-99",
+    "level": 2,
+    "parent_id": 938,
+    "name": "Other Hub/Hub Kh\u00e1c",
+    "id": 950
+  },
+  "06-N005-01": {
+    "code": "06-N005-01",
+    "level": 2,
+    "parent_id": 900,
+    "name": "Cable HDMI",
+    "id": 901
+  },
+  "06-N099-99": {
+    "code": "06-N099-99",
+    "level": 2,
+    "parent_id": 967,
+    "name": "Other/SP Kh\u00e1c",
+    "id": 977
+  },
+  "03-N006-05-03": {
+    "code": "03-N006-05-03",
+    "level": 3,
+    "parent_id": 449,
+    "name": "Other network accessories/Ph\u1ee5 Ki\u1ec7n M\u1ea1ng",
+    "id": 452
+  },
+  "06-N013-08": {
+    "code": "06-N013-08",
+    "level": 2,
+    "parent_id": 938,
+    "name": "Hub Unitek",
+    "id": 946
+  },
+  "06-N005-04": {
+    "code": "06-N005-04",
+    "level": 2,
+    "parent_id": 900,
+    "name": "Cable Convert/Cable Chuy\u1ec3n",
+    "id": 904
+  },
+  "06-N005-02": {
+    "code": "06-N005-02",
+    "level": 2,
+    "parent_id": 900,
+    "name": "Cable Usb",
+    "id": 902
+  },
+  "03-N006-05-02": {
+    "code": "03-N006-05-02",
+    "level": 3,
+    "parent_id": 449,
+    "name": "Utp Cable/Cable Utp",
+    "id": 451
+  },
+  "06-N005-03": {
+    "code": "06-N005-03",
+    "level": 2,
+    "parent_id": 900,
+    "name": "Cable VGA",
+    "id": 903
+  },
+  "06-N099-04": {
+    "code": "06-N099-04",
+    "level": 2,
+    "parent_id": 967,
+    "name": "Card Transfer Types/Card Chuy\u1ec3n C\u00e1c Lo\u1ea1i",
+    "id": 971
+  },
+  "04-N012": {
+    "code": "04-N012",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Unifiled Communication/T\u1ed5ng \u0110\u00e0i",
+    "id": 572
+  },
+  "04-N012-01": {
+    "code": "04-N012-01",
+    "level": 2,
+    "parent_id": 572,
+    "name": "Card Unifiled Communication/Card T\u1ed5ng \u0110\u00e0i",
+    "id": 573
+  },
+  "02-N009": {
+    "code": "02-N009",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Case/Th\u00f9ng M\u00e1y",
+    "id": 276
+  },
+  "02-N009-05": {
+    "code": "02-N009-05",
+    "level": 2,
+    "parent_id": 276,
+    "name": "Case Cooler Master/Th\u00f9ng M\u00e1y Cooler Master",
+    "id": 281
+  },
+  "06-N099-06": {
+    "code": "06-N099-06",
+    "level": 2,
+    "parent_id": 967,
+    "name": "Cleaning equipment/Thi\u1ebft B\u1ecb V\u1ec7 Sinh",
+    "id": 973
+  },
+  "03-N006-02": {
+    "code": "03-N006-02",
+    "level": 2,
+    "parent_id": 419,
+    "name": "Router Wifi",
+    "id": 423
+  },
+  "03-N006-02-99": {
+    "code": "03-N006-02-99",
+    "level": 3,
+    "parent_id": 423,
+    "name": "Other Router Wifi/Router Wifi Kh\u00e1c",
+    "id": 432
+  },
+  "03-N006-02-01": {
+    "code": "03-N006-02-01",
+    "level": 3,
+    "parent_id": 423,
+    "name": "Router Wifi D-Link",
+    "id": 424
+  },
+  "03-N006-03": {
+    "code": "03-N006-03",
+    "level": 2,
+    "parent_id": 419,
+    "name": "Network Interface Card/Card M\u1ea1ng",
+    "id": 433
+  },
+  "03-N006-03-01": {
+    "code": "03-N006-03-01",
+    "level": 3,
+    "parent_id": 433,
+    "name": "Network Interface Card Dlink/Card M\u1ea1ng Dlink",
+    "id": 434
+  },
+  "02-N004": {
+    "code": "02-N004",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Ram",
+    "id": 214
+  },
+  "02-N004-02": {
+    "code": "02-N004-02",
+    "level": 2,
+    "parent_id": 214,
+    "name": "Ram Kingmax",
+    "id": 216
+  },
+  "02-N004-04": {
+    "code": "02-N004-04",
+    "level": 2,
+    "parent_id": 214,
+    "name": "Ram Corsair",
+    "id": 218
+  },
+  "02-N011": {
+    "code": "02-N011",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Optical drive/\u1ed4 Quang",
+    "id": 299
+  },
+  "02-N011-02": {
+    "code": "02-N011-02",
+    "level": 2,
+    "parent_id": 299,
+    "name": "External Optical drive/\u1ed5 Quang g\u1eafn Ngo\u00e0i",
+    "id": 301
+  },
+  "04-N022": {
+    "code": "04-N022",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Drum",
+    "id": 614
+  },
+  "07-N002": {
+    "code": "07-N002",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Warranty services/D\u1ecbch V\u1ee5 B\u1ea3o H\u00e0nh - B\u1ea3o Tr\u00ec",
+    "id": 985
+  },
+  "07-N002-01": {
+    "code": "07-N002-01",
+    "level": 2,
+    "parent_id": 985,
+    "name": "Warranty services/D\u1ecbch V\u1ee5 B\u1ea3o H\u00e0nh",
+    "id": 986
+  },
+  "06-N004": {
+    "code": "06-N004",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Fan",
+    "id": 894
+  },
+  "06-N004-01": {
+    "code": "06-N004-01",
+    "level": 2,
+    "parent_id": 894,
+    "name": "Fan Cpu",
+    "id": 895
+  },
+  "06-N004-03": {
+    "code": "06-N004-03",
+    "level": 2,
+    "parent_id": 894,
+    "name": "Other Fan/Fan Kh\u00e1c",
+    "id": 899
+  },
+  "06-N011": {
+    "code": "06-N011",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Gamepad/Tay c\u1ea7m ch\u01a1i game",
+    "id": 921
+  },
+  "06-N011-99": {
+    "code": "06-N011-99",
+    "level": 2,
+    "parent_id": 921,
+    "name": "Other Gamepad/Tay c\u1ea7m Game Kh\u00e1c",
+    "id": 935
+  },
+  "06-N011-05": {
+    "code": "06-N011-05",
+    "level": 2,
+    "parent_id": 921,
+    "name": "Gamepad Logitech/Tay c\u1ea7m Game Logitech",
+    "id": 926
+  },
+  "04-N005": {
+    "code": "04-N005",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Projector/Thi\u1ebft b\u1ecb tr\u00ecnh chi\u1ebfu",
+    "id": 495
+  },
+  "04-N005-02": {
+    "code": "04-N005-02",
+    "level": 2,
+    "parent_id": 495,
+    "name": "Projector accessories/Ph\u1ee5 Ki\u1ec7n M\u00e1y Chi\u1ebfu",
+    "id": 502
+  },
+  "04-N005-02-02": {
+    "code": "04-N005-02-02",
+    "level": 3,
+    "parent_id": 502,
+    "name": "Projector rack/Gi\u00e1 Treo",
+    "id": 504
+  },
+  "04-N024": {
+    "code": "04-N024",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Paper/Gi\u1ea5y",
+    "id": 616
+  },
+  "04-N024-03": {
+    "code": "04-N024-03",
+    "level": 2,
+    "parent_id": 616,
+    "name": "Continuous printing paper/Gi\u1ea5y Li\u00ean T\u1ee5c",
+    "id": 619
+  },
+  "04-N024-02": {
+    "code": "04-N024-02",
+    "level": 2,
+    "parent_id": 616,
+    "name": "Paper A4/Gi\u1ea5y A4",
+    "id": 618
+  },
+  "04-N024-04": {
+    "code": "04-N024-04",
+    "level": 2,
+    "parent_id": 616,
+    "name": "Bill paper/Gi\u1ea5y In Bill",
+    "id": 620
+  },
+  "04-N024-99": {
+    "code": "04-N024-99",
+    "level": 2,
+    "parent_id": 616,
+    "name": "Other paper/Gi\u1ea5y Kh\u00e1c",
+    "id": 622
+  },
+  "02-N006": {
+    "code": "02-N006",
+    "level": 1,
+    "parent_id": 0,
+    "name": "External hard drive/\u1ed4 C\u1ee9ng G\u1eafn Ngo\u00e0i",
+    "id": 249
+  },
+  "02-N006-01": {
+    "code": "02-N006-01",
+    "level": 2,
+    "parent_id": 249,
+    "name": "External hard drive Seagate/\u1ed5 C\u1ee9ng G\u1eafn Ngo\u00e0i Seagate",
+    "id": 250
+  },
+  "02-N005": {
+    "code": "02-N005",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Internal Hard drive/\u1ed4 c\u1ee9ng g\u1eafn trong",
+    "id": 228
+  },
+  "02-N005-02": {
+    "code": "02-N005-02",
+    "level": 2,
+    "parent_id": 228,
+    "name": "Hard Drive 3.5'' PC/\u1ed5 C\u1ee9ng 3.5'' PC",
+    "id": 244
+  },
+  "02-N005-02-01": {
+    "code": "02-N005-02-01",
+    "level": 3,
+    "parent_id": 244,
+    "name": "Hard Drive 3.5'' Seagate/\u1ed5 C\u1ee9ng 3.5'' Seagate",
+    "id": 245
+  },
+  "02-N006-03": {
+    "code": "02-N006-03",
+    "level": 2,
+    "parent_id": 249,
+    "name": "External hard drive Transcend/\u1ed5 C\u1ee9ng G\u1eafn Ngo\u00e0i Transcend",
+    "id": 252
+  },
+  "02-N006-02": {
+    "code": "02-N006-02",
+    "level": 2,
+    "parent_id": 249,
+    "name": "External hard drive Western/\u1ed5 C\u1ee9ng G\u1eafn Ngo\u00e0i Western",
+    "id": 251
+  },
+  "02-N005-02-02": {
+    "code": "02-N005-02-02",
+    "level": 3,
+    "parent_id": 244,
+    "name": "Hard Drive 3.5'' Western/\u1ed5 C\u1ee9ng 3.5'' Western",
+    "id": 246
+  },
+  "03-N005": {
+    "code": "03-N005",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Head phone/Tai Nghe",
+    "id": 382
+  },
+  "03-N005-01": {
+    "code": "03-N005-01",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Logitech/Tai Nghe Logitech",
+    "id": 383
+  },
+  "03-N005-08": {
+    "code": "03-N005-08",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Microlap/Tai Nghe Microlap",
+    "id": 390
+  },
+  "03-N005-07": {
+    "code": "03-N005-07",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Soundmax/Tai Nghe Soundmax",
+    "id": 389
+  },
+  "04-N020": {
+    "code": "04-N020",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Cash register/M\u00e1y T\u00ednh Ti\u1ec1n Si\u00eau Th\u1ecb",
+    "id": 607
+  },
+  "04-N020-01": {
+    "code": "04-N020-01",
+    "level": 2,
+    "parent_id": 607,
+    "name": "Cash register/M\u00e1y T\u00ednh Ti\u1ec1n Si\u00eau Th\u1ecb (04-N020-01)",
+    "id": 608
+  },
+  "04-N010": {
+    "code": "04-N010",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Ink/M\u1ef1c In",
+    "id": 552
+  },
+  "04-N010-02": {
+    "code": "04-N010-02",
+    "level": 2,
+    "parent_id": 552,
+    "name": "Ink Inkjet/M\u1ef1c In Phun",
+    "id": 561
+  },
+  "04-N010-02-03": {
+    "code": "04-N010-02-03",
+    "level": 3,
+    "parent_id": 561,
+    "name": "Ink Inkjet Brother/M\u1ef1c In Phun Brother",
+    "id": 564
+  },
+  "04-N010-01": {
+    "code": "04-N010-01",
+    "level": 2,
+    "parent_id": 552,
+    "name": "Ink Laser/M\u1ef1c In Laser",
+    "id": 553
+  },
+  "04-N010-01-05": {
+    "code": "04-N010-01-05",
+    "level": 3,
+    "parent_id": 553,
+    "name": "Ink Laser Brother/M\u1ef1c In Laser Brother",
+    "id": 558
+  },
+  "04-N010-01-01": {
+    "code": "04-N010-01-01",
+    "level": 3,
+    "parent_id": 553,
+    "name": "Ink Laser Canon/M\u1ef1c In Laser Canon",
+    "id": 554
+  },
+  "04-N010-02-01": {
+    "code": "04-N010-02-01",
+    "level": 3,
+    "parent_id": 561,
+    "name": "Ink Inkjet Canon/M\u1ef1c In Phun Canon",
+    "id": 562
+  },
+  "04-N010-02-04": {
+    "code": "04-N010-02-04",
+    "level": 3,
+    "parent_id": 561,
+    "name": "Ink Inkjet Epson/M\u1ef1c In Phun Epson",
+    "id": 565
+  },
+  "04-N010-01-02": {
+    "code": "04-N010-01-02",
+    "level": 3,
+    "parent_id": 553,
+    "name": "Ink Laser Hp/M\u1ef1c In Laser Hp",
+    "id": 555
+  },
+  "04-N010-02-02": {
+    "code": "04-N010-02-02",
+    "level": 3,
+    "parent_id": 561,
+    "name": "Ink Inkjet HP/M\u1ef1c In Phun HP",
+    "id": 563
+  },
+  "04-N010-01-04": {
+    "code": "04-N010-01-04",
+    "level": 3,
+    "parent_id": 553,
+    "name": "Ink Laser Xerox/M\u1ef1c In Laser Xerox",
+    "id": 557
+  },
+  "03-N002": {
+    "code": "03-N002",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Key board/B\u00e0n Ph\u00edm",
+    "id": 320
+  },
+  "03-N002-99": {
+    "code": "03-N002-99",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Other Keyboard/B\u00e0n Ph\u00edm Kh\u00e1c",
+    "id": 342
+  },
+  "03-N002-01": {
+    "code": "03-N002-01",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Keyboard Logitech/B\u00e0n Ph\u00edm Logitech",
+    "id": 321
+  },
+  "03-N003": {
+    "code": "03-N003",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Keyboard & Mouse/B\u00e0n Ph\u00edm & Chu\u1ed9t",
+    "id": 343
+  },
+  "03-N003-03": {
+    "code": "03-N003-03",
+    "level": 2,
+    "parent_id": 343,
+    "name": "Keyboard & Mouse Logitech",
+    "id": 346
+  },
+  "01-N003": {
+    "code": "01-N003",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Laptop component/Linh Ki\u1ec7n Laptop",
+    "id": 119
+  },
+  "01-N003-02": {
+    "code": "01-N003-02",
+    "level": 2,
+    "parent_id": 119,
+    "name": "Keyboard Laptop/B\u00e0n Ph\u00edm Laptop",
+    "id": 124
+  },
+  "01-N003-02-05": {
+    "code": "01-N003-02-05",
+    "level": 3,
+    "parent_id": 124,
+    "name": "Keyboard Acer/B\u00e0n Ph\u00edm Acer",
+    "id": 129
+  },
+  "01-N003-02-01": {
+    "code": "01-N003-02-01",
+    "level": 3,
+    "parent_id": 124,
+    "name": "Keyboard Asus/B\u00e0n Ph\u00edm Asus",
+    "id": 125
+  },
+  "01-N003-02-02": {
+    "code": "01-N003-02-02",
+    "level": 3,
+    "parent_id": 124,
+    "name": "Keyboard Dell/B\u00e0n Ph\u00edm Dell",
+    "id": 126
+  },
+  "01-N003-02-10": {
+    "code": "01-N003-02-10",
+    "level": 3,
+    "parent_id": 124,
+    "name": "Keyboard HP/B\u00e0n Ph\u00edm HP",
+    "id": 134
+  },
+  "01-N003-02-11": {
+    "code": "01-N003-02-11",
+    "level": 3,
+    "parent_id": 124,
+    "name": "Keyboard IBM/B\u00e0n Ph\u00edm IBM",
+    "id": 135
+  },
+  "01-N003-02-12": {
+    "code": "01-N003-02-12",
+    "level": 3,
+    "parent_id": 124,
+    "name": "Keyboard Lenovo/B\u00e0n Ph\u00edm Lenovo",
+    "id": 136
+  },
+  "01-N003-02-04": {
+    "code": "01-N003-02-04",
+    "level": 3,
+    "parent_id": 124,
+    "name": "Keyboard Sony/B\u00e0n Ph\u00edm Sony",
+    "id": 128
+  },
+  "01-N003-02-15": {
+    "code": "01-N003-02-15",
+    "level": 3,
+    "parent_id": 124,
+    "name": "Keyboard Tosiba/B\u00e0n Ph\u00edm Tosiba",
+    "id": 139
+  },
+  "04-N001": {
+    "code": "04-N001",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Software/Ph\u1ea7n M\u1ec1m",
+    "id": 453
+  },
+  "04-N001-02": {
+    "code": "04-N001-02",
+    "level": 2,
+    "parent_id": 453,
+    "name": "Software Anti Virut/Ph\u1ea7n M\u1ec1m Di\u1ec7t Virut",
+    "id": 468
+  },
+  "01-N002-07": {
+    "code": "01-N002-07",
+    "level": 2,
+    "parent_id": 83,
+    "name": "Locker laptop/Kh\u00f3a Laptop",
+    "id": 100
+  },
+  "03-N001": {
+    "code": "03-N001",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Monitor/M\u00e0n H\u00ecnh",
+    "id": 306
+  },
+  "03-N001-04": {
+    "code": "03-N001-04",
+    "level": 2,
+    "parent_id": 306,
+    "name": "Monitor Dell/M\u00e0n H\u00ecnh Dell",
+    "id": 310
+  },
+  "01-N003-01": {
+    "code": "01-N003-01",
+    "level": 2,
+    "parent_id": 119,
+    "name": "LCD Laptop/M\u00e0n H\u00ecnh Laptop",
+    "id": 120
+  },
+  "01-N003-01-99": {
+    "code": "01-N003-01-99",
+    "level": 3,
+    "parent_id": 120,
+    "name": "Other LCD Laptop/M\u00e0n H\u00ecnh LCD Kh\u00e1c",
+    "id": 123
+  },
+  "03-N006-02-02": {
+    "code": "03-N006-02-02",
+    "level": 3,
+    "parent_id": 423,
+    "name": "Router Wifi Linksys",
+    "id": 425
+  },
+  "06-N001": {
+    "code": "06-N001",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Speaker/Loa",
+    "id": 836
+  },
+  "06-N001-07": {
+    "code": "06-N001-07",
+    "level": 2,
+    "parent_id": 836,
+    "name": "Speaker Bose/Loa Bose - Ph\u1ee5 ki\u1ec7n loa Bose",
+    "id": 858
+  },
+  "06-N001-07-01": {
+    "code": "06-N001-07-01",
+    "level": 3,
+    "parent_id": 858,
+    "name": "Speaker Bose/Loa Bose",
+    "id": 859
+  },
+  "06-N001-04": {
+    "code": "06-N001-04",
+    "level": 2,
+    "parent_id": 836,
+    "name": "Speaker Logitech/Loa Logitech",
+    "id": 855
+  },
+  "06-N001-05": {
+    "code": "06-N001-05",
+    "level": 2,
+    "parent_id": 836,
+    "name": "Speaker Microlab/Loa Microlab",
+    "id": 856
+  },
+  "06-N001-06": {
+    "code": "06-N001-06",
+    "level": 2,
+    "parent_id": 836,
+    "name": "Speaker Soundmax/Loa Soundmax",
+    "id": 857
+  },
+  "04-N005-02-03": {
+    "code": "04-N005-02-03",
+    "level": 3,
+    "parent_id": 502,
+    "name": "Pen slideshow/B\u00fat Tr\u00ecnh Chi\u1ebfu",
+    "id": 505
+  },
+  "05-N003-12": {
+    "code": "05-N003-12",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Phone Tablet decoration/D\u00e1n \u0110i\u1ec7n Tho\u1ea1i - M\u00e1y T\u00ednh B\u1ea3ng",
+    "id": 806
+  },
+  "05-N003-12-02": {
+    "code": "05-N003-12-02",
+    "level": 2,
+    "parent_id": 806,
+    "name": "Decoration services/D\u1ecbch V\u1ee5 D\u00e1n \u0110i\u1ec7n Tho\u1ea1i - M\u00e1y T\u00ednh B\u1ea3ng",
+    "id": 808
+  },
+  "01-N003-04": {
+    "code": "01-N003-04",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Laptop Decoration/Trang tr\u00ed lap top",
+    "id": 142
+  },
+  "01-N003-04-02": {
+    "code": "01-N003-04-02",
+    "level": 2,
+    "parent_id": 142,
+    "name": "Laptop decoration Services/D\u1ecbch V\u1ee5 D\u00e1n Laptop",
+    "id": 144
+  },
+  "03-N004": {
+    "code": "03-N004",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Mouse/Chu\u1ed9t M\u00e1y T\u00ednh",
+    "id": 350
+  },
+  "03-N004-04": {
+    "code": "03-N004-04",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse A4 Tech/Chu\u1ed9t A4 Tech",
+    "id": 354
+  },
+  "03-N004-99": {
+    "code": "03-N004-99",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Other Mouse/Chu\u1ed9t Kh\u00e1c",
+    "id": 381
+  },
+  "03-N004-02": {
+    "code": "03-N004-02",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse Logitech/Chu\u1ed9t Logitech",
+    "id": 352
+  },
+  "03-N004-12": {
+    "code": "03-N004-12",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse Microsoft/Chu\u1ed9t Microsoft",
+    "id": 362
+  },
+  "03-N004-15": {
+    "code": "03-N004-15",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse Mitsumi/Chu\u1ed9t Mitsumi",
+    "id": 365
+  },
+  "03-N004-01": {
+    "code": "03-N004-01",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mousepad/L\u00f3t Chu\u1ed9t",
+    "id": 351
+  },
+  "04-N005-02-01": {
+    "code": "04-N005-02-01",
+    "level": 3,
+    "parent_id": 502,
+    "name": "Projector screen/M\u00e0n Chi\u1ebfu",
+    "id": 503
+  },
+  "04-N009": {
+    "code": "04-N009",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Fax machine/M\u00e1y Fax",
+    "id": 548
+  },
+  "04-N009-01": {
+    "code": "04-N009-01",
+    "level": 2,
+    "parent_id": 548,
+    "name": "Fax machine Panasonic/M\u00e1y Fax Panasonic",
+    "id": 549
+  },
+  "04-N017": {
+    "code": "04-N017",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Paper shedder/M\u00e1y H\u1ee7y Gi\u1ea5y",
+    "id": 595
+  },
+  "04-N017-03": {
+    "code": "04-N017-03",
+    "level": 2,
+    "parent_id": 595,
+    "name": "Paper shedder Bingo/M\u00e1y H\u1ee7y Gi\u1ea5y Bingo",
+    "id": 598
+  },
+  "04-N017-99": {
+    "code": "04-N017-99",
+    "level": 2,
+    "parent_id": 595,
+    "name": "Other Paper shedder/M\u00e1y H\u1ee7y Gi\u1ea5y Kh\u00e1c",
+    "id": 599
+  },
+  "04-N017-02": {
+    "code": "04-N017-02",
+    "level": 2,
+    "parent_id": 595,
+    "name": "Paper shedder Silicon/M\u00e1y H\u1ee7y Gi\u1ea5y Silicon",
+    "id": 597
+  },
+  "04-N007": {
+    "code": "04-N007",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Printer/M\u00e1y In",
+    "id": 507
+  },
+  "04-N007-01": {
+    "code": "04-N007-01",
+    "level": 2,
+    "parent_id": 507,
+    "name": "Printer normal/M\u00e1y in th\u01b0\u1eddng",
+    "id": 508
+  },
+  "04-N007-01-01": {
+    "code": "04-N007-01-01",
+    "level": 3,
+    "parent_id": 508,
+    "name": "Printer Canon/M\u00e1y In Canon",
+    "id": 509
+  },
+  "04-N007-01-01-01": {
+    "code": "04-N007-01-01-01",
+    "level": 4,
+    "parent_id": 509,
+    "name": "Printer Canon Laser/M\u00e1y In Canon Laser",
+    "id": 510
+  },
+  "04-N007-01-03": {
+    "code": "04-N007-01-03",
+    "level": 3,
+    "parent_id": 508,
+    "name": "Printer Epson/M\u00e1y In Epson",
+    "id": 515
+  },
+  "04-N007-01-03-01": {
+    "code": "04-N007-01-03-01",
+    "level": 4,
+    "parent_id": 515,
+    "name": "Printer Epson in kim/M\u00e1y In Epson in kim",
+    "id": 516
+  },
+  "04-N007-02": {
+    "code": "04-N007-02",
+    "level": 2,
+    "parent_id": 507,
+    "name": "Printer Bill/M\u00e1y In Bill",
+    "id": 536
+  },
+  "04-N007-02-01": {
+    "code": "04-N007-02-01",
+    "level": 3,
+    "parent_id": 536,
+    "name": "Printer Bill Epson/M\u00e1y In Bill Epson",
+    "id": 537
+  },
+  "04-N007-02-99": {
+    "code": "04-N007-02-99",
+    "level": 3,
+    "parent_id": 536,
+    "name": "Other Printer Bill/M\u00e1y In Bill Kh\u00e1c",
+    "id": 538
+  },
+  "04-N019-02": {
+    "code": "04-N019-02",
+    "level": 2,
+    "parent_id": 603,
+    "name": "Barcode scanner Honeywell/M\u00e1y Qu\u00e9t M\u00e3 V\u1ea1ch Honeywell",
+    "id": 605
+  },
+  "04-N018": {
+    "code": "04-N018",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Laminator/M\u00e1y \u00e9p Plastic",
+    "id": 600
+  },
+  "04-N018-99": {
+    "code": "04-N018-99",
+    "level": 2,
+    "parent_id": 600,
+    "name": "Other Laminator/M\u00e1y \u00e9p Plastic Kh\u00e1c",
+    "id": 602
+  },
+  "04-N010-03": {
+    "code": "04-N010-03",
+    "level": 2,
+    "parent_id": 552,
+    "name": "Ink Fax machine/M\u1ef1c In M\u00e1y Fax",
+    "id": 567
+  },
+  "01-N002-06": {
+    "code": "01-N002-06",
+    "level": 2,
+    "parent_id": 83,
+    "name": "Fan laptop/\u0110\u1ebf Fan Laptop",
+    "id": 99
+  },
+  "01-N002-04": {
+    "code": "01-N002-04",
+    "level": 2,
+    "parent_id": 83,
+    "name": "Battery Laptop/Pin Laptop",
+    "id": 92
+  },
+  "01-N002-04-02": {
+    "code": "01-N002-04-02",
+    "level": 3,
+    "parent_id": 92,
+    "name": "Battery Laptop TT/Pin Laptop TT",
+    "id": 94
+  },
+  "02-N010": {
+    "code": "02-N010",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Power/Ngu\u1ed3n",
+    "id": 288
+  },
+  "02-N010-01": {
+    "code": "02-N010-01",
+    "level": 2,
+    "parent_id": 288,
+    "name": "Power Arrow/Ngu\u1ed3n Arrow",
+    "id": 289
+  },
+  "02-N010-02": {
+    "code": "02-N010-02",
+    "level": 2,
+    "parent_id": 288,
+    "name": "Power ACbel/Ngu\u1ed3n ACbel",
+    "id": 290
+  },
+  "02-N010-03": {
+    "code": "02-N010-03",
+    "level": 2,
+    "parent_id": 288,
+    "name": "Power Cooler Master/Ngu\u1ed3n Cooler Master",
+    "id": 291
+  },
+  "06-N015": {
+    "code": "06-N015",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Reader",
+    "id": 955
+  },
+  "06-N015-01": {
+    "code": "06-N015-01",
+    "level": 2,
+    "parent_id": 955,
+    "name": "Reader Apacer",
+    "id": 956
+  },
+  "06-N015-06": {
+    "code": "06-N015-06",
+    "level": 2,
+    "parent_id": 955,
+    "name": "Reader SSK",
+    "id": 961
+  },
+  "06-N015-07": {
+    "code": "06-N015-07",
+    "level": 2,
+    "parent_id": 955,
+    "name": "Reader Transcend",
+    "id": 962
+  },
+  "04-N023": {
+    "code": "04-N023",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Ruban",
+    "id": 615
+  },
+  "03-N006-04": {
+    "code": "03-N006-04",
+    "level": 2,
+    "parent_id": 419,
+    "name": "Switch",
+    "id": 439
+  },
+  "03-N006-04-01": {
+    "code": "03-N006-04-01",
+    "level": 3,
+    "parent_id": 439,
+    "name": "Switch D-Link",
+    "id": 440
+  },
+  "03-N006-04-04": {
+    "code": "03-N006-04-04",
+    "level": 3,
+    "parent_id": 439,
+    "name": "Switch Hp",
+    "id": 443
+  },
+  "03-N006-04-07": {
+    "code": "03-N006-04-07",
+    "level": 3,
+    "parent_id": 439,
+    "name": "Switch Cisco",
+    "id": 446
+  },
+  "06-N099-01": {
+    "code": "06-N099-01",
+    "level": 2,
+    "parent_id": 967,
+    "name": "Battery/Pin - Pin S\u1ea1c - B\u1ed9 S\u1ea1c",
+    "id": 968
+  },
+  "07-N001": {
+    "code": "07-N001",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Service/D\u1ecbch v\u1ee5 s\u1eeda ch\u1eefa",
+    "id": 978
+  },
+  "07-N001-01": {
+    "code": "07-N001-01",
+    "level": 2,
+    "parent_id": 978,
+    "name": "Laptop repairing services/D\u1ecbch v\u1ee5 S\u1eeda Ch\u1eefa Laptop",
+    "id": 979
+  },
+  "07-N001-01-01": {
+    "code": "07-N001-01-01",
+    "level": 3,
+    "parent_id": 979,
+    "name": "Chip",
+    "id": 980
+  },
+  "03-N006-03-02": {
+    "code": "03-N006-03-02",
+    "level": 3,
+    "parent_id": 433,
+    "name": "Network Interface Card TPlink/Card M\u1ea1ng TPlink",
+    "id": 435
+  },
+  "06-N003": {
+    "code": "06-N003",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Memory card",
+    "id": 883
+  },
+  "06-N003-04": {
+    "code": "06-N003-04",
+    "level": 2,
+    "parent_id": 883,
+    "name": "Memory card Transend",
+    "id": 887
+  },
+  "04-N014": {
+    "code": "04-N014",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Time recorder/M\u00e1y Ch\u1ea5m C\u00f4ng",
+    "id": 586
+  },
+  "04-N014-02": {
+    "code": "04-N014-02",
+    "level": 2,
+    "parent_id": 586,
+    "name": "Time recorder accessories/Ph\u1ee5 Ki\u1ec7n M\u00e1y Ch\u1ea5m C\u00f4ng",
+    "id": 588
+  },
+  "04-N012-02": {
+    "code": "04-N012-02",
+    "level": 2,
+    "parent_id": 572,
+    "name": "Unifiled Communication Panasonic/T\u1ed5ng \u0110\u00e0i Panasonic",
+    "id": 574
+  },
+  "01-N002-08": {
+    "code": "01-N002-08",
+    "level": 2,
+    "parent_id": 83,
+    "name": "Bag/T\u00fai \u0111\u1ef1ng laptop",
+    "id": 101
+  },
+  "01-N002-08-01": {
+    "code": "01-N002-08-01",
+    "level": 3,
+    "parent_id": 101,
+    "name": "Sleeve/T\u00fai Ch\u1ed1ng S\u1ed1c",
+    "id": 102
+  },
+  "01-N002-08-01-99": {
+    "code": "01-N002-08-01-99",
+    "level": 4,
+    "parent_id": 102,
+    "name": "Other Sleeve/T\u00fai Ch\u1ed1ng S\u1ed1c Kh\u00e1c",
+    "id": 109
+  },
+  "04-N004": {
+    "code": "04-N004",
+    "level": 1,
+    "parent_id": 0,
+    "name": "UPS/B\u1ed9 L\u01b0u \u0110i\u1ec7n",
+    "id": 486
+  },
+  "04-N004-01": {
+    "code": "04-N004-01",
+    "level": 2,
+    "parent_id": 486,
+    "name": "UPS Santak/B\u1ed9 L\u01b0u \u0110i\u1ec7n Santak",
+    "id": 487
+  },
+  "06-N002": {
+    "code": "06-N002",
+    "level": 1,
+    "parent_id": 0,
+    "name": "USB",
+    "id": 870
+  },
+  "06-N002-01": {
+    "code": "06-N002-01",
+    "level": 2,
+    "parent_id": 870,
+    "name": "USB Apacer",
+    "id": 871
+  },
+  "06-N002-06": {
+    "code": "06-N002-06",
+    "level": 2,
+    "parent_id": 870,
+    "name": "USB Corsair",
+    "id": 876
+  },
+  "06-N002-05": {
+    "code": "06-N002-05",
+    "level": 2,
+    "parent_id": 870,
+    "name": "USB Transcend",
+    "id": 875
+  },
+  "03-N006-01-01": {
+    "code": "03-N006-01-01",
+    "level": 3,
+    "parent_id": 420,
+    "name": "Modem Usb 3G/4G",
+    "id": 421
+  },
+  "04-N006": {
+    "code": "04-N006",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Webcam",
+    "id": 506
+  },
+  "04-N013": {
+    "code": "04-N013",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Telephone/\u0110i\u1ec7n Tho\u1ea1i B\u00e0n",
+    "id": 576
+  },
+  "04-N013-03": {
+    "code": "04-N013-03",
+    "level": 2,
+    "parent_id": 576,
+    "name": "Telephone Uniden/\u0110i\u1ec7n Tho\u1ea1i B\u00e0n Uniden",
+    "id": 579
+  },
+  "04-N013-04": {
+    "code": "04-N013-04",
+    "level": 2,
+    "parent_id": 576,
+    "name": "Telephone Nippon/\u0110i\u1ec7n Tho\u1ea1i B\u00e0n Nippon",
+    "id": 580
+  },
+  "04-N013-05": {
+    "code": "04-N013-05",
+    "level": 2,
+    "parent_id": 576,
+    "name": "Telephone Panasonic/\u0110i\u1ec7n Tho\u1ea1i B\u00e0n Panasonic",
+    "id": 581
+  },
+  "06-N014": {
+    "code": "06-N014",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Converter/\u0110\u1ea7u Chuy\u1ec3n",
+    "id": 951
+  },
+  "06-N014-99": {
+    "code": "06-N014-99",
+    "level": 2,
+    "parent_id": 951,
+    "name": "Other Converter/\u0110\u1ea7u Chuy\u1ec3n Kh\u00e1c",
+    "id": 954
+  },
+  "03-N006-03-03": {
+    "code": "03-N006-03-03",
+    "level": 3,
+    "parent_id": 433,
+    "name": "Network Interface Card ToTolink/Card M\u1ea1ng ToTolink",
+    "id": 436
+  },
+  "03-N006-04-99": {
+    "code": "03-N006-04-99",
+    "level": 3,
+    "parent_id": 439,
+    "name": "Other Switch/Switch Kh\u00e1c",
+    "id": 448
+  },
+  "06-N003-05": {
+    "code": "06-N003-05",
+    "level": 2,
+    "parent_id": 883,
+    "name": "Memory card Sandisk",
+    "id": 888
+  },
+  "01-N002-05-01": {
+    "code": "01-N002-05-01",
+    "level": 3,
+    "parent_id": 95,
+    "name": "Adapter Laptop Acbel",
+    "id": 96
+  },
+  "01-N004": {
+    "code": "01-N004",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Apple product/S\u1ea3n ph\u1ea9m Apple",
+    "id": 145
+  },
+  "01-N005": {
+    "code": "01-N005",
+    "level": 2,
+    "parent_id": 145,
+    "name": "Apple accessories/Ph\u1ee5 ki\u1ec7n Apple",
+    "id": 151
+  },
+  "04-N009-02": {
+    "code": "04-N009-02",
+    "level": 2,
+    "parent_id": 548,
+    "name": "Fax machine Brother/M\u00e1y Fax Brother",
+    "id": 550
+  },
+  "01-N003-02-09": {
+    "code": "01-N003-02-09",
+    "level": 3,
+    "parent_id": 124,
+    "name": "Keyboard Gateway/B\u00e0n Ph\u00edm Gateway",
+    "id": 133
+  },
+  "01-N003-02-03": {
+    "code": "01-N003-02-03",
+    "level": 3,
+    "parent_id": 124,
+    "name": "Keyboard Samsung/B\u00e0n Ph\u00edm Samsung",
+    "id": 127
+  },
+  "03-N004-09": {
+    "code": "03-N004-09",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse Newmen/Chu\u1ed9t Newmen",
+    "id": 359
+  },
+  "03-N001-02": {
+    "code": "03-N001-02",
+    "level": 2,
+    "parent_id": 306,
+    "name": "Monitor Asus/M\u00e0n H\u00ecnh Asus",
+    "id": 308
+  },
+  "04-N003": {
+    "code": "04-N003",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Server components/Linh Ki\u1ec7n Server",
+    "id": 480
+  },
+  "04-N003-05": {
+    "code": "04-N003-05",
+    "level": 2,
+    "parent_id": 480,
+    "name": "Server cabinet & components/T\u1ee7 - Linh Ki\u1ec7n T\u1ee7",
+    "id": 485
+  },
+  "02-N010-06": {
+    "code": "02-N010-06",
+    "level": 2,
+    "parent_id": 288,
+    "name": "Power Corsair/Ngu\u1ed3n Corsair",
+    "id": 294
+  },
+  "06-N099-08": {
+    "code": "06-N099-08",
+    "level": 2,
+    "parent_id": 967,
+    "name": "Data",
+    "id": 975
+  },
+  "01-N002-02": {
+    "code": "01-N002-02",
+    "level": 2,
+    "parent_id": 83,
+    "name": "Hard drive laptop/\u1ed4 C\u1ee9ng Laptop",
+    "id": 90
+  },
+  "05-N003": {
+    "code": "05-N003",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Phone and tablet accessories/Ph\u1ee5 Ki\u1ec7n \u0110i\u1ec7n Tho\u1ea1i - M\u00e1y T\u00ednh B\u1ea3ng",
+    "id": 736
+  },
+  "05-N003-04": {
+    "code": "05-N003-04",
+    "level": 2,
+    "parent_id": 736,
+    "name": "Phone Cable/Cable \u0111i\u1ec7n tho\u1ea1i",
+    "id": 773
+  },
+  "05-N003-04-02": {
+    "code": "05-N003-04-02",
+    "level": 3,
+    "parent_id": 773,
+    "name": "Phone Cable Pisen/Cable \u0111i\u1ec7n tho\u1ea1i Pisen",
+    "id": 775
+  },
+  "01-N003-02-08": {
+    "code": "01-N003-02-08",
+    "level": 3,
+    "parent_id": 124,
+    "name": "Keyboard Fujitsu/B\u00e0n Ph\u00edm Fujitsu",
+    "id": 132
+  },
+  "02-N004-03": {
+    "code": "02-N004-03",
+    "level": 2,
+    "parent_id": 214,
+    "name": "Ram Kingston",
+    "id": 217
+  },
+  "03-N001-09": {
+    "code": "03-N001-09",
+    "level": 2,
+    "parent_id": 306,
+    "name": "Monitor Acer/M\u00e0n H\u00ecnh Acer",
+    "id": 315
+  },
+  "02-N007": {
+    "code": "02-N007",
+    "level": 1,
+    "parent_id": 0,
+    "name": "PC accessories/Ph\u1ee5 Ki\u1ec7n PC Linh Ki\u1ec7n",
+    "id": 264
+  },
+  "02-N007-01": {
+    "code": "02-N007-01",
+    "level": 2,
+    "parent_id": 264,
+    "name": "PC accessories Hard drive/Ph\u1ee5 Ki\u1ec7n \u1ed4 C\u1ee9ng",
+    "id": 265
+  },
+  "04-N016": {
+    "code": "04-N016",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Banknote Counter/M\u00e1y \u0110\u1ebfm Ti\u1ec1n",
+    "id": 592
+  },
+  "04-N016-01": {
+    "code": "04-N016-01",
+    "level": 2,
+    "parent_id": 592,
+    "name": "Banknote Counter/M\u00e1y \u0110\u1ebfm Ti\u1ec1n 01",
+    "id": 593
+  },
+  "05-N003-02": {
+    "code": "05-N003-02",
+    "level": 2,
+    "parent_id": 736,
+    "name": "Power Bank/Pin S\u1ea1c D\u1ef1 Ph\u00f2ng",
+    "id": 747
+  },
+  "05-N003-02-02": {
+    "code": "05-N003-02-02",
+    "level": 3,
+    "parent_id": 747,
+    "name": "Power Bank Mili/Pin S\u1ea1c D\u1ef1 Ph\u00f2ng Mili",
+    "id": 749
+  },
+  "03-N004-08": {
+    "code": "03-N004-08",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse Rapoo/Chu\u1ed9t Rapoo",
+    "id": 358
+  },
+  "05-N003-08": {
+    "code": "05-N003-08",
+    "level": 2,
+    "parent_id": 736,
+    "name": "Tablet keyboard/B\u00e0n ph\u00edm M\u00e1y T\u00ednh B\u1ea3ng",
+    "id": 800
+  },
+  "02-N009-07": {
+    "code": "02-N009-07",
+    "level": 2,
+    "parent_id": 276,
+    "name": "Case Sama/Th\u00f9ng M\u00e1y Sama",
+    "id": 283
+  },
+  "03-N006-02-08": {
+    "code": "03-N006-02-08",
+    "level": 3,
+    "parent_id": 423,
+    "name": "Router Wifi Tenda",
+    "id": 431
+  },
+  "06-N002-04": {
+    "code": "06-N002-04",
+    "level": 2,
+    "parent_id": 870,
+    "name": "USB Kingston",
+    "id": 874
+  },
+  "06-N002-99": {
+    "code": "06-N002-99",
+    "level": 2,
+    "parent_id": 870,
+    "name": "Other USB/Usb Kh\u00e1c",
+    "id": 882
+  },
+  "03-N004-07": {
+    "code": "03-N004-07",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse Elecom/Chu\u1ed9t Elecom",
+    "id": 357
+  },
+  "01-N002-08-01-01": {
+    "code": "01-N002-08-01-01",
+    "level": 4,
+    "parent_id": 102,
+    "name": "Sleeve Targus/T\u00fai Ch\u1ed1ng S\u1ed1c Targus",
+    "id": 103
+  },
+  "03-N006-02-03": {
+    "code": "03-N006-02-03",
+    "level": 3,
+    "parent_id": 423,
+    "name": "Router Wifi Asus",
+    "id": 426
+  },
+  "05-N004": {
+    "code": "05-N004",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Digital Camera/K\u1ef9 thu\u1eadt s\u1ed1",
+    "id": 810
+  },
+  "05-N004-01": {
+    "code": "05-N004-01",
+    "level": 2,
+    "parent_id": 810,
+    "name": "Music Player/M\u00e1y nghe nh\u1ea1c",
+    "id": 811
+  },
+  "05-N004-01-02": {
+    "code": "05-N004-01-02",
+    "level": 3,
+    "parent_id": 811,
+    "name": "Music Player Transcend/M\u00e1y nghe nh\u1ea1c Transcend",
+    "id": 813
+  },
+  "05-N003-02-03": {
+    "code": "05-N003-02-03",
+    "level": 3,
+    "parent_id": 747,
+    "name": "Power Bank Pisen/Pin S\u1ea1c D\u1ef1 Ph\u00f2ng Pisen",
+    "id": 750
+  },
+  "02-N002": {
+    "code": "02-N002",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Mainboard",
+    "id": 190
+  },
+  "02-N002-01": {
+    "code": "02-N002-01",
+    "level": 2,
+    "parent_id": 190,
+    "name": "Mainboard Chip Intel",
+    "id": 191
+  },
+  "02-N002-01-02": {
+    "code": "02-N002-01-02",
+    "level": 3,
+    "parent_id": 191,
+    "name": "Mainboard Gigabyte",
+    "id": 193
+  },
+  "04-N010-01-99": {
+    "code": "04-N010-01-99",
+    "level": 3,
+    "parent_id": 553,
+    "name": "Other Ink Laser/M\u1ef1c In Laser Kh\u00e1c",
+    "id": 560
+  },
+  "05-N003-03": {
+    "code": "05-N003-03",
+    "level": 2,
+    "parent_id": 736,
+    "name": "Charger/S\u1ea1c \u0110i\u1ec7n Tho\u1ea1i",
+    "id": 763
+  },
+  "05-N003-03-99": {
+    "code": "05-N003-03-99",
+    "level": 3,
+    "parent_id": 763,
+    "name": "Other Charger/S\u1ea1c \u0110i\u1ec7n Tho\u1ea1i Kh\u00e1c",
+    "id": 772
+  },
+  "02-N010-08": {
+    "code": "02-N010-08",
+    "level": 2,
+    "parent_id": 288,
+    "name": "Power Antec/Ngu\u1ed3n Antec",
+    "id": 296
+  },
+  "06-N013-06": {
+    "code": "06-N013-06",
+    "level": 2,
+    "parent_id": 938,
+    "name": "Hub Orico",
+    "id": 944
+  },
+  "02-N006-06": {
+    "code": "02-N006-06",
+    "level": 2,
+    "parent_id": 249,
+    "name": "External hard drive Lacie/\u1ed5 C\u1ee9ng G\u1eafn Ngo\u00e0i Lacie",
+    "id": 255
+  },
+  "02-N011-01": {
+    "code": "02-N011-01",
+    "level": 2,
+    "parent_id": 299,
+    "name": "Internal Optical drive/\u1ed5 Quang g\u1eafn Trong",
+    "id": 300
+  },
+  "02-N004-01": {
+    "code": "02-N004-01",
+    "level": 2,
+    "parent_id": 214,
+    "name": "Ram G Skill",
+    "id": 215
+  },
+  "03-N005-14": {
+    "code": "03-N005-14",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Elecom/Tai Nghe Elecom",
+    "id": 396
+  },
+  "01-N002-01": {
+    "code": "01-N002-01",
+    "level": 2,
+    "parent_id": 83,
+    "name": "Ram Laptop",
+    "id": 84
+  },
+  "01-N002-01-01": {
+    "code": "01-N002-01-01",
+    "level": 3,
+    "parent_id": 84,
+    "name": "Ram Laptop G.Skill",
+    "id": 85
+  },
+  "05-N004-01-03": {
+    "code": "05-N004-01-03",
+    "level": 3,
+    "parent_id": 811,
+    "name": "Music Player Sony/M\u00e1y nghe nh\u1ea1c Sony",
+    "id": 814
+  },
+  "04-N007-01-01-02": {
+    "code": "04-N007-01-01-02",
+    "level": 4,
+    "parent_id": 509,
+    "name": "Printer Canon Inkjet/M\u00e1y In Canon phun",
+    "id": 511
+  },
+  "03-N006-02-05": {
+    "code": "03-N006-02-05",
+    "level": 3,
+    "parent_id": 423,
+    "name": "Router Wifi ToTo Link",
+    "id": 428
+  },
+  "05-N003-04-01": {
+    "code": "05-N003-04-01",
+    "level": 3,
+    "parent_id": 773,
+    "name": "Phone Cable Elecom/Cable \u0111i\u1ec7n tho\u1ea1i Elecom",
+    "id": 774
+  },
+  "04-N007-01-06": {
+    "code": "04-N007-01-06",
+    "level": 3,
+    "parent_id": 508,
+    "name": "Printer Brother/M\u00e1y In Brother",
+    "id": 524
+  },
+  "04-N007-01-06-01": {
+    "code": "04-N007-01-06-01",
+    "level": 4,
+    "parent_id": 524,
+    "name": "Printer Brother Laser/M\u00e1y In Brother Laser",
+    "id": 525
+  },
+  "06-N003-03": {
+    "code": "06-N003-03",
+    "level": 2,
+    "parent_id": 883,
+    "name": "Memory card Kingston",
+    "id": 886
+  },
+  "01-N002-01-02": {
+    "code": "01-N002-01-02",
+    "level": 3,
+    "parent_id": 84,
+    "name": "Ram Laptop Kingmax",
+    "id": 86
+  },
+  "03-N006-02-04": {
+    "code": "03-N006-02-04",
+    "level": 3,
+    "parent_id": 423,
+    "name": "Router Wifi TPLink",
+    "id": 427
+  },
+  "03-N006-04-08": {
+    "code": "03-N006-04-08",
+    "level": 3,
+    "parent_id": 439,
+    "name": "Switch Tplink",
+    "id": 447
+  },
+  "01-N002-04-01": {
+    "code": "01-N002-04-01",
+    "level": 3,
+    "parent_id": 92,
+    "name": "Battery Laptop NQ/Pin Laptop NQ",
+    "id": 93
+  },
+  "04-N004-04": {
+    "code": "04-N004-04",
+    "level": 2,
+    "parent_id": 486,
+    "name": "UPS Ares/B\u1ed9 L\u01b0u \u0110i\u1ec7n Ares",
+    "id": 490
+  },
+  "03-N001-10": {
+    "code": "03-N001-10",
+    "level": 2,
+    "parent_id": 306,
+    "name": "Monitor Philips/M\u00e0n H\u00ecnh Philips",
+    "id": 316
+  },
+  "03-N002-05": {
+    "code": "03-N002-05",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Keyboard Rapoo/B\u00e0n Ph\u00edm Rapoo",
+    "id": 325
+  },
+  "02-N012": {
+    "code": "02-N012",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Sound card/Card \u00c2m Thanh",
+    "id": 302
+  },
+  "02-N012-03": {
+    "code": "02-N012-03",
+    "level": 2,
+    "parent_id": 302,
+    "name": "Other Sound card/Card \u00c2m Thanh Kh\u00e1c",
+    "id": 305
+  },
+  "04-N007-01-03-02": {
+    "code": "04-N007-01-03-02",
+    "level": 4,
+    "parent_id": 515,
+    "name": "Printer Epson Inkjet/M\u00e1y In Epson phun",
+    "id": 517
+  },
+  "04-N001-01": {
+    "code": "04-N001-01",
+    "level": 2,
+    "parent_id": 453,
+    "name": "Software \u1ee9ng d\u1ee5ng Microsoft/Ph\u1ea7n M\u1ec1m \u1ee9ng d\u1ee5ng Microsoft",
+    "id": 454
+  },
+  "04-N001-01-02": {
+    "code": "04-N001-01-02",
+    "level": 3,
+    "parent_id": 454,
+    "name": "Software Office/Ph\u1ea7n M\u1ec1m Office",
+    "id": 465
+  },
+  "04-N001-01-02-02": {
+    "code": "04-N001-01-02-02",
+    "level": 4,
+    "parent_id": 465,
+    "name": "Software Office (OLP)/Ph\u1ea7n M\u1ec1m Office (OLP)",
+    "id": 467
+  },
+  "01-N002-08-02": {
+    "code": "01-N002-08-02",
+    "level": 3,
+    "parent_id": 101,
+    "name": "Bag Laptop/T\u00fai Laptop",
+    "id": 110
+  },
+  "02-N003": {
+    "code": "02-N003",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Cpu",
+    "id": 200
+  },
+  "02-N003-02": {
+    "code": "02-N003-02",
+    "level": 2,
+    "parent_id": 200,
+    "name": "CPU Intel",
+    "id": 205
+  },
+  "02-N003-02-04": {
+    "code": "02-N003-02-04",
+    "level": 3,
+    "parent_id": 205,
+    "name": "CPU Intel Gen 5/Cpu Intel th\u1ebf h\u1ec7 5",
+    "id": 209
+  },
+  "06-N002-07": {
+    "code": "06-N002-07",
+    "level": 2,
+    "parent_id": 870,
+    "name": "USB Sandisk",
+    "id": 877
+  },
+  "05-N004-02": {
+    "code": "05-N004-02",
+    "level": 2,
+    "parent_id": 810,
+    "name": "Recorder/M\u00e1y Ghi \u00c2m",
+    "id": 816
+  },
+  "01-N002-08-07": {
+    "code": "01-N002-08-07",
+    "level": 3,
+    "parent_id": 101,
+    "name": "Bag Laptop Tucano/T\u00fai \u0111\u1ef1ng laptop Tucano",
+    "id": 115
+  },
+  "01-N002-08-99": {
+    "code": "01-N002-08-99",
+    "level": 3,
+    "parent_id": 101,
+    "name": "Other bag/T\u00fai Laptop Kh\u00e1c",
+    "id": 118
+  },
+  "04-N007-01-07": {
+    "code": "04-N007-01-07",
+    "level": 3,
+    "parent_id": 508,
+    "name": "Printer Ricoh/M\u00e1y In Ricoh",
+    "id": 527
+  },
+  "04-N007-01-07-01": {
+    "code": "04-N007-01-07-01",
+    "level": 4,
+    "parent_id": 527,
+    "name": "Printer Ricoh Laser/M\u00e1y In Ricoh Laser",
+    "id": 528
+  },
+  "06-N002-11": {
+    "code": "06-N002-11",
+    "level": 2,
+    "parent_id": 870,
+    "name": "USB Addlink",
+    "id": 881
+  },
+  "02-N003-01": {
+    "code": "02-N003-01",
+    "level": 2,
+    "parent_id": 200,
+    "name": "Cpu Amd",
+    "id": 201
+  },
+  "02-N003-01-01": {
+    "code": "02-N003-01-01",
+    "level": 3,
+    "parent_id": 201,
+    "name": "CPU AMD Gen 1/CPU AMD th\u1ebf h\u1ec7 1",
+    "id": 202
+  },
+  "02-N009-01": {
+    "code": "02-N009-01",
+    "level": 2,
+    "parent_id": 276,
+    "name": "Case Patriot/Th\u00f9ng M\u00e1y Patriot",
+    "id": 277
+  },
+  "04-N008": {
+    "code": "04-N008",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Scanner/M\u00e1y Scan",
+    "id": 541
+  },
+  "04-N008-02": {
+    "code": "04-N008-02",
+    "level": 2,
+    "parent_id": 541,
+    "name": "Scanner Canon/M\u00e1y Scan Canon",
+    "id": 543
+  },
+  "05-N003-01": {
+    "code": "05-N003-01",
+    "level": 2,
+    "parent_id": 736,
+    "name": "Bluetooth Headphone/Tai nghe Bluetooth",
+    "id": 737
+  },
+  "05-N003-01-99": {
+    "code": "05-N003-01-99",
+    "level": 3,
+    "parent_id": 737,
+    "name": "Other Bluetooth Headphone/Tai Nghe Bluetooth Kh\u00e1c",
+    "id": 746
+  },
+  "03-N006-03-99": {
+    "code": "03-N006-03-99",
+    "level": 3,
+    "parent_id": 433,
+    "name": "Other Network Interface Card/Card M\u1ea1ng Kh\u00e1c",
+    "id": 438
+  },
+  "04-N015": {
+    "code": "04-N015",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Book binding/M\u00e1y \u0110\u00f3ng S\u00e1ch",
+    "id": 589
+  },
+  "04-N015-01": {
+    "code": "04-N015-01",
+    "level": 2,
+    "parent_id": 589,
+    "name": "Book binding/M\u00e1y \u0110\u00f3ng S\u00e1ch 01",
+    "id": 590
+  },
+  "04-N001-01-01": {
+    "code": "04-N001-01-01",
+    "level": 3,
+    "parent_id": 454,
+    "name": "Software Win/Ph\u1ea7n M\u1ec1m Win",
+    "id": 455
+  },
+  "04-N001-01-01-02": {
+    "code": "04-N001-01-01-02",
+    "level": 4,
+    "parent_id": 455,
+    "name": "Software Win Workstation/Ph\u1ea7n M\u1ec1m Win m\u00e1y tr\u1ea1m",
+    "id": 460
+  },
+  "04-N001-01-01-02-02": {
+    "code": "04-N001-01-01-02-02",
+    "level": 5,
+    "parent_id": 460,
+    "name": "Software Win (FPP)/Ph\u1ea7n M\u1ec1m Win (FPP)",
+    "id": 462
+  },
+  "03-N005-19": {
+    "code": "03-N005-19",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Audio-technica/Tai Nghe Audio-technica",
+    "id": 401
+  },
+  "03-N001-07": {
+    "code": "03-N001-07",
+    "level": 2,
+    "parent_id": 306,
+    "name": "Monitor Samsung/M\u00e0n H\u00ecnh Samsung",
+    "id": 313
+  },
+  "03-N002-03": {
+    "code": "03-N002-03",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Keyboard A4 Tech/B\u00e0n Ph\u00edm A4 Tech",
+    "id": 323
+  },
+  "03-N006-04-03": {
+    "code": "03-N006-04-03",
+    "level": 3,
+    "parent_id": 439,
+    "name": "Switch Linksys",
+    "id": 442
+  },
+  "01-N002-08-01-03": {
+    "code": "01-N002-08-01-03",
+    "level": 4,
+    "parent_id": 102,
+    "name": "Sleeve JCPAL/T\u00fai Ch\u1ed1ng S\u1ed1c JCPAL",
+    "id": 105
+  },
+  "01-N004-03": {
+    "code": "01-N004-03",
+    "level": 2,
+    "parent_id": 145,
+    "name": "Macbook",
+    "id": 148
+  },
+  "03-N005-99": {
+    "code": "03-N005-99",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Other Headphone/Tai Nghe Kh\u00e1c",
+    "id": 418
+  },
+  "04-N008-03": {
+    "code": "04-N008-03",
+    "level": 2,
+    "parent_id": 541,
+    "name": "Scanner Epson/M\u00e1y Scan Epson",
+    "id": 544
+  },
+  "04-N027-02": {
+    "code": "04-N027-02",
+    "level": 2,
+    "parent_id": 626,
+    "name": "Recorder/\u0110\u1ea7u Ghi",
+    "id": 659
+  },
+  "04-N027-02-02": {
+    "code": "04-N027-02-02",
+    "level": 3,
+    "parent_id": 659,
+    "name": "Recorder Eview/\u0110\u1ea7u ghi Eview",
+    "id": 661
+  },
+  "01-N002-01-03": {
+    "code": "01-N002-01-03",
+    "level": 3,
+    "parent_id": 84,
+    "name": "Ram Laptop Kingston",
+    "id": 87
+  },
+  "06-N001-02": {
+    "code": "06-N001-02",
+    "level": 2,
+    "parent_id": 836,
+    "name": "Bluetooth Speaker/Loa bluetooth",
+    "id": 838
+  },
+  "06-N001-02-99": {
+    "code": "06-N001-02-99",
+    "level": 3,
+    "parent_id": 838,
+    "name": "Other Bluetooth Speaker/Loa Bluetooth Kh\u00e1c",
+    "id": 853
+  },
+  "03-N005-10": {
+    "code": "03-N005-10",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Sony/Tai Nghe Sony",
+    "id": 392
+  },
+  "04-N027-01": {
+    "code": "04-N027-01",
+    "level": 2,
+    "parent_id": 626,
+    "name": "Camera",
+    "id": 627
+  },
+  "04-N027-01-99": {
+    "code": "04-N027-01-99",
+    "level": 3,
+    "parent_id": 627,
+    "name": "Other Camera/Camera Kh\u00e1c",
+    "id": 658
+  },
+  "06-N001-02-05": {
+    "code": "06-N001-02-05",
+    "level": 3,
+    "parent_id": 838,
+    "name": "Bluetooth Speaker Microlap/Loa Bluetooth Microlap",
+    "id": 843
+  },
+  "06-N003-01": {
+    "code": "06-N003-01",
+    "level": 2,
+    "parent_id": 883,
+    "name": "Memory card Apacer",
+    "id": 884
+  },
+  "04-N008-99": {
+    "code": "04-N008-99",
+    "level": 2,
+    "parent_id": 541,
+    "name": "Scanner Other/M\u00e1y Scan Kh\u00e1c",
+    "id": 547
+  },
+  "03-N005-09": {
+    "code": "03-N005-09",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Ovan/Tai Nghe Ovan",
+    "id": 391
+  },
+  "01-N002-05-02": {
+    "code": "01-N002-05-02",
+    "level": 3,
+    "parent_id": 95,
+    "name": "Adapter Laptop NQ",
+    "id": 97
+  },
+  "02-N005-01": {
+    "code": "02-N005-01",
+    "level": 2,
+    "parent_id": 228,
+    "name": "SSD/\u1ed5 c\u1ee9ng SSD",
+    "id": 229
+  },
+  "02-N005-01-04": {
+    "code": "02-N005-01-04",
+    "level": 3,
+    "parent_id": 229,
+    "name": "SSD Transend",
+    "id": 233
+  },
+  "06-N013-03": {
+    "code": "06-N013-03",
+    "level": 2,
+    "parent_id": 938,
+    "name": "Hub Elecom",
+    "id": 941
+  },
+  "03-N004-03": {
+    "code": "03-N004-03",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse Genius/Chu\u1ed9t Genius",
+    "id": 353
+  },
+  "02-N012-01": {
+    "code": "02-N012-01",
+    "level": 2,
+    "parent_id": 302,
+    "name": "Sound card Creative/Card \u00c2m Thanh Creative",
+    "id": 303
+  },
+  "04-N001-01-01-02-01": {
+    "code": "04-N001-01-01-02-01",
+    "level": 5,
+    "parent_id": 460,
+    "name": "Software Win (OEM)/Ph\u1ea7n M\u1ec1m Win (OEM)",
+    "id": 461
+  },
+  "04-N001-01-01-02-03": {
+    "code": "04-N001-01-01-02-03",
+    "level": 5,
+    "parent_id": 460,
+    "name": "Software Win (OLP)/Ph\u1ea7n M\u1ec1m Win (OLP)",
+    "id": 463
+  },
+  "03-N001-01": {
+    "code": "03-N001-01",
+    "level": 2,
+    "parent_id": 306,
+    "name": "Monitor AOC/M\u00e0n H\u00ecnh AOC",
+    "id": 307
+  },
+  "06-N001-02-04": {
+    "code": "06-N001-02-04",
+    "level": 3,
+    "parent_id": 838,
+    "name": "Bluetooth Speaker Logitech/Loa Bluetooth Logitech",
+    "id": 842
+  },
+  "06-N001-09": {
+    "code": "06-N001-09",
+    "level": 2,
+    "parent_id": 836,
+    "name": "Speaker Creative/Loa Creative",
+    "id": 862
+  },
+  "04-N007-01-02": {
+    "code": "04-N007-01-02",
+    "level": 3,
+    "parent_id": 508,
+    "name": "Printer HP/M\u00e1y In HP",
+    "id": 512
+  },
+  "04-N007-01-02-01": {
+    "code": "04-N007-01-02-01",
+    "level": 4,
+    "parent_id": 512,
+    "name": "Printer HP Laser/M\u00e1y In HP Laser",
+    "id": 513
+  },
+  "10-N002": {
+    "code": "10-N002",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Meeting device/Thi\u1ebft B\u1ecb H\u1ed9i Ngh\u1ecb",
+    "id": 1447
+  },
+  "10-N002-01": {
+    "code": "10-N002-01",
+    "level": 2,
+    "parent_id": 1447,
+    "name": "Meeting camera/Camera H\u1ed9i Ngh\u1ecb",
+    "id": 1450
+  },
+  "03-N004-13": {
+    "code": "03-N004-13",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse Sumtax/Chu\u1ed9t Sumtax",
+    "id": 363
+  },
+  "02-N001": {
+    "code": "02-N001",
+    "level": 1,
+    "parent_id": 0,
+    "name": "PC/M\u00e1y B\u1ed9",
+    "id": 152
+  },
+  "02-N001-10": {
+    "code": "02-N001-10",
+    "level": 2,
+    "parent_id": 152,
+    "name": "PC Intel/M\u00e1y B\u1ed9 Intel",
+    "id": 182
+  },
+  "05-N003-02-05": {
+    "code": "05-N003-02-05",
+    "level": 3,
+    "parent_id": 747,
+    "name": "Power Bank Tuxedo/Pin S\u1ea1c D\u1ef1 Ph\u00f2ng Tuxedo",
+    "id": 752
+  },
+  "06-N003-99": {
+    "code": "06-N003-99",
+    "level": 2,
+    "parent_id": 883,
+    "name": "Other Memory card/Memory card Kh\u00e1c",
+    "id": 893
+  },
+  "05-N003-11": {
+    "code": "05-N003-11",
+    "level": 2,
+    "parent_id": 736,
+    "name": "Other accessories/Ph\u1ee5 Ki\u1ec7n Kh\u00e1c",
+    "id": 805
+  },
+  "03-N005-05": {
+    "code": "03-N005-05",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Philips/Tai Nghe Philips",
+    "id": 387
+  },
+  "06-N002-02": {
+    "code": "06-N002-02",
+    "level": 2,
+    "parent_id": 870,
+    "name": "USB Hp",
+    "id": 872
+  },
+  "06-N001-02-01": {
+    "code": "06-N001-02-01",
+    "level": 3,
+    "parent_id": 838,
+    "name": "Bluetooth Speaker Creative/Loa Bluetooth Creative",
+    "id": 839
+  },
+  "01-N001": {
+    "code": "01-N001",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Laptop",
+    "id": 1
+  },
+  "01-N001-02": {
+    "code": "01-N001-02",
+    "level": 2,
+    "parent_id": 1,
+    "name": "Laptop Asus",
+    "id": 9
+  },
+  "01-N001-02-01": {
+    "code": "01-N001-02-01",
+    "level": 3,
+    "parent_id": 9,
+    "name": "Laptop Asus Option",
+    "id": 10
+  },
+  "01-N001-02-01-01": {
+    "code": "01-N001-02-01-01",
+    "level": 4,
+    "parent_id": 10,
+    "name": "Laptop Asus Option 1.1",
+    "id": 11
+  },
+  "01-N002-08-06": {
+    "code": "01-N002-08-06",
+    "level": 3,
+    "parent_id": 101,
+    "name": "Bag Laptop RivaCase/T\u00fai Laptop RivaCase",
+    "id": 114
+  },
+  "05-N003-04-04": {
+    "code": "05-N003-04-04",
+    "level": 3,
+    "parent_id": 773,
+    "name": "Phone Cable Belkin/Cable \u0111i\u1ec7n tho\u1ea1i Belkin",
+    "id": 777
+  },
+  "06-N013-01": {
+    "code": "06-N013-01",
+    "level": 2,
+    "parent_id": 938,
+    "name": "Hub Belkin",
+    "id": 939
+  },
+  "06-N001-10": {
+    "code": "06-N001-10",
+    "level": 2,
+    "parent_id": 836,
+    "name": "Portable Speaker BD/Loa k\u00e9o BD",
+    "id": 863
+  },
+  "04-N007-01-02-02": {
+    "code": "04-N007-01-02-02",
+    "level": 4,
+    "parent_id": 512,
+    "name": "Printer HP Inkjet/M\u00e1y In HP phun",
+    "id": 514
+  },
+  "04-N001-01-01-01": {
+    "code": "04-N001-01-01-01",
+    "level": 4,
+    "parent_id": 455,
+    "name": "Software Win Server/Ph\u1ea7n M\u1ec1m Win Server",
+    "id": 456
+  },
+  "04-N001-01-01-01-03": {
+    "code": "04-N001-01-01-01-03",
+    "level": 5,
+    "parent_id": 456,
+    "name": "Software SQL Server (OLP)/Ph\u1ea7n M\u1ec1m SQL Server (OLP)",
+    "id": 459
+  },
+  "04-N014-01": {
+    "code": "04-N014-01",
+    "level": 2,
+    "parent_id": 586,
+    "name": "Time recorder/M\u00e1y Ch\u1ea5m C\u00f4ng",
+    "id": 587
+  },
+  "05-N002": {
+    "code": "05-N002",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Tablet/M\u00e1y T\u00ednh B\u1ea3ng",
+    "id": 726
+  },
+  "05-N002-01": {
+    "code": "05-N002-01",
+    "level": 2,
+    "parent_id": 726,
+    "name": "Tablet Samsung/M\u00e1y T\u00ednh B\u1ea3ng Samsung",
+    "id": 727
+  },
+  "06-N006": {
+    "code": "06-N006",
+    "level": 1,
+    "parent_id": 0,
+    "name": "TV Card/Card Tivi",
+    "id": 906
+  },
+  "05-N003-04-99": {
+    "code": "05-N003-04-99",
+    "level": 3,
+    "parent_id": 773,
+    "name": "Other Phone Cable/Cable \u0111i\u1ec7n tho\u1ea1i Kh\u00e1c",
+    "id": 783
+  },
+  "03-N001-05": {
+    "code": "03-N001-05",
+    "level": 2,
+    "parent_id": 306,
+    "name": "Monitor HP/M\u00e0n H\u00ecnh HP",
+    "id": 311
+  },
+  "03-N001-06": {
+    "code": "03-N001-06",
+    "level": 2,
+    "parent_id": 306,
+    "name": "Monitor LG/M\u00e0n H\u00ecnh LG",
+    "id": 312
+  },
+  "04-N024-05": {
+    "code": "04-N024-05",
+    "level": 2,
+    "parent_id": 616,
+    "name": "Magnet paper/Gi\u1ea5y Nam Ch\u00e2m",
+    "id": 621
+  },
+  "06-N002-03": {
+    "code": "06-N002-03",
+    "level": 2,
+    "parent_id": 870,
+    "name": "USB Kingmax",
+    "id": 873
+  },
+  "02-N008": {
+    "code": "02-N008",
+    "level": 1,
+    "parent_id": 0,
+    "name": "VGA/Card M\u00e0n H\u00ecnh",
+    "id": 267
+  },
+  "02-N008-01": {
+    "code": "02-N008-01",
+    "level": 2,
+    "parent_id": 267,
+    "name": "VGA Asus/Card M\u00e0n H\u00ecnh Asus",
+    "id": 268
+  },
+  "04-N003-03": {
+    "code": "04-N003-03",
+    "level": 2,
+    "parent_id": 480,
+    "name": "Hard drive Server/\u1ed5 C\u1ee9ng Server",
+    "id": 483
+  },
+  "04-N027-04": {
+    "code": "04-N027-04",
+    "level": 2,
+    "parent_id": 626,
+    "name": "Alarm Devices/Thi\u1ebft b\u1ecb B\u00e1o tr\u1ed9m",
+    "id": 668
+  },
+  "04-N027-04-01": {
+    "code": "04-N027-04-01",
+    "level": 3,
+    "parent_id": 668,
+    "name": "Alarm Devices/Thi\u1ebft b\u1ecb B\u00e1o tr\u1ed9m",
+    "id": 669
+  },
+  "04-N027-04-02": {
+    "code": "04-N027-04-02",
+    "level": 3,
+    "parent_id": 668,
+    "name": "Alarm Devices Accessories/Ph\u1ee5 Ki\u1ec7n B\u00e1o tr\u1ed9m",
+    "id": 670
+  },
+  "03-N002-09": {
+    "code": "03-N002-09",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Keyboard Corsair/B\u00e0n Ph\u00edm Corsair",
+    "id": 329
+  },
+  "06-N001-02-10": {
+    "code": "06-N001-02-10",
+    "level": 3,
+    "parent_id": 838,
+    "name": "Bluetooth Speaker Sony/Loa Bluetooth Sony",
+    "id": 848
+  },
+  "02-N008-02": {
+    "code": "02-N008-02",
+    "level": 2,
+    "parent_id": 267,
+    "name": "VGA Gigabyte/Card M\u00e0n H\u00ecnh Gigabyte",
+    "id": 269
+  },
+  "02-N005-01-03": {
+    "code": "02-N005-01-03",
+    "level": 3,
+    "parent_id": 229,
+    "name": "SSD Kingston",
+    "id": 232
+  },
+  "05-N002-05": {
+    "code": "05-N002-05",
+    "level": 2,
+    "parent_id": 726,
+    "name": "Tablet Lenovo/M\u00e1y T\u00ednh B\u1ea3ng Lenovo",
+    "id": 731
+  },
+  "03-N001-99": {
+    "code": "03-N001-99",
+    "level": 2,
+    "parent_id": 306,
+    "name": "Other Monitor/M\u00e0n H\u00ecnh Kh\u00e1c",
+    "id": 319
+  },
+  "06-N014-02": {
+    "code": "06-N014-02",
+    "level": 2,
+    "parent_id": 951,
+    "name": "Converter Unitek/\u0110\u1ea7u Chuy\u1ec3n Unitek",
+    "id": 953
+  },
+  "06-N016": {
+    "code": "06-N016",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Bluetooth adapter/C\u1ed5ng K\u1ebft N\u1ed1i Bluetooth",
+    "id": 964
+  },
+  "06-N016-01": {
+    "code": "06-N016-01",
+    "level": 2,
+    "parent_id": 964,
+    "name": "Bluetooth Adapter Orico/C\u1ed5ng K\u1ebft N\u1ed1i Bluetooth Orico",
+    "id": 965
+  },
+  "05-N001": {
+    "code": "05-N001",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Phone/\u0110i\u1ec7n Tho\u1ea1i",
+    "id": 671
+  },
+  "05-N001-08": {
+    "code": "05-N001-08",
+    "level": 2,
+    "parent_id": 671,
+    "name": "Phone Oppo/\u0110i\u1ec7n Tho\u1ea1i Oppo",
+    "id": 693
+  },
+  "02-N009-99": {
+    "code": "02-N009-99",
+    "level": 2,
+    "parent_id": 276,
+    "name": "Other Case/Th\u00f9ng M\u00e1y Kh\u00e1c",
+    "id": 287
+  },
+  "03-N003-99": {
+    "code": "03-N003-99",
+    "level": 2,
+    "parent_id": 343,
+    "name": "Other Keyboard & Mouse/Keyboard & Mouse Kh\u00e1c",
+    "id": 349
+  },
+  "02-N008-04": {
+    "code": "02-N008-04",
+    "level": 2,
+    "parent_id": 267,
+    "name": "VGA Msi/Card M\u00e0n H\u00ecnh Msi",
+    "id": 271
+  },
+  "04-N002": {
+    "code": "04-N002",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Server",
+    "id": 474
+  },
+  "04-N002-02": {
+    "code": "04-N002-02",
+    "level": 2,
+    "parent_id": 474,
+    "name": "Server HP",
+    "id": 476
+  },
+  "04-N001-01-02-01": {
+    "code": "04-N001-01-02-01",
+    "level": 4,
+    "parent_id": 465,
+    "name": "Software Office (FPP)/Ph\u1ea7n M\u1ec1m Office (FPP)",
+    "id": 466
+  },
+  "05-N003-02-99": {
+    "code": "05-N003-02-99",
+    "level": 3,
+    "parent_id": 747,
+    "name": "Other Power Bank/Pin S\u1ea1c D\u1ef1 Ph\u00f2ng Kh\u00e1c",
+    "id": 762
+  },
+  "06-N008": {
+    "code": "06-N008",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Microphone",
+    "id": 908
+  },
+  "06-N008-04": {
+    "code": "06-N008-04",
+    "level": 2,
+    "parent_id": 908,
+    "name": "Microphone Senic",
+    "id": 912
+  },
+  "05-N003-01-03": {
+    "code": "05-N003-01-03",
+    "level": 3,
+    "parent_id": 737,
+    "name": "Bluetooth Headphone Jabra/Tai nghe Bluetooth Jabra",
+    "id": 740
+  },
+  "05-N001-03": {
+    "code": "05-N001-03",
+    "level": 2,
+    "parent_id": 671,
+    "name": "Phone Sony/\u0110i\u1ec7n Tho\u1ea1i Sony",
+    "id": 678
+  },
+  "02-N001-05": {
+    "code": "02-N001-05",
+    "level": 2,
+    "parent_id": 152,
+    "name": "PC Asus/M\u00e1y B\u1ed9 Asus",
+    "id": 173
+  },
+  "02-N001-05-01": {
+    "code": "02-N001-05-01",
+    "level": 3,
+    "parent_id": 173,
+    "name": "PC Asus Win/M\u00e1y B\u1ed9 Asus Win",
+    "id": 174
+  },
+  "05-N001-16": {
+    "code": "05-N001-16",
+    "level": 2,
+    "parent_id": 671,
+    "name": "Phone VIVO/\u0110i\u1ec7n Tho\u1ea1i VIVO",
+    "id": 717
+  },
+  "02-N002-01-01": {
+    "code": "02-N002-01-01",
+    "level": 3,
+    "parent_id": 191,
+    "name": "Mainboard Asus",
+    "id": 192
+  },
+  "05-N003-05": {
+    "code": "05-N003-05",
+    "level": 2,
+    "parent_id": 736,
+    "name": "Cover/Bao Da - \u1ed1p l\u01b0ng",
+    "id": 784
+  },
+  "05-N003-05-01": {
+    "code": "05-N003-05-01",
+    "level": 3,
+    "parent_id": 784,
+    "name": "Phone cover/Bao da - \u1ed1p l\u01b0ng \u0110i\u1ec7n Tho\u1ea1i",
+    "id": 785
+  },
+  "05-N003-05-01-99": {
+    "code": "05-N003-05-01-99",
+    "level": 4,
+    "parent_id": 785,
+    "name": "Other Phone cover/Bao da - \u1ed1p l\u01b0ng \u0110i\u1ec7n Tho\u1ea1i Kh\u00e1c",
+    "id": 790
+  },
+  "05-N003-01-10": {
+    "code": "05-N003-01-10",
+    "level": 3,
+    "parent_id": 737,
+    "name": "Bluetooth Headphone Remax/Tai Nghe Bluetooth Remax",
+    "id": 1425
+  },
+  "05-N003-02-08": {
+    "code": "05-N003-02-08",
+    "level": 3,
+    "parent_id": 747,
+    "name": "Power Bank Remax/Pin s\u1ea1c d\u1ef1 ph\u00f2ng Remax",
+    "id": 755
+  },
+  "05-N003-05-01-01": {
+    "code": "05-N003-05-01-01",
+    "level": 4,
+    "parent_id": 785,
+    "name": "Iphone cover/Bao da - \u1ed1p l\u01b0ng iPhone",
+    "id": 786
+  },
+  "04-N001-01-01-01-02": {
+    "code": "04-N001-01-01-01-02",
+    "level": 5,
+    "parent_id": 456,
+    "name": "Software Win Server (OLP)/Ph\u1ea7n M\u1ec1m Win Server (OLP)",
+    "id": 458
+  },
+  "04-N027-01-09": {
+    "code": "04-N027-01-09",
+    "level": 3,
+    "parent_id": 627,
+    "name": "Camera KBViSion",
+    "id": 652
+  },
+  "04-N027-01-09-01": {
+    "code": "04-N027-01-09-01",
+    "level": 4,
+    "parent_id": 652,
+    "name": "Camera KBViSion CVI",
+    "id": 653
+  },
+  "02-N002-01-04": {
+    "code": "02-N002-01-04",
+    "level": 3,
+    "parent_id": 191,
+    "name": "Mainboard Asrock",
+    "id": 195
+  },
+  "05-N003-03-04": {
+    "code": "05-N003-03-04",
+    "level": 3,
+    "parent_id": 763,
+    "name": "Charger Orico/S\u1ea1c \u0110i\u1ec7n Tho\u1ea1i Orico",
+    "id": 767
+  },
+  "01-N004-02": {
+    "code": "01-N004-02",
+    "level": 2,
+    "parent_id": 145,
+    "name": "Ipad/M\u00e1y t\u00ednh b\u1ea3ng iPad",
+    "id": 147
+  },
+  "04-N005-01": {
+    "code": "04-N005-01",
+    "level": 2,
+    "parent_id": 495,
+    "name": "Projector/M\u00e1y Chi\u1ebfu",
+    "id": 496
+  },
+  "04-N005-01-03": {
+    "code": "04-N005-01-03",
+    "level": 3,
+    "parent_id": 496,
+    "name": "Projector Panasonic/M\u00e1y Chi\u1ebfu Panasonic",
+    "id": 499
+  },
+  "05-N001-02": {
+    "code": "05-N001-02",
+    "level": 2,
+    "parent_id": 671,
+    "name": "Phone Samsung/\u0110i\u1ec7n Tho\u1ea1i Samsung",
+    "id": 675
+  },
+  "02-N001-04": {
+    "code": "02-N001-04",
+    "level": 2,
+    "parent_id": 152,
+    "name": "PC HP/M\u00e1y B\u1ed9 HP",
+    "id": 170
+  },
+  "02-N001-04-02": {
+    "code": "02-N001-04-02",
+    "level": 3,
+    "parent_id": 170,
+    "name": "PC HP option/M\u00e1y B\u1ed9 HP option",
+    "id": 172
+  },
+  "06-N010": {
+    "code": "06-N010",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Socket/\u1ed4 c\u1eafm \u0111i\u1ec7n",
+    "id": 915
+  },
+  "06-N010-02": {
+    "code": "06-N010-02",
+    "level": 2,
+    "parent_id": 915,
+    "name": "Socket Belkin/\u1ed4 c\u1eafm \u0111i\u1ec7n Belkin",
+    "id": 917
+  },
+  "06-N010-03": {
+    "code": "06-N010-03",
+    "level": 2,
+    "parent_id": 915,
+    "name": "Socket Pisen/\u1ed4 c\u1eafm \u0111i\u1ec7n Pisen",
+    "id": 918
+  },
+  "02-N005-01-09": {
+    "code": "02-N005-01-09",
+    "level": 3,
+    "parent_id": 229,
+    "name": "SSD Plextor",
+    "id": 238
+  },
+  "06-N001-07-02": {
+    "code": "06-N001-07-02",
+    "level": 3,
+    "parent_id": 858,
+    "name": "Speaker Bose Accessories/Ph\u1ee5 ki\u1ec7n loa Bose",
+    "id": 860
+  },
+  "01-N001-03": {
+    "code": "01-N001-03",
+    "level": 2,
+    "parent_id": 1,
+    "name": "Laptop Dell",
+    "id": 16
+  },
+  "01-N001-03-02": {
+    "code": "01-N001-03-02",
+    "level": 3,
+    "parent_id": 16,
+    "name": "Laptop Dell Win",
+    "id": 20
+  },
+  "01-N001-03-02-01": {
+    "code": "01-N001-03-02-01",
+    "level": 4,
+    "parent_id": 20,
+    "name": "Laptop Dell Win 1.1",
+    "id": 21
+  },
+  "01-N003-02-14": {
+    "code": "01-N003-02-14",
+    "level": 3,
+    "parent_id": 124,
+    "name": "Keyboard Mac/B\u00e0n Ph\u00edm Mac",
+    "id": 138
+  },
+  "02-N003-02-06": {
+    "code": "02-N003-02-06",
+    "level": 3,
+    "parent_id": 205,
+    "name": "CPU Intel Gen 7/Cpu Intel th\u1ebf h\u1ec7 7",
+    "id": 211
+  },
+  "01-N001-03-01": {
+    "code": "01-N001-03-01",
+    "level": 3,
+    "parent_id": 16,
+    "name": "Laptop Dell Option",
+    "id": 17
+  },
+  "01-N001-03-01-01": {
+    "code": "01-N001-03-01-01",
+    "level": 4,
+    "parent_id": 17,
+    "name": "Laptop Dell Option 1.1",
+    "id": 18
+  },
+  "04-N027-01-04": {
+    "code": "04-N027-01-04",
+    "level": 3,
+    "parent_id": 627,
+    "name": "Camera Questek",
+    "id": 639
+  },
+  "04-N027-01-04-01": {
+    "code": "04-N027-01-04-01",
+    "level": 4,
+    "parent_id": 639,
+    "name": "Camera Questek AHD",
+    "id": 640
+  },
+  "04-N027-02-06": {
+    "code": "04-N027-02-06",
+    "level": 3,
+    "parent_id": 659,
+    "name": "Recorder KBVision/\u0110\u1ea7u Ghi KBVision",
+    "id": 665
+  },
+  "04-N027-01-09-02": {
+    "code": "04-N027-01-09-02",
+    "level": 4,
+    "parent_id": 652,
+    "name": "Camera KBViSion IP",
+    "id": 654
+  },
+  "06-N001-02-03": {
+    "code": "06-N001-02-03",
+    "level": 3,
+    "parent_id": 838,
+    "name": "Bluetooth Speaker Divoom/Loa Bluetooth Divoom",
+    "id": 841
+  },
+  "02-N010-99": {
+    "code": "02-N010-99",
+    "level": 2,
+    "parent_id": 288,
+    "name": "Other Power/Ngu\u1ed3n Kh\u00e1c",
+    "id": 298
+  },
+  "04-N002-03": {
+    "code": "04-N002-03",
+    "level": 2,
+    "parent_id": 474,
+    "name": "Server Robo",
+    "id": 477
+  },
+  "02-N002-02": {
+    "code": "02-N002-02",
+    "level": 2,
+    "parent_id": 190,
+    "name": "Mainboard Chip Amd",
+    "id": 197
+  },
+  "03-N004-14": {
+    "code": "03-N004-14",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse Zadez/Chu\u1ed9t Zadez",
+    "id": 364
+  },
+  "05-N001-12": {
+    "code": "05-N001-12",
+    "level": 2,
+    "parent_id": 671,
+    "name": "Phone Asus/\u0110i\u1ec7n Tho\u1ea1i Asus",
+    "id": 705
+  },
+  "03-N002-08": {
+    "code": "03-N002-08",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Keyboard Sumtax/B\u00e0n Ph\u00edm Sumtax",
+    "id": 328
+  },
+  "02-N010-04": {
+    "code": "02-N010-04",
+    "level": 2,
+    "parent_id": 288,
+    "name": "Power Fsp/Ngu\u1ed3n Fsp",
+    "id": 292
+  },
+  "02-N001-06": {
+    "code": "02-N001-06",
+    "level": 2,
+    "parent_id": 152,
+    "name": "PC Acer/M\u00e1y B\u1ed9 Acer",
+    "id": 176
+  },
+  "02-N001-06-02": {
+    "code": "02-N001-06-02",
+    "level": 3,
+    "parent_id": 176,
+    "name": "PC Acer option/M\u00e1y B\u1ed9 Acer option",
+    "id": 178
+  },
+  "01-N001-05": {
+    "code": "01-N001-05",
+    "level": 2,
+    "parent_id": 1,
+    "name": "Laptop Compaq - HP",
+    "id": 30
+  },
+  "01-N001-05-02": {
+    "code": "01-N001-05-02",
+    "level": 3,
+    "parent_id": 30,
+    "name": "Laptop Compaq - Hp Win",
+    "id": 34
+  },
+  "01-N001-05-02-01": {
+    "code": "01-N001-05-02-01",
+    "level": 4,
+    "parent_id": 34,
+    "name": "Laptop Compaq - Hp Win 1.1",
+    "id": 35
+  },
+  "05-N003-02-15": {
+    "code": "05-N003-02-15",
+    "level": 3,
+    "parent_id": 747,
+    "name": "Power Bank Xiaomi/Pin S\u1ea1c D\u1ef1 Ph\u00f2ng Xiaomi",
+    "id": 1489
+  },
+  "05-N003-04-05": {
+    "code": "05-N003-04-05",
+    "level": 3,
+    "parent_id": 773,
+    "name": "Phone Cable Orico/Cable \u0111i\u1ec7n tho\u1ea1i Orico",
+    "id": 778
+  },
+  "06-N003-08": {
+    "code": "06-N003-08",
+    "level": 2,
+    "parent_id": 883,
+    "name": "Memory card Samsung",
+    "id": 891
+  },
+  "04-N008-01": {
+    "code": "04-N008-01",
+    "level": 2,
+    "parent_id": 541,
+    "name": "Scanner HP/M\u00e1y Scan HP",
+    "id": 542
+  },
+  "02-N008-99": {
+    "code": "02-N008-99",
+    "level": 2,
+    "parent_id": 267,
+    "name": "Other VGA/Card M\u00e0n H\u00ecnh Kh\u00e1c",
+    "id": 275
+  },
+  "03-N004-17": {
+    "code": "03-N004-17",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse Corsair/Chu\u1ed9t Corsair",
+    "id": 367
+  },
+  "02-N001-03": {
+    "code": "02-N001-03",
+    "level": 2,
+    "parent_id": 152,
+    "name": "PC Dell/M\u00e1y B\u1ed9 Dell",
+    "id": 167
+  },
+  "02-N001-03-02": {
+    "code": "02-N001-03-02",
+    "level": 3,
+    "parent_id": 167,
+    "name": "PC Dell option/M\u00e1y B\u1ed9 Dell option",
+    "id": 169
+  },
+  "02-N003-01-02": {
+    "code": "02-N003-01-02",
+    "level": 3,
+    "parent_id": 201,
+    "name": "CPU AMD Gen 2/CPU AMD th\u1ebf h\u1ec7 2",
+    "id": 203
+  },
+  "01-N001-04": {
+    "code": "01-N001-04",
+    "level": 2,
+    "parent_id": 1,
+    "name": "Laptop Lenovo",
+    "id": 23
+  },
+  "01-N001-04-02": {
+    "code": "01-N001-04-02",
+    "level": 3,
+    "parent_id": 23,
+    "name": "Laptop Lenovo Win",
+    "id": 27
+  },
+  "01-N001-04-02-01": {
+    "code": "01-N001-04-02-01",
+    "level": 4,
+    "parent_id": 27,
+    "name": "Laptop Lenovo Win 1.1",
+    "id": 28
+  },
+  "02-N001-02": {
+    "code": "02-N001-02",
+    "level": 1,
+    "parent_id": 0,
+    "name": "PC AIO/M\u00e1y B\u00e0n AIO",
+    "id": 161
+  },
+  "02-N001-02-02": {
+    "code": "02-N001-02-02",
+    "level": 2,
+    "parent_id": 161,
+    "name": "PC AIO Dell/M\u00e1y B\u00e0n AIO Dell",
+    "id": 163
+  },
+  "02-N002-04": {
+    "code": "02-N002-04",
+    "level": 2,
+    "parent_id": 190,
+    "name": "Mainboard MSI",
+    "id": 199
+  },
+  "06-N001-02-09": {
+    "code": "06-N001-02-09",
+    "level": 3,
+    "parent_id": 838,
+    "name": "Bluetooth Speaker Bose/Loa Bluetooth Bose",
+    "id": 847
+  },
+  "02-N005-01-06": {
+    "code": "02-N005-01-06",
+    "level": 3,
+    "parent_id": 229,
+    "name": "SSD Corsair",
+    "id": 235
+  },
+  "03-N004-19": {
+    "code": "03-N004-19",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse Asus/Chu\u1ed9t Asus",
+    "id": 369
+  },
+  "04-N001-01-01-01-01": {
+    "code": "04-N001-01-01-01-01",
+    "level": 5,
+    "parent_id": 456,
+    "name": "Software Win Server (OEM)/Ph\u1ea7n M\u1ec1m Win Server (OEM)",
+    "id": 457
+  },
+  "04-N024-01": {
+    "code": "04-N024-01",
+    "level": 2,
+    "parent_id": 616,
+    "name": "Photo paper/Gi\u1ea5y In \u1ea3nh",
+    "id": 617
+  },
+  "04-N005-01-01": {
+    "code": "04-N005-01-01",
+    "level": 3,
+    "parent_id": 496,
+    "name": "Projector Epson/M\u00e1y Chi\u1ebfu Epson",
+    "id": 497
+  },
+  "03-N002-07": {
+    "code": "03-N002-07",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Keyboard Trust/B\u00e0n Ph\u00edm Trust",
+    "id": 327
+  },
+  "03-N004-16": {
+    "code": "03-N004-16",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse Trust/Chu\u1ed9t Trust",
+    "id": 366
+  },
+  "02-N003-02-05": {
+    "code": "02-N003-02-05",
+    "level": 3,
+    "parent_id": 205,
+    "name": "CPU Intel Gen 6/Cpu Intel th\u1ebf h\u1ec7 6",
+    "id": 210
+  },
+  "05-N001-01": {
+    "code": "05-N001-01",
+    "level": 2,
+    "parent_id": 671,
+    "name": "Phone Nokia/\u0110i\u1ec7n Tho\u1ea1i Nokia",
+    "id": 672
+  },
+  "04-N005-01-02": {
+    "code": "04-N005-01-02",
+    "level": 3,
+    "parent_id": 496,
+    "name": "Projector Sony/M\u00e1y Chi\u1ebfu Sony",
+    "id": 498
+  },
+  "05-N001-17": {
+    "code": "05-N001-17",
+    "level": 2,
+    "parent_id": 671,
+    "name": "Phone Xiaomi/\u0110i\u1ec7n Tho\u1ea1i Xiaomi",
+    "id": 720
+  },
+  "02-N001-02-01": {
+    "code": "02-N001-02-01",
+    "level": 2,
+    "parent_id": 161,
+    "name": "PC AIO HP/M\u00e1y B\u00e0n AIO HP",
+    "id": 162
+  },
+  "02-N005-01-05": {
+    "code": "02-N005-01-05",
+    "level": 3,
+    "parent_id": 229,
+    "name": "SSD Intel",
+    "id": 234
+  },
+  "06-N017": {
+    "code": "06-N017",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Life style accessories/Ph\u1ee5 ki\u1ec7n life style",
+    "id": 1390
+  },
+  "06-N017-01": {
+    "code": "06-N017-01",
+    "level": 2,
+    "parent_id": 1390,
+    "name": "Life style accessories - battery/Ph\u1ee5 Ki\u1ec7n Life Style C\u00f3 Pin",
+    "id": 1391
+  },
+  "07-N002-02": {
+    "code": "07-N002-02",
+    "level": 2,
+    "parent_id": 985,
+    "name": "Delivery services/D\u1ecbch V\u1ee5 giao h\u00e0ng",
+    "id": 987
+  },
+  "06-N014-01": {
+    "code": "06-N014-01",
+    "level": 2,
+    "parent_id": 951,
+    "name": "Converter Orico/\u0110\u1ea7u Chuy\u1ec3n Orico",
+    "id": 952
+  },
+  "01-N001-01": {
+    "code": "01-N001-01",
+    "level": 2,
+    "parent_id": 1,
+    "name": "Laptop Acer",
+    "id": 2
+  },
+  "01-N001-01-01": {
+    "code": "01-N001-01-01",
+    "level": 3,
+    "parent_id": 2,
+    "name": "Laptop Acer Option",
+    "id": 3
+  },
+  "01-N001-01-01-01": {
+    "code": "01-N001-01-01-01",
+    "level": 4,
+    "parent_id": 3,
+    "name": "Laptop Acer Option 1.1",
+    "id": 4
+  },
+  "01-N001-05-01": {
+    "code": "01-N001-05-01",
+    "level": 3,
+    "parent_id": 30,
+    "name": "Laptop Compaq - Hp Option",
+    "id": 31
+  },
+  "01-N001-05-01-01": {
+    "code": "01-N001-05-01-01",
+    "level": 4,
+    "parent_id": 31,
+    "name": "Laptop Compaq - Hp Option 1.1",
+    "id": 32
+  },
+  "02-N004-10": {
+    "code": "02-N004-10",
+    "level": 2,
+    "parent_id": 214,
+    "name": "Ram Transcend",
+    "id": 224
+  },
+  "01-N001-09": {
+    "code": "01-N001-09",
+    "level": 2,
+    "parent_id": 1,
+    "name": "Laptop LG",
+    "id": 52
+  },
+  "01-N001-09-02": {
+    "code": "01-N001-09-02",
+    "level": 3,
+    "parent_id": 52,
+    "name": "Laptop LG Win",
+    "id": 56
+  },
+  "01-N001-09-02-01": {
+    "code": "01-N001-09-02-01",
+    "level": 4,
+    "parent_id": 56,
+    "name": "Laptop LG Win 1.1",
+    "id": 57
+  },
+  "02-N001-05-02": {
+    "code": "02-N001-05-02",
+    "level": 3,
+    "parent_id": 173,
+    "name": "PC Asus option/M\u00e1y B\u1ed9 Asus option",
+    "id": 175
+  },
+  "02-N004-05": {
+    "code": "02-N004-05",
+    "level": 2,
+    "parent_id": 214,
+    "name": "Ram Ncp",
+    "id": 219
+  },
+  "01-N001-05-02-02": {
+    "code": "01-N001-05-02-02",
+    "level": 4,
+    "parent_id": 34,
+    "name": "Laptop Compaq - Hp Win 2.1",
+    "id": 36
+  },
+  "01-N001-04-02-02": {
+    "code": "01-N001-04-02-02",
+    "level": 4,
+    "parent_id": 27,
+    "name": "Laptop Lenovo Win 2.1",
+    "id": 29
+  },
+  "04-N027-02-01": {
+    "code": "04-N027-02-01",
+    "level": 3,
+    "parent_id": 659,
+    "name": "Recorder Questek/\u0110\u1ea7u ghi Questek",
+    "id": 660
+  },
+  "05-N003-05-01-04": {
+    "code": "05-N003-05-01-04",
+    "level": 4,
+    "parent_id": 785,
+    "name": "Phone cover Nokia/Bao da - \u1ed1p l\u01b0ng \u0110i\u1ec7n Tho\u1ea1i Sony",
+    "id": 789
+  },
+  "02-N005-01-12": {
+    "code": "02-N005-01-12",
+    "level": 3,
+    "parent_id": 229,
+    "name": "SSD Samsung",
+    "id": 241
+  },
+  "06-N013-04": {
+    "code": "06-N013-04",
+    "level": 2,
+    "parent_id": 938,
+    "name": "Hub HyperDrive",
+    "id": 942
+  },
+  "01-N001-04-01": {
+    "code": "01-N001-04-01",
+    "level": 3,
+    "parent_id": 23,
+    "name": "Laptop Lenovo Option",
+    "id": 24
+  },
+  "01-N001-04-01-01": {
+    "code": "01-N001-04-01-01",
+    "level": 4,
+    "parent_id": 24,
+    "name": "Laptop Lenovo Option 1.1",
+    "id": 25
+  },
+  "06-N011-07": {
+    "code": "06-N011-07",
+    "level": 2,
+    "parent_id": 921,
+    "name": "Gamepad Microsoft/Tay c\u1ea7m Game Microsoft",
+    "id": 928
+  },
+  "05-N003-02-10": {
+    "code": "05-N003-02-10",
+    "level": 3,
+    "parent_id": 747,
+    "name": "Power Bank Orico/Pin S\u1ea1c D\u1ef1 Ph\u00f2ng Orico",
+    "id": 757
+  },
+  "02-N001-01": {
+    "code": "02-N001-01",
+    "level": 2,
+    "parent_id": 152,
+    "name": "PC Phong Vu/M\u00e1y b\u1ed9 Phong V\u0169",
+    "id": 153
+  },
+  "02-N001-01-01": {
+    "code": "02-N001-01-01",
+    "level": 3,
+    "parent_id": 153,
+    "name": "PC Phong Vu option/M\u00e1y b\u1ed9 Phong V\u0169 option",
+    "id": 154
+  },
+  "01-N001-01-02": {
+    "code": "01-N001-01-02",
+    "level": 3,
+    "parent_id": 2,
+    "name": "Laptop Acer Win",
+    "id": 6
+  },
+  "01-N001-01-02-01": {
+    "code": "01-N001-01-02-01",
+    "level": 4,
+    "parent_id": 6,
+    "name": "Laptop Acer Win 1.1",
+    "id": 7
+  },
+  "02-N002-01-03": {
+    "code": "02-N002-01-03",
+    "level": 3,
+    "parent_id": 191,
+    "name": "Mainboard Intel",
+    "id": 194
+  },
+  "01-N002-01-99": {
+    "code": "01-N002-01-99",
+    "level": 3,
+    "parent_id": 84,
+    "name": "Other Ram Laptop/Ram Laptop Kh\u00e1c",
+    "id": 89
+  },
+  "03-N002-12": {
+    "code": "03-N002-12",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Keyboard FL ESports/B\u00e0n ph\u00edm FL ESports",
+    "id": 332
+  },
+  "03-N005-30": {
+    "code": "03-N005-30",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Cooler Master/Tai nghe Cooler Master",
+    "id": 412
+  },
+  "02-N003-02-07": {
+    "code": "02-N003-02-07",
+    "level": 3,
+    "parent_id": 205,
+    "name": "CPU Intel Gen 8/Cpu Intel th\u1ebf h\u1ec7 8",
+    "id": 212
+  },
+  "01-N002-08-03": {
+    "code": "01-N002-08-03",
+    "level": 3,
+    "parent_id": 101,
+    "name": "Bag Laptop Sakos/T\u00fai Laptop Sakos",
+    "id": 111
+  },
+  "01-N001-03-02-02": {
+    "code": "01-N001-03-02-02",
+    "level": 4,
+    "parent_id": 20,
+    "name": "Laptop Dell Win 2.1",
+    "id": 22
+  },
+  "01-N001-02-02": {
+    "code": "01-N001-02-02",
+    "level": 3,
+    "parent_id": 9,
+    "name": "Laptop Asus Win",
+    "id": 13
+  },
+  "01-N001-02-02-01": {
+    "code": "01-N001-02-02-01",
+    "level": 4,
+    "parent_id": 13,
+    "name": "Laptop Asus Win 1.1",
+    "id": 14
+  },
+  "05-N003-12-01": {
+    "code": "05-N003-12-01",
+    "level": 2,
+    "parent_id": 806,
+    "name": "Phone stickers/Mi\u1ebfng D\u00e1n \u0110i\u1ec7n Tho\u1ea1i",
+    "id": 807
+  },
+  "02-N005-01-01": {
+    "code": "02-N005-01-01",
+    "level": 3,
+    "parent_id": 229,
+    "name": "SSD Western",
+    "id": 230
+  },
+  "06-N001-99": {
+    "code": "06-N001-99",
+    "level": 2,
+    "parent_id": 836,
+    "name": "Other Speaker/Loa Kh\u00e1c",
+    "id": 869
+  },
+  "02-N004-09": {
+    "code": "02-N004-09",
+    "level": 2,
+    "parent_id": 214,
+    "name": "Ram Adata",
+    "id": 223
+  },
+  "01-N001-02-02-02": {
+    "code": "01-N001-02-02-02",
+    "level": 4,
+    "parent_id": 13,
+    "name": "Laptop Asus Win 2.1",
+    "id": 15
+  },
+  "02-N005-01-07": {
+    "code": "02-N005-01-07",
+    "level": 3,
+    "parent_id": 229,
+    "name": "SSD Adata",
+    "id": 236
+  },
+  "02-N008-05": {
+    "code": "02-N008-05",
+    "level": 2,
+    "parent_id": 267,
+    "name": "VGA Galax/Card M\u00e0n H\u00ecnh Galax",
+    "id": 272
+  },
+  "02-N009-09": {
+    "code": "02-N009-09",
+    "level": 2,
+    "parent_id": 276,
+    "name": "Case Corsair/Th\u00f9ng M\u00e1y Corsair",
+    "id": 285
+  },
+  "02-N010-05": {
+    "code": "02-N010-05",
+    "level": 2,
+    "parent_id": 288,
+    "name": "Power Thermaltake/Ngu\u1ed3n Thermaltake",
+    "id": 293
+  },
+  "02-N006-05": {
+    "code": "02-N006-05",
+    "level": 2,
+    "parent_id": 249,
+    "name": "External hard drive Samsung/\u1ed5 C\u1ee9ng G\u1eafn Ngo\u00e0i Samsung",
+    "id": 254
+  },
+  "03-N004-28": {
+    "code": "03-N004-28",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse E-Blue/Chu\u1ed9t E-Blue",
+    "id": 378
+  },
+  "03-N005-24": {
+    "code": "03-N005-24",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Asus/Tai nghe Asus",
+    "id": 406
+  },
+  "01-N004-04": {
+    "code": "01-N004-04",
+    "level": 2,
+    "parent_id": 145,
+    "name": "Imac/M\u00e1y b\u00e0n iMac",
+    "id": 149
+  },
+  "01-N004-01": {
+    "code": "01-N004-01",
+    "level": 2,
+    "parent_id": 145,
+    "name": "Iphone/\u0110i\u1ec7n tho\u1ea1i iPhone",
+    "id": 146
+  },
+  "03-N002-14": {
+    "code": "03-N002-14",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Keyboard Razer/B\u00e0n ph\u00edm Razer",
+    "id": 334
+  },
+  "03-N002-15": {
+    "code": "03-N002-15",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Keyboard DareU/B\u00e0n Ph\u00edm DareU",
+    "id": 335
+  },
+  "03-N002-13": {
+    "code": "03-N002-13",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Keyboard Motospeed/B\u00e0n ph\u00edm Motospeed",
+    "id": 333
+  },
+  "02-N009-13": {
+    "code": "02-N009-13",
+    "level": 2,
+    "parent_id": 276,
+    "name": "Case Golden Field/Th\u00f9ng M\u00e1y Golden Field",
+    "id": 1110
+  },
+  "03-N004-24": {
+    "code": "03-N004-24",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse BenQ/Chu\u1ed9t BenQ",
+    "id": 374
+  },
+  "03-N004-26": {
+    "code": "03-N004-26",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse DareU/Chu\u1ed9t DareU",
+    "id": 376
+  },
+  "03-N004-22": {
+    "code": "03-N004-22",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse Razer/Chu\u1ed9t Razer",
+    "id": 372
+  },
+  "03-N004-21": {
+    "code": "03-N004-21",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse Redragon/Chu\u1ed9t Redragon",
+    "id": 371
+  },
+  "03-N004-18": {
+    "code": "03-N004-18",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse SteelSeries/Chu\u1ed9t SteelSeries",
+    "id": 368
+  },
+  "06-N009": {
+    "code": "06-N009",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Gaming Chair/Gh\u1ebf Gaming",
+    "id": 914
+  },
+  "02-N010-10": {
+    "code": "02-N010-10",
+    "level": 2,
+    "parent_id": 288,
+    "name": "Power Jetek/Ngu\u1ed3n Jetek",
+    "id": 1109
+  },
+  "02-N004-99": {
+    "code": "02-N004-99",
+    "level": 2,
+    "parent_id": 214,
+    "name": "Other Ram/Ram kh\u00e1c",
+    "id": 227
+  },
+  "02-N004-08": {
+    "code": "02-N004-08",
+    "level": 2,
+    "parent_id": 214,
+    "name": "Ram Geil",
+    "id": 222
+  },
+  "03-N005-26": {
+    "code": "03-N005-26",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Razer/Tai nghe Razer",
+    "id": 408
+  },
+  "03-N005-29": {
+    "code": "03-N005-29",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Tako/Tai nghe Tako",
+    "id": 411
+  },
+  "02-N009-02": {
+    "code": "02-N009-02",
+    "level": 2,
+    "parent_id": 276,
+    "name": "Case Deluxe/Th\u00f9ng M\u00e1y Deluxe",
+    "id": 278
+  },
+  "05-N003-03-01": {
+    "code": "05-N003-03-01",
+    "level": 3,
+    "parent_id": 763,
+    "name": "Charger Mili/S\u1ea1c \u0110i\u1ec7n Tho\u1ea1i Mili",
+    "id": 764
+  },
+  "03-N002-23": {
+    "code": "03-N002-23",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Keyboard Asus [NGH03]/B\u00e0n Ph\u00edm Asus [NGH03]",
+    "id": 1491
+  },
+  "03-N004-27": {
+    "code": "03-N004-27",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse Fuhlen/Chu\u1ed9t Fuhlen",
+    "id": 377
+  },
+  "04-N012-03": {
+    "code": "04-N012-03",
+    "level": 2,
+    "parent_id": 572,
+    "name": "Unifiled Communication Grandstream/T\u1ed5ng \u0110\u00e0i Grandstream",
+    "id": 575
+  },
+  "02-N005-01-02": {
+    "code": "02-N005-01-02",
+    "level": 3,
+    "parent_id": 229,
+    "name": "SSD Kingmax",
+    "id": 231
+  },
+  "01-N001-01-02-02": {
+    "code": "01-N001-01-02-02",
+    "level": 4,
+    "parent_id": 6,
+    "name": "Laptop Acer Win 2.1",
+    "id": 8
+  },
+  "02-N001-11": {
+    "code": "02-N001-11",
+    "level": 2,
+    "parent_id": 152,
+    "name": "PC Lenovo/M\u00e1y B\u1ed9 Lenovo",
+    "id": 183
+  },
+  "02-N001-11-01": {
+    "code": "02-N001-11-01",
+    "level": 3,
+    "parent_id": 183,
+    "name": "PC Lenovo Win/M\u00e1y B\u1ed9 Lenovo Win",
+    "id": 184
+  },
+  "02-N001-04-01": {
+    "code": "02-N001-04-01",
+    "level": 3,
+    "parent_id": 170,
+    "name": "PC HP Win/M\u00e1y B\u1ed9 HP Win",
+    "id": 171
+  },
+  "02-N001-11-02": {
+    "code": "02-N001-11-02",
+    "level": 3,
+    "parent_id": 183,
+    "name": "PC Lenovo option/M\u00e1y B\u1ed9 Lenovo option",
+    "id": 185
+  },
+  "06-N001-02-11": {
+    "code": "06-N001-02-11",
+    "level": 3,
+    "parent_id": 838,
+    "name": "Bluetooth Speaker Xiaomi/Loa Bluetooth Xiaomi",
+    "id": 849
+  },
+  "08-N003": {
+    "code": "08-N003",
+    "level": 1,
+    "parent_id": 0,
+    "name": "SDA/S\u1ea3n ph\u1ea9m \u0110i\u1ec7n gia d\u1ee5ng",
+    "id": 1500
+  },
+  "08-N003-16": {
+    "code": "08-N003-16",
+    "level": 2,
+    "parent_id": 1500,
+    "name": "Vacuum cleaner/M\u00e1y H\u00fat B\u1ee5i",
+    "id": 1411
+  },
+  "08-N003-16-01": {
+    "code": "08-N003-16-01",
+    "level": 3,
+    "parent_id": 1411,
+    "name": "Vacuum cleaner Electrolux/M\u00e1y H\u00fat B\u1ee5i Electrolux",
+    "id": 1413
+  },
+  "04-N011": {
+    "code": "04-N011",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Photocopy/M\u00e1y Photocopy",
+    "id": 569
+  },
+  "04-N011-01": {
+    "code": "04-N011-01",
+    "level": 2,
+    "parent_id": 569,
+    "name": "Photocopy/M\u00e1y Photocoppy",
+    "id": 570
+  },
+  "03-N005-31": {
+    "code": "03-N005-31",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone SteelSeries/Tai nghe SteelSeries",
+    "id": 413
+  },
+  "03-N001-08": {
+    "code": "03-N001-08",
+    "level": 2,
+    "parent_id": 306,
+    "name": "Monitor Viewsonic/M\u00e0n H\u00ecnh Viewsonic",
+    "id": 314
+  },
+  "02-N005-01-99": {
+    "code": "02-N005-01-99",
+    "level": 3,
+    "parent_id": 229,
+    "name": "Other SSD/SSD Kh\u00e1c",
+    "id": 243
+  },
+  "04-N002-04": {
+    "code": "04-N002-04",
+    "level": 2,
+    "parent_id": 474,
+    "name": "Server Dell",
+    "id": 478
+  },
+  "04-N027-02-04": {
+    "code": "04-N027-02-04",
+    "level": 3,
+    "parent_id": 659,
+    "name": "Recorder Goldeye/\u0110\u1ea7u ghi Goldeye",
+    "id": 663
+  },
+  "03-N007": {
+    "code": "03-N007",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Interactive Drawing Board/B\u1ea3ng V\u1ebd T\u01b0\u01a1ng T\u00e1c",
+    "id": 1518
+  },
+  "03-N007-01": {
+    "code": "03-N007-01",
+    "level": 2,
+    "parent_id": 1518,
+    "name": "Interactive Drawing Board/B\u1ea3ng V\u1ebd T\u01b0\u01a1ng T\u00e1c Wacom",
+    "id": 1519
+  },
+  "02-N001-01-02": {
+    "code": "02-N001-01-02",
+    "level": 3,
+    "parent_id": 153,
+    "name": "PC Phong Vu Win/M\u00e1y b\u1ed9 Phong V\u0169 Win",
+    "id": 155
+  },
+  "02-N001-01-02-02": {
+    "code": "02-N001-01-02-02",
+    "level": 4,
+    "parent_id": 155,
+    "name": "PC Phong Vu Win 10/M\u00e1y b\u1ed9 Phong V\u0169 Win 10",
+    "id": 157
+  },
+  "08-N001": {
+    "code": "08-N001",
+    "level": 1,
+    "parent_id": 0,
+    "name": "CE/S\u1ea3n ph\u1ea9m \u0110i\u1ec7n t\u1eed",
+    "id": 1498
+  },
+  "08-N001-01": {
+    "code": "08-N001-01",
+    "level": 2,
+    "parent_id": 1498,
+    "name": "TV/Tivi",
+    "id": 991
+  },
+  "08-N001-01-02": {
+    "code": "08-N001-01-02",
+    "level": 3,
+    "parent_id": 991,
+    "name": "TV LG/Tivi LG",
+    "id": 993
+  },
+  "02-N009-11": {
+    "code": "02-N009-11",
+    "level": 2,
+    "parent_id": 276,
+    "name": "Case Xigmatek/Th\u00f9ng M\u00e1y Xigmatek",
+    "id": 1107
+  },
+  "03-N005-21": {
+    "code": "03-N005-21",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Creative/Tai Nghe Creative",
+    "id": 403
+  },
+  "04-N007-01-06-02": {
+    "code": "04-N007-01-06-02",
+    "level": 4,
+    "parent_id": 524,
+    "name": "Printer Brother Inkjet/M\u00e1y In Brother phun",
+    "id": 526
+  },
+  "06-N099-03": {
+    "code": "06-N099-03",
+    "level": 2,
+    "parent_id": 967,
+    "name": "Led light/\u0110\u00e8n Led",
+    "id": 970
+  },
+  "06-N010-99": {
+    "code": "06-N010-99",
+    "level": 2,
+    "parent_id": 915,
+    "name": "Other Socket/\u1ed4 c\u1eafm \u0111i\u1ec7n kh\u00e1c",
+    "id": 920
+  },
+  "01-N001-08": {
+    "code": "01-N001-08",
+    "level": 2,
+    "parent_id": 1,
+    "name": "Laptop MSI",
+    "id": 47
+  },
+  "01-N001-08-02": {
+    "code": "01-N001-08-02",
+    "level": 3,
+    "parent_id": 47,
+    "name": "Laptop MSI Win",
+    "id": 50
+  },
+  "01-N001-08-02-01": {
+    "code": "01-N001-08-02-01",
+    "level": 4,
+    "parent_id": 50,
+    "name": "Laptop MSI Win 1.1",
+    "id": 51
+  },
+  "02-N001-03-01": {
+    "code": "02-N001-03-01",
+    "level": 3,
+    "parent_id": 167,
+    "name": "PC Dell Win/M\u00e1y B\u1ed9 Dell Win",
+    "id": 168
+  },
+  "05-N003-04-03": {
+    "code": "05-N003-04-03",
+    "level": 3,
+    "parent_id": 773,
+    "name": "Phone Cable Mili/Cable \u0111i\u1ec7n tho\u1ea1i Mili",
+    "id": 776
+  },
+  "02-N005-02-03": {
+    "code": "02-N005-02-03",
+    "level": 3,
+    "parent_id": 244,
+    "name": "Hard Drive 3.5'' Toshiba/\u1ed4 c\u1ee9ng 3.5'' Toshiba",
+    "id": 247
+  },
+  "02-N007-02": {
+    "code": "02-N007-02",
+    "level": 2,
+    "parent_id": 264,
+    "name": "PC accessories VGA/Ph\u1ee5 Ki\u1ec7n Card M\u00e0n H\u00ecnh",
+    "id": 266
+  },
+  "06-N011-10": {
+    "code": "06-N011-10",
+    "level": 2,
+    "parent_id": 921,
+    "name": "Gamepad Senze/Tay c\u1ea7m Game Senze",
+    "id": 931
+  },
+  "06-N011-08": {
+    "code": "06-N011-08",
+    "level": 2,
+    "parent_id": 921,
+    "name": "Gamepad Microkingdom/Tay c\u1ea7m Game Microkingdom",
+    "id": 929
+  },
+  "06-N011-06": {
+    "code": "06-N011-06",
+    "level": 2,
+    "parent_id": 921,
+    "name": "Gamepad Marvo/Tay c\u1ea7m Game Marvo",
+    "id": 927
+  },
+  "03-N001-12": {
+    "code": "03-N001-12",
+    "level": 2,
+    "parent_id": 306,
+    "name": "Monitor MSI/M\u00e0n H\u00ecnh MSI",
+    "id": 318
+  },
+  "08-N002": {
+    "code": "08-N002",
+    "level": 1,
+    "parent_id": 0,
+    "name": "MDA/S\u1ea3n ph\u1ea9m \u0110i\u1ec7n l\u1ea1nh",
+    "id": 1499
+  },
+  "08-N002-02": {
+    "code": "08-N002-02",
+    "level": 2,
+    "parent_id": 1499,
+    "name": "Washer & Dryer/M\u00e1y Gi\u1eb7t, S\u1ea5y",
+    "id": 1394
+  },
+  "08-N002-02-01": {
+    "code": "08-N002-02-01",
+    "level": 3,
+    "parent_id": 1394,
+    "name": "Washer & Dryer AQUA/M\u00e1y Gi\u1eb7t AQUA",
+    "id": 1395
+  },
+  "01-N001-11": {
+    "code": "01-N001-11",
+    "level": 2,
+    "parent_id": 1,
+    "name": "Laptop Xiaomi",
+    "id": 66
+  },
+  "01-N001-11-02": {
+    "code": "01-N001-11-02",
+    "level": 3,
+    "parent_id": 66,
+    "name": "Laptop Xiaomi Win",
+    "id": 70
+  },
+  "01-N001-11-02-01": {
+    "code": "01-N001-11-02-01",
+    "level": 4,
+    "parent_id": 70,
+    "name": "Laptop Xiaomi Win 1.1",
+    "id": 71
+  },
+  "02-N001-06-01": {
+    "code": "02-N001-06-01",
+    "level": 3,
+    "parent_id": 176,
+    "name": "PC Acer Win/M\u00e1y B\u1ed9 Acer Win",
+    "id": 177
+  },
+  "02-N006-10": {
+    "code": "02-N006-10",
+    "level": 2,
+    "parent_id": 249,
+    "name": "External hard drive Toshiba/\u1ed5 C\u1ee9ng Toshiba",
+    "id": 259
+  },
+  "04-N008-05": {
+    "code": "04-N008-05",
+    "level": 2,
+    "parent_id": 541,
+    "name": "Scanner Brother/M\u00e1y Scan Brother",
+    "id": 546
+  },
+  "09-N004": {
+    "code": "09-N004",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Entertainment/Gi\u1ea3i Tr\u00ed",
+    "id": 1037
+  },
+  "08-N001-01-01": {
+    "code": "08-N001-01-01",
+    "level": 3,
+    "parent_id": 991,
+    "name": "TV Sony/Tivi Sony",
+    "id": 992
+  },
+  "08-N001-01-05": {
+    "code": "08-N001-01-05",
+    "level": 3,
+    "parent_id": 991,
+    "name": "TV Samsung/Tivi Samsung",
+    "id": 996
+  },
+  "08-N001-01-03": {
+    "code": "08-N001-01-03",
+    "level": 3,
+    "parent_id": 991,
+    "name": "TV Panasonic/Tivi Panasonic",
+    "id": 994
+  },
+  "08-N001-01-04": {
+    "code": "08-N001-01-04",
+    "level": 3,
+    "parent_id": 991,
+    "name": "TV Toshiba/Tivi Toshiba",
+    "id": 995
+  },
+  "08-N001-01-07": {
+    "code": "08-N001-01-07",
+    "level": 3,
+    "parent_id": 991,
+    "name": "TV Sharp/Tivi Sharp",
+    "id": 998
+  },
+  "08-N001-01-06": {
+    "code": "08-N001-01-06",
+    "level": 3,
+    "parent_id": 991,
+    "name": "TV TCL/Tivi TCL",
+    "id": 997
+  },
+  "04-N001-04": {
+    "code": "04-N001-04",
+    "level": 2,
+    "parent_id": 453,
+    "name": "Software Sapo/Ph\u1ea7n M\u1ec1m Sapo",
+    "id": 472
+  },
+  "01-N001-09-01": {
+    "code": "01-N001-09-01",
+    "level": 3,
+    "parent_id": 52,
+    "name": "Laptop LG Option",
+    "id": 53
+  },
+  "01-N001-09-01-01": {
+    "code": "01-N001-09-01-01",
+    "level": 4,
+    "parent_id": 53,
+    "name": "Laptop LG Option 1.1",
+    "id": 54
+  },
+  "04-N001-98": {
+    "code": "04-N001-98",
+    "level": 2,
+    "parent_id": 453,
+    "name": "Software Activation code/Ph\u1ea7n M\u1ec1m M\u00e3 K\u00edch Ho\u1ea1t",
+    "id": 1122
+  },
+  "04-N001-98-01": {
+    "code": "04-N001-98-01",
+    "level": 3,
+    "parent_id": 1122,
+    "name": "Software Time recorder/Ph\u1ea7n M\u1ec1m M\u00e1y Ch\u1ea5m C\u00f4ng",
+    "id": 1123
+  },
+  "03-N006-02-06": {
+    "code": "03-N006-02-06",
+    "level": 3,
+    "parent_id": 423,
+    "name": "Router Wifi Aptek",
+    "id": 429
+  },
+  "03-N005-15": {
+    "code": "03-N005-15",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Rapoo/Tai Nghe Rapoo",
+    "id": 397
+  },
+  "10-N002-02": {
+    "code": "10-N002-02",
+    "level": 2,
+    "parent_id": 1447,
+    "name": "Meeting micro/Micro H\u1ed9i Ngh\u1ecb",
+    "id": 1451
+  },
+  "03-N006-02-07": {
+    "code": "03-N006-02-07",
+    "level": 3,
+    "parent_id": 423,
+    "name": "Router Wifi Kasda",
+    "id": 430
+  },
+  "03-N006-04-05": {
+    "code": "03-N006-04-05",
+    "level": 3,
+    "parent_id": 439,
+    "name": "Switch Kasda",
+    "id": 444
+  },
+  "02-N001-02-04": {
+    "code": "02-N001-02-04",
+    "level": 2,
+    "parent_id": 161,
+    "name": "PC AIO Asus/M\u00e1y B\u00e0n AIO Asus",
+    "id": 165
+  },
+  "02-N005-01-08": {
+    "code": "02-N005-01-08",
+    "level": 3,
+    "parent_id": 229,
+    "name": "SSD Apacer",
+    "id": 237
+  },
+  "06-N015-05": {
+    "code": "06-N015-05",
+    "level": 2,
+    "parent_id": 955,
+    "name": "Reader Pisen",
+    "id": 960
+  },
+  "02-N005-01-13": {
+    "code": "02-N005-01-13",
+    "level": 3,
+    "parent_id": 229,
+    "name": "SSD Crucial",
+    "id": 242
+  },
+  "02-N004-06": {
+    "code": "02-N004-06",
+    "level": 2,
+    "parent_id": 214,
+    "name": "Ram Team",
+    "id": 220
+  },
+  "02-N004-11": {
+    "code": "02-N004-11",
+    "level": 2,
+    "parent_id": 214,
+    "name": "Ram Crucial",
+    "id": 225
+  },
+  "02-N004-12": {
+    "code": "02-N004-12",
+    "level": 2,
+    "parent_id": 214,
+    "name": "Ram Klevv",
+    "id": 226
+  },
+  "03-N005-04": {
+    "code": "03-N005-04",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone A4 Tech/Tai Nghe A4 Tech",
+    "id": 386
+  },
+  "03-N004-05": {
+    "code": "03-N004-05",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse Gigabyte/Chu\u1ed9t Gigabyte",
+    "id": 355
+  },
+  "05-N003-02-11": {
+    "code": "05-N003-02-11",
+    "level": 3,
+    "parent_id": 747,
+    "name": "Power Bank Aukey/Pin S\u1ea1c D\u1ef1 Ph\u00f2ng Aukey",
+    "id": 758
+  },
+  "05-N003-04-06": {
+    "code": "05-N003-04-06",
+    "level": 3,
+    "parent_id": 773,
+    "name": "Phone Cable Aukey/Cable \u0111i\u1ec7n tho\u1ea1i Aukey",
+    "id": 779
+  },
+  "05-N003-03-05": {
+    "code": "05-N003-03-05",
+    "level": 3,
+    "parent_id": 763,
+    "name": "Charger Aukey/S\u1ea1c \u0110i\u1ec7n Tho\u1ea1i Aukey",
+    "id": 768
+  },
+  "06-N001-02-06": {
+    "code": "06-N001-02-06",
+    "level": 3,
+    "parent_id": 838,
+    "name": "Bluetooth Speaker X-Mini/Loa Bluetooth X-Mini",
+    "id": 844
+  },
+  "05-N003-01-01": {
+    "code": "05-N003-01-01",
+    "level": 3,
+    "parent_id": 737,
+    "name": "Bluetooth Headphone Soul/Tai Nghe Bluetooth Soul",
+    "id": 738
+  },
+  "03-N006-04-06": {
+    "code": "03-N006-04-06",
+    "level": 3,
+    "parent_id": 439,
+    "name": "Switch Tenda",
+    "id": 445
+  },
+  "05-N003-01-04": {
+    "code": "05-N003-01-04",
+    "level": 3,
+    "parent_id": 737,
+    "name": "Bluetooth Headphone Bose/Tai Nghe Bluetooth Bose",
+    "id": 741
+  },
+  "01-N002-01-04": {
+    "code": "01-N002-01-04",
+    "level": 3,
+    "parent_id": 84,
+    "name": "Ram Laptop Crucial",
+    "id": 88
+  },
+  "01-N003-02-13": {
+    "code": "01-N003-02-13",
+    "level": 3,
+    "parent_id": 124,
+    "name": "Keyboard MSI/B\u00e0n Ph\u00edm MSI",
+    "id": 137
+  },
+  "06-N008-03": {
+    "code": "06-N008-03",
+    "level": 2,
+    "parent_id": 908,
+    "name": "Microphone Promate",
+    "id": 911
+  },
+  "03-N005-23": {
+    "code": "03-N005-23",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Soul/Tai nghe Soul",
+    "id": 405
+  },
+  "03-N004-30": {
+    "code": "03-N004-30",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse HyperX/Chu\u1ed9t HyperX",
+    "id": 380
+  },
+  "08-N002-02-07": {
+    "code": "08-N002-02-07",
+    "level": 3,
+    "parent_id": 1394,
+    "name": "Washer & Dryer Toshiba/M\u00e1y Gi\u1eb7t Toshiba",
+    "id": 1401
+  },
+  "02-N003-02-08": {
+    "code": "02-N003-02-08",
+    "level": 3,
+    "parent_id": 205,
+    "name": "CPU Intel Gen 9/Cpu Intel th\u1ebf h\u1ec7 9",
+    "id": 213
+  },
+  "04-N005-01-06": {
+    "code": "04-N005-01-06",
+    "level": 3,
+    "parent_id": 496,
+    "name": "Projector BenQ/M\u00e1y Chi\u1ebfu BenQ",
+    "id": 1119
+  },
+  "08-N002-03": {
+    "code": "08-N002-03",
+    "level": 2,
+    "parent_id": 1499,
+    "name": "Fridge/T\u1ee7 L\u1ea1nh",
+    "id": 1022
+  },
+  "08-N002-03-09": {
+    "code": "08-N002-03-09",
+    "level": 3,
+    "parent_id": 1022,
+    "name": "Fridge Electrolux/T\u1ee7 L\u1ea1nh Electrolux",
+    "id": 1031
+  },
+  "05-N003-02-12": {
+    "code": "05-N003-02-12",
+    "level": 3,
+    "parent_id": 747,
+    "name": "Power Bank Belkin/Pin S\u1ea1c D\u1ef1 Ph\u00f2ng Belkin",
+    "id": 759
+  },
+  "06-N001-02-08": {
+    "code": "06-N001-02-08",
+    "level": 3,
+    "parent_id": 838,
+    "name": "Bluetooth Speaker Aukey/Loa Bluetooth Aukey",
+    "id": 846
+  },
+  "05-N003-01-05": {
+    "code": "05-N003-01-05",
+    "level": 3,
+    "parent_id": 737,
+    "name": "Bluetooth Headphone iWalk/Tai Nghe Bluetooth iWalk",
+    "id": 742
+  },
+  "05-N004-03": {
+    "code": "05-N004-03",
+    "level": 2,
+    "parent_id": 810,
+    "name": "Digital Camera - Accessories/M\u00e1y \u1ea3nh K\u1ef9 Thu\u1eadt S\u1ed1 - Ph\u1ee5 Ki\u1ec7n",
+    "id": 817
+  },
+  "05-N004-03-04": {
+    "code": "05-N004-03-04",
+    "level": 3,
+    "parent_id": 817,
+    "name": "Digital Camera Accessories/Ph\u1ee5 Ki\u1ec7n M\u00e1y \u1ea3nh",
+    "id": 824
+  },
+  "06-N004-02": {
+    "code": "06-N004-02",
+    "level": 2,
+    "parent_id": 894,
+    "name": "Fan Case",
+    "id": 896
+  },
+  "06-N004-02-99": {
+    "code": "06-N004-02-99",
+    "level": 3,
+    "parent_id": 896,
+    "name": "Fan Case Other/Fan Case Kh\u00e1c",
+    "id": 898
+  },
+  "05-N003-02-13": {
+    "code": "05-N003-02-13",
+    "level": 3,
+    "parent_id": 747,
+    "name": "Power Bank Anker/Pin s\u1ea1c d\u1ef1 ph\u00f2ng Anker",
+    "id": 760
+  },
+  "05-N003-03-06": {
+    "code": "05-N003-03-06",
+    "level": 3,
+    "parent_id": 763,
+    "name": "Charger Anker/S\u1ea1c \u0111i\u1ec7n tho\u1ea1i Anker",
+    "id": 769
+  },
+  "06-N001-02-07": {
+    "code": "06-N001-02-07",
+    "level": 3,
+    "parent_id": 838,
+    "name": "Bluetooth Speaker Anker/Loa Bluetooth Anker",
+    "id": 845
+  },
+  "05-N003-04-07": {
+    "code": "05-N003-04-07",
+    "level": 3,
+    "parent_id": 773,
+    "name": "Phone Cable Anker/Cable \u0111i\u1ec7n tho\u1ea1i Anker",
+    "id": 780
+  },
+  "06-N017-02": {
+    "code": "06-N017-02",
+    "level": 2,
+    "parent_id": 1390,
+    "name": "Life style accessories - no battery/Ph\u1ee5 Ki\u1ec7n Life Style Kh\u00f4ng Pin",
+    "id": 1392
+  },
+  "04-N001-99": {
+    "code": "04-N001-99",
+    "level": 2,
+    "parent_id": 453,
+    "name": "Other Software/Ph\u1ea7n M\u1ec1m Kh\u00e1c",
+    "id": 473
+  },
+  "05-N003-01-02": {
+    "code": "05-N003-01-02",
+    "level": 3,
+    "parent_id": 737,
+    "name": "Bluetooth Headphone Audio Technica/Tai Nghe Bluetooth Audio Technica",
+    "id": 739
+  },
+  "03-N002-02": {
+    "code": "03-N002-02",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Keyboard Genius/B\u00e0n Ph\u00edm Genius",
+    "id": 322
+  },
+  "04-N004-99": {
+    "code": "04-N004-99",
+    "level": 2,
+    "parent_id": 486,
+    "name": "Other UPS/B\u1ed9 L\u01b0u \u0110i\u1ec7n Kh\u00e1c",
+    "id": 494
+  },
+  "01-N001-08-01": {
+    "code": "01-N001-08-01",
+    "level": 3,
+    "parent_id": 47,
+    "name": "Laptop MSI Option",
+    "id": 48
+  },
+  "01-N001-08-01-01": {
+    "code": "01-N001-08-01-01",
+    "level": 4,
+    "parent_id": 48,
+    "name": "Laptop MSI Option 1.1",
+    "id": 49
+  },
+  "03-N004-20": {
+    "code": "03-N004-20",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse TT Esports/Chu\u1ed9t TT Esports",
+    "id": 370
+  },
+  "03-N002-10": {
+    "code": "03-N002-10",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Keyboard TT Esports/B\u00e0n ph\u00edm TT Esports",
+    "id": 330
+  },
+  "03-N005-25": {
+    "code": "03-N005-25",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone TT Esports/Tai nghe TT Esports",
+    "id": 407
+  },
+  "08-N001-01-99": {
+    "code": "08-N001-01-99",
+    "level": 2,
+    "parent_id": 991,
+    "name": "Accessories TV/Ph\u1ee5 Ki\u1ec7n Tivi",
+    "id": 1033
+  },
+  "03-N002-11": {
+    "code": "03-N002-11",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Keyboard Redragon/B\u00e0n ph\u00edm Redragon",
+    "id": 331
+  },
+  "03-N005-11": {
+    "code": "03-N005-11",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Somic/Tai Nghe Somic",
+    "id": 393
+  },
+  "02-N009-18": {
+    "code": "02-N009-18",
+    "level": 2,
+    "parent_id": 276,
+    "name": "Case Aerocool /Th\u00f9ng M\u00e1y Aerocool",
+    "id": 1565
+  },
+  "06-N010-01": {
+    "code": "06-N010-01",
+    "level": 2,
+    "parent_id": 915,
+    "name": "Socket Allocacoc/\u1ed4 c\u1eafm \u0111i\u1ec7n Allocacoc",
+    "id": 916
+  },
+  "10-N001": {
+    "code": "10-N001",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Office equipment/Thi\u1ebft B\u1ecb V\u0103n Ph\u00f2ng",
+    "id": 1438
+  },
+  "10-N001-04": {
+    "code": "10-N001-04",
+    "level": 2,
+    "parent_id": 1438,
+    "name": "Business Network hard drive/\u1ed4 C\u1ee9ng M\u1ea1ng doanh nghi\u1ec7p",
+    "id": 1442
+  },
+  "02-N001-02-03": {
+    "code": "02-N001-02-03",
+    "level": 2,
+    "parent_id": 161,
+    "name": "PC AIO Lenovo/M\u00e1y B\u00e0n AIO Lenovo",
+    "id": 164
+  },
+  "03-N001-11": {
+    "code": "03-N001-11",
+    "level": 2,
+    "parent_id": 306,
+    "name": "Monitor BenQ/M\u00e0n h\u00ecnh BenQ",
+    "id": 317
+  },
+  "03-N003-04": {
+    "code": "03-N003-04",
+    "level": 2,
+    "parent_id": 343,
+    "name": "Keyboard & Mouse Sumtax",
+    "id": 347
+  },
+  "01-N001-12": {
+    "code": "01-N001-12",
+    "level": 2,
+    "parent_id": 1,
+    "name": "Laptop Avita",
+    "id": 73
+  },
+  "01-N001-12-02": {
+    "code": "01-N001-12-02",
+    "level": 3,
+    "parent_id": 73,
+    "name": "Laptop Avita Win",
+    "id": 77
+  },
+  "01-N001-12-02-01": {
+    "code": "01-N001-12-02-01",
+    "level": 4,
+    "parent_id": 77,
+    "name": "Laptop Avita Win 1.1",
+    "id": 78
+  },
+  "02-N009-06": {
+    "code": "02-N009-06",
+    "level": 2,
+    "parent_id": 276,
+    "name": "Case Thermaltake/Th\u00f9ng M\u00e1y Thermaltake",
+    "id": 282
+  },
+  "08-N001-01-08": {
+    "code": "08-N001-01-08",
+    "level": 3,
+    "parent_id": 991,
+    "name": "TV Asanzo/Tivi Asanzo",
+    "id": 999
+  },
+  "06-N007": {
+    "code": "06-N007",
+    "level": 1,
+    "parent_id": 0,
+    "name": "HD player/\u0110\u1ea7u ph\u00e1t HD",
+    "id": 907
+  },
+  "09-N003": {
+    "code": "09-N003",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Lighting appliance/Thi\u1ebft b\u1ecb \u00e1nh s\u00e1ng",
+    "id": 1036
+  },
+  "09-N002": {
+    "code": "09-N002",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Home appliance/Thi\u1ebft b\u1ecb gia d\u1ee5ng",
+    "id": 1035
+  },
+  "03-N004-25": {
+    "code": "03-N004-25",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse Motospeed/Chu\u1ed9t Motospeed",
+    "id": 375
+  },
+  "03-N005-28": {
+    "code": "03-N005-28",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Motospeed/Tai nghe Motospeed",
+    "id": 410
+  },
+  "05-N003-10": {
+    "code": "05-N003-10",
+    "level": 2,
+    "parent_id": 736,
+    "name": "Touch pen/B\u00fat C\u1ea3m \u1ee9ng",
+    "id": 804
+  },
+  "04-N005-01-99": {
+    "code": "04-N005-01-99",
+    "level": 3,
+    "parent_id": 496,
+    "name": "Other Projector/M\u00e1y Chi\u1ebfu Kh\u00e1c",
+    "id": 501
+  },
+  "06-N008-01": {
+    "code": "06-N008-01",
+    "level": 2,
+    "parent_id": 908,
+    "name": "Microphone iCore",
+    "id": 909
+  },
+  "05-N003-04-08": {
+    "code": "05-N003-04-08",
+    "level": 3,
+    "parent_id": 773,
+    "name": "Phone Cable Xiaomi/Cable \u0111i\u1ec7n tho\u1ea1i Xiaomi",
+    "id": 781
+  },
+  "06-N010-04": {
+    "code": "06-N010-04",
+    "level": 2,
+    "parent_id": 915,
+    "name": "Socket Xiaomi/\u1ed4 c\u1eafm \u0111i\u1ec7n Xiaomi",
+    "id": 919
+  },
+  "08-N002-03-05": {
+    "code": "08-N002-03-05",
+    "level": 3,
+    "parent_id": 1022,
+    "name": "Fridge Samsung/T\u1ee7 L\u1ea1nh Samsung",
+    "id": 1027
+  },
+  "08-N003-16-03": {
+    "code": "08-N003-16-03",
+    "level": 3,
+    "parent_id": 1411,
+    "name": "Vacuum cleaner Panasonic/M\u00e1y H\u00fat B\u1ee5i Panasonic",
+    "id": 1415
+  },
+  "06-N011-09": {
+    "code": "06-N011-09",
+    "level": 2,
+    "parent_id": 921,
+    "name": "Gamepad Razer/Tay c\u1ea7m Game Razer",
+    "id": 930
+  },
+  "01-N002-08-01-06": {
+    "code": "01-N002-08-01-06",
+    "level": 4,
+    "parent_id": 102,
+    "name": "Sleeve Tomtoc/T\u00fai Ch\u1ed1ng S\u1ed1c Tomtoc",
+    "id": 108
+  },
+  "06-N012": {
+    "code": "06-N012",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Game player/M\u00e1y ch\u01a1i game",
+    "id": 936
+  },
+  "06-N012-01": {
+    "code": "06-N012-01",
+    "level": 2,
+    "parent_id": 936,
+    "name": "Game player Sony/M\u00e1y Ch\u01a1i Game Sony",
+    "id": 937
+  },
+  "02-N009-12": {
+    "code": "02-N009-12",
+    "level": 2,
+    "parent_id": 276,
+    "name": "Case Jetek/Th\u00f9ng M\u00e1y Jetek",
+    "id": 1108
+  },
+  "06-N013-07": {
+    "code": "06-N013-07",
+    "level": 2,
+    "parent_id": 938,
+    "name": "Hub Ugreen",
+    "id": 945
+  },
+  "04-N007-03": {
+    "code": "04-N007-03",
+    "level": 2,
+    "parent_id": 507,
+    "name": "Printer Barcode/M\u00e1y in m\u00e3 v\u1ea1ch",
+    "id": 539
+  },
+  "02-N010-13": {
+    "code": "02-N010-13",
+    "level": 2,
+    "parent_id": 288,
+    "name": "Power Aerocool/Ngu\u1ed3n Aerocool",
+    "id": 1566
+  },
+  "02-N009-15": {
+    "code": "02-N009-15",
+    "level": 2,
+    "parent_id": 276,
+    "name": "Case Asus/Th\u00f9ng M\u00e1y Asus",
+    "id": 1121
+  },
+  "05-N003-02-14": {
+    "code": "05-N003-02-14",
+    "level": 3,
+    "parent_id": 747,
+    "name": "Power Bank Energizer/Pin S\u1ea1c D\u1ef1 Ph\u00f2ng Energizer",
+    "id": 761
+  },
+  "05-N003-04-09": {
+    "code": "05-N003-04-09",
+    "level": 3,
+    "parent_id": 773,
+    "name": "Phone Cable Energizer/Cable \u0110i\u1ec7n Tho\u1ea1i Energizer",
+    "id": 782
+  },
+  "05-N003-03-08": {
+    "code": "05-N003-03-08",
+    "level": 3,
+    "parent_id": 763,
+    "name": "Charger Energizer/S\u1ea1c \u0110i\u1ec7n Tho\u1ea1i Energizer",
+    "id": 771
+  },
+  "06-N013-10": {
+    "code": "06-N013-10",
+    "level": 2,
+    "parent_id": 938,
+    "name": "Hub Energizer",
+    "id": 948
+  },
+  "06-N008-02": {
+    "code": "06-N008-02",
+    "level": 2,
+    "parent_id": 908,
+    "name": "Microphone Krom",
+    "id": 910
+  },
+  "04-N003-02": {
+    "code": "04-N003-02",
+    "level": 2,
+    "parent_id": 480,
+    "name": "Ram Server",
+    "id": 482
+  },
+  "06-N011-13": {
+    "code": "06-N011-13",
+    "level": 2,
+    "parent_id": 921,
+    "name": "Gamepad MSI/Tay c\u1ea7m Game MSI",
+    "id": 934
+  },
+  "03-N005-33": {
+    "code": "03-N005-33",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Sades/Tai Nghe Sades",
+    "id": 415
+  },
+  "09-N001": {
+    "code": "09-N001",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Sercurity appliance/Thi\u1ebft b\u1ecb an ninh",
+    "id": 1034
+  },
+  "08-N002-01": {
+    "code": "08-N002-01",
+    "level": 2,
+    "parent_id": 1499,
+    "name": "AirCon/M\u00e1y L\u1ea1nh",
+    "id": 1002
+  },
+  "08-N002-01-01": {
+    "code": "08-N002-01-01",
+    "level": 3,
+    "parent_id": 1002,
+    "name": "AirCon Panasonic/M\u00e1y L\u1ea1nh Panasonic",
+    "id": 1003
+  },
+  "08-N002-01-02": {
+    "code": "08-N002-01-02",
+    "level": 3,
+    "parent_id": 1002,
+    "name": "AirCon Daikin/M\u00e1y L\u1ea1nh Daikin",
+    "id": 1004
+  },
+  "08-N002-01-03": {
+    "code": "08-N002-01-03",
+    "level": 3,
+    "parent_id": 1002,
+    "name": "AirCon Toshiba/M\u00e1y L\u1ea1nh Toshiba",
+    "id": 1005
+  },
+  "08-N002-01-04": {
+    "code": "08-N002-01-04",
+    "level": 3,
+    "parent_id": 1002,
+    "name": "AirCon LG/M\u00e1y L\u1ea1nh LG",
+    "id": 1006
+  },
+  "08-N002-01-05": {
+    "code": "08-N002-01-05",
+    "level": 3,
+    "parent_id": 1002,
+    "name": "AirCon Mitsubishi Electric/M\u00e1y L\u1ea1nh Mitsubishi Electric",
+    "id": 1007
+  },
+  "08-N002-01-08": {
+    "code": "08-N002-01-08",
+    "level": 3,
+    "parent_id": 1002,
+    "name": "AirCon Casper/M\u00e1y L\u1ea1nh Casper",
+    "id": 1010
+  },
+  "08-N002-01-07": {
+    "code": "08-N002-01-07",
+    "level": 3,
+    "parent_id": 1002,
+    "name": "AirCon Midea/M\u00e1y L\u1ea1nh Midea",
+    "id": 1009
+  },
+  "08-N002-01-09": {
+    "code": "08-N002-01-09",
+    "level": 3,
+    "parent_id": 1002,
+    "name": "AirCon Gree/M\u00e1y L\u1ea1nh Gree",
+    "id": 1011
+  },
+  "08-N002-01-11": {
+    "code": "08-N002-01-11",
+    "level": 3,
+    "parent_id": 1002,
+    "name": "AirCon Beko/M\u00e1y L\u1ea1nh Beko",
+    "id": 1013
+  },
+  "08-N002-01-12": {
+    "code": "08-N002-01-12",
+    "level": 3,
+    "parent_id": 1002,
+    "name": "AirCon Aqua/M\u00e1y L\u1ea1nh Aqua",
+    "id": 1014
+  },
+  "08-N001-01-09": {
+    "code": "08-N001-01-09",
+    "level": 3,
+    "parent_id": 991,
+    "name": "TV Akino/Tivi Akino",
+    "id": 1000
+  },
+  "08-N002-01-06": {
+    "code": "08-N002-01-06",
+    "level": 3,
+    "parent_id": 1002,
+    "name": "AirCon Mitsubishi Heavy/M\u00e1y L\u1ea1nh Mitsubishi Heavy",
+    "id": 1008
+  },
+  "08-N002-01-10": {
+    "code": "08-N002-01-10",
+    "level": 3,
+    "parent_id": 1002,
+    "name": "AirCon Nagakawa/M\u00e1y L\u1ea1nh Nagakawa",
+    "id": 1012
+  },
+  "02-N001-12": {
+    "code": "02-N001-12",
+    "level": 2,
+    "parent_id": 152,
+    "name": "PC Gigabyte/M\u00e1y B\u1ed9 Gigabyte",
+    "id": 186
+  },
+  "04-N013-08": {
+    "code": "04-N013-08",
+    "level": 2,
+    "parent_id": 576,
+    "name": "Telephone Grandstream/\u0110i\u1ec7n Tho\u1ea1i B\u00e0n Grandstream",
+    "id": 584
+  },
+  "06-N001-02-12": {
+    "code": "06-N001-02-12",
+    "level": 3,
+    "parent_id": 838,
+    "name": "Bluetooth Speaker JBL/Loa Bluetooth JBL",
+    "id": 850
+  },
+  "06-N001-12": {
+    "code": "06-N001-12",
+    "level": 2,
+    "parent_id": 836,
+    "name": "Speaker Soundbar Harman/Kardon/Loa Soundbar Harman/Kardon",
+    "id": 865
+  },
+  "03-N005-35": {
+    "code": "03-N005-35",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone JBL/Tai Nghe JBL",
+    "id": 417
+  },
+  "05-N003-01-06": {
+    "code": "05-N003-01-06",
+    "level": 3,
+    "parent_id": 737,
+    "name": "Bluetooth Headphone JBL/Tai Nghe Bluetooth JBL",
+    "id": 743
+  },
+  "08-N003-07": {
+    "code": "08-N003-07",
+    "level": 2,
+    "parent_id": 1500,
+    "name": "Rice Cookers/N\u1ed3i C\u01a1m \u0110i\u1ec7n",
+    "id": 1508
+  },
+  "03-N004-29": {
+    "code": "03-N004-29",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse Krom/Chu\u1ed9t Krom",
+    "id": 379
+  },
+  "03-N002-20": {
+    "code": "03-N002-20",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Keyboard Krom/B\u00e0n Ph\u00edm Krom",
+    "id": 340
+  },
+  "08-N002-01-14": {
+    "code": "08-N002-01-14",
+    "level": 3,
+    "parent_id": 1002,
+    "name": "AirCon Sharp/M\u00e1y L\u1ea1nh Sharp",
+    "id": 1016
+  },
+  "08-N002-01-15": {
+    "code": "08-N002-01-15",
+    "level": 3,
+    "parent_id": 1002,
+    "name": "AirCon Electrolux/M\u00e1y L\u1ea1nh Electrolux",
+    "id": 1017
+  },
+  "08-N002-01-16": {
+    "code": "08-N002-01-16",
+    "level": 3,
+    "parent_id": 1002,
+    "name": "AirCon Hitachi/M\u00e1y L\u1ea1nh Hitachi",
+    "id": 1018
+  },
+  "06-N003-09": {
+    "code": "06-N003-09",
+    "level": 2,
+    "parent_id": 883,
+    "name": "Memory card Toshiba",
+    "id": 892
+  },
+  "05-N003-01-07": {
+    "code": "05-N003-01-07",
+    "level": 3,
+    "parent_id": 737,
+    "name": "Bluetooth Headphone AKG/Tai Nghe Bluetooth AKG",
+    "id": 744
+  },
+  "06-N001-13": {
+    "code": "06-N001-13",
+    "level": 2,
+    "parent_id": 836,
+    "name": "Speaker Sony/Loa Sony",
+    "id": 866
+  },
+  "06-N001-08": {
+    "code": "06-N001-08",
+    "level": 2,
+    "parent_id": 836,
+    "name": "Speaker JBL/Loa JBL",
+    "id": 861
+  },
+  "06-N001-14": {
+    "code": "06-N001-14",
+    "level": 2,
+    "parent_id": 836,
+    "name": "Speaker Soundbar Sony/Loa Soundbar Sony",
+    "id": 867
+  },
+  "08-N002-01-17": {
+    "code": "08-N002-01-17",
+    "level": 3,
+    "parent_id": 1002,
+    "name": "AirCon Reetech/M\u00e1y L\u1ea1nh Reetech",
+    "id": 1019
+  },
+  "05-N003-01-08": {
+    "code": "05-N003-01-08",
+    "level": 3,
+    "parent_id": 737,
+    "name": "Bluetooth Headphone Sony/Tai Nghe Bluetooth Sony",
+    "id": 745
+  },
+  "06-N013-11": {
+    "code": "06-N013-11",
+    "level": 2,
+    "parent_id": 938,
+    "name": "Hub KingMaster",
+    "id": 949
+  },
+  "06-N013-09": {
+    "code": "06-N013-09",
+    "level": 2,
+    "parent_id": 938,
+    "name": "Hub SSK",
+    "id": 947
+  },
+  "04-N004-07": {
+    "code": "04-N004-07",
+    "level": 2,
+    "parent_id": 486,
+    "name": "UPS APC/B\u1ed9 L\u01b0u \u0110i\u1ec7n APC",
+    "id": 493
+  },
+  "06-N001-02-13": {
+    "code": "06-N001-02-13",
+    "level": 3,
+    "parent_id": 838,
+    "name": "Bluetooth Speaker Harman/Kardon/Loa Bluetooth Harman/Kardon",
+    "id": 851
+  },
+  "06-N001-15": {
+    "code": "06-N001-15",
+    "level": 2,
+    "parent_id": 836,
+    "name": "Speaker Harman/Kardon/Loa Harman/Kardon",
+    "id": 868
+  },
+  "03-N002-21": {
+    "code": "03-N002-21",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Keyboard HyperX/B\u00e0n Ph\u00edm HyperX",
+    "id": 341
+  },
+  "03-N003-05": {
+    "code": "03-N003-05",
+    "level": 2,
+    "parent_id": 343,
+    "name": "Keyboard & Mouse Newmen",
+    "id": 348
+  },
+  "03-N005-34": {
+    "code": "03-N005-34",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Zidli/Tai Nghe Zidli",
+    "id": 416
+  },
+  "08-N002-03-02": {
+    "code": "08-N002-03-02",
+    "level": 3,
+    "parent_id": 1022,
+    "name": "Fridge LG/T\u1ee7 L\u1ea1nh LG",
+    "id": 1024
+  },
+  "08-N002-01-18": {
+    "code": "08-N002-01-18",
+    "level": 3,
+    "parent_id": 1002,
+    "name": "AirCon Sumikura/M\u00e1y L\u1ea1nh Sumikura",
+    "id": 1020
+  },
+  "08-N002-01-19": {
+    "code": "08-N002-01-19",
+    "level": 3,
+    "parent_id": 1002,
+    "name": "AirCon Funiki/M\u00e1y L\u1ea1nh Funiki",
+    "id": 1021
+  },
+  "03-N002-18": {
+    "code": "03-N002-18",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Keyboard Newmen/B\u00e0n Ph\u00edm Newmen",
+    "id": 338
+  },
+  "06-N001-02-14": {
+    "code": "06-N001-02-14",
+    "level": 3,
+    "parent_id": 838,
+    "name": "Bluetooth Speaker Ultimate Ears/Loa Bluetooth Ultimate Ears",
+    "id": 852
+  },
+  "02-N003-01-03": {
+    "code": "02-N003-01-03",
+    "level": 3,
+    "parent_id": 201,
+    "name": "CPU AMD Gen 3/CPU AMD th\u1ebf h\u1ec7 3",
+    "id": 204
+  },
+  "05-N004-03-01": {
+    "code": "05-N004-03-01",
+    "level": 3,
+    "parent_id": 817,
+    "name": "Digital Camera/M\u00e1y \u1ea3nh KTS",
+    "id": 818
+  },
+  "05-N004-03-01-02": {
+    "code": "05-N004-03-01-02",
+    "level": 4,
+    "parent_id": 818,
+    "name": "Digital Camera Canon/M\u00e1y \u1ea3nh KTS Canon",
+    "id": 820
+  },
+  "04-N020-98": {
+    "code": "04-N020-98",
+    "level": 2,
+    "parent_id": 607,
+    "name": "Cash register accessories/Ph\u1ee5 Ki\u1ec7n M\u00e1y T\u00ednh Ti\u1ec1n Si\u00eau Th\u1ecb",
+    "id": 609
+  },
+  "03-N002-17": {
+    "code": "03-N002-17",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Keyboard Fuhlen/B\u00e0n Ph\u00edm Fuhlen",
+    "id": 337
+  },
+  "02-N009-14": {
+    "code": "02-N009-14",
+    "level": 2,
+    "parent_id": 276,
+    "name": "Case MSI/Th\u00f9ng M\u00e1y MSI",
+    "id": 1120
+  },
+  "02-N001-02-05": {
+    "code": "02-N001-02-05",
+    "level": 2,
+    "parent_id": 161,
+    "name": "PC AIO Acer/M\u00e1y B\u00e0n AIO Acer",
+    "id": 166
+  },
+  "08-N002-03-01": {
+    "code": "08-N002-03-01",
+    "level": 3,
+    "parent_id": 1022,
+    "name": "Fridge AQUA/T\u1ee7 L\u1ea1nh AQUA",
+    "id": 1023
+  },
+  "08-N002-03-03": {
+    "code": "08-N002-03-03",
+    "level": 3,
+    "parent_id": 1022,
+    "name": "Fridge Panasonic/T\u1ee7 L\u1ea1nh Panasonic",
+    "id": 1025
+  },
+  "08-N002-03-04": {
+    "code": "08-N002-03-04",
+    "level": 3,
+    "parent_id": 1022,
+    "name": "Fridge Toshiba/T\u1ee7 L\u1ea1nh Toshiba",
+    "id": 1026
+  },
+  "08-N002-03-06": {
+    "code": "08-N002-03-06",
+    "level": 3,
+    "parent_id": 1022,
+    "name": "Fridge Sharp/T\u1ee7 L\u1ea1nh Sharp",
+    "id": 1028
+  },
+  "08-N002-03-07": {
+    "code": "08-N002-03-07",
+    "level": 3,
+    "parent_id": 1022,
+    "name": "Fridge Hitachi/T\u1ee7 L\u1ea1nh Hitachi",
+    "id": 1029
+  },
+  "08-N002-03-08": {
+    "code": "08-N002-03-08",
+    "level": 3,
+    "parent_id": 1022,
+    "name": "Fridge Mitsubishi/T\u1ee7 L\u1ea1nh Mitsubishi",
+    "id": 1030
+  },
+  "06-N015-08": {
+    "code": "06-N015-08",
+    "level": 2,
+    "parent_id": 955,
+    "name": "Reader Kingston",
+    "id": 1097
+  },
+  "02-N005-01-14": {
+    "code": "02-N005-01-14",
+    "level": 3,
+    "parent_id": 229,
+    "name": "SSD Seagate",
+    "id": 1098
+  },
+  "02-N008-08": {
+    "code": "02-N008-08",
+    "level": 2,
+    "parent_id": 267,
+    "name": "VGA PowerColor/Card M\u00e0n H\u00ecnh PowerColor",
+    "id": 1100
+  },
+  "08-N002-01-13": {
+    "code": "08-N002-01-13",
+    "level": 3,
+    "parent_id": 1002,
+    "name": "AirCon Samsung/M\u00e1y L\u1ea1nh Samsung",
+    "id": 1015
+  },
+  "02-N001-13": {
+    "code": "02-N001-13",
+    "level": 2,
+    "parent_id": 152,
+    "name": "PC MSI/M\u00e1y B\u1ed9 MSI",
+    "id": 1099
+  },
+  "06-N011-14": {
+    "code": "06-N011-14",
+    "level": 2,
+    "parent_id": 921,
+    "name": "Gamepad Rapoo/Tay c\u1ea7m Game Rapoo",
+    "id": 1494
+  },
+  "05-N001-19": {
+    "code": "05-N001-19",
+    "level": 2,
+    "parent_id": 671,
+    "name": "Phone Realme/\u0110i\u1ec7n Tho\u1ea1i Realme",
+    "id": 1105
+  },
+  "05-N001-20": {
+    "code": "05-N001-20",
+    "level": 2,
+    "parent_id": 671,
+    "name": "Phone Huawei/\u0110i\u1ec7n Tho\u1ea1i Huawei",
+    "id": 1106
+  },
+  "05-N004-03-02": {
+    "code": "05-N004-03-02",
+    "level": 3,
+    "parent_id": 817,
+    "name": "Cinecamera/M\u00e1y Quay Phim",
+    "id": 822
+  },
+  "05-N004-03-01-01": {
+    "code": "05-N004-03-01-01",
+    "level": 4,
+    "parent_id": 818,
+    "name": "Digital Camera Sony/M\u00e1y \u1ea3nh KTS Sony",
+    "id": 819
+  },
+  "02-N012-02": {
+    "code": "02-N012-02",
+    "level": 2,
+    "parent_id": 302,
+    "name": "Sound card Asus/Card \u00c2m Thanh Asus",
+    "id": 304
+  },
+  "01-N001-99": {
+    "code": "01-N001-99",
+    "level": 2,
+    "parent_id": 1,
+    "name": "Other laptop/Laptop Kh\u00e1c",
+    "id": 80
+  },
+  "01-N001-99-02": {
+    "code": "01-N001-99-02",
+    "level": 3,
+    "parent_id": 80,
+    "name": "Other laptop 2.1/Laptop Kh\u00e1c 2.1",
+    "id": 82
+  },
+  "04-N005-01-05": {
+    "code": "04-N005-01-05",
+    "level": 3,
+    "parent_id": 496,
+    "name": "Projector Canon/M\u00e1y Chi\u1ebfu Canon",
+    "id": 1117
+  },
+  "04-N001-98-02": {
+    "code": "04-N001-98-02",
+    "level": 3,
+    "parent_id": 1122,
+    "name": "Software Unifiled Communication/Ph\u1ea7n M\u1ec1m T\u1ed5ng \u0110\u00e0i",
+    "id": 1124
+  },
+  "08-N001-01-11": {
+    "code": "08-N001-01-11",
+    "level": 3,
+    "parent_id": 991,
+    "name": "TV Sanco/Tivi Sanco",
+    "id": 1118
+  },
+  "04-N013-99": {
+    "code": "04-N013-99",
+    "level": 2,
+    "parent_id": 576,
+    "name": "Other Telephone/\u0110i\u1ec7n Tho\u1ea1i B\u00e0n Kh\u00e1c",
+    "id": 585
+  },
+  "04-N026": {
+    "code": "04-N026",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Video Conference/Thi\u1ebft B\u1ecb H\u1ed9i Ngh\u1ecb Truy\u1ec1n H\u00ecnh",
+    "id": 1125
+  },
+  "04-N026-04": {
+    "code": "04-N026-04",
+    "level": 2,
+    "parent_id": 1125,
+    "name": "Video Conference Panasonic/Thi\u1ebft B\u1ecb HNTH Panasonic",
+    "id": 1129
+  },
+  "04-N026-99": {
+    "code": "04-N026-99",
+    "level": 2,
+    "parent_id": 1125,
+    "name": "Video Conference Accessories/Ph\u1ee5 Ki\u1ec7n H\u1ed9i Ngh\u1ecb Truy\u1ec1n H\u00ecnh",
+    "id": 1131
+  },
+  "03-N099": {
+    "code": "03-N099",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Accessories/Ph\u1ee5 Ki\u1ec7n",
+    "id": 1114
+  },
+  "03-N099-04": {
+    "code": "03-N099-04",
+    "level": 2,
+    "parent_id": 1114,
+    "name": "Accessories Mouse/Ph\u1ee5 Ki\u1ec7n Chu\u1ed9t",
+    "id": 1115
+  },
+  "03-N099-05": {
+    "code": "03-N099-05",
+    "level": 2,
+    "parent_id": 1114,
+    "name": "Accessories Headphone/Ph\u1ee5 Ki\u1ec7n Tai Nghe",
+    "id": 1116
+  },
+  "V001-002": {
+    "code": "V001-002",
+    "level": 1,
+    "parent_id": 0,
+    "name": "S\u1eefa - Th\u1ef1c ph\u1ea9m \u0103n d\u1eb7m",
+    "id": 1153
+  },
+  "V001-002-007": {
+    "code": "V001-002-007",
+    "level": 2,
+    "parent_id": 1153,
+    "name": "S\u1eefa cho m\u1eb9",
+    "id": 1155
+  },
+  "V001-002-004": {
+    "code": "V001-002-004",
+    "level": 2,
+    "parent_id": 1153,
+    "name": "S\u1eefa cho b\u00e9",
+    "id": 1158
+  },
+  "V002-010": {
+    "code": "V002-010",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Trang \u0111i\u1ec3m",
+    "id": 1192
+  },
+  "V002-010-043": {
+    "code": "V002-010-043",
+    "level": 2,
+    "parent_id": 1192,
+    "name": "Trang \u0111i\u1ec3m m\u00f4i",
+    "id": 1195
+  },
+  "V002-011": {
+    "code": "V002-011",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Ch\u0103m s\u00f3c da",
+    "id": 1197
+  },
+  "V002-011-045": {
+    "code": "V002-011-045",
+    "level": 2,
+    "parent_id": 1197,
+    "name": "S\u1eeda r\u1eefa m\u1eb7t",
+    "id": 1201
+  },
+  "V002-011-047": {
+    "code": "V002-011-047",
+    "level": 2,
+    "parent_id": 1197,
+    "name": "M\u1eb7t n\u1ea1",
+    "id": 1199
+  },
+  "V002-011-048": {
+    "code": "V002-011-048",
+    "level": 2,
+    "parent_id": 1197,
+    "name": "Kem d\u01b0\u1ee1ng da",
+    "id": 1198
+  },
+  "V002-012": {
+    "code": "V002-012",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Ch\u0103m s\u00f3c t\u00f3c & c\u01a1 th\u1ec3",
+    "id": 1202
+  },
+  "V002-012-051": {
+    "code": "V002-012-051",
+    "level": 2,
+    "parent_id": 1202,
+    "name": "S\u1eefa t\u1eafm, S\u1eefa d\u01b0\u1ee1ng th\u1ec3",
+    "id": 1204
+  },
+  "V002-010-041": {
+    "code": "V002-010-041",
+    "level": 2,
+    "parent_id": 1192,
+    "name": "Trang \u0111i\u1ec3m m\u1eb7t",
+    "id": 1196
+  },
+  "V002-011-046": {
+    "code": "V002-011-046",
+    "level": 2,
+    "parent_id": 1197,
+    "name": "N\u01b0\u1edbc hoa h\u1ed3ng & X\u1ecbt kho\u00e1ng",
+    "id": 1200
+  },
+  "V002-013": {
+    "code": "V002-013",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Thi\u1ebft b\u1ecb l\u00e0m \u0111\u1eb9p & Ch\u0103m s\u00f3c s\u1ee9c kh\u1ecfe",
+    "id": 1207
+  },
+  "V002-013-053": {
+    "code": "V002-013-053",
+    "level": 2,
+    "parent_id": 1207,
+    "name": "Thi\u1ebft b\u1ecb l\u00e0m \u0111\u1eb9p",
+    "id": 1209
+  },
+  "V001-009": {
+    "code": "V001-009",
+    "level": 1,
+    "parent_id": 0,
+    "name": "\u0110\u1ed3 d\u00f9ng cho m\u1eb9",
+    "id": 1187
+  },
+  "V001-009-038": {
+    "code": "V001-009-038",
+    "level": 2,
+    "parent_id": 1187,
+    "name": "Ph\u1ee5 ki\u1ec7n cho m\u1eb9",
+    "id": 1190
+  },
+  "V003-017": {
+    "code": "V003-017",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Thi\u1ebft b\u1ecb gia \u0111\u00ecnh",
+    "id": 1220
+  },
+  "V003-017-067": {
+    "code": "V003-017-067",
+    "level": 2,
+    "parent_id": 1220,
+    "name": "Ph\u1ee5 ki\u1ec7n gia \u0111\u00ecnh",
+    "id": 1221
+  },
+  "V001-009-039": {
+    "code": "V001-009-039",
+    "level": 2,
+    "parent_id": 1187,
+    "name": "Th\u1eddi trang b\u1ea7u",
+    "id": 1189
+  },
+  "V001-008": {
+    "code": "V001-008",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Th\u1eddi trang cho b\u00e9",
+    "id": 1182
+  },
+  "V001-008-036": {
+    "code": "V001-008-036",
+    "level": 2,
+    "parent_id": 1182,
+    "name": "Ph\u1ee5 ki\u1ec7n th\u1eddi trang",
+    "id": 1183
+  },
+  "V001-008-033": {
+    "code": "V001-008-033",
+    "level": 2,
+    "parent_id": 1182,
+    "name": "Qu\u1ea7n \u00e1o s\u01a1 sinh",
+    "id": 1186
+  },
+  "V006-023": {
+    "code": "V006-023",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Vali, Balo, T\u00fai x\u00e1ch",
+    "id": 1249
+  },
+  "V006-023-090": {
+    "code": "V006-023-090",
+    "level": 2,
+    "parent_id": 1249,
+    "name": "Balo",
+    "id": 1251
+  },
+  "V006-023-091": {
+    "code": "V006-023-091",
+    "level": 2,
+    "parent_id": 1249,
+    "name": "T\u00fai x\u00e1ch",
+    "id": 1250
+  },
+  "V007-029": {
+    "code": "V007-029",
+    "level": 1,
+    "parent_id": 0,
+    "name": "V\u0103n ph\u00f2ng ph\u1ea9m",
+    "id": 1263
+  },
+  "V007-029-099": {
+    "code": "V007-029-099",
+    "level": 2,
+    "parent_id": 1263,
+    "name": "Balo h\u1ecdc sinh - C\u1eb7p h\u1ecdc sinh",
+    "id": 1264
+  },
+  "V003-016": {
+    "code": "V003-016",
+    "level": 1,
+    "parent_id": 0,
+    "name": "B\u1ebfp & Ph\u00f2ng \u0103n",
+    "id": 1214
+  },
+  "V003-016-063": {
+    "code": "V003-016-063",
+    "level": 2,
+    "parent_id": 1214,
+    "name": "\u0110\u1ed3 d\u00f9ng \u0103n u\u1ed1ng",
+    "id": 1217
+  },
+  "V006-023-089": {
+    "code": "V006-023-089",
+    "level": 2,
+    "parent_id": 1249,
+    "name": "Vali",
+    "id": 1252
+  },
+  "V001-001": {
+    "code": "V001-001",
+    "level": 1,
+    "parent_id": 0,
+    "name": "T\u00e3 - B\u1ec9m",
+    "id": 1159
+  },
+  "V001-001-001": {
+    "code": "V001-001-001",
+    "level": 2,
+    "parent_id": 1159,
+    "name": "T\u00e3 d\u00e1n",
+    "id": 1160
+  },
+  "V001-001-002": {
+    "code": "V001-001-002",
+    "level": 2,
+    "parent_id": 1159,
+    "name": "T\u00e3 qu\u1ea7n",
+    "id": 1162
+  },
+  "V004-019": {
+    "code": "V004-019",
+    "level": 1,
+    "parent_id": 0,
+    "name": "\u0110\u1ed3 d\u00f9ng nh\u00e0 b\u1ebfp",
+    "id": 1227
+  },
+  "V004-019-077": {
+    "code": "V004-019-077",
+    "level": 2,
+    "parent_id": 1227,
+    "name": "C\u00e1c lo\u1ea1i m\u00e1y kh\u00e1c",
+    "id": 1234
+  },
+  "V003-017-066": {
+    "code": "V003-017-066",
+    "level": 2,
+    "parent_id": 1220,
+    "name": "Thi\u1ebft b\u1ecb \u0111i\u1ec7n",
+    "id": 1222
+  },
+  "V004-019-074": {
+    "code": "V004-019-074",
+    "level": 2,
+    "parent_id": 1227,
+    "name": "M\u00e1y xay, m\u00e1y \u00e9p",
+    "id": 1231
+  },
+  "V004-019-076": {
+    "code": "V004-019-076",
+    "level": 2,
+    "parent_id": 1227,
+    "name": "B\u00ecnh \u0111un si\u00eau t\u1ed1c",
+    "id": 1233
+  },
+  "V004-020": {
+    "code": "V004-020",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Thi\u1ebft b\u1ecb \u0111i\u1ec7n gia \u0111\u00ecnh",
+    "id": 1235
+  },
+  "V004-020-080": {
+    "code": "V004-020-080",
+    "level": 2,
+    "parent_id": 1235,
+    "name": "M\u00e1y l\u1ecdc kh\u00f4ng kh\u00ed, m\u00e1y t\u1ea1o \u1ea9m, m\u00e1y h\u00fat \u1ea9m",
+    "id": 1239
+  },
+  "V004-019-072": {
+    "code": "V004-019-072",
+    "level": 2,
+    "parent_id": 1227,
+    "name": "B\u1ebfp c\u00e1c lo\u1ea1i",
+    "id": 1229
+  },
+  "V004-019-073": {
+    "code": "V004-019-073",
+    "level": 2,
+    "parent_id": 1227,
+    "name": "L\u00f2, v\u1ec9 n\u01b0\u1edbng, l\u00f2 vi s\u00f3ng",
+    "id": 1230
+  },
+  "V004-019-071": {
+    "code": "V004-019-071",
+    "level": 2,
+    "parent_id": 1227,
+    "name": "N\u1ed3i \u0111i\u1ec7n c\u00e1c lo\u1ea1i",
+    "id": 1228
+  },
+  "V004-020-083": {
+    "code": "V004-020-083",
+    "level": 2,
+    "parent_id": 1235,
+    "name": "M\u00e1y s\u1ea5y",
+    "id": 1236
+  },
+  "V002-013-054": {
+    "code": "V002-013-054",
+    "level": 2,
+    "parent_id": 1207,
+    "name": "Thi\u1ebft b\u1ecb ch\u0103m s\u00f3c s\u1ee9c kh\u1ecfe",
+    "id": 1208
+  },
+  "V003-016-064": {
+    "code": "V003-016-064",
+    "level": 2,
+    "parent_id": 1214,
+    "name": "D\u1ee5ng c\u1ee5 nh\u00e0 b\u1ebfp",
+    "id": 1216
+  },
+  "V003-016-061": {
+    "code": "V003-016-061",
+    "level": 2,
+    "parent_id": 1214,
+    "name": "N\u1ed3i, ch\u1ea3o, \u1ea5m",
+    "id": 1219
+  },
+  "V004-020-078": {
+    "code": "V004-020-078",
+    "level": 2,
+    "parent_id": 1235,
+    "name": "Qu\u1ea1t",
+    "id": 1241
+  },
+  "V003-016-062": {
+    "code": "V003-016-062",
+    "level": 2,
+    "parent_id": 1214,
+    "name": "H\u1ed9p \u0111\u1ef1ng th\u1ef1c ph\u1ea9m",
+    "id": 1218
+  },
+  "V004-020-082": {
+    "code": "V004-020-082",
+    "level": 2,
+    "parent_id": 1235,
+    "name": "M\u00e1y l\u1ecdc n\u01b0\u1edbc",
+    "id": 1237
+  },
+  "V004-019-075": {
+    "code": "V004-019-075",
+    "level": 2,
+    "parent_id": 1227,
+    "name": "M\u00e1y h\u00fat kh\u00f3i, kh\u1eed m\u00f9i",
+    "id": 1232
+  },
+  "V004-020-079": {
+    "code": "V004-020-079",
+    "level": 2,
+    "parent_id": 1235,
+    "name": "M\u00e1y h\u00fat b\u1ee5i",
+    "id": 1240
+  },
+  "V002-012-052": {
+    "code": "V002-012-052",
+    "level": 2,
+    "parent_id": 1202,
+    "name": "Ch\u0103m s\u00f3c c\u00e1 nh\u00e2n",
+    "id": 1203
+  },
+  "V001-003": {
+    "code": "V001-003",
+    "level": 1,
+    "parent_id": 0,
+    "name": "\u0110\u1ed3 d\u00f9ng \u0103n u\u1ed1ng cho b\u00e9",
+    "id": 1167
+  },
+  "V001-003-009": {
+    "code": "V001-003-009",
+    "level": 2,
+    "parent_id": 1167,
+    "name": "B\u00ecnh s\u1eefa",
+    "id": 1173
+  },
+  "V001-005": {
+    "code": "V001-005",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Gi\u1eb7t x\u1ea3 - T\u1eafm g\u1ed9i cho b\u00e9",
+    "id": 1143
+  },
+  "V001-005-019": {
+    "code": "V001-005-019",
+    "level": 2,
+    "parent_id": 1143,
+    "name": "T\u1eafm g\u1ed9i cho b\u00e9",
+    "id": 1145
+  },
+  "V001-003-012": {
+    "code": "V001-003-012",
+    "level": 2,
+    "parent_id": 1167,
+    "name": "N\u01b0\u1edbc r\u1eeda b\u00ecnh & d\u1ee5ng c\u1ee5 r\u1eeda b\u00ecnh",
+    "id": 1170
+  },
+  "V001-003-010": {
+    "code": "V001-003-010",
+    "level": 2,
+    "parent_id": 1167,
+    "name": "N\u00fam ty",
+    "id": 1172
+  },
+  "V001-003-011": {
+    "code": "V001-003-011",
+    "level": 2,
+    "parent_id": 1167,
+    "name": "C\u1ed1c - B\u00ecnh t\u1eadp u\u1ed1ng",
+    "id": 1171
+  },
+  "V001-003-014": {
+    "code": "V001-003-014",
+    "level": 2,
+    "parent_id": 1167,
+    "name": "\u0110\u1ed3 d\u00f9ng \u0103n u\u1ed1ng kh\u00e1c",
+    "id": 1168
+  },
+  "V001-004": {
+    "code": "V001-004",
+    "level": 1,
+    "parent_id": 0,
+    "name": "C\u00e1c lo\u1ea1i \u0111\u1ed3 d\u00f9ng kh\u00e1c",
+    "id": 1139
+  },
+  "V001-004-017": {
+    "code": "V001-004-017",
+    "level": 2,
+    "parent_id": 1139,
+    "name": "D\u1ee5ng c\u1ee5 ch\u0103m s\u00f3c s\u1ee9c kh\u1ecfe",
+    "id": 1141
+  },
+  "V003-016-065": {
+    "code": "V003-016-065",
+    "level": 2,
+    "parent_id": 1214,
+    "name": "V\u1ec7 sinh nh\u00e0 b\u1ebfp",
+    "id": 1215
+  },
+  "V003-018": {
+    "code": "V003-018",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Trang tr\u00ed nh\u00e0 c\u1eeda",
+    "id": 1223
+  },
+  "V003-018-069": {
+    "code": "V003-018-069",
+    "level": 2,
+    "parent_id": 1223,
+    "name": "\u0110\u1ed3 d\u00f9ng ph\u00f2ng t\u1eafm",
+    "id": 1226
+  },
+  "V004-020-081": {
+    "code": "V004-020-081",
+    "level": 2,
+    "parent_id": 1235,
+    "name": "Thi\u1ebft b\u1ecb s\u01b0\u1edfi",
+    "id": 1238
+  },
+  "V002-012-049": {
+    "code": "V002-012-049",
+    "level": 2,
+    "parent_id": 1202,
+    "name": "D\u1ea7u g\u1ed9i",
+    "id": 1206
+  },
+  "V001-007": {
+    "code": "V001-007",
+    "level": 1,
+    "parent_id": 0,
+    "name": "\u0110\u1ed3 ch\u01a1i",
+    "id": 1174
+  },
+  "V001-007-026": {
+    "code": "V001-007-026",
+    "level": 2,
+    "parent_id": 1174,
+    "name": "\u0110\u1ed3 ch\u01a1i g\u1ed7",
+    "id": 1175
+  },
+  "V001-007-027": {
+    "code": "V001-007-027",
+    "level": 2,
+    "parent_id": 1174,
+    "name": "L\u1eafp gh\u00e9p, X\u1ebfp h\u00ecnh",
+    "id": 1176
+  },
+  "V001-007-030": {
+    "code": "V001-007-030",
+    "level": 2,
+    "parent_id": 1174,
+    "name": "\u0110\u1ed3 ch\u01a1i gi\u00e1o d\u1ee5c",
+    "id": 1179
+  },
+  "V001-007-028": {
+    "code": "V001-007-028",
+    "level": 2,
+    "parent_id": 1174,
+    "name": "\u0110\u1ed3 ch\u01a1i v\u1eadn \u0111\u1ed9ng",
+    "id": 1177
+  },
+  "V001-007-032": {
+    "code": "V001-007-032",
+    "level": 2,
+    "parent_id": 1174,
+    "name": "\u0110\u1ed3 ch\u01a1i kh\u00e1c",
+    "id": 1181
+  },
+  "V001-007-031": {
+    "code": "V001-007-031",
+    "level": 2,
+    "parent_id": 1174,
+    "name": "B\u00fap b\u00ea, th\u00fa b\u00f4ng",
+    "id": 1180
+  },
+  "V001-002-005": {
+    "code": "V001-002-005",
+    "level": 2,
+    "parent_id": 1153,
+    "name": "Th\u1ef1c ph\u1ea9m \u0103n d\u1eb7m",
+    "id": 1157
+  },
+  "V001-002-006": {
+    "code": "V001-002-006",
+    "level": 2,
+    "parent_id": 1153,
+    "name": "Dinh d\u01b0\u1ee1ng kh\u00e1c cho b\u00e9",
+    "id": 1156
+  },
+  "V001-002-008": {
+    "code": "V001-002-008",
+    "level": 2,
+    "parent_id": 1153,
+    "name": "Dinh d\u01b0\u1ee1ng kh\u00e1c cho m\u1eb9",
+    "id": 1154
+  },
+  "V001-009-037": {
+    "code": "V001-009-037",
+    "level": 2,
+    "parent_id": 1187,
+    "name": "M\u00e1y h\u00fat s\u1eefa, T\u00fai tr\u1eef s\u1eefa",
+    "id": 1191
+  },
+  "V001-003-013": {
+    "code": "V001-003-013",
+    "level": 2,
+    "parent_id": 1167,
+    "name": "B\u00e1t, th\u00eca, y\u1ebfm \u0103n d\u1eb7m",
+    "id": 1169
+  },
+  "V001-006": {
+    "code": "V001-006",
+    "level": 1,
+    "parent_id": 0,
+    "name": "V\u1ec7 sinh cho b\u00e9",
+    "id": 1147
+  },
+  "V001-006-024": {
+    "code": "V001-006-024",
+    "level": 2,
+    "parent_id": 1147,
+    "name": "V\u1ec7 sinh r\u0103ng mi\u1ec7ng cho b\u00e9",
+    "id": 1149
+  },
+  "V001-006-023": {
+    "code": "V001-006-023",
+    "level": 2,
+    "parent_id": 1147,
+    "name": "B\u00f4 v\u1ec7 sinh",
+    "id": 1150
+  },
+  "V001-005-020": {
+    "code": "V001-005-020",
+    "level": 2,
+    "parent_id": 1143,
+    "name": "D\u01b0\u1ee1ng da cho b\u00e9",
+    "id": 1144
+  },
+  "V001-005-018": {
+    "code": "V001-005-018",
+    "level": 2,
+    "parent_id": 1143,
+    "name": "Gi\u1eb7t x\u1ea3 cho b\u00e9",
+    "id": 1146
+  },
+  "V003-018-068": {
+    "code": "V003-018-068",
+    "level": 2,
+    "parent_id": 1223,
+    "name": "\u0110\u1ed3 d\u00f9ng ph\u00f2ng ng\u1ee7",
+    "id": 1224
+  },
+  "V001-004-015": {
+    "code": "V001-004-015",
+    "level": 2,
+    "parent_id": 1139,
+    "name": "\u0110\u1ed3 d\u00f9ng b\u00e9 \u0111i ra ngo\u00e0i",
+    "id": 1142
+  },
+  "V002-012-050": {
+    "code": "V002-012-050",
+    "level": 2,
+    "parent_id": 1202,
+    "name": "D\u1ea7u x\u1ea3",
+    "id": 1205
+  },
+  "V001-006-025": {
+    "code": "V001-006-025",
+    "level": 2,
+    "parent_id": 1147,
+    "name": "Kh\u0103n kh\u00f4",
+    "id": 1148
+  },
+  "V001-006-022": {
+    "code": "V001-006-022",
+    "level": 2,
+    "parent_id": 1147,
+    "name": "D\u1ee5ng c\u1ee5 t\u1eafm cho b\u00e9",
+    "id": 1151
+  },
+  "V001-006-021": {
+    "code": "V001-006-021",
+    "level": 2,
+    "parent_id": 1147,
+    "name": "Kh\u0103n gi\u1ea5y \u01b0\u1edbt",
+    "id": 1152
+  },
+  "V002-015": {
+    "code": "V002-015",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Th\u1ef1c ph\u1ea9m ch\u1ee9c n\u0103ng",
+    "id": 1210
+  },
+  "V002-015-058": {
+    "code": "V002-015-058",
+    "level": 2,
+    "parent_id": 1210,
+    "name": "L\u00e0m \u0111\u1eb9p",
+    "id": 1213
+  },
+  "V002-015-059": {
+    "code": "V002-015-059",
+    "level": 2,
+    "parent_id": 1210,
+    "name": "Ch\u0103m s\u00f3c s\u1ee9c kh\u1ecfe",
+    "id": 1212
+  },
+  "06-N015-02": {
+    "code": "06-N015-02",
+    "level": 2,
+    "parent_id": 955,
+    "name": "Reader Cliptec",
+    "id": 957
+  },
+  "06-N013-02": {
+    "code": "06-N013-02",
+    "level": 2,
+    "parent_id": 938,
+    "name": "Hub Cliptec",
+    "id": 940
+  },
+  "V002-010-044": {
+    "code": "V002-010-044",
+    "level": 2,
+    "parent_id": 1192,
+    "name": "D\u1ee5ng c\u1ee5 trang \u0111i\u1ec3m",
+    "id": 1194
+  },
+  "V005-021": {
+    "code": "V005-021",
+    "level": 1,
+    "parent_id": 0,
+    "name": "\u0110\u1ed3 u\u1ed1ng - NGK",
+    "id": 1242
+  },
+  "V005-021-084": {
+    "code": "V005-021-084",
+    "level": 2,
+    "parent_id": 1242,
+    "name": "\u0110\u1ed3 u\u1ed1ng c\u00f3 gas",
+    "id": 1245
+  },
+  "V007-027": {
+    "code": "V007-027",
+    "level": 1,
+    "parent_id": 0,
+    "name": "S\u00e1ch Ti\u1ebfng Vi\u1ec7t",
+    "id": 1259
+  },
+  "V007-027-095": {
+    "code": "V007-027-095",
+    "level": 2,
+    "parent_id": 1259,
+    "name": "S\u00e1ch Ti\u1ebfng Vi\u1ec7t.",
+    "id": 1260
+  },
+  "V001-009-040": {
+    "code": "V001-009-040",
+    "level": 2,
+    "parent_id": 1187,
+    "name": "Ch\u0103m s\u00f3c da cho m\u1eb9",
+    "id": 1188
+  },
+  "V002-010-042": {
+    "code": "V002-010-042",
+    "level": 2,
+    "parent_id": 1192,
+    "name": "Trang \u0111i\u1ec3m  m\u1eaft",
+    "id": 1193
+  },
+  "V005-021-086": {
+    "code": "V005-021-086",
+    "level": 2,
+    "parent_id": 1242,
+    "name": "S\u1eefa",
+    "id": 1243
+  },
+  "V005-021-085": {
+    "code": "V005-021-085",
+    "level": 2,
+    "parent_id": 1242,
+    "name": "\u0110\u1ed3 u\u1ed1ng kh\u00f4ng gas",
+    "id": 1244
+  },
+  "V005-022": {
+    "code": "V005-022",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Th\u1ef1c ph\u1ea9m",
+    "id": 1246
+  },
+  "V005-022-088": {
+    "code": "V005-022-088",
+    "level": 2,
+    "parent_id": 1246,
+    "name": "Th\u1ef1c ph\u1ea9m kh\u00f4",
+    "id": 1247
+  },
+  "V002-014": {
+    "code": "V002-014",
+    "level": 1,
+    "parent_id": 0,
+    "name": "N\u01b0\u1edbc hoa",
+    "id": 1135
+  },
+  "V002-014-056": {
+    "code": "V002-014-056",
+    "level": 2,
+    "parent_id": 1135,
+    "name": "N\u01b0\u1edbc hoa N\u1eef",
+    "id": 1137
+  },
+  "V001-007-029": {
+    "code": "V001-007-029",
+    "level": 2,
+    "parent_id": 1174,
+    "name": "Boardgame",
+    "id": 1178
+  },
+  "V006-026": {
+    "code": "V006-026",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Th\u1eddi trang N\u1eef",
+    "id": 1257
+  },
+  "V006-026-094": {
+    "code": "V006-026-094",
+    "level": 2,
+    "parent_id": 1257,
+    "name": "Th\u1eddi trang N\u1eef.",
+    "id": 1258
+  },
+  "V007-028": {
+    "code": "V007-028",
+    "level": 1,
+    "parent_id": 0,
+    "name": "S\u00e1ch Ngo\u1ea1i V\u0103n",
+    "id": 1261
+  },
+  "V007-028-096": {
+    "code": "V007-028-096",
+    "level": 2,
+    "parent_id": 1261,
+    "name": "S\u00e1ch Ngo\u1ea1i V\u0103n.",
+    "id": 1262
+  },
+  "V005-022-087": {
+    "code": "V005-022-087",
+    "level": 2,
+    "parent_id": 1246,
+    "name": "B\u00e1nh k\u1eb9o",
+    "id": 1248
+  },
+  "10-N002-04": {
+    "code": "10-N002-04",
+    "level": 2,
+    "parent_id": 1447,
+    "name": "Meeting TV/H\u1ed9i Ngh\u1ecb Truy\u1ec1n H\u00ecnh",
+    "id": 1453
+  },
+  "10-N002-07": {
+    "code": "10-N002-07",
+    "level": 2,
+    "parent_id": 1447,
+    "name": "Business Accessories/Ph\u1ee5 Ki\u1ec7n Doanh Nghi\u1ec7p",
+    "id": 1456
+  },
+  "04-N026-03": {
+    "code": "04-N026-03",
+    "level": 2,
+    "parent_id": 1125,
+    "name": "Video Conference Logitech/Thi\u1ebft B\u1ecb HNTH Logitech",
+    "id": 1128
+  },
+  "06-N011-11": {
+    "code": "06-N011-11",
+    "level": 2,
+    "parent_id": 921,
+    "name": "Gamepad Sony/Tay c\u1ea7m Game Sony",
+    "id": 932
+  },
+  "V006-025": {
+    "code": "V006-025",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Th\u1eddi trang Nam",
+    "id": 1255
+  },
+  "V006-025-093": {
+    "code": "V006-025-093",
+    "level": 2,
+    "parent_id": 1255,
+    "name": "Th\u1eddi trang Nam.",
+    "id": 1256
+  },
+  "V001-008-035": {
+    "code": "V001-008-035",
+    "level": 2,
+    "parent_id": 1182,
+    "name": "Th\u1eddi trang b\u00e9 trai",
+    "id": 1184
+  },
+  "V001-008-034": {
+    "code": "V001-008-034",
+    "level": 2,
+    "parent_id": 1182,
+    "name": "Th\u1eddi trang b\u00e9 g\u00e1i",
+    "id": 1185
+  },
+  "V007-030": {
+    "code": "V007-030",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Qu\u00e0 l\u01b0u ni\u1ec7m",
+    "id": 1267
+  },
+  "V007-030-100": {
+    "code": "V007-030-100",
+    "level": 2,
+    "parent_id": 1267,
+    "name": "Th\u00fa nh\u1ed3i b\u00f4ng",
+    "id": 1271
+  },
+  "V007-030-103": {
+    "code": "V007-030-103",
+    "level": 2,
+    "parent_id": 1267,
+    "name": "Sticker - Decal trang tr\u00ed",
+    "id": 1268
+  },
+  "V007-029-097": {
+    "code": "V007-029-097",
+    "level": 2,
+    "parent_id": 1263,
+    "name": "D\u1ee5ng c\u1ee5 v\u0103n ph\u00f2ng",
+    "id": 1266
+  },
+  "V007-029-098": {
+    "code": "V007-029-098",
+    "level": 2,
+    "parent_id": 1263,
+    "name": "D\u1ee5ng c\u1ee5 h\u1ecdc sinh",
+    "id": 1265
+  },
+  "V007-030-102": {
+    "code": "V007-030-102",
+    "level": 2,
+    "parent_id": 1267,
+    "name": "Album - Khung h\u00ecnh",
+    "id": 1269
+  },
+  "V007-030-101": {
+    "code": "V007-030-101",
+    "level": 2,
+    "parent_id": 1267,
+    "name": "M\u00f4 h\u00ecnh trang tr\u00ed",
+    "id": 1270
+  },
+  "V003-018-070": {
+    "code": "V003-018-070",
+    "level": 2,
+    "parent_id": 1223,
+    "name": "\u0110\u1ed3 d\u00f9ng ngo\u00e0i tr\u1eddi",
+    "id": 1225
+  },
+  "03-N004-31": {
+    "code": "03-N004-31",
+    "level": 2,
+    "parent_id": 350,
+    "name": "Mouse Cougar/Chu\u1ed9t Cougar",
+    "id": 1113
+  },
+  "03-N005-32": {
+    "code": "03-N005-32",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone HyperX/Tai Nghe HyperX",
+    "id": 414
+  },
+  "04-N027-02-99": {
+    "code": "04-N027-02-99",
+    "level": 3,
+    "parent_id": 659,
+    "name": "Other Recorder/\u0110\u1ea7u Ghi Kh\u00e1c",
+    "id": 1393
+  },
+  "V006-024": {
+    "code": "V006-024",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Ph\u1ee5 ki\u1ec7n",
+    "id": 1253
+  },
+  "V006-024-092": {
+    "code": "V006-024-092",
+    "level": 2,
+    "parent_id": 1253,
+    "name": "Ph\u1ee5 ki\u1ec7n.",
+    "id": 1254
+  },
+  "08-N002-02-02": {
+    "code": "08-N002-02-02",
+    "level": 3,
+    "parent_id": 1394,
+    "name": "Washer & Dryer Electrolux/M\u00e1y Gi\u1eb7t Electrolux",
+    "id": 1396
+  },
+  "08-N002-02-03": {
+    "code": "08-N002-02-03",
+    "level": 3,
+    "parent_id": 1394,
+    "name": "Washer & Dryer LG/M\u00e1y Gi\u1eb7t LG",
+    "id": 1397
+  },
+  "08-N002-02-04": {
+    "code": "08-N002-02-04",
+    "level": 3,
+    "parent_id": 1394,
+    "name": "Washer & Dryer Panasonic/M\u00e1y Gi\u1eb7t Panasonic",
+    "id": 1398
+  },
+  "08-N002-02-05": {
+    "code": "08-N002-02-05",
+    "level": 3,
+    "parent_id": 1394,
+    "name": "Washer & Dryer Samsung/M\u00e1y Gi\u1eb7t Samsung",
+    "id": 1399
+  },
+  "08-N002-02-06": {
+    "code": "08-N002-02-06",
+    "level": 3,
+    "parent_id": 1394,
+    "name": "Washer & Dryer Sharp/M\u00e1y Gi\u1eb7t Sharp",
+    "id": 1400
+  },
+  "04-N028": {
+    "code": "04-N028",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Label printer/M\u00e1y In Nh\u00e3n V\u00e0 Ph\u1ee5 Ki\u1ec7n",
+    "id": 1403
+  },
+  "04-N028-01": {
+    "code": "04-N028-01",
+    "level": 2,
+    "parent_id": 1403,
+    "name": "Label printer/M\u00e1y In Nh\u00e3n",
+    "id": 1404
+  },
+  "04-N028-99": {
+    "code": "04-N028-99",
+    "level": 2,
+    "parent_id": 1403,
+    "name": "Label printer accessories/Ph\u1ee5 Ki\u1ec7n M\u00e1y In Nh\u00e3n",
+    "id": 1405
+  },
+  "08-N002-04": {
+    "code": "08-N002-04",
+    "level": 2,
+    "parent_id": 1499,
+    "name": "Water Heater/M\u00e1y N\u01b0\u1edbc N\u00f3ng",
+    "id": 1406
+  },
+  "08-N002-04-01": {
+    "code": "08-N002-04-01",
+    "level": 3,
+    "parent_id": 1406,
+    "name": "Water Heater Ariston/M\u00e1y N\u01b0\u1edbc N\u00f3ng Ariston",
+    "id": 1407
+  },
+  "08-N002-04-04": {
+    "code": "08-N002-04-04",
+    "level": 3,
+    "parent_id": 1406,
+    "name": "Water Heater Panasonic/M\u00e1y N\u01b0\u1edbc N\u00f3ng Panasonic",
+    "id": 1410
+  },
+  "08-N002-04-03": {
+    "code": "08-N002-04-03",
+    "level": 3,
+    "parent_id": 1406,
+    "name": "Water Heater Ferroli/M\u00e1y N\u01b0\u1edbc N\u00f3ng Ferroli",
+    "id": 1409
+  },
+  "08-N002-04-02": {
+    "code": "08-N002-04-02",
+    "level": 3,
+    "parent_id": 1406,
+    "name": "Water Heater Electrolux/M\u00e1y N\u01b0\u1edbc N\u00f3ng Electrolux",
+    "id": 1408
+  },
+  "08-N003-16-04": {
+    "code": "08-N003-16-04",
+    "level": 3,
+    "parent_id": 1411,
+    "name": "Vacuum cleaner Philips/M\u00e1y H\u00fat B\u1ee5i Philips",
+    "id": 1416
+  },
+  "08-N003-16-02": {
+    "code": "08-N003-16-02",
+    "level": 3,
+    "parent_id": 1411,
+    "name": "Vacuum cleaner Hitachi/M\u00e1y H\u00fat B\u1ee5i Hitachi",
+    "id": 1414
+  },
+  "08-N002-02-99": {
+    "code": "08-N002-02-99",
+    "level": 3,
+    "parent_id": 1394,
+    "name": "Wardrobe/T\u1ee7 Qu\u1ea7n \u00c1o",
+    "id": 1418
+  },
+  "04-N003-04": {
+    "code": "04-N003-04",
+    "level": 2,
+    "parent_id": 480,
+    "name": "Other server components/Linh Ki\u1ec7n Server Kh\u00e1c",
+    "id": 484
+  },
+  "01-N002-01-05": {
+    "code": "01-N002-01-05",
+    "level": 3,
+    "parent_id": 84,
+    "name": "Ram Laptop Team",
+    "id": 1419
+  },
+  "05-N004-03-01-03": {
+    "code": "05-N004-03-01-03",
+    "level": 4,
+    "parent_id": 818,
+    "name": "Digital Camera Fujifilm/M\u00e1y \u1ea3nh KTS Fujifilm",
+    "id": 821
+  },
+  "05-N003-05-02": {
+    "code": "05-N003-05-02",
+    "level": 3,
+    "parent_id": 784,
+    "name": "Tablet cover/Bao da - \u1ed1p l\u01b0ng M\u00e1y T\u00ednh B\u1ea3ng",
+    "id": 791
+  },
+  "05-N003-05-02-01": {
+    "code": "05-N003-05-02-01",
+    "level": 4,
+    "parent_id": 791,
+    "name": "Ipad cover/Bao da - \u1ed1p l\u01b0ng iPad",
+    "id": 792
+  },
+  "05-N003-01-09": {
+    "code": "05-N003-01-09",
+    "level": 3,
+    "parent_id": 737,
+    "name": "Bluetooth Headphone iFrogz/Tai Nghe Bluetooth iFrogz",
+    "id": 1422
+  },
+  "06-N018": {
+    "code": "06-N018",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Gaming software/Ph\u1ea7n m\u1ec1m Gaming",
+    "id": 1420
+  },
+  "06-N018-01": {
+    "code": "06-N018-01",
+    "level": 2,
+    "parent_id": 1420,
+    "name": "Gaming software Sony/Ph\u1ea7n M\u1ec1m Gaming Sony",
+    "id": 1421
+  },
+  "02-N010-11": {
+    "code": "02-N010-11",
+    "level": 2,
+    "parent_id": 288,
+    "name": "Power Super Flower/Ngu\u1ed3n Super Flower",
+    "id": 1423
+  },
+  "06-N001-02-15": {
+    "code": "06-N001-02-15",
+    "level": 3,
+    "parent_id": 838,
+    "name": "Bluetooth Speaker Remax/Loa Bluetooth Remax",
+    "id": 1424
+  },
+  "05-N008": {
+    "code": "05-N008",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Remax products/S\u1ea3n Ph\u1ea9m Remax",
+    "id": 1426
+  },
+  "05-N008-04": {
+    "code": "05-N008-04",
+    "level": 2,
+    "parent_id": 1426,
+    "name": "Remax Electronic Car/Xe \u0110i\u1ec7n Remax",
+    "id": 1430
+  },
+  "05-N008-05": {
+    "code": "05-N008-05",
+    "level": 2,
+    "parent_id": 1426,
+    "name": "Remax Household Appliances/\u0110\u1ed3 Gia D\u1ee5ng Remax",
+    "id": 1431
+  },
+  "05-N008-99": {
+    "code": "05-N008-99",
+    "level": 2,
+    "parent_id": 1426,
+    "name": "Others Remax/S\u1ea3n Ph\u1ea9m Remax Kh\u00e1c",
+    "id": 1433
+  },
+  "05-N003-03-09": {
+    "code": "05-N003-03-09",
+    "level": 3,
+    "parent_id": 763,
+    "name": "Charger Remax/S\u1ea1c \u0110i\u1ec7n Tho\u1ea1i Remax",
+    "id": 1432
+  },
+  "05-N003-01-11": {
+    "code": "05-N003-01-11",
+    "level": 3,
+    "parent_id": 737,
+    "name": "Bluetooth Headphone Sudio/Tai Nghe Bluetooth Sudio",
+    "id": 1434
+  },
+  "06-N001-02-16": {
+    "code": "06-N001-02-16",
+    "level": 3,
+    "parent_id": 838,
+    "name": "Bluetooth Speaker Marshall/Loa Bluetooth Marshall",
+    "id": 1435
+  },
+  "02-N003-02-09": {
+    "code": "02-N003-02-09",
+    "level": 3,
+    "parent_id": 205,
+    "name": "CPU Intel Gen 10/Cpu Intel th\u1ebf h\u1ec7 10",
+    "id": 1436
+  },
+  "05-N003-01-12": {
+    "code": "05-N003-01-12",
+    "level": 3,
+    "parent_id": 737,
+    "name": "Bluetooth Headphone Marshall/Tai Nghe Bluetooth Marshall",
+    "id": 1437
+  },
+  "04-N027-02-05": {
+    "code": "04-N027-02-05",
+    "level": 3,
+    "parent_id": 659,
+    "name": "Recorder Vantech/\u0110\u1ea7u Ghi Vantech",
+    "id": 664
+  },
+  "08-N001-01-12": {
+    "code": "08-N001-01-12",
+    "level": 3,
+    "parent_id": 991,
+    "name": "TV Casper/Tivi Casper",
+    "id": 1490
+  },
+  "07-N001-02": {
+    "code": "07-N001-02",
+    "level": 2,
+    "parent_id": 978,
+    "name": "Repairing PC services/D\u1ecbch v\u1ee5 S\u1eeda Ch\u1eefa PC",
+    "id": 983
+  },
+  "02-N008-09": {
+    "code": "02-N008-09",
+    "level": 2,
+    "parent_id": 267,
+    "name": "VGA Colorful/Card M\u00e0n H\u00ecnh Colorful",
+    "id": 1492
+  },
+  "02-N002-05": {
+    "code": "02-N002-05",
+    "level": 2,
+    "parent_id": 190,
+    "name": "Mainboard Colorful",
+    "id": 1493
+  },
+  "02-N009-08": {
+    "code": "02-N009-08",
+    "level": 2,
+    "parent_id": 276,
+    "name": "Case Nzxt/Th\u00f9ng M\u00e1y Nzxt",
+    "id": 284
+  },
+  "06-N008-99": {
+    "code": "06-N008-99",
+    "level": 2,
+    "parent_id": 908,
+    "name": "Other Microphone/Microphone Kh\u00e1c",
+    "id": 913
+  },
+  "04-N027-01-04-02": {
+    "code": "04-N027-01-04-02",
+    "level": 4,
+    "parent_id": 639,
+    "name": "Camera Questek IP",
+    "id": 641
+  },
+  "01-N003-02-99": {
+    "code": "01-N003-02-99",
+    "level": 3,
+    "parent_id": 124,
+    "name": "Other Keyboard/B\u00e0n Ph\u00edm Laptop Kh\u00e1c",
+    "id": 140
+  },
+  "07-N001-03": {
+    "code": "07-N001-03",
+    "level": 2,
+    "parent_id": 978,
+    "name": "Other Repairing services/D\u1ecbch v\u1ee5 S\u1eeda Ch\u1eefa kh\u00e1c",
+    "id": 984
+  },
+  "06-N019": {
+    "code": "06-N019",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Gaming table/B\u00e0n Gaming",
+    "id": 1495
+  },
+  "06-N019-01": {
+    "code": "06-N019-01",
+    "level": 2,
+    "parent_id": 1495,
+    "name": "Gaming table DXRacer/B\u00e0n Gaming DXRacer",
+    "id": 1496
+  },
+  "08-N003-02": {
+    "code": "08-N003-02",
+    "level": 2,
+    "parent_id": 1500,
+    "name": "Water Filters/M\u00e1y L\u1ecdc N\u01b0\u1edbc",
+    "id": 1503
+  },
+  "08-N003-03": {
+    "code": "08-N003-03",
+    "level": 2,
+    "parent_id": 1500,
+    "name": "Water Dispensers/C\u00e2y N\u01b0\u1edbc N\u00f3ng L\u1ea1nh",
+    "id": 1504
+  },
+  "08-N003-05": {
+    "code": "08-N003-05",
+    "level": 2,
+    "parent_id": 1500,
+    "name": "Blender, Juicer/M\u00e1y Xay, \u00c9p Tr\u00e1i C\u00e2y",
+    "id": 1506
+  },
+  "08-N003-06": {
+    "code": "08-N003-06",
+    "level": 2,
+    "parent_id": 1500,
+    "name": "Mixers/M\u00e1y \u0110\u00e1nh Tr\u1ee9ng",
+    "id": 1507
+  },
+  "08-N003-08": {
+    "code": "08-N003-08",
+    "level": 2,
+    "parent_id": 1500,
+    "name": "Dishwashers/M\u00e1y R\u1eeda Ch\u00e9n",
+    "id": 1509
+  },
+  "08-N003-09": {
+    "code": "08-N003-09",
+    "level": 2,
+    "parent_id": 1500,
+    "name": "Oven, Microwave/L\u00f2 N\u01b0\u1edbng, Vi S\u00f3ng",
+    "id": 1510
+  },
+  "08-N003-10": {
+    "code": "08-N003-10",
+    "level": 2,
+    "parent_id": 1500,
+    "name": "Cookers/B\u1ebfp T\u1eeb, B\u1ebfp H\u1ed3ng Ngo\u1ea1i, B\u1ebfp Gas",
+    "id": 1511
+  },
+  "08-N003-13": {
+    "code": "08-N003-13",
+    "level": 2,
+    "parent_id": 1500,
+    "name": "Beauty Gadget/D\u1ee5ng C\u1ee5 L\u00e0m \u0110\u1eb9p",
+    "id": 1514
+  },
+  "08-N003-14": {
+    "code": "08-N003-14",
+    "level": 2,
+    "parent_id": 1500,
+    "name": "Irons/ Garment Steamers/B\u00e0n \u1ee6i",
+    "id": 1515
+  },
+  "08-N003-15": {
+    "code": "08-N003-15",
+    "level": 2,
+    "parent_id": 1500,
+    "name": "Water Boilers/B\u00ecnh \u0110un, B\u00ecnh Th\u1ee7y",
+    "id": 1516
+  },
+  "08-N003-01": {
+    "code": "08-N003-01",
+    "level": 2,
+    "parent_id": 1500,
+    "name": "Air Conditioning Fan/Qu\u1ea1t \u0110i\u1ec1u H\u00f2a",
+    "id": 1501
+  },
+  "08-N003-11": {
+    "code": "08-N003-11",
+    "level": 2,
+    "parent_id": 1500,
+    "name": "Coffee Machines/M\u00e1y Pha C\u00e0 Ph\u00ea",
+    "id": 1512
+  },
+  "05-N003-01-13": {
+    "code": "05-N003-01-13",
+    "level": 3,
+    "parent_id": 737,
+    "name": "Bluetooth Headphone Samsung/Tai Nghe Bluetooth Samsung",
+    "id": 1517
+  },
+  "04-N026-01": {
+    "code": "04-N026-01",
+    "level": 2,
+    "parent_id": 1125,
+    "name": "Video Conference Aver/Thi\u1ebft B\u1ecb HNTH Aver",
+    "id": 1126
+  },
+  "08-N003-04": {
+    "code": "08-N003-04",
+    "level": 2,
+    "parent_id": 1500,
+    "name": "Air Friers/N\u1ed3i Chi\u00ean Kh\u00f4ng D\u1ea7u",
+    "id": 1505
+  },
+  "08-N001-01-13": {
+    "code": "08-N001-01-13",
+    "level": 3,
+    "parent_id": 991,
+    "name": "TV Vsmart/Tivi Vsmart",
+    "id": 1520
+  },
+  "03-N002-19": {
+    "code": "03-N002-19",
+    "level": 2,
+    "parent_id": 320,
+    "name": "Keyboard Zadez/B\u00e0n Ph\u00edm Zadez",
+    "id": 339
+  },
+  "10-N002-03": {
+    "code": "10-N002-03",
+    "level": 2,
+    "parent_id": 1447,
+    "name": "Meeting speaker/Loa H\u1ed9i Ngh\u1ecb",
+    "id": 1452
+  },
+  "10-N002-05": {
+    "code": "10-N002-05",
+    "level": 2,
+    "parent_id": 1447,
+    "name": "IP Phone",
+    "id": 1454
+  },
+  "10-N002-06": {
+    "code": "10-N002-06",
+    "level": 2,
+    "parent_id": 1447,
+    "name": "Meeting software/Ph\u1ea7n M\u1ec1m H\u1ed9i Ngh\u1ecb",
+    "id": 1455
+  },
+  "02-N007-03": {
+    "code": "02-N007-03",
+    "level": 2,
+    "parent_id": 264,
+    "name": "Streaming Device/Thi\u1ebft B\u1ecb Streaming",
+    "id": 1539
+  },
+  "05-N002-99": {
+    "code": "05-N002-99",
+    "level": 2,
+    "parent_id": 726,
+    "name": "Other Tablet/M\u00e1y T\u00ednh B\u1ea3ng Kh\u00e1c",
+    "id": 735
+  },
+  "06-N008-05": {
+    "code": "06-N008-05",
+    "level": 2,
+    "parent_id": 908,
+    "name": "Microphone Razer",
+    "id": 1540
+  },
+  "04-N027-05": {
+    "code": "04-N027-05",
+    "level": 2,
+    "parent_id": 626,
+    "name": "Combo Recorder & Camera/Combo \u0110\u1ea7u Ghi & Camera",
+    "id": 1541
+  },
+  "04026-05": {
+    "code": "04026-05",
+    "level": 2,
+    "parent_id": 1125,
+    "name": "Video Conference Razer/Thi\u1ebft B\u1ecb HNTH Razer",
+    "id": 1542
+  },
+  "02-N009-16": {
+    "code": "02-N009-16",
+    "level": 2,
+    "parent_id": 276,
+    "name": "Case FSP/Th\u00f9ng m\u00e1y FSP",
+    "id": 1559
+  },
+  "02-N008-10": {
+    "code": "02-N008-10",
+    "level": 2,
+    "parent_id": 267,
+    "name": "VGA Sapphire/Card M\u00e0n H\u00ecnh Sapphire",
+    "id": 1560
+  },
+  "02-N010-12": {
+    "code": "02-N010-12",
+    "level": 2,
+    "parent_id": 288,
+    "name": "Power Asus/Ngu\u1ed3n Asus",
+    "id": 1561
+  },
+  "02-N006-13": {
+    "code": "02-N006-13",
+    "level": 2,
+    "parent_id": 249,
+    "name": "External hard drive Asus/\u1ed5 C\u1ee9ng g\u1eafn ngo\u00e0i Asus",
+    "id": 1562
+  },
+  "05-N002-09": {
+    "code": "05-N002-09",
+    "level": 2,
+    "parent_id": 726,
+    "name": "Tablet Huawei/M\u00e1y T\u00ednh B\u1ea3ng Huawei",
+    "id": 1563
+  },
+  "02-N009-17": {
+    "code": "02-N009-17",
+    "level": 2,
+    "parent_id": 276,
+    "name": "Case Antec/Th\u00f9ng M\u00e1y Antec",
+    "id": 1564
+  },
+  "04-N027-01-10": {
+    "code": "04-N027-01-10",
+    "level": 3,
+    "parent_id": 627,
+    "name": "Camera Dahua",
+    "id": 655
+  },
+  "04-N027-01-10-02": {
+    "code": "04-N027-01-10-02",
+    "level": 4,
+    "parent_id": 655,
+    "name": "Camera Dahua IP",
+    "id": 657
+  },
+  "10-N005": {
+    "code": "10-N005",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Network equipment/Thi\u1ebft B\u1ecb M\u1ea1ng",
+    "id": 1482
+  },
+  "10-N005-02": {
+    "code": "10-N005-02",
+    "level": 2,
+    "parent_id": 1482,
+    "name": "Business Switch/ Switch Doanh Nghi\u1ec7p",
+    "id": 1484
+  },
+  "10-N005-06": {
+    "code": "10-N005-06",
+    "level": 2,
+    "parent_id": 1482,
+    "name": "Business Network accessories/Ph\u1ee5 Ki\u1ec7n M\u1ea1ng Doanh Nghi\u1ec7p",
+    "id": 1488
+  },
+  "03-N099-01": {
+    "code": "03-N099-01",
+    "level": 2,
+    "parent_id": 1114,
+    "name": "Accessories Monitor/ Ph\u1ee5 Ki\u1ec7n M\u00e0n H\u00ecnh",
+    "id": 1581
+  },
+  "08-N002-04-05": {
+    "code": "08-N002-04-05",
+    "level": 3,
+    "parent_id": 1406,
+    "name": "Water Heater Midea/M\u00e1y N\u01b0\u1edbc N\u00f3ng Midea",
+    "id": 1590
+  },
+  "10-N005-03": {
+    "code": "10-N005-03",
+    "level": 2,
+    "parent_id": 1482,
+    "name": "Business Router Wifi/ Router Wifi Doanh Nghi\u1ec7p",
+    "id": 1485
+  },
+  "10-N001-03": {
+    "code": "10-N001-03",
+    "level": 2,
+    "parent_id": 1438,
+    "name": "Business Server/M\u00e1y Ch\u1ee7 doanh nghi\u1ec7p",
+    "id": 1441
+  },
+  "02-N009-19": {
+    "code": "02-N009-19",
+    "level": 2,
+    "parent_id": 276,
+    "name": "Case Phantek/Th\u00f9ng M\u00e1y Phantek",
+    "id": 1591
+  },
+  "05-N003-01-14": {
+    "code": "05-N003-01-14",
+    "level": 3,
+    "parent_id": 737,
+    "name": "Bluetooth Headphone Harman/Kardon/Tai Nghe Bluetooth Harman/Kardon",
+    "id": 1595
+  },
+  "04-N027-01-10-01": {
+    "code": "04-N027-01-10-01",
+    "level": 4,
+    "parent_id": 655,
+    "name": "Camera Dahua AHD",
+    "id": 656
+  },
+  "06-N001-02-17": {
+    "code": "06-N001-02-17",
+    "level": 3,
+    "parent_id": 838,
+    "name": "Bluetooth Speaker Audio Pro/Loa Bluetooth Audio Pro",
+    "id": 1596
+  },
+  "02-N010-14": {
+    "code": "02-N010-14",
+    "level": 2,
+    "parent_id": 288,
+    "name": "Power Deepcool/Ngu\u1ed3n Deepcool",
+    "id": 1599
+  },
+  "02-N008-11": {
+    "code": "02-N008-11",
+    "level": 2,
+    "parent_id": 267,
+    "name": "VGA Asrock/Card M\u00e0n H\u00ecnh Asrock",
+    "id": 1600
+  },
+  "02-N010-15": {
+    "code": "02-N010-15",
+    "level": 2,
+    "parent_id": 288,
+    "name": "Power Gigabyte/Ngu\u1ed3n Gigabyte",
+    "id": 1598
+  },
+  "03-N005-36": {
+    "code": "03-N005-36",
+    "level": 2,
+    "parent_id": 382,
+    "name": "Headphone Corsair/Tai Nghe Corsair",
+    "id": 1579
+  },
+  "AHC_01_08": {
+    "code": "AHC_01_08",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Kem d\u01b0\u1ee1ng da",
+    "id": 1550
+  },
+  "AHC_01_06": {
+    "code": "AHC_01_06",
+    "level": 1,
+    "parent_id": 0,
+    "name": "N\u01b0\u1edbc hoa h\u1ed3ng & X\u1ecbt kho\u00e1ng",
+    "id": 1548
+  },
+  "AHC_01_05": {
+    "code": "AHC_01_05",
+    "level": 1,
+    "parent_id": 0,
+    "name": "S\u1eeda r\u1eefa m\u1eb7t",
+    "id": 1547
+  },
+  "AHC_01_11": {
+    "code": "AHC_01_11",
+    "level": 1,
+    "parent_id": 0,
+    "name": "S\u1eefa t\u1eafm, S\u1eefa d\u01b0\u1ee1ng th\u1ec3",
+    "id": 1553
+  },
+  "AHC_01_07": {
+    "code": "AHC_01_07",
+    "level": 1,
+    "parent_id": 0,
+    "name": "M\u1eb7t n\u1ea1",
+    "id": 1549
+  },
+  "AHC_01_01": {
+    "code": "AHC_01_01",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Trang \u0111i\u1ec3m m\u1eb7t",
+    "id": 1543
+  },
+  "BLC-01-12": {
+    "code": "BLC-01-12",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Trang \u0111i\u1ec3m m\u00f4i",
+    "id": 1578
+  },
+  "AHC_01_12": {
+    "code": "AHC_01_12",
+    "level": 1,
+    "parent_id": 0,
+    "name": "Ch\u0103m s\u00f3c c\u00e1 nh\u00e2n",
+    "id": 1554
+  },
+  "BLC-01-03": {
+    "code": "BLC-01-03",
+    "level": 1,
+    "parent_id": 0,
+    "name": "D\u1ee5ng c\u1ee5 trang \u0111i\u1ec3m",
+    "id": 1569
+  }
+}
