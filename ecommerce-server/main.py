@@ -4,7 +4,7 @@ import os
 
 from dotenv import load_dotenv
 
-from ecommerce_server import app
+from app import app
 
 __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)

@@ -1,7 +1,7 @@
 # coding=utf-8
 import logging
 
-from ecommerce_server.repositories.product import ProductElasticRepo
+from app.repositories.product import ProductElasticRepo
 
 __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
