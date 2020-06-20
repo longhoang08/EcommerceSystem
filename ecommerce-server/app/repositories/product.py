@@ -72,8 +72,8 @@ class ProductElasticRepo(EsRepositoryInterface):
 
     @staticmethod
     def add_page_limit_to_product_es(args, product_es):
-        _page = args['_page']
-        _limit = args['_limit']
+        _page = args.get('_page') or 1
+        _limit = args.get('_limit') or 10
         # Pagination
         product_es = product_es[(_page - 1) * _limit: _page * _limit]
         return product_es

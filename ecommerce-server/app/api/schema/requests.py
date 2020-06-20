@@ -36,6 +36,6 @@ search_req = {
     'only_promotion': fields.Boolean(required=False, description='Only get product which have promotion'),
     'only_flash_sale': fields.Boolean(required=False, description='Only get product which have flask sale'),
     'sort': fields.List(fields.String, required=False, description="Param to sort  products"),
-    '_page': fields.Integer(required=False, description='Paging'),
-    '_limit': fields.Integer(required=False, description='Number of product in response'),
+    '_page': fields.Integer(required=False, description='Paging, default to 1'),
+    '_limit': fields.Integer(required=False, description='Number of product in response. Default to 10'),
 }
