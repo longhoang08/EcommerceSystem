@@ -5,6 +5,8 @@ user_res = {
     'email': fields.String(description="User's email address"),
     'fullname': fields.String(description='Fullname of user'),
     'avatar_url': fields.String(description='Avatar url of user'),
+    'address': fields.String(description='Adress of user'),
+    'gender': fields.String(description='Gender of user'),
 }
 
 register_res = {

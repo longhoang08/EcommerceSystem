@@ -14,13 +14,13 @@ from ..helpers.product_validator import validate_search_param
 
 _logger = logging.getLogger(__name__)
 
-ns = Namespace('search', description='Search operations')
+ns = Namespace('product', description='Product operations')
 
-_search_req = ns.model('search_req', requests.search_req)
+_search_req = ns.model('product_req', requests.search_req)
 
 
 @ns.route('/', methods=['POST'])
-class SearchProduct(flask_restplus.Resource):
+class ProductDetails(flask_restplus.Resource):
     @ns.expect(_search_req, validate=True)
     # @ns.marshal_with(_search_res)
     def post(self):

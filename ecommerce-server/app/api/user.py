@@ -8,7 +8,7 @@ from app import services
 from app.extensions import Namespace
 from . import responses, requests
 
-__author__ = 'longhb'
+__author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
 
 ns = Namespace('users', description='User operations')

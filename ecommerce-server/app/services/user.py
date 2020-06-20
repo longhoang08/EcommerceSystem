@@ -18,7 +18,8 @@ _logger = logging.getLogger(__name__)
 
 
 # create user from a register after validate
-def create_user(email: str, phone_number: str, fullname: str, password: str, **kwargs) -> User:
+def create_user(email: str, phone_number: str, fullname: str, password: str, gender: str, address: str,
+                **kwargs) -> User:
     existed_user = repo.find_one_by_email_or_phone_number(email, phone_number)
     if existed_user:
         raise UserExistsException()
@@ -27,6 +28,8 @@ def create_user(email: str, phone_number: str, fullname: str, password: str, **k
         fullname=fullname,
         phone_number=phone_number,
         password=password,
+        gender=gender,
+        address=address,
         **kwargs
     )
     return user
@@ -36,7 +39,8 @@ def create_new_user_from_register(email):
     register = register_service.find_one_by_email(email)
     if not register:
         raise NotInPendingException()
-    return create_user(email, register.phone_number, register.fullname, register.password)
+    return create_user(email, register.phone_number, register.fullname, register.password, register.gender,
+                       register.address)
 
 
 # create new user, delete pending register request and save password to historic password

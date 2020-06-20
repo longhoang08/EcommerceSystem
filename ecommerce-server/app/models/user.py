@@ -45,4 +45,6 @@ class User(db.Model, TimestampMixin, UserBase):
             'email': self.email,
             'fullname': self.fullname,
             'avatar_url': self.avatar_url,
+            'gender': "Male" if self.gender else "Female",
+            'address': self.address
         }
