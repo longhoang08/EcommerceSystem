@@ -39,7 +39,10 @@ with open(os.path.join(os.path.dirname(__file__), 'categories.json')) as json_fi
     for category_id in _leaf_categories_ids:
         category_code = cat_id_to_code[category_id]
         current_category = categories_data[category_code]
-        all_leaf_categories.append(current_category)
+        all_leaf_categories.append({
+            'code': current_category['code'],
+            'name': current_category['name']
+        })
         all_parrent_categories = [current_category]
         while current_category["parent_id"] != 0:
             current_category = _get_category_by_id(current_category["parent_id"])
