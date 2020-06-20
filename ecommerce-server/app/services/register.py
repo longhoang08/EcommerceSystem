@@ -14,7 +14,7 @@ __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
 
 
-def create_new_register(email, fullname, password, gender, address, **kwargs) -> Register:
+def create_new_register(email, fullname, password, **kwargs) -> Register:
     phone_number = string_utils.normalize_phone_number(kwargs.get('phone_number'))
     validate_register(email, phone_number, fullname, password)
 
@@ -29,8 +29,8 @@ def create_new_register(email, fullname, password, gender, address, **kwargs) ->
         fullname=fullname,
         phone_number=phone_number,
         password=hash_password(password),
-        gender=gender,
-        address=address
+        gender=kwargs.get('gender') or 1,
+        address=kwargs.get('address') or ''
     )
 
 
