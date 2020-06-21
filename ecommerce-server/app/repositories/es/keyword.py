@@ -3,6 +3,7 @@ import logging
 
 from elasticsearch_dsl import Search, query
 
+from app.models.es.keyword import mappings, settings
 from app.repositories.es.es_base import EsRepositoryInterface
 
 __author__ = 'LongHB'
@@ -14,6 +15,8 @@ class KeywordElasticRepo(EsRepositoryInterface):
         super().__init__()
         self._index = 'keywords'
         self.id_key = 'id'
+        self.mappings = mappings
+        self.settings = settings
 
     def search(self, args):
         """
