@@ -9,13 +9,25 @@ from app.api import api
 
 _logger = logging.getLogger(__name__)
 
-keyword_recommenders_data = api.model('recommend', {
+_keyword_recommenders_data = api.model('keyword_recommenders_data', {
     'query': fields.String(attribute='keyword'),
 })
 
 keyword_recommenders_response = api.model('keyword_recommenders_response', {
     'code': fields.String(),
     'result': fields.Nested(model=api.model('keywords', {
-        'keywords': fields.Nested(keyword_recommenders_data)
+        'keywords': fields.Nested(_keyword_recommenders_data)
+    }))
+})
+_category_choosable_data = api.model('category_choosable_data', {
+    'code': fields.String(),
+    'id': fields.Integer(),
+    'name': fields.String(),
+})
+
+category_choosable_response = api.model('category_choosable_response', {
+    'code': fields.String(),
+    'result': fields.Nested(model=api.model('keywords', {
+        'categories': fields.Nested(_category_choosable_data)
     }))
 })
