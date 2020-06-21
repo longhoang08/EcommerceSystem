@@ -9,7 +9,7 @@ _logger = logging.getLogger(__name__)
 
 
 def get_result_search(args):
-    args = Utilities.reformat_product_searchparams(args)
+    args = Utilities.reformat_product_search_params(args)
     product_es = ProductElasticRepo()
     response = product_es.search(args)
     return extract_product_data_from_response(response)

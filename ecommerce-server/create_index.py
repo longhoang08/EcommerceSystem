@@ -8,7 +8,7 @@ from elasticsearch import Elasticsearch
 from app.helpers.catalog import categories_data, is_leaf_category
 from app.helpers.string_utils import remove_vi_accent
 from app.repositories.es import bulk_update
-from app.repositories.es.categories import CategoryElasticRepo
+from app.repositories.es.category import CategoryElasticRepo
 from app.repositories.es.keyword import KeywordElasticRepo
 from app.repositories.es.product import ProductElasticRepo
 
