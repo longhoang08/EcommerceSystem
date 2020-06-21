@@ -5,6 +5,7 @@ __author__ = 'LongHB'
 
 import elasticsearch.helpers
 from elasticsearch import Elasticsearch
+from elasticsearch_dsl import query
 
 from config import ELASTIC_HOST
 
@@ -29,3 +30,33 @@ def bulk_update(index_name, docs, key):
         max_retries=5
     )
     return res
+
+
+def build_prefix_query(key: str, term: str, boost_factor: int) -> query.Query:
+    return query.Prefix(**{
+        key: {
+            "value": term,
+            "boost": boost_factor
+        }
+    })
+
+
+def build_phrase_prefix_query(key: str, term: str, boost_factor: int):
+    return query.MatchPhrasePrefix(**{
+        key: {
+            "query": term,
+            "boost": boost_factor
+        }
+    })
+
+
+def build_match_query(key: str, term: str, fuzziness: str, boost_factor: int = 1) -> query.Query:
+    return query.Match(**{
+        key: {
+            'query': term,
+            'operator': 'or',
+            "fuzziness": fuzziness,
+            "minimum_should_match": "3<75%",
+            'boost': boost_factor
+        }
+    })

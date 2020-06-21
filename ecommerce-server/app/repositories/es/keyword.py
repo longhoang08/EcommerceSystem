@@ -42,6 +42,10 @@ class KeywordElasticRepo(EsRepositoryInterface):
     def build_first_text_query(self, args):
         vn_text_query = args.get('search_text')
         na_text_query = args.get('q')
+
+        if not vn_text_query:
+            return query.MatchAll()
+
         text_query = query.DisMax(
             queries=[
                 self.vietnames_prefix_query(vn_text_query),

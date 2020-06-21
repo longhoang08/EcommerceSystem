@@ -5,6 +5,7 @@ from typing import List
 
 from elasticsearch_dsl import query, Search
 
+from app.repositories.es import build_phrase_prefix_query, build_match_query, build_prefix_query
 from config import FILES_INDEX
 from app.models.es.product import mappings, settings
 from app.repositories.es.es_base import EsRepositoryInterface
@@ -145,8 +146,8 @@ class ProductElasticRepo(EsRepositoryInterface):
                 query.Exists(field="seller")
             ],
             should=[
-                self.build_match_query(SEARCH_TEXT_FIELD, search_text, fuzzinees, 2),
-                self.build_match_query(SEARCH_TEXT_NO_TONE_FIELD, search_text, fuzzinees)
+                build_match_query(SEARCH_TEXT_FIELD, search_text, fuzzinees, 2),
+                build_match_query(SEARCH_TEXT_NO_TONE_FIELD, search_text, fuzzinees)
 
             ],
             minimum_should_match=1,
@@ -177,46 +178,16 @@ class ProductElasticRepo(EsRepositoryInterface):
         fuzzinees = "0"  # Don't use fuzzy in first query
 
         return [
-            ProductElasticRepo.build_prefix_query(KEYWORD_NAME_FIELD, search_text, pow(10, 5) * 2),
-            ProductElasticRepo.build_prefix_query(KEYWORD_NAME_NO_TONE_FIELD, search_text_no_tone, pow(10, 5)),
+            build_prefix_query(KEYWORD_NAME_FIELD, search_text, pow(10, 5) * 2),
+            build_prefix_query(KEYWORD_NAME_NO_TONE_FIELD, search_text_no_tone, pow(10, 5)),
 
-            ProductElasticRepo.build_phrase_prefix_query(SEARCH_TEXT_FIELD, search_text, pow(10, 3) * 2),
-            ProductElasticRepo.build_phrase_prefix_query(
+            build_phrase_prefix_query(SEARCH_TEXT_FIELD, search_text, pow(10, 3) * 2),
+            build_phrase_prefix_query(
                 SEARCH_TEXT_NO_TONE_FIELD, search_text_no_tone, pow(10, 3)),
 
-            ProductElasticRepo.build_match_query(SEARCH_TEXT_FIELD, search_text, fuzzinees, 2),
-            ProductElasticRepo.build_match_query(SEARCH_TEXT_NO_TONE_FIELD, search_text, fuzzinees)
+            build_match_query(SEARCH_TEXT_FIELD, search_text, fuzzinees, 2),
+            build_match_query(SEARCH_TEXT_NO_TONE_FIELD, search_text, fuzzinees)
         ]
-
-    @staticmethod
-    def build_prefix_query(key: str, term: str, boost_factor: int) -> query.Query:
-        return query.Prefix(**{
-            key: {
-                "value": term,
-                "boost": boost_factor
-            }
-        })
-
-    @staticmethod
-    def build_phrase_prefix_query(key: str, term: str, boost_factor: int):
-        return query.MatchPhrasePrefix(**{
-            key: {
-                "query": term,
-                "boost": boost_factor
-            }
-        })
-
-    @staticmethod
-    def build_match_query(key: str, term: str, fuzziness: str, boost_factor: int = 1) -> query.Query:
-        return query.Match(**{
-            key: {
-                'query': term,
-                'operator': 'or',
-                "fuzziness": fuzziness,
-                "minimum_should_match": "3<75%",
-                'boost': boost_factor
-            }
-        })
 
     def multiple_query(self, index, queries):
         search_queries = []
