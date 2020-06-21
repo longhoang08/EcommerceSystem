@@ -31,25 +31,13 @@ class Utilities:
         return total_pages, next_page, previous_page
 
     @staticmethod
-    def reformat_product_searchparams(args):
-        args['_limit'] = args.get('_limit') or 10
-        if args.get('_limit') > 1000 or args.get('_limit') < 1:
-            args['_limit'] = 10
-        args['_page'] = args.get('_page') or 1
-        args['_page'] = max(args['_page'], 1)
-
-        search_text = args.get('q')
-        args['q_source'] = search_text
-        search_text = normalize_text(search_text)
-        args['search_text'] = search_text
-
-        args['q'] = remove_vi_accent(search_text) if \
-            args.get('q') is not None else None
-
+    def reformat_product_search_params(args):
+        args['q_source'] = args.get('q')
+        args = Utilities.reformat_search_text_search_params(args)
         return args
 
     @staticmethod
-    def reformat_keyword_search_params(args):
+    def reformat_search_text_search_params(args):
         args['_limit'] = args.get('_limit') or 10
         if args.get('_limit') > 1000 or args.get('_limit') < 1:
             args['_limit'] = 10
@@ -59,9 +47,7 @@ class Utilities:
         search_text = args.get('q')
         search_text = normalize_text(search_text)
         args['search_text'] = search_text
-
-        args['q'] = remove_vi_accent(search_text) if \
-            args.get('q') is not None else None
+        args['q'] = remove_vi_accent(search_text) if search_text is not None else None
 
         return args
 
