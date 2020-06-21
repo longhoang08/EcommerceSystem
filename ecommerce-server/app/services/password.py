@@ -1,6 +1,6 @@
 from app.extensions.custom_exception import PasswordDiffException
 from app.helpers import verify_password, hash_password
-from app.repositories import password as repo
+from app.repositories.mysql import password as repo
 
 
 def validate_new_hash_password(user_id: int, new_password: str) -> bool:

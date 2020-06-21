@@ -5,7 +5,6 @@ import time
 from smtplib import SMTPException
 from unittest.mock import patch
 
-from app import repositories
 from app.helpers import token
 from app.helpers.faker import fake_user
 from app.tests.api import APITestCase
@@ -74,7 +73,7 @@ class ConfrimEmailApiTestCase(APITestCase):
         confirm_token = token.encode_token(user_email, 1)
         response = self.send_request(url=CONFIRM_EMAIL_BASE_URL + confirm_token)
         self.assertEqual(200, response.status_code)
-        user = repositories.user.find_one_by_email(user_email)
+        user = app.repositories.mysql.user.find_one_by_email(user_email)
         self.assertNotEqual(user, None)
         self.assertEqual(user.email, user_email)
 

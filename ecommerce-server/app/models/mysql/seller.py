@@ -1,7 +1,7 @@
 # coding=utf-8
-import enum
 
-from app.models import db, TimestampMixin
+from app.models import db
+from app.models.mysql.base import TimestampMixin
 
 
 class SellerStatus():

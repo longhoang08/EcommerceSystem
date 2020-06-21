@@ -2,7 +2,7 @@
 import logging
 
 from app.helpers.catalog.product_utils import Utilities
-from app.repositories.product import ProductElasticRepo
+from app.repositories.es.product import ProductElasticRepo
 
 __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)

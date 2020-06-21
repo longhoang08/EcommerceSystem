@@ -3,7 +3,8 @@ import datetime
 import enum
 
 from app.commons.uet_constant import DEFAULT_AVATAR
-from app.models import db, TimestampMixin, UserBase
+from app.models import db
+from app.models.mysql.base import TimestampMixin, UserBase
 
 
 class UserRole():

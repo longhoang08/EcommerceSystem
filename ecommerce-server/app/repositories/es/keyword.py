@@ -3,7 +3,7 @@ import logging
 
 from elasticsearch_dsl import Search, query
 
-from app.repositories.es_base import EsRepositoryInterface
+from app.repositories.es.es_base import EsRepositoryInterface
 
 __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)

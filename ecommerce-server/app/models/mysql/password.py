@@ -1,6 +1,7 @@
 import logging
 
-from app.models import db, TimestampMixin
+from app.models import db
+from app.models.mysql.base import TimestampMixin
 
 __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)

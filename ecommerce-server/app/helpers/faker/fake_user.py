@@ -1,6 +1,5 @@
 import logging
 
-from app import repositories
 from app.helpers.password import hash_password
 
 __author__ = 'LongHB'
@@ -30,7 +29,7 @@ VALID_USERS = [
 
 def insert_some_user_to_db_for_testing():
     for register in VALID_USERS:
-        repositories.user.create_new_user(
+        app.repositories.mysql.user.create_new_user(
             username=register['username'],
             email=register['email'],
             fullname=register['fullname'],
@@ -40,4 +39,4 @@ def insert_some_user_to_db_for_testing():
 
 def insert_some_register_to_db_for_testing():
     for register in VALID_USERS:
-        repositories.register.create_new_register(**register)
+        app.repositories.mysql.register.create_new_register(**register)

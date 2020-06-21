@@ -1,11 +1,10 @@
 # coding=utf-8
 import logging
 
-__author__ = 'LongHB'
-
-from app.models.seller import Seller
 from app import models as m
+from app.models.mysql.seller import Seller
 
+__author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
 
 

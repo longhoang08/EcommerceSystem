@@ -9,8 +9,8 @@ from app.extensions.custom_exception import MustConfirmEmailException, UserNotFo
     UserExistsException, NotInPendingException, UserBlockedException, \
     WrongCurrentPasswordException, WrongPasswordException
 from app.helpers import validator, get_current_timestamp, verify_password
-from app.models import User, UserRole
-from app.repositories import user as repo
+from app.models.mysql.user import User, UserRole
+from app.repositories.mysql import user as repo
 from app.services import register as register_service, password as password_service
 
 __author__ = 'LongHB'

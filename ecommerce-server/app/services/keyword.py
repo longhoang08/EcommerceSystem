@@ -4,7 +4,7 @@ import logging
 __author__ = 'LongHB'
 
 from app.helpers.catalog.product_utils import Utilities
-from app.repositories.keyword import KeywordElasticRepo
+from app.repositories.es.keyword import KeywordElasticRepo
 
 _logger = logging.getLogger(__name__)
 

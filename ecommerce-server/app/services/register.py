@@ -6,7 +6,7 @@ from app.extensions.custom_exception import RegisterBeforeException, UserExistsE
 from app.helpers import encode_token, string_utils
 from app.helpers import validate_register, hash_password
 from app.models import Register
-from app.repositories import register as repo
+from app.repositories.mysql import register as repo
 from app.services import mail_service, user as user_service
 from app.templates import email_template
 

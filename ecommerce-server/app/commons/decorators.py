@@ -3,7 +3,7 @@ from functools import wraps
 from flask_jwt_extended import jwt_required, get_jwt_identity
 
 from app.extensions.custom_exception import InvalidTokenException, PermissionException
-from app.models import UserRole
+from app.models.mysql.user import UserRole
 from app.services import user as user_service
 
 

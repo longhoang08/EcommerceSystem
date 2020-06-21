@@ -31,7 +31,4 @@ def init_app(app, **kwargs):
     redis_client.init_app(app)
 
 
-from .base import TimestampMixin, UserBase
-from .user import User, UserRole
-from .register import Register
-from .password import Password
+from app.models.mysql.register import Register

@@ -5,10 +5,10 @@ __author__ = 'LongHB'
 
 from app import ForbiddenException
 from app.commons.decorators import login_required
-from app.models import UserRole
-from app.models.seller import Seller
+from app.models.mysql.seller import Seller
+from app.models.mysql.user import UserRole
 from app.services import user as user_service
-from app.repositories import seller as repo
+from app.repositories.mysql import seller as repo
 
 _logger = logging.getLogger(__name__)
 

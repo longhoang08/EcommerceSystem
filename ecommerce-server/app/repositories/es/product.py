@@ -1,14 +1,13 @@
 # coding=utf-8
 import json
 import logging
-from typing import Tuple, List
+from typing import List
 
 from elasticsearch_dsl import query, Search
 
-from app.helpers.string_utils import normalize_text
 from config import FILES_INDEX
-from app.models.product import mappings, settings
-from app.repositories.es_base import EsRepositoryInterface
+from app.models.es.product import mappings, settings
+from app.repositories.es.es_base import EsRepositoryInterface
 
 __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
