@@ -47,12 +47,12 @@
                     android:layout_marginTop="40dp"
                     android:layout_marginBottom="50dp"
                     android:layout_gravity="center">
+
                     <ImageView
                         android:id="@+id/user_infor_img"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
-                        android:src="@drawable/google"
-                        />
+                        android:src="@drawable/google" />
                 </androidx.cardview.widget.CardView>
 
                 <LinearLayout
@@ -104,6 +104,7 @@
                     android:layout_height="match_parent"
                     android:text="Giới tính"
                     android:padding="20dp"/>
+
                 <RadioGroup
                     android:id="@+id/radioSex"
                     android:layout_width="match_parent"
@@ -115,9 +116,10 @@
                         android:id="@+id/radioMale"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nam"
+                        android:layout_marginRight="60dp"
                         android:checked="true"
-                        android:layout_marginRight="60dp"/>
+                        android:text="Nam" />
+
                     <RadioButton
                         android:id="@+id/radioFemale"
                         android:layout_width="wrap_content"

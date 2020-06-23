@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
 
-public class ExpandHeightGridView extends GridView {
+    public class ExpandHeightGridView extends GridView {
 
 
     public ExpandHeightGridView(Context context) {
