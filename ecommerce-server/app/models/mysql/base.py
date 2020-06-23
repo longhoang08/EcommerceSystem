@@ -43,11 +43,11 @@ class UserBase():
 
     @declared_attr
     def address(self):
-        return _sa.Column(_sa.String(256), index=False, unique=True, nullable=True, default='')
+        return _sa.Column(_sa.String(256), index=False, unique=False, nullable=True, default='')
 
     @declared_attr
     def gender(self):
-        return _sa.Column(_sa.Integer(), index=False, unique=True, nullable=True, default=1)
+        return _sa.Column(_sa.Integer(), index=False, unique=False, nullable=True, default=1)
 
     @declared_attr
     def password(self):
