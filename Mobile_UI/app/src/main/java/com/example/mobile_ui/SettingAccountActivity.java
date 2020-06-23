@@ -243,21 +243,21 @@ public class SettingAccountActivity extends AppCompatActivity {
 
     //lắng nghe sự kiện đổi ảnh (gọi chụp ảnh Hay chọn từ file)
     @Override
-    protected <e> void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode==REQUEST_CODE_CAMERA && resultCode ==RESULT_OK && data!=null){
             Bitmap bitmap = (Bitmap) data.getExtras().get("data");
             user_infor_img.setImageBitmap(bitmap);
             return;
         }else
-        if(requestCode==REQUESFileNotFoundExceptionT_CODE_FOLDER && resultCode ==RESULT_OK && data!=null){
+        if(requestCode==REQUEST_CODE_FOLDER && resultCode ==RESULT_OK && data!=null){
             Uri uri = data.getData();
             try {
                 InputStream inputStream = getContentResolver().openInputStream(uri);
                 Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
                 user_infor_img.setImageBitmap(bitmap);
                 return;
-            } catch ( e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
