@@ -1,6 +1,9 @@
 package com.example.mobile_ui.Fragment;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +14,7 @@ import android.widget.Button;
 import android.widget.ListView;
 
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -18,6 +22,7 @@ import androidx.fragment.app.Fragment;
 //import com.example.mobile_ui.Adapter.CartProductShopAdapter;
 import com.example.mobile_ui.LoginActivity;
 //import com.example.mobile_ui.Model.CartShop;
+import com.example.mobile_ui.MainActivity;
 import com.example.mobile_ui.MyBuyrecordActivity;
 import com.example.mobile_ui.R;
 import com.example.mobile_ui.SettingAccountActivity;
@@ -32,17 +37,21 @@ public class AccountFragment extends Fragment {
     Button buttonSignUp, buttonLogin;
     ListView listViewDetailAcc;
     int REQUEST_CODE_LOGIN = 13;
+    TextView textViewNameUser, textViewSoSp;
 
     public View onCreateView(@NonNull final LayoutInflater inflater,
                              final ViewGroup container, Bundle savedInstanceState) {
-//        return inflater.inflate(R.layout.fragment_account, container, false);
         View root = inflater.inflate(R.layout.fragment_account, container, false);
         buttonLogin = root.findViewById(R.id.buttonLogin);
         buttonSignUp = root.findViewById(R.id.buttonSignUp);
+        // tên username, password
+        textViewNameUser = root.findViewById(R.id.textViewNameUser);
+        textViewSoSp = root.findViewById(R.id.textViewSoSp);
+
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getActivity().startActivityForResult(new Intent(getContext(), LoginActivity.class), REQUEST_CODE_LOGIN);
+                startActivityForResult(new Intent(getContext(), LoginActivity.class), REQUEST_CODE_LOGIN);
             }
         });
         buttonSignUp.setOnClickListener(new View.OnClickListener() {
@@ -75,17 +84,54 @@ public class AccountFragment extends Fragment {
                     case "Đơn hàng":
                         intent = new Intent(getContext(), MyBuyrecordActivity.class);
                         startActivity(intent);break;
+                    case "Đăng xuất":
+                        SharedPreferences sharedPreferences = getActivity().getSharedPreferences("VALUABLE_APP", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.remove("LOGIN_TOKEN");
+                        MainActivity.STATUS_LOGIN=false;
+                        System.out.println("LOGIN_TOKEN deleted");
+                        setFormAccordingStatusLogin();
                 }
             }
         });
 
-        // tên username, password
-        TextView textViewNameUser, textViewSoSp;
-        textViewNameUser = root.findViewById(R.id.textViewNameUser);
-        textViewSoSp = root.findViewById(R.id.textViewSoSp);
-        // ẩn nếu chưa đăng nhập
-        textViewNameUser.setVisibility(View.INVISIBLE);
-        textViewSoSp.setVisibility(View.INVISIBLE);
+        setFormAccordingStatusLogin();
         return root;
+    }
+
+    //lắng nghe sự kiện khi login trả về thành công
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        //super.onActivityResult(requestCode, resultCode, data); comment this unless you want to pass your result to the activity.
+        // Kiểm tra requestCode có trùng với REQUEST_CODE vừa dùng
+        if(requestCode == REQUEST_CODE_LOGIN) {
+            // resultCode được set bởi DetailActivity
+            // RESULT_OK chỉ ra rằng kết quả này đã thành công
+            if(resultCode == Activity.RESULT_OK) {
+                // Nhận dữ liệu từ Intent trả về
+                //final String result = data.getStringExtra("status");
+                setFormAccordingStatusLogin();
+                //if(result=="login success")  Toast.makeText(getActivity(), result, Toast.LENGTH_SHORT).show();
+            } else {
+                System.out.println("error in recerved anount success");
+            }
+        }
+    }
+
+    //set lại form khi bắt đầu activity hoặc khi status_login thay đổi
+    private void setFormAccordingStatusLogin(){
+        if(MainActivity.STATUS_LOGIN==true) {
+            textViewNameUser.setVisibility(View.VISIBLE);
+            textViewSoSp.setVisibility(View.VISIBLE);
+            listViewDetailAcc.setVisibility(View.VISIBLE);
+            buttonLogin.setVisibility(View.GONE);
+            buttonSignUp.setVisibility(View.GONE);
+        }else{
+            textViewNameUser.setVisibility(View.GONE);
+            textViewSoSp.setVisibility(View.GONE);
+            listViewDetailAcc.setVisibility(View.GONE);
+            buttonLogin.setVisibility(View.VISIBLE);
+            buttonSignUp.setVisibility(View.VISIBLE);
+        }
     }
 }

@@ -51,11 +51,11 @@ public class ListOfBuyrecordAdapter extends BaseAdapter {
             TextView money = view.findViewById(R.id.money);
 
             nameOfCustom.setText(data.get(position).getCustomer().getUsername());
-            proImg.setImageResource(data.get(position).getBuyProduct().getImageRepresent());
-            proName.setText(data.get(position).getBuyProduct().getName());
-            buyNum.setText("x" + data.get(position).getBuyNum());
-            price.setText("đ"+data.get(position).getBuyProduct().getPrice());
-            money.setText("Thành tiền : đ"+data.get(position).getMoney());
+//            proImg.setImageResource(data.get(position).getBuyProduct().getImageRepresent());
+//            proName.setText(data.get(position).getBuyProduct().getName());
+//            buyNum.setText("x" + data.get(position).getBuyNum());
+//            price.setText("đ"+data.get(position).getBuyProduct().getPrice());
+//            money.setText("Thành tiền : đ"+data.get(position).getMoney());
         }else{
             view=convertView;
         }

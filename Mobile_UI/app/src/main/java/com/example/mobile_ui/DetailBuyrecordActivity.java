@@ -1,12 +1,8 @@
 package com.example.mobile_ui;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
-import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -18,13 +14,16 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.mobile_ui.Adapter.ListOfBuyProductAdapter;
+import com.example.mobile_ui.Model.BuyRecord;
 import com.example.mobile_ui.Model.MyBuyRecord;
 import com.example.mobile_ui.Model.Product;
 
 import java.util.ArrayList;
 
-public class DetailMybuyrecordActivity extends AppCompatActivity {
+public class DetailBuyrecordActivity extends AppCompatActivity {
     TextView nameOfShop;
     TextView address;
     ListView listOfBuyProduct;
@@ -34,7 +33,7 @@ public class DetailMybuyrecordActivity extends AppCompatActivity {
     TextView review;
     LinearLayout footer;
     TextView buyAgain;
-    MyBuyRecord myBuyRecord;
+    BuyRecord buyRecord;
 
     void anhxa(){
         nameOfShop = findViewById(R.id.nameOfShop);
@@ -51,23 +50,23 @@ public class DetailMybuyrecordActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_mybuyrecord);
+        setContentView(R.layout.activity_detail_buyrecord);
         anhxa();
         //lấy dữ liệu đơn hàng từ id đơn hàng
         getData();
         //hiện listview
-        ListOfBuyProductAdapter adapter = new ListOfBuyProductAdapter(myBuyRecord.getBuyProduct(),myBuyRecord.getBuyNum());
+        ListOfBuyProductAdapter adapter = new ListOfBuyProductAdapter(buyRecord.getBuyProduct(),buyRecord.getBuyNum());
         listOfBuyProduct.setAdapter(adapter);
         UIUtils.setListViewHeightBasedOnItems(listOfBuyProduct);
         //đổ dữ liệu các view còn lại
-        nameOfShop.setText(myBuyRecord.getNameOfShop());
-        //address.setText(myBuyRecord.get);
-        money.setText(myBuyRecord.getMoney()+"");
-        transport.setText(transformFee(myBuyRecord.getMoney())+"");
-        moneySum.setText( (myBuyRecord.getMoney()+transformFee(myBuyRecord.getMoney())) + "");
-        //trạng thái đơn hàng là đã giao mới được đánh giá
-        String state = "dagiao";
-        if(!myBuyRecord.getState().equals(state)) footer.setVisibility(View.GONE);
+//        nameOfShop.setText(buyRecord.getNameOfShop());
+//        address.setText(buyRecord.get);
+        money.setText(buyRecord.getMoney()+"");
+        transport.setText(transformFee(buyRecord.getMoney())+"");
+//        moneySum.setText( (myBuyRecord.getMoney()+transformFee(myBuyRecord.getMoney())) + "");
+//        //trạng thái đơn hàng là đã giao mới được đánh giá
+//        String state = "dagiao";
+//        if(!myBuyRecord.getState().equals(state)) footer.setVisibility(View.GONE);
 //        Toast.makeText(DetailMybuyrecordActivity.this,
 //                "Đánh giá thành công : "+ myBuyRecord.getState(),
 //                Toast.LENGTH_SHORT).show();
@@ -75,20 +74,20 @@ public class DetailMybuyrecordActivity extends AppCompatActivity {
         review.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(DetailMybuyrecordActivity.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(DetailBuyrecordActivity.this);
                 final AlertDialog alert = builder.create();
-                LinearLayout layout = new LinearLayout(DetailMybuyrecordActivity.this);
+                LinearLayout layout = new LinearLayout(DetailBuyrecordActivity.this);
                 layout.setOrientation(LinearLayout.VERTICAL);
-                final RatingBar rate = new RatingBar(DetailMybuyrecordActivity.this);
-                LinearLayout layoutWrapRate = new LinearLayout(DetailMybuyrecordActivity.this);
+                final RatingBar rate = new RatingBar(DetailBuyrecordActivity.this);
+                LinearLayout layoutWrapRate = new LinearLayout(DetailBuyrecordActivity.this);
                 rate.setNumStars(5);
                 rate.setRating(1);
                 layoutWrapRate.addView(rate);
-                final EditText edt = new EditText(DetailMybuyrecordActivity.this);
+                final EditText edt = new EditText(DetailBuyrecordActivity.this);
                 edt.setHint("nhập đánh giá của bạn");
                 edt.setPadding(30, 30, 30, 30);
-                final Button close = new Button(DetailMybuyrecordActivity.this);
-                final Button submit = new Button(DetailMybuyrecordActivity.this);
+                final Button close = new Button(DetailBuyrecordActivity.this);
+                final Button submit = new Button(DetailBuyrecordActivity.this);
                 submit.setText("Gửi");
                 close.setText("Hủy");
                 layout.addView(layoutWrapRate);
@@ -100,7 +99,7 @@ public class DetailMybuyrecordActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         int star = (int) rate.getRating();
-                        Toast.makeText(DetailMybuyrecordActivity.this,
+                        Toast.makeText(DetailBuyrecordActivity.this,
                                 "Đánh giá thành công : "+ star+" "+edt.getText(),
                                 Toast.LENGTH_SHORT).show();
                         alert.cancel();
@@ -137,7 +136,7 @@ public class DetailMybuyrecordActivity extends AppCompatActivity {
         ArrayList<Integer> y=new ArrayList<Integer>();
         y.add(new Integer(2));
         y.add(new Integer(3));
-        myBuyRecord = new MyBuyRecord(1, "SHop A","dagiao", x, y,25000);
+//        myBuyRecord = new MyBuyRecord(1, "SHop A","dagiao", x, y,25000);
     }
 
     //lấy ra tiền vận chuyển

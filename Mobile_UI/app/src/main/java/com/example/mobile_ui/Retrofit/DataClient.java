@@ -7,6 +7,7 @@ import retrofit2.http.Body;
 import retrofit2.http.DELETE;
 import retrofit2.http.Field;
 import retrofit2.http.GET;
+import retrofit2.http.Headers;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
 
@@ -14,8 +15,9 @@ public interface DataClient {
     @GET("/")
     Call<List<User>> getUser();
 
-    @POST("/")
-    Call<User> signUp(@Body User user);
+    @Headers({"Accept:application/json", "Content-Type:application/json;"})
+    @POST("/register")
+    Call<String> signUp(@Body User user);
 
     @PUT("/")
     Call<User> updateUser(@Body User user);

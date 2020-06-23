@@ -8,30 +8,43 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.SearchView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.NetworkResponse;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.ServerError;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.HttpHeaderParser;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.mobile_ui.Adapter.CategoryProductScrollAdapter;
 import com.example.mobile_ui.Adapter.ProductAdapter;
 import com.example.mobile_ui.CartProductActivity;
 import com.example.mobile_ui.DetailProductActivity;
 import com.example.mobile_ui.ListCategoryActivity;
-import com.example.mobile_ui.MainActivity;
 import com.example.mobile_ui.Model.Category;
 import com.example.mobile_ui.Model.Product;
 import com.example.mobile_ui.R;
 import com.example.mobile_ui.SearchActivity;
 import com.example.mobile_ui.View.ExpandHeightGridView;
 
-import java.util.ArrayList;
-import java.util.List;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-import retrofit2.Call;
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class HomeFragment extends Fragment {
 
@@ -133,30 +146,10 @@ public class HomeFragment extends Fragment {
         listCategoryProduct.add(new Category(R.drawable.icon_pineapple, "Rồng hoa quả"));
         listCategoryProduct.add(new Category(R.drawable.icon_pineapple, "Rồng hoa quả"));
     }
+
+
 }
 
-    //2. fill du lieu trc khi hien fragment
-//    final TextView tv1 = root.findViewById(R.id.textViewEmail);
-//    DataClient dataClient = APIUtils.getData();
-//    Call<List<User>> callback = dataClient.getUser();
-//        callback.enqueue(new Callback<List<User>>() {
-//@Override
-//public void onResponse(Call<List<User>> call, Response<List<User>> response) {
-//        if(response!=null){
-//        List<User> users = response.body();
-//        String kq = "";
-//        for (User s : users) {
-//        Log.d(s.getEmail(),s.getEmail());
-//        kq+=" " + s.getEmail();
-//        }
-//        tv1.setText(kq);
-//        }
-//        }
-//@Override
-//public void onFailure(Call<List<User>> call, Throwable throwable) {
-//        Log.d("EEROR",throwable.getMessage());
-//        }
-//        });
 
 
 
@@ -187,3 +180,56 @@ public class HomeFragment extends Fragment {
 //        });
 
 
+//        2. fill du lieu trc khi hien fragment
+//        final TextView tv1 = root.findViewById(R.id.searchView);
+//        DataClient dataClient = APIUtils.getData();
+//        Call<List<User>> callback = dataClient.getUser();
+//        callback.enqueue(new Callback<List<User>>() {
+//            @Override
+//            public void onResponse(Call<List<User>> call, Response<List<User>> response) {
+//                if (response != null) {
+//                    List<User> users = response.body();
+//                    String kq = "";
+//                    for (User s : users) {
+//                        Log.d(s.getEmail(), s.getEmail());
+//                        kq += " " + s.getEmail();
+//                    }
+//                    tv1.setText(kq);
+//                }
+//            }
+//            @Override
+//            public void onFailure(Call<List<User>> call, Throwable throwable) {
+//                Log.d("EEROR", throwable.getMessage());
+//            }
+//        });
+
+//call post api
+
+    /*DataClient dataClient = APIUtils.getData();
+    User user = new User(
+                "nguyenthanhan1181999@gmail.com",
+                "0966947994",
+                "an123",
+                "12345",
+                "Ha Nam",
+                1
+    );
+    Call<String> callback = dataClient.signUp(user);
+    callback.enqueue(new Callback<String>() {
+        @Override
+        public void onResponse(Call<String> call, Response<String> response) {
+            if(response!=null){
+                Toast.makeText(getContext(),"co respone",Toast.LENGTH_SHORT).show();
+            String x = response.body();
+            searchView.setText("vao day");
+            }
+            Toast.makeText(getContext(),"ko co respone",Toast.LENGTH_SHORT).show();
+        }
+
+@Override
+public void onFailure(Call<String> call, Throwable t) {
+        Log.d("EEROR",t.getMessage());
+        }
+        });
+
+*/

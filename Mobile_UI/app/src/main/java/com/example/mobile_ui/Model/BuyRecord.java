@@ -1,8 +1,8 @@
 package com.example.mobile_ui.Model;
 
-public class BuyRecord {
-    private String state;
+import java.util.ArrayList;
 
+public class BuyRecord {
     public Customer getCustomer() {
         return customer;
     }
@@ -11,13 +11,24 @@ public class BuyRecord {
         this.customer = customer;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    private String state;
+    private int id;
     private Customer customer;
-    private Product buyProduct;
-    private int buyNum;
+    private ArrayList<Product> buyProduct;
+    private ArrayList<Integer> buyNum;
     private int money;
 
-    public BuyRecord(String state,Customer customer,Product product,int buyNum,int money) {
+    public BuyRecord(String state, int id, Customer customer, ArrayList<Product> product, ArrayList<Integer> buyNum, int money) {
         this.state = state;
+        this.id = id;
         this.customer=customer;
         this.buyProduct=product;
         this.buyNum=buyNum;
@@ -32,19 +43,19 @@ public class BuyRecord {
         this.state = state;
     }
 
-    public Product getBuyProduct() {
+    public ArrayList<Product> getBuyProduct() {
         return buyProduct;
     }
 
-    public void setBuyProduct(Product buyProduct) {
+    public void setBuyProduct(ArrayList<Product> buyProduct) {
         this.buyProduct = buyProduct;
     }
 
-    public int getBuyNum() {
+    public ArrayList<Integer> getBuyNum() {
         return buyNum;
     }
 
-    public void setBuyNum(int buyNum) {
+    public void setBuyNum(ArrayList<Integer> buyNum) {
         this.buyNum = buyNum;
     }
 

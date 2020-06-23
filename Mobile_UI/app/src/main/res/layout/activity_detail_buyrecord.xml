@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailMybuyrecordActivity"
+    tools:context=".DetailBuyrecordActivity"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -41,9 +41,9 @@
                     android:layout_height="wrap_content"
                     android:padding="5dp"
                     android:layout_marginLeft="10dp"
-                    android:text="tên shop"
+                    android:text="tên khách hàng"
                     android:textSize="25dp"
-                    android:id="@+id/nameOfShop"/>
+                    android:id="@+id/nameOfCustomer"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -177,7 +177,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Mua lại"
-            android:id="@+id/buyAgain"/>
+            android:text="Xác nhận"
+            android:id="@+id/confirm"/>
     </LinearLayout>
 </RelativeLayout>

@@ -7,16 +7,16 @@
     android:layout_marginBottom="8dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:id="@+id/HorizontalScrollViewTab">
+<!--    <HorizontalScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:id="@+id/HorizontalScrollViewTab">-->
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
 
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabLayoutBuyrecord"
@@ -33,10 +33,10 @@
                     android:layout_height="wrap_content"
                     android:text="Chờ xác nhận" />
 
-                <com.google.android.material.tabs.TabItem
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Chờ lấy hàng" />
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Chờ lấy hàng" />-->
 
                 <com.google.android.material.tabs.TabItem
 
@@ -50,21 +50,21 @@
                     android:layout_height="wrap_content"
                     android:text="Đã giao" />
 
-                <com.google.android.material.tabs.TabItem
+<!--                <com.google.android.material.tabs.TabItem-->
 
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Đã hủy" />
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Đã hủy" />-->
 
-                <com.google.android.material.tabs.TabItem
+<!--                <com.google.android.material.tabs.TabItem-->
 
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Trả hàng" />
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Trả hàng" />-->
 
             </com.google.android.material.tabs.TabLayout>
-        </LinearLayout>
-    </HorizontalScrollView>
+<!--        </LinearLayout>-->
+<!--    </HorizontalScrollView>-->
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPagerBuyrecord"
@@ -72,6 +72,6 @@
         android:layout_height="match_parent"
         android:layout_marginTop="8dp"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/HorizontalScrollViewTab">
+        android:layout_below="@+id/tabLayoutBuyrecord">
     </androidx.viewpager.widget.ViewPager>
 </RelativeLayout>

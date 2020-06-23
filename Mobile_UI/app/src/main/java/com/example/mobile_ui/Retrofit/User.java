@@ -6,124 +6,89 @@ import android.os.Parcelable;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-//        "user":"an",
-//        "password":"12345",
-//        "id":0,
-//        "is_admin":"Y",
-//        "name":"Nguyễn Thành An",
-//        "email":"nguyenthanhan1181999@gmail.com",
-//        "phone":"473654765",
-//        "address":"hà nội"
-public class User implements Parcelable {
-    public User(String name, String password,String email){
-        this.name=name;
-        this.password=password;
-        this.email=email;
-    }
-
-    @SerializedName("user")
+public class User {
+    @SerializedName("email")
     @Expose
-    private String user;
+    private String email;
+
+    @SerializedName("phone_number")
+    @Expose
+    private String phone_number;
+
+    @SerializedName("fullname")
+    @Expose
+    private String fullname;
 
     @SerializedName("password")
     @Expose
     private String password;
 
-    @SerializedName("id")
-    @Expose
-    private String id;
-
-    @SerializedName("is_admin")
-    @Expose
-    private String is_admin;
-
-    @SerializedName("name")
-    @Expose
-    private String name;
-
-    @SerializedName("email")
-    @Expose
-    private String email;
-
-    @SerializedName("phone")
-    @Expose
-    private String phone;
-
     @SerializedName("address")
     @Expose
     private String address;
 
-    protected User(Parcel in) {
-        user = in.readString();
-        password = in.readString();
-        id = in.readString();
-        is_admin = in.readString();
-        name = in.readString();
-        email = in.readString();
-        phone = in.readString();
-        address = in.readString();
+    @SerializedName("gender")
+    @Expose
+    private int gender;
+
+    public String getEmail() {
+        return email;
     }
 
-    public static final Creator<User> CREATOR = new Creator<User>() {
-        @Override
-        public User createFromParcel(Parcel in) {
-            return new User(in);
-        }
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-        @Override
-        public User[] newArray(int size) {
-            return new User[size];
-        }
-    };
+    public String getPhone_number() {
+        return phone_number;
+    }
 
-    //------------------------------
-    public String getUser() {
-        return user;
+    public void setPhone_number(String phone_number) {
+        this.phone_number = phone_number;
+    }
+
+    public String getFullname() {
+        return fullname;
+    }
+
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
     }
 
     public String getPassword() {
         return password;
     }
 
-    public String getId() {
-        return id;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public String getIs_admin() {
-        return is_admin;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public String getAddress(){
+    public String getAddress() {
         return address;
     }
 
-
-    @Override
-    public int describeContents() {
-        return 0;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(user);
-        dest.writeString(password);
-        dest.writeString(id);
-        dest.writeString(is_admin);
-        dest.writeString(name);
-        dest.writeString(email);
-        dest.writeString(phone);
-        dest.writeString(address);
+    public int getGender() {
+        return gender;
+    }
+
+    public void setGender(int gender) {
+        this.gender = gender;
+    }
+
+    public User(String email, String phone_number, String fullname, String password, String address, int gender) {
+        this.email = email;
+        this.phone_number = phone_number;
+        this.fullname = fullname;
+        this.password = password;
+        this.address = address;
+        this.gender = gender;
+    }
+    public User(String email,String fullname){
+        this.email=email;
+        this.fullname=fullname;
     }
 }

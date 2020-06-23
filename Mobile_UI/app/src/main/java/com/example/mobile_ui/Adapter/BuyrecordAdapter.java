@@ -22,11 +22,11 @@ public class BuyrecordAdapter extends FragmentPagerAdapter {
         super(fm);
         this.totalTabs = totalTabs;
         itemMenu.add("choxacnhan");
-        itemMenu.add("cholayhang");
+//        itemMenu.add("cholayhang");
         itemMenu.add("danggiao");
         itemMenu.add("dagiao");
-        itemMenu.add("dahuy");
-        itemMenu.add("trahang");
+//        itemMenu.add("dahuy");
+        //itemMenu.add("trahang");
         this.data=data;
     }
 
@@ -44,15 +44,15 @@ public class BuyrecordAdapter extends FragmentPagerAdapter {
             case 2:
                 buyrecordFragment = new BuyrecordFragment(filterData(itemMenu.get(2)));
                 return buyrecordFragment;
-            case 3:
-                buyrecordFragment = new BuyrecordFragment(filterData(itemMenu.get(3)));
-                return buyrecordFragment;
-            case 4:
-                buyrecordFragment = new BuyrecordFragment(filterData(itemMenu.get(4)));
-                return buyrecordFragment;
-            case 5:
-                buyrecordFragment = new BuyrecordFragment(filterData(itemMenu.get(5)));
-                return buyrecordFragment;
+//            case 3:
+//                buyrecordFragment = new BuyrecordFragment(filterData(itemMenu.get(3)));
+//                return buyrecordFragment;
+//            case 4:
+//                buyrecordFragment = new BuyrecordFragment(filterData(itemMenu.get(4)));
+//                return buyrecordFragment;
+//            case 5:
+//                buyrecordFragment = new BuyrecordFragment(filterData(itemMenu.get(5)));
+//                return buyrecordFragment;
             default:
                 return null;
         }
