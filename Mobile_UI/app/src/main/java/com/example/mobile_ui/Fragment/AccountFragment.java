@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import android.widget.TextView;
@@ -20,6 +21,17 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 //import com.example.mobile_ui.Adapter.CartProductShopAdapter;
+import com.android.volley.AuthFailureError;
+import com.android.volley.NetworkResponse;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.ServerError;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.HttpHeaderParser;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+import com.bumptech.glide.Glide;
 import com.example.mobile_ui.LoginActivity;
 //import com.example.mobile_ui.Model.CartShop;
 import com.example.mobile_ui.MainActivity;
@@ -28,9 +40,16 @@ import com.example.mobile_ui.R;
 import com.example.mobile_ui.SettingAccountActivity;
 import com.example.mobile_ui.SignUpActivity;
 import com.example.mobile_ui.StallActivity;
+import com.google.gson.JsonObject;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class AccountFragment extends Fragment {
 
@@ -38,10 +57,13 @@ public class AccountFragment extends Fragment {
     ListView listViewDetailAcc;
     int REQUEST_CODE_LOGIN = 13;
     TextView textViewNameUser, textViewSoSp;
+    ImageView user_infor_img_main;
 
     public View onCreateView(@NonNull final LayoutInflater inflater,
                              final ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_account, container, false);
+
+        user_infor_img_main = root.findViewById(R.id.user_infor_img_main);
         buttonLogin = root.findViewById(R.id.buttonLogin);
         buttonSignUp = root.findViewById(R.id.buttonSignUp);
         // tên username, password
@@ -88,13 +110,13 @@ public class AccountFragment extends Fragment {
                         SharedPreferences sharedPreferences = getActivity().getSharedPreferences("VALUABLE_APP", Context.MODE_PRIVATE);
                         SharedPreferences.Editor editor = sharedPreferences.edit();
                         editor.remove("LOGIN_TOKEN");
+                        editor.commit();
                         MainActivity.STATUS_LOGIN=false;
                         System.out.println("LOGIN_TOKEN deleted");
                         setFormAccordingStatusLogin();
                 }
             }
         });
-
         setFormAccordingStatusLogin();
         return root;
     }
@@ -121,17 +143,75 @@ public class AccountFragment extends Fragment {
     //set lại form khi bắt đầu activity hoặc khi status_login thay đổi
     private void setFormAccordingStatusLogin(){
         if(MainActivity.STATUS_LOGIN==true) {
-            textViewNameUser.setVisibility(View.VISIBLE);
-            textViewSoSp.setVisibility(View.VISIBLE);
-            listViewDetailAcc.setVisibility(View.VISIBLE);
-            buttonLogin.setVisibility(View.GONE);
-            buttonSignUp.setVisibility(View.GONE);
+            getUser();
         }else{
             textViewNameUser.setVisibility(View.GONE);
             textViewSoSp.setVisibility(View.GONE);
             listViewDetailAcc.setVisibility(View.GONE);
             buttonLogin.setVisibility(View.VISIBLE);
             buttonSignUp.setVisibility(View.VISIBLE);
+            user_infor_img_main.setImageResource(R.drawable.ic_person_black_24dp);
         }
+    }
+
+    private void getUser() {
+        // call api get status
+        RequestQueue queue = Volley.newRequestQueue(getActivity());
+        JSONObject params = new JSONObject();
+
+        final String url = "http://112.137.129.216:5001/api/users/get_status";
+        JsonObjectRequest jsonObjReq = new JsonObjectRequest(
+                Request.Method.GET, url, params,
+                new com.android.volley.Response.Listener<JSONObject>() {
+
+                    @Override
+                    public void onResponse(JSONObject response) {
+//                        Toast.makeText(getActivity(), response.toString(), Toast.LENGTH_LONG).show();
+                        try {
+                            JSONObject dataUser = response.getJSONObject("data");
+                            textViewNameUser.setVisibility(View.VISIBLE);
+                            textViewNameUser.setText((String) dataUser.get("fullname"));
+                            String urlAvatar = (String) dataUser.get("avatar_url");
+                            Glide.with(getActivity())
+                                    .load(urlAvatar).override(50, 50).centerCrop()
+                                    .into(user_infor_img_main);
+                            textViewSoSp.setVisibility(View.VISIBLE);
+                            listViewDetailAcc.setVisibility(View.VISIBLE);
+                            buttonLogin.setVisibility(View.GONE);
+                            buttonSignUp.setVisibility(View.GONE);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getActivity(), "error", Toast.LENGTH_LONG).show();
+                NetworkResponse response = error.networkResponse;
+                if (error instanceof ServerError && response != null) {
+                    try {
+                        String res = new String(response.data,
+                                HttpHeaderParser.parseCharset(response.headers, "utf-8"));
+                        System.out.println(res);
+                    } catch (UnsupportedEncodingException e1) {
+                        e1.printStackTrace();
+                    }
+                }
+            }
+        })
+        {
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                HashMap<String, String> headers = new HashMap<String, String>();
+                headers.put("Content-Type", "application/json");
+                SharedPreferences sharedPreferences = getActivity().getSharedPreferences("VALUABLE_APP", Context.MODE_PRIVATE);
+                String token = sharedPreferences.getString("LOGIN_TOKEN","");
+//                System.out.println(token);
+                headers.put("x-access-token", token);
+                return headers;
+            }
+        };
+        Volley.newRequestQueue(getActivity()).add(jsonObjReq);
     }
 }

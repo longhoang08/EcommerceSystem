@@ -38,6 +38,7 @@
         </androidx.cardview.widget.CardView>
 
         <Button
+            android:visibility="invisible"
             android:id="@+id/buttonSignUp"
             android:layout_width="100dp"
             android:layout_height="40dp"
@@ -52,6 +53,7 @@
             app:layout_constraintEnd_toStartOf="@+id/buttonLogin" />
 
         <Button
+            android:visibility="invisible"
             android:id="@+id/buttonLogin"
             android:layout_width="100dp"
             android:layout_height="40dp"
@@ -72,7 +74,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:text="Nguyễn Thành An"
+            android:text=""
             android:textColor="@android:color/black"
             app:layout_constraintStart_toEndOf="@+id/user_infor_img"
             app:layout_constraintTop_toTopOf="parent" />

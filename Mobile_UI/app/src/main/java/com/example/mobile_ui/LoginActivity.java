@@ -77,8 +77,12 @@ public class LoginActivity extends AppCompatActivity {
                             //lưu vào máy
                             SharedPreferences sharedPreferences = getSharedPreferences("VALUABLE_APP", Context.MODE_PRIVATE);
                             SharedPreferences.Editor editor = sharedPreferences.edit();
-                            editor.putString("LOGIN_TOKEN",response.toString());
-                            editor.apply();
+                            try {
+                                editor.putString("LOGIN_TOKEN", (String) response.get("access_token"));
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                            editor.commit();
                             System.out.println("save success LOGIN_TOKEN"+response.toString());
                             updateStateLogin();
                             // chuyển màn hình trước đó nếu đăng nhập thành công
