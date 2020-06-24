@@ -198,6 +198,12 @@ public class AccountFragment extends Fragment {
                         e1.printStackTrace();
                     }
                 }
+                SharedPreferences sharedPreferences = getActivity().getSharedPreferences("VALUABLE_APP", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.remove("LOGIN_TOKEN");
+                editor.commit();
+                MainActivity.STATUS_LOGIN=false;
+                setFormAccordingStatusLogin();
             }
         })
         {
