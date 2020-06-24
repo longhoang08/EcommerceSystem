@@ -37,6 +37,7 @@ import com.example.mobile_ui.LoginActivity;
 import com.example.mobile_ui.MainActivity;
 import com.example.mobile_ui.MyBuyrecordActivity;
 import com.example.mobile_ui.R;
+import com.example.mobile_ui.ResetPassActivity;
 import com.example.mobile_ui.SettingAccountActivity;
 import com.example.mobile_ui.SignUpActivity;
 import com.example.mobile_ui.StallActivity;
@@ -56,6 +57,7 @@ public class AccountFragment extends Fragment {
     Button buttonSignUp, buttonLogin;
     ListView listViewDetailAcc;
     int REQUEST_CODE_LOGIN = 13;
+
     TextView textViewNameUser, textViewSoSp;
     ImageView user_infor_img_main;
 
@@ -89,6 +91,7 @@ public class AccountFragment extends Fragment {
         abc.add("Xem Gian Hàng");
         abc.add("Đơn hàng");
         abc.add("Thiết lập tài khoản");
+        abc.add("Đổi mật khẩu");
         abc.add("Đăng xuất");
         ArrayAdapter adapter = new ArrayAdapter(getActivity().getApplicationContext(),android.R.layout.simple_list_item_1,abc);
         listViewDetailAcc.setAdapter(adapter);
@@ -105,6 +108,9 @@ public class AccountFragment extends Fragment {
                         startActivity(intent);break;
                     case "Đơn hàng":
                         intent = new Intent(getContext(), MyBuyrecordActivity.class);
+                        startActivity(intent);break;
+                    case "Đổi mật khẩu":
+                        intent = new Intent(getContext(), ResetPassActivity.class);
                         startActivity(intent);break;
                     case "Đăng xuất":
                         SharedPreferences sharedPreferences = getActivity().getSharedPreferences("VALUABLE_APP", Context.MODE_PRIVATE);

@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -25,10 +27,27 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.NetworkResponse;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.ServerError;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.HttpHeaderParser;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+import com.bumptech.glide.Glide;
 import com.example.mobile_ui.Retrofit.GetImgFormUrl;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class SettingAccountActivity extends AppCompatActivity {
     Button changeOrSave;
@@ -45,6 +64,7 @@ public class SettingAccountActivity extends AppCompatActivity {
     EditText pass;
     LinearLayout container_again_pass;
     EditText againPass;
+    LinearLayout container_pass;
 
     final int REQUEST_CODE_CAMERA=123;
     final int REQUEST_CODE_FOLDER=456;
@@ -59,9 +79,11 @@ public class SettingAccountActivity extends AppCompatActivity {
         radioFemale = findViewById(R.id.radioFemale);
         radioMale = findViewById(R.id.radioMale);
         date_of_birth = findViewById(R.id.date_of_birth);
+        date_of_birth.setVisibility(View.GONE);
         address = findViewById(R.id.address);
         phone = findViewById(R.id.phone);
         pass = findViewById(R.id.pass);
+        container_pass = findViewById(R.id.container_pass);
         container_again_pass = findViewById(R.id.container_again_pass);
         againPass = findViewById(R.id.againPass);
     }
@@ -71,7 +93,7 @@ public class SettingAccountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting_account);
         anhxa();
-        fillData();
+        getUser();
         offStateElement();
         setEventChangeOrSave();
     }
@@ -111,8 +133,8 @@ public class SettingAccountActivity extends AppCompatActivity {
         }
         address.setEnabled(true);
         phone.setEnabled(true);
-        pass.setEnabled(true);
         container_again_pass.setVisibility(View.VISIBLE);
+        container_pass.setVisibility(View.VISIBLE);
     }
 
     // trạng thái chỉ xem
@@ -125,26 +147,8 @@ public class SettingAccountActivity extends AppCompatActivity {
         }
         address.setEnabled(false);
         phone.setEnabled(false);
-        pass.setEnabled(false);
         container_again_pass.setVisibility(View.GONE);
-    }
-
-    //fill data
-    private void fillData(){
-        //data truyền vào
-        //https://thethao99.com/wp-content/uploads/2020/04/85094047_202036030982266_380222704411738112_n.jpg
-        //faker
-        //Nữ
-        //11/8/1999
-        //0966947994
-        //pass 12345
-        user_infor_img.setImageBitmap(GetImgFormUrl.getBitmapImgFromUrl("https://thethao99.com/wp-content/uploads/2020/04/85094047_202036030982266_380222704411738112_n.jpg"));
-        user_name.setText("faker");
-        radioFemale.setChecked(true);
-        date_of_birth.setText("11/8/1999");
-        address.setText("Hà Nội");
-        phone.setText("0966947994");
-        pass.setText("12345");
+        container_pass.setVisibility(View.GONE);
     }
 
     //post data
@@ -263,4 +267,69 @@ public class SettingAccountActivity extends AppCompatActivity {
         }
     }
 
+    private void getUser() {
+        // call api get status
+        RequestQueue queue = Volley.newRequestQueue(SettingAccountActivity.this);
+        JSONObject params = new JSONObject();
+
+        final String url = "http://112.137.129.216:5001/api/users/get_status";
+        JsonObjectRequest jsonObjReq = new JsonObjectRequest(
+                Request.Method.GET, url, params,
+                new com.android.volley.Response.Listener<JSONObject>() {
+
+                    @Override
+                    public void onResponse(JSONObject response) {
+//                        Toast.makeText(getActivity(), response.toString(), Toast.LENGTH_LONG).show();
+                        try {
+                            JSONObject dataUser = response.getJSONObject("data");
+                            String urlAvatar = (String) dataUser.get("avatar_url");
+//                                user_infor_img.setImageBitmap(GetImgFormUrl.getBitmapImgFromUrl(urlAvatar));
+                            Glide.with(SettingAccountActivity.this)
+                                    .load(urlAvatar).override(50, 50).centerCrop()
+                                    .into(user_infor_img);
+                                user_name.setText((String) dataUser.get("fullname"));
+                                String sex =(String) dataUser.get("gender");
+                                System.out.println("sex : "+ sex);
+                                System.out.println(sex=="0");
+                                if(sex.equals("0")) radioFemale.setChecked(true); else radioMale.setChecked(true);
+                                //date_of_birth.setText("11/8/1999");
+                                address.setText((String) dataUser.get("address"));
+                                //phone.setText("0966947994");
+                                //pass.setText("12345");
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(SettingAccountActivity.this, "error", Toast.LENGTH_LONG).show();
+                NetworkResponse response = error.networkResponse;
+                if (error instanceof ServerError && response != null) {
+                    try {
+                        String res = new String(response.data,
+                                HttpHeaderParser.parseCharset(response.headers, "utf-8"));
+                        System.out.println(res);
+                    } catch (UnsupportedEncodingException e1) {
+                        e1.printStackTrace();
+                    }
+                }
+            }
+        })
+        {
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                HashMap<String, String> headers = new HashMap<String, String>();
+                headers.put("Content-Type", "application/json");
+                SharedPreferences sharedPreferences = SettingAccountActivity.this.getSharedPreferences("VALUABLE_APP", Context.MODE_PRIVATE);
+                String token = sharedPreferences.getString("LOGIN_TOKEN","");
+//                System.out.println(token);
+                headers.put("x-access-token", token);
+                return headers;
+            }
+        };
+        Volley.newRequestQueue(SettingAccountActivity.this).add(jsonObjReq);
+    }
 }
