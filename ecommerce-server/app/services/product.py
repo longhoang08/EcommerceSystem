@@ -17,7 +17,7 @@ def get_result_search(args):
 
 def extract_product_data_from_response(responses):
     if not responses:
-        return {'result': {'products': []}}
+        return {'data': {'products': []}}
     hits = responses['hits']['hits']
     products = [item['_source'] for item in hits]
-    return {'result': {'products': products}}
+    return {'data': {'products': products}}

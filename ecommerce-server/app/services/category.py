@@ -21,4 +21,4 @@ def extract_categories_data_from_response(responses):
         return {'result': {'categories': []}}
     hits = responses['hits']['hits']
     keywords = [item['_source'] for item in hits]
-    return {'result': {'categories': keywords}}
+    return {'categories': keywords}

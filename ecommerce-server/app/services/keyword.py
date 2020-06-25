@@ -22,4 +22,4 @@ def extract_keywords_data_from_response(responses):
     hits = responses['hits']['hits']
     print(hits)
     keywords = [item['_source'] for item in hits]
-    return {'result': {'keywords': keywords}}
+    return {'keywords': keywords}
