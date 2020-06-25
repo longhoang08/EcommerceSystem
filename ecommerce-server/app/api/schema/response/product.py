@@ -14,11 +14,9 @@ _keyword_recommenders_data = api.model('keyword_recommenders_data', {
 })
 
 keyword_recommenders_response = api.model('keyword_recommenders_response', {
-    'code': fields.String(),
-    'result': fields.Nested(model=api.model('keywords', {
-        'keywords': fields.Nested(_keyword_recommenders_data)
-    }))
+    'keywords': fields.Nested(_keyword_recommenders_data)
 })
+
 _category_choosable_data = api.model('category_choosable_data', {
     'code': fields.String(),
     'id': fields.Integer(),
@@ -26,8 +24,5 @@ _category_choosable_data = api.model('category_choosable_data', {
 })
 
 category_choosable_response = api.model('category_choosable_response', {
-    'code': fields.String(),
-    'result': fields.Nested(model=api.model('keywords', {
-        'categories': fields.Nested(_category_choosable_data)
-    }))
+    'categories': fields.Nested(_category_choosable_data)
 })
