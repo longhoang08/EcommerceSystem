@@ -49,7 +49,7 @@ public class ListOfBuyProductAdapter extends BaseAdapter {
             TextView buyNum = view.findViewById(R.id.buyNum);
             TextView price = view.findViewById(R.id.price);
 
-            proImg.setImageResource(data.get(position).getImageRepresent());
+            proImg.setImageResource(Integer.parseInt(data.get(position).getImageRepresent()));
             proName.setText(data.get(position).getName());
             buyNum.setText("x" + dataBuyNum.get(position));
             price.setText("đ"+data.get(position).getPrice());

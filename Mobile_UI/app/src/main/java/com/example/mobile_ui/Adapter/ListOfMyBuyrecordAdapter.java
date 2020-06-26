@@ -57,7 +57,7 @@ public class ListOfMyBuyrecordAdapter extends BaseAdapter {
             Button buyAgain = view.findViewById(R.id.buyAgain);
 
             nameOfShop.setText(data.get(position).getNameOfShop());
-            proImg.setImageResource(data.get(position).getBuyProduct().get(0).getImageRepresent());
+            proImg.setImageResource(Integer.parseInt(data.get(position).getBuyProduct().get(0).getImageRepresent()));
             proName.setText(data.get(position).getBuyProduct().get(0).getName());
             buyNum.setText("x" + data.get(position).getBuyNum().get(0));
             buyNum1.setText(data.get(position).getBuyNum().get(0) + " sản phẩm");

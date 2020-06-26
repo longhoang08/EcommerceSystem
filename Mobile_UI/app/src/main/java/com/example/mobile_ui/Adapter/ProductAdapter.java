@@ -7,6 +7,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.mobile_ui.Model.Product;
 import com.example.mobile_ui.R;
 
@@ -45,7 +46,9 @@ public class ProductAdapter extends BaseAdapter {
             TextView textViewPriceProduct = view.findViewById(R.id.textViewPriceProduct);
             TextView textViewStarProduct = view.findViewById(R.id.textViewStarProduct);
             // gan gia tri
-            imageViewProduct.setImageResource(listProduct.get(position).getImageRepresent());
+            Glide.with(parent.getContext())
+                    .load(listProduct.get(position).getImageRepresent()).override(178, 178).centerCrop()
+                    .into(imageViewProduct);
             textViewNameProduct.setText(listProduct.get(position).getName());
             textViewPriceProduct.setText(listProduct.get(position).getPrice()+" VND");
             textViewStarProduct.setText(listProduct.get(position).getStar()+"");

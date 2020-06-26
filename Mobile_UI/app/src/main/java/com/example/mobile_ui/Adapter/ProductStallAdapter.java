@@ -49,7 +49,7 @@ public class ProductStallAdapter extends BaseAdapter {
         TextView price = (TextView) convertView.findViewById(R.id.stallProPrice);
         TextView number = (TextView) convertView.findViewById(R.id.stallProNumber);
 
-        imgPro.setImageResource(products.get(position).getImageRepresent());
+        imgPro.setImageResource(Integer.parseInt(products.get(position).getImageRepresent()));
         name.setText("Tên sản phẩm : " + products.get(position).getName());
         price.setText("Giá : " + products.get(position).getPrice());
         number.setText("Kho : "+products.get(position).getNumber());

@@ -110,24 +110,7 @@ public class SignUpActivity extends AppCompatActivity {
 
                     @Override
                     public void onResponse(JSONObject response) {
-                        Toast.makeText(SignUpActivity.this, response.toString(), Toast.LENGTH_LONG).show();
-                        if(response!=null){
-                            //lưu vào máy
-                            SharedPreferences sharedPreferences = getSharedPreferences("VALUABLE_APP", Context.MODE_PRIVATE);
-                            SharedPreferences.Editor editor = sharedPreferences.edit();
-                            try {
-                                editor.putString("LOGIN_TOKEN", (String) response.get("access_token"));
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                            editor.commit();
-                            System.out.println("save success LOGIN_TOKEN"+response.toString());
-                            // chuyển màn hình trước đó nếu đăng nhập thành công
-                            Intent intent = new Intent();
-//                            intent.putExtra("status", "login success");
-                            setResult(RESULT_OK, intent);
-                            finish();
-                        }
+
                     }
                 }, new Response.ErrorListener() {
             @Override

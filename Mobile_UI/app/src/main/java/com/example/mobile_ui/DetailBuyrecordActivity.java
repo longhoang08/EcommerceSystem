@@ -131,8 +131,8 @@ public class DetailBuyrecordActivity extends AppCompatActivity {
             int idOfMybyrecord = bundle.getInt("idOfMybyrecord");
         }
         ArrayList<Product> x=new ArrayList<Product>();
-        x.add(new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120));
-        x.add(new Product(R.drawable.icon_dragon_fruit,"thanh long",25000,100));
+        x.add(new Product(""+R.drawable.icon_kiwi_fruit,"banana",12000,120));
+        x.add(new Product(""+R.drawable.icon_dragon_fruit,"thanh long",25000,100));
         ArrayList<Integer> y=new ArrayList<Integer>();
         y.add(new Integer(2));
         y.add(new Integer(3));

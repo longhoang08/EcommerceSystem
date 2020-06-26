@@ -37,6 +37,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 public class SearchActivity extends AppCompatActivity {
     SearchView searchView;
@@ -99,7 +100,7 @@ public class SearchActivity extends AppCompatActivity {
         try {
             params.put("q", newText);
             params.put("_page", 0);
-            params.put("_limit", 5);
+            params.put("_limit", new Random().nextInt(5)+5);
 //            params.put("phone_number", "0854230458");
 //            params.put("email", "doanhc@gmail.com");
 //            params.put("address", "Ha Noi");

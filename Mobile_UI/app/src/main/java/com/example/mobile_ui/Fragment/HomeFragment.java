@@ -1,6 +1,8 @@
 package com.example.mobile_ui.Fragment;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,8 +37,10 @@ import com.example.mobile_ui.Model.Category;
 import com.example.mobile_ui.Model.Product;
 import com.example.mobile_ui.R;
 import com.example.mobile_ui.SearchActivity;
+import com.example.mobile_ui.SignUpActivity;
 import com.example.mobile_ui.View.ExpandHeightGridView;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -46,6 +50,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static android.app.Activity.RESULT_OK;
+
 public class HomeFragment extends Fragment {
 
     // gio hang
@@ -53,7 +59,7 @@ public class HomeFragment extends Fragment {
     //search
     TextView searchView;
 
-
+    ProductAdapter productAdapter;
     // danh sach the loai
     private RecyclerView recyclerViewCategoryProduct;
     private Button buttonViewAllCategoryProduct;
@@ -97,7 +103,7 @@ public class HomeFragment extends Fragment {
         expandHeightGridViewProduct = root.findViewById(R.id.expandHeightGridViewProduct);
         List<Product> listProduct = new ArrayList<>();
         loadDataProduct(listProduct);
-        ProductAdapter productAdapter = new ProductAdapter(listProduct);
+        productAdapter = new ProductAdapter(listProduct);
         expandHeightGridViewProduct.setAdapter(productAdapter);
         //end load san pham
         //su kien
@@ -122,16 +128,17 @@ public class HomeFragment extends Fragment {
     }
 
     private void loadDataProduct(List<Product> listProduct) {
-        listProduct.add(new Product(R.drawable.icon_dragon_fruit, "Redmi Note 7", 45000, 4.5));
-        listProduct.add(new Product(R.drawable.icon_kiwi_fruit, "Redmi Note 7", 45000, 3.5));
-        listProduct.add(new Product(R.drawable.icon_dragon_fruit, "Redmi Note 7", 45000, 2.5));
-        listProduct.add(new Product(R.drawable.icon_pineapple, "Redmi Note 7", 45000, 3.5));
-        listProduct.add(new Product(R.drawable.icon_kiwi_fruit, "Redmi Note 7", 45000, 1.5));
-        listProduct.add(new Product(R.drawable.icon_dragon_fruit, "Redmi Note 7", 45000, 5.0));
-        listProduct.add(new Product(R.drawable.icon_kiwi_fruit, "Redmi Note 7", 45000, 4.5));
-        listProduct.add(new Product(R.drawable.icon_dragon_fruit, "Redmi Note 7", 45000, 4.5));
-        listProduct.add(new Product(R.drawable.icon_pineapple, "Redmi Note 7", 45000, 4.5));
-        listProduct.add(new Product(R.drawable.icon_dragon_fruit, "Redmi Note 7", 45000, 4.5));
+        getProduct(listProduct);
+//        listProduct.add(new Product(R.drawable.icon_dragon_fruit, "Redmi Note 7", 45000, 4.5));
+//        listProduct.add(new Product(R.drawable.icon_kiwi_fruit, "Redmi Note 7", 45000, 3.5));
+//        listProduct.add(new Product(R.drawable.icon_dragon_fruit, "Redmi Note 7", 45000, 2.5));
+//        listProduct.add(new Product(R.drawable.icon_pineapple, "Redmi Note 7", 45000, 3.5));
+//        listProduct.add(new Product(R.drawable.icon_kiwi_fruit, "Redmi Note 7", 45000, 1.5));
+//        listProduct.add(new Product(R.drawable.icon_dragon_fruit, "Redmi Note 7", 45000, 5.0));
+//        listProduct.add(new Product(R.drawable.icon_kiwi_fruit, "Redmi Note 7", 45000, 4.5));
+//        listProduct.add(new Product(R.drawable.icon_dragon_fruit, "Redmi Note 7", 45000, 4.5));
+//        listProduct.add(new Product(R.drawable.icon_pineapple, "Redmi Note 7", 45000, 4.5));
+//        listProduct.add(new Product(R.drawable.icon_dragon_fruit, "Redmi Note 7", 45000, 4.5));
     }
 
     private void loadDataCategoryProduct(List<Category> listCategoryProduct) {
@@ -147,89 +154,68 @@ public class HomeFragment extends Fragment {
         listCategoryProduct.add(new Category(R.drawable.icon_pineapple, "Rồng hoa quả"));
     }
 
+    private void getProduct(final List<Product> listProduct){
+        RequestQueue queue = Volley.newRequestQueue(getActivity());
+        JSONObject params = new JSONObject();
+
+        try {
+            params.put("_page", 0);
+            params.put("_limit", 10);
+        } catch (JSONException e) {
+//            System.out.println("OK");
+        }
+        String url = "http://112.137.129.216:5001/api/product/search";
+        JsonObjectRequest jsonObjReq = new JsonObjectRequest(
+                Request.Method.POST, url, params,
+                new com.android.volley.Response.Listener<JSONObject>() {
+
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        //Toast.makeText(getActivity(), response.toString(), Toast.LENGTH_LONG).shgiow();
+                        try {
+                            JSONArray data = response.getJSONObject("data").getJSONArray("products");
+                            for (int i = 0; i < data.length(); i++) {
+                                JSONObject product = data.getJSONObject(i);
+                                String urlImage = (String) product.getJSONArray("images").getJSONObject(0).get("url");
+                                int price = ((Double) product.getJSONObject("price").get("price")).intValue();
+                                String name = (String) product.get("name");
+//                                Toast.makeText(getActivity(), price+"", Toast.LENGTH_LONG).show();
+                                listProduct.add(new Product(urlImage, name, price, 4.5));
+                                //Toast.makeText(getActivity(), listProduct.size()+"", Toast.LENGTH_LONG).show();
+
+                            }
+                            expandHeightGridViewProduct.setAdapter(productAdapter);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                NetworkResponse response = error.networkResponse;
+                    Toast.makeText(getActivity(), response.statusCode+"", Toast.LENGTH_LONG).show();
+                if (error instanceof ServerError && response != null) {
+                    try {
+                        String res = new String(response.data,
+                                HttpHeaderParser.parseCharset(response.headers, "utf-8"));
+                        System.out.println(res);
+                        Toast.makeText(getActivity(), res, Toast.LENGTH_LONG).show();
+                    } catch (UnsupportedEncodingException e1) {
+                        e1.printStackTrace();
+                    }
+                }
+            }
+        })
+        {
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                HashMap<String, String> headers = new HashMap<String, String>();
+                headers.put("Content-Type", "application/json");
+                return headers;
+            }
+        };
+        Volley.newRequestQueue(getActivity()).add(jsonObjReq);
+    }
 
 }
 
-
-
-
-
-
-
-
-
-
-
-    //call post api
-//    DataClient dataClient = APIUtils.getData();
-//    Call<User> callback = dataClient.signUp(user);
-//        callback.enqueue(new Callback<User>() {
-//@Override
-//public void onResponse(Call<User> call, Response<User> response) {
-//        if(response!=null){
-//        User x = response.body();
-//        String kq = x.getName()+ " "+x.getEmail();
-//        tv2.setText(kq);
-//        }
-//        }
-//
-//@Override
-//public void onFailure(Call<User> call, Throwable t) {
-//        Log.d("EEROR",t.getMessage());
-//        }
-//        });
-
-
-//        2. fill du lieu trc khi hien fragment
-//        final TextView tv1 = root.findViewById(R.id.searchView);
-//        DataClient dataClient = APIUtils.getData();
-//        Call<List<User>> callback = dataClient.getUser();
-//        callback.enqueue(new Callback<List<User>>() {
-//            @Override
-//            public void onResponse(Call<List<User>> call, Response<List<User>> response) {
-//                if (response != null) {
-//                    List<User> users = response.body();
-//                    String kq = "";
-//                    for (User s : users) {
-//                        Log.d(s.getEmail(), s.getEmail());
-//                        kq += " " + s.getEmail();
-//                    }
-//                    tv1.setText(kq);
-//                }
-//            }
-//            @Override
-//            public void onFailure(Call<List<User>> call, Throwable throwable) {
-//                Log.d("EEROR", throwable.getMessage());
-//            }
-//        });
-
-//call post api
-
-    /*DataClient dataClient = APIUtils.getData();
-    User user = new User(
-                "nguyenthanhan1181999@gmail.com",
-                "0966947994",
-                "an123",
-                "12345",
-                "Ha Nam",
-                1
-    );
-    Call<String> callback = dataClient.signUp(user);
-    callback.enqueue(new Callback<String>() {
-        @Override
-        public void onResponse(Call<String> call, Response<String> response) {
-            if(response!=null){
-                Toast.makeText(getContext(),"co respone",Toast.LENGTH_SHORT).show();
-            String x = response.body();
-            searchView.setText("vao day");
-            }
-            Toast.makeText(getContext(),"ko co respone",Toast.LENGTH_SHORT).show();
-        }
-
-@Override
-public void onFailure(Call<String> call, Throwable t) {
-        Log.d("EEROR",t.getMessage());
-        }
-        });
-
-*/

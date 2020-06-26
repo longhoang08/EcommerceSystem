@@ -39,10 +39,10 @@ public class StallActivity extends AppCompatActivity {
         numOfPro = findViewById(R.id.numOfPro);
 
         //fake data
-        products.add(new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120));
-        products.add(new Product(R.drawable.icon_kiwi_fruit,"apple",12000,100));
-        products.add(new Product(R.drawable.icon_kiwi_fruit,"lemon",12000,80));
-        products.add(new Product(R.drawable.icon_kiwi_fruit,"suit",12000,60));
+//        products.add(new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120));
+//        products.add(new Product(R.drawable.icon_kiwi_fruit,"apple",12000,100));
+//        products.add(new Product(R.drawable.icon_kiwi_fruit,"lemon",12000,80));
+//        products.add(new Product(R.drawable.icon_kiwi_fruit,"suit",12000,60));
 
         ProductStallAdapter adapter = new ProductStallAdapter(
                 StallActivity.this,R.layout.stall_product_item,products
