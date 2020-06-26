@@ -34,15 +34,19 @@ class ProductElasticRepo(EsRepositoryInterface):
         :return: result searching
         :rtype: List
         """
-        have_text_query = args['q'] is not None
-        if have_text_query:
-            queries = [self.build_first_query(args), self.build_second_query(args)]
-            responses, query_index = self.multiple_query(self._index, queries)
-        else:
-            product_es = self.build_first_query(args)
+        if args.get("skus"):
+            product_es = self.build_sku_query(args)
             responses = product_es.using(self.es).index(self._index).execute()
             responses = responses.to_dict()
-        # _logger.info(self.build_log_with_responses(responses))
+        else:
+            have_text_query = args['q'] is not None
+            if have_text_query:
+                queries = [self.build_first_query(args), self.build_second_query(args)]
+                responses, query_index = self.multiple_query(self._index, queries)
+            else:
+                product_es = self.build_first_query(args)
+                responses = product_es.using(self.es).index(self._index).execute()
+                responses = responses.to_dict()
         return responses
 
     def build_file_es(self, args, search_condition):
@@ -99,6 +103,15 @@ class ProductElasticRepo(EsRepositoryInterface):
         return product_es
 
     # Text query only =================================================================================================
+
+    def build_sku_query(self, args: dict):
+        skus = args.get('skus') or []
+        query_conditions = query.Bool(filter=[
+            query.Terms(sku=skus)
+        ])
+        products_es = self.build_product_es_from_text_query_condition(args, query_conditions)
+        # print(json.dumps(products_es.to_dict()))
+        return products_es
 
     def build_first_query(self, args) -> query.Query:
         """
@@ -174,7 +187,6 @@ class ProductElasticRepo(EsRepositoryInterface):
     @staticmethod
     def build_extract_match_text_conditions(search_text: str, search_text_no_tone: str, args: dict) \
             -> List[query.Query]:
-
         fuzzinees = "0"  # Don't use fuzzy in first query
 
         return [

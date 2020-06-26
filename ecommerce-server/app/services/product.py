@@ -8,6 +8,9 @@ __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
 
 
+def find_by_sku(sku: str):
+    return
+
 def get_result_search(args):
     args = Utilities.reformat_product_search_params(args)
     product_es = ProductElasticRepo()
