@@ -16,13 +16,19 @@ product_search_req = {
 }
 
 keyword_recommder_req = {
-    'q': fields.String(required=False, description='Text query to recommence'),
+    'q': fields.String(required=False, description='Text query to recommend'),
     '_page': fields.Integer(required=False, description='Paging, default to 1'),
     '_limit': fields.Integer(required=False, description='Number of product in response. Default to 10'),
 }
 
 category_finding_req = {
-    'q': fields.String(required=False, description='Text query to recommence'),
+    'q': fields.String(required=False, description='Text query to recommend'),
+    '_page': fields.Integer(required=False, description='Paging, default to 1'),
+    '_limit': fields.Integer(required=False, description='Number of product in response. Default to 10'),
+}
+
+brand_finding_req = {
+    'q': fields.String(required=False, description='Text query to recommend'),
     '_page': fields.Integer(required=False, description='Paging, default to 1'),
     '_limit': fields.Integer(required=False, description='Number of product in response. Default to 10'),
 }

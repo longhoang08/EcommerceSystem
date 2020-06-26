@@ -6,7 +6,7 @@ from flask import request
 
 import app.api.schema.request.product
 from app.extensions import Namespace
-from app.services import product, keyword, category
+from app.services import product, keyword, category, brand
 
 __author__ = 'LongHB'
 
@@ -18,6 +18,7 @@ ns = Namespace('product', description='Product operations')
 
 _product_search_req = ns.model('product_search_req', app.api.request.product.product_search_req)
 _category_finding_req = ns.model('_category_finding_req', app.api.request.product.category_finding_req)
+_brand_finding_req = ns.model('_brand_finding_req', app.api.request.product.brand_finding_req)
 _keyword_req = ns.model('keyword_recommend_req', app.api.request.product.keyword_recommder_req)
 
 
@@ -47,6 +48,16 @@ class CategoriesChooseable(flask_restplus.Resource):
         data = request.args or request.json
         validate_product_search_param(data)
         return category.get_result_search(data)
+
+
+@ns.route('/brands/choosable', methods=['POST'])
+class CategoriesChooseable(flask_restplus.Resource):
+    @ns.expect(_brand_finding_req, validate=True)
+    @ns.marshal_with(app.api.response.product.brand_choosable_response)
+    def post(self):
+        data = request.args or request.json
+        validate_product_search_param(data)
+        return brand.get_result_search(data)
 
 # _product_details_req = ns.model('product_details_req', app.api.schema.request.product.product_search_req)
 # @ns.route('/details', methods=['POST'])

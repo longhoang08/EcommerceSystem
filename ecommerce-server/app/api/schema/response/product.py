@@ -26,3 +26,14 @@ _category_choosable_data = api.model('category_choosable_data', {
 category_choosable_response = api.model('category_choosable_response', {
     'categories': fields.Nested(_category_choosable_data)
 })
+
+_brand_choosable_data = api.model('brand_choosable_data', {
+    'code': fields.String(),
+    'id': fields.Integer(),
+    'name': fields.String(),
+    'description': fields.String(),
+})
+
+brand_choosable_response = api.model('brand_choosable_response', {
+    'brands': fields.Nested(_brand_choosable_data)
+})
