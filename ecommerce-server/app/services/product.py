@@ -9,7 +9,13 @@ _logger = logging.getLogger(__name__)
 
 
 def find_by_sku(sku: str):
-    return
+    product_es = ProductElasticRepo()
+    responses = product_es.search({'skus': [sku]})
+    if not responses: return []
+    hits = responses['hits']['hits']
+    products = [item['_source'] for item in hits]
+    return products
+
 
 def get_result_search(args):
     args = Utilities.reformat_product_search_params(args)
