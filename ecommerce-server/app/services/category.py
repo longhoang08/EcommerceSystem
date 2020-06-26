@@ -18,7 +18,7 @@ def get_result_search(args):
 
 def extract_categories_data_from_response(responses):
     if not responses:
-        return {'result': {'categories': []}}
+        return {'categories': []}
     hits = responses['hits']['hits']
-    keywords = [item['_source'] for item in hits]
-    return {'categories': keywords}
+    categories = [item['_source'] for item in hits]
+    return {'categories': categories}
