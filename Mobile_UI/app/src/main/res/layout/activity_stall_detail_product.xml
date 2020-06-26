@@ -72,6 +72,7 @@ android:orientation="vertical">
         android:inputType="textPersonName"
         android:text=""
         android:hint="tên sản phẩm"/>
+
     <EditText
         android:id="@+id/edtDescript"
         android:layout_width="match_parent"
@@ -83,6 +84,7 @@ android:orientation="vertical">
         android:hint="mô tả sản phẩm"
         android:scrollHorizontally="false"
         />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -147,6 +149,7 @@ android:orientation="vertical">
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:src="@drawable/ic_store_mall_directory_black_24dp"/>
+
         <TextView
             android:layout_marginLeft="60dp"
             android:layout_width="100dp"
@@ -154,6 +157,7 @@ android:orientation="vertical">
             android:text="Kho hàng"
             android:textSize="20dp"
             android:layout_centerVertical="true"/>
+
         <EditText
             android:layout_marginLeft="160dp"
             android:layout_width="match_parent"

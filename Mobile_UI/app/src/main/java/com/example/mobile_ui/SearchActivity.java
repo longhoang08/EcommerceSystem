@@ -117,7 +117,7 @@ public class SearchActivity extends AppCompatActivity {
 //                        Toast.makeText(SearchActivity.this, response.toString(), Toast.LENGTH_LONG).show();
                         dataSearch = new ArrayList<>();
                         try {
-                            JSONArray categories = response.getJSONObject("data").getJSONObject("result").getJSONArray("categories");
+                            JSONArray categories = response.getJSONObject("data").getJSONArray("categories");
                             for (int i = 0; i < categories.length(); i++) {
                                 JSONObject category = categories.getJSONObject(i);
                                 dataSearch.add((String) category.get("name"));
