@@ -55,7 +55,7 @@ def confirm_user_by_email(email: str) -> User:
 def fetch_user_status(**kwargs):
     email = kwargs.get('email')
     user = repo.find_one_by_email(email)
-    return user
+    return user.to_display_dict()
 
 
 def login(username, password):

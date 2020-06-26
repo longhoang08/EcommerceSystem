@@ -47,5 +47,6 @@ class User(db.Model, TimestampMixin, UserBase):
             'fullname': self.fullname,
             'avatar_url': self.avatar_url,
             'gender': "Male" if self.gender else "Female",
-            'address': self.address
+            'address': self.address,
+            'role': "seller" if self.role == UserRole.Seller else "customer" if self.role == UserRole.Customer else 'admin'
         }

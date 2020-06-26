@@ -12,6 +12,7 @@ user_res = {
     'avatar_url': fields.String(description='Avatar url of user'),
     'address': fields.String(description='Adress of user'),
     'gender': fields.String(description='Gender of user'),
+    'role': fields.String(description='Role of user (admin, seller, customer)   '),
 }
 register_res = {
     'email': fields.String(description="Email"),

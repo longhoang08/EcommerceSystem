@@ -25,7 +25,7 @@ class ChangePassword(flask_restplus.Resource):
     def post(self):
         "validate user by current password and jwt token and set new password"
         data = request.args or request.json
-        return services.user.change_password(**data)
+        return services.user.change_password(**data).to_display_dict()
 
 
 _change_profile_req = ns.model('change_profile_req', app.api.schema.request.user.change_profile_req)
@@ -38,4 +38,4 @@ class UpdateProfile(flask_restplus.Resource):
     def post(self):
         "validate user by current password and jwt token and set new password"
         data = request.args or request.json
-        return services.user.change_profile(**data)
+        return services.user.change_profile(**data).to_display_dict()
