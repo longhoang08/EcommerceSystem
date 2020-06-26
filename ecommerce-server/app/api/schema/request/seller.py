@@ -11,7 +11,7 @@ seller_register_req = {
 
 ingest_data_req = {
     'sku': fields.String(required=True),
-    'branch_code': fields.String(requred=True),
+    'brand_code': fields.String(requred=True),
     'categories_code': fields.String(requred=True),
     'images_url': fields.List(fields.String(), required=False),
     'description': fields.String(requred=False),
