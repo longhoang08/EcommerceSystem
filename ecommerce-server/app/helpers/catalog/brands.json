@@ -1,0 +1,6380 @@
+{
+  "bao-minh": {
+    "code": "bao-minh",
+    "name": "B\u1ea3o Minh",
+    "id": 1184,
+    "description": ""
+  },
+  "ong-kims": {
+    "name": "\u00d4ng Kim'S",
+    "code": "ong-kims",
+    "id": 1326,
+    "description": ""
+  },
+  "phu-hai": {
+    "code": "phu-hai",
+    "name": "Ph\u00fa H\u1ea3i",
+    "description": "",
+    "id": 1318
+  },
+  "ba-vi": {
+    "code": "ba-vi",
+    "name": "BA V\u00cc",
+    "description": "",
+    "id": 1285
+  },
+  "da-lat-milk": {
+    "code": "da-lat-milk",
+    "name": "\u0110\u00e0 L\u1ea1t Milk",
+    "description": "",
+    "id": 1310
+  },
+  "vinamilk": {
+    "name": "Vinamilk",
+    "description": "",
+    "id": 1145,
+    "code": "vinamilk"
+  },
+  "yomost": {
+    "code": "yomost",
+    "description": "",
+    "name": "Yomost",
+    "id": 1518
+  },
+  "yakult": {
+    "code": "yakult",
+    "name": "Yakult",
+    "description": "",
+    "id": 1256
+  },
+  "zott": {
+    "description": "",
+    "name": "ZOTT",
+    "id": 1282,
+    "code": "zott"
+  },
+  "betagen": {
+    "code": "betagen",
+    "name": "Betagen",
+    "description": "",
+    "id": 1556
+  },
+  "th-true-milk": {
+    "name": "Th True Milk",
+    "description": "",
+    "id": 1323,
+    "code": "th-true-milk"
+  },
+  "monte": {
+    "code": "monte",
+    "name": "Monte",
+    "description": "",
+    "id": 1434
+  },
+  "th-true-yogurt": {
+    "code": "th-true-yogurt",
+    "name": "Th True Yogurt",
+    "description": "",
+    "id": 1324
+  },
+  "fami": {
+    "name": "Fami",
+    "description": "",
+    "id": 1358,
+    "code": "fami"
+  },
+  "vinasoy": {
+    "description": "",
+    "name": "Vinasoy",
+    "id": 1368,
+    "code": "vinasoy"
+  },
+  "hoff": {
+    "code": "hoff",
+    "description": "",
+    "name": "Hoff",
+    "id": 1557
+  },
+  "kun": {
+    "name": "Kun",
+    "description": "",
+    "id": 1408,
+    "code": "kun"
+  },
+  "lovein-farm": {
+    "name": "Love'in Farm",
+    "description": "",
+    "id": 1386,
+    "code": "lovein-farm"
+  },
+  "dutch-lady": {
+    "name": "Dutch Lady",
+    "description": "",
+    "id": 1144,
+    "code": "dutch-lady"
+  },
+  "lif": {
+    "description": "",
+    "name": "LiF",
+    "id": 1430,
+    "code": "lif"
+  },
+  "duc-viet": {
+    "code": "duc-viet",
+    "name": "\u0110\u1ee9c Vi\u1ec7t",
+    "description": "",
+    "id": 1251
+  },
+  "ika": {
+    "description": "",
+    "id": 1478,
+    "code": "ika",
+    "name": "\u00d4ng Gi\u00e0 Ika"
+  },
+  "cp": {
+    "code": "cp",
+    "name": "CP",
+    "description": "",
+    "id": 1249
+  },
+  "vissan": {
+    "code": "vissan",
+    "name": "Vissan",
+    "description": "",
+    "id": 1266
+  },
+  "vealz": {
+    "code": "vealz",
+    "name": "Vealz",
+    "description": "",
+    "id": 1268
+  },
+  "president": {
+    "code": "president",
+    "name": "Pr\u00e9sident",
+    "description": "",
+    "id": 1555
+  },
+  "anchor": {
+    "code": "anchor",
+    "name": "Anchor",
+    "description": "",
+    "id": 1482
+  },
+  "dabaco": {
+    "code": "dabaco",
+    "name": "Dabaco",
+    "description": "",
+    "id": 1257
+  },
+  "ba-huan": {
+    "code": "ba-huan",
+    "name": "BA HU\u00c2N",
+    "description": "",
+    "id": 1283
+  },
+  "lang-mo": {
+    "code": "lang-mo",
+    "name": "L\u00e0ng M\u01a1",
+    "description": "",
+    "id": 1343
+  },
+  "ginggrae": {
+    "code": "ginggrae",
+    "name": "Ginggrae",
+    "description": "",
+    "id": 1391
+  },
+  "binggrae": {
+    "name": "Binggrae",
+    "code": "binggrae",
+    "id": 1559,
+    "description": ""
+  },
+  "sgfood": {
+    "id": 1021,
+    "code": "sgfood",
+    "name": "SGFOOD",
+    "description": ""
+  },
+  "doi-dua-vang": {
+    "code": "doi-dua-vang",
+    "name": "\u0110\u00f4i \u0110\u0169a V\u00e0ng",
+    "description": "",
+    "id": 1265
+  },
+  "thabifood": {
+    "name": "Thabifood",
+    "code": "thabifood",
+    "id": 1562,
+    "description": ""
+  },
+  "home-food": {
+    "code": "home-food",
+    "name": "Home Food",
+    "description": "",
+    "id": 1264
+  },
+  "halong-canfoco": {
+    "code": "halong-canfoco",
+    "name": "Halong Canfoco",
+    "description": "",
+    "id": 1355
+  },
+  "three-lady-cooks": {
+    "code": "three-lady-cooks",
+    "name": "Three Lady Cooks",
+    "description": "",
+    "id": 1448
+  },
+  "barilla": {
+    "code": "barilla",
+    "name": "Barilla",
+    "description": "",
+    "id": 843
+  },
+  "micoem": {
+    "description": "",
+    "name": "Micoem",
+    "id": 1337,
+    "code": "micoem"
+  },
+  "omni": {
+    "code": "omni",
+    "name": "Omni",
+    "description": "",
+    "id": 1328
+  },
+  "koreno": {
+    "code": "koreno",
+    "name": "Koreno",
+    "description": "",
+    "id": 1438
+  },
+  "paldo": {
+    "code": "paldo",
+    "name": "Paldo",
+    "description": "",
+    "id": 1320
+  },
+  "safoco": {
+    "code": "safoco",
+    "name": "Safoco",
+    "description": "",
+    "id": 1307
+  },
+  "de-nhat": {
+    "description": "",
+    "name": "\u0110\u1ec7 Nh\u1ea5t",
+    "id": 1420,
+    "code": "de-nhat"
+  },
+  "vina-acecook": {
+    "description": "",
+    "name": "Vina Acecook",
+    "id": 1275,
+    "code": "vina-acecook"
+  },
+  "hao-hao": {
+    "description": "",
+    "name": "H\u1ea3o H\u1ea3o",
+    "id": 1280,
+    "code": "hao-hao"
+  },
+  "omachi": {
+    "description": "",
+    "name": "Omachi",
+    "id": 1274,
+    "code": "omachi"
+  },
+  "kokomi": {
+    "description": "",
+    "name": "Kokomi",
+    "id": 1345,
+    "code": "kokomi"
+  },
+  "nhip-song": {
+    "description": "",
+    "name": "Nh\u1ecbp S\u1ed1ng",
+    "id": 1407,
+    "code": "nhip-song"
+  },
+  "vifon": {
+    "description": "",
+    "name": "Vifon",
+    "id": 1293,
+    "code": "vifon"
+  },
+  "reeva": {
+    "description": "",
+    "name": "Reeva",
+    "id": 1311,
+    "code": "reeva"
+  },
+  "cung-dinh": {
+    "description": "",
+    "name": "Cung \u0110\u00ecnh",
+    "id": 1308,
+    "code": "cung-dinh"
+  },
+  "yen-viet": {
+    "description": "",
+    "name": "Y\u1ebfn Vi\u1ec7t",
+    "id": 1284,
+    "code": "yen-viet"
+  },
+  "indomie": {
+    "description": "",
+    "name": "Indomie",
+    "id": 1348,
+    "code": "indomie"
+  },
+  "miliket": {
+    "description": "",
+    "name": "Miliket",
+    "id": 1366,
+    "code": "miliket"
+  },
+  "lovemi": {
+    "code": "lovemi",
+    "name": "Lovemi",
+    "description": "",
+    "id": 1341
+  },
+  "miwon": {
+    "name": "Miwon",
+    "code": "miwon",
+    "id": 1335,
+    "description": ""
+  },
+  "kewpie": {
+    "code": "kewpie",
+    "name": "Kewpie",
+    "description": "",
+    "id": 1385
+  },
+  "ajinomoto": {
+    "name": "Ajinomoto",
+    "description": "",
+    "code": "ajinomoto",
+    "id": 840
+  },
+  "hai-chau": {
+    "code": "hai-chau",
+    "name": "H\u1ea3i Ch\u00e2u",
+    "description": "",
+    "id": 1271
+  },
+  "chinsu": {
+    "description": "",
+    "name": "CHIN-SU",
+    "id": 1272,
+    "code": "chinsu"
+  },
+  "maggi": {
+    "code": "maggi",
+    "name": "Maggi",
+    "description": "",
+    "id": 1339
+  },
+  "tam-thai-tu": {
+    "code": "tam-thai-tu",
+    "name": "Tam th\u00e1i t\u1eed",
+    "description": "",
+    "id": 1460
+  },
+  "cholimex": {
+    "name": "Cholimex",
+    "code": "cholimex",
+    "id": 1398,
+    "description": ""
+  },
+  "knorr": {
+    "code": "knorr",
+    "name": "Knorr",
+    "description": "",
+    "id": 1346
+  },
+  "tai-ky": {
+    "code": "tai-ky",
+    "name": "T\u00e0i K\u00fd",
+    "description": "",
+    "id": 1405
+  },
+  "dh-foods": {
+    "name": "DH Foods",
+    "code": "dh-foods",
+    "id": 1561,
+    "description": ""
+  },
+  "nam-ngu": {
+    "code": "nam-ngu",
+    "name": "Nam Ng\u01b0",
+    "description": "",
+    "id": 1332
+  },
+  "bien-hoa": {
+    "code": "bien-hoa",
+    "name": "BI\u00caN H\u00d2A",
+    "description": "",
+    "id": 1286
+  },
+  "visachef": {
+    "code": "visachef",
+    "name": "Visachef",
+    "description": "",
+    "id": 1394
+  },
+  "hanh-phuc": {
+    "code": "hanh-phuc",
+    "name": "H\u1ea1nh Ph\u00fac",
+    "description": "",
+    "id": 1354
+  },
+  "meizan": {
+    "code": "meizan",
+    "name": "Meizan",
+    "description": "",
+    "id": 1406
+  },
+  "neptune": {
+    "code": "neptune",
+    "name": "Neptune",
+    "description": "",
+    "id": 1382
+  },
+  "vinaseed": {
+    "code": "vinaseed",
+    "name": "Vinaseed",
+    "description": "",
+    "id": 1270
+  },
+  "simply": {
+    "code": "simply",
+    "name": "Simply",
+    "description": "",
+    "id": 1304
+  },
+  "sloboda": {
+    "code": "sloboda",
+    "name": "Sloboda",
+    "description": "",
+    "id": 1302
+  },
+  "ensure": {
+    "code": "ensure",
+    "name": "Ensure",
+    "description": "",
+    "id": 1442
+  },
+  "ong-tho": {
+    "code": "ong-tho",
+    "name": "\u00d4ng Th\u1ecd",
+    "description": "",
+    "id": 1365
+  },
+  "hoan-hao": {
+    "code": "hoan-hao",
+    "name": "Ho\u00e0n h\u1ea3o",
+    "description": "",
+    "id": 1440
+  },
+  "fristi": {
+    "description": "",
+    "name": "Fristi",
+    "id": 1429,
+    "code": "fristi"
+  },
+  "milo": {
+    "name": "Milo",
+    "description": "",
+    "id": 879,
+    "code": "milo"
+  },
+  "nestle": {
+    "name": "NESTL\u00c9",
+    "description": "",
+    "id": 358,
+    "code": "nestle"
+  },
+  "ovaltine": {
+    "name": "Ovaltine",
+    "description": "",
+    "id": 1321,
+    "code": "ovaltine"
+  },
+  "meadow-fresh": {
+    "code": "meadow-fresh",
+    "name": "Meadow Fresh",
+    "description": "",
+    "id": 1441
+  },
+  "bento": {
+    "code": "bento",
+    "name": "Bento",
+    "description": "",
+    "id": 1467
+  },
+  "tea-plus": {
+    "description": "",
+    "name": "Tea Plus",
+    "id": 1384,
+    "code": "tea-plus"
+  },
+  "pepsico": {
+    "description": "",
+    "name": "Pepsico",
+    "id": 1423,
+    "code": "pepsico"
+  },
+  "redbull": {
+    "description": "",
+    "name": "Redbull",
+    "id": 1261,
+    "code": "redbull"
+  },
+  "sting": {
+    "description": "",
+    "name": "Sting",
+    "id": 327,
+    "code": "sting"
+  },
+  "aquafina": {
+    "description": "",
+    "name": "Aquafina",
+    "id": 1263,
+    "code": "aquafina"
+  },
+  "dasani": {
+    "description": "",
+    "name": "Dasani",
+    "id": 1228,
+    "code": "dasani"
+  },
+  "lavie": {
+    "description": "",
+    "name": "Lavie",
+    "id": 1262,
+    "code": "lavie"
+  },
+  "twister": {
+    "name": "Twister",
+    "code": "twister",
+    "id": 333,
+    "description": ""
+  },
+  "7up": {
+    "description": "",
+    "name": "7Up",
+    "id": 1422,
+    "code": "7up"
+  },
+  "coca-cola": {
+    "description": "",
+    "name": "Coca-Cola",
+    "id": 314,
+    "code": "coca-cola"
+  },
+  "schweppes": {
+    "description": "",
+    "name": "Schweppes",
+    "id": 1306,
+    "code": "schweppes"
+  },
+  "sprite": {
+    "description": "",
+    "name": "Sprite",
+    "id": 1424,
+    "code": "sprite"
+  },
+  "wonderfarm": {
+    "code": "wonderfarm",
+    "name": "Wonderfarm",
+    "description": "",
+    "id": 1425
+  },
+  "kirin": {
+    "description": "",
+    "name": "Kirin",
+    "id": 346,
+    "code": "kirin"
+  },
+  "nutriboost": {
+    "name": "Nutriboost",
+    "id": 1229,
+    "description": "",
+    "code": "nutriboost"
+  },
+  "asahi": {
+    "code": "asahi",
+    "name": "ASAHI",
+    "description": "",
+    "id": 898
+  },
+  "woongjin": {
+    "code": "woongjin",
+    "name": "Woongjin",
+    "description": "",
+    "id": 1395
+  },
+  "aquarius": {
+    "description": "",
+    "name": "Aquarius",
+    "id": 1426,
+    "code": "aquarius"
+  },
+  "pocari-sweat": {
+    "description": "",
+    "name": "Pocari Sweat",
+    "id": 1443,
+    "code": "pocari-sweat"
+  },
+  "strongbow": {
+    "description": "",
+    "name": "Strongbow",
+    "id": 1388,
+    "code": "strongbow"
+  },
+  "sabeco": {
+    "description": "",
+    "name": "Sabeco",
+    "id": 1402,
+    "code": "sabeco"
+  },
+  "tiger": {
+    "description": "",
+    "name": "Tiger",
+    "id": 1325,
+    "code": "tiger"
+  },
+  "heineken": {
+    "description": "",
+    "name": "Heineken",
+    "id": 1259,
+    "code": "heineken"
+  },
+  "viet-ha": {
+    "code": "viet-ha",
+    "name": "Vi\u1ec7t H\u00e0",
+    "description": "",
+    "id": 1401
+  },
+  "habeco": {
+    "description": "",
+    "name": "Habeco",
+    "id": 1267,
+    "code": "habeco"
+  },
+  "huda": {
+    "description": "",
+    "name": "Huda",
+    "id": 1403,
+    "code": "huda"
+  },
+  "budweiser": {
+    "description": "",
+    "name": "BUDWEISER",
+    "id": 1290,
+    "code": "budweiser"
+  },
+  "trung-nguyen": {
+    "code": "trung-nguyen",
+    "name": "Trung Nguy\u00ean",
+    "description": "",
+    "id": 1295
+  },
+  "lipton": {
+    "code": "lipton",
+    "name": "Lipton",
+    "description": "",
+    "id": 1397
+  },
+  "wakeup": {
+    "code": "wakeup",
+    "name": "Wake-Up",
+    "description": "",
+    "id": 1453
+  },
+  "highland": {
+    "code": "highland",
+    "name": "Highland",
+    "description": "",
+    "id": 1260
+  },
+  "phinn": {
+    "code": "phinn",
+    "name": "PHIL",
+    "description": "",
+    "id": 1454
+  },
+  "vinacafe": {
+    "code": "vinacafe",
+    "name": "Vinacafe",
+    "description": "",
+    "id": 1371
+  },
+  "xuan-an": {
+    "code": "xuan-an",
+    "name": "Xu\u00e2n An",
+    "description": "",
+    "id": 1449
+  },
+  "danisa": {
+    "name": "DANISA",
+    "id": 1171,
+    "description": "",
+    "code": "danisa"
+  },
+  "chocopie": {
+    "code": "chocopie",
+    "name": "Choco-Pie",
+    "description": "",
+    "id": 1298
+  },
+  "orion": {
+    "code": "orion",
+    "name": "Orion",
+    "description": "",
+    "id": 1252
+  },
+  "kinh-do": {
+    "name": "Kinh \u0110\u00f4",
+    "code": "kinh-do",
+    "id": 1550,
+    "description": ""
+  },
+  "doakbua": {
+    "code": "doakbua",
+    "name": "Doakbua",
+    "description": "",
+    "id": 1314
+  },
+  "kitkat": {
+    "name": "KitKat",
+    "code": "kitkat",
+    "id": 1553,
+    "description": ""
+  },
+  "richy": {
+    "name": "Richy",
+    "code": "richy",
+    "id": 1548,
+    "description": ""
+  },
+  "royal-family": {
+    "name": "Royal Family",
+    "code": "royal-family",
+    "id": 1549,
+    "description": ""
+  },
+  "ostar": {
+    "name": "O'Star",
+    "code": "ostar",
+    "id": 1563,
+    "description": ""
+  },
+  "toppo": {
+    "code": "toppo",
+    "name": "Toppo",
+    "description": "",
+    "id": 1400
+  },
+  "akiko": {
+    "code": "akiko",
+    "name": "Akiko",
+    "description": "",
+    "id": 1444
+  },
+  "ichi": {
+    "code": "ichi",
+    "name": "Ichi",
+    "description": "",
+    "id": 1349
+  },
+  "nabati": {
+    "name": "Nabati",
+    "code": "nabati",
+    "id": 1551,
+    "description": ""
+  },
+  "yupi": {
+    "code": "yupi",
+    "name": "Yupi",
+    "description": "",
+    "id": 1417
+  },
+  "xylitol": {
+    "name": "Xylitol",
+    "code": "xylitol",
+    "id": 1393,
+    "description": ""
+  },
+  "snickers": {
+    "code": "snickers",
+    "name": "Snickers",
+    "description": "",
+    "id": 1409
+  },
+  "jack-n-jill": {
+    "description": "",
+    "name": "JACK N' JILL",
+    "id": 941,
+    "code": "jack-n-jill"
+  },
+  "oreo": {
+    "name": "Oreo",
+    "code": "oreo",
+    "id": 1547,
+    "description": ""
+  },
+  "starmix": {
+    "code": "starmix",
+    "name": "Starmix",
+    "description": "",
+    "id": 1445
+  },
+  "vinmart": {
+    "code": "vinmart",
+    "name": "Vinmart",
+    "description": "",
+    "id": 1247
+  },
+  "lays": {
+    "name": "Lay's",
+    "code": "lays",
+    "id": 1530,
+    "description": ""
+  },
+  "vinamit": {
+    "code": "vinamit",
+    "name": "Vinamit",
+    "description": "",
+    "id": 1421
+  },
+  "huu-nghi": {
+    "code": "huu-nghi",
+    "name": "H\u1eefu Ngh\u1ecb",
+    "description": "",
+    "id": 1350
+  },
+  "oishi": {
+    "code": "oishi",
+    "name": "Oishi",
+    "description": "",
+    "id": 1329
+  },
+  "pinattsu": {
+    "code": "pinattsu",
+    "name": "Pinattsu",
+    "description": "",
+    "id": 1317
+  },
+  "toonies": {
+    "name": "Toonies",
+    "code": "toonies",
+    "id": 1564,
+    "description": ""
+  },
+  "tao-kae-noi": {
+    "name": "Tao Kae Noi",
+    "code": "tao-kae-noi",
+    "id": 1554,
+    "description": ""
+  },
+  "corn-chip": {
+    "name": "Corn Chip",
+    "code": "corn-chip",
+    "id": 1565,
+    "description": ""
+  },
+  "rejoice": {
+    "id": 1541,
+    "description": "",
+    "name": "Rejoice",
+    "code": "rejoice"
+  },
+  "pantene": {
+    "id": 1389,
+    "description": "",
+    "name": "Pantene",
+    "code": "pantene"
+  },
+  "head--shoulders": {
+    "id": 1413,
+    "description": "",
+    "name": "Head & Shoulders",
+    "code": "head--shoulders"
+  },
+  "romano": {
+    "code": "romano",
+    "name": "Romano",
+    "description": "",
+    "id": 1411
+  },
+  "sunsilk": {
+    "code": "sunsilk",
+    "name": "Sunsilk",
+    "description": "",
+    "id": 1414
+  },
+  "xmen": {
+    "code": "xmen",
+    "name": "X-men",
+    "description": "",
+    "id": 1396
+  },
+  "dove": {
+    "code": "dove",
+    "name": "Dove",
+    "description": "",
+    "id": 1412
+  },
+  "vedette": {
+    "code": "vedette",
+    "name": "Vedette",
+    "description": "",
+    "id": 1418
+  },
+  "enchanteur": {
+    "code": "enchanteur",
+    "name": "Enchanteur",
+    "description": "",
+    "id": 1399
+  },
+  "lifebuoy": {
+    "name": "Lifebuoy",
+    "code": "lifebuoy",
+    "id": 1431,
+    "description": ""
+  },
+  "green-cross": {
+    "code": "green-cross",
+    "name": "Green Cross",
+    "description": "",
+    "id": 1359
+  },
+  "darlie": {
+    "code": "darlie",
+    "name": "Darlie",
+    "description": "",
+    "id": 1466
+  },
+  "others": {
+    "id": 362,
+    "code": "others",
+    "description": "",
+    "name": "OTHERS"
+  },
+  "listerine": {
+    "name": "LISTERINE",
+    "code": "listerine",
+    "id": 1036,
+    "description": ""
+  },
+  "gillette": {
+    "code": "gillette",
+    "description": "",
+    "name": "Gillette",
+    "id": 1410
+  },
+  "durex": {
+    "name": "Durex",
+    "code": "durex",
+    "id": 1377,
+    "description": ""
+  },
+  "downy": {
+    "description": "",
+    "id": 1485,
+    "code": "downy",
+    "name": "Downy"
+  },
+  "lix": {
+    "code": "lix",
+    "name": "Lix",
+    "description": "",
+    "id": 1342
+  },
+  "jumbo": {
+    "code": "jumbo",
+    "name": "Jumbo",
+    "description": "",
+    "id": 1471
+  },
+  "kotex": {
+    "code": "kotex",
+    "name": "Kotex",
+    "description": "",
+    "id": 1435
+  },
+  "diana": {
+    "code": "diana",
+    "description": "",
+    "name": "Diana",
+    "id": 1376
+  },
+  "laurier": {
+    "code": "laurier",
+    "name": "Laurier",
+    "description": "",
+    "id": 777
+  },
+  "silkwell": {
+    "code": "silkwell",
+    "name": "Silkwell",
+    "description": "",
+    "id": 1305
+  },
+  "bobby": {
+    "code": "bobby",
+    "name": "Bobby",
+    "description": "",
+    "id": 507
+  },
+  "niva": {
+    "code": "niva",
+    "name": "Niva",
+    "description": "",
+    "id": 1330
+  },
+  "emos-premium": {
+    "code": "emos-premium",
+    "name": "E'mos Premium",
+    "description": "",
+    "id": 513
+  },
+  "fairy": {
+    "code": "fairy",
+    "name": "Fairy",
+    "description": "",
+    "id": 1357
+  },
+  "ha-noi-silk": {
+    "code": "ha-noi-silk",
+    "name": "H\u00e0 N\u1ed9i Silk",
+    "description": "",
+    "id": 1436
+  },
+  "lency": {
+    "code": "lency",
+    "name": "Lency",
+    "description": "",
+    "id": 1364
+  },
+  "teddybear": {
+    "code": "teddybear",
+    "name": "Teddybear",
+    "description": "",
+    "id": 1300
+  },
+  "watersilk": {
+    "code": "watersilk",
+    "name": "Watersilk",
+    "description": "",
+    "id": 1416
+  },
+  "elene": {
+    "code": "elene",
+    "name": "Elene",
+    "description": "",
+    "id": 1363
+  },
+  "silcot": {
+    "code": "silcot",
+    "name": "SILCOT",
+    "description": "",
+    "id": 975
+  },
+  "scotch-brite": {
+    "code": "scotch-brite",
+    "name": "Scotch Brite",
+    "description": "",
+    "id": 1463
+  },
+  "3m": {
+    "name": "3M",
+    "code": "3m",
+    "id": 1545,
+    "description": ""
+  },
+  "energizer": {
+    "code": "energizer",
+    "name": "ENERGIZER",
+    "description": "",
+    "id": 190
+  },
+  "rang-dong": {
+    "code": "rang-dong",
+    "name": "R\u1ea1ng \u0110\u00f4ng",
+    "description": "",
+    "id": 1468
+  },
+  "lenger": {
+    "code": "lenger",
+    "name": "Lenger",
+    "description": "",
+    "id": 1273
+  },
+  "vineco": {
+    "code": "vineco",
+    "name": "VinEco",
+    "description": "",
+    "id": 1248
+  },
+  "kinh-bac": {
+    "description": "",
+    "code": "kinh-bac",
+    "name": "Kinh B\u1eafc",
+    "id": 1594
+  },
+  "vinmart-home": {
+    "code": "vinmart-home",
+    "name": "Vinmart Home",
+    "description": "",
+    "id": 1319
+  },
+  "kinder-joy": {
+    "code": "kinder-joy",
+    "name": "Kinder Joy",
+    "description": "",
+    "id": 1387
+  },
+  "unicharm": {
+    "code": "unicharm",
+    "description": "",
+    "name": "Unicharm",
+    "id": 786
+  },
+  "greeneco": {
+    "code": "greeneco",
+    "name": "Greeneco",
+    "description": "",
+    "id": 1360
+  },
+  "ponnie": {
+    "description": "",
+    "id": 1457,
+    "code": "ponnie",
+    "name": "Ponnie"
+  },
+  "ps": {
+    "code": "ps",
+    "name": "P/S",
+    "description": "",
+    "id": 1392
+  },
+  "meat-deli": {
+    "code": "meat-deli",
+    "name": "MEATDeli",
+    "description": "",
+    "id": 1361
+  },
+  "red-ruby": {
+    "code": "red-ruby",
+    "description": "",
+    "name": "Red Ruby",
+    "id": 1502
+  },
+  "ho-van": {
+    "code": "ho-van",
+    "name": "H\u1ed5 V\u1eb1n",
+    "description": "",
+    "id": 1499
+  },
+  "vinh-hao": {
+    "code": "vinh-hao",
+    "name": "V\u0129nh H\u1ea3o",
+    "description": "",
+    "id": 1455
+  },
+  "fresh-air": {
+    "code": "fresh-air",
+    "name": "Fresh Air",
+    "description": "",
+    "id": 1437
+  },
+  "rando": {
+    "code": "rando",
+    "name": "Rando",
+    "description": "",
+    "id": 1315
+  },
+  "on1": {
+    "id": 1201,
+    "code": "on1",
+    "name": "ON1",
+    "description": ""
+  },
+  "relax": {
+    "code": "relax",
+    "name": "Relax",
+    "description": "",
+    "id": 1309
+  },
+  "sunlight": {
+    "name": "Sunlight",
+    "code": "sunlight",
+    "id": 1543,
+    "description": ""
+  },
+  "heo-cao-boi": {
+    "code": "heo-cao-boi",
+    "name": "Heo Cao B\u1ed3i",
+    "description": "",
+    "id": 1475
+  },
+  "ottogi": {
+    "description": "",
+    "name": "Ottogi",
+    "id": 1322,
+    "code": "ottogi"
+  },
+  "tan-phu": {
+    "code": "tan-phu",
+    "name": "T\u00e2n Ph\u00fa",
+    "description": "",
+    "id": 1297
+  },
+  "hanvico": {
+    "code": "hanvico",
+    "name": "Hanvico",
+    "description": "",
+    "id": 1353
+  },
+  "nabefa": {
+    "code": "nabefa",
+    "name": "Nabefa",
+    "description": "",
+    "id": 1333
+  },
+  "kidsmoon": {
+    "code": "kidsmoon",
+    "name": "Kidsmoon",
+    "description": "",
+    "id": 1347
+  },
+  "dr-mask": {
+    "code": "dr-mask",
+    "name": "Dr Mask",
+    "description": "",
+    "id": 1356
+  },
+  "oral-clean": {
+    "name": "Oral Clean",
+    "code": "oral-clean",
+    "id": 1540,
+    "description": ""
+  },
+  "samyang": {
+    "code": "samyang",
+    "name": "Samyang",
+    "description": "",
+    "id": 1470
+  },
+  "cocoxim": {
+    "name": "CoCoXim",
+    "code": "cocoxim",
+    "id": 1558,
+    "description": ""
+  },
+  "phu-gia": {
+    "name": "Ph\u00fa Gia",
+    "code": "phu-gia",
+    "id": 1546,
+    "description": ""
+  },
+  "truc-bach": {
+    "description": "",
+    "name": "Tr\u00fac B\u1ea1ch",
+    "id": 1404,
+    "code": "truc-bach"
+  },
+  "senka": {
+    "code": "senka",
+    "name": "Senka",
+    "description": "",
+    "id": 417
+  },
+  "kico": {
+    "code": "kico",
+    "name": "Kico",
+    "description": "",
+    "id": 1415
+  },
+  "bibigo": {
+    "code": "bibigo",
+    "name": "Bibigo",
+    "description": "",
+    "id": 1279
+  },
+  "mayan": {
+    "code": "mayan",
+    "name": "Mayan",
+    "description": "",
+    "id": 1338
+  },
+  "closeup": {
+    "code": "closeup",
+    "name": "Closeup",
+    "description": "",
+    "id": 1380
+  },
+  "herbal": {
+    "code": "herbal",
+    "name": "Herbal",
+    "description": "",
+    "id": 1352
+  },
+  "omachi-102": {
+    "description": "",
+    "name": "Omachi 102",
+    "id": 1501,
+    "code": "omachi-102"
+  },
+  "hasubi": {
+    "code": "hasubi",
+    "name": "Hasubi",
+    "description": "",
+    "id": 1464
+  },
+  "bucher": {
+    "code": "bucher",
+    "name": "Bucher",
+    "description": "",
+    "id": 1278
+  },
+  "oneone": {
+    "code": "oneone",
+    "name": "Oneone",
+    "description": "",
+    "id": 1246
+  },
+  "lu": {
+    "code": "lu",
+    "name": "Lu",
+    "description": "",
+    "id": 1340
+  },
+  "vina-towel": {
+    "code": "vina-towel",
+    "name": "Vina Towel",
+    "description": "",
+    "id": 1292
+  },
+  "freskan": {
+    "code": "freskan",
+    "name": "Freskan",
+    "description": "",
+    "id": 1258
+  },
+  "dr-thanh": {
+    "code": "dr-thanh",
+    "name": "Dr. Thanh",
+    "description": "",
+    "id": 1427
+  },
+  "fuji": {
+    "code": "fuji",
+    "name": "Fuji",
+    "description": "",
+    "id": 1433
+  },
+  "bless-you": {
+    "code": "bless-you",
+    "name": "BLESS YOU",
+    "description": "",
+    "id": 1289
+  },
+  "moc-chau": {
+    "code": "moc-chau",
+    "name": "M\u1ed9c Ch\u00e2u",
+    "description": "",
+    "id": 1334
+  },
+  "ariel": {
+    "description": "",
+    "id": 771,
+    "code": "ariel",
+    "name": "Ariel"
+  },
+  "fresh-foods": {
+    "code": "fresh-foods",
+    "name": "Fresh Foods",
+    "description": "",
+    "id": 1432
+  },
+  "fresh-food": {
+    "code": "fresh-food",
+    "name": "Fresh Food",
+    "description": "",
+    "id": 1480
+  },
+  "cau-tre": {
+    "name": "C\u1ea7u Tre",
+    "code": "cau-tre",
+    "id": 1560,
+    "description": ""
+  },
+  "song-thuy": {
+    "description": "",
+    "id": 1477,
+    "code": "song-thuy",
+    "name": "Song Th\u1ee7y"
+  },
+  "surf": {
+    "code": "surf",
+    "name": "Surf",
+    "description": "",
+    "id": 1439
+  },
+  "colgate": {
+    "name": "Colgate",
+    "code": "colgate",
+    "id": 1465,
+    "description": ""
+  },
+  "3-mien": {
+    "description": "",
+    "name": "3 Mi\u1ec1n",
+    "id": 1419,
+    "code": "3-mien"
+  },
+  "ace-foods": {
+    "code": "ace-foods",
+    "name": "ACE Foods",
+    "description": "",
+    "id": 1479
+  },
+  "kiaora": {
+    "code": "kiaora",
+    "name": "KiaOra",
+    "description": "",
+    "id": 1458
+  },
+  "comfort": {
+    "name": "Comfort",
+    "code": "comfort",
+    "id": 1303,
+    "description": ""
+  },
+  "ori-food": {
+    "code": "ori-food",
+    "name": "Ori Food",
+    "description": "",
+    "id": 1379
+  },
+  "mirinda": {
+    "description": "",
+    "name": "Mirinda",
+    "id": 1336,
+    "code": "mirinda"
+  },
+  "omo": {
+    "code": "omo",
+    "name": "Omo",
+    "description": "",
+    "id": 1327
+  },
+  "kiwifood": {
+    "code": "kiwifood",
+    "name": "Kiwifood",
+    "description": "",
+    "id": 1533
+  },
+  "clear": {
+    "code": "clear",
+    "name": "Clear",
+    "description": "",
+    "id": 1390
+  },
+  "hoa-doanh": {
+    "name": "Hoa Doanh",
+    "code": "hoa-doanh",
+    "id": 1476,
+    "description": ""
+  },
+  "bistro": {
+    "code": "bistro",
+    "name": "BISTRO",
+    "description": "",
+    "id": 1287
+  },
+  "thuan-phat": {
+    "code": "thuan-phat",
+    "name": "Thu\u1eadn Ph\u00e1t",
+    "description": "",
+    "id": 1296
+  },
+  "inochi": {
+    "code": "inochi",
+    "name": "Inochi",
+    "description": "",
+    "id": 1472
+  },
+  "trident": {
+    "code": "trident",
+    "name": "Trident",
+    "description": "",
+    "id": 1254
+  },
+  "mavin": {
+    "code": "mavin",
+    "name": "Mavin",
+    "description": "",
+    "id": 1473
+  },
+  "devondale": {
+    "code": "devondale",
+    "name": "Devondale",
+    "description": "",
+    "id": 1313
+  },
+  "lactacyd": {
+    "name": "Lactacyd",
+    "code": "lactacyd",
+    "id": 1544,
+    "description": ""
+  },
+  "vinmart-good": {
+    "name": "Vinmart Good",
+    "code": "vinmart-good",
+    "id": 1552,
+    "description": ""
+  },
+  "hazeline": {
+    "name": "Hazeline",
+    "code": "hazeline",
+    "id": 1539,
+    "description": ""
+  },
+  "vivant": {
+    "description": "",
+    "name": "Vivant",
+    "id": 1370,
+    "code": "vivant"
+  },
+  "3f": {
+    "code": "3f",
+    "name": "3F",
+    "description": "",
+    "id": 1538
+  },
+  "whisper": {
+    "code": "whisper",
+    "name": "Whisper",
+    "description": "",
+    "id": 1375
+  },
+  "playmore": {
+    "code": "playmore",
+    "name": "Playmore",
+    "description": "",
+    "id": 1253
+  },
+  "amur-pearl": {
+    "code": "amur-pearl",
+    "name": "Amur Pearl",
+    "description": "",
+    "id": 1269
+  },
+  "australias-own": {
+    "code": "australias-own",
+    "name": "Australia's Own",
+    "description": "",
+    "id": 303
+  },
+  "mvp": {
+    "code": "mvp",
+    "name": "MVP",
+    "description": "",
+    "id": 1481
+  },
+  "vim": {
+    "code": "vim",
+    "name": "Vim",
+    "description": "",
+    "id": 1294
+  },
+  "blago": {
+    "code": "blago",
+    "name": "Blago",
+    "description": "",
+    "id": 1288
+  },
+  "lacomka": {
+    "code": "lacomka",
+    "name": "Lacomka",
+    "description": "",
+    "id": 1344
+  },
+  "vinmart-care": {
+    "name": "Vinmart Care",
+    "code": "vinmart-care",
+    "id": 1542,
+    "description": ""
+  },
+  "promess": {
+    "code": "promess",
+    "name": "Promess",
+    "description": "",
+    "id": 1316
+  },
+  "compact": {
+    "code": "compact",
+    "name": "Compact",
+    "description": "",
+    "id": 1456
+  },
+  "nexcare": {
+    "code": "nexcare",
+    "name": "Nexcare",
+    "description": "",
+    "id": 1331
+  },
+  "draytek": {
+    "code": "draytek",
+    "name": "DRAYTEK",
+    "description": "",
+    "id": 204
+  },
+  "acer": {
+    "code": "acer",
+    "name": "ACER",
+    "id": 276,
+    "description": ""
+  },
+  "asus": {
+    "code": "asus",
+    "name": "ASUS",
+    "description": "",
+    "id": 275
+  },
+  "questek": {
+    "code": "questek",
+    "name": "QUESTEK",
+    "description": "",
+    "id": 196
+  },
+  "dell": {
+    "code": "dell",
+    "name": "Dell",
+    "description": "",
+    "id": 269
+  },
+  "hp": {
+    "code": "hp",
+    "name": "HP",
+    "description": "",
+    "id": 268
+  },
+  "ibm": {
+    "code": "ibm",
+    "name": "IBM",
+    "description": "",
+    "id": 239
+  },
+  "lenovo": {
+    "code": "lenovo",
+    "name": "Lenovo",
+    "description": "",
+    "id": 274
+  },
+  "samsung": {
+    "code": "samsung",
+    "name": "SAMSUNG",
+    "description": "",
+    "id": 277
+  },
+  "sony": {
+    "code": "sony",
+    "name": "SONY",
+    "description": "",
+    "id": 273
+  },
+  "toshiba": {
+    "code": "toshiba",
+    "description": "",
+    "name": "TOSHIBA",
+    "id": 253
+  },
+  "apple": {
+    "code": "apple",
+    "name": "APPLE",
+    "id": 279,
+    "description": ""
+  },
+  "khac": {
+    "code": "khac",
+    "name": "Kh\u00e1c",
+    "id": 165,
+    "description": ""
+  },
+  "jackly": {
+    "code": "jackly",
+    "name": "JACKLY",
+    "description": "",
+    "id": 49
+  },
+  "commscope": {
+    "name": "CommScope",
+    "description": "",
+    "id": 120,
+    "code": "commscope"
+  },
+  "dintek": {
+    "code": "dintek",
+    "name": "Dintek",
+    "description": "",
+    "id": 118
+  },
+  "evga": {
+    "code": "evga",
+    "name": "EVGA",
+    "description": "",
+    "id": 46
+  },
+  "unitek": {
+    "code": "unitek",
+    "name": "UNITEK",
+    "description": "",
+    "id": 191
+  },
+  "elecom": {
+    "code": "elecom",
+    "name": "ELECOM",
+    "description": "",
+    "id": 280
+  },
+  "1more": {
+    "code": "1more",
+    "name": "1More",
+    "description": "",
+    "id": 128
+  },
+  "tako": {
+    "code": "tako",
+    "name": "TAKO",
+    "description": "",
+    "id": 54
+  },
+  "panasonic": {
+    "name": "PANASONIC",
+    "code": "panasonic",
+    "id": 243,
+    "description": ""
+  },
+  "cooler-master": {
+    "code": "cooler-master",
+    "name": "Cooler Master",
+    "description": "",
+    "id": 251
+  },
+  "cisco": {
+    "code": "cisco",
+    "name": "Cisco",
+    "description": "",
+    "id": 121
+  },
+  "d-link": {
+    "name": "D-LINK",
+    "description": "",
+    "code": "d-link",
+    "id": 209
+  },
+  "kingmax": {
+    "name": "KINGMAX",
+    "description": "",
+    "code": "kingmax",
+    "id": 259
+  },
+  "corsair": {
+    "code": "corsair",
+    "name": "CORSAIR",
+    "description": "",
+    "id": 260
+  },
+  "brother": {
+    "code": "brother",
+    "name": "BROTHER",
+    "description": "",
+    "id": 184
+  },
+  "hxs": {
+    "code": "hxs",
+    "name": "HXS",
+    "description": "",
+    "id": 52
+  },
+  "logitech": {
+    "code": "logitech",
+    "name": "LOGITECH",
+    "id": 241,
+    "description": ""
+  },
+  "seagate": {
+    "code": "seagate",
+    "description": "",
+    "name": "SEAGATE",
+    "id": 254
+  },
+  "transcend": {
+    "code": "transcend",
+    "name": "TRANSCEND",
+    "description": "",
+    "id": 232
+  },
+  "wd": {
+    "name": "WD",
+    "description": "",
+    "code": "wd",
+    "id": 256
+  },
+  "microlab": {
+    "code": "microlab",
+    "name": "MICROLAB",
+    "description": "",
+    "id": 212
+  },
+  "soundmax": {
+    "name": "SOUNDMAX",
+    "description": "",
+    "code": "soundmax",
+    "id": 211
+  },
+  "topcash": {
+    "code": "topcash",
+    "name": "TOPCASH",
+    "description": "",
+    "id": 173
+  },
+  "canon": {
+    "code": "canon",
+    "name": "CANON",
+    "description": "",
+    "id": 186
+  },
+  "epson": {
+    "code": "epson",
+    "name": "EPSON",
+    "id": 244,
+    "description": ""
+  },
+  "xerox": {
+    "code": "xerox",
+    "name": "XEROX",
+    "description": "",
+    "id": 185
+  },
+  "kaspersky": {
+    "code": "kaspersky",
+    "name": "KASPERSKY",
+    "description": "",
+    "id": 95
+  },
+  "linksys": {
+    "id": 208,
+    "code": "linksys",
+    "name": "LINKSYS",
+    "description": ""
+  },
+  "a4-tech": {
+    "code": "a4-tech",
+    "name": "A4 TECH",
+    "description": "",
+    "id": 220
+  },
+  "microsoft": {
+    "code": "microsoft",
+    "name": "MICROSOFT",
+    "description": "",
+    "id": 278
+  },
+  "mitsumi": {
+    "code": "mitsumi",
+    "name": "MITSUMI",
+    "description": "",
+    "id": 214
+  },
+  "apollo": {
+    "code": "apollo",
+    "name": "APOLLO",
+    "description": "",
+    "id": 242
+  },
+  "bingo": {
+    "code": "bingo",
+    "name": "BINGO",
+    "description": "",
+    "id": 177
+  },
+  "bosser": {
+    "code": "bosser",
+    "name": "BOSSER",
+    "description": "",
+    "id": 176
+  },
+  "silicon": {
+    "name": "SILICON",
+    "description": "",
+    "code": "silicon",
+    "id": 180
+  },
+  "datamax": {
+    "code": "datamax",
+    "name": "Datamax",
+    "description": "",
+    "id": 89
+  },
+  "honeywell": {
+    "code": "honeywell",
+    "name": "HONEYWELL",
+    "description": "",
+    "id": 175
+  },
+  "dsb": {
+    "code": "dsb",
+    "name": "DSB",
+    "description": "",
+    "id": 179
+  },
+  "maxell": {
+    "code": "maxell",
+    "name": "MAXELL",
+    "description": "",
+    "id": 53
+  },
+  "arrow": {
+    "code": "arrow",
+    "name": "ARROW",
+    "description": "",
+    "id": 225
+  },
+  "acbel": {
+    "code": "acbel",
+    "name": "ACBEL",
+    "description": "",
+    "id": 252
+  },
+  "apacer": {
+    "code": "apacer",
+    "name": "APACER",
+    "description": "",
+    "id": 262
+  },
+  "tplink": {
+    "code": "tplink",
+    "name": "TPLINK",
+    "description": "",
+    "id": 205
+  },
+  "santak": {
+    "code": "santak",
+    "name": "SANTAK",
+    "description": "",
+    "id": 203
+  },
+  "np": {
+    "code": "np",
+    "name": "NP",
+    "description": "",
+    "id": 181
+  },
+  "toto-link": {
+    "name": "TOTO LINK",
+    "description": "",
+    "id": 206,
+    "code": "toto-link"
+  },
+  "sandisk": {
+    "code": "sandisk",
+    "name": "SANDISK",
+    "description": "",
+    "id": 230
+  },
+  "dtech": {
+    "code": "dtech",
+    "name": "DTECH",
+    "description": "",
+    "id": 51
+  },
+  "newmen": {
+    "code": "newmen",
+    "name": "NEWMEN",
+    "description": "",
+    "id": 217
+  },
+  "cadivi": {
+    "code": "cadivi",
+    "name": "CADIVI",
+    "description": "",
+    "id": 91
+  },
+  "hitachi": {
+    "name": "HITACHI",
+    "description": "",
+    "code": "hitachi",
+    "id": 255
+  },
+  "pisen": {
+    "code": "pisen",
+    "description": "",
+    "name": "PISEN",
+    "id": 265
+  },
+  "zadez": {
+    "code": "zadez",
+    "name": "Zadez",
+    "description": "",
+    "id": 99
+  },
+  "kingston": {
+    "code": "kingston",
+    "name": "KINGSTON",
+    "description": "",
+    "id": 258
+  },
+  "amd": {
+    "name": "AMD",
+    "id": 235,
+    "code": "amd",
+    "description": ""
+  },
+  "ssk": {
+    "code": "ssk",
+    "name": "SSK",
+    "description": "",
+    "id": 134
+  },
+  "knet": {
+    "code": "knet",
+    "name": "KNET",
+    "description": "",
+    "id": 48
+  },
+  "deep-cool": {
+    "code": "deep-cool",
+    "name": "DEEPCOOL",
+    "description": "",
+    "id": 250
+  },
+  "oudis": {
+    "code": "oudis",
+    "name": "OUDIS",
+    "description": "",
+    "id": 178
+  },
+  "mili": {
+    "code": "mili",
+    "description": "",
+    "name": "MILI",
+    "id": 266
+  },
+  "rapoo": {
+    "code": "rapoo",
+    "name": "RAPOO",
+    "description": "",
+    "id": 219
+  },
+  "sama": {
+    "code": "sama",
+    "name": "SAMA",
+    "description": "",
+    "id": 226
+  },
+  "tenda": {
+    "code": "tenda",
+    "name": "TENDA",
+    "description": "",
+    "id": 207
+  },
+  "targus": {
+    "code": "targus",
+    "name": "TARGUS",
+    "description": "",
+    "id": 249
+  },
+  "colovis": {
+    "code": "colovis",
+    "name": "COLOVIS",
+    "description": "",
+    "id": 92
+  },
+  "gigabyte": {
+    "code": "gigabyte",
+    "name": "GIGABYTE",
+    "description": "",
+    "id": 237
+  },
+  "ensoho": {
+    "code": "ensoho",
+    "name": "ENSOHO",
+    "description": "",
+    "id": 47
+  },
+  "ricoh": {
+    "code": "ricoh",
+    "name": "RICOH",
+    "description": "",
+    "id": 183
+  },
+  "antec": {
+    "id": 153,
+    "code": "antec",
+    "description": "",
+    "name": "ANTEC"
+  },
+  "cliptec": {
+    "code": "cliptec",
+    "name": "CLIPTEC",
+    "description": "",
+    "id": 188
+  },
+  "lacie": {
+    "code": "lacie",
+    "description": "",
+    "name": "LACIE",
+    "id": 229
+  },
+  "gskill": {
+    "code": "gskill",
+    "name": "G.SKILL",
+    "id": 257,
+    "description": ""
+  },
+  "orico": {
+    "code": "orico",
+    "name": "ORICO",
+    "description": "",
+    "id": 140
+  },
+  "dragon": {
+    "code": "dragon",
+    "name": "DRAGON",
+    "description": "",
+    "id": 218
+  },
+  "ares": {
+    "code": "ares",
+    "name": "ARES",
+    "description": "",
+    "id": 201
+  },
+  "philips": {
+    "code": "philips",
+    "name": "PHILIPS",
+    "description": "",
+    "id": 271
+  },
+  "belkin": {
+    "name": "BELKIN",
+    "description": "",
+    "id": 263,
+    "code": "belkin"
+  },
+  "intel": {
+    "code": "intel",
+    "name": "INTEL",
+    "description": "",
+    "id": 281
+  },
+  "tucano": {
+    "code": "tucano",
+    "name": "TUCANO",
+    "description": "",
+    "id": 248
+  },
+  "jcpal": {
+    "code": "jcpal",
+    "name": "JCPAL",
+    "description": "",
+    "id": 261
+  },
+  "addlink": {
+    "code": "addlink",
+    "name": "ADDLINK",
+    "description": "",
+    "id": 199
+  },
+  "patriot": {
+    "code": "patriot",
+    "name": "PATRIOT",
+    "description": "",
+    "id": 228
+  },
+  "audio-technica": {
+    "code": "audio-technica",
+    "name": "Audio-technica",
+    "description": "",
+    "id": 193
+  },
+  "magitech": {
+    "code": "magitech",
+    "name": "MAGITECH",
+    "description": "",
+    "id": 1163
+  },
+  "gavio": {
+    "code": "gavio",
+    "name": "GAVIO",
+    "description": "",
+    "id": 194
+  },
+  "eview": {
+    "code": "eview",
+    "name": "EVIEW",
+    "description": "",
+    "id": 197
+  },
+  "genius": {
+    "description": "",
+    "code": "genius",
+    "name": "GENIUS",
+    "id": 221
+  },
+  "aibo": {
+    "code": "aibo",
+    "name": "AIBO",
+    "description": "",
+    "id": 50
+  },
+  "ovan": {
+    "code": "ovan",
+    "name": "OVAN",
+    "description": "",
+    "id": 195
+  },
+  "kingmaster": {
+    "code": "kingmaster",
+    "name": "Kingmaster",
+    "description": "",
+    "id": 113
+  },
+  "creative": {
+    "code": "creative",
+    "name": "CREATIVE",
+    "description": "",
+    "id": 213
+  },
+  "ztek": {
+    "code": "ztek",
+    "name": "ZTEK",
+    "description": "",
+    "id": 55
+  },
+  "aoc": {
+    "id": 223,
+    "code": "aoc",
+    "name": "AOC",
+    "description": ""
+  },
+  "sumtax": {
+    "code": "sumtax",
+    "name": "Sumtax",
+    "description": "",
+    "id": 102
+  },
+  "tuxedo": {
+    "code": "tuxedo",
+    "name": "TUXEDO",
+    "description": "",
+    "id": 264
+  },
+  "rivacase": {
+    "code": "rivacase",
+    "name": "RivaCase",
+    "description": "",
+    "id": 246
+  },
+  "abcnovel": {
+    "code": "abcnovel",
+    "name": "Abcnovel",
+    "description": "",
+    "id": 93
+  },
+  "lg": {
+    "code": "lg",
+    "name": "LG",
+    "description": "",
+    "id": 222
+  },
+  "oppo": {
+    "code": "oppo",
+    "name": "OPPO",
+    "description": "",
+    "id": 272
+  },
+  "sd": {
+    "code": "sd",
+    "name": "SD",
+    "description": "",
+    "id": 97
+  },
+  "masterkey": {
+    "code": "masterkey",
+    "name": "Masterkey",
+    "description": "",
+    "id": 112
+  },
+  "msi": {
+    "code": "msi",
+    "name": "MSI",
+    "description": "",
+    "id": 234
+  },
+  "sades": {
+    "code": "sades",
+    "name": "Sades",
+    "description": "",
+    "id": 105
+  },
+  "senic": {
+    "code": "senic",
+    "name": "Senic",
+    "description": "",
+    "id": 103
+  },
+  "r8": {
+    "code": "r8",
+    "name": "R8",
+    "description": "",
+    "id": 85
+  },
+  "zk-teco": {
+    "code": "zk-teco",
+    "name": "ZK Teco",
+    "id": 90,
+    "description": ""
+  },
+  "jabra": {
+    "id": 40,
+    "code": "jabra",
+    "description": "",
+    "name": "Jabra"
+  },
+  "aipoo-link": {
+    "code": "aipoo-link",
+    "name": "Aipoo Link",
+    "description": "",
+    "id": 67
+  },
+  "kbvision": {
+    "code": "kbvision",
+    "name": "KBvision",
+    "id": 167,
+    "description": ""
+  },
+  "asrock": {
+    "code": "asrock",
+    "name": "ASROCK",
+    "description": "",
+    "id": 236
+  },
+  "plextor": {
+    "code": "plextor",
+    "name": "PLEXTOR",
+    "description": "",
+    "id": 231
+  },
+  "bose": {
+    "code": "bose",
+    "name": "Bose",
+    "description": "",
+    "id": 122
+  },
+  "cheero": {
+    "code": "cheero",
+    "name": "CHEERO",
+    "description": "",
+    "id": 56
+  },
+  "robo": {
+    "code": "robo",
+    "name": "ROBO",
+    "description": "",
+    "id": 240
+  },
+  "fsp": {
+    "description": "",
+    "id": 224,
+    "code": "fsp",
+    "name": "FSP"
+  },
+  "xiaomi": {
+    "code": "xiaomi",
+    "name": "XIAOMI",
+    "description": "",
+    "id": 169
+  },
+  "nvidia": {
+    "code": "nvidia",
+    "name": "NVIDIA",
+    "description": "",
+    "id": 138
+  },
+  "aipoo": {
+    "code": "aipoo",
+    "name": "Aipoo",
+    "description": "",
+    "id": 127
+  },
+  "trust": {
+    "code": "trust",
+    "name": "Trust",
+    "description": "",
+    "id": 101
+  },
+  "letouch": {
+    "code": "letouch",
+    "name": "Letouch",
+    "description": "",
+    "id": 44
+  },
+  "mrmckenic": {
+    "code": "mrmckenic",
+    "name": "Mr.McKenic",
+    "description": "",
+    "id": 43
+  },
+  "amaru": {
+    "code": "amaru",
+    "name": "AMARU",
+    "description": "",
+    "id": 125
+  },
+  "trend-micro": {
+    "code": "trend-micro",
+    "name": "Trend Micro",
+    "description": "",
+    "id": 94
+  },
+  "foxxray": {
+    "code": "foxxray",
+    "name": "FOXXRAY",
+    "description": "",
+    "id": 216
+  },
+  "hyperdrive": {
+    "code": "hyperdrive",
+    "name": "HyperDrive",
+    "description": "",
+    "id": 45
+  },
+  "sahara": {
+    "code": "sahara",
+    "name": "SAHARA",
+    "description": "",
+    "id": 96
+  },
+  "phong-vu": {
+    "code": "phong-vu",
+    "name": "Phong V\u0169",
+    "id": 171,
+    "description": ""
+  },
+  "plantronics": {
+    "code": "plantronics",
+    "name": "PLANTRONICS",
+    "description": "",
+    "id": 267
+  },
+  "fl-esports": {
+    "code": "fl-esports",
+    "name": "FL ESports",
+    "description": "",
+    "id": 116
+  },
+  "adata": {
+    "code": "adata",
+    "name": "ADATA",
+    "description": "",
+    "id": 152
+  },
+  "golden-field": {
+    "name": "GOLDEN FIELD",
+    "code": "golden-field",
+    "description": "",
+    "id": 150
+  },
+  "galax": {
+    "code": "galax",
+    "name": "GALAX",
+    "description": "",
+    "id": 154
+  },
+  "thermaltake": {
+    "code": "thermaltake",
+    "name": "THERMALTAKE",
+    "description": "",
+    "id": 163
+  },
+  "razer": {
+    "code": "razer",
+    "description": "",
+    "name": "RAZER",
+    "id": 155
+  },
+  "steelseries": {
+    "code": "steelseries",
+    "name": "STEELSERIES",
+    "description": "",
+    "id": 156
+  },
+  "zidli": {
+    "code": "zidli",
+    "name": "ZIDLI",
+    "description": "",
+    "id": 162
+  },
+  "redragon": {
+    "code": "redragon",
+    "name": "Redragon",
+    "description": "",
+    "id": 108
+  },
+  "fujitsu": {
+    "code": "fujitsu",
+    "name": "FUJITSU",
+    "description": "",
+    "id": 166
+  },
+  "alienware": {
+    "code": "alienware",
+    "name": "Alienware",
+    "description": "",
+    "id": 126
+  },
+  "dareu": {
+    "code": "dareu",
+    "name": "DAREU",
+    "id": 158,
+    "description": ""
+  },
+  "e-blue": {
+    "code": "e-blue",
+    "name": "E-BLUE",
+    "description": "",
+    "id": 148
+  },
+  "fuhlen": {
+    "code": "fuhlen",
+    "name": "Fuhlen",
+    "description": "",
+    "id": 115
+  },
+  "irock": {
+    "code": "irock",
+    "name": "iRock",
+    "description": "",
+    "id": 149
+  },
+  "motospeed": {
+    "code": "motospeed",
+    "name": "Motospeed",
+    "description": "",
+    "id": 111
+  },
+  "aigo": {
+    "code": "aigo",
+    "name": "AIGO",
+    "description": "",
+    "id": 159
+  },
+  "benq": {
+    "code": "benq",
+    "name": "BenQ",
+    "description": "",
+    "id": 123
+  },
+  "assassins": {
+    "code": "assassins",
+    "name": "Assassins",
+    "description": "",
+    "id": 124
+  },
+  "ozone": {
+    "code": "ozone",
+    "name": "Ozone",
+    "description": "",
+    "id": 110
+  },
+  "roccat": {
+    "code": "roccat",
+    "name": "Roccat",
+    "description": "",
+    "id": 106
+  },
+  "huntkey": {
+    "code": "huntkey",
+    "name": "HUNTKEY",
+    "description": "",
+    "id": 145
+  },
+  "jetek": {
+    "code": "jetek",
+    "name": "JETEK",
+    "description": "",
+    "id": 133
+  },
+  "raidmax": {
+    "code": "raidmax",
+    "name": "RAIDMAX",
+    "description": "",
+    "id": 132
+  },
+  "seasonic": {
+    "code": "seasonic",
+    "name": "SEASONIC",
+    "description": "",
+    "id": 151
+  },
+  "xigmatek": {
+    "code": "xigmatek",
+    "name": "XIGMATEK",
+    "description": "",
+    "id": 157
+  },
+  "avexir": {
+    "code": "avexir",
+    "name": "AVEXIR",
+    "description": "",
+    "id": 135
+  },
+  "geil": {
+    "code": "geil",
+    "name": "GEIL",
+    "description": "",
+    "id": 233
+  },
+  "deluxe": {
+    "code": "deluxe",
+    "name": "DELUXE",
+    "description": "",
+    "id": 227
+  },
+  "ducky": {
+    "code": "ducky",
+    "name": "Ducky",
+    "description": "",
+    "id": 117
+  },
+  "grandstream": {
+    "code": "grandstream",
+    "name": "Grandstream",
+    "description": "",
+    "id": 143
+  },
+  "sakos": {
+    "code": "sakos",
+    "name": "SAKOS",
+    "description": "",
+    "id": 247
+  },
+  "zic": {
+    "code": "zic",
+    "name": "ZIC",
+    "description": "",
+    "id": 86
+  },
+  "electrolux": {
+    "code": "electrolux",
+    "name": "Electrolux",
+    "description": "",
+    "id": 14
+  },
+  "unifi": {
+    "code": "unifi",
+    "name": "UniFi",
+    "description": "",
+    "id": 38
+  },
+  "viewsonic": {
+    "code": "viewsonic",
+    "description": "",
+    "name": "VIEWSONIC",
+    "id": 144
+  },
+  "jbl": {
+    "code": "jbl",
+    "name": "JBL",
+    "description": "",
+    "id": 164
+  },
+  "hikvision": {
+    "code": "hikvision",
+    "name": "HIKvision",
+    "description": "",
+    "id": 146
+  },
+  "goldeye": {
+    "code": "goldeye",
+    "name": "GOLDEYE",
+    "description": "",
+    "id": 198
+  },
+  "dxracer": {
+    "description": "",
+    "code": "dxracer",
+    "name": "DXRACER",
+    "id": 160
+  },
+  "marvo": {
+    "code": "marvo",
+    "name": "MARVO",
+    "description": "",
+    "id": 147
+  },
+  "ronald-jack": {
+    "code": "ronald-jack",
+    "name": "RONALD JACK",
+    "description": "",
+    "id": 88
+  },
+  "iwalk": {
+    "code": "iwalk",
+    "name": "IWALK",
+    "description": "",
+    "id": 84
+  },
+  "aqua": {
+    "code": "aqua",
+    "name": "AQUA",
+    "description": "",
+    "id": 20
+  },
+  "hkc": {
+    "code": "hkc",
+    "name": "HKC",
+    "description": "",
+    "id": 87
+  },
+  "htc": {
+    "code": "htc",
+    "name": "HTC",
+    "description": "",
+    "id": 8
+  },
+  "sharp": {
+    "code": "sharp",
+    "name": "SHARP",
+    "description": "",
+    "id": 80
+  },
+  "tcl": {
+    "code": "tcl",
+    "name": "TCL",
+    "description": "",
+    "id": 79
+  },
+  "sapo": {
+    "code": "sapo",
+    "name": "SAPO",
+    "description": "",
+    "id": 78
+  },
+  "anda-seat": {
+    "code": "anda-seat",
+    "name": "Anda Seat",
+    "description": "",
+    "id": 76
+  },
+  "aptek": {
+    "code": "aptek",
+    "name": "APTEK",
+    "description": "",
+    "id": 77
+  },
+  "kasda": {
+    "code": "kasda",
+    "name": "KASDA",
+    "description": "",
+    "id": 81
+  },
+  "erosi": {
+    "code": "erosi",
+    "name": "EROSI",
+    "description": "",
+    "id": 63
+  },
+  "crucial": {
+    "code": "crucial",
+    "name": "CRUCIAL",
+    "description": "",
+    "id": 75
+  },
+  "team": {
+    "code": "team",
+    "name": "TEAM",
+    "description": "",
+    "id": 136
+  },
+  "klevv": {
+    "code": "klevv",
+    "name": "KLEVV",
+    "description": "",
+    "id": 74
+  },
+  "aukey": {
+    "code": "aukey",
+    "name": "AUKEY",
+    "description": "",
+    "id": 71
+  },
+  "x-mini": {
+    "code": "x-mini",
+    "name": "X-Mini",
+    "description": "",
+    "id": 72
+  },
+  "soul": {
+    "code": "soul",
+    "name": "SOUL",
+    "description": "",
+    "id": 73
+  },
+  "edra": {
+    "code": "edra",
+    "description": "",
+    "name": "E-Dra",
+    "id": 1575
+  },
+  "mercusys": {
+    "code": "mercusys",
+    "name": "Mercusys",
+    "description": "",
+    "id": 888
+  },
+  "promate": {
+    "code": "promate",
+    "name": "Promate",
+    "description": "",
+    "id": 70
+  },
+  "aruba": {
+    "code": "aruba",
+    "description": "",
+    "name": "Aruba",
+    "id": 69
+  },
+  "hpe": {
+    "code": "hpe",
+    "name": "HPE",
+    "description": "",
+    "id": 68
+  },
+  "alpha-gamer": {
+    "code": "alpha-gamer",
+    "name": "Alpha Gamer",
+    "description": "",
+    "id": 66
+  },
+  "drift-gaming": {
+    "code": "drift-gaming",
+    "name": "Drift Gaming",
+    "description": "",
+    "id": 65
+  },
+  "anker": {
+    "code": "anker",
+    "name": "ANKER",
+    "description": "",
+    "id": 64
+  },
+  "tt-esports": {
+    "code": "tt-esports",
+    "name": "TT ESports",
+    "description": "",
+    "id": 42
+  },
+  "aerocool": {
+    "code": "aerocool",
+    "name": "AeroCool",
+    "description": "",
+    "id": 1170
+  },
+  "allocacoc": {
+    "code": "allocacoc",
+    "name": "Allocacoc",
+    "description": "",
+    "id": 41
+  },
+  "synology": {
+    "code": "synology",
+    "name": "SYNOLOGY",
+    "description": "",
+    "id": 1188
+  },
+  "infinity": {
+    "code": "infinity",
+    "name": "INFINITY",
+    "description": "",
+    "id": 161
+  },
+  "avita": {
+    "code": "avita",
+    "name": "Avita",
+    "description": "",
+    "id": 39
+  },
+  "asanzo": {
+    "code": "asanzo",
+    "name": "Asanzo",
+    "description": "",
+    "id": 37
+  },
+  "wacom": {
+    "code": "wacom",
+    "name": "Wacom",
+    "description": "",
+    "id": 36
+  },
+  "icore": {
+    "code": "icore",
+    "name": "iCore",
+    "id": 35,
+    "description": ""
+  },
+  "oaxis": {
+    "code": "oaxis",
+    "name": "Oaxis",
+    "description": "",
+    "id": 34
+  },
+  "tomtoc": {
+    "code": "tomtoc",
+    "name": "Tomtoc",
+    "description": "",
+    "id": 33
+  },
+  "garmin": {
+    "description": "",
+    "id": 32,
+    "code": "garmin",
+    "name": "Garmin"
+  },
+  "fitbit": {
+    "code": "fitbit",
+    "name": "FITBIT",
+    "description": "",
+    "id": 31
+  },
+  "aero": {
+    "code": "aero",
+    "name": "AERO",
+    "description": "",
+    "id": 139
+  },
+  "krom": {
+    "code": "krom",
+    "name": "Krom",
+    "description": "",
+    "id": 29
+  },
+  "ecovacs": {
+    "description": "",
+    "id": 28,
+    "code": "ecovacs",
+    "name": "Ecovacs"
+  },
+  "ezviz": {
+    "code": "ezviz",
+    "name": "EZVIZ",
+    "description": "",
+    "id": 889
+  },
+  "yale": {
+    "description": "",
+    "id": 27,
+    "code": "yale",
+    "name": "Yale"
+  },
+  "daikin": {
+    "name": "Daikin",
+    "description": "",
+    "code": "daikin",
+    "id": 26
+  },
+  "mitsubishi-electric": {
+    "code": "mitsubishi-electric",
+    "description": "",
+    "name": "Mitsubishi Electric",
+    "id": 25
+  },
+  "casper": {
+    "code": "casper",
+    "name": "Casper",
+    "id": 24,
+    "description": ""
+  },
+  "midea": {
+    "name": "Midea",
+    "description": "",
+    "code": "midea",
+    "id": 23
+  },
+  "gree": {
+    "code": "gree",
+    "name": "Gree",
+    "description": "",
+    "id": 22
+  },
+  "beko": {
+    "code": "beko",
+    "name": "Beko",
+    "description": "",
+    "id": 21
+  },
+  "akino": {
+    "code": "akino",
+    "name": "Akino",
+    "description": "",
+    "id": 19
+  },
+  "mitsubishi-heavy": {
+    "description": "",
+    "id": 18,
+    "name": "Mitsubishi Heavy",
+    "code": "mitsubishi-heavy"
+  },
+  "nagakawa": {
+    "code": "nagakawa",
+    "name": "Nagakawa",
+    "description": "",
+    "id": 16
+  },
+  "harman-kardon": {
+    "code": "harman-kardon",
+    "name": "Harman Kardon",
+    "id": 17,
+    "description": ""
+  },
+  "charjenpro": {
+    "code": "charjenpro",
+    "name": "CharjenPro",
+    "description": "",
+    "id": 15
+  },
+  "phanteks": {
+    "id": 142,
+    "code": "phanteks",
+    "description": "",
+    "name": "PHANTEKS"
+  },
+  "akg": {
+    "code": "akg",
+    "name": "AKG",
+    "description": "",
+    "id": 13
+  },
+  "gopro": {
+    "code": "gopro",
+    "name": "GoPro",
+    "description": "",
+    "id": 12
+  },
+  "reetech": {
+    "code": "reetech",
+    "name": "Reetech",
+    "description": "",
+    "id": 10
+  },
+  "airshot": {
+    "code": "airshot",
+    "name": "AIRSHOT",
+    "description": "",
+    "id": 9
+  },
+  "apc": {
+    "id": 200,
+    "code": "apc",
+    "description": "",
+    "name": "APC"
+  },
+  "sumikura": {
+    "code": "sumikura",
+    "name": "Sumikura",
+    "description": "",
+    "id": 7
+  },
+  "funiki": {
+    "code": "funiki",
+    "name": "Funiki",
+    "description": "",
+    "id": 6
+  },
+  "ultimate": {
+    "code": "ultimate",
+    "name": "Ultimate Ears",
+    "description": "",
+    "id": 5
+  },
+  "nzxt": {
+    "code": "nzxt",
+    "name": "NZXT",
+    "description": "",
+    "id": 3
+  },
+  "ugreen": {
+    "code": "ugreen",
+    "name": "Ugreen",
+    "description": "",
+    "id": 1156
+  },
+  "powercolor": {
+    "code": "powercolor",
+    "name": "PowerColor",
+    "description": "",
+    "id": 1
+  },
+  "nokia": {
+    "code": "nokia",
+    "name": "NOKIA",
+    "description": "",
+    "id": 168
+  },
+  "vivo": {
+    "code": "vivo",
+    "name": "Vivo",
+    "description": "",
+    "id": 282
+  },
+  "realme": {
+    "description": "",
+    "id": 284,
+    "code": "realme",
+    "name": "Realme"
+  },
+  "huawei": {
+    "name": "Huawei",
+    "code": "huawei",
+    "id": 285,
+    "description": ""
+  },
+  "ls": {
+    "code": "ls",
+    "name": "LS",
+    "description": "",
+    "id": 286
+  },
+  "sanco": {
+    "code": "sanco",
+    "name": "Sanco",
+    "description": "",
+    "id": 287
+  },
+  "divoom": {
+    "code": "divoom",
+    "name": "Divoom",
+    "description": "",
+    "id": 289
+  },
+  "meiji": {
+    "code": "meiji",
+    "name": "MEIJI",
+    "description": "",
+    "id": 793
+  },
+  "hipp": {
+    "code": "hipp",
+    "name": "HiPP",
+    "description": "",
+    "id": 792
+  },
+  "benew": {
+    "id": 372,
+    "code": "benew",
+    "name": "BENEW",
+    "description": ""
+  },
+  "stanhome": {
+    "code": "stanhome",
+    "name": "STANHOME",
+    "description": "",
+    "id": 423
+  },
+  "farmasi": {
+    "code": "farmasi",
+    "name": "FARMASI",
+    "description": "",
+    "id": 387
+  },
+  "silkygirl": {
+    "code": "silkygirl",
+    "name": "SILKYGIRL",
+    "description": "",
+    "id": 420
+  },
+  "dabo": {
+    "code": "dabo",
+    "name": "DABO",
+    "description": "",
+    "id": 377
+  },
+  "my-jin-gold": {
+    "code": "my-jin-gold",
+    "name": "MY JIN GOLD",
+    "description": "",
+    "id": 406
+  },
+  "naive": {
+    "code": "naive",
+    "name": "NA\u00cfVE",
+    "description": "",
+    "id": 407
+  },
+  "hadabisei": {
+    "code": "hadabisei",
+    "name": "HADABISEI",
+    "description": "",
+    "id": 389
+  },
+  "sakura": {
+    "code": "sakura",
+    "name": "SAKURA",
+    "description": "",
+    "id": 415
+  },
+  "bom": {
+    "code": "bom",
+    "name": "BOM",
+    "description": "",
+    "id": 887
+  },
+  "holika": {
+    "code": "holika",
+    "name": "HOLIKA",
+    "description": "",
+    "id": 391
+  },
+  "enprani": {
+    "code": "enprani",
+    "name": "ENPRANI",
+    "description": "",
+    "id": 384
+  },
+  "natuer-be": {
+    "code": "natuer-be",
+    "name": "NATUER BE",
+    "description": "",
+    "id": 409
+  },
+  "real-barier": {
+    "code": "real-barier",
+    "name": "Real Barier",
+    "description": "",
+    "id": 414
+  },
+  "derma:b": {
+    "code": "derma:b",
+    "name": "Derma:B",
+    "description": "",
+    "id": 379
+  },
+  "atopalm": {
+    "code": "atopalm",
+    "name": "Atopalm",
+    "description": "",
+    "id": 369
+  },
+  "dhc": {
+    "code": "dhc",
+    "name": "DHC",
+    "description": "",
+    "id": 381
+  },
+  "vichy": {
+    "name": "Vichy",
+    "code": "vichy",
+    "id": 430,
+    "description": ""
+  },
+  "loreal": {
+    "code": "loreal",
+    "description": "",
+    "name": "L'oreal",
+    "id": 395
+  },
+  "maybelline": {
+    "code": "maybelline",
+    "name": "MAYBELLINE",
+    "description": "",
+    "id": 401
+  },
+  "arau": {
+    "description": "",
+    "id": 498,
+    "code": "arau",
+    "name": "ARAU"
+  },
+  "beaumore": {
+    "code": "beaumore",
+    "name": "BEAUMORE",
+    "description": "",
+    "id": 371
+  },
+  "sandras-beauty": {
+    "code": "sandras-beauty",
+    "name": "SANDRA'S BEAUTY",
+    "description": "",
+    "id": 416
+  },
+  "pip-baby": {
+    "code": "pip-baby",
+    "description": "",
+    "name": "PIP BABY",
+    "id": 533
+  },
+  "richell": {
+    "code": "richell",
+    "description": "",
+    "name": "Richell",
+    "id": 488
+  },
+  "mother-k": {
+    "code": "mother-k",
+    "name": "MOTHER-K",
+    "description": "",
+    "id": 527
+  },
+  "pigeon": {
+    "code": "pigeon",
+    "description": "",
+    "name": "Pigeon",
+    "id": 532
+  },
+  "seria": {
+    "code": "seria",
+    "name": "SERIA",
+    "description": "",
+    "id": 568
+  },
+  "canpol-babies": {
+    "code": "canpol-babies",
+    "name": "CANPOL BABIES",
+    "description": "",
+    "id": 468
+  },
+  "puku": {
+    "code": "puku",
+    "name": "PUKU",
+    "description": "",
+    "id": 535
+  },
+  "morinaga": {
+    "code": "morinaga",
+    "name": "Morinaga",
+    "description": "",
+    "id": 794
+  },
+  "solo": {
+    "name": "SOLO",
+    "description": "",
+    "id": 871,
+    "code": "solo"
+  },
+  "agva": {
+    "code": "agva",
+    "name": "AGVA",
+    "description": "",
+    "id": 864
+  },
+  "beddybear": {
+    "code": "beddybear",
+    "name": "BEDDYBEAR",
+    "description": "",
+    "id": 544
+  },
+  "huggies": {
+    "id": 808,
+    "description": "",
+    "name": "Huggies",
+    "code": "huggies"
+  },
+  "moony": {
+    "name": "Moony",
+    "description": "",
+    "code": "moony",
+    "id": 810
+  },
+  "tiross": {
+    "description": "",
+    "id": 573,
+    "code": "tiross",
+    "name": "TIROSS"
+  },
+  "happycook": {
+    "code": "happycook",
+    "name": "HAPPYCOOK",
+    "description": "",
+    "id": 556
+  },
+  "tefal": {
+    "code": "tefal",
+    "name": "TEFAL",
+    "description": "",
+    "id": 834
+  },
+  "kuchenzimmer": {
+    "code": "kuchenzimmer",
+    "name": "KUCHENZIMMER",
+    "description": "",
+    "id": 561
+  },
+  "hamilton-beach": {
+    "code": "hamilton-beach",
+    "name": "HAMILTON BEACH",
+    "description": "",
+    "id": 555
+  },
+  "braun": {
+    "code": "braun",
+    "name": "BRAUN",
+    "description": "",
+    "id": 825
+  },
+  "kenwood": {
+    "code": "kenwood",
+    "name": "KENWOOD",
+    "description": "",
+    "id": 830
+  },
+  "severin": {
+    "code": "severin",
+    "name": "SEVERIN",
+    "description": "",
+    "id": 569
+  },
+  "fissler": {
+    "code": "fissler",
+    "name": "Fissler",
+    "description": "",
+    "id": 827
+  },
+  "zojirushi": {
+    "code": "zojirushi",
+    "name": "Zojirushi",
+    "description": "",
+    "id": 542
+  },
+  "carlmann": {
+    "code": "carlmann",
+    "name": "CARLMANN",
+    "description": "",
+    "id": 452
+  },
+  "moriitalia": {
+    "code": "moriitalia",
+    "name": "MORIITALIA",
+    "description": "",
+    "id": 567
+  },
+  "cs": {
+    "code": "cs",
+    "name": "CS",
+    "description": "",
+    "id": 550
+  },
+  "indochina": {
+    "code": "indochina",
+    "name": "INDOCHINA",
+    "description": "",
+    "id": 456
+  },
+  "stanley": {
+    "code": "stanley",
+    "name": "STANLEY",
+    "description": "",
+    "id": 570
+  },
+  "home-select": {
+    "code": "home-select",
+    "name": "HOME SELECT",
+    "description": "",
+    "id": 557
+  },
+  "enamel": {
+    "code": "enamel",
+    "name": "Enamel",
+    "description": "",
+    "id": 554
+  },
+  "bialetti": {
+    "code": "bialetti",
+    "name": "BIALETTI",
+    "description": "",
+    "id": 451
+  },
+  "balzano": {
+    "code": "balzano",
+    "name": "Balzano",
+    "description": "",
+    "id": 543
+  },
+  "kitchenaid": {
+    "code": "kitchenaid",
+    "name": "KitchenAid",
+    "description": "",
+    "id": 559
+  },
+  "la-fonte": {
+    "code": "la-fonte",
+    "name": "LA FONTE",
+    "description": "",
+    "id": 562
+  },
+  "lafonte": {
+    "code": "lafonte",
+    "name": "LAFONTE",
+    "description": "",
+    "id": 564
+  },
+  "delaware": {
+    "code": "delaware",
+    "name": "DELAWARE",
+    "description": "",
+    "id": 551
+  },
+  "sunhouse": {
+    "code": "sunhouse",
+    "name": "SUNHOUSE",
+    "description": "",
+    "id": 572
+  },
+  "vietoys": {
+    "code": "vietoys",
+    "name": "VIETOYS",
+    "description": "",
+    "id": 491
+  },
+  "winfun": {
+    "code": "winfun",
+    "name": "WINFUN",
+    "description": "",
+    "id": 492
+  },
+  "philips-avent": {
+    "code": "philips-avent",
+    "name": "Philips Avent",
+    "description": "",
+    "id": 531
+  },
+  "farlin": {
+    "code": "farlin",
+    "name": "FARLIN",
+    "description": "",
+    "id": 464
+  },
+  "ichikami": {
+    "code": "ichikami",
+    "name": "ICHIKAMI",
+    "description": "",
+    "id": 436
+  },
+  "aroma": {
+    "code": "aroma",
+    "name": "AROMA",
+    "description": "",
+    "id": 368
+  },
+  "babymoov": {
+    "code": "babymoov",
+    "name": "Babymoov",
+    "description": "",
+    "id": 502
+  },
+  "kao": {
+    "code": "kao",
+    "name": "KAO",
+    "description": "",
+    "id": 776
+  },
+  "betta": {
+    "code": "betta",
+    "name": "Betta",
+    "description": "",
+    "id": 505
+  },
+  "aprica": {
+    "code": "aprica",
+    "name": "APRICA",
+    "description": "",
+    "id": 497
+  },
+  "nekohero": {
+    "code": "nekohero",
+    "name": "NEKOHERO",
+    "description": "",
+    "id": 529
+  },
+  "arau-baby": {
+    "code": "arau-baby",
+    "name": "Arau Baby",
+    "description": "",
+    "id": 499
+  },
+  "chuchubaby": {
+    "description": "",
+    "id": 510,
+    "code": "chuchubaby",
+    "name": "CHUCHUBABY"
+  },
+  "joie": {
+    "code": "joie",
+    "name": "Joie",
+    "description": "",
+    "id": 519
+  },
+  "lec": {
+    "code": "lec",
+    "name": "LEC",
+    "description": "",
+    "id": 522
+  },
+  "merries": {
+    "code": "merries",
+    "name": "Merries",
+    "description": "",
+    "id": 809
+  },
+  "strider": {
+    "code": "strider",
+    "name": "Strider",
+    "description": "",
+    "id": 538
+  },
+  "bubchen": {
+    "code": "bubchen",
+    "name": "BUBCHEN",
+    "description": "",
+    "id": 508
+  },
+  "comotomo": {
+    "code": "comotomo",
+    "name": "Comotomo",
+    "description": "",
+    "id": 511
+  },
+  "munchkin": {
+    "description": "",
+    "id": 528,
+    "code": "munchkin",
+    "name": "MUNCHKIN"
+  },
+  "chicco": {
+    "code": "chicco",
+    "id": 453,
+    "name": "Chicco",
+    "description": ""
+  },
+  "combi": {
+    "code": "combi",
+    "id": 454,
+    "name": "Combi",
+    "description": ""
+  },
+  "sanosan": {
+    "id": 973,
+    "description": "",
+    "name": "SANOSAN",
+    "code": "sanosan"
+  },
+  "poemy": {
+    "code": "poemy",
+    "name": "Poemy",
+    "description": "",
+    "id": 534
+  },
+  "stoneline": {
+    "code": "stoneline",
+    "name": "STONELINE",
+    "description": "",
+    "id": 571
+  },
+  "bbcooker": {
+    "code": "bbcooker",
+    "name": "BBCOOKER",
+    "description": "",
+    "id": 503
+  },
+  "skyway": {
+    "code": "skyway",
+    "name": "SKYWAY",
+    "description": "",
+    "id": 870
+  },
+  "roncato": {
+    "code": "roncato",
+    "name": "RONCATO",
+    "description": "",
+    "id": 869
+  },
+  "ricardo": {
+    "description": "",
+    "id": 868,
+    "code": "ricardo",
+    "name": "RICARDO"
+  },
+  "american-explorer": {
+    "code": "american-explorer",
+    "name": "AMERICAN EXPLORER",
+    "description": "",
+    "id": 1026
+  },
+  "modo-rocket": {
+    "code": "modo-rocket",
+    "name": "Modo Rocket",
+    "description": "",
+    "id": 866
+  },
+  "tioga": {
+    "code": "tioga",
+    "name": "Tioga",
+    "description": "",
+    "id": 863
+  },
+  "yejimiin": {
+    "code": "yejimiin",
+    "name": "YEJIMIIN",
+    "description": "",
+    "id": 787
+  },
+  "polesie-toys": {
+    "code": "polesie-toys",
+    "name": "Polesie Toys",
+    "description": "",
+    "id": 486
+  },
+  "belarus": {
+    "code": "belarus",
+    "name": "Belarus",
+    "description": "",
+    "id": 466
+  },
+  "daesung": {
+    "code": "daesung",
+    "name": "DAESUNG",
+    "description": "",
+    "id": 471
+  },
+  "superior-collagen": {
+    "code": "superior-collagen",
+    "name": "Superior Collagen",
+    "description": "",
+    "id": 804
+  },
+  "la-roche-posay": {
+    "code": "la-roche-posay",
+    "name": "LA ROCHE-POSAY",
+    "id": 947,
+    "description": ""
+  },
+  "bebedang": {
+    "code": "bebedang",
+    "name": "BEBEDANG",
+    "description": "",
+    "id": 904
+  },
+  "heinz": {
+    "code": "heinz",
+    "name": "Heinz",
+    "description": "",
+    "id": 878
+  },
+  "mastela": {
+    "code": "mastela",
+    "description": "",
+    "name": "MASTELA",
+    "id": 955
+  },
+  "d-nee": {
+    "code": "d-nee",
+    "name": "D-NEE",
+    "description": "",
+    "id": 917
+  },
+  "botani": {
+    "code": "botani",
+    "name": "BOT\u00c1NI",
+    "description": "",
+    "id": 335
+  },
+  "uriage": {
+    "code": "uriage",
+    "name": "URIAGE",
+    "description": "",
+    "id": 429
+  },
+  "uncle-bills": {
+    "code": "uncle-bills",
+    "name": "UNCLE BILLS",
+    "description": "",
+    "id": 438
+  },
+  "ikami": {
+    "code": "ikami",
+    "name": "IKAMI",
+    "description": "",
+    "id": 936
+  },
+  "my-comfort": {
+    "code": "my-comfort",
+    "name": "MY COMFORT",
+    "description": "",
+    "id": 963
+  },
+  "mamamy": {
+    "code": "mamamy",
+    "name": "MAMAMY",
+    "description": "",
+    "id": 1034
+  },
+  "kinkin": {
+    "code": "kinkin",
+    "name": "KINKIN",
+    "description": "",
+    "id": 1037
+  },
+  "mediheal": {
+    "id": 958,
+    "description": "",
+    "name": "MEDIHEAL",
+    "code": "mediheal"
+  },
+  "johnson-&-johnson": {
+    "name": "JOHNSON & JOHNSON",
+    "code": "johnson-&-johnson",
+    "id": 1035,
+    "description": ""
+  },
+  "viet-care": {
+    "code": "viet-care",
+    "name": "VI\u1ec6T CARE",
+    "description": "",
+    "id": 984
+  },
+  "glico": {
+    "code": "glico",
+    "name": "Glico",
+    "description": "",
+    "id": 875
+  },
+  "goon-premium": {
+    "code": "goon-premium",
+    "name": "Goon Premium",
+    "description": "",
+    "id": 806
+  },
+  "goon": {
+    "code": "goon",
+    "name": "GOON",
+    "id": 805,
+    "description": ""
+  },
+  "nuk": {
+    "description": "",
+    "code": "nuk",
+    "name": "NUK",
+    "id": 530
+  },
+  "supa-essentials": {
+    "code": "supa-essentials",
+    "name": "Supa Essentials",
+    "description": "",
+    "id": 330
+  },
+  "heritage-mill": {
+    "code": "heritage-mill",
+    "name": "Heritage Mill",
+    "description": "",
+    "id": 851
+  },
+  "natural-life": {
+    "code": "natural-life",
+    "name": "Natural Life",
+    "description": "",
+    "id": 872
+  },
+  "its-well-plus": {
+    "code": "its-well-plus",
+    "name": "IT'S WELL PLUS",
+    "description": "",
+    "id": 886
+  },
+  "himawari": {
+    "code": "himawari",
+    "name": "HIMAWARI",
+    "description": "",
+    "id": 931
+  },
+  "creer": {
+    "code": "creer",
+    "name": "CREER",
+    "description": "",
+    "id": 914
+  },
+  "elleair": {
+    "code": "elleair",
+    "name": "ELLEAIR",
+    "description": "",
+    "id": 919
+  },
+  "matsuya": {
+    "id": 956,
+    "code": "matsuya",
+    "name": "MATSUYA",
+    "description": ""
+  },
+  "meiwa": {
+    "code": "meiwa",
+    "name": "MEIWA",
+    "id": 959,
+    "description": ""
+  },
+  "azetabio": {
+    "name": "AZETABIO",
+    "description": "",
+    "code": "azetabio",
+    "id": 900
+  },
+  "nappi": {
+    "code": "nappi",
+    "name": "NAPPI",
+    "description": "",
+    "id": 964
+  },
+  "moby": {
+    "code": "moby",
+    "name": "MOBY",
+    "description": "",
+    "id": 962
+  },
+  "basilic": {
+    "code": "basilic",
+    "name": "BASILIC",
+    "description": "",
+    "id": 902
+  },
+  "giel": {
+    "code": "giel",
+    "name": "GIEL",
+    "description": "",
+    "id": 921
+  },
+  "wonmom": {
+    "code": "wonmom",
+    "name": "WONMOM",
+    "description": "",
+    "id": 986
+  },
+  "smooth-e": {
+    "code": "smooth-e",
+    "name": "SMOOTH E",
+    "description": "",
+    "id": 1018
+  },
+  "boardgame": {
+    "code": "boardgame",
+    "name": "BOARDGAME",
+    "description": "",
+    "id": 772
+  },
+  "colomi": {
+    "code": "colomi",
+    "name": "COLOMI",
+    "description": "",
+    "id": 1019
+  },
+  "supor": {
+    "name": "SUPOR",
+    "id": 1022,
+    "description": "",
+    "code": "supor"
+  },
+  "procare": {
+    "code": "procare",
+    "name": "PROCARE",
+    "description": "",
+    "id": 970
+  },
+  "toptoys": {
+    "code": "toptoys",
+    "name": "TOPTOYS",
+    "description": "",
+    "id": 1020
+  },
+  "burine": {
+    "id": 1119,
+    "description": "",
+    "code": "burine",
+    "name": "BURINE"
+  },
+  "yoomi": {
+    "code": "yoomi",
+    "name": "YOOMI",
+    "description": "",
+    "id": 988
+  },
+  "graco": {
+    "code": "graco",
+    "name": "GRACO",
+    "description": "",
+    "id": 926
+  },
+  "lamoon": {
+    "code": "lamoon",
+    "name": "LAMOON",
+    "description": "",
+    "id": 948
+  },
+  "tiger-family": {
+    "code": "tiger-family",
+    "name": "TIGER FAMILY",
+    "description": "",
+    "id": 978
+  },
+  "haenim": {
+    "code": "haenim",
+    "name": "HAENIM",
+    "description": "",
+    "id": 927
+  },
+  "instaglam": {
+    "code": "instaglam",
+    "name": "INSTAGLAM",
+    "description": "",
+    "id": 939
+  },
+  "photosharp": {
+    "code": "photosharp",
+    "description": "",
+    "name": "PHOTOSHARP",
+    "id": 969
+  },
+  "1980-books": {
+    "code": "1980-books",
+    "name": "1980 Books",
+    "description": "",
+    "id": 614
+  },
+  "elo": {
+    "code": "elo",
+    "name": "ELO",
+    "description": "",
+    "id": 553
+  },
+  "bamix": {
+    "code": "bamix",
+    "name": "Bamix",
+    "description": "",
+    "id": 824
+  },
+  "quick-fix": {
+    "code": "quick-fix",
+    "name": "QUICK FIX",
+    "description": "",
+    "id": 1023
+  },
+  "welly": {
+    "code": "welly",
+    "name": "WELLY",
+    "description": "",
+    "id": 1024
+  },
+  "lee-handerson": {
+    "code": "lee-handerson",
+    "name": "LEE HANDERSON",
+    "description": "",
+    "id": 1025
+  },
+  "babybum": {
+    "code": "babybum",
+    "name": "BABYBUM",
+    "description": "",
+    "id": 1027
+  },
+  "bellini": {
+    "code": "bellini",
+    "name": "BELLINI",
+    "description": "",
+    "id": 1028
+  },
+  "creamhaus": {
+    "code": "creamhaus",
+    "name": "CREAMHAUS",
+    "description": "",
+    "id": 1029
+  },
+  "babymuffin": {
+    "code": "babymuffin",
+    "name": "BABYMUFFIN",
+    "description": "",
+    "id": 1030
+  },
+  "funnylon": {
+    "code": "funnylon",
+    "name": "FUNNYLON",
+    "description": "",
+    "id": 1031
+  },
+  "berz": {
+    "code": "berz",
+    "name": "BERZ",
+    "description": "",
+    "id": 1032
+  },
+  "yuga": {
+    "code": "yuga",
+    "name": "YUGA",
+    "description": "",
+    "id": 1033
+  },
+  "ice+": {
+    "code": "ice+",
+    "name": "Ice+",
+    "description": "",
+    "id": 325
+  },
+  "nut-walker": {
+    "code": "nut-walker",
+    "name": "Nut Walker",
+    "description": "",
+    "id": 360
+  },
+  "comfybaby": {
+    "code": "comfybaby",
+    "name": "COMFYBABY",
+    "description": "",
+    "id": 913
+  },
+  "k-mom": {
+    "description": "",
+    "id": 943,
+    "code": "k-mom",
+    "name": "K-MOM"
+  },
+  "nous": {
+    "code": "nous",
+    "name": "NOUS",
+    "description": "",
+    "id": 966
+  },
+  "life": {
+    "code": "life",
+    "name": "LIFE",
+    "description": "",
+    "id": 949
+  },
+  "svoboda": {
+    "code": "svoboda",
+    "id": 977,
+    "description": "",
+    "name": "SVOBODA"
+  },
+  "gilbert": {
+    "code": "gilbert",
+    "id": 922,
+    "description": "",
+    "name": "GILBERT"
+  },
+  "cana": {
+    "code": "cana",
+    "name": "CANA",
+    "description": "",
+    "id": 909
+  },
+  "bb-bag": {
+    "code": "bb-bag",
+    "name": "BB BAG",
+    "description": "",
+    "id": 903
+  },
+  "bioray": {
+    "code": "bioray",
+    "name": "BIORAY",
+    "description": "",
+    "id": 907
+  },
+  "la-pomme": {
+    "code": "la-pomme",
+    "id": 946,
+    "name": "LA POMME",
+    "description": ""
+  },
+  "edison": {
+    "code": "edison",
+    "name": "EDISON",
+    "description": "",
+    "id": 918
+  },
+  "marukin": {
+    "code": "marukin",
+    "name": "MARUKIN",
+    "description": "",
+    "id": 954
+  },
+  "nissen": {
+    "code": "nissen",
+    "name": "NISSEN",
+    "description": "",
+    "id": 965
+  },
+  "iimo": {
+    "code": "iimo",
+    "name": "IIMO",
+    "description": "",
+    "id": 935
+  },
+  "uala-&-rogo": {
+    "code": "uala-&-rogo",
+    "name": "UALA & ROGO",
+    "description": "",
+    "id": 983
+  },
+  "sbaby": {
+    "code": "sbaby",
+    "name": "S'BABY",
+    "description": "",
+    "id": 974
+  },
+  "moaz-bebe": {
+    "code": "moaz-bebe",
+    "name": "MOAZ BEBE",
+    "description": "",
+    "id": 961
+  },
+  "medela": {
+    "code": "medela",
+    "name": "MEDELA",
+    "description": "",
+    "id": 957
+  },
+  "avent": {
+    "code": "avent",
+    "name": "AVENT",
+    "description": "",
+    "id": 899
+  },
+  "lol-baby": {
+    "code": "lol-baby",
+    "name": "LOL BABY",
+    "description": "",
+    "id": 950
+  },
+  "heanim": {
+    "code": "heanim",
+    "name": "HEANIM",
+    "description": "",
+    "id": 929
+  },
+  "pororo": {
+    "code": "pororo",
+    "id": 1070,
+    "description": "",
+    "name": "PORORO"
+  },
+  "geum-pung": {
+    "code": "geum-pung",
+    "name": "GEUM PUNG",
+    "description": "",
+    "id": 1071
+  },
+  "joia": {
+    "code": "joia",
+    "name": "JOIA",
+    "description": "",
+    "id": 1072
+  },
+  "andalou": {
+    "code": "andalou",
+    "name": "ANDALOU",
+    "description": "",
+    "id": 896
+  },
+  "a-derma": {
+    "code": "a-derma",
+    "name": "A-DERMA",
+    "description": "",
+    "id": 365
+  },
+  "aflofarm": {
+    "code": "aflofarm",
+    "id": 891,
+    "description": "",
+    "name": "AFLOFARM"
+  },
+  "almirall": {
+    "code": "almirall",
+    "name": "ALMIRALL",
+    "description": "",
+    "id": 895
+  },
+  "aknicare": {
+    "code": "aknicare",
+    "name": "AKNICARE",
+    "description": "",
+    "id": 893
+  },
+  "arcancil": {
+    "code": "arcancil",
+    "name": "ARCANCIL",
+    "description": "",
+    "id": 897
+  },
+  "atopiclair": {
+    "code": "atopiclair",
+    "name": "ATOPICLAIR",
+    "description": "",
+    "id": 370
+  },
+  "avene": {
+    "code": "avene",
+    "name": "AVENE",
+    "description": "",
+    "id": 1063
+  },
+  "bioderma": {
+    "code": "bioderma",
+    "name": "BIODERMA",
+    "description": "",
+    "id": 373
+  },
+  "blackmores": {
+    "code": "blackmores",
+    "name": "BLACKMORES",
+    "description": "",
+    "id": 1062
+  },
+  "coway": {
+    "code": "coway",
+    "name": "Coway",
+    "description": "",
+    "id": 1069
+  },
+  "infantino": {
+    "code": "infantino",
+    "name": "INFANTINO",
+    "description": "",
+    "id": 937
+  },
+  "konigkids": {
+    "code": "konigkids",
+    "name": "KONIGKIDS",
+    "description": "",
+    "id": 945
+  },
+  "joovy": {
+    "code": "joovy",
+    "name": "JOOVY",
+    "description": "",
+    "id": 942
+  },
+  "trends": {
+    "code": "trends",
+    "name": "TRENDS",
+    "description": "",
+    "id": 982
+  },
+  "royalcare": {
+    "code": "royalcare",
+    "name": "ROYALCARE",
+    "id": 971,
+    "description": ""
+  },
+  "heniz": {
+    "code": "heniz",
+    "name": "HENIZ",
+    "description": "",
+    "id": 930
+  },
+  "alkari": {
+    "code": "alkari",
+    "name": "ALKARI",
+    "description": "",
+    "id": 1076
+  },
+  "vinamask": {
+    "code": "vinamask",
+    "name": "VINAMASK",
+    "description": "",
+    "id": 1077
+  },
+  "garimi": {
+    "name": "GARIMI",
+    "description": "",
+    "code": "garimi",
+    "id": 1074
+  },
+  "daesang": {
+    "name": "DAESANG",
+    "description": "",
+    "code": "daesang",
+    "id": 1075
+  },
+  "davidoff": {
+    "code": "davidoff",
+    "name": "DAVIDOFF",
+    "description": "",
+    "id": 315
+  },
+  "tchibo": {
+    "code": "tchibo",
+    "name": "Tchibo",
+    "description": "",
+    "id": 332
+  },
+  "schogetten": {
+    "code": "schogetten",
+    "name": "Schogetten",
+    "description": "",
+    "id": 326
+  },
+  "chogo": {
+    "code": "chogo",
+    "name": "Cho'Go",
+    "description": "",
+    "id": 313
+  },
+  "kalfany": {
+    "code": "kalfany",
+    "name": "Kalfany",
+    "description": "",
+    "id": 345
+  },
+  "blue-diamond": {
+    "code": "blue-diamond",
+    "name": "Blue Diamond",
+    "description": "",
+    "id": 305
+  },
+  "jila": {
+    "code": "jila",
+    "name": "Jila",
+    "description": "",
+    "id": 343
+  },
+  "gobble": {
+    "code": "gobble",
+    "name": "Gobble",
+    "description": "",
+    "id": 321
+  },
+  "jibba": {
+    "code": "jibba",
+    "name": "Jibba",
+    "description": "",
+    "id": 342
+  },
+  "hoang-khanh": {
+    "code": "hoang-khanh",
+    "name": "HO\u00c0NG KHANH",
+    "description": "",
+    "id": 290
+  },
+  "davidoffbutter-fingers": {
+    "code": "davidoffbutter-fingers",
+    "name": "Davidoff,Butter Fingers",
+    "description": "",
+    "id": 316
+  },
+  "butter-fingers": {
+    "code": "butter-fingers",
+    "name": "Butter Fingers",
+    "description": "",
+    "id": 307
+  },
+  "corine-de-farme": {
+    "code": "corine-de-farme",
+    "name": "CORINE DE FARME",
+    "description": "",
+    "id": 1061
+  },
+  "cetaphil": {
+    "code": "cetaphil",
+    "name": "CETAPHIL",
+    "description": "",
+    "id": 375
+  },
+  "christiant-lenart": {
+    "code": "christiant-lenart",
+    "name": "CHRISTIANT LENART",
+    "description": "",
+    "id": 1060
+  },
+  "coko": {
+    "code": "coko",
+    "name": "COKO",
+    "description": "",
+    "id": 1059
+  },
+  "collagen-slim": {
+    "code": "collagen-slim",
+    "name": "COLLAGEN SLIM",
+    "description": "",
+    "id": 1058
+  },
+  "chateau-rouge": {
+    "code": "chateau-rouge",
+    "name": "CHATEAU ROUGE",
+    "description": "",
+    "id": 1057
+  },
+  "ducray-argeal": {
+    "code": "ducray-argeal",
+    "name": "Ducray Argeal",
+    "description": "",
+    "id": 1056
+  },
+  "dermeden": {
+    "code": "dermeden",
+    "name": "DERMEDEN",
+    "description": "",
+    "id": 380
+  },
+  "eucerin": {
+    "description": "",
+    "code": "eucerin",
+    "name": "EUCERIN",
+    "id": 385
+  },
+  "elevit": {
+    "code": "elevit",
+    "name": "Elevit",
+    "description": "",
+    "id": 1055
+  },
+  "menevit": {
+    "description": "",
+    "id": 1054,
+    "code": "menevit",
+    "name": "Menevit"
+  },
+  "etiaxil": {
+    "code": "etiaxil",
+    "name": "Etiaxil",
+    "description": "",
+    "id": 1053
+  },
+  "evian": {
+    "code": "evian",
+    "name": "Evian",
+    "description": "",
+    "id": 1052
+  },
+  "evoluderm": {
+    "code": "evoluderm",
+    "name": "Evoluderm",
+    "description": "",
+    "id": 1051
+  },
+  "fleurance": {
+    "code": "fleurance",
+    "name": "Fleurance",
+    "description": "",
+    "id": 1049
+  },
+  "gold-energy-snail-synergy": {
+    "code": "gold-energy-snail-synergy",
+    "name": "Gold Energy Snail Synergy",
+    "description": "",
+    "id": 1048
+  },
+  "go-healthy-new-zealand": {
+    "description": "",
+    "id": 1047,
+    "code": "go-healthy-new-zealand",
+    "name": "Go Healthy New Zealand"
+  },
+  "hiruscar": {
+    "code": "hiruscar",
+    "name": "Hiruscar",
+    "description": "",
+    "id": 1046
+  },
+  "isis-pharma": {
+    "code": "isis-pharma",
+    "name": "ISIS PHARMA",
+    "description": "",
+    "id": 393
+  },
+  "labwell": {
+    "code": "labwell",
+    "name": "Labwell",
+    "description": "",
+    "id": 1045
+  },
+  "newland": {
+    "code": "newland",
+    "name": "NewLand",
+    "description": "",
+    "id": 1044
+  },
+  "oherbal": {
+    "code": "oherbal",
+    "name": "O'Herbal",
+    "description": "",
+    "id": 1043
+  },
+  "palmers": {
+    "code": "palmers",
+    "name": "PALMER'S",
+    "description": "",
+    "id": 413
+  },
+  "papulex": {
+    "code": "papulex",
+    "name": "PAPULEX",
+    "description": "",
+    "id": 337
+  },
+  "pnkids": {
+    "code": "pnkids",
+    "name": "PNKids",
+    "description": "",
+    "id": 1042
+  },
+  "principle-nutrition": {
+    "code": "principle-nutrition",
+    "name": "PRINCIPLE NUTRITION",
+    "description": "",
+    "id": 874
+  },
+  "repavar": {
+    "code": "repavar",
+    "name": "Repavar",
+    "description": "",
+    "id": 1041
+  },
+  "sebamed": {
+    "code": "sebamed",
+    "name": "SEBAMED",
+    "description": "",
+    "id": 364
+  },
+  "saforelle": {
+    "code": "saforelle",
+    "name": "Saforelle",
+    "description": "",
+    "id": 1040
+  },
+  "slim-usa": {
+    "code": "slim-usa",
+    "name": "Slim USA",
+    "description": "",
+    "id": 1039
+  },
+  "svr": {
+    "code": "svr",
+    "name": "SVR",
+    "description": "",
+    "id": 424
+  },
+  "topicrem": {
+    "code": "topicrem",
+    "name": "TOPICREM",
+    "description": "",
+    "id": 428
+  },
+  "vita-health": {
+    "code": "vita-health",
+    "name": "Vita health",
+    "description": "",
+    "id": 1038
+  },
+  "beauskin": {
+    "code": "beauskin",
+    "name": "BEAUSKIN",
+    "description": "",
+    "id": 1079
+  },
+  "ange": {
+    "code": "ange",
+    "name": "ANGE",
+    "description": "",
+    "id": 1080
+  },
+  "dr-mama": {
+    "code": "dr-mama",
+    "name": "DR MAMA",
+    "description": "",
+    "id": 1081
+  },
+  "toyhouse": {
+    "code": "toyhouse",
+    "name": "TOYHOUSE",
+    "description": "",
+    "id": 980
+  },
+  "bieber": {
+    "code": "bieber",
+    "name": "BIEBER",
+    "description": "",
+    "id": 906
+  },
+  "hong-lam": {
+    "code": "hong-lam",
+    "name": "H\u1ed2NG LAM",
+    "description": "",
+    "id": 933
+  },
+  "dr-cpu": {
+    "code": "dr-cpu",
+    "name": "Dr CPU",
+    "description": "",
+    "id": 1118
+  },
+  "tiniboo": {
+    "code": "tiniboo",
+    "name": "TINIBOO",
+    "description": "",
+    "id": 979
+  },
+  "toyroyal": {
+    "code": "toyroyal",
+    "name": "TOYROYAL",
+    "description": "",
+    "id": 981
+  },
+  "terra": {
+    "code": "terra",
+    "name": "TERRA",
+    "description": "",
+    "id": 1083
+  },
+  "gio": {
+    "code": "gio",
+    "name": "GIO",
+    "description": "",
+    "id": 1084
+  },
+  "sinbii": {
+    "code": "sinbii",
+    "name": "SINBII",
+    "description": "",
+    "id": 1085
+  },
+  "amos": {
+    "code": "amos",
+    "name": "AMOS",
+    "description": "",
+    "id": 1086
+  },
+  "beaba": {
+    "code": "beaba",
+    "name": "B\u00c9ABA",
+    "description": "",
+    "id": 1087
+  },
+  "ardo": {
+    "code": "ardo",
+    "name": "ARDO",
+    "description": "",
+    "id": 1088
+  },
+  "babyzen": {
+    "code": "babyzen",
+    "name": "BABYZEN",
+    "description": "",
+    "id": 1089
+  },
+  "labiofam": {
+    "code": "labiofam",
+    "name": "LABIOFAM",
+    "description": "",
+    "id": 1090
+  },
+  "drmickey": {
+    "code": "drmickey",
+    "name": "DR.MICKEY",
+    "description": "",
+    "id": 1091
+  },
+  "canxi-plus": {
+    "code": "canxi-plus",
+    "name": "Canxi Plus",
+    "description": "",
+    "id": 799
+  },
+  "fucoidan": {
+    "code": "fucoidan",
+    "name": "FUCOIDAN",
+    "description": "",
+    "id": 1092
+  },
+  "jpanwell--nhat-ban": {
+    "code": "jpanwell--nhat-ban",
+    "name": "JPANWELL- Nh\u1eadt B\u1ea3n",
+    "description": "",
+    "id": 600
+  },
+  "amok": {
+    "code": "amok",
+    "name": "AMOK",
+    "description": "",
+    "id": 1093
+  },
+  "luxury": {
+    "code": "luxury",
+    "name": "LUXURY",
+    "description": "",
+    "id": 1082
+  },
+  "ciiracle": {
+    "code": "ciiracle",
+    "name": "CIIRACLE",
+    "description": "",
+    "id": 912
+  },
+  "happoutake": {
+    "code": "happoutake",
+    "name": "HAPPOUTAKE",
+    "description": "",
+    "id": 928
+  },
+  "supertorekatto": {
+    "code": "supertorekatto",
+    "name": "SUPERTOREKATTO",
+    "description": "",
+    "id": 976
+  },
+  "superior": {
+    "code": "superior",
+    "name": "SUPERIOR",
+    "description": "",
+    "id": 1096
+  },
+  "waki-pharmaceutical": {
+    "code": "waki-pharmaceutical",
+    "name": "WAKI PHARMACEUTICAL",
+    "description": "",
+    "id": 985
+  },
+  "salacia": {
+    "code": "salacia",
+    "name": "SALACIA",
+    "description": "",
+    "id": 972
+  },
+  "hlp": {
+    "code": "hlp",
+    "name": "HLP",
+    "description": "",
+    "id": 932
+  },
+  "miracle": {
+    "code": "miracle",
+    "name": "MIRACLE",
+    "description": "",
+    "id": 960
+  },
+  "special-kid": {
+    "code": "special-kid",
+    "name": "SPECIAL KID",
+    "description": "",
+    "id": 1097
+  },
+  "cross-beverly": {
+    "code": "cross-beverly",
+    "name": "CROSS BEVERLY",
+    "description": "",
+    "id": 1098
+  },
+  "sheaffer-vfm": {
+    "code": "sheaffer-vfm",
+    "name": "SHEAFFER VFM",
+    "description": "",
+    "id": 1099
+  },
+  "marco": {
+    "code": "marco",
+    "name": "MARCO",
+    "description": "",
+    "id": 953
+  },
+  "aladin": {
+    "code": "aladin",
+    "name": "ALADIN",
+    "description": "",
+    "id": 894
+  },
+  "icarus": {
+    "code": "icarus",
+    "name": "ICARUS",
+    "description": "",
+    "id": 934
+  },
+  "berghome": {
+    "code": "berghome",
+    "name": "BERGHOME",
+    "description": "",
+    "id": 905
+  },
+  "haku-baku": {
+    "description": "",
+    "name": "HAKU BAKU",
+    "id": 1100,
+    "code": "haku-baku"
+  },
+  "summer-infant": {
+    "code": "summer-infant",
+    "name": "SUMMER INFANT",
+    "description": "",
+    "id": 1101
+  },
+  "pearl-metal": {
+    "code": "pearl-metal",
+    "name": "PEARL METAL",
+    "description": "",
+    "id": 968
+  },
+  "inomata": {
+    "code": "inomata",
+    "name": "INOMATA",
+    "description": "",
+    "id": 938
+  },
+  "kokubo": {
+    "description": "",
+    "name": "KOKUBO",
+    "id": 944,
+    "code": "kokubo"
+  },
+  "yamada": {
+    "code": "yamada",
+    "name": "YAMADA",
+    "description": "",
+    "id": 987
+  },
+  "lustroware": {
+    "code": "lustroware",
+    "name": "LUSTROWARE",
+    "description": "",
+    "id": 952
+  },
+  "akachan": {
+    "code": "akachan",
+    "name": "AKACHAN",
+    "description": "",
+    "id": 892
+  },
+  "lovi": {
+    "code": "lovi",
+    "name": "LOVI",
+    "description": "",
+    "id": 951
+  },
+  "dramers-sa": {
+    "code": "dramers-sa",
+    "name": "DRAMERS .S.A",
+    "description": "",
+    "id": 1103
+  },
+  "think-nature": {
+    "code": "think-nature",
+    "name": "THINK NATURE",
+    "description": "",
+    "id": 1104
+  },
+  "torayvino": {
+    "code": "torayvino",
+    "name": "Torayvino",
+    "description": "",
+    "id": 1105
+  },
+  "anessa": {
+    "code": "anessa",
+    "name": "Anessa",
+    "description": "",
+    "id": 367
+  },
+  "tsubaki": {
+    "code": "tsubaki",
+    "name": "Tsubaki",
+    "id": 1106,
+    "description": ""
+  },
+  "lansinoh": {
+    "code": "lansinoh",
+    "name": "LANSINOH",
+    "description": "",
+    "id": 1109
+  },
+  "fpt": {
+    "code": "fpt",
+    "name": "FPT",
+    "description": "",
+    "id": 1107
+  },
+  "wakodo": {
+    "code": "wakodo",
+    "name": "WAKODO",
+    "description": "",
+    "id": 1108
+  },
+  "gerber": {
+    "code": "gerber",
+    "name": "Gerber",
+    "description": "",
+    "id": 876
+  },
+  "cerelac": {
+    "code": "cerelac",
+    "name": "Cerelac",
+    "description": "",
+    "id": 877
+  },
+  "goldgi": {
+    "code": "goldgi",
+    "name": "GOLDGI",
+    "description": "",
+    "id": 1111
+  },
+  "angel": {
+    "code": "angel",
+    "name": "ANGEL",
+    "description": "",
+    "id": 1112
+  },
+  "jo": {
+    "code": "jo",
+    "name": "JO",
+    "description": "",
+    "id": 1113
+  },
+  "skinfood": {
+    "code": "skinfood",
+    "name": "Skinfood",
+    "description": "",
+    "id": 421
+  },
+  "hrnee": {
+    "code": "hrnee",
+    "name": "HRNEE",
+    "description": "",
+    "id": 1114
+  },
+  "intex": {
+    "code": "intex",
+    "name": "INTEX",
+    "description": "",
+    "id": 1115
+  },
+  "ariston": {
+    "code": "ariston",
+    "name": "ARISTON",
+    "description": "",
+    "id": 1116
+  },
+  "ferroli": {
+    "code": "ferroli",
+    "name": "FERROLI",
+    "description": "",
+    "id": 1117
+  },
+  "viettel": {
+    "code": "viettel",
+    "name": "Viettel",
+    "description": "",
+    "id": 58
+  },
+  "geo": {
+    "code": "geo",
+    "id": 1122,
+    "description": "",
+    "name": "GEO"
+  },
+  "saffron": {
+    "code": "saffron",
+    "name": "SAFFRON",
+    "description": "",
+    "id": 1121
+  },
+  "faso": {
+    "code": "faso",
+    "name": "Faso",
+    "description": "",
+    "id": 1123
+  },
+  "sunmi": {
+    "code": "sunmi",
+    "name": "SUNMI",
+    "id": 1120,
+    "description": ""
+  },
+  "noctua": {
+    "code": "noctua",
+    "name": "NOCTUA",
+    "description": "",
+    "id": 1124
+  },
+  "halio": {
+    "code": "halio",
+    "name": "HALIO",
+    "description": "",
+    "id": 1126
+  },
+  "lixibox": {
+    "code": "lixibox",
+    "name": "LIXIBOX",
+    "description": "",
+    "id": 1125
+  },
+  "lustre": {
+    "code": "lustre",
+    "name": "LUSTRE",
+    "description": "",
+    "id": 1128
+  },
+  "okame": {
+    "code": "okame",
+    "name": "OKAME",
+    "description": "",
+    "id": 1127
+  },
+  "little-innoscents": {
+    "code": "little-innoscents",
+    "name": "Little Innoscents",
+    "description": "",
+    "id": 1129
+  },
+  "prolink": {
+    "name": "Prolink",
+    "description": "",
+    "code": "prolink",
+    "id": 781
+  },
+  "wattle-health": {
+    "code": "wattle-health",
+    "name": "Wattle Health",
+    "description": "",
+    "id": 1130
+  },
+  "fujifilm": {
+    "code": "fujifilm",
+    "name": "Fujifilm",
+    "description": "",
+    "id": 1132
+  },
+  "chung-jung-one": {
+    "name": "Chung Jung One",
+    "description": "",
+    "code": "chung-jung-one",
+    "id": 1134
+  },
+  "hanaro": {
+    "code": "hanaro",
+    "name": "HANARO",
+    "description": "",
+    "id": 1135
+  },
+  "oem": {
+    "code": "oem",
+    "name": "OEM",
+    "description": "",
+    "id": 484
+  },
+  "sungjin": {
+    "code": "sungjin",
+    "name": "Sungjin",
+    "description": "",
+    "id": 1136
+  },
+  "tigertex-inc": {
+    "code": "tigertex-inc",
+    "name": "Tigertex Inc",
+    "description": "",
+    "id": 1137
+  },
+  "myungjin": {
+    "code": "myungjin",
+    "name": "MYUNGJIN",
+    "description": "",
+    "id": 1138
+  },
+  "smile-home": {
+    "name": "SMILE HOME",
+    "description": "",
+    "code": "smile-home",
+    "id": 1139
+  },
+  "fatzbaby": {
+    "code": "fatzbaby",
+    "name": "FATZBABY",
+    "description": "",
+    "id": 1140
+  },
+  "anlene": {
+    "code": "anlene",
+    "name": "Anlene",
+    "description": "",
+    "id": 1141
+  },
+  "nutifood": {
+    "id": 1142,
+    "code": "nutifood",
+    "name": "NutiFood",
+    "description": ""
+  },
+  "enfa": {
+    "code": "enfa",
+    "name": "Enfa",
+    "description": "",
+    "id": 790
+  },
+  "anmum-materna": {
+    "code": "anmum-materna",
+    "name": "Anmum Materna",
+    "description": "",
+    "id": 1143
+  },
+  "friso": {
+    "code": "friso",
+    "name": "FRISO",
+    "description": "",
+    "id": 791
+  },
+  "lucas-meyer": {
+    "code": "lucas-meyer",
+    "id": 1146,
+    "description": "",
+    "name": "Lucas Meyer"
+  },
+  "cinderella-story": {
+    "code": "cinderella-story",
+    "name": "Cinderella Story",
+    "description": "",
+    "id": 1147
+  },
+  "abbott": {
+    "code": "abbott",
+    "name": "Abbott",
+    "description": "",
+    "id": 1148
+  },
+  "gear4": {
+    "code": "gear4",
+    "name": "GEAR4",
+    "description": "",
+    "id": 1149
+  },
+  "invisibleshield": {
+    "code": "invisibleshield",
+    "name": "InvisibleShield",
+    "description": "",
+    "id": 1150
+  },
+  "zagg": {
+    "code": "zagg",
+    "name": "ZAGG",
+    "description": "",
+    "id": 1151
+  },
+  "ifrogz": {
+    "code": "ifrogz",
+    "name": "iFrogz",
+    "description": "",
+    "id": 288
+  },
+  "super-flower": {
+    "code": "super-flower",
+    "name": "Super Flower",
+    "description": "",
+    "id": 1152
+  },
+  "youngdong": {
+    "code": "youngdong",
+    "name": "YoungDong",
+    "description": "",
+    "id": 1153
+  },
+  "calbee": {
+    "code": "calbee",
+    "name": "CALBEE",
+    "description": "",
+    "id": 1154
+  },
+  "bobini": {
+    "code": "bobini",
+    "name": "BOBINI",
+    "description": "",
+    "id": 1155
+  },
+  "vivitek": {
+    "code": "vivitek",
+    "name": "Vivitek",
+    "description": "",
+    "id": 1157
+  },
+  "airphin": {
+    "code": "airphin",
+    "name": "Airphin",
+    "description": "",
+    "id": 1158
+  },
+  "nadle": {
+    "code": "nadle",
+    "name": "Nadle",
+    "description": "",
+    "id": 1161
+  },
+  "konig-kids": {
+    "code": "konig-kids",
+    "name": "Konig Kids",
+    "description": "",
+    "id": 1159
+  },
+  "toys-house": {
+    "code": "toys-house",
+    "name": "TOYS HOUSE",
+    "description": "",
+    "id": 1160
+  },
+  "amazfit": {
+    "code": "amazfit",
+    "name": "AMAZFIT",
+    "description": "",
+    "id": 1162
+  },
+  "remax": {
+    "code": "remax",
+    "name": "Remax",
+    "id": 107,
+    "description": ""
+  },
+  "sotate": {
+    "description": "",
+    "name": "SOTATE",
+    "code": "sotate",
+    "id": 611
+  },
+  "studio": {
+    "code": "studio",
+    "name": "SUDIO",
+    "description": "",
+    "id": 1164
+  },
+  "marshall": {
+    "code": "marshall",
+    "name": "Marshall",
+    "description": "",
+    "id": 1165
+  },
+  "avaya": {
+    "code": "avaya",
+    "name": "Avaya",
+    "description": "",
+    "id": 1167
+  },
+  "yealink": {
+    "code": "yealink",
+    "name": "Yealink",
+    "description": "",
+    "id": 1168
+  },
+  "idcooling": {
+    "name": "ID-COOLING",
+    "code": "idcooling",
+    "id": 1169,
+    "description": ""
+  },
+  "astor": {
+    "code": "astor",
+    "name": "ASTOR",
+    "description": "",
+    "id": 1172
+  },
+  "mayora": {
+    "code": "mayora",
+    "name": "MAYORA",
+    "id": 1173,
+    "description": ""
+  },
+  "yopokki": {
+    "code": "yopokki",
+    "name": "Yopokki",
+    "description": "",
+    "id": 1174
+  },
+  "roma": {
+    "id": 1175,
+    "code": "roma",
+    "name": "ROMA",
+    "description": ""
+  },
+  "lale": {
+    "code": "lale",
+    "name": "LALE",
+    "description": "",
+    "id": 1176
+  },
+  "lucky": {
+    "code": "lucky",
+    "name": "LUCKY",
+    "description": "",
+    "id": 1177
+  },
+  "cotoneve": {
+    "code": "cotoneve",
+    "name": "COTONEVE",
+    "description": "",
+    "id": 1180
+  },
+  "silang": {
+    "code": "silang",
+    "name": "Silang",
+    "description": "",
+    "id": 1181
+  },
+  "sunview": {
+    "code": "sunview",
+    "name": "Sunview",
+    "description": "",
+    "id": 1182
+  },
+  "ph": {
+    "code": "ph",
+    "name": "PH",
+    "description": "",
+    "id": 1183
+  },
+  "ha-noi-xua": {
+    "code": "ha-noi-xua",
+    "name": "H\u00e0 N\u1ed9i X\u01b0a",
+    "description": "",
+    "id": 1185
+  },
+  "humanwell": {
+    "code": "humanwell",
+    "name": "Humanwell",
+    "description": "",
+    "id": 1186
+  },
+  "kopico": {
+    "code": "kopico",
+    "name": "Kopico",
+    "description": "",
+    "id": 349
+  },
+  "fress": {
+    "code": "fress",
+    "name": "Fress",
+    "id": 1187,
+    "description": ""
+  },
+  "dr-browns": {
+    "code": "dr-browns",
+    "name": "Dr Brown's",
+    "description": "",
+    "id": 496
+  },
+  "colorful": {
+    "code": "colorful",
+    "name": "Colorful",
+    "description": "",
+    "id": 1189
+  },
+  "andrew-peace-wine": {
+    "code": "andrew-peace-wine",
+    "name": "Andrew Peace Win\u00e9",
+    "description": "",
+    "id": 1190
+  },
+  "santalba": {
+    "code": "santalba",
+    "name": "Santalba",
+    "description": "",
+    "id": 1191
+  },
+  "aptamil": {
+    "id": 1193,
+    "code": "aptamil",
+    "name": "APTAMIL",
+    "description": ""
+  },
+  "vietk": {
+    "code": "vietk",
+    "name": "VietK",
+    "description": "",
+    "id": 1192
+  },
+  "mipow": {
+    "code": "mipow",
+    "name": "MIPOW",
+    "description": "",
+    "id": 1194
+  },
+  "ecosun": {
+    "code": "ecosun",
+    "name": "ECOSUN",
+    "description": "",
+    "id": 1195
+  },
+  "kipor": {
+    "code": "kipor",
+    "description": "",
+    "name": "KIPOR",
+    "id": 1196
+  },
+  "elmich": {
+    "code": "elmich",
+    "name": "ELMICH",
+    "description": "",
+    "id": 552
+  },
+  "smartcook": {
+    "code": "smartcook",
+    "name": "SMARTCOOK",
+    "description": "",
+    "id": 1197
+  },
+  "mishio": {
+    "code": "mishio",
+    "name": "Mishio",
+    "id": 1198,
+    "description": ""
+  },
+  "kachi": {
+    "code": "kachi",
+    "name": "Kachi",
+    "description": "",
+    "id": 1199
+  },
+  "luva": {
+    "code": "luva",
+    "name": "LUVA",
+    "description": "",
+    "id": 1200
+  },
+  "sanaky": {
+    "code": "sanaky",
+    "name": "SANAKY",
+    "description": "",
+    "id": 1202
+  },
+  "aosmith": {
+    "code": "aosmith",
+    "name": "AOSmith",
+    "description": "",
+    "id": 1203
+  },
+  "the-herbal-skin": {
+    "code": "the-herbal-skin",
+    "name": "The Herbal Skin",
+    "id": 1205,
+    "description": ""
+  },
+  "orga": {
+    "code": "orga",
+    "name": "ORGA",
+    "description": "",
+    "id": 1206
+  },
+  "leorga": {
+    "name": "Le'Orga",
+    "code": "leorga",
+    "id": 1207,
+    "description": ""
+  },
+  "ciracle": {
+    "code": "ciracle",
+    "name": "Ciracle",
+    "description": "",
+    "id": 376
+  },
+  "dermal": {
+    "id": 1208,
+    "description": "",
+    "code": "dermal",
+    "name": "DERMAL"
+  },
+  "real-barrier": {
+    "code": "real-barrier",
+    "name": "REAL BARRIER",
+    "description": "",
+    "id": 1209
+  },
+  "the-face-shop": {
+    "code": "the-face-shop",
+    "name": "The face shop",
+    "description": "",
+    "id": 427
+  },
+  "innisfree": {
+    "name": "Innisfree",
+    "id": 392,
+    "description": "",
+    "code": "innisfree"
+  },
+  "ohui": {
+    "code": "ohui",
+    "name": "OHUI",
+    "description": "",
+    "id": 1210
+  },
+  "retune": {
+    "code": "retune",
+    "name": "Re:tune",
+    "description": "",
+    "id": 1211
+  },
+  "pampers": {
+    "code": "pampers",
+    "name": "PAMPERS",
+    "description": "",
+    "id": 1212
+  },
+  "mcklein": {
+    "code": "mcklein",
+    "name": "McKlein",
+    "description": "",
+    "id": 1213
+  },
+  "teka": {
+    "code": "teka",
+    "name": "TEKA",
+    "description": "",
+    "id": 1215
+  },
+  "beauty-buffet": {
+    "code": "beauty-buffet",
+    "description": "",
+    "name": "Beauty Buffet",
+    "id": 1217
+  },
+  "sayam": {
+    "name": "CELEBEAU",
+    "code": "sayam",
+    "id": 1216,
+    "description": ""
+  },
+  "facis": {
+    "code": "facis",
+    "name": "Facis",
+    "description": "",
+    "id": 1218
+  },
+  "jigott": {
+    "code": "jigott",
+    "name": "Jigott",
+    "description": "",
+    "id": 1219
+  },
+  "zenzia": {
+    "name": "Zenzia",
+    "id": 1220,
+    "description": "",
+    "code": "zenzia"
+  },
+  "daanbit": {
+    "code": "daanbit",
+    "name": "Daanbit",
+    "description": "",
+    "id": 1221
+  },
+  "intoskin": {
+    "name": "Intoskin",
+    "code": "intoskin",
+    "id": 1222,
+    "description": ""
+  },
+  "saeco": {
+    "code": "saeco",
+    "name": "SEACO",
+    "description": "",
+    "id": 1223
+  },
+  "nivea": {
+    "code": "nivea",
+    "name": "Nivea",
+    "description": "",
+    "id": 1224
+  },
+  "hongwhasoo": {
+    "code": "hongwhasoo",
+    "name": "Hongwhasoo",
+    "description": "",
+    "id": 1225
+  },
+  "bella": {
+    "code": "bella",
+    "name": "Bella",
+    "description": "",
+    "id": 1226
+  },
+  "sato": {
+    "name": "SATO",
+    "description": "",
+    "id": 1227,
+    "code": "sato"
+  },
+  "nikawa": {
+    "code": "nikawa",
+    "name": "Nikawa",
+    "description": "",
+    "id": 1230
+  },
+  "aver": {
+    "code": "aver",
+    "name": "Aver",
+    "description": "",
+    "id": 1166
+  },
+  "komax": {
+    "name": "Komax",
+    "code": "komax",
+    "id": 1231,
+    "description": ""
+  },
+  "kova": {
+    "name": "Kova",
+    "code": "kova",
+    "id": 560,
+    "description": ""
+  },
+  "barrier": {
+    "code": "barrier",
+    "name": "Barrier",
+    "description": "",
+    "id": 1232
+  },
+  "onsky": {
+    "code": "onsky",
+    "name": "OnSky",
+    "description": "",
+    "id": 1233
+  },
+  "za": {
+    "code": "za",
+    "name": "Za",
+    "description": "",
+    "id": 432
+  },
+  "goldsun": {
+    "name": "GOLDSUN",
+    "description": "",
+    "id": 828,
+    "code": "goldsun"
+  },
+  "bios": {
+    "code": "bios",
+    "name": "BIO-S",
+    "description": "",
+    "id": 1234
+  },
+  "drmedm": {
+    "name": "Dr+Medm",
+    "code": "drmedm",
+    "id": 1235,
+    "description": ""
+  },
+  "vsmart": {
+    "code": "vsmart",
+    "name": "Vsmart",
+    "description": "",
+    "id": 1236
+  },
+  "warrior": {
+    "code": "warrior",
+    "name": "Warrior",
+    "description": "",
+    "id": 1238
+  },
+  "daikio": {
+    "code": "daikio",
+    "name": "Daikio",
+    "description": "",
+    "id": 1237
+  },
+  "tianxi": {
+    "code": "tianxi",
+    "name": "Tianxi",
+    "description": "",
+    "id": 1239
+  },
+  "tivoli": {
+    "code": "tivoli",
+    "name": "Tivoli",
+    "description": "",
+    "id": 1243
+  },
+  "maxim": {
+    "code": "maxim",
+    "name": "Maxim",
+    "description": "",
+    "id": 1242
+  },
+  "akko": {
+    "code": "akko",
+    "name": "AKKO",
+    "id": 1244,
+    "description": ""
+  },
+  "bluestone": {
+    "description": "",
+    "id": 823,
+    "name": "BlueStone",
+    "code": "bluestone"
+  },
+  "perfect": {
+    "code": "perfect",
+    "name": "Perfect",
+    "description": "",
+    "id": 1277
+  },
+  "dalite": {
+    "code": "dalite",
+    "name": "DALITE",
+    "description": "",
+    "id": 1362
+  },
+  "kangaroo": {
+    "code": "kangaroo",
+    "name": "KANGAROO",
+    "description": "",
+    "id": 457
+  },
+  "pureit": {
+    "code": "pureit",
+    "name": "Pureit",
+    "description": "",
+    "id": 1372
+  },
+  "elgato": {
+    "code": "elgato",
+    "name": "Elgato",
+    "description": "",
+    "id": 1373
+  },
+  "nan": {
+    "code": "nan",
+    "name": "Nan",
+    "description": "",
+    "id": 795
+  },
+  "caryn": {
+    "code": "caryn",
+    "name": "Caryn",
+    "description": "",
+    "id": 1446
+  },
+  "daikiosan": {
+    "code": "daikiosan",
+    "name": "Daikiosan",
+    "description": "",
+    "id": 1447
+  },
+  "bestlife": {
+    "code": "bestlife",
+    "name": "Bestlife",
+    "description": "",
+    "id": 1451
+  },
+  "tokyo-life": {
+    "name": "TOKYOLIFE",
+    "description": "",
+    "id": 1459,
+    "code": "tokyo-life"
+  },
+  "block100": {
+    "code": "block100",
+    "name": "Block100",
+    "description": "",
+    "id": 1462
+  },
+  "morigana": {
+    "code": "morigana",
+    "id": 357,
+    "name": "Morigana",
+    "description": ""
+  },
+  "olay": {
+    "description": "",
+    "id": 1484,
+    "code": "olay",
+    "name": "OLAY"
+  },
+  "hs": {
+    "description": "",
+    "id": 1483,
+    "code": "hs",
+    "name": "H&S"
+  },
+  "masstel": {
+    "code": "masstel",
+    "name": "MASSTEL",
+    "description": "",
+    "id": 1486
+  },
+  "nestle-prenan": {
+    "description": "",
+    "id": 1487,
+    "code": "nestle-prenan",
+    "name": "Nestle PreNAN"
+  },
+  "nestle-nan": {
+    "description": "",
+    "id": 1488,
+    "code": "nestle-nan",
+    "name": "Nestle NAN"
+  },
+  "nan-optipro": {
+    "description": "",
+    "id": 1489,
+    "code": "nan-optipro",
+    "name": "NAN Optipro"
+  },
+  "nutren-junior": {
+    "description": "",
+    "id": 1492,
+    "code": "nutren-junior",
+    "name": "Nutren Junior"
+  },
+  "nestle-cerelac": {
+    "description": "",
+    "id": 1491,
+    "code": "nestle-cerelac",
+    "name": "Nestle CERELAC"
+  },
+  "intellife": {
+    "description": "",
+    "id": 1497,
+    "code": "intellife",
+    "name": "INTELLIFE"
+  },
+  "orihiro": {
+    "description": "",
+    "id": 1498,
+    "code": "orihiro",
+    "name": "ORIHIRO"
+  },
+  "netac": {
+    "description": "",
+    "id": 1500,
+    "code": "netac",
+    "name": "Netac"
+  },
+  "betterbody-foods": {
+    "description": "",
+    "id": 1503,
+    "code": "betterbody-foods",
+    "name": "BetterBody Foods"
+  },
+  "black-rouge": {
+    "code": "black-rouge",
+    "name": "Black Rouge",
+    "id": 1504,
+    "description": ""
+  },
+  "3w-clinic": {
+    "description": "",
+    "id": 1505,
+    "code": "3w-clinic",
+    "name": "3W Clinic"
+  },
+  "arrahan": {
+    "code": "arrahan",
+    "description": "",
+    "name": "Arrahan",
+    "id": 1506
+  },
+  "ragowoori": {
+    "description": "",
+    "id": 1508,
+    "code": "ragowoori",
+    "name": "Ra&Gowoori"
+  },
+  "mersenne-beaute": {
+    "code": "mersenne-beaute",
+    "name": "Mersenne Beaute",
+    "description": "",
+    "id": 1507
+  },
+  "sensibo": {
+    "description": "",
+    "id": 1509,
+    "code": "sensibo",
+    "name": "Sensibo"
+  },
+  "rainbow-laffair": {
+    "name": "Rainbow L'affair",
+    "id": 1535,
+    "code": "rainbow-laffair",
+    "description": ""
+  },
+  "sapphire": {
+    "code": "sapphire",
+    "name": "Sapphire",
+    "description": "",
+    "id": 1534
+  },
+  "coringco": {
+    "name": "CORINGCO",
+    "code": "coringco",
+    "id": 1536,
+    "description": ""
+  },
+  "ecostore": {
+    "name": "ECOSTORE",
+    "code": "ecostore",
+    "id": 1537,
+    "description": ""
+  },
+  "smanos": {
+    "code": "smanos",
+    "name": "Smanos",
+    "description": "",
+    "id": 1567
+  },
+  "some-by-mi": {
+    "code": "some-by-mi",
+    "description": "",
+    "name": "SOME BY MI",
+    "id": 1570
+  },
+  "homey": {
+    "name": "Homey",
+    "code": "homey",
+    "id": 1569,
+    "description": ""
+  },
+  "aeotec": {
+    "code": "aeotec",
+    "name": "Aeotec",
+    "description": "",
+    "id": 1568
+  },
+  "dahua": {
+    "code": "dahua",
+    "name": "DAHUA",
+    "description": "",
+    "id": 141
+  },
+  "nesvita": {
+    "description": "",
+    "id": 1571,
+    "name": "NESVITA",
+    "code": "nesvita"
+  },
+  "nescafe": {
+    "description": "",
+    "name": "NESCAF\u00c9",
+    "id": 1572,
+    "code": "nescafe"
+  },
+  "nestea": {
+    "description": "",
+    "id": 1573,
+    "name": "NESTEA",
+    "code": "nestea"
+  },
+  "docilee": {
+    "description": "",
+    "id": 1574,
+    "name": "Docilee",
+    "code": "docilee"
+  },
+  "herbal-essences": {
+    "id": 1576,
+    "description": "",
+    "name": "Herbal Essences",
+    "code": "herbal-essences"
+  },
+  "bosch": {
+    "name": "Bosch",
+    "id": 1583,
+    "code": "bosch",
+    "description": ""
+  },
+  "actto": {
+    "code": "actto",
+    "name": "Actto",
+    "description": "",
+    "id": 1584
+  },
+  "chefman": {
+    "code": "chefman",
+    "description": "",
+    "name": "Chefman",
+    "id": 1585
+  },
+  "physiomer": {
+    "code": "physiomer",
+    "description": "",
+    "name": "PHYSIOMER",
+    "id": 1587
+  },
+  "skinmd": {
+    "name": "SKINMD",
+    "code": "skinmd",
+    "id": 1588,
+    "description": ""
+  },
+  "skinicer": {
+    "name": "SKINICER",
+    "code": "skinicer",
+    "id": 1589,
+    "description": ""
+  },
+  "spirularin": {
+    "name": "SPIRULARIN",
+    "code": "spirularin",
+    "id": 1590,
+    "description": ""
+  },
+  "bella-fora": {
+    "name": "BELLA FORA",
+    "code": "bella-fora",
+    "id": 1591,
+    "description": ""
+  },
+  "wesser": {
+    "name": "WESSER",
+    "description": "",
+    "id": 1592,
+    "code": "wesser"
+  },
+  "agi": {
+    "name": "AGI",
+    "description": "",
+    "id": 1593,
+    "code": "agi"
+  },
+  "kiddy": {
+    "name": "Kiddy",
+    "description": "",
+    "id": 1596,
+    "code": "kiddy"
+  },
+  "szdy": {
+    "name": "SZDY",
+    "description": "",
+    "id": 1597,
+    "code": "szdy"
+  },
+  "lego": {
+    "name": "LEGO",
+    "description": "",
+    "id": 478,
+    "code": "lego"
+  },
+  "sofy": {
+    "code": "sofy",
+    "description": "",
+    "name": "Sofy",
+    "id": 1598
+  },
+  "kracie": {
+    "code": "kracie",
+    "description": "",
+    "name": "KRACIE",
+    "id": 1599
+  },
+  "elis": {
+    "code": "elis",
+    "description": "",
+    "name": "ELIS",
+    "id": 1600
+  },
+  "acnes": {
+    "code": "acnes",
+    "description": "",
+    "name": "ACNES",
+    "id": 1601
+  },
+  "hada-labo": {
+    "code": "hada-labo",
+    "description": "",
+    "name": "Hada Labo",
+    "id": 388
+  },
+  "melano-cc": {
+    "code": "melano-cc",
+    "description": "",
+    "name": "MELANO CC",
+    "id": 1602
+  },
+  "oxy": {
+    "code": "oxy",
+    "description": "",
+    "name": "OXY",
+    "id": 1603
+  },
+  "sunplay": {
+    "code": "sunplay",
+    "description": "",
+    "name": "SUNPLAY",
+    "id": 1604
+  },
+  "lipice": {
+    "code": "lipice",
+    "description": "",
+    "name": "LIPICE",
+    "id": 1605
+  },
+  "rohto": {
+    "code": "rohto",
+    "description": "",
+    "name": "ROHTO",
+    "id": 1606
+  },
+  "snp": {
+    "code": "snp",
+    "description": "",
+    "name": "SNP",
+    "id": 1632
+  },
+  "just-oats": {
+    "code": "just-oats",
+    "description": "",
+    "name": "JUST OATS",
+    "id": 1633
+  },
+  "ofukoru": {
+    "name": "Ofukuro",
+    "description": "",
+    "code": "ofukoru",
+    "id": 1634
+  },
+  "haihain": {
+    "name": "Haihain",
+    "description": "",
+    "code": "haihain",
+    "id": 1635
+  },
+  "igarashi": {
+    "name": "Igarashi",
+    "description": "",
+    "code": "igarashi",
+    "id": 1637
+  },
+  "naib": {
+    "name": "NaiB",
+    "description": "",
+    "code": "naib",
+    "id": 1636
+  },
+  "ally-billy": {
+    "name": "Ally Billy",
+    "description": "",
+    "code": "ally-billy",
+    "id": 1638
+  },
+  "dji": {
+    "name": "DJI",
+    "description": "",
+    "code": "dji",
+    "id": 1639
+  },
+  "nikatei": {
+    "name": "Nikatei",
+    "description": "",
+    "code": "nikatei",
+    "id": 1645
+  },
+  "lavor": {
+    "name": "LAVOR",
+    "description": "",
+    "code": "lavor",
+    "id": 1641
+  },
+  "fujie": {
+    "name": "FujiE",
+    "description": "",
+    "code": "fujie",
+    "id": 1643
+  },
+  "dandy": {
+    "name": "DANDY",
+    "description": "",
+    "code": "dandy",
+    "id": 1647
+  },
+  "advindeq": {
+    "name": "ADVINDEQ",
+    "description": "",
+    "code": "advindeq",
+    "id": 1648
+  },
+  "sumo": {
+    "name": "SUMO",
+    "description": "",
+    "code": "sumo",
+    "id": 1649
+  },
+  "little-giant": {
+    "name": "LITTLE GIANT",
+    "description": "",
+    "code": "little-giant",
+    "id": 1650
+  },
+  "cello": {
+    "name": "CELLO",
+    "description": "",
+    "code": "cello",
+    "id": 1642
+  },
+  "auvisys": {
+    "name": "AUVISYS",
+    "description": "",
+    "code": "auvisys",
+    "id": 1646
+  },
+  "fujihaia": {
+    "name": "Fujihaia",
+    "description": "",
+    "code": "fujihaia",
+    "id": 1644
+  },
+  "bohmann": {
+    "name": "BOHMANN",
+    "description": "",
+    "code": "bohmann",
+    "id": 1640
+  },
+  "ogx": {
+    "code": "ogx",
+    "name": "Ogx",
+    "id": 1651,
+    "description": ""
+  },
+  "rwine": {
+    "code": "rwine",
+    "name": "Rwine",
+    "id": 1652,
+    "description": ""
+  },
+  "skin1004": {
+    "code": "skin1004",
+    "name": "Skin1004",
+    "id": 1653,
+    "description": ""
+  },
+  "audio-pro": {
+    "code": "audio-pro",
+    "name": "Audio Pro",
+    "id": 1654,
+    "description": ""
+  },
+  "bjx": {
+    "code": "bjx",
+    "name": "BJX",
+    "id": 1655,
+    "description": ""
+  },
+  "vascara": {
+    "code": "vascara",
+    "name": "Vascara",
+    "id": 1656,
+    "description": ""
+  },
+  "ahc": {
+    "description": "",
+    "id": 1496,
+    "code": "ahc",
+    "name": "AHC"
+  },
+  "loulou": {
+    "description": "",
+    "id": 1566,
+    "name": "Loulou",
+    "code": "loulou"
+  }
+}
