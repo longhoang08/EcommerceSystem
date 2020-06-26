@@ -3,7 +3,7 @@ import json
 import logging
 from typing import List
 
-from elasticsearch_dsl import query, Search
+from elasticsearch_dsl import query, Search, A
 
 from app.repositories.es import build_phrase_prefix_query, build_match_query, build_prefix_query
 from config import FILES_INDEX
@@ -99,8 +99,37 @@ class ProductElasticRepo(EsRepositoryInterface):
         product_search_condition = text_query_condition
         sources = self.build_sources(args)
         product_es = self.build_product_es(args, product_search_condition, sources)
+        self.add_filter_to_product_es(args, product_es)
         product_es = self.add_page_limit_to_product_es(args, product_es)
         return product_es
+
+    def add_filter_to_product_es(self, args, product_es):
+        aggregations = args.get('aggregations') or []
+        if 'brand' in aggregations:
+            self.add_brands_aggregation_to_product_es(product_es)
+        if 'category' in aggregations:
+            self.add_categories_aggregation_to_product_es(product_es)
+        return product_es
+
+    @staticmethod
+    def add_brands_aggregation_to_product_es(product_es):
+        brands_aggregation = A(
+            'terms',
+            script="if (doc['brand.code'].size() != 0) "
+                   "doc['brand.code'].value + '|' + doc['brand.name'].value",
+            size=1000)
+        product_es.aggs.bucket('brands', brands_aggregation)
+
+    @staticmethod
+    def add_categories_aggregation_to_product_es(product_es):
+        """
+        Add sellter categories to products es
+        Key in format {code}|{name}|{level}|{id}|{parentID}|{count}
+        :param product_es:
+        :return:
+        """
+        product_es.aggs.bucket('categories', 'nested', path='categories') \
+            .bucket('data', 'terms', field="categories.code", size=4000)
 
     # Text query only =================================================================================================
 
@@ -139,7 +168,6 @@ class ProductElasticRepo(EsRepositoryInterface):
             filter=self.get_filter_condition(args)
         )
         products_es = self.build_product_es_from_text_query_condition(args, text_query_condition)
-        # print(json.dumps(products_es.to_dict()))
         return products_es
 
     def build_second_query(self, args):

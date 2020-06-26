@@ -11,22 +11,94 @@ _logger = logging.getLogger(__name__)
 def find_by_sku(sku: str):
     product_es = ProductElasticRepo()
     responses = product_es.search({'skus': [sku]})
-    if not responses: return []
-    hits = responses['hits']['hits']
-    products = [item['_source'] for item in hits]
-    return products
+    return extract_only_products_from_response(responses)
 
 
 def get_result_search(args):
     args = Utilities.reformat_product_search_params(args)
     product_es = ProductElasticRepo()
     response = product_es.search(args)
-    return extract_product_data_from_response(response)
+    return extract_product_data_from_response(args, response)
 
 
-def extract_product_data_from_response(responses):
+def extract_only_products_from_response(responses):
     if not responses:
-        return {'data': {'products': []}}
+        return []
     hits = responses['hits']['hits']
     products = [item['_source'] for item in hits]
-    return {'data': {'products': products}}
+    return products
+
+
+def extract_product_data_from_response(args, responses):
+    result = {
+        'data': {
+            'total': get_total_products(responses),
+            'products': extract_only_products_from_response(responses)
+        }
+    }
+    aggregations = args.get('aggregations') or []
+    aggregations_result = {}
+    if 'brand' in aggregations:
+        aggregations_result['brand'] = get_brand_aggregation(responses)
+    if 'category' in aggregations:
+        aggregations_result['category'] = get_category_aggregation(responses)
+
+    if aggregations_result:
+        result['data']['aggregations'] = aggregations_result
+
+    return result
+
+
+def get_total_products(response):
+    total = response.get('hits') or {}
+    total = total.get('total') or {}
+    total = total.get('value') or 0
+    return total
+
+
+def get_brand_aggregation(response):
+    aggregation = response.get('aggregations') or {}
+    brand = aggregation.get('brands') or {}
+    buckets = brand.get('buckets') or []
+    return extract_buckets(buckets)
+
+
+def get_category_aggregation(response):
+    aggregation = response.get('aggregations') or {}
+    category = aggregation.get('categories') or {}
+    data = category.get('data') or {}
+    buckets = data.get('buckets') or []
+    return extract_category_buckets(buckets)
+
+
+def extract_category_buckets(buckets):
+    responses = []
+    for bucket in buckets:
+        try:
+            category_code = bucket.get('key')
+            from app.helpers.catalog import categories_data
+            category = categories_data.get(category_code)
+            name = category.get('name')
+            responses.append({
+                'code': category_code,
+                'name': name,
+                'count': bucket.get('doc_count')
+            })
+        except Exception:
+            pass
+    return responses
+
+
+def extract_buckets(buckets):
+    responses = []
+    for bucket in buckets:
+        try:
+            keys = bucket.get('key').split('|')
+            responses.append({
+                'code': keys[0],
+                'name': keys[1],
+                'count': bucket.get('doc_count')
+            })
+        except Exception:
+            pass
+    return responses

@@ -33,6 +33,7 @@ class Utilities:
     @staticmethod
     def reformat_product_search_params(args):
         args['q_source'] = args.get('q')
+
         args = Utilities.reformat_search_text_search_params(args)
         return args
 
