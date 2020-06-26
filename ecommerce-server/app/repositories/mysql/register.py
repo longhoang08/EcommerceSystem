@@ -49,6 +49,15 @@ def find_one_by_phone_number(phone_number: str) -> Register:
     return register or None
 
 
+def find_one_by_email_or_phone_number(email: str, phone_number: str) -> Register:
+    register = Register.query.filter(
+        Register.email == email,
+        Register.phone_number == phone_number
+    ).first()
+
+    return register or None
+
+
 def find_one_by_username(username: str) -> Register:
     register = Register.query.filter(
         Register.username == username

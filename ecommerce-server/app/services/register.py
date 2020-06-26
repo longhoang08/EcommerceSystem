@@ -18,18 +18,10 @@ def create_new_register(email, fullname, password, **kwargs) -> Register:
     phone_number = string_utils.normalize_phone_number(kwargs.get('phone_number'))
     validate_register(email, phone_number, fullname, password)
 
-    if phone_number:
-        existed_user = user_service.find_one_by_email_or_phone_number_ignore_case(email, phone_number)
-    else:
-        existed_user = user_service.find_one_by_email(email)
-
+    existed_user = user_service.find_one_by_email_or_phone_number(email, phone_number)
     if existed_user: raise UserExistsException()
 
-    if phone_number:
-        existed_pending_register = repo.find_one_by_email_or_phone_number(email, phone_number)
-    else:
-        existed_pending_register = repo.find_one_by_email(email)
-
+    existed_pending_register = find_one_by_email_or_phone_number(email, phone_number)
     if existed_pending_register: raise RegisterBeforeException()
 
     return repo.create_new_register(
@@ -60,3 +52,8 @@ def find_one_by_email(email: str) -> Register:
 
 def find_one_by_phone_number(phone_number: str) -> Register:
     return repo.find_one_by_phone_number(phone_number)
+
+
+def find_one_by_email_or_phone_number(email: str, phone_number: str) -> Register:
+    return repo.find_one_by_email_or_phone_number(email, phone_number) \
+        if phone_number else repo.find_one_by_email(email)

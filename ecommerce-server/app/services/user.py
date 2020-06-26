@@ -20,7 +20,7 @@ _logger = logging.getLogger(__name__)
 # create user from a register after validate
 def create_user(email: str, phone_number: str, fullname: str, password: str, gender: str, address: str,
                 **kwargs) -> User:
-    existed_user = repo.find_one_by_email_or_phone_number(email, phone_number)
+    existed_user = find_one_by_email_or_phone_number(email, phone_number)
     if existed_user:
         raise UserExistsException()
     user = repo.create_new_user(
@@ -152,8 +152,9 @@ def check_username_and_password(email_or_phone_number: str, password: str):
     return user
 
 
-def find_one_by_email_or_phone_number_ignore_case(email: str, phone_number: str) -> User:
-    return repo.find_one_by_email_or_phone_number(email, phone_number)
+def find_one_by_email_or_phone_number(email: str, phone_number: str) -> User:
+    return repo.find_one_by_email_or_phone_number(email, phone_number) if phone_number \
+        else repo.find_one_by_email(email)
 
 
 def change_role_to_seller(user: User) -> User:
