@@ -51,7 +51,7 @@ class CategoryElasticRepo(EsRepositoryInterface):
 
         text_query = query.DisMax(
             queries=[
-                build_prefix_query("name_no_tone_raw", na_text_query, 1000),
+                build_prefix_query("name_no_tone__raw", na_text_query, 1000),
                 build_phrase_prefix_query("name", vn_text_query, 200),
                 build_phrase_prefix_query("name_no_tone", na_text_query, 100),
                 build_match_query("name", vn_text_query, fuzzinees, 5),
