@@ -7,9 +7,11 @@ _logger = logging.getLogger(__name__)
 
 product_search_req = {
     'q': fields.String(required=False, description='Text query to search'),
+    'seller_id': fields.Integer(required=False, description='Id of user to fetch product of this seller'),
     'skus': fields.List(fields.String(), required=False, description='List of skus to get details'),
     'only_promotion': fields.Boolean(required=False, description='Only get product which have promotion'),
     'only_flash_sale': fields.Boolean(required=False, description='Only get product which have flask sale'),
+    'recommend': fields.Boolean(required=False, description='Only get recommend product'),
     'sort': fields.List(fields.String, required=False, description="Param to sort  products"),
     '_page': fields.Integer(required=False, description='Paging, default to 1'),
     '_limit': fields.Integer(required=False, description='Number of product in response. Default to 10'),
