@@ -15,6 +15,7 @@ all_categories_from_code = {}
 all_leaf_categories = []
 
 
+# categories
 def _get_category_by_id(category_id: int) -> Dict:
     return categories_data[cat_id_to_code[category_id]]
 
@@ -48,3 +49,8 @@ with open(os.path.join(os.path.dirname(__file__), 'categories.json')) as json_fi
             current_category = _get_category_by_id(current_category["parent_id"])
             all_parrent_categories.append(current_category)
         all_categories_from_code[category_code] = all_parrent_categories
+
+brands_dict = {}
+# brand
+with open(os.path.join(os.path.dirname(__file__), 'brands.json')) as json_file:
+    brands_dict = json.load(json_file)
