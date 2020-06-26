@@ -25,3 +25,15 @@ class RegisterNewSeller(flask_restplus.Resource):
     def post(self):
         data = request.args or request.json
         return services.seller.register_to_be_seller(**data).to_dict()
+
+
+_ingest_data_req = ns.model('ingest_data_req', app.api.request.seller.ingest_data_req)
+
+
+@ns.route('/product/upsert', methods=['POST'])
+class UpsertNewProduct(flask_restplus.Resource):
+    @ns.expect(_ingest_data_req, validate=True)
+    # @ns.marshal_with(_seller_register_res)
+    def post(self):
+        data = request.args or request.json
+        return services.seller.upsert_product(data)
