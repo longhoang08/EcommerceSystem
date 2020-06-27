@@ -86,10 +86,8 @@ public class MainActivity extends AppCompatActivity {
             buttonSignUp.setVisibility(View.INVISIBLE);
             TextView textViewNameUser, textViewSoSp;
             textViewNameUser = findViewById(R.id.textViewNameUser);
-            textViewSoSp = findViewById(R.id.textViewSoSp);
             // hiện do đăng nhập
             textViewNameUser.setVisibility(View.VISIBLE);
-            textViewSoSp.setVisibility(View.VISIBLE);
         }
     }
 

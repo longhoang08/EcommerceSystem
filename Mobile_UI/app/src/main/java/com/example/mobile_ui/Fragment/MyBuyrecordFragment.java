@@ -44,18 +44,20 @@ public class MyBuyrecordFragment extends Fragment {
 
         ListOfMyBuyrecordAdapter adapter = new ListOfMyBuyrecordAdapter(data);
         listView.setAdapter(adapter);
-
+//        System.out.println("Frame này");
         //set sự kiện click cho mỗi element in listView
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(getActivity(), DetailMybuyrecordActivity.class);
-                Bundle bundle = new Bundle();
-                bundle.putInt("idOfMybyrecord",data.get(position).getId());
-                intent.putExtras(bundle);
-                startActivity(intent);
-            }
-        });
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                System.out.println("Yes");
+//                Intent intent = new Intent(getActivity(), DetailMybuyrecordActivity.class);
+//                Bundle bundle = new Bundle();
+//                bundle.putInt("idOfMybyrecord",data.get(position).getId());
+//                intent.putExtras(bundle);
+//                startActivity(intent);
+//            }
+//        });
+//        System.out.println(data.size());
         return root;
     }
 }

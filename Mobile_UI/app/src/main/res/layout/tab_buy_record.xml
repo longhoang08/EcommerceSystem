@@ -28,10 +28,10 @@
                 app:tabTextColor="#b3b3b3"
                 tools:layout_editor_absoluteX="1dp">
 
-                <com.google.android.material.tabs.TabItem
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Chờ xác nhận" />
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Chờ xác nhận" />-->
 
 <!--                <com.google.android.material.tabs.TabItem-->
 <!--                    android:layout_width="wrap_content"-->

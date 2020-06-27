@@ -94,7 +94,9 @@
             android:id="@+id/buttonSignUp"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:text="Sign Up"
+            android:textColor="@android:color/black"
             android:textAllCaps="false"
             android:layout_gravity="center_horizontal"/>
 

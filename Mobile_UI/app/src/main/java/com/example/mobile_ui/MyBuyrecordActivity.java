@@ -60,9 +60,9 @@ public class MyBuyrecordActivity extends AppCompatActivity {
         ArrayList<Integer> y=new ArrayList<Integer>();
         y.add(new Integer(2));
         y.add(new Integer(3));
-        arrayBuyrecords.add(new MyBuyRecord(1, "SHop A","choxacnhan", x, y,250000));
-        arrayBuyrecords.add(new MyBuyRecord(2, "SHop A","choxacnhan", x, y,150000));
-        arrayBuyrecords.add(new MyBuyRecord(3, "SHop A","choxacnhan", x,y,25000));
+//        arrayBuyrecords.add(new MyBuyRecord(1, "SHop A","choxacnhan", x, y,250000));
+//        arrayBuyrecords.add(new MyBuyRecord(2, "SHop A","choxacnhan", x, y,150000));
+//        arrayBuyrecords.add(new MyBuyRecord(3, "SHop A","choxacnhan", x,y,25000));
 
         arrayBuyrecords.add(new MyBuyRecord(4, "SHop A","danggiao",x, y,250000));
         arrayBuyrecords.add(new MyBuyRecord(5, "SHop A","danggiao", x,y,150000));

@@ -57,7 +57,7 @@ public class BuyrecordFragment extends Fragment {
                 bundle.putInt("idOfMybyrecord",data.get(position).getId());
                 intent.putExtras(bundle);
                 startActivity(intent);
-                startActivity(intent);
+//                startActivity(intent);
             }
         });
 

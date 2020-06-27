@@ -7,26 +7,27 @@
     tools:context=".Fragment.AccountFragment">
 
 
-
-
-<!--    &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+    <!--    &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
     <!--    ảnh +name-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/user_infor"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:background="#C9E6CA">
+        android:layout_marginTop="0dp"
+        android:background="#ABE91E63">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/user_infor_img"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
             app:cardCornerRadius="90dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSeller">
 
             <ImageView
                 android:id="@+id/user_infor_img_main"
@@ -38,32 +39,32 @@
         </androidx.cardview.widget.CardView>
 
         <Button
-            android:visibility="invisible"
             android:id="@+id/buttonSignUp"
             android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="10dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="12dp"
             android:background="#CE009969"
             android:text="Đăng ký"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
+            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/buttonLogin" />
 
         <Button
-            android:visibility="invisible"
             android:id="@+id/buttonLogin"
             android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="10dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="12dp"
             android:background="#FF8400"
             android:text="Đăng nhập"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
+            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -72,29 +73,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
             android:text=""
             android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/user_infor_img"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSeller" />
+
+        <Button
+            android:id="@+id/buttonSeller"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button_seller"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Bắt đầu bán"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textViewSoSp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:text="Số sản phẩm : 7"
-            android:textColor="@android:color/black"
-            app:layout_constraintStart_toEndOf="@+id/user_infor_img"
-            app:layout_constraintTop_toBottomOf="@+id/textViewNameUser" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <ListView
         android:id="@+id/listDetailAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/user_infor"
-        />
+        android:layout_below="@+id/user_infor" />
 </RelativeLayout>

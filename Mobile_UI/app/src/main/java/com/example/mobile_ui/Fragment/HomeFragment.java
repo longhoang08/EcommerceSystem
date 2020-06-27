@@ -129,17 +129,10 @@ public class HomeFragment extends Fragment {
     }
 
     private void loadDataProduct(List<Product> listProduct) {
-        getProduct(listProduct);
-//        listProduct.add(new Product(R.drawable.icon_dragon_fruit, "Redmi Note 7", 45000, 4.5));
-//        listProduct.add(new Product(R.drawable.icon_kiwi_fruit, "Redmi Note 7", 45000, 3.5));
-//        listProduct.add(new Product(R.drawable.icon_dragon_fruit, "Redmi Note 7", 45000, 2.5));
-//        listProduct.add(new Product(R.drawable.icon_pineapple, "Redmi Note 7", 45000, 3.5));
-//        listProduct.add(new Product(R.drawable.icon_kiwi_fruit, "Redmi Note 7", 45000, 1.5));
-//        listProduct.add(new Product(R.drawable.icon_dragon_fruit, "Redmi Note 7", 45000, 5.0));
-//        listProduct.add(new Product(R.drawable.icon_kiwi_fruit, "Redmi Note 7", 45000, 4.5));
-//        listProduct.add(new Product(R.drawable.icon_dragon_fruit, "Redmi Note 7", 45000, 4.5));
-//        listProduct.add(new Product(R.drawable.icon_pineapple, "Redmi Note 7", 45000, 4.5));
-//        listProduct.add(new Product(R.drawable.icon_dragon_fruit, "Redmi Note 7", 45000, 4.5));
+//        getProduct(listProduct);
+        String url = "https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png";
+        listProduct.add(new Product(url, "Redmi Note 7", 45000, 4.5, "1"));
+        listProduct.add(new Product(url, "Redmi Note 7", 45000, 3.5, "2"));
     }
 
     private void loadDataCategoryProduct(List<Category> listCategoryProduct) {

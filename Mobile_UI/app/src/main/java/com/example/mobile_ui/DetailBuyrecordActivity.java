@@ -30,9 +30,9 @@ public class DetailBuyrecordActivity extends AppCompatActivity {
     TextView money;
     TextView transport;
     TextView moneySum;
-    TextView review;
-    LinearLayout footer;
-    TextView buyAgain;
+//    TextView review;
+//    LinearLayout footer;
+//    TextView buyAgain;
     BuyRecord buyRecord;
 
     void anhxa(){
@@ -42,9 +42,9 @@ public class DetailBuyrecordActivity extends AppCompatActivity {
         money = findViewById(R.id.money);
         transport = findViewById(R.id.transport);
         moneySum = findViewById(R.id.moneySum);
-        footer = findViewById(R.id.footer);
-        review = findViewById(R.id.review);
-        buyAgain = findViewById(R.id.buyAgain);
+//        footer = findViewById(R.id.footer);
+//        review = findViewById(R.id.review);
+//        buyAgain = findViewById(R.id.buyAgain);
     }
 
     @Override
@@ -57,13 +57,13 @@ public class DetailBuyrecordActivity extends AppCompatActivity {
         //hiện listview
         ListOfBuyProductAdapter adapter = new ListOfBuyProductAdapter(buyRecord.getBuyProduct(),buyRecord.getBuyNum());
         listOfBuyProduct.setAdapter(adapter);
-        UIUtils.setListViewHeightBasedOnItems(listOfBuyProduct);
+//        UIUtils.setListViewHeightBasedOnItems(listOfBuyProduct);
         //đổ dữ liệu các view còn lại
 //        nameOfShop.setText(buyRecord.getNameOfShop());
 //        address.setText(buyRecord.get);
         money.setText(buyRecord.getMoney()+"");
         transport.setText(transformFee(buyRecord.getMoney())+"");
-//        moneySum.setText( (myBuyRecord.getMoney()+transformFee(myBuyRecord.getMoney())) + "");
+        moneySum.setText( (buyRecord.getMoney()+transformFee(buyRecord.getMoney())) + "");
 //        //trạng thái đơn hàng là đã giao mới được đánh giá
 //        String state = "dagiao";
 //        if(!myBuyRecord.getState().equals(state)) footer.setVisibility(View.GONE);
@@ -71,7 +71,7 @@ public class DetailBuyrecordActivity extends AppCompatActivity {
 //                "Đánh giá thành công : "+ myBuyRecord.getState(),
 //                Toast.LENGTH_SHORT).show();
 
-        review.setOnClickListener(new View.OnClickListener() {
+/*        review.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(DetailBuyrecordActivity.this);
@@ -119,7 +119,7 @@ public class DetailBuyrecordActivity extends AppCompatActivity {
             public void onClick(View v) {
 
             }
-        });
+        });*/
     }
 
     //sửa để lấy dữ liệu từ api
@@ -132,10 +132,10 @@ public class DetailBuyrecordActivity extends AppCompatActivity {
         }
         ArrayList<Product> x=new ArrayList<Product>();
         x.add(new Product(""+R.drawable.icon_kiwi_fruit,"banana",12000,120));
-        x.add(new Product(""+R.drawable.icon_dragon_fruit,"thanh long",25000,100));
+//        x.add(new Product(""+R.drawable.icon_dragon_fruit,"thanh long",25000,100));
         ArrayList<Integer> y=new ArrayList<Integer>();
         y.add(new Integer(2));
-        y.add(new Integer(3));
+//        y.add(new Integer(3));
 //        myBuyRecord = new MyBuyRecord(1, "SHop A","dagiao", x, y,25000);
     }
 
@@ -148,14 +148,14 @@ public class DetailBuyrecordActivity extends AppCompatActivity {
     }
 
     //đây chứa hàm để listView hiện toàn bộ item, không có scroll, không cần quan tâm
-    public static class UIUtils {
+    /*public static class UIUtils {
 
-        /**
-         * Sets ListView height dynamically based on the height of the items.
-         *
-         * @param listView to be resized
-         * @return true if the listView is successfully resized, false otherwise
-         */
+//
+//         * Sets ListView height dynamically based on the height of the items.
+//         *
+//         * @param listView to be resized
+//         * @return true if the listView is successfully resized, false otherwise
+
         public static boolean setListViewHeightBasedOnItems(ListView listView) {
 
             ListAdapter listAdapter = listView.getAdapter();
@@ -188,7 +188,7 @@ public class DetailBuyrecordActivity extends AppCompatActivity {
             }
 
         }
-    }
+    }*/
 }
 //chỉ truyền id của đơn hàng của tôi, nên gọi lên API sẽ lấy về đk mybuyrecord
 //lấy ra arrayList Product, hiện ra theo listView

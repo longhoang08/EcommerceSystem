@@ -158,6 +158,7 @@ public class SignUpActivity extends AppCompatActivity {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.cancel();
+                            SignUpActivity.this.finish();
                         }
                     });
                     AlertDialog alertDialog = builder.create();

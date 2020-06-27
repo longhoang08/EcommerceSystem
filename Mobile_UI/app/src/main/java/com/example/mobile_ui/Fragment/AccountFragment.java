@@ -58,8 +58,9 @@ public class AccountFragment extends Fragment {
     ListView listViewDetailAcc;
     int REQUEST_CODE_LOGIN = 13;
 
-    TextView textViewNameUser, textViewSoSp;
+    TextView textViewNameUser;
     ImageView user_infor_img_main;
+    Button buttonSeller;
 
     public View onCreateView(@NonNull final LayoutInflater inflater,
                              final ViewGroup container, Bundle savedInstanceState) {
@@ -68,9 +69,9 @@ public class AccountFragment extends Fragment {
         user_infor_img_main = root.findViewById(R.id.user_infor_img_main);
         buttonLogin = root.findViewById(R.id.buttonLogin);
         buttonSignUp = root.findViewById(R.id.buttonSignUp);
+        buttonSeller = root.findViewById(R.id.buttonSeller);
         // tên username, password
         textViewNameUser = root.findViewById(R.id.textViewNameUser);
-        textViewSoSp = root.findViewById(R.id.textViewSoSp);
 
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -152,8 +153,8 @@ public class AccountFragment extends Fragment {
             getUser();
         }else{
             textViewNameUser.setVisibility(View.GONE);
-            textViewSoSp.setVisibility(View.GONE);
             listViewDetailAcc.setVisibility(View.GONE);
+            buttonSeller.setVisibility(View.GONE);
             buttonLogin.setVisibility(View.VISIBLE);
             buttonSignUp.setVisibility(View.VISIBLE);
             user_infor_img_main.setImageResource(R.drawable.ic_person_black_24dp);
@@ -181,10 +182,10 @@ public class AccountFragment extends Fragment {
                             Glide.with(getActivity())
                                     .load(urlAvatar).override(50, 50).centerCrop()
                                     .into(user_infor_img_main);
-                            textViewSoSp.setVisibility(View.VISIBLE);
                             listViewDetailAcc.setVisibility(View.VISIBLE);
                             buttonLogin.setVisibility(View.GONE);
                             buttonSignUp.setVisibility(View.GONE);
+                            buttonSeller.setVisibility(View.VISIBLE);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }

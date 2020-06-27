@@ -55,6 +55,8 @@
             android:hint="Re-New Password" />
 
         <Button
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
             android:background="@drawable/button_style"
             android:layout_marginTop="30dp"
             android:id="@+id/changPass"
