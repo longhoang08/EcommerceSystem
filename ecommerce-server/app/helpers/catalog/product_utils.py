@@ -57,8 +57,8 @@ class Converter:
     @staticmethod
     def reformat_product(product):
         search_text = Converter.to_keyword_search_new(product)
-        product['search_text'] = search_text
-        product['search_text_no_tone'] = search_text
+        product['search_text'] = search_text.lower()
+        product['search_text_no_tone'] = remove_vi_accent(search_text)
 
     @staticmethod
     def to_keyword_search_new(obj):
