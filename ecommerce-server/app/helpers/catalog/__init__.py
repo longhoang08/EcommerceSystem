@@ -5,7 +5,7 @@ import logging
 __author__ = 'LongHB'
 
 import os
-from typing import Dict
+from typing import Dict, List
 
 _logger = logging.getLogger(__name__)
 
@@ -53,3 +53,19 @@ with open(os.path.join(os.path.dirname(__file__), 'categories.json')) as json_fi
 # read brand data
 with open(os.path.join(os.path.dirname(__file__), 'brands.json')) as json_file:
     brands_data = json.load(json_file)
+
+
+def is_valid_brand_code(brand_code: str) -> bool:
+    return brand_code in brands_data
+
+
+def is_valid_category_code(category_code: str) -> bool:
+    return category_code in all_categories_from_code
+
+
+def get_brand_from_code(brand_code: str) -> dict:
+    return brands_data.get(brand_code) or {}
+
+
+def get_categories_from_category_code(category_code: str) -> List[dict]:
+    return all_categories_from_code.get(category_code) or []

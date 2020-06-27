@@ -6,7 +6,7 @@ from typing import List
 from elasticsearch_dsl import query, Search, A
 
 from app.repositories.es import build_phrase_prefix_query, build_match_query, build_prefix_query
-from config import FILES_INDEX
+from config import PRODUCT_INDEX
 from app.models.es.product import mappings, settings
 from app.repositories.es.es_base import EsRepositoryInterface
 
@@ -22,7 +22,7 @@ SEARCH_TEXT_NO_TONE_FIELD = 'search_text_no_tone'
 class ProductElasticRepo(EsRepositoryInterface):
     def __init__(self):
         super().__init__()
-        self._index = FILES_INDEX
+        self._index = PRODUCT_INDEX
         self.mappings = mappings
         self.settings = settings
         self.id_key = 'sku'

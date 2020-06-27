@@ -17,10 +17,8 @@ def validate_product_search_param(args):
 
 
 def validate_upsert_product_request(args):
-    from app.helpers.catalog import brands_data, categories_data
-    if args.get('brand_code') not in brands_data or args.get('categories_code') not in categories_data:
-        return False
-    return True
+    from app.helpers.catalog import is_valid_brand_code, is_valid_category_code
+    return is_valid_brand_code(args.get('brand_code')) and is_valid_category_code(args.get('category_code'))
 
 
 def validate_product_details_param(args):
