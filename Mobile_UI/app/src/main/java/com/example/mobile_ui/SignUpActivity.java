@@ -1,6 +1,9 @@
 package com.example.mobile_ui;
 
+import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -22,9 +25,11 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.mobile_ui.Adapter.CartProductAdapter;
 import com.example.mobile_ui.Retrofit.APIUtils;
 import com.example.mobile_ui.Retrofit.DataClient;
 import com.example.mobile_ui.Retrofit.User;
+import com.example.mobile_ui.View.ExpandHeightGridView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -88,6 +93,9 @@ public class SignUpActivity extends AppCompatActivity {
 
     }
     private void signUp(){
+        final ProgressDialog pd = new ProgressDialog(SignUpActivity.this);
+        pd.setTitle("Vui lòng chờ 1 chút ....");
+        pd.show();
         RequestQueue queue = Volley.newRequestQueue(SignUpActivity.this);
         JSONObject params = new JSONObject();
 
@@ -115,19 +123,47 @@ public class SignUpActivity extends AppCompatActivity {
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                pd.cancel();
                 NetworkResponse response = error.networkResponse;
 //                    Toast.makeText(SignUpActivity.this, response.statusCode+"", Toast.LENGTH_LONG).show();
                 if (error instanceof ServerError && response != null) {
                     try {
                         String res = new String(response.data,
                                 HttpHeaderParser.parseCharset(response.headers, "utf-8"));
-                        System.out.println(res);
-                        Toast.makeText(SignUpActivity.this, res, Toast.LENGTH_LONG).show();
-                    } catch (UnsupportedEncodingException e1) {
+//                        System.out.println(res);
+                        // hiện thông báo lỗi
+                        JSONObject responseMsg = new JSONObject(res);
+                        final AlertDialog.Builder builder = new AlertDialog.Builder(SignUpActivity.this);
+                        builder.setTitle("Thông báo");
+                        String msgError = (String) responseMsg.get("message");
+                        msgError = msgError.substring(msgError.indexOf(":")+2);
+                        builder.setMessage(msgError);
+                        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        });
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
+                    } catch (UnsupportedEncodingException | JSONException e1) {
                         e1.printStackTrace();
                     }
                 } else {
-                    Toast.makeText(SignUpActivity.this, "Thành công", Toast.LENGTH_LONG).show();
+                    // hiện thông báo đăng nhập thành công
+                    final AlertDialog.Builder builder = new AlertDialog.Builder(SignUpActivity.this);
+                    builder.setTitle("Thông báo");
+                    builder.setCancelable(false);
+                    builder.setMessage("Đăng ký thành công. Vui lòng check mail.");
+                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                            SignUpActivity.this.finish();
+                        }
+                    });
+                    AlertDialog alertDialog = builder.create();
+                    alertDialog.show();
                 }
             }
         })

@@ -3,6 +3,7 @@ package com.example.mobile_ui.Model;
 import android.graphics.Bitmap;
 
 public class Product{
+    private String id;
     private String imageRepresent;
     private String name;
     private int price;
@@ -10,11 +11,20 @@ public class Product{
     private Bitmap imgFromUrl;
     private int number;
 
-    public Product(String imageRepresent, String name, int price, double star) {
+    public Product(String imageRepresent, String name, int price, double star, String id) {
         this.imageRepresent = imageRepresent;
         this.name = name;
         this.price = price;
         this.star = star;
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public Product(Bitmap imgFromUrl, String name, int price, double star) {

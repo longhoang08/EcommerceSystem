@@ -1,9 +1,13 @@
 package com.example.mobile_ui;
 
+import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -52,18 +56,17 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void login(){
+        final ProgressDialog pd = new ProgressDialog(LoginActivity.this);
+        pd.setTitle("Đang đăng nhập ....");
+        pd.show();
         RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
         JSONObject params = new JSONObject();
 
         try {
             params.put("username", username.getText());
             params.put("password", password.getText());
-//            params.put("phone_number", "0854230458");
-//            params.put("email", "doanhc@gmail.com");
-//            params.put("address", "Ha Noi");
-//            params.put("gender", 1);
         } catch (JSONException e) {
-            System.out.println("OK");
+
         }
         String url = "http://112.137.129.216:5001/api/users/login";
         JsonObjectRequest jsonObjReq = new JsonObjectRequest(
@@ -72,6 +75,7 @@ public class LoginActivity extends AppCompatActivity {
 
                     @Override
                     public void onResponse(JSONObject response) {
+                        pd.cancel();
 //                        Toast.makeText(LoginActivity.this, response.toString(), Toast.LENGTH_LONG).show();
                         if(response!=null){
                             //lưu vào máy
@@ -87,7 +91,6 @@ public class LoginActivity extends AppCompatActivity {
                             updateStateLogin();
                             // chuyển màn hình trước đó nếu đăng nhập thành công
                             Intent intent = new Intent();
-//                            intent.putExtra("status", "login success");
                             setResult(RESULT_OK, intent);
                             finish();
                         }
@@ -95,16 +98,44 @@ public class LoginActivity extends AppCompatActivity {
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(LoginActivity.this, "error", Toast.LENGTH_LONG).show();
+                pd.cancel();
+//                Toast.makeText(LoginActivity.this, "error", Toast.LENGTH_LONG).show();
                 NetworkResponse response = error.networkResponse;
                 if (error instanceof ServerError && response != null) {
                     try {
                         String res = new String(response.data,
                                 HttpHeaderParser.parseCharset(response.headers, "utf-8"));
-                        System.out.println(res);
-                    } catch (UnsupportedEncodingException e1) {
+//                        System.out.println(res);
+                        // hiện thông báo lỗi
+                        JSONObject responseMsg = new JSONObject(res);
+                        final AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                        builder.setTitle("Thông báo");
+                        String msgError = (String) responseMsg.get("message");
+                        msgError = msgError.substring(msgError.indexOf(":")+2);
+                        builder.setMessage(msgError);
+                        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        });
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
+                    } catch (UnsupportedEncodingException | JSONException e1) {
                         e1.printStackTrace();
                     }
+                } else {
+                    final AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                    builder.setTitle("Thông báo");
+                    builder.setMessage("You must confirm your email first.");
+                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
+                    AlertDialog alertDialog = builder.create();
+                    alertDialog.show();
                 }
             }
         })

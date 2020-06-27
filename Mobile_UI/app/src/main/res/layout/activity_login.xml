@@ -2,14 +2,13 @@
 <LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#007fff"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <LinearLayout
         android:orientation="vertical"
-        android:background="@drawable/gradient_background"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -27,42 +26,49 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="30dp"
-            android:background="@drawable/edittext_style"
-            android:hint="Phone Number"
+            android:padding="15dp"
+            android:background="@drawable/et_cust"
+            android:hint="Email"
             android:inputType="textPersonName" />
 
         <EditText
-            android:background="@drawable/edittext_style"
             android:id="@+id/password"
             android:layout_marginTop="30dp"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:layout_gravity="center_horizontal"
+            android:padding="15dp"
+            android:background="@drawable/et_cust"
             android:hint="Password" />
 
         <Button
             android:background="@drawable/button_style"
+            android:textColor="@android:color/white"
             android:layout_marginTop="30dp"
             android:id="@+id/buttonLogin"
-            android:layout_width="150dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="Login"
             android:textAllCaps="false"
+            android:textStyle="bold"
             android:layout_gravity="center_horizontal"/>
 
 
-        <Button
-            android:background="@drawable/google_button_style"
-            android:layout_marginTop="15dp"
-            android:id="@+id/button1"
-            android:layout_width="200dp"
-            android:textColor="@android:color/white"
-            android:layout_height="wrap_content"
-            android:text="Login with Google"
-            android:textAllCaps="false"
-            android:drawableStart="@drawable/google"
-            android:layout_gravity="center_horizontal"/>
+<!--        <Button-->
+        <!--            android:background="@drawable/edittext_style"-->
+<!--        android:background="@drawable/button_style"-->
+<!--        android:background="@drawable/gradient_background"-->
+<!--            android:background="@drawable/google_button_style"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:id="@+id/button1"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Login with Google"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:drawableStart="@drawable/google"-->
+<!--            android:layout_gravity="center_horizontal"/>-->
 
     </LinearLayout>
 

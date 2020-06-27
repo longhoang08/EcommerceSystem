@@ -121,6 +121,7 @@ public class HomeFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getContext(), DetailProductActivity.class);
+//                intent.putExtra("id", lí)
                 startActivity(intent);
             }
         });
@@ -179,8 +180,9 @@ public class HomeFragment extends Fragment {
                                 String urlImage = (String) product.getJSONArray("images").getJSONObject(0).get("url");
                                 int price = ((Double) product.getJSONObject("price").get("price")).intValue();
                                 String name = (String) product.get("name");
+                                String id = (String) product.get("sku");
 //                                Toast.makeText(getActivity(), price+"", Toast.LENGTH_LONG).show();
-                                listProduct.add(new Product(urlImage, name, price, 4.5));
+                                listProduct.add(new Product(urlImage, name, price, 4.5, id));
                                 //Toast.makeText(getActivity(), listProduct.size()+"", Toast.LENGTH_LONG).show();
 
                             }
@@ -193,13 +195,12 @@ public class HomeFragment extends Fragment {
             @Override
             public void onErrorResponse(VolleyError error) {
                 NetworkResponse response = error.networkResponse;
-                    Toast.makeText(getActivity(), response.statusCode+"", Toast.LENGTH_LONG).show();
                 if (error instanceof ServerError && response != null) {
                     try {
                         String res = new String(response.data,
                                 HttpHeaderParser.parseCharset(response.headers, "utf-8"));
                         System.out.println(res);
-                        Toast.makeText(getActivity(), res, Toast.LENGTH_LONG).show();
+//                        Toast.makeText(getActivity(), res, Toast.LENGTH_LONG).show();
                     } catch (UnsupportedEncodingException e1) {
                         e1.printStackTrace();
                     }

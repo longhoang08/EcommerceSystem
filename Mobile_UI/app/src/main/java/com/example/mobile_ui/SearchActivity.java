@@ -90,6 +90,13 @@ public class SearchActivity extends AppCompatActivity {
                 return false;
             }
         });
+        searchView.setOnCloseListener(new SearchView.OnCloseListener() {
+            @Override
+            public boolean onClose() {
+                finish();
+                return false;
+            }
+        });
     }
 
     private void filterFromKeyword(final String newText) {
