@@ -2,7 +2,7 @@
 import copy
 import logging
 
-from app.helpers.catalog import categories_data, is_leaf_category, brands_dict
+from app.helpers.catalog import categories_data, is_leaf_category, brands_data
 from app.helpers.string_utils import remove_vi_accent
 from app.repositories.es import bulk_update
 from app.repositories.es.brand import BrandElasticRepo
@@ -37,8 +37,8 @@ def upsert_categories_data(bash_size: int = 100):
 def upsert_brand_data(bash_size: int = 100):
     current_size = 0
     current_brands = []
-    for brand_code in brands_dict.keys():
-        brand = brands_dict[brand_code]
+    for brand_code in brands_data.keys():
+        brand = brands_data[brand_code]
         current_brands.append({
             **brand,
             'name_no_tone': remove_vi_accent(brand['name']),

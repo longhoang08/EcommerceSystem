@@ -50,7 +50,6 @@ with open(os.path.join(os.path.dirname(__file__), 'categories.json')) as json_fi
             all_parrent_categories.append(current_category)
         all_categories_from_code[category_code] = all_parrent_categories
 
-brands_dict = {}
-# brand
+# read brand data
 with open(os.path.join(os.path.dirname(__file__), 'brands.json')) as json_file:
-    brands_dict = json.load(json_file)
+    brands_data = json.load(json_file)

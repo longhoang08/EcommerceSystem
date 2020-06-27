@@ -7,6 +7,7 @@ from app import ForbiddenException
 from app.commons.decorators import login_required, seller_required
 from app.models.mysql.seller import Seller
 from app.models.mysql.user import UserRole
+from app.repositories.redis.product import ProductCache
 from app.services import user as user_service, product as product_service
 from app.repositories.mysql import seller as repo
 
@@ -48,5 +49,3 @@ def _parse_images(data: dict):
 
 def _parse_stock(data: dict):
     pass
-
-

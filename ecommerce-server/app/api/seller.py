@@ -10,6 +10,9 @@ from app import services
 from app.extensions import Namespace
 
 __author__ = 'LongHB'
+
+from app.helpers.catalog.product_validator import validate_upsert_product_request
+
 _logger = logging.getLogger(__name__)
 
 ns = Namespace('seller', description='Seller operations')
@@ -36,4 +39,5 @@ class UpsertNewProduct(flask_restplus.Resource):
     # @ns.marshal_with(_seller_register_res)
     def post(self):
         data = request.args or request.json
+        validate_upsert_product_request(data)
         return services.seller.upsert_product(data)

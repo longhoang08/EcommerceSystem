@@ -16,5 +16,12 @@ def validate_product_search_param(args):
             raise BadRequestException('Only support aggregation of brand or category')
 
 
+def validate_upsert_product_request(args):
+    from app.helpers.catalog import brands_data, categories_data
+    if args.get('brand_code') not in brands_data or args.get('categories_code') not in categories_data:
+        return False
+    return True
+
+
 def validate_product_details_param(args):
     pass
