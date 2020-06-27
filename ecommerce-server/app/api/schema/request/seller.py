@@ -17,5 +17,5 @@ ingest_data_req = {
     'description': fields.String(requred=False),
     'name': fields.String(requred=True),
     'price': fields.Integer(required=True),
-    'stock_changed': fields.Integer(required=True)
+    'stock_changed': fields.Integer(required=False)
 }
