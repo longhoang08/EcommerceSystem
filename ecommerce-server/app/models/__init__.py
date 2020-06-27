@@ -17,7 +17,6 @@ load_dotenv(_DOT_ENV_PATH)
 db = _fs.SQLAlchemy()
 migrate = _fm.Migrate(db=db)
 bcrypt = _fb.Bcrypt()
-redis_client = FlaskRedis()
 
 
 def init_app(app, **kwargs):
@@ -28,7 +27,6 @@ def init_app(app, **kwargs):
         env=app.config['ENV_MODE'],
         db=app.config['SQLALCHEMY_DATABASE_URI']
     ))
-    redis_client.init_app(app)
 
 
 from app.models.mysql.register import Register
