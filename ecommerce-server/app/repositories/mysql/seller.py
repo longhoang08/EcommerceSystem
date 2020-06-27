@@ -27,3 +27,11 @@ def find_pending_seller(page: int, limit: int) -> List[Seller]:
         .limit(limit) \
         .offset((page - 1) * limit)
     return sellers
+
+
+def find_pending_seller_by_id(ids: List[int]) -> List[Seller]:
+    sellers = Seller.query.filter(
+        Seller.status == SellerStatus.Pending,
+        Seller.user_id.in_(ids)
+    )
+    return sellers

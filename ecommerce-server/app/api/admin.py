@@ -20,8 +20,19 @@ _get_seller_pending_req = ns.model('seller_pending_req', app.api.request.admin.g
 
 
 @ns.route('/pending', methods=['POST'])
-class RegisterNewSeller(flask_restplus.Resource):
+class GetPendingSellers(flask_restplus.Resource):
     @ns.expect(_get_seller_pending_req, validate=True)
     def post(self):
         data = request.args or request.json
         return services.admin.get_pending_seller(data)
+
+
+_confim_seller_req = ns.model('confirm_seller_req', app.api.request.admin.confirm_seller_req)
+
+
+@ns.route('/confirm', methods=['POST'])
+class GetPendingSellers(flask_restplus.Resource):
+    @ns.expect(_confim_seller_req, validate=True)
+    def post(self):
+        data = request.args or request.json
+        return services.admin.confirm_seller_req(**data)

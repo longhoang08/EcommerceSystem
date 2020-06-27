@@ -35,10 +35,9 @@ class User(db.Model, TimestampMixin, UserBase):
             'id': self.id,
             'email': self.email,
             'fullname': self.fullname,
-            'avatarUrl': self.avatar_url,
-            'isAdmin': self.is_admin,
-            'isActive': self.is_active,
-            'password': self.password,
+            'avatar_url': self.avatar_url,
+            'gender': "Male" if self.gender else "Female",
+            'address': self.address,
         }
 
     def to_display_dict(self):
