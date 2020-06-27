@@ -53,23 +53,23 @@ public class BuyRecordActivity extends AppCompatActivity {
 
     //fake data
     private void getArrayBuyrecords(){
-//        Customer an = new Customer(R.drawable.icon_kiwi_fruit,"Thành An","Nam",
-//                "11/8/1999","Hà Nam","0966947994","12345");
-//
-//        arrayBuyrecords.add(new BuyRecord("choxacnhan", id, an,
-//                new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
-//                2,25000));
-//        arrayBuyrecords.add(new BuyRecord("choxacnhan", id, an,
-//                new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
-//                2,25000));
-//
-//        arrayBuyrecords.add(new BuyRecord("cholayhang", id, an,
-//                new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
-//                2,25000));
-//        arrayBuyrecords.add(new BuyRecord("cholayhang", id, an,
-//                new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
-//                2,25000));
-//
+        Customer an = new Customer(R.drawable.icon_kiwi_fruit,"Thành An","Nam",
+                "11/8/1999","Hà Nam","0966947994","12345");
+        String url = "https://image2.tienphong.vn/w665/Uploaded/2020/bzivobpc/2019_12_26/vanda_ip_man_4_paui.jpg";
+        arrayBuyrecords.add(new BuyRecord("danggiao", 1, an,
+                new Product(url,"banana",12000,120),
+                2,25000));
+        arrayBuyrecords.add(new BuyRecord("danggiao", 2, an,
+                new Product(url,"banana",12000,120),
+                2,25000));
+
+        arrayBuyrecords.add(new BuyRecord("dagiao", 3, an,
+                new Product(url,"banana",12000,120),
+                2,25000));
+        arrayBuyrecords.add(new BuyRecord("dagiao", 4, an,
+                new Product(url,"banana",12000,120),
+                2,25000));
+
 //        arrayBuyrecords.add(new BuyRecord("danggiao", id, an,
 //                new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120),
 //                2,25000));

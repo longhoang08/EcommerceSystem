@@ -21,7 +21,7 @@ public class BuyrecordAdapter extends FragmentPagerAdapter {
     public BuyrecordAdapter(@NonNull FragmentManager fm, int totalTabs, ArrayList<BuyRecord> data) {
         super(fm);
         this.totalTabs = totalTabs;
-        itemMenu.add("choxacnhan");
+//        itemMenu.add("choxacnhan");
 //        itemMenu.add("cholayhang");
         itemMenu.add("danggiao");
         itemMenu.add("dagiao");
@@ -41,9 +41,9 @@ public class BuyrecordAdapter extends FragmentPagerAdapter {
             case 1:
                 buyrecordFragment = new BuyrecordFragment(filterData(itemMenu.get(1)));
                 return buyrecordFragment;
-            case 2:
-                buyrecordFragment = new BuyrecordFragment(filterData(itemMenu.get(2)));
-                return buyrecordFragment;
+//            case 2:
+//                buyrecordFragment = new BuyrecordFragment(filterData(itemMenu.get(2)));
+//                return buyrecordFragment;
 //            case 3:
 //                buyrecordFragment = new BuyrecordFragment(filterData(itemMenu.get(3)));
 //                return buyrecordFragment;

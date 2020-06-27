@@ -22,11 +22,11 @@ public class BuyRecord {
     private String state;
     private int id;
     private Customer customer;
-    private ArrayList<Product> buyProduct;
-    private ArrayList<Integer> buyNum;
+    private Product buyProduct;
+    private Integer buyNum;
     private int money;
 
-    public BuyRecord(String state, int id, Customer customer, ArrayList<Product> product, ArrayList<Integer> buyNum, int money) {
+    public BuyRecord(String state, int id, Customer customer, Product product, Integer buyNum, int money) {
         this.state = state;
         this.id = id;
         this.customer=customer;
@@ -43,19 +43,19 @@ public class BuyRecord {
         this.state = state;
     }
 
-    public ArrayList<Product> getBuyProduct() {
+    public Product getBuyProduct() {
         return buyProduct;
     }
 
-    public void setBuyProduct(ArrayList<Product> buyProduct) {
+    public void setBuyProduct(Product buyProduct) {
         this.buyProduct = buyProduct;
     }
 
-    public ArrayList<Integer> getBuyNum() {
+    public Integer getBuyNum() {
         return buyNum;
     }
 
-    public void setBuyNum(ArrayList<Integer> buyNum) {
+    public void setBuyNum(Integer buyNum) {
         this.buyNum = buyNum;
     }
 

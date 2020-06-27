@@ -8,18 +8,13 @@ import android.os.Bundle;
 import android.os.StrictMode;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageButton;
-import android.widget.SearchView;
 
-import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 
 import com.example.mobile_ui.Fragment.AccountFragment;
 import com.example.mobile_ui.Fragment.HomeFragment;
-import com.example.mobile_ui.Fragment.NotificationsFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
@@ -62,9 +57,9 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.navigation_home:
                     selectedFragment = new HomeFragment();
                     break;
-                case R.id.navigation_notifications:
-                    selectedFragment = new NotificationsFragment();
-                    break;
+//                case R.id.navigation_notifications:
+//                    selectedFragment = new NotificationsFragment();
+//                    break;
                 case R.id.navigation_account:
                     selectedFragment = new AccountFragment();
                     break;

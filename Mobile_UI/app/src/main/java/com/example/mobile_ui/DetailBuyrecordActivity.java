@@ -18,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mobile_ui.Adapter.ListOfBuyProductAdapter;
 import com.example.mobile_ui.Model.BuyRecord;
+import com.example.mobile_ui.Model.Customer;
 import com.example.mobile_ui.Model.MyBuyRecord;
 import com.example.mobile_ui.Model.Product;
 
@@ -26,7 +27,7 @@ import java.util.ArrayList;
 public class DetailBuyrecordActivity extends AppCompatActivity {
     TextView nameOfShop;
     TextView address;
-    ListView listOfBuyProduct;
+//    ListView listOfBuyProduct;
     TextView money;
     TextView transport;
     TextView moneySum;
@@ -38,7 +39,7 @@ public class DetailBuyrecordActivity extends AppCompatActivity {
     void anhxa(){
         nameOfShop = findViewById(R.id.nameOfShop);
         address = findViewById(R.id.address);
-        listOfBuyProduct = findViewById(R.id.listOfBuyProduct);
+//        listOfBuyProduct = findViewById(R.id.listOfBuyProduct);
         money = findViewById(R.id.money);
         transport = findViewById(R.id.transport);
         moneySum = findViewById(R.id.moneySum);
@@ -55,8 +56,8 @@ public class DetailBuyrecordActivity extends AppCompatActivity {
         //lấy dữ liệu đơn hàng từ id đơn hàng
         getData();
         //hiện listview
-        ListOfBuyProductAdapter adapter = new ListOfBuyProductAdapter(buyRecord.getBuyProduct(),buyRecord.getBuyNum());
-        listOfBuyProduct.setAdapter(adapter);
+//        ListOfBuyProductAdapter adapter = new ListOfBuyProductAdapter(new ArrayList<Product>(), new ArrayList<Integer>());
+//        listOfBuyProduct.setAdapter(adapter);
 //        UIUtils.setListViewHeightBasedOnItems(listOfBuyProduct);
         //đổ dữ liệu các view còn lại
 //        nameOfShop.setText(buyRecord.getNameOfShop());
@@ -130,13 +131,16 @@ public class DetailBuyrecordActivity extends AppCompatActivity {
         if (bundle != null) {
             int idOfMybyrecord = bundle.getInt("idOfMybyrecord");
         }
+        Customer an = new Customer(R.drawable.icon_kiwi_fruit,"Thành An","Nam",
+                "11/8/1999","Hà Nam","0966947994","12345");
+        String url = "https://image2.tienphong.vn/w665/Uploaded/2020/bzivobpc/2019_12_26/vanda_ip_man_4_paui.jpg";
         ArrayList<Product> x=new ArrayList<Product>();
         x.add(new Product(""+R.drawable.icon_kiwi_fruit,"banana",12000,120));
 //        x.add(new Product(""+R.drawable.icon_dragon_fruit,"thanh long",25000,100));
         ArrayList<Integer> y=new ArrayList<Integer>();
         y.add(new Integer(2));
 //        y.add(new Integer(3));
-//        myBuyRecord = new MyBuyRecord(1, "SHop A","dagiao", x, y,25000);
+        buyRecord = new BuyRecord("danggiao", 3,an, x.get(0), y.get(0),25000);
     }
 
     //lấy ra tiền vận chuyển

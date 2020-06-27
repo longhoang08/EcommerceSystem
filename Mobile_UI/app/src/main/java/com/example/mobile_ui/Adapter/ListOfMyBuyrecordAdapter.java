@@ -49,7 +49,7 @@ public class ListOfMyBuyrecordAdapter extends BaseAdapter {
 
             //anh xa
             TextView nameOfShop = view.findViewById(R.id.nameOfShop);
-            TextView feedback = view.findViewById(R.id.feedback);
+//            TextView feedback = view.findViewById(R.id.feedback);
             ImageView proImg = view.findViewById(R.id.proImg);
             TextView proName = view.findViewById(R.id.proName);
             TextView buyNum = view.findViewById(R.id.buyNum);

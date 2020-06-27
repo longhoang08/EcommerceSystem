@@ -1,13 +1,17 @@
 package com.example.mobile_ui.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.mobile_ui.DetailBuyrecordActivity;
 import com.example.mobile_ui.Model.BuyRecord;
 import com.example.mobile_ui.Model.Product;
 import com.example.mobile_ui.R;
@@ -37,7 +41,7 @@ public class ListOfBuyrecordAdapter extends BaseAdapter {
 
     // moi 1 item se hien theo setting o day
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, final ViewGroup parent) {
         View view;
         if(convertView==null){
             view = LayoutInflater.from(parent.getContext()).inflate(R.layout.buyrecord_item, null);
@@ -49,13 +53,38 @@ public class ListOfBuyrecordAdapter extends BaseAdapter {
             TextView buyNum = view.findViewById(R.id.buyNum);
             TextView price = view.findViewById(R.id.price);
             TextView money = view.findViewById(R.id.money);
+            Button buttonCommitSend = view.findViewById(R.id.buttonCommitSend);
 
             nameOfCustom.setText(data.get(position).getCustomer().getUsername());
-//            proImg.setImageResource(data.get(position).getBuyProduct().getImageRepresent());
-//            proName.setText(data.get(position).getBuyProduct().getName());
-//            buyNum.setText("x" + data.get(position).getBuyNum());
-//            price.setText("đ"+data.get(position).getBuyProduct().getPrice());
-//            money.setText("Thành tiền : đ"+data.get(position).getMoney());
+            proImg.setImageResource(R.drawable.icon_kiwi_fruit);
+            proName.setText(data.get(position).getBuyProduct().getName());
+            buyNum.setText("x" + data.get(position).getBuyNum());
+            price.setText("đ"+data.get(position).getBuyProduct().getPrice());
+            money.setText("Thành tiền : đ"+data.get(position).getMoney());
+            if (data.get(position).getState() == "danggiao") {
+                view.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(parent.getContext(), DetailBuyrecordActivity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("idOfMybyrecord",data.get(position).getId());
+                        intent.putExtras(bundle);
+                        parent.getContext().startActivity(intent);
+                    }
+                });
+            } else {
+                buttonCommitSend.setText("Xem chi tiết");
+                buttonCommitSend.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(parent.getContext(), DetailBuyrecordActivity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("idOfMybyrecord",data.get(position).getId());
+                        intent.putExtras(bundle);
+                        parent.getContext().startActivity(intent);
+                    }
+                });
+            }
         }else{
             view=convertView;
         }
