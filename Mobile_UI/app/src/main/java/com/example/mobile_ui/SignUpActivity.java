@@ -35,6 +35,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -118,21 +119,21 @@ public class SignUpActivity extends AppCompatActivity {
 
                     @Override
                     public void onResponse(JSONObject response) {
-
+                        pd.cancel();
                     }
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
                 pd.cancel();
-                NetworkResponse response = error.networkResponse;
+                final NetworkResponse response = error.networkResponse;
 //                    Toast.makeText(SignUpActivity.this, response.statusCode+"", Toast.LENGTH_LONG).show();
-                if (error instanceof ServerError && response != null) {
+                if (response != null) {
                     try {
-                        String res = new String(response.data,
-                                HttpHeaderParser.parseCharset(response.headers, "utf-8"));
+                        final String res = new String(response.data, StandardCharsets.UTF_8);
 //                        System.out.println(res);
                         // hiện thông báo lỗi
                         JSONObject responseMsg = new JSONObject(res);
+                        System.out.println(res);
                         final AlertDialog.Builder builder = new AlertDialog.Builder(SignUpActivity.this);
                         builder.setTitle("Thông báo");
                         String msgError = (String) responseMsg.get("message");
@@ -146,20 +147,17 @@ public class SignUpActivity extends AppCompatActivity {
                         });
                         AlertDialog alertDialog = builder.create();
                         alertDialog.show();
-                    } catch (UnsupportedEncodingException | JSONException e1) {
+                    } catch (JSONException e1) {
                         e1.printStackTrace();
                     }
                 } else {
-                    // hiện thông báo đăng nhập thành công
                     final AlertDialog.Builder builder = new AlertDialog.Builder(SignUpActivity.this);
                     builder.setTitle("Thông báo");
-                    builder.setCancelable(false);
                     builder.setMessage("Đăng ký thành công. Vui lòng check mail.");
                     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.cancel();
-                            SignUpActivity.this.finish();
                         }
                     });
                     AlertDialog alertDialog = builder.create();

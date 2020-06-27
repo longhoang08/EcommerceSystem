@@ -2,8 +2,11 @@ package com.example.mobile_ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.RestrictionEntry;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -27,6 +30,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -51,7 +55,18 @@ public class ResetPassActivity extends AppCompatActivity {
                 final String newPass =newpassword.getText().toString();
                 final String reNewPass =renewpassword.getText().toString();
                 if(!newPass.equals(reNewPass)) {
-                    Toast.makeText(ResetPassActivity.this,"Mật khẩu xác nhận không đúng",Toast.LENGTH_SHORT).show();
+                    final AlertDialog.Builder builder = new AlertDialog.Builder(ResetPassActivity.this);
+                    builder.setTitle("Thông báo");
+                    builder.setMessage("Mật khẩu xác nhận không đúng");
+                    builder.setCancelable(false);
+                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
+                    AlertDialog alertDialog = builder.create();
+                    alertDialog.show();
                     return;
                 }
                 postToChangePass(oldPass,newPass);
@@ -80,23 +95,47 @@ public class ResetPassActivity extends AppCompatActivity {
 
                     @Override
                     public void onResponse(JSONObject response) {
-//                        Toast.makeText(getActivity(), response.toString(), Toast.LENGTH_LONG).show();
-//                            JSONObject dataUser = response.getJSONObject("data");
-                            Toast.makeText(ResetPassActivity.this, response.toString(), Toast.LENGTH_LONG).show();
-                            finish();
-
+//                            Toast.makeText(ResetPassActivity.this, response.toString(), Toast.LENGTH_LONG).show();
+                        final AlertDialog.Builder builder = new AlertDialog.Builder(ResetPassActivity.this);
+                        builder.setTitle("Thông báo");
+                        builder.setMessage("Đổi mật khẩu thành công");
+                        builder.setCancelable(false);
+                        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                                finish();
+                            }
+                        });
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
                     }
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(ResetPassActivity.this, "error", Toast.LENGTH_LONG).show();
+//                Toast.makeText(ResetPassActivity.this, "error", Toast.LENGTH_LONG).show();
                 NetworkResponse response = error.networkResponse;
-                if (error instanceof ServerError && response != null) {
+                System.out.println(error.getClass().toString());
+                if (response != null) {
                     try {
-                        String res = new String(response.data,
-                                HttpHeaderParser.parseCharset(response.headers, "utf-8"));
-                        System.out.println(res);
-                    } catch (UnsupportedEncodingException e1) {
+                        final String res = new String(response.data, StandardCharsets.UTF_8);
+//                        System.out.println(res);
+                        // hiện thông báo lỗi
+                        JSONObject responseMsg = new JSONObject(res);
+                        final AlertDialog.Builder builder = new AlertDialog.Builder(ResetPassActivity.this);
+                        builder.setTitle("Thông báo");
+                        String msgError = (String) responseMsg.get("message");
+                        msgError = msgError.substring(msgError.indexOf(":")+2);
+                        builder.setMessage(msgError);
+                        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        });
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
+                    } catch (JSONException e1) {
                         e1.printStackTrace();
                     }
                 }

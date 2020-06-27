@@ -30,6 +30,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -100,14 +101,13 @@ public class LoginActivity extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
                 pd.cancel();
 //                Toast.makeText(LoginActivity.this, "error", Toast.LENGTH_LONG).show();
-                NetworkResponse response = error.networkResponse;
-                if (error instanceof ServerError && response != null) {
+                final NetworkResponse response = error.networkResponse;
+                if (response != null) {
                     try {
-                        String res = new String(response.data,
-                                HttpHeaderParser.parseCharset(response.headers, "utf-8"));
+                        final String res = new String(response.data, StandardCharsets.UTF_8);
 //                        System.out.println(res);
                         // hiện thông báo lỗi
-                        JSONObject responseMsg = new JSONObject(res);
+                        final JSONObject responseMsg = new JSONObject(res);
                         final AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
                         builder.setTitle("Thông báo");
                         String msgError = (String) responseMsg.get("message");
@@ -121,21 +121,9 @@ public class LoginActivity extends AppCompatActivity {
                         });
                         AlertDialog alertDialog = builder.create();
                         alertDialog.show();
-                    } catch (UnsupportedEncodingException | JSONException e1) {
+                    } catch (JSONException e1) {
                         e1.printStackTrace();
                     }
-                } else {
-                    final AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
-                    builder.setTitle("Thông báo");
-                    builder.setMessage("You must confirm your email first.");
-                    builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.cancel();
-                        }
-                    });
-                    AlertDialog alertDialog = builder.create();
-                    alertDialog.show();
                 }
             }
         })
