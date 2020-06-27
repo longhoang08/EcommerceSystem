@@ -40,4 +40,4 @@ class UpsertNewProduct(flask_restplus.Resource):
     def post(self):
         data = request.args or request.json
         validate_upsert_product_request(data)
-        return services.seller.upsert_product(data)
+        return services.seller.upsert_product(**data)

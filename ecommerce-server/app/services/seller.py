@@ -28,9 +28,9 @@ def register_to_be_seller(description, **kwargs) -> Seller:
 
 
 @seller_required
-def upsert_product(data: dict) -> dict:
-    sku = data.get('sku')
-    product_service.find_by_sku(sku)
+def upsert_product(sku, brand_code, categories_code, name, price, **kwargs) -> dict:
+    product = product_service.find_by_sku(sku)
+    seller = kwargs.get('user')
 
 
 # ======================================================================================================================
