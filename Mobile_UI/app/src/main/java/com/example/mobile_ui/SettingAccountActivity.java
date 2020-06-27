@@ -39,6 +39,8 @@ import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
+import com.example.mobile_ui.Model.chooseImage;
+import com.example.mobile_ui.Model.ratingDialog;
 import com.example.mobile_ui.Retrofit.GetImgFormUrl;
 
 import org.json.JSONException;
@@ -93,50 +95,33 @@ public class SettingAccountActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //giao diện
-                AlertDialog.Builder builder = new AlertDialog.Builder(SettingAccountActivity.this);
-                final AlertDialog alert = builder.create();
-//                    final AlertDialog.Builder alert = new AlertDialog.Builder(SettingAccountActivity.this);
-                LinearLayout layout = new LinearLayout(SettingAccountActivity.this);
-                layout.setOrientation(LinearLayout.VERTICAL);
-                final TextView fromDevice = new TextView(SettingAccountActivity.this);
-                fromDevice.setText("Chọn từ thiết bị");
-                fromDevice.setPadding(30, 30, 30, 30);
-                fromDevice.setTextSize(TypedValue.COMPLEX_UNIT_SP,30);
-                final TextView takePhoto = new TextView(SettingAccountActivity.this);
-                takePhoto.setText("Chụp ảnh");
-                takePhoto.setPadding(30, 30, 30, 30);
-                takePhoto.setTextSize(TypedValue.COMPLEX_UNIT_SP,30);
-                final Button close = new Button(SettingAccountActivity.this);
-                close.setText("Hủy");
-                layout.addView(fromDevice);
-                layout.addView(takePhoto);
-                layout.addView(close);
-                alert.setView(layout);
+                final chooseImage chooseImageProfile = new chooseImage();
+                chooseImageProfile.show(getSupportFragmentManager(), "");
                 //set sự kiện
-                takePhoto.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                        startActivityForResult(intent,REQUEST_CODE_CAMERA);
-                        alert.cancel();
-                    }
-                });
-                fromDevice.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Intent.ACTION_PICK);
-                        intent.setType("image/*");
-                        startActivityForResult(intent,REQUEST_CODE_FOLDER);
-                        alert.cancel();
-                    }
-                });
-                close.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        alert.cancel();
-                    }
-                });
-                alert.show();
+//                takePhoto.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//                        startActivityForResult(intent,REQUEST_CODE_CAMERA);
+//                        alert.cancel();
+//                    }
+//                });
+//                fromDevice.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        Intent intent = new Intent(Intent.ACTION_PICK);
+//                        intent.setType("image/*");
+//                        startActivityForResult(intent,REQUEST_CODE_FOLDER);
+//                        alert.cancel();
+//                    }
+//                });
+//                close.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        alert.cancel();
+//                    }
+//                });
+//                alert.show();
             }
         });
     }

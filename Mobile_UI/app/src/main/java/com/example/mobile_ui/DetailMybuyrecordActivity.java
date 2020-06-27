@@ -2,27 +2,18 @@ package com.example.mobile_ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
-import android.util.TypedValue;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.RatingBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.example.mobile_ui.Adapter.ListOfBuyProductAdapter;
 import com.example.mobile_ui.Model.MyBuyRecord;
 import com.example.mobile_ui.Model.Product;
+import com.example.mobile_ui.Model.ratingDialog;
 
 import java.util.ArrayList;
 
@@ -34,7 +25,7 @@ public class DetailMybuyrecordActivity extends AppCompatActivity {
     ImageView proImg;
     TextView transport;
     TextView moneySum;
-//    TextView review;
+    Button review;
 //    LinearLayout footer;
 //    TextView buyAgain;
     MyBuyRecord myBuyRecord;
@@ -48,7 +39,7 @@ public class DetailMybuyrecordActivity extends AppCompatActivity {
         moneySum = findViewById(R.id.moneySum);
         proImg = findViewById(R.id.proImg);
 //        footer = findViewById(R.id.footer);
-//        review = findViewById(R.id.review);
+        review = findViewById(R.id.review);
 //        buyAgain = findViewById(R.id.buyAgain);
     }
 
@@ -63,6 +54,13 @@ public class DetailMybuyrecordActivity extends AppCompatActivity {
         Glide.with(DetailMybuyrecordActivity.this)
                 .load(url).override(80, 80).centerCrop()
                 .into(proImg);
+        review.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ratingDialog ratingDialogReview = new ratingDialog();
+                ratingDialogReview.show(getSupportFragmentManager(), "");
+            }
+        });
         //hiện listview
 //        ListOfBuyProductAdapter adapter = new ListOfBuyProductAdapter(myBuyRecord.getBuyProduct(),myBuyRecord.getBuyNum());
 //        listOfBuyProduct.setAdapter(adapter);

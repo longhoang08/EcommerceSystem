@@ -2,6 +2,7 @@ package com.example.mobile_ui;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -15,6 +16,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -30,15 +32,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AddProductActivity extends AppCompatActivity {
-    ImageButton BtnAddImgFromCamera;
-    ImageButton BtnAddImgFromFolder;
+    Button BtnAddImgFromCamera;
+    Button BtnAddImgFromFolder;
 
     ArrayList<Bitmap> imgProductsList;//nơi lưu dữ liệu ảnh
     RecyclerView imgProductsView;
     ImgProductAdpter imgProductAdpter;
 
-    Spinner dropdown;
+    Spinner dropdown, spinnerBrandPro;
     String[] typeOfPro = new String[]{"quần áo", "giày dép", "điện tử"};//nơi lưu dữ liệu về loại hàng
+    String[] typeOfBrand = new String[]{"rượu chè", "cờ bạc", "ma túy"};//nơi lưu dữ liệu về thương hiệu
 
     int REQUEST_CODE_CAMERA=123;
     int REQUEST_CODE_FOLDER=456;
@@ -50,13 +53,15 @@ public class AddProductActivity extends AppCompatActivity {
         BtnAddImgFromCamera = findViewById(R.id.addImgFromCamera);
         BtnAddImgFromFolder = findViewById(R.id.addImgFromFolder);
         dropdown = findViewById(R.id.typeProduc);
-
+        spinnerBrandPro = findViewById(R.id.spinnerBrandPro);
         //Xử lý chọn ảnh
         imgProductsList = new ArrayList<Bitmap>();
         imgProductsView = findViewById(R.id.imgProductsRecyclerView);
-        LinearLayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
-        mLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
-        imgProductsView.setLayoutManager(mLayoutManager);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(AddProductActivity.this, 1, GridLayoutManager.HORIZONTAL, false);
+        imgProductsView.setLayoutManager(gridLayoutManager);
+//        LinearLayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+//        mLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+//        imgProductsView.setLayoutManager(mLayoutManager);
 
         imgProductAdpter = new ImgProductAdpter(
                 imgProductsList,AddProductActivity.this,true
@@ -82,7 +87,9 @@ public class AddProductActivity extends AppCompatActivity {
 
         //xử lý chọn loại hàng
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, typeOfPro);
+        ArrayAdapter<String> adapterBrand = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, typeOfBrand);
         dropdown.setAdapter(adapter);
+        spinnerBrandPro.setAdapter(adapterBrand);
     }
 
     @Override

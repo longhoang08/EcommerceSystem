@@ -194,7 +194,7 @@ public class AccountFragment extends Fragment {
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getActivity(), "error", Toast.LENGTH_LONG).show();
+//                Toast.makeText(getActivity(), "error", Toast.LENGTH_LONG).show();
                 NetworkResponse response = error.networkResponse;
                 if (error instanceof ServerError && response != null) {
                     try {

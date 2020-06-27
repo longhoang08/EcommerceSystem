@@ -9,6 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.mobile_ui.Model.Product;
 import com.example.mobile_ui.R;
 
@@ -49,7 +50,10 @@ public class ProductStallAdapter extends BaseAdapter {
         TextView price = (TextView) convertView.findViewById(R.id.stallProPrice);
         TextView number = (TextView) convertView.findViewById(R.id.stallProNumber);
 
-        imgPro.setImageResource(Integer.parseInt(products.get(position).getImageRepresent()));
+//        imgPro.setImageResource(Integer.parseInt(products.get(position).getImageRepresent()));
+        Glide.with(parent.getContext())
+                .load(products.get(position).getImageRepresent()).override(80, 80).centerCrop()
+                .into(imgPro);
         name.setText("Tên sản phẩm : " + products.get(position).getName());
         price.setText("Giá : " + products.get(position).getPrice());
         number.setText("Kho : "+products.get(position).getNumber());

@@ -21,9 +21,9 @@ public class StallActivity extends AppCompatActivity {
     TextView btnAddProduct;
     TextView showBuyRecord;
     ListView stallProListView;
-    ImageView stall_infor_img_main;
-    TextView userName;
-    TextView numOfPro;
+//    ImageView stall_infor_img_main;
+//    TextView userName;
+//    TextView numOfPro;
 
     ArrayList<Product> products = new ArrayList<Product>();
     @Override
@@ -34,15 +34,14 @@ public class StallActivity extends AppCompatActivity {
         btnAddProduct = findViewById(R.id.btn_add_product);
         showBuyRecord = findViewById(R.id.stallBuyRecord);
         stallProListView = findViewById(R.id.stallProListView);
-        stall_infor_img_main = findViewById(R.id.stall_infor_img_main);
-        userName = findViewById(R.id.userName);
-        numOfPro = findViewById(R.id.numOfPro);
+//        stall_infor_img_main = findViewById(R.id.stall_infor_img_main);
+//        userName = findViewById(R.id.userName);
+//        numOfPro = findViewById(R.id.numOfPro);
 
         //fake data
-//        products.add(new Product(R.drawable.icon_kiwi_fruit,"banana",12000,120));
-//        products.add(new Product(R.drawable.icon_kiwi_fruit,"apple",12000,100));
-//        products.add(new Product(R.drawable.icon_kiwi_fruit,"lemon",12000,80));
-//        products.add(new Product(R.drawable.icon_kiwi_fruit,"suit",12000,60));
+        String url = "https://image.thanhnien.vn/800/uploaded/tuyenth/2019_07_07/47585172_614712392300363_2894160633832439484_n_jxdz.jpg";
+        products.add(new Product(url,"banana",12000,120, "1"));
+        products.add(new Product(url,"apple",12000,100, "2"));
 
         ProductStallAdapter adapter = new ProductStallAdapter(
                 StallActivity.this,R.layout.stall_product_item,products

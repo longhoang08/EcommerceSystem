@@ -30,8 +30,8 @@ import java.util.ArrayList;
 
 public class StallDetailProductActivity extends AppCompatActivity {
     Button changeOrSave;
-    ImageButton BtnAddImgFromCamera;
-    ImageButton BtnAddImgFromFolder;
+    Button BtnAddImgFromCamera;
+    Button BtnAddImgFromFolder;
     int REQUEST_CODE_CAMERA=123;
     int REQUEST_CODE_FOLDER=456;
 
