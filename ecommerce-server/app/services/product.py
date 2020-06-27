@@ -11,7 +11,8 @@ _logger = logging.getLogger(__name__)
 def find_by_sku(sku: str):
     product_es = ProductElasticRepo()
     responses = product_es.search({'skus': [sku]})
-    return extract_only_products_from_response(responses)
+    products = extract_only_products_from_response(responses)
+    return products[0] if products else None
 
 
 def get_result_search(args):

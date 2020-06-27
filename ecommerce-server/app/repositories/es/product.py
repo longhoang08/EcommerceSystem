@@ -117,7 +117,7 @@ class ProductElasticRepo(EsRepositoryInterface):
             'terms',
             script="if (doc['brand.code'].size() != 0) "
                    "doc['brand.code'].value + '|' + doc['brand.name'].value",
-            size=1000)
+            size=50)
         product_es.aggs.bucket('brands', brands_aggregation)
 
     @staticmethod
@@ -129,7 +129,7 @@ class ProductElasticRepo(EsRepositoryInterface):
         :return:
         """
         product_es.aggs.bucket('categories', 'nested', path='categories') \
-            .bucket('data', 'terms', field="categories.code", size=4000)
+            .bucket('data', 'terms', field="categories.code", size=50)
 
     # Text query only =================================================================================================
 
