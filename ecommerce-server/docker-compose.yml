@@ -50,7 +50,7 @@ services:
       - discovery.type=single-node
       - http.port=9200
     volumes:
-      - ./volumes/es:/var/lib/es
+      - esdata:/usr/share/elasticsearch/data
     ports:
       - '${ES_FORWARD_PORT}:9200'
 
@@ -64,3 +64,6 @@ services:
       ELASTICSEARCH_HOSTS: http://elasticsearch_01:9200/
     ports:
       - '${KIBANA_FORWARD_PORT}:5601'
+volumes:
+  esdata:
+    driver: local
