@@ -1,12 +1,10 @@
 # coding=utf-8
 import logging
-
-__author__ = 'LongHB'
-
 from flask_restplus import fields
 
 from app.api import api
 
+__author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
 
 _keyword_recommenders_data = api.model('keyword_recommenders_data', {
