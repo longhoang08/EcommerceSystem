@@ -36,6 +36,7 @@ def admin_required(func):
             user = user_service.find_one_by_email(email)
             if not user: raise Exception()
             if user.role != UserRole.Admin: raise Exception()
+            kwargs['user'] = user
         except:
             raise PermissionException("Admin Required")
         return func(*args, **kwargs)
@@ -52,6 +53,7 @@ def seller_required(func):
             user = user_service.find_one_by_email(email)
             if not user: raise Exception()
             if user.role != UserRole.Seller: raise Exception()
+            kwargs['user'] = user
         except:
             raise PermissionException("Seller Required")
         return func(*args, **kwargs)
