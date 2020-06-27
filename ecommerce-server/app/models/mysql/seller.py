@@ -25,7 +25,6 @@ class Seller(db.Model, TimestampMixin):
     status = db.Column(db.Integer, default=SellerStatus.Pending)
 
     def to_dict(self):
-        print(self.status)
         return {
             'id': self.user_id,
             'description': self.description,

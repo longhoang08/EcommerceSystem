@@ -6,7 +6,6 @@ __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
 
 get_pending_seller_req = {
-    'q': fields.String(required=False, description='Text query to recommend'),
     '_page': fields.Integer(required=False, description='Paging, default to 1'),
     '_limit': fields.Integer(required=False, description='Number of product in response. Default to 10'),
 }

@@ -13,6 +13,8 @@ from . import password
 from . import product
 from . import file
 from . import seller
+from . import admin
+
 my_mail = Mail()
 
 

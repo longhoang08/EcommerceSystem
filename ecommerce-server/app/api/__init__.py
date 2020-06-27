@@ -45,6 +45,7 @@ def init_app(app, **kwargs):
     from .file import ns as file_ns
     from .seller import ns as seller_ns
     from .product import ns as product_ns
+    from .admin import ns as admin_ns
 
     api.add_namespace(register_ns)
     api.add_namespace(user_ns)
@@ -52,6 +53,7 @@ def init_app(app, **kwargs):
     api.add_namespace(file_ns)
     api.add_namespace(seller_ns)
     api.add_namespace(product_ns)
+    api.add_namespace(admin_ns)
 
     app.register_blueprint(api_bp)
     api.error_handlers[Exception] = global_error_handler
