@@ -46,9 +46,11 @@ public class ProductAdapter extends BaseAdapter {
             TextView textViewPriceProduct = view.findViewById(R.id.textViewPriceProduct);
             TextView textViewStockProduct = view.findViewById(R.id.textViewStockProduct);
             // gan gia tri
-            Glide.with(parent.getContext())
-                    .load(listProduct.get(position).getImageRepresent()).override(178, 178).centerCrop()
-                    .into(imageViewProduct);
+            if (listProduct.get(position).getImageRepresent() != null) {
+                Glide.with(parent.getContext())
+                        .load(listProduct.get(position).getImageRepresent()).override(178, 178).centerCrop()
+                        .into(imageViewProduct);
+            }
             String namePro = listProduct.get(position).getName();
             if (namePro.length() > 50) {
                 namePro = namePro.substring(0, 50)+"...";

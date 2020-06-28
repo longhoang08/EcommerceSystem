@@ -66,12 +66,15 @@ public class SearchActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //trả về vị trí khi click trên listView ->0
-                Toast.makeText(SearchActivity.this, "" + dataSearch.get(position), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(SearchActivity.this, ProductSearchActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("keyWord", dataSearch.get(position));
+                intent.putExtras(bundle);
+//                Toast.makeText(SearchActivity.this, "" + dataSearch.get(position), Toast.LENGTH_SHORT).show();
                 // chuyển sang màn hình các sản phẩm phù hợp với search
-                startActivity(new Intent(SearchActivity.this, ProductSearchActivity.class));
+                startActivity(intent);
             }
         });
-
         //sử lý search view
         searchView = findViewById(R.id.searchView);
         searchView.setFocusable(true);
@@ -80,6 +83,11 @@ public class SearchActivity extends AppCompatActivity {
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
+                Intent intent = new Intent(SearchActivity.this, ProductSearchActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("keyWord", query);
+                intent.putExtras(bundle);
+                startActivity(intent);
                 return false;
             }
 
@@ -90,6 +98,7 @@ public class SearchActivity extends AppCompatActivity {
                 return false;
             }
         });
+
         searchView.setOnCloseListener(new SearchView.OnCloseListener() {
             @Override
             public boolean onClose() {

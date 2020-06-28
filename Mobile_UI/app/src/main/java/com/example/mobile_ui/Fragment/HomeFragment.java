@@ -187,7 +187,7 @@ public class HomeFragment extends Fragment {
 //                        Toast.makeText(getActivity(), response.toString(), Toast.LENGTH_LONG).show();
                         try {
                             JSONArray data = response.getJSONObject("data").getJSONArray("products");
-                            if (data == null) {
+                            if (data.length() == 0) {
                                 loadMore.setVisibility(View.INVISIBLE);
                                 noMorePro.setVisibility(View.VISIBLE);
                                 return;
