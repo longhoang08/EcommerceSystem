@@ -26,7 +26,7 @@ def upsert_job_to_database(job_name) -> JobTime:
     job_time = get_job_by_name(job_name)
     if not job_time:
         return save_job_to_database(name=job_time, time=func.now())
-    job_time.time = func.now()
+    job_time.last_ingest_time = func.now()
     return save(job_time)
 
 

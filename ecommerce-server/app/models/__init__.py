@@ -29,5 +29,6 @@ def init_app(app, **kwargs):
     ))
 
 
-from app.models.mysql.register import Register
+from .mysql.register import Register
 from .mysql.stock import Stock
+from .mysql.job_info import JobTime

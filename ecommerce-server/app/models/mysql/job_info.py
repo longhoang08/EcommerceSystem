@@ -23,10 +23,10 @@ class JobTime(db.Model, TimestampMixin):
             setattr(self, k, v)
 
     name = db.Column(db.String(30), primary_key=True)
-    time = db.Computed(db.TIMESTAMP)
+    time = db.Column(db.TIMESTAMP)
 
     def to_dict(self):
         return {
             'name': self.name,
-            'time': self.time
+            'time': self.last_ingest_time
         }
