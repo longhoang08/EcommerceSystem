@@ -25,6 +25,8 @@ def create_app():
     from . import api, models
     from app import helpers
     from app import services
+    from app import command
+
     def load_app_config(app):
         """
         Load app's configurations
@@ -81,6 +83,8 @@ def create_app():
     models.init_app(app)
     api.init_app(app)
     services.init_app(app)
+    command.init_command(app)
+
     CORS(app)
     return app
 

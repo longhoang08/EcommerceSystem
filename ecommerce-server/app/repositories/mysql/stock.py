@@ -9,15 +9,24 @@ __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
 
 
-def save(stock: Stock):
+def save(stock: Stock, commit=False):
     m.db.session.add(stock)
-    # m.db.session.commit()
+    if commit:
+        m.db.session.commit()
     return stock
 
 
 def save_stock_to_database(**kwargs) -> Stock:
     stock = Stock(**kwargs)
     return save(stock)
+
+
+def upsert_stock_to_database(sku: str, stock: int) -> Stock:
+    product_stock = get_stock_by_sku(sku)
+    if not product_stock:
+        return save_stock_to_database(sku=sku, stock=stock)
+    product_stock.stock = stock
+    return save(product_stock)
 
 
 def get_stock_by_skus(skus: List[str]) -> List[Stock]:
@@ -28,5 +37,7 @@ def get_stock_by_skus(skus: List[str]) -> List[Stock]:
 
 
 def get_stock_by_sku(sku: str) -> Stock:
-    stocks = get_stock_by_skus([sku])
-    return stocks[0] if stocks else None
+    stock = Stock.query.filter(
+        Stock.sku == sku
+    ).first()
+    return stock if stock else None

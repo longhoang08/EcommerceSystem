@@ -13,5 +13,5 @@ class ProductCache(RedisCacheBase):
     def __init__(self):
         super().__init__("products", ttl=900)
 
-    def fetch_data(self, key: str):
+    def fetch_data(self, key: str): #key is sku of products
         pass
