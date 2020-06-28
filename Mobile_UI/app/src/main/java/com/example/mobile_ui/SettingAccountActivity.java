@@ -319,6 +319,7 @@ public class SettingAccountActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
 //                        Toast.makeText(getActivity(), response.toString(), Toast.LENGTH_LONG).show();
+//                        System.out.println(response.toString());
                         try {
                             JSONObject dataUser = response.getJSONObject("data");
                             String urlAvatar = (String) dataUser.get("avatar_url");

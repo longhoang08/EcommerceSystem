@@ -77,6 +77,7 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         pd.cancel();
+//                        System.out.println(response.toString());
 //                        Toast.makeText(LoginActivity.this, response.toString(), Toast.LENGTH_LONG).show();
                         if(response!=null){
                             //lưu vào máy

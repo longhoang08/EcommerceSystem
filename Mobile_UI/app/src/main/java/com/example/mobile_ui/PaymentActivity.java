@@ -101,7 +101,7 @@ public class PaymentActivity extends AppCompatActivity {
                     String namePro = (String) listOrderProduct.getJSONObject(i).get("nameProduct");
                     int price = (int) listOrderProduct.getJSONObject(i).get("price");
                     int quantity = (int) listOrderProduct.getJSONObject(i).get("quantity");
-                    int feeTransport = transformFee(price);
+                    int feeTransport = transformFee(price*quantity);
                     int feeSale = 0;
                     payments.add(new Payment(nameShop, urlImage, namePro, price, quantity, feeTransport, feeSale));
                     ItotalFeeAllPro += price*quantity;

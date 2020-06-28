@@ -61,11 +61,14 @@ public class AccountFragment extends Fragment {
     TextView textViewNameUser;
     ImageView user_infor_img_main;
     Button buttonSeller;
+    final List<String> abc = new ArrayList<>();
+    ArrayAdapter adapter;
 
     public View onCreateView(@NonNull final LayoutInflater inflater,
                              final ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_account, container, false);
 
+        adapter = new ArrayAdapter(getActivity().getApplicationContext(),android.R.layout.simple_list_item_1,abc);
         user_infor_img_main = root.findViewById(R.id.user_infor_img_main);
         buttonLogin = root.findViewById(R.id.buttonLogin);
         buttonSignUp = root.findViewById(R.id.buttonSignUp);
@@ -88,20 +91,18 @@ public class AccountFragment extends Fragment {
         });
 
         listViewDetailAcc = root.findViewById(R.id.listDetailAccount);
-        final List<String> abc = new ArrayList<>();
-        abc.add("Xem Gian Hàng");
+//        abc.add("Xem Gian Hàng");
         abc.add("Đơn hàng");
         abc.add("Thiết lập tài khoản");
         abc.add("Đổi mật khẩu");
         abc.add("Đăng xuất");
-        ArrayAdapter adapter = new ArrayAdapter(getActivity().getApplicationContext(),android.R.layout.simple_list_item_1,abc);
         listViewDetailAcc.setAdapter(adapter);
         listViewDetailAcc.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent;
                 switch (abc.get(position)){
-                    case "Xem Gian Hàng":
+                    case "Shop của tôi":
                         intent = new Intent(getContext(), StallActivity.class);
                         startActivity(intent);break;
                     case "Thiết lập tài khoản":
@@ -122,6 +123,13 @@ public class AccountFragment extends Fragment {
                         System.out.println("LOGIN_TOKEN deleted");
                         setFormAccordingStatusLogin();
                 }
+            }
+        });
+        buttonSeller.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), StallActivity.class);
+                startActivity(intent);
             }
         });
         setFormAccordingStatusLogin();
@@ -178,6 +186,17 @@ public class AccountFragment extends Fragment {
                             JSONObject dataUser = response.getJSONObject("data");
                             textViewNameUser.setVisibility(View.VISIBLE);
                             textViewNameUser.setText((String) dataUser.get("fullname"));
+                            String role = (String) dataUser.get("role");
+                            if (role.equals("admin")) {
+                                abc.add("Duyệt người bán");
+                            } else if (role.equals("seller")) {
+                                buttonSeller.setVisibility(View.GONE);
+                                abc.add("Shop của tôi");
+                                adapter.notifyDataSetChanged();
+                            } else {
+                                buttonSeller.setVisibility(View.VISIBLE);
+                            }
+
                             String urlAvatar = (String) dataUser.get("avatar_url");
                             Glide.with(getActivity())
                                     .load(urlAvatar).override(50, 50).centerCrop()
@@ -185,7 +204,7 @@ public class AccountFragment extends Fragment {
                             listViewDetailAcc.setVisibility(View.VISIBLE);
                             buttonLogin.setVisibility(View.GONE);
                             buttonSignUp.setVisibility(View.GONE);
-                            buttonSeller.setVisibility(View.VISIBLE);
+//                            buttonSeller.setVisibility(View.VISIBLE);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
