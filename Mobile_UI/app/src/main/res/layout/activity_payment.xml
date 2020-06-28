@@ -115,7 +115,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/view3" />
 
                 <TextView
-                    android:id="@+id/textView8"
+                    android:id="@+id/totalFeeAllPro"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -137,14 +137,14 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
                 <TextView
-                    android:id="@+id/textView10"
+                    android:id="@+id/totalTransport"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:text="120000"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                    app:layout_constraintTop_toBottomOf="@+id/totalFeeAllPro" />
 
                 <TextView
                     android:id="@+id/textView19"
@@ -159,14 +159,14 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
                 <TextView
-                    android:id="@+id/textView20"
+                    android:id="@+id/totalSale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:text="10000"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                    app:layout_constraintTop_toBottomOf="@+id/totalTransport" />
 
                 <TextView
                     android:id="@+id/textView21"
@@ -182,7 +182,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
                 <TextView
-                    android:id="@+id/textView22"
+                    android:id="@+id/totalFee"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -191,7 +191,7 @@
                     android:textStyle="bold"
                     android:textColor="@android:color/holo_red_dark"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
+                    app:layout_constraintTop_toBottomOf="@+id/totalSale" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
             <LinearLayout

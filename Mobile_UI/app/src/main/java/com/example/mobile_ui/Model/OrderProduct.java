@@ -1,25 +1,54 @@
 package com.example.mobile_ui.Model;
 
 public class OrderProduct {
-    private int imageRepresent;
+    private String imageRepresent;
     private String nameProduct;
     private int price;
     private int quantity;
     private int quantityInStock;
+    boolean state = false;
+    String nameShop;
+    String id;
 
-    public OrderProduct(int imageRepresent, String nameProduct, int price, int quantity, int quantityInStock) {
+    public String getNameShop() {
+        return nameShop;
+    }
+
+    public void setNameShop(String nameShop) {
+        this.nameShop = nameShop;
+    }
+
+    public OrderProduct(String nameShop, String imageRepresent, String nameProduct, int price, int quantity, int quantityInStock, String id) {
+        this.nameShop = nameShop;
         this.imageRepresent = imageRepresent;
         this.nameProduct = nameProduct;
         this.price = price;
         this.quantity = quantity;
         this.quantityInStock = quantityInStock;
+        this.id = id;
     }
 
-    public int getImageRepresent() {
+    public String getId() {
+        return id;
+    }
+
+    public boolean isState() {
+        return state;
+    }
+
+    public void setState(boolean state) {
+        this.state = state;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getImageRepresent() {
         return imageRepresent;
     }
 
-    public void setImageRepresent(int imageRepresent) {
+    public void setImageRepresent(String imageRepresent) {
         this.imageRepresent = imageRepresent;
     }
 

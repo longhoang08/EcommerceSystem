@@ -54,14 +54,25 @@ public class PaymentAdapter extends BaseAdapter {
             TextView buyNum = view.findViewById(R.id.buyNum);
             TextView feeTransport = view.findViewById(R.id.feeTransport);
             TextView feeSale = view.findViewById(R.id.feeSale);
+            TextView feeProTotal = view.findViewById(R.id.feeProTotal);
             // gan gia tri
-            nameOfShop.setText(listPayment.get(position).getNameShop());
-            proName.setText(listPayment.get(position).getNameProduct());
-            price.setText(listPayment.get(position).getPricePro()+"");
-            buyNum.setText(listPayment.get(position).getBuyNumPro()+"");
-            feeTransport.setText(listPayment.get(position).getFeeTransport()+"");
-            feeSale.setText(listPayment.get(position).getFeeSale()+"");
-            Glide.with(parent.getContext()).load(listPayment.get(position).getImageProduct()).override(80, 80).centerCrop()
+            String snameShop = listPayment.get(position).getNameShop();
+            String surlImage = listPayment.get(position).getImageProduct();
+            String snamePro = listPayment.get(position).getNameProduct();
+            if (snamePro.length() > 30) {
+                snamePro = snamePro.substring(0, 30)+"...";
+            }
+            int sprice = listPayment.get(position).getPricePro();
+            int squantity = listPayment.get(position).getBuyNumPro();
+
+            nameOfShop.setText(snameShop);
+            proName.setText(snamePro);
+            price.setText(sprice+" đ");
+            buyNum.setText(squantity+"");
+            feeTransport.setText(listPayment.get(position).getFeeTransport()+" đ");
+            feeSale.setText(listPayment.get(position).getFeeSale()+" đ");
+            feeProTotal.setText((sprice*squantity+listPayment.get(position).getFeeTransport()-listPayment.get(position).getFeeSale())+" đ");
+            Glide.with(parent.getContext()).load(surlImage).override(80, 80).centerCrop()
                     .into(proImg);
             // set sự kiện
         } else {

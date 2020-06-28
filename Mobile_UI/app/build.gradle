@@ -54,4 +54,7 @@ dependencies {
     //circle imageview
     implementation 'de.hdodenhof:circleimageview:2.2.0'
 
+    //gson, convert object -> string
+    implementation 'com.google.code.gson:gson:2.8.5'
+
 }

@@ -1,7 +1,11 @@
 package com.example.mobile_ui.Adapter;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +16,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.example.mobile_ui.DetailProductActivity;
+import com.example.mobile_ui.MainActivity;
 import com.example.mobile_ui.Model.OrderProduct;
 import com.example.mobile_ui.R;
 import com.example.mobile_ui.View.ExpandHeightGridView;
@@ -54,9 +61,25 @@ public class CartProductAdapter extends BaseAdapter {
             final TextView textViewQuantityInStockProduct = view.findViewById(R.id.textViewQuantityInStockProduct);
             ImageView imageViewDeleteCart = view.findViewById(R.id.imageViewDeleteCart);
             // gan gia tri
-            imageViewRepresentProduct.setImageResource(listOrderProduct.get(position).getImageRepresent());
-            textViewNameProduct.setText(listOrderProduct.get(position).getNameProduct());
-            textViewPriceProduct.setText(listOrderProduct.get(position).getPrice()+" VND");
+            Glide.with(parent.getContext())
+                    .load(listOrderProduct.get(position).getImageRepresent()).override(80, 80).centerCrop()
+                    .into(imageViewRepresentProduct);
+            String namePro = listOrderProduct.get(position).getNameProduct();
+            if (namePro.length() > 30) {
+                namePro = namePro.substring(0, 30)+"...";
+            }
+            imageViewRepresentProduct.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(parent.getContext(), DetailProductActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("idPro", listOrderProduct.get(position).getId());
+                    intent.putExtras(bundle);
+                    parent.getContext().startActivity(intent);
+                }
+            });
+            textViewNameProduct.setText(namePro);
+            textViewPriceProduct.setText(listOrderProduct.get(position).getPrice()+" đ");
             editTextQuantityProduct.setText(listOrderProduct.get(position).getQuantity()+"");
             textViewQuantityInStockProduct.setText("Còn "+listOrderProduct.get(position).getQuantityInStock()+" sản phẩm");
             // set sự kiện
@@ -72,9 +95,17 @@ public class CartProductAdapter extends BaseAdapter {
                     builder.setPositiveButton("Có", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
+                            // xoa san pham khoi luu
+                            SharedPreferences sharedPreferences = parent.getContext().getSharedPreferences("VALUABLE_APP", Context.MODE_PRIVATE);
+                            SharedPreferences.Editor editor = sharedPreferences.edit();
+
+                            MainActivity.cartProduct.removeCart(listOrderProduct.get(position).getId());
+                            editor.putString("CART_PRODUCT", MainActivity.cartProduct.convertToString());
+                            editor.commit();
                             listOrderProduct.remove(position);
                             ExpandHeightGridView expandHeightGridView = (ExpandHeightGridView) parent;
                             expandHeightGridView.setAdapter(CartProductAdapter.this);
+
                         }
                     });
                     builder.setNegativeButton("Không", new DialogInterface.OnClickListener() {
@@ -116,6 +147,7 @@ public class CartProductAdapter extends BaseAdapter {
                     int totalPrice = Integer.parseInt(textViewTotalPrice.getText().toString().split(" ")[0]);
                     String textQuantity = editTextQuantityProduct.getText().toString();
                     int priceProduct = Integer.parseInt(textViewPriceProduct.getText().toString().split(" ")[0]);
+                    listOrderProduct.get(position).setState(checkBoxProduct.isChecked());
                     if (checkBoxProduct.isChecked()) { // kiểm tra số lượng hàng hợp lý khi tính tiền
                         // chuẩn hóa số lượng nhập vào >= 0, <= hàng tồn kho
                         int quantity = 0;
@@ -135,6 +167,7 @@ public class CartProductAdapter extends BaseAdapter {
                             }
                         }
                         // end chuẩn hóa số lượng hàng
+                        listOrderProduct.get(position).setQuantity(quantity);
                         // vô hiệu nhập số lượng
                         editTextQuantityProduct.setEnabled(false);
                         totalPrice += priceProduct*quantity;
@@ -145,7 +178,7 @@ public class CartProductAdapter extends BaseAdapter {
                         // cho phép nhập số lượng
                         editTextQuantityProduct.setEnabled(true);
                     }
-                    textViewTotalPrice.setText(totalPrice+" VND");
+                    textViewTotalPrice.setText(totalPrice+" đ");
                 }
             });
         } else {

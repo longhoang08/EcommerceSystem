@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.example.mobile_ui.Fragment.AccountFragment;
 import com.example.mobile_ui.Fragment.HomeFragment;
+import com.example.mobile_ui.Model.CartProduct;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
@@ -26,12 +27,15 @@ public class MainActivity extends AppCompatActivity {
 
     int REQUEST_CODE_LOGIN = 13;
     public static boolean STATUS_LOGIN=false;
+    public static CartProduct cartProduct;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //update do have token login
+        updateStateLogin();
         if (android.os.Build.VERSION.SDK_INT > 9) {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
@@ -43,8 +47,7 @@ public class MainActivity extends AppCompatActivity {
         // khi mới vào, mặc định chọn nav.item_home
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
 
-        //update do have token login
-        updateStateLogin();
+
     }
 
     //ham set su kien cho navigation====================================================================================
@@ -88,8 +91,18 @@ public class MainActivity extends AppCompatActivity {
 
     //cập nhật trạng thái log in
     public void updateStateLogin(){
+        System.out.println("achhhshshs");
         SharedPreferences sharedPreferences = getSharedPreferences("VALUABLE_APP", Context.MODE_PRIVATE);
         String token = sharedPreferences.getString("LOGIN_TOKEN","");
+        String strCartPro = sharedPreferences.getString("CART_PRODUCT","");
         if(token!=""&&token!=null) STATUS_LOGIN=true;
+        if (strCartPro == "") {
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            cartProduct = new CartProduct();
+            editor.putString("CART_PRODUCT", cartProduct.convertToString());
+        } else {
+            cartProduct = new CartProduct();
+            cartProduct = cartProduct.convertToObject(strCartPro);
+        }
     }
 }

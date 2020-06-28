@@ -3,8 +3,10 @@ package com.example.mobile_ui;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Context;
 import android.content.Intent;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.text.Html;
@@ -28,6 +30,7 @@ import com.android.volley.toolbox.Volley;
 import com.example.mobile_ui.Adapter.DetailProductDescriptionAdapter;
 import com.example.mobile_ui.Adapter.ProductImagesAdapter;
 import com.example.mobile_ui.Adapter.ReviewProductAdapter;
+import com.example.mobile_ui.Model.CartProduct;
 import com.example.mobile_ui.Model.Product;
 import com.example.mobile_ui.Model.Review;
 import com.example.mobile_ui.View.ExpandHeightGridView;
@@ -76,7 +79,7 @@ public class DetailProductActivity extends AppCompatActivity {
         // mang anh
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
-        String idPro = bundle.getString("idPro");
+        final String idPro = bundle.getString("idPro");
 //        System.out.println(idPro);
 
         textViewProductName = findViewById(R.id.textViewProductName);
@@ -129,6 +132,13 @@ public class DetailProductActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 textViewNoticeAddProduct.setVisibility(View.VISIBLE);
+                SharedPreferences sharedPreferences = getSharedPreferences("VALUABLE_APP", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                // luu san pham vao may
+                MainActivity.cartProduct.addCart(idPro);
+                editor.putString("CART_PRODUCT", MainActivity.cartProduct.convertToString());
+//                System.out.println(MainActivity.cartProduct.convertToString());
+                editor.commit();
                 new CountDownTimer(500, 500) {
 
                     @Override
@@ -146,6 +156,14 @@ public class DetailProductActivity extends AppCompatActivity {
         textViewBuyNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                SharedPreferences sharedPreferences = getSharedPreferences("VALUABLE_APP", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                // luu san pham vao may
+                MainActivity.cartProduct.addCart(idPro);
+                editor.putString("CART_PRODUCT", MainActivity.cartProduct.convertToString());
+//                System.out.println(MainActivity.cartProduct.convertToString());
+                editor.commit();
+                startActivity(new Intent(DetailProductActivity.this, CartProductActivity.class));
             }
         });
         getProduct(idPro);
@@ -179,7 +197,7 @@ public class DetailProductActivity extends AppCompatActivity {
                                 }
                                 productImagesAdapter.notifyDataSetChanged();
                                 int price = ((Double) product.getJSONObject("prices").get("price")).intValue();
-                                textViewPriceProduct.setText(price + " VND");
+                                textViewPriceProduct.setText(price + " đ");
                                 String name = (String) product.get("name");
                                 textViewProductName.setText(name);
                                 int stock = (int) product.getJSONObject("stock").get("in_stock");
