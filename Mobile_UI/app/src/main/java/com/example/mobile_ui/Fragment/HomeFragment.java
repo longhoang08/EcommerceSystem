@@ -3,10 +3,14 @@ package com.example.mobile_ui.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Rect;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -33,6 +37,7 @@ import com.example.mobile_ui.Adapter.ProductAdapter;
 import com.example.mobile_ui.CartProductActivity;
 import com.example.mobile_ui.DetailProductActivity;
 import com.example.mobile_ui.ListCategoryActivity;
+import com.example.mobile_ui.MainActivity;
 import com.example.mobile_ui.Model.Category;
 import com.example.mobile_ui.Model.Product;
 import com.example.mobile_ui.R;
@@ -58,11 +63,13 @@ public class HomeFragment extends Fragment {
     private ImageButton imageButtonCart;
     //search
     TextView searchView;
-
+    int page = 0;
     ProductAdapter productAdapter;
     // danh sach the loai
     private RecyclerView recyclerViewCategoryProduct;
     private Button buttonViewAllCategoryProduct;
+    final List<Product> listProduct = new ArrayList<>();
+    TextView noMorePro, loadMore;
     // danh sach san pham
     private ExpandHeightGridView expandHeightGridViewProduct;
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -76,6 +83,15 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity().getApplicationContext(), CartProductActivity.class);
                 startActivity(intent);
+            }
+        });
+        noMorePro = root.findViewById(R.id.noMorePro);
+        loadMore = root.findViewById(R.id.loadMore);
+        loadMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                page ++;
+                getProduct(listProduct);
             }
         });
         //su kien search
@@ -101,11 +117,12 @@ public class HomeFragment extends Fragment {
         // end load danh muc san pham
         // load san pham
         expandHeightGridViewProduct = root.findViewById(R.id.expandHeightGridViewProduct);
-        List<Product> listProduct = new ArrayList<>();
         loadDataProduct(listProduct);
         productAdapter = new ProductAdapter(listProduct);
         expandHeightGridViewProduct.setAdapter(productAdapter);
+
         //end load san pham
+
         //su kien
         // man hinh tat ca the loai
         buttonViewAllCategoryProduct = root.findViewById(R.id.buttonViewAllCategoryProduct);
@@ -121,18 +138,20 @@ public class HomeFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getContext(), DetailProductActivity.class);
-//                intent.putExtra("id", lí)
-                startActivity(intent);
+                Bundle bundle = new Bundle();
+                bundle.putString("idPro", listProduct.get(position).getId());
+                intent.putExtras(bundle);
+                getActivity().startActivity(intent);
             }
         });
         return root;
     }
 
     private void loadDataProduct(List<Product> listProduct) {
-//        getProduct(listProduct);
-        String url = "https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png";
-        listProduct.add(new Product(url, "Redmi Note 7", 45000, 4.5, "1"));
-        listProduct.add(new Product(url, "Redmi Note 7", 45000, 3.5, "2"));
+        getProduct(listProduct);
+//        String url = "https://upload.wikimedia.org/wikipedia/en/3/35/Supermanflying.png";
+//        listProduct.add(new Product(url, "Redmi Note 7", 45000, 4.5, "1"));
+//        listProduct.add(new Product(url, "Redmi Note 7", 45000, 3.5, "2"));
     }
 
     private void loadDataCategoryProduct(List<Category> listCategoryProduct) {
@@ -153,7 +172,7 @@ public class HomeFragment extends Fragment {
         JSONObject params = new JSONObject();
 
         try {
-            params.put("_page", 0);
+            params.put("_page", page);
             params.put("_limit", 10);
         } catch (JSONException e) {
 //            System.out.println("OK");
@@ -165,19 +184,24 @@ public class HomeFragment extends Fragment {
 
                     @Override
                     public void onResponse(JSONObject response) {
-                        //Toast.makeText(getActivity(), response.toString(), Toast.LENGTH_LONG).shgiow();
+//                        Toast.makeText(getActivity(), response.toString(), Toast.LENGTH_LONG).show();
                         try {
                             JSONArray data = response.getJSONObject("data").getJSONArray("products");
+                            if (data == null) {
+                                loadMore.setVisibility(View.INVISIBLE);
+                                noMorePro.setVisibility(View.VISIBLE);
+                                return;
+                            }
                             for (int i = 0; i < data.length(); i++) {
                                 JSONObject product = data.getJSONObject(i);
                                 String urlImage = (String) product.getJSONArray("images").getJSONObject(0).get("url");
-                                int price = ((Double) product.getJSONObject("price").get("price")).intValue();
+                                int price = ((Double) product.getJSONObject("prices").get("price")).intValue();
                                 String name = (String) product.get("name");
                                 String id = (String) product.get("sku");
 //                                Toast.makeText(getActivity(), price+"", Toast.LENGTH_LONG).show();
-                                listProduct.add(new Product(urlImage, name, price, 4.5, id));
+                                int stock = (int) product.getJSONObject("stock").get("in_stock");
+                                listProduct.add(new Product(urlImage, name, price, stock, id));
                                 //Toast.makeText(getActivity(), listProduct.size()+"", Toast.LENGTH_LONG).show();
-
                             }
                             expandHeightGridViewProduct.setAdapter(productAdapter);
                         } catch (JSONException e) {
@@ -210,6 +234,5 @@ public class HomeFragment extends Fragment {
         };
         Volley.newRequestQueue(getActivity()).add(jsonObjReq);
     }
-
 }
 

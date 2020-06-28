@@ -18,7 +18,7 @@
     <TextView
         android:id="@+id/textViewNameProduct"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -49,22 +49,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="12"
-            android:text="40000 VND"
+            android:text="40000 đ"
             android:textColor="@android:color/holo_red_dark" />
 
         <TextView
-            android:id="@+id/textViewStarProduct"
+            android:id="@+id/textViewStockProduct"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="4.5" />
+            android:text="Kho 20" />
 
-        <ImageView
-            android:layout_width="19dp"
-            android:layout_height="19dp"
-            android:tint="#FFC107"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/ic_star_black_24dp" />
+<!--        <ImageView-->
+<!--            android:layout_width="19dp"-->
+<!--            android:layout_height="19dp"-->
+<!--            android:tint="#FFC107"-->
+<!--            android:layout_weight="1"-->
+<!--            app:srcCompat="@drawable/ic_star_black_24dp" />-->
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

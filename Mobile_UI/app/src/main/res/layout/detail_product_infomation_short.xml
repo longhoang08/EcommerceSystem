@@ -52,40 +52,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tabLayoutImagesProduct" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textViewProductName">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textViewRatingProduct"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="4.5"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:textColor="@color/colorAccent"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <ImageView-->
+<!--            android:tint="#FFC107"-->
+<!--            android:layout_width="19dp"-->
+<!--            android:layout_height="19dp"-->
+<!--            android:src="@drawable/ic_star_black_24dp" />-->
+<!--    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/textViewStock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:orientation="horizontal"
+        android:text="Kho 56"
+        android:fontFamily="monospace"
+        android:textColor="@android:color/holo_green_dark"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewProductName">
-
-        <TextView
-            android:id="@+id/textViewRatingProduct"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4.5"
-            android:layout_marginRight="5dp"
-            android:textColor="@color/colorAccent"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:tint="#FFC107"
-            android:layout_width="19dp"
-            android:layout_height="19dp"
-            android:src="@drawable/ic_star_black_24dp" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textViewTotalRating"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
-        android:text="56 ratings"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout"
         app:layout_constraintTop_toBottomOf="@+id/textViewProductName" />
 
     <View
@@ -103,13 +105,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:text="50000 VND"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewStock" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

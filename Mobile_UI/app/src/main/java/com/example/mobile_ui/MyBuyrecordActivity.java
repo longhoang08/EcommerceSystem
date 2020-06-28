@@ -55,8 +55,8 @@ public class MyBuyrecordActivity extends AppCompatActivity {
     private void getArrayBuyrecords(){
         //fake data
         ArrayList<Product> x=new ArrayList<Product>();
-        x.add(new Product(""+R.drawable.icon_kiwi_fruit,"banana",12000,120));
-        x.add(new Product(""+R.drawable.icon_dragon_fruit,"thanh long",25000,100));
+        x.add(new Product(""+R.drawable.icon_kiwi_fruit,"banana",12000,120, "2"));
+        x.add(new Product(""+R.drawable.icon_dragon_fruit,"thanh long",25000,100, "2"));
         ArrayList<Integer> y=new ArrayList<Integer>();
         y.add(new Integer(2));
         y.add(new Integer(3));

@@ -51,8 +51,8 @@ public class ProductSearchActivity extends AppCompatActivity {
 
     private void loadDataProduct(List<Product> listProduct) {
         String url = "https://img1.looper.com/img/gallery/we-now-know-the-one-time-batman-was-supposed-to-die/intro-1576009072.jpg";
-        listProduct.add(new Product(url, "Redmi Note 7", 45000, 4.5, "1"));
-        listProduct.add(new Product(url, "Redmi Note 7", 45000, 4.5, "1"));
-        listProduct.add(new Product(url, "Redmi Note 7", 45000, 4.5, "1"));
+        listProduct.add(new Product(url, "Redmi Note 7", 45000, 45, "1"));
+        listProduct.add(new Product(url, "Redmi Note 7", 45000, 45, "1"));
+        listProduct.add(new Product(url, "Redmi Note 7", 45000, 45, "1"));
     }
 }

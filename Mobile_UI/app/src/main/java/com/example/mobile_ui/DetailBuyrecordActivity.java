@@ -135,7 +135,7 @@ public class DetailBuyrecordActivity extends AppCompatActivity {
                 "11/8/1999","Hà Nam","0966947994","12345");
         String url = "https://image2.tienphong.vn/w665/Uploaded/2020/bzivobpc/2019_12_26/vanda_ip_man_4_paui.jpg";
         ArrayList<Product> x=new ArrayList<Product>();
-        x.add(new Product(""+R.drawable.icon_kiwi_fruit,"banana",12000,120));
+        x.add(new Product(""+R.drawable.icon_kiwi_fruit,"banana",12000,120, "!"));
 //        x.add(new Product(""+R.drawable.icon_dragon_fruit,"thanh long",25000,100));
         ArrayList<Integer> y=new ArrayList<Integer>();
         y.add(new Integer(2));

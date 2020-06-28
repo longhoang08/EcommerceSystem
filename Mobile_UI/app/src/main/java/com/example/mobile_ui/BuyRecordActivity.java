@@ -57,17 +57,17 @@ public class BuyRecordActivity extends AppCompatActivity {
                 "11/8/1999","Hà Nam","0966947994","12345");
         String url = "https://image2.tienphong.vn/w665/Uploaded/2020/bzivobpc/2019_12_26/vanda_ip_man_4_paui.jpg";
         arrayBuyrecords.add(new BuyRecord("danggiao", 1, an,
-                new Product(url,"banana",12000,120),
+                new Product(url,"banana",12000,120, "1"),
                 2,25000));
         arrayBuyrecords.add(new BuyRecord("danggiao", 2, an,
-                new Product(url,"banana",12000,120),
+                new Product(url,"banana",12000,120, "2"),
                 2,25000));
 
         arrayBuyrecords.add(new BuyRecord("dagiao", 3, an,
-                new Product(url,"banana",12000,120),
+                new Product(url,"banana",12000,120, "#"),
                 2,25000));
         arrayBuyrecords.add(new BuyRecord("dagiao", 4, an,
-                new Product(url,"banana",12000,120),
+                new Product(url,"banana",12000,120,"4"),
                 2,25000));
 
 //        arrayBuyrecords.add(new BuyRecord("danggiao", id, an,

@@ -44,14 +44,18 @@ public class ProductAdapter extends BaseAdapter {
             ImageView imageViewProduct = view.findViewById(R.id.imageViewProduct);
             TextView textViewNameProduct = view.findViewById(R.id.textViewNameProduct);
             TextView textViewPriceProduct = view.findViewById(R.id.textViewPriceProduct);
-            TextView textViewStarProduct = view.findViewById(R.id.textViewStarProduct);
+            TextView textViewStockProduct = view.findViewById(R.id.textViewStockProduct);
             // gan gia tri
             Glide.with(parent.getContext())
                     .load(listProduct.get(position).getImageRepresent()).override(178, 178).centerCrop()
                     .into(imageViewProduct);
-            textViewNameProduct.setText(listProduct.get(position).getName());
-            textViewPriceProduct.setText(listProduct.get(position).getPrice()+" VND");
-            textViewStarProduct.setText(listProduct.get(position).getStar()+"");
+            String namePro = listProduct.get(position).getName();
+            if (namePro.length() > 50) {
+                namePro = namePro.substring(0, 50)+"...";
+            }
+            textViewNameProduct.setText(namePro);
+            textViewPriceProduct.setText(listProduct.get(position).getPrice()+" đ");
+            textViewStockProduct.setText("Kho "+listProduct.get(position).getStock());
         } else {
             view = convertView;
         }
