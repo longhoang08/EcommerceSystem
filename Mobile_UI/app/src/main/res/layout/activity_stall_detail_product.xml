@@ -89,15 +89,36 @@ android:orientation="vertical">
                     android:layout_marginEnd="8dp"
                     android:background="#00000000"
                     android:ems="10"
-                    android:hint="Tên sản phẩm"
+                    android:hint="Nhập tên sản phẩm"
                     android:inputType="textMultiLine"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Tên sản phẩm"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imgProductsRecyclerView" />
-
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Mô tả sản phẩm"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtName" />
                 <EditText
                     android:id="@+id/edtDescript"
                     android:layout_width="0dp"
@@ -107,13 +128,13 @@ android:orientation="vertical">
                     android:layout_marginEnd="8dp"
                     android:background="#00000000"
                     android:ems="10"
-                    android:hint="Mô tả sản phẩm"
                     android:inputType="textMultiLine"
+                    android:hint="Nhập mô tả sản phẩm"
                     android:paddingTop="15dp"
                     android:paddingBottom="15dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/edtName" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
                 <TextView
                     android:id="@+id/textView2"

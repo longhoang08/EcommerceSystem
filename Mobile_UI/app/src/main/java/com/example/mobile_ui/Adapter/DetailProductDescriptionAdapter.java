@@ -7,7 +7,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.mobile_ui.Fragment.ProductDetailDescriptionFragment;
-import com.example.mobile_ui.Fragment.ProductDetailSpecificFragment;
 
 public class DetailProductDescriptionAdapter extends FragmentPagerAdapter {
     private int totalTabs;
@@ -24,9 +23,9 @@ public class DetailProductDescriptionAdapter extends FragmentPagerAdapter {
             case 0:
                 ProductDetailDescriptionFragment productDetailDescriptionFragment = new ProductDetailDescriptionFragment();
                 return productDetailDescriptionFragment;
-            case 1:
-                ProductDetailSpecificFragment productDetailSpecificFragment = new ProductDetailSpecificFragment();
-                return productDetailSpecificFragment;
+//            case 1:
+//                ProductDetailSpecificFragment productDetailSpecificFragment = new ProductDetailSpecificFragment();
+//                return productDetailSpecificFragment;
             default:
                 return null;
         }

@@ -1,8 +1,10 @@
 package com.example.mobile_ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,6 +19,7 @@ public class CartProductActivity extends AppCompatActivity {
 
     ExpandHeightGridView expandHeightGridViewProductCart;
     CheckBox checkBoxAllProductCart;
+    TextView textViewBuy;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +41,14 @@ public class CartProductActivity extends AppCompatActivity {
                         checkBoxShopProduct.performClick();
                     }
                 }
+            }
+        });
+        textViewBuy = findViewById(R.id.textViewBuy);
+        textViewBuy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CartProductActivity.this, PaymentActivity.class);
+                startActivity(intent);
             }
         });
     }

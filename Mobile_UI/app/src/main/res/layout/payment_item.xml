@@ -58,32 +58,73 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Thành tiền:"
-        android:textSize="16sp"
+        android:text="Phí vận chuyển:"
+        android:fontFamily="monospace"
+
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view1" />
 
     <TextView
-        android:id="@+id/money"
+        android:id="@+id/feeTransport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="108000 VND"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1" />
+    <TextView
+        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:text="Giảm khuyến mãi:"
+        android:fontFamily="monospace"
+
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/feeSale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="10800 VND"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Tổng thanh toán:"
+        android:fontFamily="monospace"
+
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/feeProTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:text="108000 VND"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/proImg"
-        app:layout_constraintTop_toBottomOf="@+id/view1" />
-
-    <View
-        android:id="@+id/view2"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="8dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintTop_toBottomOf="@+id/money"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
     <View
         android:id="@+id/view1"
         android:layout_width="match_parent"
@@ -93,42 +134,30 @@
         app:layout_constraintTop_toBottomOf="@+id/proImg"
         tools:layout_editor_absoluteX="0dp" />
 
-    <Button
-        android:id="@+id/buttonViewDetail"
-        android:layout_width="150dp"
-        android:layout_height="35dp"
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="Xem chi tiết"
-        android:textAllCaps="false"
-        android:background="@android:color/holo_orange_dark"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view2" />
-
-    <Button
-        android:id="@+id/buttonPro"
-        android:layout_width="150dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:color/holo_green_dark"
-        android:text="Mua lại"
-        android:textAllCaps="false"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view2" />
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/feeTransport"
+        tools:layout_editor_absoluteX="0dp" />
     <View
         android:id="@+id/view3"
         android:layout_width="match_parent"
-        android:layout_height="4dp"
+        android:layout_height="1dp"
         android:layout_marginTop="8dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintTop_toBottomOf="@+id/buttonViewDetail"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
         tools:layout_editor_absoluteX="0dp" />
-
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:layout_editor_absoluteX="0dp" />
     <TextView
         android:id="@+id/buyNum"
         android:layout_width="wrap_content"

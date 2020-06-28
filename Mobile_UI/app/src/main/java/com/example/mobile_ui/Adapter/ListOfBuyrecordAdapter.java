@@ -53,7 +53,8 @@ public class ListOfBuyrecordAdapter extends BaseAdapter {
             TextView buyNum = view.findViewById(R.id.buyNum);
             TextView price = view.findViewById(R.id.price);
             TextView money = view.findViewById(R.id.money);
-            Button buttonCommitSend = view.findViewById(R.id.buttonCommitSend);
+            Button buttonPro = view.findViewById(R.id.buttonPro);
+            Button buttonViewDetail = view.findViewById(R.id.buttonViewDetail);
 
             nameOfCustom.setText(data.get(position).getCustomer().getUsername());
             proImg.setImageResource(R.drawable.icon_kiwi_fruit);
@@ -62,29 +63,25 @@ public class ListOfBuyrecordAdapter extends BaseAdapter {
             price.setText("đ"+data.get(position).getBuyProduct().getPrice());
             money.setText("Thành tiền : đ"+data.get(position).getMoney());
             if (data.get(position).getState() == "danggiao") {
-                view.setOnClickListener(new View.OnClickListener() {
+                buttonPro.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(parent.getContext(), DetailBuyrecordActivity.class);
-                        Bundle bundle = new Bundle();
-                        bundle.putInt("idOfMybyrecord",data.get(position).getId());
-                        intent.putExtras(bundle);
-                        parent.getContext().startActivity(intent);
+
                     }
                 });
             } else {
-                buttonCommitSend.setText("Xem chi tiết");
-                buttonCommitSend.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(parent.getContext(), DetailBuyrecordActivity.class);
-                        Bundle bundle = new Bundle();
-                        bundle.putInt("idOfMybyrecord",data.get(position).getId());
-                        intent.putExtras(bundle);
-                        parent.getContext().startActivity(intent);
-                    }
-                });
+                buttonPro.setVisibility(View.INVISIBLE);
             }
+            buttonViewDetail.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(parent.getContext(), DetailBuyrecordActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("idOfMybyrecord",data.get(position).getId());
+                    intent.putExtras(bundle);
+                    parent.getContext().startActivity(intent);
+                }
+            });
         }else{
             view=convertView;
         }

@@ -32,7 +32,7 @@ public class DetailProductActivity extends AppCompatActivity {
     private ViewPager viewPagerImagesProduct;
     private TabLayout tabLayoutImagesProduct;
     // nut yeu thich san pham
-    private FloatingActionButton floatingactionbuttonFavorite;
+//    private FloatingActionButton floatingactionbuttonFavorite;
     boolean favouriteProduct = false;
 
     private ExpandHeightViewPager viewPagerProductDescription;
@@ -56,7 +56,7 @@ public class DetailProductActivity extends AppCompatActivity {
         viewPagerImagesProduct.setAdapter(productImagesAdapter);
         tabLayoutImagesProduct.setupWithViewPager(viewPagerImagesProduct, true);
         // end load slide anh
-        // yeu thich san pham
+        /*// yeu thich san pham
         floatingactionbuttonFavorite = findViewById(R.id.floatingactionbuttonFavorite);
         floatingactionbuttonFavorite.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,7 +69,7 @@ public class DetailProductActivity extends AppCompatActivity {
                     floatingactionbuttonFavorite.setSupportImageTintList(ColorStateList.valueOf(Color.parseColor("#FFCC0000")));
                 }
             }
-        });
+        });*/
         // mieu ta ro san pham = 2 phan mo ta, chi tiet
         viewPagerProductDescription = findViewById(R.id.viewPagerProductDescription);//View hiện mỗi tab
         tabLayoutProductDescription = findViewById(R.id.tabLayoutProductDescription);// gồm thanh chọn

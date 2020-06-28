@@ -37,16 +37,16 @@ public class chooseImage extends AppCompatDialogFragment {
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_PICK);
                 intent.setType("image/*");
-                startActivityForResult(intent,REQUEST_CODE_FOLDER);
-                chooseImage.this.getDialog().cancel();
+                getActivity().startActivityForResult(intent, REQUEST_CODE_FOLDER);
+                chooseImage.this.getDialog().dismiss();
             }
         });
         buttonCameraPicture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent,REQUEST_CODE_CAMERA);
-                chooseImage.this.getDialog().cancel();
+                getActivity().startActivityForResult(intent,REQUEST_CODE_CAMERA);
+                chooseImage.this.getDialog().dismiss();
             }
         });
         return builder.create();

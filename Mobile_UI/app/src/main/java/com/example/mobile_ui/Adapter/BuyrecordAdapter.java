@@ -7,8 +7,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.mobile_ui.Fragment.BuyrecordFragment;
-import com.example.mobile_ui.Fragment.ProductDetailDescriptionFragment;
-import com.example.mobile_ui.Fragment.ProductDetailSpecificFragment;
 import com.example.mobile_ui.Model.BuyRecord;
 
 import java.util.ArrayList;

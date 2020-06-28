@@ -57,6 +57,8 @@ public class ListOfMyBuyrecordAdapter extends BaseAdapter {
             TextView price = view.findViewById(R.id.price);
             TextView money = view.findViewById(R.id.money);
 //            Button buyAgain = view.findViewById(R.id.buyAgain);
+            Button buttonPro = view.findViewById(R.id.buttonPro);
+            Button buttonViewDetail = view.findViewById(R.id.buttonViewDetail);
 
             nameOfShop.setText(data.get(position).getNameOfShop());
             proImg.setImageResource(Integer.parseInt(data.get(position).getBuyProduct().get(0).getImageRepresent()));
@@ -65,7 +67,10 @@ public class ListOfMyBuyrecordAdapter extends BaseAdapter {
 //            buyNum1.setText(data.get(position).getBuyNum().get(0) + " sản phẩm");
             price.setText(data.get(position).getBuyProduct().get(0).getPrice()+" VND");
             money.setText(data.get(position).getMoney()+" VND");
-            view.setOnClickListener(new View.OnClickListener() {
+            if (data.get(position).getState() == "danggiao") {
+                buttonPro.setVisibility(View.INVISIBLE);
+            }
+            buttonViewDetail.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(parent.getContext(), DetailMybuyrecordActivity.class);

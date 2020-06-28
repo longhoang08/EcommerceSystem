@@ -7,6 +7,7 @@
     tools:context=".ProductSearchActivity">
 
     <RelativeLayout
+        android:background="#ddd"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:layout_constraintTop_toTopOf="parent">
@@ -16,19 +17,22 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginRight="50dp"
-            android:background="#ddd"
+
             android:paddingLeft="11dp"
             android:paddingTop="16dp"
             android:text="Search Here"
             android:textSize="16sp" />
 
-        <ImageButton
-            android:id="@+id/imageButtonCart"
-            android:layout_width="60dp"
-            android:layout_height="match_parent"
+        <ImageView
+            android:id="@+id/imageButtonFilter"
+            android:layout_width="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
             android:layout_alignParentRight="true"
-            android:background="#fff"
-            android:src="@drawable/ic_shopping_cart_black_24dp" />
+            android:scaleType="fitCenter"
+
+            android:src="@drawable/filter" />
     </RelativeLayout>
     <ScrollView
         android:layout_marginTop="?attr/actionBarSize"
@@ -42,6 +46,18 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Một số sản phẩm"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                />
             <com.example.mobile_ui.View.ExpandHeightGridView
                 android:id="@+id/expandHeightGridViewProduct"
                 android:layout_width="match_parent"

@@ -50,6 +50,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
+import java.sql.SQLOutput;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -286,6 +287,7 @@ public class SettingAccountActivity extends AppCompatActivity {
     //lắng nghe sự kiện đổi ảnh (gọi chụp ảnh Hay chọn từ file)
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+//        System.out.println(requestCode);
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode==REQUEST_CODE_CAMERA && resultCode ==RESULT_OK && data!=null){
             Bitmap bitmap = (Bitmap) data.getExtras().get("data");
