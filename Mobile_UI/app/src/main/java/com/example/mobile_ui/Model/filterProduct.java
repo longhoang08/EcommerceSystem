@@ -24,49 +24,51 @@ import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
+import static com.example.mobile_ui.ProductSearchActivity.*;
+
 public class filterProduct extends AppCompatDialogFragment {
-    ArrayList<String> nameBrand = new ArrayList<>();
-    ArrayList<String> codeBrand = new ArrayList<>();
-    ArrayList<String> nameCategory = new ArrayList<>();
-    ArrayList<String> codeCategory = new ArrayList<>();
-    Spinner spinnerCategory, spinnerBrand;
-    TextView textViewApply;
-
-    public filterProduct(ArrayList<String> nameBrand, ArrayList<String> codeBrand, ArrayList<String> nameCategory, ArrayList<String> codeCategory) {
-        this.nameBrand = nameBrand;
-        this.codeBrand = codeBrand;
-        this.nameCategory = nameCategory;
-        this.codeCategory = codeCategory;
-        System.out.println(nameBrand.toString());
-    }
-
-    @NonNull
-    @Override
-    public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-
-        LayoutInflater inflater = getActivity().getLayoutInflater();
-        View view = inflater.inflate(R.layout.filter_product, null);
-        builder.setView(view);
-        spinnerCategory = view.findViewById(R.id.spinnerCategory);
-        spinnerBrand = view.findViewById(R.id.spinnerBrand);
-        textViewApply = view.findViewById(R.id.textViewApply);
-        ArrayAdapter<String> adapterBrand = new ArrayAdapter<>(getActivity(), android.R.layout.simple_spinner_dropdown_item, nameBrand);
-        ArrayAdapter<String> adapterCategory = new ArrayAdapter<>(getActivity(), android.R.layout.simple_spinner_dropdown_item, nameCategory);
-        spinnerBrand.setAdapter(adapterBrand);
-        spinnerCategory.setAdapter(adapterCategory);
-
-        textViewApply.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int positionBrand, positionCategory;
-                positionBrand = spinnerBrand.getSelectedItemPosition();
-                positionCategory = spinnerCategory.getSelectedItemPosition();
-                ProductSearchActivity.filterByField(codeBrand.get(positionBrand), codeCategory.get(positionCategory));
-                getDialog().cancel();
-            }
-        });
-        return builder.create();
-    }
+//    ArrayList<String> nameBrand = new ArrayList<>();
+//    ArrayList<String> codeBrand = new ArrayList<>();
+//    ArrayList<String> nameCategory = new ArrayList<>();
+//    ArrayList<String> codeCategory = new ArrayList<>();
+//    Spinner spinnerCategory, spinnerBrand;
+//    TextView textViewApply;
+//
+//    public filterProduct(ArrayList<String> nameBrand, ArrayList<String> codeBrand, ArrayList<String> nameCategory, ArrayList<String> codeCategory) {
+//        this.nameBrand = nameBrand;
+//        this.codeBrand = codeBrand;
+//        this.nameCategory = nameCategory;
+//        this.codeCategory = codeCategory;
+//        System.out.println(nameBrand.toString());
+//    }
+//
+//    @NonNull
+//    @Override
+//    public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
+//        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+//
+//        LayoutInflater inflater = getActivity().getLayoutInflater();
+//        View view = inflater.inflate(R.layout.filter_product, null);
+//        builder.setView(view);
+//        spinnerCategory = view.findViewById(R.id.spinnerCategory);
+//        spinnerBrand = view.findViewById(R.id.spinnerBrand);
+//        textViewApply = view.findViewById(R.id.textViewApply);
+//        ArrayAdapter<String> adapterBrand = new ArrayAdapter<>(getActivity(), android.R.layout.simple_spinner_dropdown_item, nameBrand);
+//        ArrayAdapter<String> adapterCategory = new ArrayAdapter<>(getActivity(), android.R.layout.simple_spinner_dropdown_item, nameCategory);
+//        spinnerBrand.setAdapter(adapterBrand);
+//        spinnerCategory.setAdapter(adapterCategory);
+//
+//        textViewApply.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                int positionBrand, positionCategory;
+//                positionBrand = spinnerBrand.getSelectedItemPosition();
+//                positionCategory = spinnerCategory.getSelectedItemPosition();
+//                filterByField(nameBrand.get(positionBrand));
+//                getDialog().cancel();
+//            }
+//        });
+//        return builder.create();
+//    }
 
 }

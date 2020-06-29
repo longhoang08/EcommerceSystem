@@ -2,12 +2,17 @@ package com.example.mobile_ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -137,8 +142,33 @@ public class ProductSearchActivity extends AppCompatActivity {
                             imageButtonFilter.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                    final filterProduct filter = new filterProduct(nameBrand, codeBrand, nameCategory, codeCategory);
-                                    filter.show(getSupportFragmentManager(), "");
+                                    final Spinner spinnerCategory, spinnerBrand;
+                                    TextView textViewApply;
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(ProductSearchActivity.this);
+
+                                    LayoutInflater inflater = ProductSearchActivity.this.getLayoutInflater();
+                                    View view = inflater.inflate(R.layout.filter_product, null);
+                                    builder.setView(view);
+                                    spinnerCategory = view.findViewById(R.id.spinnerCategory);
+                                    spinnerBrand = view.findViewById(R.id.spinnerBrand);
+                                    textViewApply = view.findViewById(R.id.textViewApply);
+                                    ArrayAdapter<String> adapterBrand = new ArrayAdapter<>(ProductSearchActivity.this, android.R.layout.simple_spinner_dropdown_item, nameBrand);
+                                    ArrayAdapter<String> adapterCategory = new ArrayAdapter<>(ProductSearchActivity.this, android.R.layout.simple_spinner_dropdown_item, nameCategory);
+                                    spinnerBrand.setAdapter(adapterBrand);
+                                    spinnerCategory.setAdapter(adapterCategory);
+
+                                    final AlertDialog alertDialog = builder.create();
+                                    textViewApply.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+                                            int positionBrand, positionCategory;
+                                            positionBrand = spinnerBrand.getSelectedItemPosition();
+                                            positionCategory = spinnerCategory.getSelectedItemPosition();
+                                            filterByField(nameBrand.get(positionBrand));
+                                            alertDialog.cancel();
+                                        }
+                                    });
+                                    alertDialog.show();
                                 }
                             });
 //                            Toast.makeText(ProductSearchActivity.this, data.toString(), Toast.LENGTH_LONG).show();
@@ -255,7 +285,87 @@ public class ProductSearchActivity extends AppCompatActivity {
 //        listProduct.add(new Product(url, "Redmi Note 7", 45000, 45, "1"));
 //    }
 
-    public static void filterByField(String codeBrand, String codeCategory) {
-        System.out.println(codeBrand+"|"+ codeCategory);
+    public void filterByField(final String codeBrand) {
+//        System.out.println(codeBrand+"|"+ codeCategory);
+        JSONObject params = new JSONObject();
+
+        try {
+//            params.put("_page", page);
+            params.put("q", codeBrand);
+//            System.out.println(keyWord);
+            params.put("_limit", 5);
+        } catch (JSONException e) {
+            System.out.println("OK");
+        }
+
+        String url = "http://112.137.129.216:5001/api/product/search";
+        JsonObjectRequest jsonObjReq = new JsonObjectRequest(
+                Request.Method.POST, url, params,
+                new com.android.volley.Response.Listener<JSONObject>() {
+
+//                    public AlertDialog.Builder expandHeightGridViewProduct;
+
+                    @Override
+                    public void onResponse(JSONObject response) {
+//                        Toast.makeText(getActivity(), response.toString(), Toast.LENGTH_LONG).show();
+                        try {
+                            JSONArray data = response.getJSONObject("data").getJSONArray("products");
+                            //Toast.makeText(ProductSearchActivity.this, data.toString(), Toast.LENGTH_LONG).show();
+                            if (data.length() == 0) {
+                                loadMore.setVisibility(View.INVISIBLE);
+                                noMorePro.setVisibility(View.VISIBLE);
+                                return;
+                            }
+
+                            for (int i = 0; i < data.length(); i++) {
+                                JSONObject product = data.getJSONObject(i);
+
+                                String urlImage = null;
+//                                if (!product.isNull("images")) {
+                                urlImage = (String) product.getJSONArray("images").getJSONObject(0).get("url");
+//                                }
+                                int price = ((Double) product.getJSONObject("prices").get("price")).intValue();
+                                String name = (String) product.get("name");
+                                String id = (String) product.get("sku");
+//                                Toast.makeText(getActivity(), price+"", Toast.LENGTH_LONG).show();
+                                int stock = (int) product.getJSONObject("stock").get("in_stock");
+
+                                listProduct.add(new Product(urlImage, name, price, stock, id));
+//                                System.out.println(codeBrand + "Image " + urlImage + " Price " + price);
+                                //Toast.makeText(getActivity(), listProduct.size() +"", Toast.LENGTH_LONG).show();
+                            }
+                            expandHeightGridViewProduct.setAdapter(productAdapter);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                NetworkResponse response = error.networkResponse;
+                if (error instanceof ServerError && response != null) {
+                    try {
+                        String res = new String(response.data,
+                                HttpHeaderParser.parseCharset(response.headers, "utf-8"));
+                        System.out.println(res);
+//                        Toast.makeText(getActivity(), res, Toast.LENGTH_LONG).show();
+                    } catch (UnsupportedEncodingException e1) {
+                        e1.printStackTrace();
+                    }
+                }
+            }
+        })
+
+        {
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                HashMap<String, String> headers = new HashMap<String, String>();
+                headers.put("Content-Type", "application/json");
+                return headers;
+            }
+        };
+        Volley.newRequestQueue(ProductSearchActivity.this).add(jsonObjReq);
+
     }
+
 }
