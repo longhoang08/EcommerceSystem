@@ -42,6 +42,7 @@ class User(db.Model, TimestampMixin, UserBase):
 
     def to_display_dict(self):
         return {
+            'id': self.id,
             'email': self.email,
             'fullname': self.fullname,
             'avatar_url': self.avatar_url,
