@@ -23,7 +23,7 @@ order_creating_response = api.model('order_response', {
     'status': fields.String(description='status of this action (ok or failed)'),
     'failed_sku': fields.List(fields.String(), description='List of sku out of stocks'),
     'message': fields.String(description='optional message'),
-    'order_id': fields.String(description='Order id'),
+    'order_id': fields.Integer(description='Order id'),
     'prices': fields.Nested(_order_price),
     'total_price': fields.Float(),
 })
