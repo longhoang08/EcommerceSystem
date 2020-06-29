@@ -59,3 +59,20 @@ def seller_required(func):
         return func(*args, **kwargs)
 
     return wrap_func
+
+
+def user_required(func):
+    @wraps(func)
+    def wrap_func(*args, **kwargs):
+        try:
+            # Todo: check token from redis
+            email = get_email_from_jwt_token()
+            user = user_service.find_one_by_email(email)
+            if not user: raise Exception()
+            if user.role != UserRole.Customer: raise Exception()
+            kwargs['user'] = user
+        except:
+            raise PermissionException("Customer Required")
+        return func(*args, **kwargs)
+
+    return wrap_func

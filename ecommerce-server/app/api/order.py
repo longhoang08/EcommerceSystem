@@ -34,4 +34,10 @@ class CreateOrder(flask_restplus.Resource):
     @ns.marshal_with(app.api.response.order.order_creating_response)
     def post(self):
         data = request.args or request.json
-        pass
+        return order.create_order(**data)
+
+
+@ns.route('/qr_code/<order_id>', methods=['GET'])
+class GetQrCode(flask_restplus.Resource):
+    def get(self, order_id: int):
+        return order.generate_qr_code(order_id)

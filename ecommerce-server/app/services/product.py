@@ -1,11 +1,25 @@
 # coding=utf-8
 import logging
+from typing import List
 
 from app.helpers.catalog.product_utils import Utilities
+from app.models import ProductSQL
 from app.repositories.es.product import ProductElasticRepo
+from app.repositories.es import ingestion
 
 __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
+
+
+def update_stocks(products: List[ProductSQL]):
+    es_products = [{
+        'stock': {
+            'in_stock': product.stock,
+            'in_stock_sortable': 0 if not product.stock else 1
+        },
+        'sku': product.sku
+    } for product in products]
+    ingestion.upsert_products(es_products)
 
 
 def find_by_sku(sku: str):
