@@ -5,7 +5,6 @@ import flask_bcrypt as _fb
 import flask_migrate as _fm
 import flask_sqlalchemy as _fs
 from dotenv import load_dotenv
-from flask_redis import FlaskRedis
 
 __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
