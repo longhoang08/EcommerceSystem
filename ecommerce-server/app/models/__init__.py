@@ -33,3 +33,4 @@ from .mysql.product_sql import ProductSQL
 from .mysql.job_info import JobTime
 from .mysql.order import Order
 from .mysql.order_product import OrderProduct
+from .mysql.rating import Rating

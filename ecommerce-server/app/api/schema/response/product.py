@@ -1,4 +1,4 @@
- # coding=utf-8
+# coding=utf-8
 import logging
 from flask_restplus import fields
 
@@ -34,4 +34,16 @@ _brand_choosable_data = api.model('brand_choosable_data', {
 
 brand_choosable_response = api.model('brand_choosable_response', {
     'brands': fields.Nested(_brand_choosable_data)
+})
+
+rating_data = api.model('rating_data', {
+    'user_name': fields.String(),
+    'star': fields.Integer(),
+    'comment': fields.String(),
+    'created_at': fields.DateTime()
+})
+
+rating_response = api.model('rating_response', {
+    'ratings': fields.Nested(rating_data),
+    'total_rating': fields.Float()
 })
