@@ -43,6 +43,8 @@ def upsert_product(sku, brand_code, category_code, name, price, **kwargs) -> dic
     product['sku'] = sku
     product['brand'] = get_brand_from_code(brand_code)
     product['categories'] = get_categories_from_category_code(category_code)
+    product['images'] = _parse_images(kwargs.get('images_url', []))
+
     Converter.reformat_product(product)
     # if (kwargs.get(stock_changed))
 
@@ -59,17 +61,8 @@ def _validate_permission_of_seller(product: dict, seller: User):
 
 
 # ======================================================================================================================
-
-def _parse_categories(data: dict):
-    pass
-
-
-def _parse_branch(data: dict):
-    pass
-
-
-def _parse_images(data: dict):
-    pass
+def _parse_images(images_url: []):
+    return [{'url': url} for url in images_url]
 
 
 def _parse_stock(data: dict):
