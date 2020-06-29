@@ -21,3 +21,10 @@ def save(order: Order) -> Order:
 def create_new_order(**kwargs) -> Order:
     register = Order(**kwargs)
     return save(register)
+
+
+def find_order_by_id(id: int) -> Order:
+    order = Order.query.filter(
+        Order.id == id
+    ).first()
+    return order or None

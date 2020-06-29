@@ -3,6 +3,7 @@ import logging
 from typing import List
 import threading
 from app.commons.decorators import user_required
+from app.helpers import encode_token
 from app.models.mysql.order import OrderStatus
 from app.repositories import file as file_repo
 from app.repositories.mysql import order as repo, product_sql
@@ -10,6 +11,9 @@ from app.services.product_sql import get_order_details
 from app.services import order_product as order_product_service, product as product_service
 
 __author__ = 'LongHB'
+
+from config import SERVER_BASE_URL, TOKEN_UPTIME
+
 _logger = logging.getLogger(__name__)
 
 ORDER_FAILED_RESPONSE = {
@@ -67,8 +71,19 @@ def create_new_sql_order(user_id: int, skus: List[str]) -> int:
 # payment ==============================================================================================================
 
 def generate_payment_link(order_id: int):
-    return "http://localhost:5000/api/"
+    order_id_encoded = encode_token(str(order_id), int(TOKEN_UPTIME))
+    return SERVER_BASE_URL + "order/confirm/" + order_id_encoded
 
 
 def generate_qr_code(order_id: int):
     return file_repo.generate_qr_code(generate_payment_link(order_id))
+
+
+def pay_a_order(order_id: int):
+    order = repo.find_order_by_id(order_id)
+    if not order: return "Order not exits"
+    if order.status != OrderStatus.Pending:
+        return "Your order have already paid"
+    order.status = OrderStatus.Paid
+    repo.save(order)
+    return "Done"

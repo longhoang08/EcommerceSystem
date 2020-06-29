@@ -5,8 +5,9 @@ import flask_restplus
 from flask import request
 
 import app.api.schema.request.product
-from app.services import order
 from app.extensions import Namespace
+from app.helpers import decode_token
+from app.services import order
 
 __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
@@ -41,3 +42,10 @@ class CreateOrder(flask_restplus.Resource):
 class GetQrCode(flask_restplus.Resource):
     def get(self, order_id: int):
         return order.generate_qr_code(order_id)
+
+
+@ns.route('/confirm/<token>', methods=['GET'])
+class ConfirmOrder(flask_restplus.Resource):
+    def get(self, token: int):
+        order_id = decode_token(token)
+        return order.pay_a_order(int(order_id))
