@@ -2,7 +2,6 @@ package com.example.mobile_ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,11 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.NetworkResponse;
@@ -29,7 +26,6 @@ import com.android.volley.toolbox.Volley;
 import com.example.mobile_ui.Adapter.ProductAdapter;
 import com.example.mobile_ui.Model.Product;
 import com.example.mobile_ui.Model.chooseImage;
-import com.example.mobile_ui.Model.filterProduct;
 import com.example.mobile_ui.View.ExpandHeightGridView;
 
 import org.json.JSONArray;

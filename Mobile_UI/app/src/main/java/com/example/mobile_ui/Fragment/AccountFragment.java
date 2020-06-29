@@ -1,7 +1,10 @@
 package com.example.mobile_ui.Fragment;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -11,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 
@@ -55,6 +59,7 @@ import java.util.Map;
 public class AccountFragment extends Fragment {
 
     Button buttonSignUp, buttonLogin;
+    EditText desSel;
     ListView listViewDetailAcc;
     int REQUEST_CODE_LOGIN = 13;
     public static int idSeller;
@@ -62,13 +67,18 @@ public class AccountFragment extends Fragment {
     TextView textViewNameUser;
     ImageView user_infor_img_main;
     Button buttonSeller;
-    final List<String> abc = new ArrayList<>();
+    ArrayList<String> abc = new ArrayList<>();
     ArrayAdapter adapter;
+    ProgressDialog pd;
+
 
     public View onCreateView(@NonNull final LayoutInflater inflater,
                              final ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_account, container, false);
 
+        pd = new ProgressDialog(getActivity());
+        pd.setTitle("Chờ 1 lát ...");
+        RequestQueue queue = Volley.newRequestQueue(getActivity());
         adapter = new ArrayAdapter(getActivity().getApplicationContext(),android.R.layout.simple_list_item_1,abc);
         user_infor_img_main = root.findViewById(R.id.user_infor_img_main);
         buttonLogin = root.findViewById(R.id.buttonLogin);
@@ -93,11 +103,7 @@ public class AccountFragment extends Fragment {
 
         listViewDetailAcc = root.findViewById(R.id.listDetailAccount);
 //        abc.add("Xem Gian Hàng");
-        abc.add("Đơn hàng");
-        abc.add("Thiết lập tài khoản");
-        abc.add("Đổi mật khẩu");
-        abc.add("Đăng xuất");
-        listViewDetailAcc.setAdapter(adapter);
+
         listViewDetailAcc.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -129,12 +135,119 @@ public class AccountFragment extends Fragment {
         buttonSeller.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getContext(), StallActivity.class);
-                startActivity(intent);
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                LayoutInflater inflater = getActivity().getLayoutInflater();
+                View view = inflater.inflate(R.layout.form_register_seller, null);
+                builder.setView(view);
+                desSel = view.findViewById(R.id.desSel);
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                        pd.show();
+                        registerSeller();
+                    }
+                }).setNegativeButton("Hủy", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
+
+//                Intent intent = new Intent(getContext(), StallActivity.class);
+//                startActivity(intent);
             }
         });
         setFormAccordingStatusLogin();
         return root;
+    }
+
+    private void registerSeller() {
+
+        JSONObject params = new JSONObject();
+        try {
+            params.put("description", desSel.getText().toString());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        final String url = "http://112.137.129.216:5001/api/seller/register";
+        JsonObjectRequest jsonObjReq = new JsonObjectRequest(
+                Request.Method.POST, url, params,
+                new com.android.volley.Response.Listener<JSONObject>() {
+
+                    @Override
+                    public void onResponse(JSONObject response) {
+//                        Toast.makeText(getActivity(), response.toString(), Toast.LENGTH_LONG).show();
+                        //                            buttonSeller.setVisibility(View.VISIBLE);
+                        pd.cancel();
+                        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                        builder.setTitle("Thông báo");
+                        builder.setMessage("Đăng ký thành công thành người bán.");
+                        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                                abc = new ArrayList<>();
+                                abc.add("Shop của tôi");
+                                abc.add("Thiết lập tài khoản");
+                                abc.add("Đổi mật khẩu");
+                                abc.add("Đăng xuất");
+                                buttonSeller.setVisibility(View.GONE);
+                                adapter = new ArrayAdapter(getActivity().getApplicationContext(),android.R.layout.simple_list_item_1,abc);
+                                listViewDetailAcc.setAdapter(adapter);
+                            }
+                        });
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
+
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+//                Toast.makeText(getActivity(), "error", Toast.LENGTH_LONG).show();
+                NetworkResponse response = error.networkResponse;
+                if (response != null) {
+                    try {
+                        String res = new String(response.data,
+                                HttpHeaderParser.parseCharset(response.headers, "utf-8"));
+//                        System.out.println(res);
+                        JSONObject responseMsg = new JSONObject(res);
+                        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                        builder.setTitle("Thông báo");
+                        String msgError = (String) responseMsg.get("message");
+                        msgError = msgError.substring(msgError.indexOf(":")+2);
+                        builder.setMessage(msgError);
+                        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        });
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.show();
+                    } catch (UnsupportedEncodingException | JSONException e1) {
+                        e1.printStackTrace();
+                    }
+                }
+            }
+        })
+        {
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                HashMap<String, String> headers = new HashMap<String, String>();
+                headers.put("Content-Type", "application/json");
+                SharedPreferences sharedPreferences = getActivity().getSharedPreferences("VALUABLE_APP", Context.MODE_PRIVATE);
+                String token = sharedPreferences.getString("LOGIN_TOKEN","");
+//                System.out.println(token);
+                headers.put("x-access-token", token);
+                return headers;
+            }
+        };
+        Volley.newRequestQueue(getActivity()).add(jsonObjReq);
     }
 
     //lắng nghe sự kiện khi login trả về thành công
@@ -172,7 +285,6 @@ public class AccountFragment extends Fragment {
 
     private void getUser() {
         // call api get status
-        RequestQueue queue = Volley.newRequestQueue(getActivity());
         JSONObject params = new JSONObject();
 
         final String url = "http://112.137.129.216:5001/api/users/get_status";
@@ -188,17 +300,24 @@ public class AccountFragment extends Fragment {
                             textViewNameUser.setVisibility(View.VISIBLE);
                             textViewNameUser.setText((String) dataUser.get("fullname"));
                             String role = (String) dataUser.get("role");
-                            if (role.equals("admin")) {
-                                abc.add("Duyệt người bán");
-                            } else if (role.equals("seller")) {
+                            abc = new ArrayList<>();
+                            if (role.equals("seller")) {
                                 buttonSeller.setVisibility(View.GONE);
-                                if (abc.size() == 4) {
-                                    abc.add("Shop của tôi");
-                                }
-                                adapter.notifyDataSetChanged();
-                            } else {
+                                abc.add("Thiết lập tài khoản");
+                                abc.add("Đổi mật khẩu");
+                                abc.add("Đăng xuất");
+                                abc.add("Shop của tôi");
+                            } else if (role.equals("customer")) {
                                 buttonSeller.setVisibility(View.VISIBLE);
+                                abc.add("Đơn hàng");
+                                abc.add("Thiết lập tài khoản");
+                                abc.add("Đổi mật khẩu");
+                                abc.add("Đăng xuất");
+                            } else {
+                                buttonSeller.setVisibility(View.GONE);
                             }
+                            adapter = new ArrayAdapter(getActivity().getApplicationContext(),android.R.layout.simple_list_item_1,abc);
+                            listViewDetailAcc.setAdapter(adapter);
 
                             String urlAvatar = (String) dataUser.get("avatar_url");
                             idSeller = (int) dataUser.get("id");
@@ -228,12 +347,6 @@ public class AccountFragment extends Fragment {
                         e1.printStackTrace();
                     }
                 }
-                SharedPreferences sharedPreferences = getActivity().getSharedPreferences("VALUABLE_APP", Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.remove("LOGIN_TOKEN");
-                editor.commit();
-                MainActivity.STATUS_LOGIN=false;
-                setFormAccordingStatusLogin();
             }
         })
         {

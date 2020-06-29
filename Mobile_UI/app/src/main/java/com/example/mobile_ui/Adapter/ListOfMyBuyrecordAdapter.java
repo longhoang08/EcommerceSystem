@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.mobile_ui.DetailMybuyrecordActivity;
 import com.example.mobile_ui.DetailProductActivity;
 import com.example.mobile_ui.Model.BuyRecord;
@@ -61,12 +62,15 @@ public class ListOfMyBuyrecordAdapter extends BaseAdapter {
             Button buttonViewDetail = view.findViewById(R.id.buttonViewDetail);
 
             nameOfShop.setText(data.get(position).getNameOfShop());
-            proImg.setImageResource(Integer.parseInt(data.get(position).getBuyProduct().get(0).getImageRepresent()));
+            Glide.with(parent.getContext())
+                    .load(data.get(position).getBuyProduct().get(0).getImageRepresent()).override(80, 80).centerCrop()
+                    .into(proImg);
+//            proImg.setImageResource(Integer.parseInt(data.get(position).getBuyProduct().get(0).getImageRepresent()));
             proName.setText(data.get(position).getBuyProduct().get(0).getName());
             buyNum.setText("x" + data.get(position).getBuyNum().get(0));
 //            buyNum1.setText(data.get(position).getBuyNum().get(0) + " sản phẩm");
-            price.setText(data.get(position).getBuyProduct().get(0).getPrice()+" VND");
-            money.setText(data.get(position).getMoney()+" VND");
+            price.setText(data.get(position).getBuyProduct().get(0).getPrice()+" đ");
+            money.setText(data.get(position).getMoney()+" đ");
             if (data.get(position).getState() == "danggiao") {
                 buttonPro.setVisibility(View.INVISIBLE);
             }

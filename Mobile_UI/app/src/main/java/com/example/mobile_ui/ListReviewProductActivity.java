@@ -58,22 +58,22 @@ public class ListReviewProductActivity extends AppCompatActivity {
         List<Review> listReviewProduct = new ArrayList<>();
         // 6 sao - load tat ca binh luan
         if (numStart == 6) {
-            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 4, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
-            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 5, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
-            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 3, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
-            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 3, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
-            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 4, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
-            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 5, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
-            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 3, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
-            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 3, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
-            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 4, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
-            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 5, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
-            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 3, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
-            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 3, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
+            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 4, "Rất tốt, rất tốt, rất tốt"));
+//            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 5, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
+//            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 3, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
+//            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 3, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
+//            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 4, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
+//            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 5, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
+//            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 3, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
+//            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 3, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
+//            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 4, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
+//            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 5, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
+//            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 3, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
+//            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", 3, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
         } else {
-            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", numStart, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
-            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", numStart, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
-            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", numStart, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
+//            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", numStart, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
+//            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", numStart, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
+//            listReviewProduct.add(new Review(R.drawable.icon_kiwi_fruit, "Nguyen Thanh An", numStart, "Rất tốt, rất tốt, rất tốt", "05-05-2020 20:20"));
         }
         return listReviewProduct;
     }

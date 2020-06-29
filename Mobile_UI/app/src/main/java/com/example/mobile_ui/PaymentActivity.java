@@ -26,7 +26,7 @@ public class PaymentActivity extends AppCompatActivity {
 
     ExpandHeightGridView simpleListView;
     ArrayList<Payment> payments = new ArrayList<>();
-    TextView totalFeeAllPro, totalTransport, totalSale, totalFee, textViewBuy;
+    TextView totalFeeAllPro, totalTransport, totalSale, totalFee, textViewBuy, textViewTotalPrice;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +34,7 @@ public class PaymentActivity extends AppCompatActivity {
 
         totalFeeAllPro = findViewById(R.id.totalFeeAllPro);
         totalTransport = findViewById(R.id.totalTransport);
+        textViewTotalPrice = findViewById(R.id.textViewTotalPrice);
         totalSale = findViewById(R.id.totalSale);
         totalFee = findViewById(R.id.totalFee);
         textViewBuy = findViewById(R.id.textViewBuy);
@@ -117,6 +118,7 @@ public class PaymentActivity extends AppCompatActivity {
         totalTransport.setText(ItotalTransport+ "đ");
         totalSale.setText(ItotalSale+ "đ");
         totalFee.setText(ItotalFee+ "đ");
+        textViewTotalPrice.setText(ItotalFee +" đ");
 //        payments.add(new Payment("Shop Thành An", url, "Sữa milo", 20000, 2, 10000, 5000));
 //        payments.add(new Payment("Shop Thành An", url, "Sữa milo", 20000, 2, 10000, 5000));
 //        payments.add(new Payment("Shop Thành An", url, "Sữa milo", 20000, 2, 10000, 5000));

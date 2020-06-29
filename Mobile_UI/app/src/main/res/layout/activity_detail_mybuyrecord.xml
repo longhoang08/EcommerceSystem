@@ -44,7 +44,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:text="59000 VND"
+                    android:text="35000 đ"
                     android:textColor="@android:color/holo_red_dark"
                     android:textStyle="bold"
                     app:layout_constraintStart_toEndOf="@+id/proImg"
@@ -56,7 +56,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:text="Shop super"
+                    android:text="Sữa tươi Mộc Châu"
                     android:textColor="@android:color/black"
                     android:textSize="18sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -79,7 +79,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    android:text="Sữa milo tốt cho sức khỏe"
+                    android:text="Australia's Own Sữa tươi tiệt trùng nguyên ..."
                     android:textColor="@android:color/black"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/proImg"
@@ -175,7 +175,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    android:text="50000 VND"
+                    android:text="70000 đ"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -185,7 +185,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    android:text="10000 VND"
+                    android:text="5000 đ"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/money" />
 
@@ -195,7 +195,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    android:text="60000 VND"
+                    android:text="75000 đ"
                     android:textColor="@android:color/holo_orange_dark"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/transport" />

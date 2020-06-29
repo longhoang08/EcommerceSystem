@@ -46,13 +46,11 @@ public class ReviewProductAdapter extends BaseAdapter {
             TextView textViewNameCustomer = view.findViewById(R.id.textViewNameCustomer);
             RatingBar ratingBarReview = view.findViewById(R.id.ratingBarReview);
             TextView textViewComment = view.findViewById(R.id.textViewComment);
-            TextView textViewTimeReview = view.findViewById(R.id.textViewTimeReview);
             // gan gia tri
             imageViewCustomer.setImageResource(listReviewProduct.get(position).getImageCustomer());
             textViewNameCustomer.setText(listReviewProduct.get(position).getNameCustormer());
             ratingBarReview.setRating(listReviewProduct.get(position).getRating());
             textViewComment.setText(listReviewProduct.get(position).getComment());
-            textViewTimeReview.setText(listReviewProduct.get(position).getTimeReview());
         } else {
             view = convertView;
         }

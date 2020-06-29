@@ -5,14 +5,12 @@ public class Review {
     private String nameCustormer;
     private int rating;
     private String comment;
-    private String timeReview;
 
-    public Review(int imageCustomer, String nameCustormer, int rating, String comment, String timeReview) {
+    public Review(int imageCustomer, String nameCustormer, int rating, String comment) {
         this.imageCustomer = imageCustomer;
         this.nameCustormer = nameCustormer;
         this.rating = rating;
         this.comment = comment;
-        this.timeReview = timeReview;
     }
 
     public int getImageCustomer() {
@@ -47,11 +45,4 @@ public class Review {
         this.comment = comment;
     }
 
-    public String getTimeReview() {
-        return timeReview;
-    }
-
-    public void setTimeReview(String timeReview) {
-        this.timeReview = timeReview;
-    }
 }

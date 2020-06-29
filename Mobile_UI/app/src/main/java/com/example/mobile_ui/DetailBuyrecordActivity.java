@@ -2,11 +2,13 @@ package com.example.mobile_ui;
 
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -16,6 +18,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.bumptech.glide.Glide;
 import com.example.mobile_ui.Adapter.ListOfBuyProductAdapter;
 import com.example.mobile_ui.Model.BuyRecord;
 import com.example.mobile_ui.Model.Customer;
@@ -35,6 +38,7 @@ public class DetailBuyrecordActivity extends AppCompatActivity {
 //    LinearLayout footer;
 //    TextView buyAgain;
     BuyRecord buyRecord;
+    ImageView proImg;
 
     void anhxa(){
         nameOfShop = findViewById(R.id.nameOfShop);
@@ -43,6 +47,7 @@ public class DetailBuyrecordActivity extends AppCompatActivity {
         money = findViewById(R.id.money);
         transport = findViewById(R.id.transport);
         moneySum = findViewById(R.id.moneySum);
+        proImg = findViewById(R.id.proImg);
 //        footer = findViewById(R.id.footer);
 //        review = findViewById(R.id.review);
 //        buyAgain = findViewById(R.id.buyAgain);
@@ -54,6 +59,10 @@ public class DetailBuyrecordActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail_buyrecord);
         anhxa();
         //lấy dữ liệu đơn hàng từ id đơn hàng
+        String url = "https://lh3.googleusercontent.com/Oq3iOy4uHH2jXHC0m-Z4jZ_AR55uISagPjaBlsUvpmk92bT1IQNK1jlTdqW5dpM44GDmv71RwZBoePe-2_Va";
+        Glide.with(DetailBuyrecordActivity.this)
+                .load(url).override(80, 80).centerCrop()
+                .into(proImg);
         getData();
         //hiện listview
 //        ListOfBuyProductAdapter adapter = new ListOfBuyProductAdapter(new ArrayList<Product>(), new ArrayList<Integer>());
@@ -62,9 +71,9 @@ public class DetailBuyrecordActivity extends AppCompatActivity {
         //đổ dữ liệu các view còn lại
 //        nameOfShop.setText(buyRecord.getNameOfShop());
 //        address.setText(buyRecord.get);
-        money.setText(buyRecord.getMoney()+"");
+/*        money.setText(buyRecord.getMoney()+"");
         transport.setText(transformFee(buyRecord.getMoney())+"");
-        moneySum.setText( (buyRecord.getMoney()+transformFee(buyRecord.getMoney())) + "");
+        moneySum.setText( (buyRecord.getMoney()+transformFee(buyRecord.getMoney())) + "");*/
 //        //trạng thái đơn hàng là đã giao mới được đánh giá
 //        String state = "dagiao";
 //        if(!myBuyRecord.getState().equals(state)) footer.setVisibility(View.GONE);

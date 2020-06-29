@@ -50,7 +50,7 @@ public class DetailMybuyrecordActivity extends AppCompatActivity {
         anhxa();
         //lấy dữ liệu đơn hàng từ id đơn hàng
         getData();
-        String url = "https://sohanews.sohacdn.com/thumb_w/660/2013/medium-60e2bb5d1f6c4f9a93fec522c3454a1d-650-1376558219843-crop1376560855343p-crop1376560863617p.jpg";
+        String url = "https://lh3.googleusercontent.com/fNQKDDLRRUTd_BZ8hXR3GGAbrXUj57Ffhai-W4qYW7Id7finUrO6udwC4wd-5UyGcJ7LWVgHAuFw5o7tvhfI";
         Glide.with(DetailMybuyrecordActivity.this)
                 .load(url).override(80, 80).centerCrop()
                 .into(proImg);
@@ -139,12 +139,12 @@ public class DetailMybuyrecordActivity extends AppCompatActivity {
             idOfMybyrecord = bundle.getInt("idOfMybyrecord");
         }
         ArrayList<Product> x=new ArrayList<Product>();
-        x.add(new Product(""+R.drawable.icon_kiwi_fruit,"banana",12000,120, "!"));
+        x.add(new Product(""+R.drawable.icon_kiwi_fruit,"Australia's Own Sữa tươi tiệt trùng nguyên kem 1L",35000,100, "!"));
 //        x.add(new Product(""+R.drawable.icon_dragon_fruit,"thanh long",25000,100));
         ArrayList<Integer> y=new ArrayList<Integer>();
         y.add(new Integer(2));
 //        y.add(new Integer(3));
-        myBuyRecord = new MyBuyRecord(1, "SHop A","dagiao", x,y,25000);
+        myBuyRecord = new MyBuyRecord(1, "Sữa tươi Mộc Châu","dagiao", x,y,75000);
     }
 
     //lấy ra tiền vận chuyển

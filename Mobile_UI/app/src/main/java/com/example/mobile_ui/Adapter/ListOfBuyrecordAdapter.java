@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.mobile_ui.DetailBuyrecordActivity;
 import com.example.mobile_ui.Model.BuyRecord;
 import com.example.mobile_ui.Model.Product;
@@ -57,11 +58,14 @@ public class ListOfBuyrecordAdapter extends BaseAdapter {
             Button buttonViewDetail = view.findViewById(R.id.buttonViewDetail);
 
             nameOfCustom.setText(data.get(position).getCustomer().getUsername());
-            proImg.setImageResource(R.drawable.icon_kiwi_fruit);
+//            proImg.setImageResource(R.drawable.icon_kiwi_fruit);
+            Glide.with(parent.getContext())
+                    .load(data.get(position).getBuyProduct().getImageRepresent()).override(80, 80).centerCrop()
+                    .into(proImg);
             proName.setText(data.get(position).getBuyProduct().getName());
             buyNum.setText("x" + data.get(position).getBuyNum());
-            price.setText("đ"+data.get(position).getBuyProduct().getPrice());
-            money.setText("Thành tiền : đ"+data.get(position).getMoney());
+            price.setText(data.get(position).getBuyProduct().getPrice()+" đ");
+            money.setText(data.get(position).getMoney()+" đ");
             if (data.get(position).getState() == "danggiao") {
                 buttonPro.setOnClickListener(new View.OnClickListener() {
                     @Override
