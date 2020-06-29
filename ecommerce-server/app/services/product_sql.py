@@ -19,7 +19,7 @@ def update_product_to_mysql(sku: str, price: int, stock_changed: int = 0):
         if not product:
             stock_changed = max(stock_changed, 0)
             return repo.save_product_to_database(sku=sku, price=price, stock=stock_changed)
-        product.stock = min(product.stock + stock_changed, 0)
+        product.stock = max(product.stock + stock_changed, 0)
         return repo.save(product)
 
 

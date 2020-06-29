@@ -39,6 +39,9 @@ def upsert_product(sku, brand_code, category_code, name, price, **kwargs) -> dic
     _validate_permission_of_seller(stored_product, seller)
 
     product = {}
+    if not stored_product:
+        product['seller'] = {'id': seller.id, 'name': seller.fullname}
+
     product['name'] = name
     product['prices'] = {'price': price, 'price_sortable': price}
     product['sku'] = sku
@@ -46,10 +49,11 @@ def upsert_product(sku, brand_code, category_code, name, price, **kwargs) -> dic
     product['categories'] = get_categories_from_category_code(category_code)
     product['images'] = _parse_images(kwargs.get('images_url', []))
 
+
+
     sql_product = product_sql_service.update_product_to_mysql(sku, price, kwargs.get('stock_changed', 0))
 
     product['stock'] = {'in_stock': sql_product.stock, 'in_stock_sortable': 1 if sql_product.stock > 0 else 0}
-
     Converter.reformat_product(product)
     # if (kwargs.get(stock_changed))
 
