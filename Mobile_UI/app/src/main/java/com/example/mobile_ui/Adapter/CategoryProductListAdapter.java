@@ -7,6 +7,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.mobile_ui.Model.Category;
 import com.example.mobile_ui.R;
 
@@ -43,7 +44,10 @@ public class CategoryProductListAdapter extends BaseAdapter {
             ImageView imageViewCategoryProduct = view.findViewById(R.id.imageViewCategory);
             TextView textViewNameCategory = view.findViewById(R.id.textViewNameCategory);
             // gan gia tri
-            imageViewCategoryProduct.setImageResource(listCategoryProduct.get(position).getImage());
+            Glide.with(parent.getContext())
+                    .load(listCategoryProduct.get(position).getImage()).override(113, 113).centerCrop()
+                    .into(imageViewCategoryProduct);
+//            imageViewCategoryProduct.setImageResource(listCategoryProduct.get(position).getImage());
             textViewNameCategory.setText(listCategoryProduct.get(position).getName());
         } else {
             view = convertView;

@@ -6,10 +6,23 @@ import android.net.Uri;
 public class bitmapUri {
     Bitmap bitmap;
     Uri uri;
+    String url;
+
+    public bitmapUri(String url) {
+        this.url = url;
+    }
 
     public bitmapUri(Bitmap bitmap, Uri uri) {
         this.bitmap = bitmap;
         this.uri = uri;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public Bitmap getBitmap() {

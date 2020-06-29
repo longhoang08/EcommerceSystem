@@ -141,7 +141,10 @@ public class StallActivity extends AppCompatActivity {
                                 stallProListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                                     @Override
                                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                                        Intent intent = new Intent(StallActivity.this,StallDetailProductActivity.class);
+                                        Intent intent = new Intent(StallActivity.this, StallDetailProductActivity.class);
+                                        Bundle bundle = new Bundle();
+                                        bundle.putString("idPro", products.get(position).getId());
+                                        intent.putExtras(bundle);
                                         startActivity(intent);
                                     }
                                 });

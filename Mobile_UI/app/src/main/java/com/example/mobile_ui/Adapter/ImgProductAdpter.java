@@ -18,6 +18,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.mobile_ui.Model.bitmapUri;
 import com.example.mobile_ui.R;
 
@@ -74,7 +75,14 @@ public class ImgProductAdpter extends RecyclerView.Adapter<ImgProductAdpter.MyVi
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         Bitmap img = imgList.get(position).getBitmap();
-        holder.img.setImageBitmap(img);
+        if (img != null) {
+            holder.img.setImageBitmap(img);
+        } else {
+            System.out.println("cud");
+            Glide.with(holder.img.getContext())
+                    .load(imgList.get(position).getUrl()).override(125, 125).centerCrop()
+                    .into(holder.img);
+        }
 
         holder.setItemImgClickListener(new ItemImgClickListener() {
             @Override

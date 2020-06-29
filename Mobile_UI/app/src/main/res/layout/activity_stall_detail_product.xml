@@ -46,7 +46,7 @@ android:orientation="vertical">
 
                 <Button
                     android:id="@+id/addImgFromFolder"
-                    android:layout_width="180dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
@@ -58,7 +58,7 @@ android:orientation="vertical">
 
                 <Button
                     android:id="@+id/addImgFromCamera"
-                    android:layout_width="180dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
@@ -105,7 +105,8 @@ android:orientation="vertical">
                     android:layout_marginTop="8dp"
                     android:text="Tên sản phẩm"
                     android:textSize="18sp"
-                    android:textColor="@android:color/black"
+                    android:fontFamily="monospace"
+                    android:textColor="@android:color/holo_green_dark"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imgProductsRecyclerView" />
                 <TextView
@@ -116,7 +117,8 @@ android:orientation="vertical">
                     android:layout_marginTop="8dp"
                     android:text="Mô tả sản phẩm"
                     android:textSize="18sp"
-                    android:textColor="@android:color/black"
+                    android:fontFamily="monospace"
+                    android:textColor="@android:color/holo_green_dark"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/edtName" />
                 <EditText
@@ -144,13 +146,14 @@ android:orientation="vertical">
                     android:layout_marginTop="8dp"
                     android:text="Loại hàng"
                     android:textSize="18sp"
-                    android:textColor="@android:color/black"
+                    android:fontFamily="monospace"
+                    android:textColor="@android:color/holo_green_dark"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/edtDescript" />
                 <Spinner
                     android:id="@+id/typeProduc"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
@@ -165,13 +168,14 @@ android:orientation="vertical">
                     android:layout_marginTop="8dp"
                     android:text="Thương hiệu"
                     android:textSize="18sp"
-                    android:textColor="@android:color/black"
+                    android:fontFamily="monospace"
+                    android:textColor="@android:color/holo_green_dark"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/typeProduc" />
                 <Spinner
                     android:id="@+id/spinnerBrandPro"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"

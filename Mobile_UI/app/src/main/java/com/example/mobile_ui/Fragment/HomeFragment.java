@@ -155,16 +155,18 @@ public class HomeFragment extends Fragment {
     }
 
     private void loadDataCategoryProduct(List<Category> listCategoryProduct) {
-        listCategoryProduct.add(new Category(R.drawable.icon_dragon_fruit, "Rồng hoa quả"));
-        listCategoryProduct.add(new Category(R.drawable.icon_kiwi_fruit, "Rồng hoa quả"));
-        listCategoryProduct.add(new Category(R.drawable.icon_pineapple, "Rồng hoa quả"));
-        listCategoryProduct.add(new Category(R.drawable.icon_dragon_fruit, "Rồng hoa quả"));
-        listCategoryProduct.add(new Category(R.drawable.icon_kiwi_fruit, "Rồng hoa quả"));
-        listCategoryProduct.add(new Category(R.drawable.icon_pineapple, "Rồng hoa quả"));
-        listCategoryProduct.add(new Category(R.drawable.icon_dragon_fruit, "Rồng hoa quả"));
-        listCategoryProduct.add(new Category(R.drawable.icon_kiwi_fruit, "Rồng hoa quả"));
-        listCategoryProduct.add(new Category(R.drawable.icon_pineapple, "Rồng hoa quả"));
-        listCategoryProduct.add(new Category(R.drawable.icon_pineapple, "Rồng hoa quả"));
+        listCategoryProduct.add(new Category("https://img.vnshop.vn/height/128/media/menu-icons/001/001-0.png", "Mẹ và bé"));
+        listCategoryProduct.add(new Category("https://img.vnshop.vn/height/128/media/menu-icons/002/002-0.png", "Đồ chơi"));
+        listCategoryProduct.add(new Category("https://img.vnshop.vn/height/128/media/menu-icons/011,012,013/011,012,013-0.png", "Sách"));
+        listCategoryProduct.add(new Category("https://img.vnshop.vn/height/128/media/menu-icons/007/007-0.png", "Thời trang"));
+        listCategoryProduct.add(new Category("https://img.vnshop.vn/height/128/media/menu-icons/003/003-0.png", "Mỹ phẩm và làm đẹp"));
+        listCategoryProduct.add(new Category("https://img.vnshop.vn/height/128/media/menu-icons/004/004-0.png", "Chăm sóc sức khỏe"));
+        listCategoryProduct.add(new Category("https://img.vnshop.vn/height/128/media/menu-icons/014/014-0.png", "Laptop"));
+        listCategoryProduct.add(new Category("https://img.vnshop.vn/height/128/media/menu-icons/015/015-0.png", "Điện thoại"));
+        listCategoryProduct.add(new Category("https://img.vnshop.vn/height/128/media/menu-icons/016/016-0.png", "Loa âm thanh"));
+        listCategoryProduct.add(new Category("https://img.vnshop.vn/height/128/media/menu-icons/008/008-0.png", "Đồ điện"));
+        listCategoryProduct.add(new Category("https://img.vnshop.vn/height/128/media/menu-icons/009/009-0.png", "Thực phẩm"));
+        listCategoryProduct.add(new Category("https://img.vnshop.vn/height/128/media/menu-icons/017/017-0.png", "Máy ảnh"));
     }
 
     private void getProduct(final List<Product> listProduct){

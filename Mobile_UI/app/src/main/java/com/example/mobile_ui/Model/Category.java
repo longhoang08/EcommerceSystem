@@ -1,19 +1,19 @@
 package com.example.mobile_ui.Model;
 
 public class Category {
-    private int image;
+    private String image;
     private String name;
 
-    public Category(int image, String name) {
+    public Category(String image, String name) {
         this.image = image;
         this.name = name;
     }
 
-    public int getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(int image) {
+    public void setImage(String image) {
         this.image = image;
     }
 

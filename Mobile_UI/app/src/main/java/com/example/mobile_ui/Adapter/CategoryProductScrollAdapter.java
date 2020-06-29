@@ -1,15 +1,21 @@
 package com.example.mobile_ui.Adapter;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.example.mobile_ui.ListCategoryActivity;
 import com.example.mobile_ui.Model.Category;
+import com.example.mobile_ui.ProductSearchActivity;
 import com.example.mobile_ui.R;
 
 import java.util.List;
@@ -31,7 +37,7 @@ public class CategoryProductScrollAdapter extends RecyclerView.Adapter<CategoryP
 
     @Override
     public void onBindViewHolder(@NonNull CategoryProductScrollAdapter.ViewHolder holder, int position) {
-        int categoryImage = listCategoryProduct.get(position).getImage();
+        String categoryImage = listCategoryProduct.get(position).getImage();
         String nameCategory = listCategoryProduct.get(position).getName();
         holder.setCategoryImage(categoryImage);
         holder.setNameCategory(nameCategory);
@@ -50,12 +56,25 @@ public class CategoryProductScrollAdapter extends RecyclerView.Adapter<CategoryP
             imageViewCategory = itemView.findViewById(R.id.imageViewCategory);
             textViewNameCategory = itemView.findViewById(R.id.textViewNameCategory);
         }
-        public void setCategoryImage(int categoryImage) {
-            this.imageViewCategory.setImageResource(categoryImage);
+        public void setCategoryImage(final String categoryImage) {
+            Glide.with(this.imageViewCategory.getContext())
+                    .load(categoryImage).override(113, 113).centerCrop()
+                    .into(imageViewCategory);
+//            this.imageViewCategory.setImageResource(categoryImage);
         }
 
-        public void setNameCategory(String nameCategory) {
+        public void setNameCategory(final String nameCategory) {
             this.textViewNameCategory.setText(nameCategory);
+            ((ViewGroup)this.textViewNameCategory.getParent()).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(v.getContext(), ProductSearchActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("keyWord", nameCategory);
+                    intent.putExtras(bundle);
+                    v.getContext().startActivity(intent);
+                }
+            });
         }
     }
 }
