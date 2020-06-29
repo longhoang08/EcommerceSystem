@@ -22,6 +22,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.mobile_ui.Adapter.ImgProductAdpter;
+import com.example.mobile_ui.Model.bitmapUri;
 import com.example.mobile_ui.Retrofit.GetImgFormUrl;
 
 import java.io.FileNotFoundException;
@@ -35,7 +36,7 @@ public class StallDetailProductActivity extends AppCompatActivity {
     int REQUEST_CODE_CAMERA=123;
     int REQUEST_CODE_FOLDER=456;
 
-    ArrayList<Bitmap> imgProductsList;//nơi lưu dữ liệu ảnh
+    ArrayList<bitmapUri> imgProductsList;//nơi lưu dữ liệu ảnh
     RecyclerView imgProductsView;
     ImgProductAdpter imgProductAdpter;
 
@@ -63,7 +64,7 @@ public class StallDetailProductActivity extends AppCompatActivity {
         number = findViewById(R.id.number);
 
         //setting base
-        imgProductsList = new ArrayList<Bitmap>();
+        imgProductsList = new ArrayList<bitmapUri>();
         imgProductsView = findViewById(R.id.imgProductsRecyclerView);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         mLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
@@ -132,7 +133,7 @@ public class StallDetailProductActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode==REQUEST_CODE_CAMERA && resultCode ==RESULT_OK && data!=null){
             Bitmap bitmap = (Bitmap) data.getExtras().get("data");
-            imgProductsList.add(bitmap);
+            imgProductsList.add(new bitmapUri(bitmap, null));
             imgProductAdpter.notifyDataSetChanged();
             return;
         }else
@@ -141,7 +142,7 @@ public class StallDetailProductActivity extends AppCompatActivity {
             try {
                 InputStream inputStream = getContentResolver().openInputStream(uri);
                 Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
-                imgProductsList.add(bitmap);
+                imgProductsList.add(new bitmapUri(bitmap, null));
                 imgProductAdpter.notifyDataSetChanged();
                 return;
             } catch (FileNotFoundException e) {
@@ -179,8 +180,8 @@ public class StallDetailProductActivity extends AppCompatActivity {
     //get dữ liệu
     void fillData(){
         //img
-        imgProductsList.add(GetImgFormUrl.getBitmapImgFromUrl("https://thethao99.com/wp-content/uploads/2020/04/85094047_202036030982266_380222704411738112_n.jpg"));
-        imgProductsList.add(GetImgFormUrl.getBitmapImgFromUrl("https://datastandard.blob.core.windows.net/botimg/5b604ff3e28282087477a30b.jpg"));
+        imgProductsList.add(new bitmapUri(GetImgFormUrl.getBitmapImgFromUrl("https://thethao99.com/wp-content/uploads/2020/04/85094047_202036030982266_380222704411738112_n.jpg"), null));
+        imgProductsList.add(new bitmapUri(GetImgFormUrl.getBitmapImgFromUrl("https://datastandard.blob.core.windows.net/botimg/5b604ff3e28282087477a30b.jpg"), null));
         imgProductAdpter.notifyDataSetChanged();
         //name
         edtName.setText("Mi tom");
