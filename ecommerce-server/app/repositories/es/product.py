@@ -189,6 +189,7 @@ class ProductElasticRepo(EsRepositoryInterface):
             filter=self.get_filter_conditions(args)
         )
         products_es = self.build_product_es_from_text_query_condition(args, text_query_condition)
+        # print(json.dumps(products_es.to_dict()))
         return products_es
 
     def build_second_query(self, args):

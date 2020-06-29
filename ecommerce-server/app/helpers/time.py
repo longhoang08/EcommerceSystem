@@ -34,6 +34,7 @@ def get_utc_timestamp():
     return utc_timestamp
 
 
-def date_time_to_iso_string(date_local: datetime = datetime.now()):
+def date_time_to_iso_string(date_local=None):
+    if not date_local: date_local = datetime.now()
     date_utc = date_local.astimezone(timezone.utc)
     return date_utc.strftime(ISO_DATETIME_FORMAT)
