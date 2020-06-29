@@ -57,6 +57,7 @@ public class AccountFragment extends Fragment {
     Button buttonSignUp, buttonLogin;
     ListView listViewDetailAcc;
     int REQUEST_CODE_LOGIN = 13;
+    public static int idSeller;
 
     TextView textViewNameUser;
     ImageView user_infor_img_main;
@@ -191,13 +192,16 @@ public class AccountFragment extends Fragment {
                                 abc.add("Duyệt người bán");
                             } else if (role.equals("seller")) {
                                 buttonSeller.setVisibility(View.GONE);
-                                abc.add("Shop của tôi");
+                                if (abc.size() == 4) {
+                                    abc.add("Shop của tôi");
+                                }
                                 adapter.notifyDataSetChanged();
                             } else {
                                 buttonSeller.setVisibility(View.VISIBLE);
                             }
 
                             String urlAvatar = (String) dataUser.get("avatar_url");
+                            idSeller = (int) dataUser.get("id");
                             Glide.with(getActivity())
                                     .load(urlAvatar).override(50, 50).centerCrop()
                                     .into(user_infor_img_main);

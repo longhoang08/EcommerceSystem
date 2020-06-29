@@ -51,6 +51,9 @@ public class ProductSearchActivity extends AppCompatActivity {
     String keyWord = "";
     List<Product> listProduct = new ArrayList<>();
     ProductAdapter productAdapter = new ProductAdapter(listProduct);
+    int pageFilter = 0;
+    boolean filtering = false;
+    String NAMEBRAND, NAMECATEGORY;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,8 +71,14 @@ public class ProductSearchActivity extends AppCompatActivity {
         loadMore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                page ++;
-                getProduct();
+                if (!filtering) {
+                    page++;
+                    getProduct();
+                }
+                else {
+                    pageFilter ++;
+                    filterByField(NAMEBRAND, NAMECATEGORY);
+                }
             }
         });
         imageButtonFilter = findViewById(R.id.imageButtonFilter);
@@ -155,13 +164,21 @@ public class ProductSearchActivity extends AppCompatActivity {
 
                                     final AlertDialog alertDialog = builder.create();
                                     textViewApply.setOnClickListener(new View.OnClickListener() {
+
                                         @Override
                                         public void onClick(View v) {
+                                            listProduct = new ArrayList<Product>();
+                                            pageFilter = 0;
+                                            filtering = true;
                                             int positionBrand, positionCategory;
                                             positionBrand = spinnerBrand.getSelectedItemPosition();
                                             positionCategory = spinnerCategory.getSelectedItemPosition();
-                                            filterByField(nameBrand.get(positionBrand));
+                                            NAMEBRAND = codeBrand.get(positionBrand);
+                                            NAMECATEGORY = codeCategory.get(positionCategory);
+//                                            filterByField(codeCategory.get());
+                                            filterByField(NAMEBRAND, NAMECATEGORY);
                                             alertDialog.cancel();
+                                            System.out.println(positionBrand + "" + positionCategory);
                                         }
                                     });
                                     alertDialog.show();
@@ -234,7 +251,13 @@ public class ProductSearchActivity extends AppCompatActivity {
 //                                if (!product.isNull("images")) {
                                     urlImage = (String) product.getJSONArray("images").getJSONObject(0).get("url");
 //                                }
-                                int price = ((Double) product.getJSONObject("prices").get("price")).intValue();
+                                int price = 0;
+                                Object obj = product.getJSONObject("prices").get("price");
+                                if (obj instanceof java.lang.Integer) {
+                                    price = (Integer) obj;
+                                } else {
+                                    price = ((Double) obj).intValue();
+                                };
                                 String name = (String) product.get("name");
                                 String id = (String) product.get("sku");
 //                                Toast.makeText(getActivity(), price+"", Toast.LENGTH_LONG).show();
@@ -281,13 +304,17 @@ public class ProductSearchActivity extends AppCompatActivity {
 //        listProduct.add(new Product(url, "Redmi Note 7", 45000, 45, "1"));
 //    }
 
-    public void filterByField(final String codeBrand) {
+    public void filterByField(final String codeBrand, final String codeCategory) {
 //        System.out.println(codeBrand+"|"+ codeCategory);
         JSONObject params = new JSONObject();
 
         try {
-//            params.put("_page", page);
-            params.put("q", codeBrand);
+            JSONArray jsoBrand = new JSONArray(), jsCategory = new JSONArray();
+            jsoBrand.put(codeBrand);
+            jsCategory.put(codeCategory);
+            params.put("_page", pageFilter);
+            params.put("brand_codes", jsoBrand);
+            params.put("category_codes", jsCategory);
 //            System.out.println(keyWord);
             params.put("_limit", 5);
         } catch (JSONException e) {
@@ -306,13 +333,13 @@ public class ProductSearchActivity extends AppCompatActivity {
 //                        Toast.makeText(getActivity(), response.toString(), Toast.LENGTH_LONG).show();
                         try {
                             JSONArray data = response.getJSONObject("data").getJSONArray("products");
+                            System.out.println(response.toString());
                             //Toast.makeText(ProductSearchActivity.this, data.toString(), Toast.LENGTH_LONG).show();
                             if (data.length() == 0) {
                                 loadMore.setVisibility(View.INVISIBLE);
                                 noMorePro.setVisibility(View.VISIBLE);
                                 return;
                             }
-
                             for (int i = 0; i < data.length(); i++) {
                                 JSONObject product = data.getJSONObject(i);
 
@@ -330,6 +357,7 @@ public class ProductSearchActivity extends AppCompatActivity {
 //                                System.out.println(codeBrand + "Image " + urlImage + " Price " + price);
                                 //Toast.makeText(getActivity(), listProduct.size() +"", Toast.LENGTH_LONG).show();
                             }
+                            ProductAdapter productAdapter = new ProductAdapter(listProduct);
                             expandHeightGridViewProduct.setAdapter(productAdapter);
                         } catch (JSONException e) {
                             e.printStackTrace();

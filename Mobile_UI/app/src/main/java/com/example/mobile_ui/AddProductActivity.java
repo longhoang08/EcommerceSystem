@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.core.content.FileProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -24,6 +25,7 @@ import android.graphics.BitmapFactory;
 import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -57,6 +59,7 @@ import org.json.JSONObject;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
@@ -100,11 +103,13 @@ public class AddProductActivity extends AppCompatActivity {
     int REQUEST_CODE_CAMERA=123;
     int REQUEST_CODE_FOLDER=456;
     int REQUEST_CALL_RW = 234; //cho phep quyen doc
+    int REQUEST_CALL_CM = 465; //cho phep quyen doc
     ImageButton addPro;
     EditText edtDescript, edtName, edtPrice, edtStock;
     int countRequest = 0;
     ArrayAdapter<String> adapterCategory;
     ArrayAdapter<String> adapterBrand;
+    String namePicture = "";
 
     ProgressDialog pd;
 
@@ -152,9 +157,16 @@ public class AddProductActivity extends AppCompatActivity {
         BtnAddImgFromCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ActivityCompat.requestPermissions(AddProductActivity.this, new String[] {Manifest.permission.READ_EXTERNAL_STORAGE}, REQUEST_CALL_RW);
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent, REQUEST_CODE_CAMERA);
+                if (ContextCompat.checkSelfPermission(AddProductActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                        != PackageManager.PERMISSION_GRANTED) {
+                    // request the permission - cấp quyền
+                    ActivityCompat.requestPermissions(AddProductActivity.this, new String[] {Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_CALL_CM);
+                } else {
+                    namePicture = new Random().nextInt(100000)+".PNG";
+                    Intent m_intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+
+                    startActivityForResult(m_intent, REQUEST_CODE_CAMERA);
+                }
             }
         });
 
@@ -390,11 +402,25 @@ public class AddProductActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode==REQUEST_CODE_CAMERA && resultCode ==RESULT_OK && data!=null){
             Bitmap bitmap = (Bitmap) data.getExtras().get("data");
-            ByteArrayOutputStream bytes = new ByteArrayOutputStream();
-            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, bytes);
-            String path = MediaStore.Images.Media.insertImage(AddProductActivity.this.getContentResolver(), bitmap, "title", null);
-            imgProductsList.add(new bitmapUri(bitmap, Uri.parse(path)));
-            imgProductAdpter.notifyDataSetChanged();
+            File f = new File(Environment.getExternalStorageDirectory(), namePicture);
+            try {
+                f.createNewFile();
+                ByteArrayOutputStream bos = new ByteArrayOutputStream();
+                bitmap.compress(Bitmap.CompressFormat.PNG, 100 /*ignored for PNG*/, bos);
+
+                byte[] bitmapdata = bos.toByteArray();
+
+                FileOutputStream fos = new FileOutputStream(f);
+                fos.write(bitmapdata);
+                fos.flush();
+                fos.close();
+
+                imgProductsList.add(new bitmapUri(bitmap, Uri.fromFile(f)));
+                imgProductAdpter.notifyDataSetChanged();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
             return;
         }else
         if(requestCode==REQUEST_CODE_FOLDER && resultCode ==RESULT_OK && data!=null){
@@ -488,6 +514,16 @@ public class AddProductActivity extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_PICK);
                 intent.setType("image/*");
                 startActivityForResult(intent, REQUEST_CODE_FOLDER);
+            }
+        } else if(requestCode == REQUEST_CALL_CM) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                File pictureDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
+                String pictureName = new Random().nextInt(100000)+".jpg";
+                File imgFile = new File(pictureDir, pictureName);
+                Uri pictureUri = Uri.fromFile(imgFile);
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                intent.putExtra(MediaStore.EXTRA_OUTPUT, pictureUri);
+                startActivityForResult(intent, REQUEST_CODE_CAMERA);
             }
         }
     }

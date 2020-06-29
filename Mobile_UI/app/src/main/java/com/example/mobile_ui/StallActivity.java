@@ -23,6 +23,7 @@ import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.mobile_ui.Adapter.ProductStallAdapter;
+import com.example.mobile_ui.Fragment.AccountFragment;
 import com.example.mobile_ui.Model.Product;
 
 import org.json.JSONArray;
@@ -122,7 +123,13 @@ public class StallActivity extends AppCompatActivity {
                                     if (!product.isNull("images"))
                                         urlImage = (String) product.getJSONArray("images").getJSONObject(0).get("url");
                                 }
-                                int price = ((Double) product.getJSONObject("prices").get("price")).intValue();
+                                int price = 0;
+                                Object obj = product.getJSONObject("prices").get("price");
+                                if (obj instanceof java.lang.Integer) {
+                                    price = (Integer) obj;
+                                } else {
+                                    price = ((Double) obj).intValue();
+                                }
                                 String name = (String) product.get("name");
                                 String id = (String) product.get("sku");
 //                                Toast.makeText(getActivity(), price+"", Toast.LENGTH_LONG).show();
@@ -171,6 +178,6 @@ public class StallActivity extends AppCompatActivity {
     }
 
     private int getIdSeller() {
-        return 11;
+        return AccountFragment.idSeller;
     }
 }
