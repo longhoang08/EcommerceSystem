@@ -51,10 +51,6 @@ public class ProductSearchActivity extends AppCompatActivity {
     String keyWord = "";
     List<Product> listProduct = new ArrayList<>();
     ProductAdapter productAdapter = new ProductAdapter(listProduct);
-    ArrayList<String> nameBrand = new ArrayList<>();
-    ArrayList<String> codeBrand = new ArrayList<>();
-    ArrayList<String> nameCategory = new ArrayList<>();
-    ArrayList<String> codeCategory = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -210,7 +206,7 @@ public class ProductSearchActivity extends AppCompatActivity {
         try {
             params.put("_page", page);
             params.put("q", keyWord);
-            System.out.println(keyWord);
+//            System.out.println(keyWord);
             params.put("_limit", 10);
         } catch (JSONException e) {
 //            System.out.println("OK");

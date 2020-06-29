@@ -18,6 +18,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.mobile_ui.Model.bitmapUri;
 import com.example.mobile_ui.R;
 
 import java.util.ArrayList;
@@ -26,9 +27,9 @@ import java.util.List;
 public class ImgProductAdpter extends RecyclerView.Adapter<ImgProductAdpter.MyViewHolder> {
     //if là true, có sự kiện xóa trên ảnh, nếu ko thì không có
     private boolean stateOfEventItem = true;
-    private ArrayList<Bitmap> imgList;
+    private ArrayList<bitmapUri> imgList;
     private Context context;
-    public ImgProductAdpter(ArrayList<Bitmap> List,Context context,boolean stateOfEventItem) {
+    public ImgProductAdpter(ArrayList<bitmapUri> List,Context context,boolean stateOfEventItem) {
         this.imgList = List;
         this.context=context;
         this.stateOfEventItem=stateOfEventItem;
@@ -72,7 +73,7 @@ public class ImgProductAdpter extends RecyclerView.Adapter<ImgProductAdpter.MyVi
     }
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        Bitmap img = imgList.get(position);
+        Bitmap img = imgList.get(position).getBitmap();
         holder.img.setImageBitmap(img);
 
         holder.setItemImgClickListener(new ItemImgClickListener() {

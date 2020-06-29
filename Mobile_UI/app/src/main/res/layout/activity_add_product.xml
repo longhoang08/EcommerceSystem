@@ -22,6 +22,7 @@
             android:textStyle="bold"
             android:textSize="20sp" />
         <ImageButton
+            android:id="@+id/addPro"
             android:layout_width="60dp"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
@@ -45,7 +46,7 @@
 
                 <Button
                     android:id="@+id/addImgFromFolder"
-                    android:layout_width="180dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
@@ -57,7 +58,7 @@
 
                 <Button
                     android:id="@+id/addImgFromCamera"
-                    android:layout_width="180dp"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
@@ -123,7 +124,8 @@
                     android:layout_marginTop="8dp"
                     android:text="Loại hàng"
                     android:textSize="18sp"
-                    android:textColor="@android:color/black"
+                    android:fontFamily="monospace"
+                    android:textColor="@android:color/holo_green_dark"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/edtDescript" />
                 <TextView
@@ -134,7 +136,8 @@
                     android:layout_marginTop="8dp"
                     android:text="Tên sản phẩm"
                     android:textSize="18sp"
-                    android:textColor="@android:color/black"
+                    android:fontFamily="monospace"
+                    android:textColor="@android:color/holo_green_dark"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imgProductsRecyclerView" />
                 <TextView
@@ -145,7 +148,8 @@
                     android:layout_marginTop="8dp"
                     android:text="Mô tả sản phẩm"
                     android:textSize="18sp"
-                    android:textColor="@android:color/black"
+                    android:fontFamily="monospace"
+                    android:textColor="@android:color/holo_green_dark"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/edtName" />
                 <Spinner
@@ -166,7 +170,8 @@
                     android:layout_marginTop="8dp"
                     android:text="Thương hiệu"
                     android:textSize="18sp"
-                    android:textColor="@android:color/black"
+                    android:fontFamily="monospace"
+                    android:textColor="@android:color/holo_green_dark"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/typeProduc" />
                 <Spinner
@@ -201,7 +206,7 @@
                     app:srcCompat="@drawable/ic_store_mall_directory_black_24dp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName2"
+                    android:id="@+id/edtPrice"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="8dp"
@@ -216,7 +221,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/spinnerBrandPro" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName3"
+                    android:id="@+id/edtStock"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="8dp"
@@ -228,7 +233,7 @@
                     android:background="#00000000"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageView4"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+                    app:layout_constraintTop_toBottomOf="@+id/edtPrice" />
             </androidx.constraintlayout.widget.ConstraintLayout>
             <LinearLayout
                 android:layout_width="match_parent"

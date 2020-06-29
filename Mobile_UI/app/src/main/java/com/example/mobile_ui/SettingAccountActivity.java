@@ -233,7 +233,7 @@ public class SettingAccountActivity extends AppCompatActivity {
 //        RadioButton radioButton = (RadioButton) findViewById(selectedId);
         pd.show();
         countRequest ++;
-        upDateInfo(address.getText().toString(), "");
+        upDateInfo(address.getText().toString(), null);
         if (changeImg) {
             countRequest++;
             uploadFileServer();
@@ -244,14 +244,14 @@ public class SettingAccountActivity extends AppCompatActivity {
 
     public void upDateInfo(String address, String urlImg) {
         JSONObject params = new JSONObject();
-        if (urlImg.equals("")) {
+        if (urlImg == null) {
             try {
                 params.put("address", address);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
-        if (address.equals("")) {
+        if (address == null) {
             try {
                 params.put("avatar_url", urlImg);
             } catch (JSONException e) {
@@ -530,7 +530,7 @@ public class SettingAccountActivity extends AppCompatActivity {
                     String responseUrl = response.body().string();
                     JSONObject jsonObject = new JSONObject(responseUrl);
                     String urlImg = (String) jsonObject.get("image-url");
-                    upDateInfo("", urlImg);
+                    upDateInfo(null, urlImg);
 //                        Toast.makeText(SettingAccountActivity.this, responseUrl, Toast.LENGTH_LONG).show();
                 } catch (IOException | JSONException e) {
                     e.printStackTrace();

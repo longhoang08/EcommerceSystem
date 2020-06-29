@@ -30,6 +30,7 @@
                 android:layout_height="match_parent"
                 android:layout_below="@+id/stall_infor"
                 android:paddingBottom="40dp"/>
+
 <!--    add sp va show buyRecord-->
     <LinearLayout
         android:id="@+id/linearLayout"

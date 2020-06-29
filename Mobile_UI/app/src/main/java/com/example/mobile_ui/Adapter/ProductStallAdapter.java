@@ -51,11 +51,17 @@ public class ProductStallAdapter extends BaseAdapter {
         TextView number = (TextView) convertView.findViewById(R.id.stallProNumber);
 
 //        imgPro.setImageResource(Integer.parseInt(products.get(position).getImageRepresent()));
-        Glide.with(parent.getContext())
-                .load(products.get(position).getImageRepresent()).override(80, 80).centerCrop()
-                .into(imgPro);
-        name.setText("Tên sản phẩm : " + products.get(position).getName());
-        price.setText("Giá : " + products.get(position).getPrice());
+        if (products.get(position).getImageRepresent() != null) {
+            Glide.with(parent.getContext())
+                    .load(products.get(position).getImageRepresent()).override(80, 80).centerCrop()
+                    .into(imgPro);
+        }
+        String namePro = products.get(position).getName();
+        if (namePro.length() > 30) {
+            namePro = namePro.substring(0, 30)+"...";
+        }
+        name.setText(namePro);
+        price.setText(products.get(position).getPrice()+ " đ");
         number.setText("Kho : "+products.get(position).getNumber());
         return convertView;
     }
