@@ -6,7 +6,7 @@ from typing import Callable, List, Any
 from elasticsearch import Elasticsearch
 from elasticsearch_dsl import Search, query
 
-from app.repositories.mysql import stock as stock_repo
+from app.repositories.mysql import product_sql
 
 from config import ELASTIC_HOST
 
@@ -62,9 +62,10 @@ def product_query_condition():
     return condition
 
 
-def migrate_stock_data(products: List[dict]):
+def migrate_product_data(products: List[dict]):
     for product in products:
         stock = product.get('stock') or {}
         stock = stock.get('in_stock') or 0
+        price = product.get('prices').get('price')
         sku = product['sku']
-        stock_repo.upsert_stock_to_database(sku, stock)
+        product_sql.upsert_product_to_database(sku, stock, price)

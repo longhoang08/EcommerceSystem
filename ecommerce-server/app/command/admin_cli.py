@@ -4,7 +4,7 @@ import logging
 import click
 from flask.cli import AppGroup
 
-from app.repositories.es.backdoor import Ingestion, product_query_condition, migrate_stock_data
+from app.repositories.es.backdoor import Ingestion, product_query_condition, migrate_product_data
 from app.repositories.mysql import user as user_repo
 from app.services import user as user_service
 
@@ -29,8 +29,8 @@ def set_password(email, password):
     print("Done")
 
 
-@admin_cli.command('migrate_stock', help='Migrate stock data')
+@admin_cli.command('migrate_product', help='Migrate stock & price data')
 def migrate_stock():
     print("Start migrate stock data from es to mysql")
     ingestion = Ingestion('products', product_query_condition)
-    ingestion.ingest_all(100, migrate_stock_data)
+    ingestion.ingest_all(100, migrate_product_data)

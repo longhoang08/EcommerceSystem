@@ -8,3 +8,4 @@ from . import product
 from . import seller
 from . import user
 from . import admin
+from . import order
