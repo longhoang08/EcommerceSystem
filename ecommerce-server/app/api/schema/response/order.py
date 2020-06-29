@@ -27,7 +27,8 @@ order_response = {
 
 order_checking_response = api.model('order_checking_response', {
     'prices': fields.Nested(_order_price),
-    'total_price': fields.Float()
+    'total_price': fields.Float(),
+    'failed_sku': fields.List(fields.String(), description='List of sku out of stocks'),
 })
 
 order_creating_response = api.model('order_response', order_response)

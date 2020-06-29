@@ -22,11 +22,7 @@ class OrderChecking(flask_restplus.Resource):
     @ns.marshal_with(app.api.response.order.order_checking_response)
     def post(self):
         data = request.args or request.json
-        order_reponse, total_price = order.check_order(**data)
-        return {
-            'prices': order_reponse,
-            'total_price': total_price
-        }
+        return order.check_order(**data)
 
 
 _order_creating = ns.model('order_creating', app.api.request.order.order_req)
