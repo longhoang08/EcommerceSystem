@@ -5,10 +5,10 @@ from typing import List
 
 from elasticsearch_dsl import query, Search, A
 
-from app.repositories.es import build_phrase_prefix_query, build_match_query, build_prefix_query
-from config import PRODUCT_INDEX
 from app.models.es.product import mappings, settings
+from app.repositories.es import build_phrase_prefix_query, build_match_query, build_prefix_query
 from app.repositories.es.es_base import EsRepositoryInterface
+from config import PRODUCT_INDEX
 
 __author__ = 'LongHB'
 _logger = logging.getLogger(__name__)
@@ -62,7 +62,10 @@ class ProductElasticRepo(EsRepositoryInterface):
         return product_es
 
     def sort_condition(self, args):
-        return [self.sort_by_score()]
+        sortables = args.get('sort') or []
+        sort_conditions = [self._get_sort_condition_from_param(sortable) for sortable in sortables]
+        sort_conditions.append(self.sort_by_score())
+        return sort_conditions
 
     def sort_by_score(self):
         return {
@@ -271,3 +274,36 @@ class ProductElasticRepo(EsRepositoryInterface):
     def is_empty_responses(responses):
         number_of_products = responses['hits']['total']['value']
         return number_of_products == 0
+
+    def _get_sort_condition_from_param(self, param):
+        if param == 'last_updated':
+            return {
+                "updated_at": {
+                    "order": "desc",
+                    "missing": 0
+                }
+            }
+
+        if param == 'most_discount':
+            return {
+                "promotions.discount_money": {
+                    "order": "desc",
+                    "missing": 0
+                }
+            }
+
+        if param == 'price_asc':
+            return {
+                "prices.price_sortable": {
+                    "order": "asc",
+                    "missing": 0
+                }
+            }
+
+        if param == 'price_desc':
+            return {
+                "prices.price_sortable": {
+                    "order": "desc",
+                    "missing": 0
+                }
+            }

@@ -8,6 +8,7 @@ from app.commons.decorators import login_required, seller_required
 from app.extensions.custom_exception import PermissionException
 from app.helpers.catalog import get_brand_from_code, get_categories_from_category_code
 from app.helpers.catalog.product_utils import Converter
+from app.helpers.time import get_utc_timestamp, date_time_to_iso_string
 from app.models.mysql.seller import Seller
 from app.models.mysql.user import UserRole, User
 from app.services import user as user_service, product as product_service, ingestion as ingestion_service, \
@@ -48,8 +49,7 @@ def upsert_product(sku, brand_code, category_code, name, price, **kwargs) -> dic
     product['brand'] = get_brand_from_code(brand_code)
     product['categories'] = get_categories_from_category_code(category_code)
     product['images'] = _parse_images(kwargs.get('images_url', []))
-
-
+    product['updated_at'] = date_time_to_iso_string()
 
     sql_product = product_sql_service.update_product_to_mysql(sku, price, kwargs.get('stock_changed', 0))
 

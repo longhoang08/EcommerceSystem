@@ -15,6 +15,12 @@ def validate_product_search_param(args):
         if agg not in supported_aggregations:
             raise BadRequestException('Only support aggregation of brand or category')
 
+    sortables = args.get('sort') or []
+    supported_sort_param = ['last_updated', 'most_discount', 'price_asc', 'price_desc']
+    for sortable in sortables:
+        if sortable not in supported_sort_param:
+            raise BadRequestException('Only support sort param in ' + ','.join(supported_sort_param))
+
 
 def validate_upsert_product_request(args):
     from app.helpers.catalog import is_valid_brand_code, is_valid_category_code

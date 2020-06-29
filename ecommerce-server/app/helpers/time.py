@@ -1,5 +1,10 @@
 import datetime
 import os
+from datetime import datetime, timezone
+
+from flask import g
+
+ISO_DATETIME_FORMAT = '%Y-%m-%dT%H:%M:%SZ'
 
 
 def get_expired_time():
@@ -19,5 +24,16 @@ def minutes_to_ms(minutes):
 def get_time_range_to_block():
     return int(os.environ['TIME_RANGE_TO_BLOCK']) * 60
 
+
 def get_current_timestamp() -> float:
     return datetime.datetime.now().timestamp()
+
+
+def get_utc_timestamp():
+    utc_timestamp = g.utc_timestamp if hasattr(g, 'utc_timestamp') else int(datetime.utcnow().timestamp())
+    return utc_timestamp
+
+
+def date_time_to_iso_string(date_local: datetime = datetime.now()):
+    date_utc = date_local.astimezone(timezone.utc)
+    return date_utc.strftime(ISO_DATETIME_FORMAT)
