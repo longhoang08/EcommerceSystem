@@ -14,9 +14,12 @@ product_search_req = {
     'recommend': fields.Boolean(required=False, description='Only get recommend product'),
     'sort': fields.List(fields.String, required=False, description="Param to sort  products"),
     'aggregations': fields.List(fields.String, required=False,
-                               description="List of attributes to aggregation (category, brand)"),
+                                description="List of attributes to aggregation (category, brand)"),
     '_page': fields.Integer(required=False, description='Paging, default to 1'),
     '_limit': fields.Integer(required=False, description='Number of product in response. Default to 10'),
+
+    'category_codes': fields.List(fields.String, required=False),
+    'brand_codes': fields.List(fields.String, required=False)
 }
 
 keyword_recommder_req = {

@@ -71,8 +71,26 @@ class ProductElasticRepo(EsRepositoryInterface):
             }
         }
 
-    def get_filter_condition(self, args):
-        return query.MatchAll()
+    def get_filter_conditions(self, args):
+        conditions = []
+        conditions.append(query.MatchAll())
+
+        seller_id = args.get('seller_id')
+        if seller_id:
+            conditions.append(query.Term(seller__id=seller_id))
+
+        category_codes = args.get('category_codes')
+        if category_codes:
+            conditions.append(query.Nested(
+                path='categories',
+                query=query.Terms(categories__code=category_codes)
+            ))
+
+        brand_codes = args.get('brand_codes')
+        if brand_codes:
+            conditions.append(query.Terms(brand__code=brand_codes))
+
+        return conditions
 
     @staticmethod
     def add_page_limit_to_product_es(args, product_es):
@@ -165,7 +183,7 @@ class ProductElasticRepo(EsRepositoryInterface):
                 query.Exists(field="name"),
                 query.Exists(field="seller")
             ],
-            filter=self.get_filter_condition(args)
+            filter=self.get_filter_conditions(args)
         )
         products_es = self.build_product_es_from_text_query_condition(args, text_query_condition)
         return products_es
@@ -192,7 +210,7 @@ class ProductElasticRepo(EsRepositoryInterface):
 
             ],
             minimum_should_match=1,
-            filter=self.get_filter_condition(args)
+            filter=self.get_filter_conditions(args)
         )
 
         products_es = self.build_product_es_from_text_query_condition(args, text_query_condition)
