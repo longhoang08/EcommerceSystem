@@ -26,6 +26,7 @@ class Stock(db.Model, TimestampMixin):
     def to_dict(self):
         return {
             'sku': self.sku,
+            'stock': self.stock,
             'promotion_stock': self.promotion_stock,
             'flash_sale_stock': self.flash_sale_stock,
         }
