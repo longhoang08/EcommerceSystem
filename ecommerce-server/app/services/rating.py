@@ -30,7 +30,6 @@ def find_rating(sku, **kwargs):
     else:
         ratings = repo.find_all_rating(sku, args.get('_page'), args.get('_limit'))
     ratings = [rating.to_dict() for rating in ratings]
-    print(get_total_rating(sku))
     return {'ratings': ratings, 'total_rating': get_total_rating(sku)}
 
 
