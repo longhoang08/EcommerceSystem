@@ -14,6 +14,18 @@ _logger = logging.getLogger(__name__)
 
 ns = Namespace('order', description='Order management operations')
 
+_order_details = ns.model('order_details', app.api.request.order.order_details_req)
+
+
+@ns.route('/details', methods=['POST'])
+class OrderChecking(flask_restplus.Resource):
+    @ns.expect(_order_details, validate=True)
+    @ns.marshal_with(app.api.response.order.order_details_response)
+    def post(self):
+        data = request.args or request.json
+        return order.get_order_details(data)
+
+
 _order_checking = ns.model('order_checking', app.api.request.order.order_checking_req)
 
 

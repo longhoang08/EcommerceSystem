@@ -27,3 +27,13 @@ order_creating_response = api.model('order_response', {
     'prices': fields.Nested(_order_price),
     'total_price': fields.Float(),
 })
+
+_order_details = api.model('order_details', {
+    'order_id': fields.Integer(),
+    'user_id': fields.Integer(),
+    'status': fields.String()
+})
+
+order_details_response = api.model('order_details_response', {
+    'orders': fields.Nested(_order_details),
+})

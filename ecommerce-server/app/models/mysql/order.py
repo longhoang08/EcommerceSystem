@@ -30,6 +30,8 @@ class Order(db.Model, TimestampMixin):
 
     def to_dict(self):
         return {
+            'order_id': self.id,
+            'user_id': self.user_id,
             'id': self.user_id,
             'status': 'pending' if self.status == OrderStatus.Pending \
                 else 'paid' if self.status == OrderStatus.Paid \

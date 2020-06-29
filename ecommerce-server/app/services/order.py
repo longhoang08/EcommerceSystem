@@ -4,6 +4,7 @@ from typing import List
 import threading
 from app.commons.decorators import user_required
 from app.helpers import encode_token
+from app.helpers.catalog.product_utils import Utilities
 from app.models.mysql.order import OrderStatus
 from app.repositories import file as file_repo
 from app.repositories.mysql import order as repo, product_sql
@@ -22,8 +23,28 @@ ORDER_FAILED_RESPONSE = {
 }
 
 
-def get_stock_details(skus: List[str]):
-    pass
+@user_required
+def get_order_details(args, **kwargs):
+    args = Utilities.reformat_search_text_search_params(args)
+    order_id = args.get('order_id')
+
+    user = kwargs.get('user')
+    user_id = user.id
+
+    if order_id:
+        order = repo.find_order_by_id(order_id, user_id)
+        orders = [order] if order else []
+        return {'orders': orders}
+
+    status = args.get('status')
+    page = args.get('_page')
+    limit = args.get('_limit')
+    if status:
+        orders = repo.find_order_by_status(user_id, status, page, limit)
+    else:
+        orders = repo.find_all_order(user_id, page, limit)
+    print([order.to_dict() for order in orders])
+    return {'orders': [order.to_dict() for order in orders]}
 
 
 def check_order(skus: List[str], **kwargs) -> [List[dict], float]:
