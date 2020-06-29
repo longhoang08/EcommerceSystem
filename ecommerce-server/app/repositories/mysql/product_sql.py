@@ -16,7 +16,7 @@ def save(stock: ProductSQL, commit=False):
     return stock
 
 
-def save_stock_to_database(**kwargs) -> ProductSQL:
+def save_product_to_database(**kwargs) -> ProductSQL:
     stock = ProductSQL(**kwargs)
     return save(stock)
 
@@ -24,7 +24,7 @@ def save_stock_to_database(**kwargs) -> ProductSQL:
 def upsert_product_to_database(sku: str, stock: int, price: int) -> ProductSQL:
     product_stock = get_product_by_sku(sku)
     if not product_stock:
-        return save_stock_to_database(sku=sku, stock=stock, price=price)
+        return save_product_to_database(sku=sku, stock=stock, price=price)
     product_stock.stock = stock
     return save(product_stock)
 

@@ -1,5 +1,6 @@
 # coding=utf-8
 import logging
+import threading
 
 from flask_mail import Mail
 
@@ -15,6 +16,7 @@ from . import file
 from . import seller
 from . import admin
 
+product_lock = threading.Lock()
 my_mail = Mail()
 
 
