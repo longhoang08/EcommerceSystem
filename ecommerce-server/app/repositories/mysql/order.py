@@ -23,7 +23,14 @@ def create_new_order(**kwargs) -> Order:
     return save(register)
 
 
-def find_order_by_id(id: int, user_id: int) -> Order:
+def find_order_by_id(id: int) -> Order:
+    order = Order.query.filter(
+        Order.id == id
+    ).first()
+    return order or None
+
+
+def find_order_by_id_and_user_id(id: int, user_id: int) -> Order:
     order = Order.query.filter(
         Order.id == id,
         Order.user_id == user_id

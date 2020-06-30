@@ -32,7 +32,7 @@ def get_order_details(args, **kwargs):
     user_id = user.id
 
     if order_id:
-        order = repo.find_order_by_id(order_id, user_id)
+        order = repo.find_order_by_id_and_user_id(order_id, user_id)
         orders = [order] if order else []
         return {'orders': orders}
 
