@@ -25,7 +25,10 @@ ORDER_FAILED_RESPONSE = {
 
 @user_required
 def get_order_details(args, **kwargs):
-    args = Utilities.reformat_search_text_search_params(args)
+    try:
+        args = Utilities.reformat_search_text_search_params(args)
+    except Exception:
+        pass
     order_id = args.get('order_id')
 
     user = kwargs.get('user')
