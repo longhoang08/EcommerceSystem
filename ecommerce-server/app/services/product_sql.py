@@ -23,7 +23,7 @@ def update_product_to_mysql(sku: str, price: int, stock_changed: int = 0):
         return repo.save(product)
 
 
-def get_order_details(skus: List[str]) -> [List[dict], float, Any]:
+def get_order_stock_details(skus: List[str]) -> [List[dict], float, Any]:
     products = product_sql.get_product_by_skus(skus)
     if len(products) != len(skus):
         product_skus = [product.sku for product in products]

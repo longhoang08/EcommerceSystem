@@ -8,7 +8,7 @@ from app.helpers.catalog.product_utils import Utilities
 from app.models.mysql.order import OrderStatus
 from app.repositories import file as file_repo
 from app.repositories.mysql import order as repo, product_sql
-from app.services.product_sql import get_order_details
+from app.services.product_sql import get_order_stock_details
 from app.services import order_product as order_product_service, product as product_service
 
 __author__ = 'LongHB'
@@ -51,7 +51,7 @@ def get_order_details(args, **kwargs):
 
 
 def check_order(skus: List[str], **kwargs) -> [List[dict], float]:
-    order_reponse, total_price, _, failed_skus = get_order_details(skus)
+    order_reponse, total_price, _, failed_skus = get_order_stock_details(skus)
     return {
         'prices': order_reponse,
         'total_price': total_price,
@@ -63,7 +63,7 @@ def check_order(skus: List[str], **kwargs) -> [List[dict], float]:
 def create_order(skus: List[str], expected_price: float, **kwargs):
     from app.services import product_lock
     with product_lock:
-        order_reponse, total_price, products, failed_skus = get_order_details(skus)
+        order_reponse, total_price, products, failed_skus = get_order_stock_details(skus)
         if total_price != expected_price or failed_skus:
             return ORDER_FAILED_RESPONSE
         for index, product in enumerate(products):
