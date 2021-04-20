@@ -7,7 +7,7 @@ flask-sqlalchemy==2.4.1
 Flask-Migrate==2.5.3
 pymysql==0.9.3
 pytest==5.4.2
-py==1.8.1
+py==1.10.0
 pluggy==0.13.1
 pytest-flask==1.0.0
 pytest-cov==2.8.1
