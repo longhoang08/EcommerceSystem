@@ -20,7 +20,7 @@ email-validator==1.1.1
 flask-jwt-extended==3.24.1
 PyJWT==1.7.1
 Flask-Mail==0.9.1
-celery==4.4.2
+celery==5.2.2
 attrs==19.3.0
 elasticsearch==7.7.0
 elasticsearch-dsl==7.2.0
